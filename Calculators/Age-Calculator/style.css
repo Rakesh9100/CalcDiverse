@@ -1,0 +1,83 @@
+* {
+    padding: 10px;
+}
+
+body {
+    font-size: large;
+    box-sizing: border-box;
+    background: radial-gradient(circle, rgb(195, 214, 255), rgb(129, 186, 250));
+    color: black;
+}
+
+.container {
+    position: absolute;
+    background-color: rgb(243, 235, 253);
+    color: rgb(44, 44, 44);
+    border-radius: 8%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 450px;
+    /* border: solid red 1px; */
+    box-shadow: rgba(100, 149, 255, 0.753) 0px 30px 38px,
+                rgba(56, 101, 248, 0.774) 0px 10px 12px;
+}
+
+#date {
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#date1 {
+    color: rgb(91, 53, 126);
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dob {
+    height: auto;
+    width: auto;
+    font-weight: bolder;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* CSS */
+button {
+    background-color: rgba(73, 23, 119, 0.781);
+    text-align: center;
+    align-items: center;
+    margin-top: 18%;
+    margin-left: 30%;
+    border-radius: 16px;
+    color: rgb(230, 223, 235);
+    cursor: auto;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 20px;
+}
+
+button:hover {
+    outline: 0;
+    background: rgba(73, 23, 119, 0.938);
+    box-shadow: 0 0 0 2px rgba(41, 8, 63, 0.712), 0 3px 8px 0 rgba(41, 8, 63, 0.712);
+}
+
+input {
+    background-color: rgb(255, 255, 255);
+}
+
+#text {
+    position: relative;
+    /* transform: translate(10px, 50px); */
+    font-size: larger;
+    text-align: center;
+    color: rgb(91, 53, 126);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
