@@ -39,7 +39,7 @@
 
 <h2>Introduction📌</h2>
 
-Beautiify comprises a curated selection of beautifully designed components and animations that can be seamlessly incorporated into any website, elevating its overall UI experience.
+CalcDiverse is a customized collection of calculators for various aspects of mathematics. Individuals with basic web development knowledge can create distinctive calculators and submit pull requests.
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -74,7 +74,7 @@ Beautiify comprises a curated selection of beautifully designed components and a
 - Fork this Repository.
 - Clone the forked repository in your local system.
 ```
-git clone https://github.com/<your-github-username>/Beautiify.git
+git clone https://github.com/<your-github-username>/CalcDiverse.git
 ```
 - Open `index.html` in your browser.
 - View the [Live Project](https://calcdiverse.netlify.app/) here.
@@ -82,7 +82,7 @@ git clone https://github.com/<your-github-username>/Beautiify.git
 - Wait for the issue to be assigned and proceed only after the issue is assigned to you.
 - Navigate to the project directory.
 ```
-cd Beautiify
+cd CalcDiverse
 ```
 - Create a new branch for your feature.
 ```
