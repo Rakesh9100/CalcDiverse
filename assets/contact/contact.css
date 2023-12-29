@@ -2,6 +2,7 @@
 
 body {
     background: #5b0053; /* Set a background color for the contact page */
+    margin: 0; /* Reset default margin */
 }
 
 .contact-section {
@@ -63,4 +64,12 @@ button:hover {
     color: #ffffff; /* Dark red color */
     font-size: 20px;
     margin-bottom: 40px;
+}
+
+footer {
+    clear: both;
+    position: absolute;
+    height: 150px;
+    margin-top: -200px;
+    margin-bottom:-150px;
 }
