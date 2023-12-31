@@ -80,6 +80,13 @@ git clone https://github.com/<your-github-username>/CalcDiverse.git
 - View the [Live Project](https://calcdiverse.netlify.app/) here.
 - Raise an issue if you find a bug or add a feature.
 - Wait for the issue to be assigned and proceed only after the issue is assigned to you.
+- Add your codes :-
+
+  - Create a new folder in the `Calculators` folder.
+  - Put Your calculators code files in your newly created folder.
+  - Add a `README.md` file in your new folder which includes Description, Tech Stacks, and Screenshots of that calculator.
+  - Add your calculator's HTML file link in the main `index.html` by continuing a box section.
+  
 - Navigate to the project directory.
 ```
 cd CalcDiverse
