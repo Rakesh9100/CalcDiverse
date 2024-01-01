@@ -231,6 +231,7 @@ section {
     color: var(--ternary);
     margin-top: 21px;
     text-decoration: underline dashed;
+    cursor: pointer;
 }
 
 .container .box .content h3 {
@@ -251,6 +252,7 @@ section {
     border-radius: 36px;
     background-color: var(--light);
     border: 5px solid var(--primary);
+    transition: all 0.3s;
 }
 
 .container .box .content button:hover {
