@@ -34,6 +34,11 @@ convert.addEventListener("click", getResults);
 
 // function getresults
 function getResults() {
+	if (isNaN(searchValue) || searchValue === "") {
+		alert("Please enter a valid number for conversion");
+		return;
+	  }
+	
 	fetch(`${api}`)
 		.then(currency => {
 			return currency.json();
