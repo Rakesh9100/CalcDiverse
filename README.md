@@ -11,6 +11,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/Rakesh9100/CalcDiverse)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Rakesh9100/CalcDiverse)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Rakesh9100/CalcDiverse)
+![GitHub total lines](https://sloc.xyz/github/Rakesh9100/CalcDiverse)
 ![Github](https://img.shields.io/github/license/Rakesh9100/CalcDiverse)
 ![GitHub issues](https://img.shields.io/github/issues/Rakesh9100/CalcDiverse)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Rakesh9100/CalcDiverse)
@@ -80,6 +81,13 @@ git clone https://github.com/<your-github-username>/CalcDiverse.git
 - View the [Live Project](https://calcdiverse.netlify.app/) here.
 - Raise an issue if you find a bug or add a feature.
 - Wait for the issue to be assigned and proceed only after the issue is assigned to you.
+- Add your codes :-
+
+  - Create a new folder in the `Calculators` folder.
+  - Put Your calculators code files in your newly created folder.
+  - Add a `README.md` file in your new folder which includes Description, Tech Stacks, and Screenshots of that calculator.
+  - Add your calculator's HTML file link in the main `index.html` by continuing a box section.
+  
 - Navigate to the project directory.
 ```
 cd CalcDiverse
