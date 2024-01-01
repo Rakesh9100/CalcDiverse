@@ -10,7 +10,7 @@ console.log(currDate);
 document.getElementById("birthday").max = currYear + "-" + currMonth + "-" + currDay;
 
 //date format displayed is DD/MM/YYYY
-document.getElementById("date1").innerHTML = currDay;
+document.getElementById("date1").innerHTML = currDay+"-"+currMonth+"-"+currYear;
 
 //function to calculate age from date of birth
 function getDOB() {
