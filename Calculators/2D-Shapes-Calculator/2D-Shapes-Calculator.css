@@ -1,119 +1,104 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: Raleway;
+  color: black;
+  letter-spacing: 1px;
+  background-color: rgba(128, 128, 128, 0.185);
 }
 
-header {
-    background-color: #333;
-    color: rgb(16, 75, 170);
-    padding: 15px;
-    text-align: center;
+.card-form{
+  width: 500px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
 }
 
-.navbar {
+.form-title{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.nav-menu {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-item {
-    text-decoration: none;
-    color: white;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    background-color: white;
-    height: 5px;
-    width: 25px;
-    margin: 3px 0;
-}
-
-.calculator-section {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh; /* Adjust this if needed */
-    background-color: transparent; /* or remove this line */
-}
-
-.calculator-container {
-    max-width: 600px;
-    width: 100%;
-    background-color: rgb(233, 226, 233);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.calculator-container h1 {
-    color: #333;
-    text-align: center;
-    font-size: 25px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-label, input, select {
-    width: 100%;
-    font-size: 20px;
-}
-
-input, select {
-    width: 100%;
-    font-size: 18px;
-}
-
-button {
-    background-color: #04703a;
+    height: 80px;
     color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-#result-container {
-    margin-top: 13  px;
-}
-
-#result {
+    font-size: 20px;
     font-weight: bold;
-    font-size: 20px;
+    background: #27ae60;
+    border-radius: 10px 10px 0 0;
+  }
+  
+.form-body{
+    padding: 10px;
 }
 
-.social-icon {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+.row{
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+      
+input[type="number"],select{
+        width: 100%;
+        margin: 0 15px;
+        height: 35px;
+        padding: 5px 15px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background: #e8ebed;
+        color: #576366;
+        font-size: 14px;
+    }
+
+    input[type="number"] {
+        appearance: none;
+    }
+.rule{
+    height: 2px;
+    background: #e8ebed;
+    margin: 0px 35px;
+}
+  
+.form-footer{
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    margin: 15px;
+    padding: 15px 10px;}
+
+    
+button{
+      height: 40px;
+      line-height: 40px;
+      border: none;
+      border-radius: 5px;
+      padding: 0px 15px 5px 15px;
+      background: #27ae60;
+      margin-right: 10px;
+      font-size: 14px;
+      font-family: Raleway;
+      color: white;
+      letter-spacing: 1px;
 }
 
-.social-icon a {
-    color: white;
-    text-decoration: none;
+button:focus{
+    background: #108641;
+
 }
 
-.social-icon i {
-    font-size: 20px;
+button:hover{
+    transition: all 0.5s ease-in;
+    transform: translateY(-5px); 
+    box-shadow: 2px 5px 0 #27ae5faa;
 }
+  
+#result-container{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+

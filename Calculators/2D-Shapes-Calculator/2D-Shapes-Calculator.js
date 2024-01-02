@@ -1,4 +1,5 @@
-function calculate() {
+function calculate(event) {
+    event.preventDefault();
     var shape = document.getElementById("shape").value;
     var length = parseFloat(document.getElementById("length").value);
     var width = parseFloat(document.getElementById("width").value);
