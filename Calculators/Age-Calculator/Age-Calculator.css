@@ -1,83 +1,103 @@
 * {
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
 }
 
-body {
-    font-size: large;
-    box-sizing: border-box;
-    background: radial-gradient(circle, rgb(195, 214, 255), rgb(129, 186, 250));
-    color: black;
-}
-
-.container {
-    position: absolute;
-    background-color: rgb(243, 235, 253);
-    color: rgb(44, 44, 44);
-    border-radius: 8%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 450px;
-    /* border: solid red 1px; */
-    box-shadow: rgba(100, 149, 255, 0.753) 0px 30px 38px,
-                rgba(56, 101, 248, 0.774) 0px 10px 12px;
-}
-
-#date {
-    font-weight: bolder;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#date1 {
-    color: rgb(91, 53, 126);
-    font-weight: bolder;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.dob {
-    height: auto;
-    width: auto;
-    font-weight: bolder;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/* CSS */
-button {
-    background-color: rgba(73, 23, 119, 0.781);
-    text-align: center;
+#container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display: flex;
     align-items: center;
-    margin-top: 18%;
-    margin-left: 30%;
-    border-radius: 16px;
-    color: rgb(230, 223, 235);
-    cursor: auto;
-    font-weight: bold;
-    padding: 10px 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: auto;
-    box-sizing: border-box;
-    border: 0;
-    font-size: 20px;
+    justify-content: center;
 }
 
-button:hover {
-    outline: 0;
-    background: rgba(73, 23, 119, 0.938);
-    box-shadow: 0 0 0 2px rgba(41, 8, 63, 0.712), 0 3px 8px 0 rgba(41, 8, 63, 0.712);
+#main { 
+    background-color: white;
+    width: 60%;
+    border: 2px solid blue;
+    border-radius: 25px;
+
 }
 
-input {
-    background-color: rgb(255, 255, 255);
+#heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5vmax;
+    margin-bottom: 2.5vmax;
 }
 
-#text {
-    position: relative;
-    /* transform: translate(10px, 50px); */
-    font-size: larger;
+#heading h1{
+    font-size: 1.5vmax;
+}
+
+#oneone{
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+#onemain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmax;
+}
+
+#ip1name{
+    font-size: 1vmax;
+}
+
+#ip1{
+    font-size: 0.9vmax;
     text-align: center;
-    color: rgb(91, 53, 126);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
+    border-radius: 0.5vmax;
+    height: 1.8vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+
+}
+#ip2name{
+    font-size: 1vmax;
+}
+
+#ip2{
+    font-size: 0.9vmax;
+    text-align: center;
+    border-radius: 0.5vmax;
+    height: 1.8vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+
+}
+
+#onetwo button{
+    padding: 0.7vmax;
+    font-size: 0.8vmax;
+    text-align: center;
+    border-radius: 0.8vmax;
+    border-color: rgb(255, 123, 0);
+    background-color: rgb(40, 155, 249);
+    cursor: pointer;
+}
+
+#twomain{
+    margin-top: 3vmax;
+    margin-bottom: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#twoone img{
+    height: 15vmax;
+    max-width: 80%;
+}
+#twotwo h2{
+    font-size: 1.3vmax;
 }
