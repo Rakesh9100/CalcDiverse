@@ -1,67 +1,81 @@
-/* Add this CSS to your existing style.css or create a new contact.css file */
+Add this CSS to your existing style.css or create a new contact.css file
 
 body {
     background: #5b0053; /* Set a background color for the contact page */
     margin: 0; /* Reset default margin */
 }
 
-.contact-section {
-    padding: 80px 0;
+.box{
+    padding: 130px 0;
     text-align: center;
+    position: sticky;
+    box-sizing: border-box;
 }
 
 .contact-container {
-    max-width: 800px;
+    position: relative;
+    max-width: 650px;
+    min-height: 400px;
     margin: 0 auto;
+    background-color: #52104dba;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 18px 20px 18px 20px rgba(36, 3, 44, 0.662);
 }
 
 .contact-container h2 {
-    color: var(--dark);
+    color:  rgba(234, 113, 13, 0.936);
     font-size: 36px;
     margin-bottom: 20px;
 }
 
 .contact-container p {
-    color: var(--secondary);
+    color:rgba(234, 113, 13, 0.936);
     font-size: 18px;
     margin-bottom: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 form {
+    position: relative;
     display: grid;
-    gap: 20px;
+    gap: 10px;
 }
 
 label {
-    color: var(--dark);
-    font-size: 18px;
+    color: rgba(234, 113, 13, 0.936);
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 input,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--dark);
+
     border-radius: 6px;
     margin-top: 8px;
 }
 
 button {
-    background-color: var(--dark);
+    background-color: rgba(0, 0, 0, 0.692);
     color: var(--light);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
+    padding: 15px 30px;
+    border: 0px;
+    border-radius: 30px;
     font-size: 18px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: var(--ternary);
+    background-color:rgb(26, 32, 203);
 }
 
 .contact-container p {
-    color: #ffffff; /* Dark red color */
+    color: #efd8d8; /* Dark red color */
     font-size: 20px;
     margin-bottom: 40px;
 }
@@ -69,7 +83,7 @@ button:hover {
 footer {
     clear: both;
     position: absolute;
-    height: 150px;
-    margin-top: -200px;
+    height: 200px;
+    margin-top: -150px;
     margin-bottom:-150px;
 }
