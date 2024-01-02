@@ -1,0 +1,73 @@
+* {
+    padding: 10px;
+}
+
+body {
+    font-size: large;
+    box-sizing: border-box;
+    background: radial-gradient(circle, rgb(195, 214, 255), rgb(129, 186, 250));
+    color: black;
+}
+
+.lengthConverter {
+    position: absolute;
+    background-color: rgb(243, 235, 253);
+    color: rgb(44, 44, 44);
+    border-radius: 8%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    box-shadow: rgba(100, 149, 255, 0.753) 0px 30px 38px,
+        rgba(56, 101, 248, 0.774) 0px 10px 12px;
+    text-align: center;
+}
+
+.lengthConverter label,
+.lengthConverter select,
+.lengthConverter button,
+.lengthConverter input {
+    display: block;
+    margin: 10px auto;
+}
+
+.lengthConverter label {
+    font-weight: bold;
+}
+
+.lengthConverter select,
+.lengthConverter input {
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.lengthConverter button {
+    background-color: rgba(73, 23, 119, 0.781);
+    text-align: center;
+    border-radius: 16px;
+    color: rgb(230, 223, 235);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    width: auto;
+}
+
+.lengthConverter button:hover {
+    background: rgba(73, 23, 119, 0.938);
+    box-shadow: 0 0 0 2px rgba(41, 8, 63, 0.712), 0 3px 8px 0 rgba(41, 8, 63, 0.712);
+}
+
+.lengthConverter p {
+    position: relative;
+    font-size: larger;
+    text-align: center;
+    color: rgb(91, 53, 126);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    margin: 0 auto;
+}
