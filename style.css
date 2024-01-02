@@ -206,7 +206,8 @@ section {
 
 .container .box {
     position: relative;
-    width: 320px;
+    width: 300px;    /*  Adjust the size of calculators accordingly */
+    height: 300px;   /*  Adjust the size of calculators accordingly */
     display: flex;
     justify-content: center;
     align-items: center;
