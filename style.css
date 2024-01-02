@@ -231,12 +231,14 @@ section {
     color: var(--ternary);
     margin-top: 21px;
     text-decoration: underline dashed;
+    cursor: pointer;
 }
 
 .container .box .content h3 {
     font-size: 19px;
     color: var(--primary);
     margin-top: 21px;
+    transition: all 0.3s;
 }
 
 .container .box .content button {

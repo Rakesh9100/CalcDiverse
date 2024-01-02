@@ -34,7 +34,7 @@ form {
 
 label {
     color: var(--dark);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 input,
@@ -42,7 +42,7 @@ textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--dark);
-    border-radius: 6px;
+    border-radius: 12px;
     margin-top: 8px;
 }
 
@@ -51,9 +51,10 @@ button {
     color: var(--light);
     padding: 10px 20px;
     border: none;
-    border-radius: 6px;
-    font-size: 18px;
+    border-radius: 12px;
+    font-size: 20px;
     cursor: pointer;
+    transition: all ease 0.3s;
 }
 
 button:hover {
