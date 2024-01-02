@@ -2,7 +2,11 @@
 
 ## Description :-
 
-Calculates the person's age by taking in the date of birth as input.
+In this new age calculator we can check age in real-time. The real-time time and date is taken from the system and using that we can find the age of user. We can also find the time difference between the two specific time. To make UI interesting , i added images that changes as the age change.
+
+* Take Realtime Date and Time from system to calculate Age.
+* Very interesting UI.
+* Responsive for Multiple Devices.
 
 ## Tech Stacks :-
 
@@ -12,4 +16,6 @@ Calculates the person's age by taking in the date of birth as input.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/bc9a658f-5876-40cd-9bcc-9b54a948c4c4)
+![image](https://github.com/sanketshinde3001/CalcDiverse/assets/126979961/2aa2f78b-b4d6-4f18-8210-93fb726e7149)
+
+![aga](https://github.com/sanketshinde3001/CalcDiverse/assets/126979961/adc0cfda-8fb3-4f53-a953-2fdc446c483e)
