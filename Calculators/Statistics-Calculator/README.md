@@ -12,4 +12,5 @@ Calculates Maximum, minimum, mean, median, mode, standard deviation, etc. for a 
 
 ## Screenshots :-
 
+![image](https://github.com/kom-senapati/CalcDiverse/assets/92045934/bae15a29-1892-4375-a70c-fda3a1c8fd0a)
 
