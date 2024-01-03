@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Statistics Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Statistics Calculator</h1>
+            <label for="dataSet">Enter the data set:</label>
+            <textarea id="dataSet" placeholder="Enter numbers separated by commas"></textarea>
+            <div class="buttons">
+                <button onclick="clearData()">Clear</button>
+                <button onclick="calculateStats()">Calculate</button>
+            </div>
+            <div class="result">
+                <ul id="statsList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <script src="https://unpkg.com/simple-statistics@7.8.3/dist/simple-statistics.min.js">
+
+    </script> -->
+</body>
+
+</html>
