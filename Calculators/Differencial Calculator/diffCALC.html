@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Differential Calculator</title>
+    <link rel="stylesheet" href="diff.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Differential Calculator</h1>
+        <label for="functionInput">Enter a function:</label>
+        <input type="text" id="functionInput" placeholder="e.g., 2*x^3 + 5*x^2 + 3*x + 7">
+        <button onclick="calculateDerivative()">Calculate Derivative</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+    <script src="diff.js"></script>
+</body>
+</html>
