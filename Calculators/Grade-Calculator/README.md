@@ -14,3 +14,4 @@ It takes marks of each individual subject and calculates the total first. The re
 
 ## Screenshots :-
 
+![Screenshot 2024-01-03 173344](https://github.com/pankhuri92/CalcDiverse-SWOC-24/assets/138357063/86e5f80a-9a9a-4d68-ae69-c3be78308f20)
