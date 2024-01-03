@@ -39,11 +39,7 @@ The Differential Calculator is a tool that allows users to calculate derivatives
 - JavaScript
 - [math.js](https://mathjs.org/) for symbolic computation
 
-## Getting Started
+## Screenshots :-
 
-To use the Differential Calculator, simply open the provided HTML file in a web browser. Ensure an internet connection for loading the math.js library.
+![Screenshot 2024-01-03 223740](https://github.com/Rakesh9100/CalcDiverse/assets/142514166/e5f53002-fafb-40c5-8225-804c5c66f22b)
 
-```bash
-git clone https://github.com/yourusername/differential-calculator.git
-cd differential-calculator
-open index.html
