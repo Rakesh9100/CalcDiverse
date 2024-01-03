@@ -1,8 +1,6 @@
-Add this CSS to your existing style.css or create a new contact.css file
-
 body {
-    background: #5b0053; /* Set a background color for the contact page */
-    margin: 0; /* Reset default margin */
+    background: #5b0053; 
+    margin: 0; 
 }
 
 .box{
@@ -55,7 +53,6 @@ input,
 textarea {
     width: 100%;
     padding: 10px;
-
     border-radius: 6px;
     margin-top: 8px;
 }
@@ -83,7 +80,7 @@ button:hover {
 footer {
     clear: both;
     position: absolute;
-    height: 200px;
+    height: 150px;
     margin-top: -150px;
     margin-bottom:-150px;
 }
