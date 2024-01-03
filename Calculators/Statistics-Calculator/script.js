@@ -28,6 +28,8 @@ function calculateStats() {
     <li><span>Variance:</span><span>${variance.toFixed(2)}</span></li><hr>
     <li><span>Standard Deviation:</span><span>${standardDeviation.toFixed(2)}</span></li><hr>
     <li><span>Range:</span><span>${range}</span></li><hr>
+    <li><span>Maximum:</span><span>${max}</span></li><hr>
+    <li><span>Minimum:</span><span>${min}</span></li><hr>
     <li><span>Sum:</span><span>${sum}</span></li><hr>
     <li><span>Count:</span><span>${count}</span></li><hr>
     `;
