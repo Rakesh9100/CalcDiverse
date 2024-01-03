@@ -12,4 +12,4 @@ Calculates the Hours, Minutes and Seconds for any entered Time.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/31310197-b98a-4681-a1dd-7e660d5e9942)
+![ss1](https://github.com/Rakesh9100/CalcDiverse/assets/98605616/1b8bc2de-0239-47b7-92a0-af3eb7bc8990)
