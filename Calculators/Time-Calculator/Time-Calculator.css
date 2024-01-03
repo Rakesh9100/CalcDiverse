@@ -134,3 +134,9 @@ button:hover {
     margin: 20px;
     width: 45rem;     /* Can change width of the App  */
 }
+
+.pink-box:hover {
+    transition: 0.6s;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.4);
+    
+}
