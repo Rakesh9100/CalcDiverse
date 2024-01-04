@@ -24,10 +24,4 @@
 
 <br>
 
-## **Developed By 👦**
-
-[Avdhesh Varshney](https://github.com/Avdhesh-Varshney)
-
-<br>
-
 ### **Happy Coding 🧑‍💻**
