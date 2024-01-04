@@ -15,7 +15,7 @@ body {
     width: 85%;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -40,6 +40,7 @@ td {
     text-align: left;
     background-color: #333;
     color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 th {
@@ -48,6 +49,11 @@ th {
 
 select {
     width: 100%;
+    padding: 8px;
+    border: 1px solid #00bcd4;
+    background-color: #444;
+    color: #fff;
+    border-radius: 4px;
 }
 
 button {
@@ -58,4 +64,60 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
+.CGPAcalculator form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    color: #00bcd4;
+}
+
+.input-group input {
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #00bcd4;
+    border-radius: 4px;
+    margin-top: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ... (unchanged styles) ... */
+
+.CGPAcalculator form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px; /* Increase the margin to add more space */
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    color: #00bcd4;
+    margin-bottom: 5px; /* Add margin between the label and input */
+}
+
+.input-group input {
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #00bcd4;
+    border-radius: 4px;
+    margin-top: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ... (unchanged styles) ... */
