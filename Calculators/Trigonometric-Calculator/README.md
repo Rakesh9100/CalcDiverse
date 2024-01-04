@@ -4,7 +4,7 @@
 
 Swiftly calculates trigonometric functions and inverses, delivering precise results in mathematical notation.
 
-## Tech Stacks :-
+## Tech Stack :-
 
 - HTML
 - CSS
@@ -12,3 +12,4 @@ Swiftly calculates trigonometric functions and inverses, delivering precise resu
 
 ## Screenshots :-
 
+![image](https://github.com/kom-senapati/CalcDiverse/assets/92045934/506bbcf0-ee19-4463-8c7f-db74339f95d8)
