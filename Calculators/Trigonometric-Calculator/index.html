@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono:wght@500&display=swap" rel="stylesheet">
+    <title>Trigonometric Calculator</title>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div class="column">
+            <h2>Basic Trigonometry</h2>
+
+            <div class="input">
+                <label for="angle">θ:</label>
+                <input type="number" id="angle" placeholder="Enter angle">
+
+                <div class="select-container">
+                    <select id="unit" class="select-box">
+                        <option value="degrees">Degrees</option>
+                        <option value="radians">Radians</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button onclick="calculateBasicTrigo()">Calculate</button>
+                <button onclick="clearBasicTrigo()">Clear</button>
+            </div>
+
+            <div class="result">
+                <strong>sin(θ): </strong><span id="sinResult"></span><br>
+                <strong>cos(θ): </strong><span id="cosResult"></span><br>
+                <strong>tan(θ): </strong><span id="tanResult"></span><br>
+                <strong>csc(θ): </strong><span id="cscResult"></span><br>
+                <strong>sec(θ): </strong><span id="secResult"></span><br>
+                <strong>cot(θ): </strong><span id="cotResult"></span>
+            </div>
+
+        </div>
+
+        <div id="vertical-bar"></div>
+
+        <div class="column">
+            <h2>Inverse Trigonometry</h2>
+
+            <div class="input">
+                <label for="inverseAngle">x:</label>
+                <input type="number" id="inverseAngle" placeholder="Enter value of x">
+            </div>
+
+            <div class="buttons">
+                <button onclick="calculateInverseTrigo()">Calculate</button>
+                <button onclick="clearInverseTrigo()">Clear</button>
+            </div>
+
+            <div class="result">
+                <strong>sin<sup>-1</sup>(x): </strong><span id="asinResult"></span><br>
+                <strong>cos<sup>-1</sup>(x): </strong><span id="acosResult"></span><br>
+                <strong>tan<sup>-1</sup>(x): </strong><span id="atanResult"></span><br>
+                <strong>csc<sup>-1</sup>(x): </strong><span id="acscResult"></span><br>
+                <strong>sec<sup>-1</sup>(x): </strong><span id="asecResult"></span><br>
+                <strong>cot<sup>-1</sup>(x): </strong><span id="acotResult"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
