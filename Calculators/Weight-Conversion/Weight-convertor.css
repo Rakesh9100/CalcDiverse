@@ -33,7 +33,7 @@ body {
   }
   
   button {
-    background-color: #4caf50; /* Green */
+    background-color: #4caf50;
     color: #fff;
     border: none;
     padding: 12px 24px;
@@ -44,26 +44,25 @@ body {
   }
   
   button:hover {
-    background-color: #45a049; /* Darker Green */
+    background-color: #45a049; 
   }
   
   #result {
     font-size: 18px;
     margin-top: 20px;
-    color: #333; /* Dark Gray */
+    color: #333; 
   }
-/* ... (previous styles) */
 
 #conversionType {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc; /* Light Gray */
+    border: 1px solid #ccc; 
     border-radius: 4px;
     margin-bottom: 20px;
-    background-color: #f9f9f9; /* Lighter Gray */
-    color: #333; /* Dark Gray */
+    background-color: #f9f9f9; 
+    color: #333;
   }
   
-  /* ... (rest of the styles) */
+  
     
