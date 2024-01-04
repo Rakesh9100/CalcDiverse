@@ -54,8 +54,6 @@ input,
 textarea {
     width: 100%;
     padding: 10px;
-
-
     border-radius: 6px;
     margin-top: 8px;
 }
@@ -63,7 +61,6 @@ textarea {
 button {
     background-color: rgba(0, 0, 0, 0.692);
     color: var(--light);
-
     padding: 15px 30px;
     border: 0px;
     border-radius: 30px;
@@ -83,12 +80,6 @@ button:hover {
 }
 
 
-footer {
-    clear: both;
-    position: absolute;
-    height: 150px;
-    margin-top: -150px;
-    margin-bottom:-150px;
 /*----------------------------------------------- Updated Footer Styling ---------------------------------------*/
 .footer-basic {
     padding: 40px 0;
