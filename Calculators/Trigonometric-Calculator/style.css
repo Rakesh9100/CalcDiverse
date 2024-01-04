@@ -1,6 +1,7 @@
 body {
     font-family: 'PT Mono', monospace;
     font-size: 16px;
+    color: #333333;
     line-height: 2;
     background-color: #f2f2f2;
     margin: 0;
@@ -32,7 +33,7 @@ sup {
 
 #vertical-bar {
     width: 2px;
-    background-color: black;
+    background-color: #CCCCCC;
 }
 
 .input {
@@ -53,7 +54,7 @@ input {
 
 button {
     background-color: #4CAF50;
-    color: #D4F4D4;
+    color: white;
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -68,6 +69,9 @@ button {
 .result {
     margin-top: 15px;
     text-align: left;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(225, 253, 233);
 }
 
 strong {
@@ -77,8 +81,14 @@ strong {
 select {
     font-size: larger;
     padding: 0.1em;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
+select:hover {
+    background-color: #eeeeee;
+}
 h2 {
     background-color: #D4F4D4;
     color: #228B22;
