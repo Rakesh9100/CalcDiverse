@@ -169,10 +169,10 @@ section {
 
 .paragraph {
     font-size: 2rem;
-    width: 70%;
+    width: 85%;
     text-align: center;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     color: var(--secondary);
 }
 
@@ -353,19 +353,21 @@ section {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
-
+    .container{
+        margin-top: 170px;
+    }
     .compcontainer {
-        padding-top: 40px; /*Fixes #107 */
+        padding-top: 10px; /*Fixes #107 */
     }
 
     .compcontainer h1 {
         font-size: 400%;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
 
     .compcontainer h3 {
         font-size: 200%;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
 
     .compcontainer p {
