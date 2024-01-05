@@ -2,7 +2,8 @@
 
 ## Description :-
 
-This app will help you convert data inputs in different data sizes like bits, bytes, megabytes etc
+This calculator will help you convert your input data sizes in following sizes
+Bits, Nibbles,Bytes,Kilobytes,Megabytes,Gigabytes,Terabytes,Petabytes,Exabytes,Zetabytes,Yottabytes
 
 ## Tech Stack :-
 
