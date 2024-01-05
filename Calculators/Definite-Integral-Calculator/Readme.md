@@ -33,6 +33,6 @@ For example, to calculate the definite integral of the function `f(x) = x^2` fro
 
 ## Screenshot
 
-https://github.com/Devanshu53/CalcDiverse/blob/main/assets/images/Definite-Integra-calculator.png
+![Definite-Integra-calculator](Definite-Integra-calculator.png)
 
 
