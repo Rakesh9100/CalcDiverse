@@ -3,7 +3,10 @@ function convertSize() {
     var fromUnit = document.getElementById('fromUnit').value;
     var toUnit = document.getElementById('toUnit').value;
     var resultElement = document.getElementById('result');
-
+    if (size.trim() === '') {
+        alert('Please enter a valid size.');
+        return;
+    }
     var units = {
         'bits': 1,
         'nibbles': 4,
