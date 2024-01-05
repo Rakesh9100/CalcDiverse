@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="2D-Shapes-Calculator.css" />
+    <title>2D Shapes Calculator - CalcDiverse</title>
+</head>
+
+<body>
+
+
+<div class="card-form" id="2d-shapes">
+        <form class="calculate" id="2d-shapes-calculator">
+          <div class="form-title">2D Shapes Calculator</div>
+          <div class="form-body">
+            <div class="row">
+                <select id="shape" name="shape" required>
+                    <option value="" disabled selected hidden>Select a shape</option>
+                    <option value="rectangle">Rectangle</option>
+                    <option value="square">Square</option>
+                    <option value="circle">Circle</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="parallelogram">Parallelogram</option>
+                </select>
+            </div>
+            <div class="row">
+              <input type="number" id="length" name="length" placeholder="Enter Side/Base/Radius:" required>
+            </div>
+            <div class="row">
+              <input placeholder="Enter Height" type="number" id="width" name="width">
+            </div>
+            
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <button onclick="calculate(event)">Calculate</button>
+          </div>
+          <div id="result-container">
+            <p id="result"></p>
+        </div>
+        </form>
+</div>
+
+    <script src="2D-Shapes-Calculator.js"></script>
+</body>
+
+</html>

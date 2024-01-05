@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="SGPAcalculator">
+            <h1>SGPA Calculator</h1>
+            <form id="sgpaForm">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Grade</th>
+                            <th>Credit Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Mandatory Courses -->
+                        <tr>
+                            <td><input type="text" name="course1" required></td>
+                            <td>
+                                <select name="grade1" required>
+                                    <option value="O">O</option>
+                                    <option value="E">E</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="F">F</option>
+                                    <option value="M">M</option>
+                                    <option value="S">S</option>
+                                </select>
+                            </td>
+                            <td><input type="number" name="credit1" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="course2" required></td>
+                            <td>
+                                <select name="grade2" required>
+                                    <option value="O">O</option>
+                                    <option value="E">E</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="F">F</option>
+                                    <option value="M">M</option>
+                                    <option value="S">S</option>
+                                </select>
+                            </td>
+                            <td><input type="number" name="credit2" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="course3" required></td>
+                            <td>
+                                <select name="grade3" required>
+                                    <option value="O">O</option>
+                                    <option value="E">E</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="F">F</option>
+                                    <option value="M">M</option>
+                                    <option value="S">S</option>
+                                </select>
+                            </td>
+                            <td><input type="number" name="credit3" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="course4" required></td>
+                            <td>
+                                <select name="grade4" required>
+                                    <option value="O">O</option>
+                                    <option value="E">E</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="F">F</option>
+                                    <option value="M">M</option>
+                                    <option value="S">S</option>
+                                </select>
+                            </td>
+                            <td><input type="number" name="credit4" required></td>
+                        </tr>
+
+
+                        <!-- Optional Courses -->
+                        <tr>
+                            <td><input type="text" name="optional1"></td>
+                            <td>
+                                <select name="optionalGrade1">
+                                    <option value="O">O</option>
+                                    <option value="E">E</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="F">F</option>
+                                    <option value="M">M</option>
+                                    <option value="S">S</option>
+                                </select>
+                            </td>
+                            <td><input type="number" name="optionalCredit1"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="optional2"></td>
+                            <td>
+                                <select name="optionalGrade2">
+                                    <option value="O">O</option>
+                                    <option value="E">E</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="F">F</option>
+                                    <option value="M">M</option>
+                                    <option value="S">S</option>
+                                </select>
+                            </td>
+                            <td><input type="number" name="optionalCredit2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button type="button" onclick="calculateSGPA()">Calculate SGPA</button>
+            </form>
+            <div id="result1"></div>
+        </div>
+        <div class="CGPAcalculator">
+            <h1>CGPA Calculator</h1>
+            <form id="cgpaForm">
+                <div>
+                    <label for="previouscgpa">Previous CGPA:</label>
+                    <input type="number" id="previousgpa" name="previouscgpa" placeholder="Previous GPA">
+                </div>
+
+                <div>
+                    <label for="previousCredits">Previous Credits:</label>
+                    <input type="number" id="previouscredits" name="previousCredits" placeholder="Previous Credits">
+                </div>
+                <button type="button" onclick="calculateCGPA()">Calculate CGPA</button>
+            </form>
+            <div id="result2"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
