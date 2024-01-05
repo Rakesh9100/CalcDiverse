@@ -137,8 +137,7 @@ section {
     z-index: 200;
 }
 
-.comp-section .compcontainer h1 {
-    font-size: 7rem;
+.comp-section .compcontainer h1 { 
     text-shadow: 2px 2px 10px var(--light);
 }
 
@@ -356,7 +355,7 @@ section {
     }
 
     .compcontainer {
-        padding: 40px;
+        padding-top: 40px; /*Fixes #107 */
     }
 
     .compcontainer h1 {
