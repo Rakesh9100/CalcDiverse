@@ -11,5 +11,4 @@ This app will help you convert data inputs in different data sizes like bits, by
 - JavaScript
 
 ## Screenshots :-
-
-![image](image.png)
+![image](https://github.com/Akshansh8/CalcDiverse/assets/91936333/a87fab3e-2619-41dc-a62f-2193fe62c082)
