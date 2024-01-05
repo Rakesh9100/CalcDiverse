@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Enhanced Percentage Calculator</title>
+</head>
+<body>
+    <div>
+        <h1>~PC~</h1>
+    </div>
+    <div class="calculator-container">
+        <h2>Percentage Calculator</h2>
+        <div class="input-container">
+            <label for="number">Number:</label>
+            <input type="number" id="number" placeholder="Enter number">
+        </div>
+        <div class="input-container">
+            <label for="percentage">Percentage:</label>
+            <input type="number" id="percentage" placeholder="Enter percentage">
+        </div>
+        <div class="options-container">
+            <label for="round">Round to:</label>
+            <select id="round">
+                <option value="0">No rounding</option>
+                <option value="1">1 decimal place</option>
+                <option value="2">2 decimal places</option>
+                <option value="3">3 decimal places</option>
+            </select>
+        </div>
+        <button onclick="calculatePercentage()">Calculate</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
