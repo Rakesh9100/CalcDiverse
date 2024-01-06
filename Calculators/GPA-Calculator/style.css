@@ -11,11 +11,11 @@ body {
 }
 
 .calculator {
-    background-color: #444;
+    background-color: #4e5a68; /* Change to a blue color */
     width: 85%;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 16px; /* Increase border-radius for a smoother neomorphic effect */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7), -10px -10px 20px rgba(255, 255, 255, 0.3); /* Add neomorphic box-shadow */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -38,7 +38,7 @@ td {
     border: 1px solid #00bcd4;
     padding: 8px;
     text-align: left;
-    background-color: #333;
+    background-color: #4e5a68; /* Change to a blue color */
     color: #fff;
 }
 
@@ -48,14 +48,27 @@ th {
 
 select {
     width: 100%;
+    padding: 8px;
+    background-color: #57697a; /* Change to a darker blue color */
+    color: #fff;
+    border: 1px solid #00bcd4;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
 }
 
 button {
     padding: 10px;
     background-color: #00bcd4;
-    color: #333;
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), -3px -3px 8px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease; /* Add a smooth transition for the background color change */
+
+}
+
+button:hover {
+    background-color: #008ba3; /* Change to a darker shade of blue on hover */
 }
