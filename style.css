@@ -187,7 +187,7 @@ section {
 }
 
 .comp-section h1 {
-    font-size: 96px;
+    font-size: 65px;
 }
 
 .comp-section h3 {
@@ -321,6 +321,9 @@ section {
         height: 6rem;
         width: 50rem;
     }
+    .comp-section h1 {
+        font-size: 55px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -361,7 +364,7 @@ section {
     }
 
     .compcontainer h1 {
-        font-size: 400%;
+        font-size: 300%;
         padding-bottom: 10px;
     }
 
