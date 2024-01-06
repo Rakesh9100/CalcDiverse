@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --primary: #ff1b82;
     --secondary: #f4eff0;
@@ -14,6 +16,7 @@
     box-sizing: border-box;
     font-family: poppins;
     font-family: Ubuntu;
+    font-family: inter;
 }
 
 /* Scrollbar Css */
@@ -27,14 +30,14 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--dark);
+    background: grey;
 }
 
 body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #5b0053;
+    
     font-size: 1.4rem;
 }
 
@@ -44,8 +47,8 @@ html {
 
 body,
 html {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    
+
     line-height: 1.4;
     scroll-behavior: smooth;
 }
@@ -54,7 +57,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: linear-gradient(315deg, var(--ternary), var(--light));
+    background: #0B0B0B
 }
 
 .navbar {
@@ -76,7 +79,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    box-shadow: 0px 5px 10px 0px var(--dark);
+    box-shadow: 3px 1px 5px white;
+    
 }
 
 nav ul {
@@ -84,15 +88,21 @@ nav ul {
     gap: 3.5rem;
 }
 
-nav li {
-    font-size: 2.3rem;
+nav li{
+    color: #FFF;
+    text-shadow: 8px 12px 24px rgba(0, 0, 0, 0.05);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 150% */
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
     margin-right: 10px;
 }
 
 nav li:hover {
-    border-bottom: 0.4rem var(--light) solid;
+    border-bottom: 0.4rem #024edb solid;
     transition: 0.3s ease-in-out;
 }
 
@@ -101,7 +111,7 @@ nav li:hover {
     font-weight: 700;
     margin-left: 10px;
     font-family: Ubuntu;
-    color: var(--dark);
+    color: white;
 }
 .hamburger {
     display: none;
@@ -123,7 +133,11 @@ section {
     scroll-margin-top: 50px;
     z-index: 100;
 }
-
+.comp-section{
+    background: url(./assets/landing_Image.png), lightgray 50% / cover no-repeat; 
+    background-size: cover;
+    
+}
 .comp-section .compcontainer .logo img {
     width: 250px;
     margin-bottom: -25px;
@@ -137,44 +151,48 @@ section {
     z-index: 200;
 }
 
-.comp-section .compcontainer h1 {
-    font-size: 7rem;
-    text-shadow: 2px 2px 10px var(--light);
-}
 
-.comp-section .compcontainer h3 {
-    font-weight: 300;
-    font-size: 2.8rem;
-}
+
 
 .comp-section .compcontainer a {
     margin-top: 50px;
 }
 
 .comp-section .compcontainer .started {
-    font-size: 25px;
-    font-weight: 900;
+    width: 336px;
+    height: 59px;
+    flex-shrink: 0;
+    color: #FFF;
+font-family: Inter;
+font-size: 17.9px;
+font-style: normal;
+font-weight: 600;
+line-height: 27px; /* 150.838% */
+letter-spacing: 0.1px;
     margin-top: 21px;
     padding: 10px 45px;
-    border-radius: 45px;
-    color: var(--light);
-    background: var(--dark);
+    border-radius: 12px;
+    background: #076EFF;
     cursor: pointer;
-    transition: transform 0.5s;
+    transition: transform 0.1s;
 }
 
 .comp-section .compcontainer .started:hover {
-    transform: scale(1.1);
-    border: 5px solid var(--ternary);
+    transform: scale(1.01);
+    
 }
 
 .paragraph {
-    font-size: 2rem;
-    width: 70%;
+    color: #4E616B;
     text-align: center;
-    margin: auto;
-    padding: 20px;
-    color: var(--secondary);
+    font-family: Inter;
+    font-size: 17.9px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px; /* 150.838% */
+    padding-left: 29%;
+    padding-right: 29%;
+    padding-top:13px;
 }
 
 .comp-section {
@@ -188,100 +206,159 @@ section {
 }
 
 .comp-section h1 {
-    font-size: 96px;
+    color: #000;
+    text-shadow: 8px 12px 24px rgba(0, 0, 0, 0.05);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
 }
 
 .comp-section h3 {
-    font-size: 32px;
+    padding-left: 29%;
+    padding-right: 29%;
+    padding-top: 8.5px;
+    color: #000;
+
+    text-align: center;
+    text-shadow: 8px 12px 24px rgba(0, 0, 0, 0.05);
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 120% */
+    letter-spacing: -0.5px;
 }
+
+
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 90px;
+    
     padding: 50px 0;
+    background: #0B0B0B;
+    
 }
 
 .container .box {
     position: relative;
-    width: 300px;
-    height: 320px;
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 36px 25px;
+    width: 384px;
+height: 279px;
+    justify-content: left;
+    align-items: left;
+    margin: 15px 10px;
     transition: transform 0.1s;
-    background: var(--secondary);
-    border: 5px solid var(--dark);
-    border-radius: 14px;
-    box-shadow: 2px 2px 4px 2px var(--light);
+    border-radius: 24px;
+    background: #171C1F;
+    box-shadow: 0px 0px 3px white;
 }
 
 .container .box .content {
+    display: flex;
     position: relative;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
     left: 0;
     padding: 20px 40px;
-    text-align: center;
+    text-align: left;
     transition: 0.5s;
+
 }
 
 .container .box .content h2 {
-    font-size: 25px;
-    color: var(--ternary);
+    display: flex;
+    flex-direction: column;
+align-items: flex-start;
+flex-shrink: 0;
+    color: #FFF;
+font-family: Inter;
+font-size: 17.9px;
+font-style: normal;
+font-weight: 600;
+line-height: 27px; /* 150.838% */
     margin-top: 21px;
-    text-decoration: underline dashed;
+   justify-content: left;
     cursor: pointer;
 }
 
 .container .box .content h3 {
-    font-size: 19px;
-    color: var(--primary);
-    margin-top: 21px;
+    
+    justify-content: left;
+    color: #83939C;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    margin-top: 11px;
     transition: all 0.3s;
 }
 
 .container .box .content button {
     float: left;
     cursor: pointer;
-    font-size: 21px;
-    font-weight: 900;
-    color: var(--ternary);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFF;
     margin-top: 21px;
     margin-bottom: 10px;
     padding: 9px 14px;
-    border-radius: 36px;
-    background-color: var(--light);
-    border: 5px solid var(--primary);
+    border-radius: 12px;
+    background-color: #076EFF;
+    transition: all 0.3s;
+   
 }
 
 .container .box .content button:hover {
-    transform: rotate(-10deg);
+    transform: scale(1.01);
+    color: #83939C ;
+    background-color:#FFF;
 }
 
 .container .box .content img {
-    float: right;
+   
     cursor: pointer;
-    height: 36px;
-    width: 36px;
-    font-weight: 900;
-    color: var(--ternary);
-    margin-top: 45px;
-    margin-right: -25px;
+    
+    height: 24px;
+    width: 24px;
+    
+    margin-left: 2px;
     border-radius: 25px;
-    background-color: var(--light);
-    border: 4px solid var(--primary);
+    background-color: #fff;
 }
 
 .container .box .content img:hover {
-    transform: rotate(10deg);
+    transform: scale(1.1);
 }
 
 /* Footer Css */
 
 /* Media Queries */
 
+@media (max-width: 1370px) {
+   
+    .compcontainer h3 {
+        font-size:350%;
+        line-height: 60px;
+        
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .compcontainer p {
+       
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+}
 @media (max-width: 1030px) {
     .comp-section {
         flex-direction: column;
@@ -289,6 +366,19 @@ section {
         width: auto;
         height: 80vh;
     }
+    .compcontainer h3 {
+        
+   
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .compcontainer p {
+        
+   
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
 }
 
 @media (max-width: 925px) {
@@ -302,6 +392,18 @@ section {
     .compcontainer {
         border: 1px transparent;
         padding-bottom: 10px;
+    }
+    .compcontainer h3 {
+        
+   
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .compcontainer p {
+        
+   
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
 
@@ -322,9 +424,15 @@ section {
         height: 6rem;
         width: 50rem;
     }
+    .compcontainer h3 {
+        
+        font-size:270%;
+        
+    }
+   
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
     .comp-section {
         height: 98vh;
     }
@@ -339,6 +447,46 @@ section {
         width: 30rem;
         font-size: 1.6rem;
     }
+    .compcontainer h3 {
+        
+        font-size:200%;
+        line-height: 35px;
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
+    .compcontainer p {
+        margin-top:5px;
+        font-size:15px;
+        line-height: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        
+    }
+    
+
+}
+
+@media (max-width: 450px) {
+    
+    .compcontainer h3 {
+        
+        font-size:200%;
+        line-height: 30px;
+        padding-left: 5%;
+        padding-right: 5%;
+        
+    }
+    .compcontainer p {
+        margin-top:5px;
+        font-size:12px;
+        line-height: 17px;
+        padding-left: 5%;
+        padding-right: 5%;
+   
+       
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -359,20 +507,7 @@ section {
         padding: 40px;
     }
 
-    .compcontainer h1 {
-        font-size: 400%;
-        padding-bottom: 40px;
-    }
-
-    .compcontainer h3 {
-        font-size: 200%;
-        padding-bottom: 40px;
-    }
-
-    .compcontainer p {
-        font-size: 120%;
-        text-align: center;
-    }
+   
 
     .nav-menu.active {
         left: 0;
@@ -415,14 +550,16 @@ section {
 .contributors h1 {
     font: 5.5vw/1 Permanent Marker;
     text-align: center;
-    color: white;
+    color: #0B0B0B;
     font-size: 4.5rem;
-    margin-bottom: 4%;
+    margin-bottom: 33px;
+    font-family: Inter;
+    font-weight: 600;
+    margin-top: 39px;
+    
 }
 
-.contributors h1:hover {
-    text-decoration: underline;
-}
+
 
 #contributor {
     margin: 0;
@@ -438,10 +575,11 @@ section {
     clip-path: polygon(50% 0%, 91% 25%, 91% 75%, 50% 100%, 9% 75%, 9% 25%);
     margin: 5px;
     transition: transform 0.3s ease-in-out , opacity 0.3s ease-in-out;
+   
 }
 
 .contributor-card:hover{
-    transform: scale(1.35);
+    transform: scale(1.2);
     opacity: 0.85;
 }
 
@@ -449,6 +587,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 
 .contributor-card:nth-child(4n+1),
