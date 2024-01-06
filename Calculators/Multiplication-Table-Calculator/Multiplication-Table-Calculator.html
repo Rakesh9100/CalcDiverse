@@ -14,22 +14,22 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="calculator-container">
         <section>
             <h3 id="title" class="text-center">Multiplication Table Calculator</h3>
-            <p style="text-align:center;font-size:12px;margin-bottom: 50px;margin-top: -30px;">(get the table of any number simply by typing the number itself and the range)</p>
+            <p>(get the table of any number simply by typing the number itself and the range)</p>
             <form onsubmit="return false">
                 <div class="form-group">
                     <div class="col-md-12">
                         <input type="number" id="txtNumber" class="form-control" min="0"
-                            placeholder="Enter the number whose table you want... ">
+                            placeholder="Enter the number for table">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-md-12">
                         <input type="number" id="txtInterval" class="form-control" min="0" max="100"
-                            placeholder="Range or the maximum number you wanted your table should be..">
-                        <span class="small" style="color:black">The maximum value in the range is 100, as larger values ​​can crash your browser.</span>
+                            placeholder="Range till where the table is needed">
+                        <div class="small">The maximum value in the range is 100, as larger values ​​can crash your browser.</div>
         
                     </div>
                 </div>
