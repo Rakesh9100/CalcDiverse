@@ -473,9 +473,9 @@ section {
     padding:40px 0;
     background-color:#1b1b1b;
     color:#024edb;
-  }
+}
   
-  .footer-basic ul {
+.footer-basic ul {
     padding:0;
     list-style:none;
     text-align:center;
@@ -486,22 +486,22 @@ section {
     justify-content: center;
 }
   
-  .footer-basic li {
+.footer-basic li {
     padding:0 10px;
-  }
+}
   
-  .footer-basic ul a {
+.footer-basic ul a {
     color:inherit;
     text-decoration:none;
     opacity:0.8;
-  }
+}
   
-  .footer-basic ul a:hover {
+.footer-basic ul a:hover {
     opacity:1;
     color: rgb(21, 153, 206);
-  }
+}
   
-  .footer-basic .social {
+.footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
 }
@@ -535,13 +535,12 @@ section {
 }
 
   
-  .footer-basic .copyright {
+.footer-basic .copyright {
     margin-top:15px;
     text-align:center;
     font-size:13px;
     color:rgb(255, 255, 255);
     margin-bottom:0;
-  }
+}
 
-
-  /* ------------------------------------Footer Styling Ends -------------------------------- */
+/* ------------------------------------Footer Styling Ends -------------------------------- */

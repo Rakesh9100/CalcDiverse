@@ -10,9 +10,9 @@ body {
     
 }
 .content{
-    background-color: rgb(234, 230, 231); /* Set the background color to pink */
-    padding: 30px; /* Adjust padding as needed */
-    border: 1px solid #efeced; /* Border color for the pink box */
+    background-color: rgb(234, 230, 231);
+    padding: 30px;
+    border: 1px solid #efeced;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
