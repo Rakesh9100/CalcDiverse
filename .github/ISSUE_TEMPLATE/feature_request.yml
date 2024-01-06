@@ -1,7 +1,6 @@
 name: Feature Request 💡
 description: Have any new idea or new feature? Please suggest!
 title: "[Feature] <write a small description here>"
-labels: ["enhancement"]
 body:
   - type: textarea
     id: description
