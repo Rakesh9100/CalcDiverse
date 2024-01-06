@@ -15,11 +15,16 @@ function calculate() {
     if (age.value == '' || height.value == '' || weight.value == '' || (male.checked == false && female.checked == false)) {
         modal.style.display = "block";
         modalText.innerHTML = 'ALL fields are required!';
+    } else if (!isPositiveNumber(height.value) || !isPositiveNumber(weight.value)) {
+        modal.style.display = "block";
+        modalText.innerHTML = 'Please enter valid positive values for height and weight!';
     } else {
         countBmi();
     }
 }
-
+function isPositiveNumber(value) {
+    return /^\d*\.?\d+$/.test(value) && parseFloat(value) > 0;
+}
 function countBmi() {
     var p = [age.value, height.value, weight.value];
     if (male.checked) {
@@ -27,6 +32,13 @@ function countBmi() {
     } else if (female.checked) {
         p.push("female");
     }
+
+    if (!isPositiveNumber(p[0]) || !isPositiveNumber(p[1]) || !isPositiveNumber(p[2])) {
+        modal.style.display = "block";
+        modalText.innerHTML = 'Please enter valid positive values for age, height and weight!';
+        return;
+    }
+
     var bmi = Number(p[2]) / (Number(p[1]) / 100 * Number(p[1]) / 100);
     var result = '';
     if (bmi < 18.5) {
