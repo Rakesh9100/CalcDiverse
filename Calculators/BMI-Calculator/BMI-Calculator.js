@@ -1,9 +1,14 @@
 function calculateBMI() {
-    var height = document.getElementById('height').value;
-    var weight = document.getElementById('weight').value;
+    var heightInput = document.getElementById('height');
+    var weightInput = document.getElementById('weight');
 
-    if (height === "" || weight === "") {
-        alert("Please enter both height and weight");
+    var height = parseFloat(heightInput.value);
+    var weight = parseFloat(weightInput.value);
+
+    if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
+        alert("Please enter valid positive values for both height and weight");
+        heightInput.value = "";
+        weightInput.value = "";
         return;
     }
 
