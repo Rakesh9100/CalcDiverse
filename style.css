@@ -27,7 +27,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--dark);
+    background: var(--primary);
 }
 
 body {
@@ -54,7 +54,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: linear-gradient(315deg, var(--ternary), var(--light));
+    background: linear-gradient(315deg, #ff1b82 , #4597f5, #000000) ;
 }
 
 .navbar {
@@ -63,7 +63,8 @@ header {
 
 a {
     text-decoration: none;
-    color: var(--secondary);
+    color: #e0dd00 ;
+    text-shadow: 2px 2px 2px #000000;
     font-weight: 500;
 }
 
@@ -76,7 +77,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    box-shadow: 0px 5px 10px 0px var(--dark);
+    box-shadow: 0px 5px 10px 0px var(--secondary);
 }
 
 nav ul {
@@ -92,8 +93,8 @@ nav li {
 }
 
 nav li:hover {
-    border-bottom: 0.4rem var(--light) solid;
-    transition: 0.3s ease-in-out;
+    border-bottom: 0.4rem var(--secondary) solid;
+    transition:0.3s ease-in-out;
 }
 
 .logo {
@@ -101,8 +102,14 @@ nav li:hover {
     font-weight: 700;
     margin-left: 10px;
     font-family: Ubuntu;
-    color: var(--dark);
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
 }
+
+.logo:hover {
+    color: #b400a5; /* Change to the desired color of logo when hovered */
+}
+
 .hamburger {
     display: none;
 }
