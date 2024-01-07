@@ -1,5 +1,6 @@
 var order = 3;
 function run(prop) {
+    // getorder(prop);
     showDiv(prop);
 }
 
@@ -51,7 +52,6 @@ function calculateRank3x3() {
     // Create a deep copy of the matrix
     let rowEchelonMatrix = matrix.map(row => [...row]);
 
-    // Perform row reduction to find row-echelon form
     for (let i = 0; i < 3; i++) {
         let pivotRow = i;
         for (let j = i + 1; j < 3; j++) {
@@ -74,16 +74,19 @@ function calculateRank3x3() {
 
     let rank = 0;
     for (let i = 0; i < 3; i++) {
+        let allZeros = true;
         for (let j = 0; j < 3; j++) {
             if (rowEchelonMatrix[i][j] !== 0) {
-                rank++;
+                allZeros = false;
                 break;
             }
+        }
+        if (!allZeros) {
+            rank++;
         }
     }
 
     document.getElementById("resultRank3x3").innerHTML = `Rank = ${rank}`;
-    console.log(matrix);
 }
 function multiplyMatrices() {
     // Get values from input fields
