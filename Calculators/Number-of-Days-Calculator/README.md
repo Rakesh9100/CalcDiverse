@@ -12,4 +12,4 @@ Calculates the number of days between two particular specified dates.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/cf20f402-67be-4ba5-92de-17d4c76fa893)
+![image](https://github.com/kom-senapati/CalcDiverse/assets/92045934/c3a205cd-d10a-4e0b-976a-fd2bd5d15c25)

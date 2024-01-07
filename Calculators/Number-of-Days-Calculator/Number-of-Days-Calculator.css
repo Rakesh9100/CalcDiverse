@@ -89,6 +89,8 @@ button:hover {
 #output {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1em;
+    text-align: center;
+    padding-left: 5%;
 }
 
 #output span {
