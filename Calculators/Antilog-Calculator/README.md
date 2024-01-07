@@ -9,3 +9,6 @@ This is an Antilog Calculator that calculates the antilog value of a given numbe
 - HTML
 - CSS
 - JavaScript
+
+### Sample Images:
+![Antilog-Calculator](image.png) 
