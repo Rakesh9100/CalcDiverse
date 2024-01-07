@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Operations Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Matrix Operations</h1><br><br>
+    <label for="matrix">Select the Operation: </label>
+    <select name="order" onchange="run(this)">
+        <option value="none">None</option>
+        <option value="3x3" id="3">3x3</option>
+        <!-- <option value="4x4" id="4">4x4</option> -->
+    </select>
+    <select name="Matrix" onchange="run(this)">
+        <option value="None">None</option>
+        <option value="MatrixRank">Matrix Rank</option>
+        <option value="MatrixMultiplication">Matrix Multiplication</option>
+        <option value="MatrixInverse">Matrix Inverse</option>
+    </select>
+
+
+    <br><br><br>
+
+
+    <div id="MatrixRank3x3" class="matrix" style="height: 600px;">
+        <p>
+            <input type="number" id="a11">
+            <input type="number" id="a12">
+            <input type="number" id="a13">
+            <br>
+            <input type="number" id="a21">
+            <input type="number" id="a22">
+            <input type="number" id="a23">
+            <br>
+            <input type="number" id="a31">
+            <input type="number" id="a32">
+            <input type="number" id="a33">
+
+        </p>
+        <p id="resultRank3x3">Rank = </p>
+        <button onclick=calculateRank3x3()>Calculate</button>
+    </div>
+    <div id="MatrixMul" class="Matrix">
+        Matrix 1:
+        <br>
+        <input type="number" id="ma11">
+        <input type="number" id="ma12">
+        <input type="number" id="ma13">
+        <br>
+        <input type="number" id="ma21">
+        <input type="number" id="ma22">
+        <input type="number" id="ma23">
+        <br>
+        <input type="number" id="ma31">
+        <input type="number" id="ma32">
+        <input type="number" id="ma33">
+        <br>
+        Matrix 2:
+        <br>
+        <input type="number" id="Ma11">
+        <input type="number" id="Ma12">
+        <input type="number" id="Ma13">
+        <br>
+        <input type="number" id="Ma21">
+        <input type="number" id="Ma22">
+        <input type="number" id="Ma23">
+        <br>
+        <input type="number" id="Ma31">
+        <input type="number" id="Ma32">
+        <input type="number" id="Ma33">
+
+
+        <div id="resultMatrix" class="Matrix" style="height: 250px; font-size: large; text-align: center;">
+            Result:
+            <br>
+            <span class="resultCol" id="result11"></span>
+            <span class="resultCol" id="result12"></span>
+            <span class="resultCol" id="result13"></span>
+            <br>
+            <span class="resultCol" id="result21"></span>
+            <span class="resultCol" id="result22"></span>
+            <span class="resultCol" id="result23"></span>
+            <br>
+            <span class="resultCol" id="result31"></span>
+            <span class="resultCol" id="result32"></span>
+            <span class="resultCol" id="result33"></span>
+        </div>
+
+        <button onclick="multiplyMatrices()">Multiply</button>
+
+    </div>
+    <div id="matrixInverse">
+        <p>
+            <input type="number" id="Ia11">
+            <input type="number" id="Ia12">
+            <input type="number" id="Ia13">
+            <br>
+            <input type="number" id="Ia21">
+            <input type="number" id="Ia22">
+            <input type="number" id="Ia23">
+            <br>
+            <input type="number" id="Ia31">
+            <input type="number" id="Ia32">
+            <input type="number" id="Ia33">
+
+        </p>
+        <div id="inverseMatrix" class="Matrix" style="height: 250px; font-size: large; text-align: center;">
+            <!-- Result: -->
+            <p >Result: </p>
+            <p id="Inresult"> </p>
+            <br>
+            <span id="resultI11"></span>
+            <span id="resultI12"></span>
+            <span id="resultI13"></span>
+            <br>
+            <span id="resultI21"></span>
+            <span id="resultI22"></span>
+            <span id="resultI23"></span>
+            <br>
+            <span id="resultI31"></span>
+            <span id="resultI32"></span>
+            <span id="resultI33"></span>
+        </div>
+        <button onclick=calculateInverse()>Find Inverse</button>
+    </div>
+</body>
+
+</html>
