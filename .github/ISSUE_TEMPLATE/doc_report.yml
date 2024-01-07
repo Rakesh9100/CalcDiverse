@@ -1,7 +1,6 @@
 name: Documentation request 📃
 description: Change regarding improving the docs to be more accessible
 title: '[docs]'
-labels: ['documentation']
 body:
   - type: textarea
     attributes:

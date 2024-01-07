@@ -1,7 +1,6 @@
 name: 👯‍♂️ Style Changing Request
 description: Suggest a style designs
 title: '[style]'
-labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
