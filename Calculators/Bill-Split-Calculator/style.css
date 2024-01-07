@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: x-large;
+    background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 25%;
+    background-color: #413543;
+    color: #F0EB8D;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1.2);
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+input {
+    font-size: 18px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0 10px 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: violet;
+}
+
+.result {
+    color: #2D2727;
+    background-color: white;
+    font-size: large;
+    margin-top: 20px;
+    padding: 3%;
+    border-radius: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css-button-sliding-to-left--green {
+    font-size: large;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #57cc99;
+    color: #57cc99;
+}
+
+
+.css-button-sliding-to-left--grey {
+    font-size: large;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 3px solid #495057;
+    border-radius: 3px;
+    color: #495057;
+}
+
+.css-button-sliding-to-left--grey:hover {
+    color: #fff;
+}
+
+.css-button-sliding-to-left--grey:hover:after {
+    width: 100%;
+}
+
+.css-button-sliding-to-left--grey:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #495057;
+}
