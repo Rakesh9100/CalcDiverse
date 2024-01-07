@@ -25,7 +25,6 @@ submit.addEventListener("click", () => {
         let perc = (dayDifference / 3.65);
         
         output.innerHTML = `
-        <div style="text-align: center;">
         <span>Result: <b>${dayDifference.toFixed(2)} days</b></span><br><br>
         It is ${dayDifference.toFixed(0)} days from the start date to the end date, but not including both the start date and the end date.<br><br>
         <h4>Expressed in other units : </h4><br>
@@ -33,8 +32,7 @@ submit.addEventListener("click", () => {
         ${perc.toFixed(2)}% of ${date2.getFullYear()}
         ${hourDifference.toFixed(0)} hours<br>
         ${minuteDifference.toFixed(0)} minutes<br>
-        ${secDifference.toFixed(0)} seconds<br>
-        </div>`;
+        ${secDifference.toFixed(0)} seconds<br>`;
     }
     
     // Else display that the input is invalid
