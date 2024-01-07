@@ -12,4 +12,4 @@ Calculates the Simple intrest.
 
 ## Screenshots :-
 
-![Alt text](image.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/134225415/8dfa666b-5d22-4def-9916-cbeb95cee9b7)
