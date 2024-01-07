@@ -144,8 +144,7 @@ section {
     z-index: 200;
 }
 
-.comp-section .compcontainer h1 {
-    font-size: 7rem;
+.comp-section .compcontainer h1 { 
     text-shadow: 2px 2px 10px var(--light);
 }
 
@@ -177,10 +176,10 @@ section {
 
 .paragraph {
     font-size: 2rem;
-    width: 70%;
+    width: 85%;
     text-align: center;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     color: var(--secondary);
 }
 
@@ -195,7 +194,7 @@ section {
 }
 
 .comp-section h1 {
-    font-size: 96px;
+    font-size: 65px;
 }
 
 .comp-section h3 {
@@ -329,6 +328,9 @@ section {
         height: 6rem;
         width: 50rem;
     }
+    .comp-section h1 {
+        font-size: 55px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -361,19 +363,21 @@ section {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
-
+    .container{
+        margin-top: 170px;
+    }
     .compcontainer {
-        padding: 40px;
+        padding-top: 10px; /*Fixes #107 */
     }
 
     .compcontainer h1 {
-        font-size: 400%;
-        padding-bottom: 40px;
+        font-size: 300%;
+        padding-bottom: 10px;
     }
 
     .compcontainer h3 {
         font-size: 200%;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
 
     .compcontainer p {
@@ -464,14 +468,58 @@ section {
 }
 /* ----------------------------------------------  Contributors Styling Ends  -------------------------------------- */
 
+/* ----------------------------------------------  Scroll to Button Styling  --------------------------------------- */
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    transition: opacity 0.3s, background-color 0.3s;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2),
+                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+#progress:hover{
+    opacity: 1;
+    background-color: #df87ef;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    50%{
+        transform: translateY(-8px);
+    }
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: rgb(104, 98, 232);
+    background: linear-gradient(90deg, rgb(159, 157, 235) 0%, rgb(212, 153, 222) 39%, rgb(253, 199, 134) 100%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    color: black;
+}
+/* -------------------------------------------  Scroll to Button Styling Ends  ------------------------------------- */
+
 /*-----------------------------------------------   Updated  Footer  Styling  ---------------------------------------*/
 .footer-basic {
     padding:40px 0;
     background-color:#1b1b1b;
     color:#024edb;
-  }
+}
   
-  .footer-basic ul {
+.footer-basic ul {
     padding:0;
     list-style:none;
     text-align:center;
@@ -482,22 +530,22 @@ section {
     justify-content: center;
 }
   
-  .footer-basic li {
+.footer-basic li {
     padding:0 10px;
-  }
+}
   
-  .footer-basic ul a {
+.footer-basic ul a {
     color:inherit;
     text-decoration:none;
     opacity:0.8;
-  }
+}
   
-  .footer-basic ul a:hover {
+.footer-basic ul a:hover {
     opacity:1;
     color: rgb(21, 153, 206);
-  }
+}
   
-  .footer-basic .social {
+.footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
 }
@@ -531,13 +579,12 @@ section {
 }
 
   
-  .footer-basic .copyright {
+.footer-basic .copyright {
     margin-top:15px;
     text-align:center;
     font-size:13px;
     color:rgb(255, 255, 255);
     margin-bottom:0;
-  }
+}
 
-
-  /* ------------------------------------Footer Styling Ends -------------------------------- */
+/* ------------------------------------Footer Styling Ends -------------------------------- */

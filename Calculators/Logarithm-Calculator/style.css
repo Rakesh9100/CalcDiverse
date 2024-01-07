@@ -1,0 +1,34 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: rgb(113, 105, 201);
+}
+#heading{
+    text-align: center;
+    
+}
+.content{
+    background-color: rgb(234, 230, 231);
+    padding: 30px;
+    border: 1px solid #efeced;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 30px;
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+}
+#base{
+    padding: 10px 15px 10px 10px ;
+    margin-bottom: 15px;
+}
+#number{
+    padding: 10px 15px 10px 10px;
+    margin-bottom: 10px;
+}
+#button{
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+}

@@ -1,4 +1,4 @@
-# <p align="center">Currency Converter Calculator</p>
+# <p align="center">Currency Calculator</p>
 
 ## Description :-
 
