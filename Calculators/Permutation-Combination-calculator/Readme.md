@@ -31,6 +31,4 @@ For example, to calculate the permutation 4P2:
 
 ## Screenshot
 
-![ss for permutation-combination-calculator](<permutation-combination-calculator ss.png>)
-
-
+![ss for permutation-combination-calculator ](<permutation-combination-calculator ss.png>)
