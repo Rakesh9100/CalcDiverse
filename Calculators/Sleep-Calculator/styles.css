@@ -32,7 +32,7 @@ text-align: center;
 position: relative;
 }
 
-.container-box .input-box input, .container-box .input-box select {
+.container-box .input-box input {
 width: 100%;
 padding: 10px 0;
 font-size: 16px;
@@ -44,7 +44,7 @@ outline: none;
 background: transparent;
 }
 
-.container-box .input-box label {
+.container-box .input-box label{
 position: absolute;
 top:0;
 left: 0;
@@ -55,6 +55,34 @@ pointer-events: none;
 transition: .5s;
 }
 
+.container-box .input-box option{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.container-box .input-box select{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.container-box .input-box option{
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    padding: 4px;
+}
 
 .container-box .input-box input:focus ~ label,
 .container-box .input-box input:valid ~ label {
