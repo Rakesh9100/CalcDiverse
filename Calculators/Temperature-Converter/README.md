@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculates the Temperature conversion between two specified units..
+Calculates the Temperature conversion between two specified units.
 
 ## Tech Stacks :-
 
