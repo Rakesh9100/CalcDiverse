@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Pressure Converter is a project designed to provide a user-friendly web-based tool for converting pressure values between different units. 
+Pressure Calculator is a project designed to provide a user-friendly web-based tool for converting pressure values between different units. 
 
 ## Features
 

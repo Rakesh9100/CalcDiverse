@@ -1,45 +1,48 @@
-var txtNumber = document.getElementById('txtNumber');
-var txtInterval = document.getElementById('txtInterval');
-var btnGenerate = document.getElementById('btnGenerate');
-var ans = document.getElementById('ans');
+const numberInput = document.getElementById('txtNumber');
+const intervalInput = document.getElementById('txtInterval');
+const generateButton = document.getElementById('btnGenerate');
+const resultOutput = document.getElementById('ans');
 
 document.addEventListener('DOMContentLoaded', onFocus);
-btnGenerate.addEventListener('click', onClick);
-txtInterval.addEventListener('keydown', onKeyDown);
-txtNumber.addEventListener('keydown', onKeyDown);
- 
+generateButton.addEventListener('click', onClick);
+intervalInput.addEventListener('keydown', onKeyDown);
+numberInput.addEventListener('keydown', onKeyDown);
+
 function onClick() {
-    let count = 0;
-    if (!validateNumber(txtNumber.value)) {
-        while (count <= txtInterval.value) {
-            ans.innerHTML += parseFloat(txtNumber.value) + ' X ' + count + ' = ' + (parseFloat(txtNumber.value) * count) + '<br>';
-            count++;
-        }
-        validateInterval(txtInterval.value);
+    const number = parseFloat(numberInput.value);
+    const interval = parseFloat(intervalInput.value);
+    
+    if (validateInputs(number, interval)) {
+        displayErrorMessage("Please enter a valid number and interval.");
+        return;
     }
-    return count;
+
+    if (number < 0) {
+        displayErrorMessage("Number must be greater than or equal to 0.");
+        return;
+    }
+
+    resultOutput.innerHTML = ''; // Clear previous results
+
+    for (let count = 0; count <= interval; count++) {
+        resultOutput.innerHTML += `${number} X ${count} = ${number * count}<br>`;
+    }
 }
 
-function validateNumber(number) {
-    let ret = false;
-    if (number == '') ret = true;
-    else if (number != '' && ans != '') ans.innerHTML = '';
-    return ret;
+function validateInputs(number, interval) {
+    return isNaN(number) || isNaN(interval) || number === '' || interval === '';
 }
 
-function validateInterval(interval) {
-    let ret = false;
-    if (interval > 100) {
-        ans.innerHTML = '';
-        ret = true;
-    }
-    return ret;
+function displayErrorMessage(message) {
+    resultOutput.innerHTML = `<span style="color: red;">${message}</span>`;
 }
 
 function onKeyDown(e) {
-    if (e.key === 'e') e.preventDefault();
+    if (e.key === 'e') {
+        e.preventDefault();
+    }
 }
 
 function onFocus() {
-    txtNumber.focus();
+    numberInput.focus();
 }
