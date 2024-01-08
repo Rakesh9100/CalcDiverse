@@ -118,6 +118,9 @@ label {
     input {
         width: 12vw;
     }
+    .header {
+        font-size: 2.5rem;
+    }
 }
 @media screen and (max-width: 576px) {
     .answer{
@@ -133,5 +136,8 @@ label {
     }
     body::before {
         background-image: linear-gradient(rgb(125, 133, 182),rgb(185, 126, 212));
+    }
+    .header {
+        font-size: 2rem;
     }
 }
