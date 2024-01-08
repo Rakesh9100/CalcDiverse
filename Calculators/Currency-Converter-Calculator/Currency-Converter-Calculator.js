@@ -45,14 +45,30 @@ function getResults() {
 		}).then(displayResults);
 }
 
-// display results after convertion
 function displayResults(currency) {
-	let fromRate = currency.rates[resultFrom];
-	let toRate = currency.rates[resultTo];
-	finalValue.innerHTML =
-	((toRate / fromRate) * searchValue).toFixed(2);
-	finalAmount.style.display = "block";
+    if (!resultFrom || !resultTo) {
+        alert("Please select both 'From' and 'To' currencies");
+        return;
+    }
+
+    let fromRate = currency.rates[resultFrom];
+    let toRate = currency.rates[resultTo];
+
+    if (fromRate === undefined || toRate === undefined) {
+        console.error("Invalid currency codes:", resultFrom, resultTo);
+        alert("Invalid currency codes. Please select valid currencies.");
+        return;
+    }
+
+    let convertedAmount = ((toRate / fromRate) * searchValue).toFixed(2);
+
+    // Display the result with a custom message
+    finalAmount.innerHTML = `<span style="color:lightsalmon ;"> Converted Amount </span> <br/>
+    <span style="color: aquamarine;">${searchValue} ${resultFrom} = ${convertedAmount} ${resultTo}</span>`;
+    finalAmount.style.display = "block";
+    finalAmount.style.fontSize= "30px";
 }
+
 
 // when user click on reset button
 function clearVal() {
