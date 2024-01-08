@@ -1,30 +1,50 @@
 
+// eventlistener for submit button
 const button = document.querySelector('.btn')
 button.addEventListener('click', function () {
     const age = document.getElementById('age-input').value
     ageErrorHandler(age)
-    getUserActivityLevel()
-    console.log(age)
+
+    const dropdown = getUserActivityLevel()
+    const sleepDuration = calculateSleepDuration(age, dropdown)
+    displaySleepDuration(sleepDuration)
 })
 
 
+
+const displaySleepDuration = (sleepDuration) =>{
+    const contentBox = document.querySelector('.content-box')
+
+    var displayDiv = document.createElement('div')
+    displayDiv.className = 'content'
+
+    displayDiv.textContent = `You need ${sleepDuration} hrs of sleep.`
+
+    contentBox.appendChild(displayDiv)
+}
+
+
+
+
+// get the user selected activity level from dropdown
 const getUserActivityLevel = () =>{
     const dropdown = document.getElementById('dropdown').value
-    console.log(dropdown)
+    return dropdown
 }
 
 const ageErrorHandler = (age) =>{
     if(age > 100 || age < 0){
         const errorContainer = document.querySelector('.error-container')
 
-        var errorDiv = document.createElement("div");
+        var errorDiv = document.createElement("div")
         errorDiv.className = "error-box"
 
         // Set the error message as the content of the div
-        errorDiv.textContent = "Age should be between 1 and 100";
+        errorDiv.textContent = "Age should be between 1 and 100"
     
         // Append the div to the body or any other container element
-        errorContainer.appendChild(errorDiv);
+        errorContainer.appendChild(errorDiv)
+        return 0
     }
     else{
         var existingError = document.querySelector('.error-box');
@@ -63,11 +83,11 @@ function getAgeGroup(age) {
     if (age >= 13 && age <= 18) return "13-18";
     if (age >= 19 && age <= 25) return "19-25";
     if (age >= 26 && age <= 64) return "26-64";
-    if (age >= 65) return "65+";
+    if (age >= 65 && age <= 100) return "65+";
     return null; // Handle cases where age is outside the specified ranges
 }
 
 function getActivityLevelIndex(activityLevel) {
-    const activityLevels = ["Sedentary", "Exercise 1-3 times/week", "Exercise 4-5 times/week", "Daily exercise", "Intense exercise 6-7 times/week", "Very intense exercise daily, or physical job"];
+    const activityLevels = ["Sedentary: little or no exercise", "Exercise 1-3 times/week", "Exercise 4-5 times/week", "Daily exercise", "Intense exercise 6-7 times/week", "Very intense exercise daily, or physical job"];
     return activityLevels.indexOf(activityLevel);
 }
