@@ -7,7 +7,7 @@
 }
 body::before {
     content:"";
-    background: url("../../assets/images/3dVolume-bg.jpg") no-repeat center center/cover;
+    background: url("./assets/3dVolume-bg.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
