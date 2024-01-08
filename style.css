@@ -228,7 +228,7 @@ section {
 .container .box .content {
     position: relative;
     left: 0;
-    padding: 20px;
+    padding: 20px 32px;
     text-align: center;
     transition: 0.5s;
 }
@@ -282,7 +282,7 @@ section {
 .container .box .content img:hover {
     transform: rotate(10deg);
 }
-/* Fixes #135 */
+
 .card-footer{
     display: flex;
     align-items: center;
