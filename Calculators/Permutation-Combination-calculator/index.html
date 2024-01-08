@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permutation and Combination Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="permutation-formula">
+    <h2>Permutation-formula: </h2>
+    <h2>n!/(n-r)!</h2>
+</div>
+<div class="combination-formula">
+    <h2>Combination-formula: </h2>
+    <h2>n!/r! <span class="x">x</span> (n-r)!</h2>
+</div>
+<div class="container">
+    <div class="calculator-section">
+        <div class="headings">
+            <h2>Permutation and Combination</h2>
+            <h2 class="heading-line-2">Calculator</h2>
+        </div>
+        <div class="form-field">
+            <input type="number" id="totalItems" min="0" placeholder="Total Items (n):">
+        </div>
+        <div class="form-field">
+            <input type="number" id="chooseItems" min="0" placeholder="Choose Items (r):">
+        </div>
+        <div class="buttons-container">
+          <button class="button-64" role="button"><span class="text" onclick="calculate()">Calculate</span></button>
+          <button class="button-64" role="button"><span class="text" onclick="reset()">Reset</span></button>
+        </div>
+    <div class="result-container">
+        <p id="result"></p>
+    </div>
+    
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
