@@ -63,20 +63,24 @@ const ageErrorHandler = (age) =>{
 }
 
 const dropdownErrorHandler = (dropdownOption) =>{
+    const optionContainer = document.querySelector('.option-container')
+    var existingError = document.querySelector('.option-error-box');
+
     if(dropdownOption === 'Select an option'){
-        const optionContainer = document.querySelector('.option-container')
+        if(!existingError){
+            var errorDiv = document.createElement("div")
+            errorDiv.className = "option-error-box"
 
-        var errorDiv = document.createElement("div")
-        errorDiv.className = "option-error-box"
+            // Set the error message as the content of the div
+            errorDiv.textContent = "You need to select atleast one option."
+        
+            // Append the div to the body or any other container element
+            optionContainer.appendChild(errorDiv)
 
-        // Set the error message as the content of the div
-        errorDiv.textContent = "You need to select atleast one option."
-    
-        // Append the div to the body or any other container element
-        optionContainer.appendChild(errorDiv)
-
-        return 1
+            return 1
+         }
     }
+        
     else{
         var existingError = document.querySelector('.option-error-box');
   
