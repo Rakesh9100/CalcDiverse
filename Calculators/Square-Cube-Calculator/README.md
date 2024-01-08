@@ -2,9 +2,9 @@
 
 ## Description :-
 
-Calculates square and cube of a number.
+Calculates the square and cube of a number.
 
-## Tech Stacks :-
+## Tech Stack :-
 
 - HTML
 - CSS
@@ -12,3 +12,4 @@ Calculates square and cube of a number.
 
 ## Screenshots :-
 
+![image](https://github.com/kom-senapati/CalcDiverse/assets/92045934/88bd5de7-af6f-4976-be6d-e6041c52134f)
