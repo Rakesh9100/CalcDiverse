@@ -32,7 +32,7 @@ text-align: center;
 position: relative;
 }
 
-.container-box .input-box input {
+.container-box .input-box input{
 width: 100%;
 padding: 10px 0;
 font-size: 16px;
@@ -55,7 +55,7 @@ pointer-events: none;
 transition: .5s;
 }
 
-.container-box .input-box option{
+/* .container-box .input-box option{
     position: absolute;
     top: 0;
     left: 0;
@@ -64,25 +64,8 @@ transition: .5s;
     color: #fff;
     pointer-events: none;
     transition: .5s;
-}
+} */
 
-.container-box .input-box select{
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-}
-
-.container-box .input-box option{
-    background: rgba(0,0,0,.5);
-    color: #fff;
-    padding: 4px;
-}
 
 .container-box .input-box input:focus ~ label,
 .container-box .input-box input:valid ~ label {
@@ -203,3 +186,47 @@ animation-delay: .75s
     margin-bottom: 33px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
+
+.select-box{
+    position: relative;
+}
+
+
+.select-box option{
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    padding: 4px;
+}
+
+.select-box label{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.select-box select{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.select-box option:focus ~ label,
+.select-box option:valid ~ label {
+top: -20px;
+left: 0;
+color: #03e9f4;
+font-size: 12px;
+}
