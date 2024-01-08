@@ -1,4 +1,4 @@
-# <p align="center">Weight Convertor</p>
+# <p align="center">Water Intake Calculator</p>
 
 ## Description :-
 
