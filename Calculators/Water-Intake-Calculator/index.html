@@ -1,3 +1,4 @@
+<!-- FILEPATH: /g:/Forked-Repos/CalcDiverse/Calculators/Water-Intake-Calculator/index.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,24 +6,31 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
+    <!-- Calculator section -->
     <div id="calculator">
         <h1>Water Intake Calculator</h1>
+        <!-- Weight input -->
         <label for="weight">Weight (in kg):</label>
         <input type="number" id="weight" name="weight">
+        <!-- Activity Level selection -->
         <label for="activity">Activity Level:</label>
         <select id="activity" name="activity">
             <option value="low">Low</option>
             <option value="medium">Medium</option>
             <option value="high">High</option>
         </select>
+        <!-- Climate selection -->
         <label for="climate">Climate:</label>
         <select id="climate" name="climate">
             <option value="cold">Cold</option>
             <option value="hot">Hot</option>
         </select>
+        <!-- Calculate button -->
         <button onclick="calculateIntake()">Calculate</button>
+        <!-- Result paragraph -->
         <p id="result"></p>
     </div>
+    <!-- JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
