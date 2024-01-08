@@ -3,8 +3,15 @@ const button = document.querySelector('.btn')
 button.addEventListener('click', function () {
     const age = document.getElementById('age-input').value
     ageErrorHandler(age)
+    getUserActivityLevel()
     console.log(age)
 })
+
+
+const getUserActivityLevel = () =>{
+    const dropdown = document.getElementById('dropdown').value
+    console.log(dropdown)
+}
 
 const ageErrorHandler = (age) =>{
     if(age > 100 || age < 0){
