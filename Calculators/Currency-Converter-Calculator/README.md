@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Converts the value of one Currency unit into another Currency unit.
+Updated styles for the Converted Amount text on the homepage.
 
 ## Tech Stacks :-
 
@@ -11,5 +11,4 @@ Converts the value of one Currency unit into another Currency unit.
 - JavaScript
 
 ## Screenshots :-
-
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/86cb068c-841c-4626-8630-d6abb9291fbc)
+![Image](<Enhancement.png>)
