@@ -1,0 +1,57 @@
+/* Set the font family and background color for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Styling for the calculator container */
+#calculator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+}
+
+/* Styling for the heading */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for labels, inputs, selects, and buttons */
+label, input, select, button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Styling for inputs and selects */
+input, select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+/* Styling for buttons */
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for paragraphs */
+p {
+    color: #333;
+}
