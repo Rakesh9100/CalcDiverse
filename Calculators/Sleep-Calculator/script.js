@@ -4,29 +4,35 @@ const button = document.querySelector('.btn')
 button.addEventListener('click', function () {
     // take user age input and check error
     const age = document.getElementById('age-input').value
-    ageErrorHandler(age)
+    const ageError = ageErrorHandler(age)
 
     // take user dropdown option and check error
     const dropdown = getUserActivityLevel()
     const dropdownError = dropdownErrorHandler(dropdown)
-    // if(!dropdownError) {
-    //     const sleepDuration = calculateSleepDuration(age, dropdown)
-    //     displaySleepDuration(sleepDuration)
-    // }
+
+    // display error
+    if( !dropdownError || !ageError ) {
+        const sleepDuration = calculateSleepDuration(age, dropdown)
+        displaySleepDuration(sleepDuration)
+    }
     
 })
 
 const displaySleepDuration = (sleepDuration) =>{
     const contentBox = document.querySelector('.content-box')
-
-    var displayDiv = document.createElement('div')
-    displayDiv.className = 'content'
-
-    displayDiv.textContent = `You need ${sleepDuration} hrs of sleep.`
-
-    contentBox.appendChild(displayDiv)
+    var existingDiv = document.querySelector('.content')
+    
+    if(!existingDiv){
+        var displayDiv = document.createElement('div')
+        displayDiv.className = 'content'
+        contentBox.appendChild(displayDiv)
+        displayDiv.textContent = `You need ${sleepDuration} hrs of sleep.`
+    }
+    else{
+        existingDiv.textContent = `You need ${sleepDuration} hrs of sleep.`
+    }
+   
 }
-
 
 // get the user selected activity level from dropdown
 const getUserActivityLevel = () =>{
@@ -50,7 +56,7 @@ const ageErrorHandler = (age) =>{
             // Append the div to the body or any other container element
             errorContainer.appendChild(errorDiv)
         }
-       
+        return true
     }
     else{
         var existingError = document.querySelector('.error-box');
@@ -59,6 +65,7 @@ const ageErrorHandler = (age) =>{
             // Remove the existing error message if it exists
             existingError.remove();
         }
+        return false
     }
 }
 
@@ -76,9 +83,8 @@ const dropdownErrorHandler = (dropdownOption) =>{
         
             // Append the div to the body or any other container element
             optionContainer.appendChild(errorDiv)
-
-            return 1
          }
+         return true
     }
         
     else{
@@ -88,7 +94,7 @@ const dropdownErrorHandler = (dropdownOption) =>{
             // Remove the existing error message if it exists
             existingError.remove();
         }
-        return 0
+        return false
     }
 }
 
