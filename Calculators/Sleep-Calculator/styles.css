@@ -180,6 +180,14 @@ animation-delay: .75s
 }
 } */
 
+.error-box {
+    background-color: #ffcccc; /* Light red background color */
+    color: #ff0000; /* Red text color */
+    border: 1px solid #ff0000; /* Red border */
+    padding: 10px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 10px; /* Margin at the bottom to separate from other elements */
+}
 
 .input-group {
     position: relative;
@@ -221,12 +229,4 @@ animation-delay: .75s
     border-bottom: 1px solid #fff;
     outline: none;
     background: transparent;
-}
-
-.select-box option:focus ~ label,
-.select-box option:valid ~ label {
-top: -20px;
-left: 0;
-color: #03e9f4;
-font-size: 12px;
 }
