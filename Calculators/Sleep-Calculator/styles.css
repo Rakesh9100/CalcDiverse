@@ -191,7 +191,7 @@ animation-delay: .75s
     border-radius: 4px;
 }
 
-.error-box {
+.error-box, .option-error-box {
     background-color: #ffcccc; /* Light red background color */
     color: #ff0000; /* Red text color */
     border: 1px solid #ff0000; /* Red border */

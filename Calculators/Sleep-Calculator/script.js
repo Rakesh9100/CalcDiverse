@@ -2,15 +2,19 @@
 // eventlistener for submit button
 const button = document.querySelector('.btn')
 button.addEventListener('click', function () {
+    // take user age input and check error
     const age = document.getElementById('age-input').value
     ageErrorHandler(age)
 
+    // take user dropdown option and check error
     const dropdown = getUserActivityLevel()
-    const sleepDuration = calculateSleepDuration(age, dropdown)
-    displaySleepDuration(sleepDuration)
+    const dropdownError = dropdownErrorHandler(dropdown)
+    // if(!dropdownError) {
+    //     const sleepDuration = calculateSleepDuration(age, dropdown)
+    //     displaySleepDuration(sleepDuration)
+    // }
+    
 })
-
-
 
 const displaySleepDuration = (sleepDuration) =>{
     const contentBox = document.querySelector('.content-box')
@@ -24,8 +28,6 @@ const displaySleepDuration = (sleepDuration) =>{
 }
 
 
-
-
 // get the user selected activity level from dropdown
 const getUserActivityLevel = () =>{
     const dropdown = document.getElementById('dropdown').value
@@ -33,18 +35,22 @@ const getUserActivityLevel = () =>{
 }
 
 const ageErrorHandler = (age) =>{
+    const errorContainer = document.querySelector('.error-container');
+    var existingError = document.querySelector('.error-box');
+
     if(age > 100 || age < 0){
-        const errorContainer = document.querySelector('.error-container')
+        if(!existingError){
+             // console.log("fahshfksad")
+            var errorDiv = document.createElement("div")
+            errorDiv.className = "error-box"
 
-        var errorDiv = document.createElement("div")
-        errorDiv.className = "error-box"
-
-        // Set the error message as the content of the div
-        errorDiv.textContent = "Age should be between 1 and 100"
-    
-        // Append the div to the body or any other container element
-        errorContainer.appendChild(errorDiv)
-        return 0
+            // Set the error message as the content of the div
+            errorDiv.textContent = "Age should be between 1 and 100"
+        
+            // Append the div to the body or any other container element
+            errorContainer.appendChild(errorDiv)
+        }
+       
     }
     else{
         var existingError = document.querySelector('.error-box');
@@ -53,6 +59,32 @@ const ageErrorHandler = (age) =>{
             // Remove the existing error message if it exists
             existingError.remove();
         }
+    }
+}
+
+const dropdownErrorHandler = (dropdownOption) =>{
+    if(dropdownOption === 'Select an option'){
+        const optionContainer = document.querySelector('.option-container')
+
+        var errorDiv = document.createElement("div")
+        errorDiv.className = "option-error-box"
+
+        // Set the error message as the content of the div
+        errorDiv.textContent = "You need to select atleast one option."
+    
+        // Append the div to the body or any other container element
+        optionContainer.appendChild(errorDiv)
+
+        return 1
+    }
+    else{
+        var existingError = document.querySelector('.option-error-box');
+  
+        if (existingError) {
+            // Remove the existing error message if it exists
+            existingError.remove();
+        }
+        return 0
     }
 }
 
