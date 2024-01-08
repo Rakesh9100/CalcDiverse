@@ -33,7 +33,7 @@ label {
 
 .btn {
 	width: 200px;
-    background-color: darkorange;
+	background-color: darkorange;
 }
 
 #finalAmount {
@@ -42,23 +42,15 @@ label {
 	margin: 50px auto;
 }
 
-#finalAmount h2 {
-	font-size: 50px;
-	color: lightsalmon;
-}
-
-.finalValue {
-	font-family: 'Calibri', serif;
-}
-
 #heading {
-    color: deepskyblue;
+	color: deepskyblue;
 }
 
 @media (max-width: 768px) {
 	hr {
 		width: 60%;
 	}
+
 	.main {
 		width: 100%;
 	}
@@ -68,10 +60,13 @@ label {
 	.heading {
 		font-size: 60px;
 	}
+
 	hr {
 		width: 75%;
 	}
-	#finalAmount h2, .finalValue {
+
+	#finalAmount h2,
+	.finalValue {
 		font-size: 40px;
 	}
 }
