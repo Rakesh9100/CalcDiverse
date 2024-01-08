@@ -5,6 +5,13 @@ function calculateIntake() {
     var activity = document.getElementById('activity').value;
     var climate = document.getElementById('climate').value;
 
+    // Check if weight value is empty
+    if (weight === '') {
+        // Display an error message
+        document.getElementById('result').textContent = 'Please enter a valid weight.';
+        return; // Exit the function
+    }
+
     var waterIntake = weight * 0.033; // Calculate base water intake based on weight
 
     // Adjust water intake based on activity level
