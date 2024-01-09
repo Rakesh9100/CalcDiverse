@@ -15,13 +15,21 @@ button.addEventListener('click', function () {
         const sleepDuration = calculateSleepDuration(age, dropdown)
         displaySleepDuration(sleepDuration)
     }
+    else{
+        displayEmpty()
+    }
     
 })
+
+
+const displayEmpty = () => {
+    var existingDiv = document.querySelector('.content')
+    existingDiv.remove()
+}
 
 const displaySleepDuration = (sleepDuration) =>{
     const contentBox = document.querySelector('.content-box')
     var existingDiv = document.querySelector('.content')
-    
     if(!existingDiv){
         var displayDiv = document.createElement('div')
         displayDiv.className = 'content'
@@ -30,7 +38,8 @@ const displaySleepDuration = (sleepDuration) =>{
     }
     else{
         existingDiv.textContent = `You need ${sleepDuration} hrs of sleep.`
-    }   
+    }
+
 }
 
 // get the user selected activity level from dropdown
