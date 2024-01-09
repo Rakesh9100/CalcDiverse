@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --primary: #ff1b82;
-  --secondary: #f4eff0;
-  --ternary: #1327ff;
-  --light: #f7f26c;
-  --dark: #f50414;
-  --navbar-bg: #1a1a1a;  /* New background color for the navbar */
-  --navbar-text: #ffffff; /* New text color for the navbar */
+    --primary: #ff1b82;
+    --secondary: #f4eff0;
+    --ternary: #1327ff;
+    --light: #f7f26c;
+    --dark: #f50414;
+    --navbar-bg: #1a1a1a;  /* New background color for the navbar */
+    --navbar-text: #ffffff; /* New text color for the navbar */
 }
 
 * {
@@ -55,22 +55,14 @@ html {
 header {
     position: relative;
     z-index: 100;
-
     background: linear-gradient(315deg, var(--ternary), var(--light));
-  }
-  
-  .navbar {
-    background-color: var(--navbar-bg); /* Apply new background color */
-    color: var(--navbar-text);     /* Apply new text color */
-  }
-
-    background: linear-gradient(315deg, #ff1b82 , #4597f5, #000000) ;
 }
 
 .navbar {
     margin: 0 auto;
+    background-color: var(--navbar-bg); /* Apply new background color */
+    color: var(--navbar-text);     /* Apply new text color */
 }
-
 
 a {
     text-decoration: none;
