@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antilog Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="calculator">
+        <div id="heading">
+        <h1>Antilog Calculator</h1>
+        </div>
+        <hr>
+        <div class="content">
+            <p>Calculate the antilog of any number to any base:</p>
+        <div id="number1"><input type="number" id="number" placeholder="Enter number"></div>
+        <div id="base1"><input type="number" id="base" placeholder="Enter base" default="10"></div>
+        <button onclick="calculateAntilog()" id="button">Calculate Antilog</button>
+        <h3>Result:</h3> <h3 id="resultb"></h3>
+        <p id="result"></p>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+
+</body>
+</html>

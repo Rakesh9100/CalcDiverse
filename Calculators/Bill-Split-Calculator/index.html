@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Split Bill Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2>SPLIT BILL</h2>
+            <label for="billSubtotal">BILL SUBTOTAL</label>
+            <input type="number" id="billSubtotal" placeholder="Enter Bill Subtotal" />
+
+            <label for="tipPercentage">TIP (%)</label>
+            <input type="number" id="tipPercentage" placeholder="Enter Tip Percentage" />
+
+            <label for="numberOfPersons">NO. OF PERSONS</label>
+            <input type="number" id="numberOfPersons" placeholder="Enter No. of Persons" />
+
+            <div class="buttons">
+                <button class="css-button-sliding-to-left--grey" onclick="calculate()">Calculate</button>
+            </div>
+
+            <div class="result">
+                <div class="total" id="totalBillLabel">TOTAL BILL</div>
+                <div class="total right" id="totalBill">Rs 00.00</div>
+            </div>
+            <div class="result">
+                <div class="per-person" id="billPerPersonLabel">BILL PER PERSON</div>
+                <div class="per-person right" id="billPerPerson">Rs 00.00</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
