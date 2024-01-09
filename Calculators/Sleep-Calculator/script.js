@@ -11,7 +11,7 @@ button.addEventListener('click', function () {
     const dropdownError = dropdownErrorHandler(dropdown)
 
     // display error
-    if( !dropdownError || !ageError ) {
+    if( !dropdownError && !ageError ) {
         const sleepDuration = calculateSleepDuration(age, dropdown)
         displaySleepDuration(sleepDuration)
     }
@@ -30,8 +30,7 @@ const displaySleepDuration = (sleepDuration) =>{
     }
     else{
         existingDiv.textContent = `You need ${sleepDuration} hrs of sleep.`
-    }
-   
+    }   
 }
 
 // get the user selected activity level from dropdown
@@ -44,7 +43,7 @@ const ageErrorHandler = (age) =>{
     const errorContainer = document.querySelector('.error-container');
     var existingError = document.querySelector('.error-box');
 
-    if(age > 100 || age < 0){
+    if(age > 100 || age < 0 || age === ''){
         if(!existingError){
              // console.log("fahshfksad")
             var errorDiv = document.createElement("div")
@@ -97,8 +96,6 @@ const dropdownErrorHandler = (dropdownOption) =>{
         return false
     }
 }
-
-
 
 function calculateSleepDuration(age, activityLevel) {
     // Sleep duration table (in hours) based on age and activity level
