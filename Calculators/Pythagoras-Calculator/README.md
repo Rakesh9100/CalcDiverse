@@ -9,5 +9,4 @@ A simple web-based Pythagorean Theorem Calculator that allows users to input the
 * JavaScript
 
 ## Screenshots :-
-![Screenshot (784)](https://github.com/Gitesh08/CalcDiverse/assets/115268756/1b5d1c54-22b5-4501-bc87-45a2c4232fe9)
-![Screenshot (785)](https://github.com/Gitesh08/CalcDiverse/assets/115268756/446b8bca-3e54-4c40-9ee7-75223bbab4b0)
+![Screenshot (786)](https://github.com/Gitesh08/CalcDiverse/assets/115268756/5f8e5e1c-2e4d-44d8-846a-b34eb428c87e)
