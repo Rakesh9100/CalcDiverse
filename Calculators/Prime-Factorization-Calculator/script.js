@@ -12,8 +12,12 @@ function getFactors(input){
     var input = document.getElementById("input").value;
     result = [];
 
-    if(isNaN(input) || input === ''){
+    if(isNaN(input) || input === '' ){
         alert("Please enter Integer value.");
+        return reset_values();
+    }
+    else if(input == 0 || input == 1){
+        alert("Please enter a valid number.");
         return reset_values();
     }
     else{
