@@ -1,4 +1,15 @@
 
+// styling for select option
+const label = document.getElementById('activity-label')
+const selectElement =  document.getElementById('dropdown')
+
+selectElement.addEventListener('change', function() {
+    label.style.fontSize = '13px'
+    label.style.color = '#03e9f4'
+})
+
+
+
 // eventlistener for submit button
 const button = document.querySelector('.btn')
 button.addEventListener('click', function () {
@@ -16,13 +27,14 @@ button.addEventListener('click', function () {
         displaySleepDuration(sleepDuration)
     }
     else{
-        displayEmpty()
+        // remove display if there is error
+        removeDisplayDiv()
     }
     
 })
 
 
-const displayEmpty = () => {
+const removeDisplayDiv = () => {
     var existingDiv = document.querySelector('.content')
     existingDiv.remove()
 }
@@ -49,8 +61,8 @@ const getUserActivityLevel = () =>{
 }
 
 const ageErrorHandler = (age) =>{
-    const errorContainer = document.querySelector('.error-container');
-    var existingError = document.querySelector('.error-box');
+    const errorContainer = document.querySelector('.error-container')
+    var existingError = document.querySelector('.error-box')
 
     if(age > 100 || age < 0 || age === ''){
         if(!existingError){
@@ -67,11 +79,11 @@ const ageErrorHandler = (age) =>{
         return true
     }
     else{
-        var existingError = document.querySelector('.error-box');
+        var existingError = document.querySelector('.error-box')
   
         if (existingError) {
             // Remove the existing error message if it exists
-            existingError.remove();
+            existingError.remove()
         }
         return false
     }
@@ -79,7 +91,7 @@ const ageErrorHandler = (age) =>{
 
 const dropdownErrorHandler = (dropdownOption) =>{
     const optionContainer = document.querySelector('.option-container')
-    var existingError = document.querySelector('.option-error-box');
+    var existingError = document.querySelector('.option-error-box')
 
     if(dropdownOption === 'Select an option'){
         if(!existingError){
@@ -96,11 +108,11 @@ const dropdownErrorHandler = (dropdownOption) =>{
     }
         
     else{
-        var existingError = document.querySelector('.option-error-box');
+        var existingError = document.querySelector('.option-error-box')
   
         if (existingError) {
             // Remove the existing error message if it exists
-            existingError.remove();
+            existingError.remove()
         }
         return false
     }
@@ -121,21 +133,23 @@ function calculateSleepDuration(age, activityLevel) {
     // Get the corresponding sleep duration based on age group
     const ageGroup = getAgeGroup(age)
     const sleepDuration = sleepTable[ageGroup][getActivityLevelIndex(activityLevel)]
-    return sleepDuration;
+    return sleepDuration
 }
 
 function getAgeGroup(age) {
-    if (age >= 1 && age <= 3) return "1-3";
-    if (age >= 4 && age <= 6) return "4-6";
-    if (age >= 7 && age <= 12) return "7-12";
-    if (age >= 13 && age <= 18) return "13-18";
-    if (age >= 19 && age <= 25) return "19-25";
-    if (age >= 26 && age <= 64) return "26-64";
-    if (age >= 65 && age <= 100) return "65+";
-    return null; // Handle cases where age is outside the specified ranges
+    if (age >= 1 && age <= 3) return "1-3"
+    if (age >= 4 && age <= 6) return "4-6"
+    if (age >= 7 && age <= 12) return "7-12"
+    if (age >= 13 && age <= 18) return "13-18"
+    if (age >= 19 && age <= 25) return "19-25"
+    if (age >= 26 && age <= 64) return "26-64"
+    if (age >= 65 && age <= 100) return "65+"
+    return null // Handle cases where age is outside the specified ranges
 }
 
 function getActivityLevelIndex(activityLevel) {
-    const activityLevels = ["Sedentary: little or no exercise", "Exercise 1-3 times/week", "Exercise 4-5 times/week", "Daily exercise", "Intense exercise 6-7 times/week", "Very intense exercise daily, or physical job"];
-    return activityLevels.indexOf(activityLevel);
+    const activityLevels = ["Sedentary: little or no exercise", "Exercise 1-3 times/week", "Exercise 4-5 times/week", "Daily exercise", "Intense exercise 6-7 times/week", "Very intense exercise daily, or physical job"]
+    return activityLevels.indexOf(activityLevel)
 }
+
+
