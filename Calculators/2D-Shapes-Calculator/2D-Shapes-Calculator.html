@@ -11,40 +11,57 @@
 
 <body>
 
-
 <div class="card-form" id="2d-shapes">
-        <form class="calculate" id="2d-shapes-calculator">
-          <div class="form-title">2D Shapes Calculator</div>
-          <div class="form-body">
+    <form class="calculate" id="2d-shapes-calculator">
+        <div class="form-title">2D Shapes Calculator</div>
+        <div class="form-body">
             <div class="row">
-                <select id="shape" name="shape" required>
+                <select id="shape" name="shape" onchange="showDimensions()" required>
                     <option value="" disabled selected hidden>Select a shape</option>
                     <option value="rectangle">Rectangle</option>
                     <option value="square">Square</option>
                     <option value="circle">Circle</option>
                     <option value="triangle">Triangle</option>
                     <option value="parallelogram">Parallelogram</option>
+                    <option value="rhombus">Rhombus</option>
+                    <option value="trapezoid">Trapezoid</option>
+                    <option value="hexagon">Hexagon</option>
+                    <!-- Add more shape options as needed -->
                 </select>
             </div>
-            <div class="row">
-              <input type="number" id="length" name="length" placeholder="Enter Side/Base/Radius:" required>
+            <div class="row" id="length-row" style="display: none;">
+                <label for="length">Enter Length:</label>
+                <input type="number" id="length" name="length">
             </div>
-            <div class="row">
-              <input placeholder="Enter Height" type="number" id="width" name="width">
+            <div class="row" id="width-row" style="display: none;">
+                <label for="width">Enter Width:</label>
+                <input type="number" id="width" name="width">
             </div>
-            
-          </div>
-          <div class="rule"></div>
-          <div class="form-footer">
+            <div class="row" id="radius-row" style="display: none;">
+                <label for="radius">Enter Radius:</label>
+                <input type="number" id="radius" name="radius">
+            </div>
+            <div class="row" id="diagonal1-row" style="display: none;">
+                <label for="diagonal1">Enter Diagonal 1:</label>
+                <input type="number" id="diagonal1" name="diagonal1">
+            </div>
+            <div class="row" id="diagonal2-row" style="display: none;">
+                <label for="diagonal2">Enter Diagonal 2:</label>
+                <input type="number" id="diagonal2" name="diagonal2">
+            </div>
+        </div>
+        <div class="rule"></div>
+        <div class="form-footer">
             <button onclick="calculate(event)">Calculate</button>
-          </div>
-          <div id="result-container">
+        </div>
+        <div id="result-container">
             <p id="result"></p>
         </div>
-        </form>
+    </form>
 </div>
 
-    <script src="2D-Shapes-Calculator.js"></script>
+<script src="2D-Shapes-Calculator.js"></script>
+
 </body>
 
 </html>
