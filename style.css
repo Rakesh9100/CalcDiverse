@@ -100,7 +100,6 @@ nav li:hover {
     transition: 0.4s ease-in-out;
     transform: scale(0.95);
     opacity: 0.95;
-    margin-right: 10px;
 }
 
 nav li:hover {
