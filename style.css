@@ -6,6 +6,8 @@
     --ternary: #1327ff;
     --light: #f7f26c;
     --dark: #f50414;
+    --navbar-bg: #1a1a1a;  /* New background color for the navbar */
+    --navbar-text: #ffffff; /* New text color for the navbar */
 }
 
 * {
@@ -27,7 +29,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--dark);
+    background: var(--primary);
 }
 
 body {
@@ -51,19 +53,21 @@ html {
 }
 
 header {
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 100;
     background: linear-gradient(315deg, var(--ternary), var(--light));
 }
 
 .navbar {
     margin: 0 auto;
+    background-color: var(--navbar-bg); /* Apply new background color */
+    color: var(--navbar-text);     /* Apply new text color */
 }
 
 a {
     text-decoration: none;
-    color: var(--secondary);
+    color: #e0dd00 ;
+    text-shadow: 2px 2px 2px #000000;
     font-weight: 500;
 }
 
@@ -76,24 +80,31 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    box-shadow: 0px 5px 10px 0px var(--dark);
+    box-shadow: 0px 5px 10px 0px var(--secondary);
 }
 
 nav ul {
     display: flex;
     gap: 3.5rem;
 }
-
 nav li {
     font-size: 2.3rem;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
-    margin-right: 10px;
+    /* New hover animation: shrink and fade */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 nav li:hover {
     border-bottom: 0.4rem var(--light) solid;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
+    transform: scale(0.95);
+    opacity: 0.95;
+}
+
+nav li:hover {
+    border-bottom: 0.4rem var(--secondary) solid;
+    transition:0.3s ease-in-out;
 }
 
 .logo {
@@ -101,8 +112,14 @@ nav li:hover {
     font-weight: 700;
     margin-left: 10px;
     font-family: Ubuntu;
-    color: var(--dark);
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
 }
+
+.logo:hover {
+    color: #b400a5; /* Change to the desired color of logo when hovered */
+}
+
 .hamburger {
     display: none;
 }
@@ -137,8 +154,7 @@ section {
     z-index: 200;
 }
 
-.comp-section .compcontainer h1 {
-    font-size: 7rem;
+.comp-section .compcontainer h1 { 
     text-shadow: 2px 2px 10px var(--light);
 }
 
@@ -170,10 +186,10 @@ section {
 
 .paragraph {
     font-size: 2rem;
-    width: 70%;
+    width: 85%;
     text-align: center;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     color: var(--secondary);
 }
 
@@ -188,7 +204,7 @@ section {
 }
 
 .comp-section h1 {
-    font-size: 96px;
+    font-size: 65px;
 }
 
 .comp-section h3 {
@@ -222,7 +238,7 @@ section {
 .container .box .content {
     position: relative;
     left: 0;
-    padding: 20px 40px;
+    padding: 20px 32px;
     text-align: center;
     transition: 0.5s;
 }
@@ -230,7 +246,6 @@ section {
 .container .box .content h2 {
     font-size: 25px;
     color: var(--ternary);
-    margin-top: 21px;
     text-decoration: underline dashed;
     cursor: pointer;
 }
@@ -248,8 +263,8 @@ section {
     font-size: 21px;
     font-weight: 900;
     color: var(--ternary);
-    margin-top: 21px;
-    margin-bottom: 10px;
+    /* margin-top: 21px;
+    margin-bottom: 10px; */
     padding: 9px 14px;
     border-radius: 36px;
     background-color: var(--light);
@@ -267,8 +282,8 @@ section {
     width: 36px;
     font-weight: 900;
     color: var(--ternary);
-    margin-top: 45px;
-    margin-right: -25px;
+    /* margin-top: 45px;
+    margin-right: -25px; */
     border-radius: 25px;
     background-color: var(--light);
     border: 4px solid var(--primary);
@@ -276,6 +291,13 @@ section {
 
 .container .box .content img:hover {
     transform: rotate(10deg);
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 /* Footer Css */
@@ -322,6 +344,9 @@ section {
         height: 6rem;
         width: 50rem;
     }
+    .comp-section h1 {
+        font-size: 55px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -354,19 +379,21 @@ section {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
-
+    .container{
+        margin-top: 170px;
+    }
     .compcontainer {
-        padding: 40px;
+        padding-top: 10px; /*Fixes #107 */
     }
 
     .compcontainer h1 {
-        font-size: 400%;
-        padding-bottom: 40px;
+        font-size: 300%;
+        padding-bottom: 10px;
     }
 
     .compcontainer h3 {
         font-size: 200%;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
 
     .compcontainer p {
@@ -457,14 +484,58 @@ section {
 }
 /* ----------------------------------------------  Contributors Styling Ends  -------------------------------------- */
 
+/* ----------------------------------------------  Scroll to Button Styling  --------------------------------------- */
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    transition: opacity 0.3s, background-color 0.3s;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2),
+                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+#progress:hover{
+    opacity: 1;
+    background-color: #df87ef;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    50%{
+        transform: translateY(-8px);
+    }
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: rgb(104, 98, 232);
+    background: linear-gradient(90deg, rgb(159, 157, 235) 0%, rgb(212, 153, 222) 39%, rgb(253, 199, 134) 100%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    color: black;
+}
+/* -------------------------------------------  Scroll to Button Styling Ends  ------------------------------------- */
+
 /*-----------------------------------------------   Updated  Footer  Styling  ---------------------------------------*/
 .footer-basic {
     padding:40px 0;
     background-color:#1b1b1b;
     color:#024edb;
-  }
+}
   
-  .footer-basic ul {
+.footer-basic ul {
     padding:0;
     list-style:none;
     text-align:center;
@@ -475,22 +546,22 @@ section {
     justify-content: center;
 }
   
-  .footer-basic li {
+.footer-basic li {
     padding:0 10px;
-  }
+}
   
-  .footer-basic ul a {
+.footer-basic ul a {
     color:inherit;
     text-decoration:none;
     opacity:0.8;
-  }
+}
   
-  .footer-basic ul a:hover {
+.footer-basic ul a:hover {
     opacity:1;
     color: rgb(21, 153, 206);
-  }
+}
   
-  .footer-basic .social {
+.footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
 }
@@ -524,13 +595,12 @@ section {
 }
 
   
-  .footer-basic .copyright {
+.footer-basic .copyright {
     margin-top:15px;
     text-align:center;
     font-size:13px;
     color:rgb(255, 255, 255);
     margin-bottom:0;
-  }
+}
 
-
-  /* ------------------------------------Footer Styling Ends -------------------------------- */
+/* ------------------------------------Footer Styling Ends -------------------------------- */

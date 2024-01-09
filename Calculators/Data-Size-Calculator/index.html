@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Size Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+
+        <h2>Data Size Calculator</h2>
+
+        <label for="size">Enter the size:</label>
+        <input type="number" id="size" placeholder="Enter the size" />
+
+        <label for="fromUnit">Select the source unit:</label>
+        <select id="fromUnit">
+            <option value="bits">Bits</option>
+            <option value="nibbles">Nibbles</option>
+            <option value="bytes">Bytes</option>
+            <option value="kilobytes">Kilobytes</option>
+            <option value="megabytes">Megabytes</option>
+            <option value="gigabytes">Gigabytes</option>
+            <option value="terabytes">Terabytes</option>
+            <option value="petabytes">Petabytes</option>
+            <option value="exabytes">Exabytes</option>
+            <option value="zetabytes">Zetabytes</option>
+            <option value="yottabytes">Yottabytes</option>
+        </select>
+
+        <label for="toUnit">Select the target unit:</label>
+        <select id="toUnit">
+            <option value="bits">Bits</option>
+            <option value="nibbles">Nibbles</option>
+            <option value="bytes">Bytes</option>
+            <option value="kilobytes">Kilobytes</option>
+            <option value="megabytes">Megabytes</option>
+            <option value="gigabytes">Gigabytes</option>
+            <option value="terabytes">Terabytes</option>
+            <option value="petabytes">Petabytes</option>
+            <option value="exabytes">Exabytes</option>
+            <option value="zetabytes">Zetabytes</option>
+            <option value="yottabytes">Yottabytes</option>
+        </select>
+
+        <button onclick="convertSize()">Convert</button>
+
+        <div id="result"></div>
+
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
