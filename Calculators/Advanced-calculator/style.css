@@ -1,0 +1,68 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-image: url('https://cdn.pixabay.com/photo/2022/05/31/00/56/sky-7232494_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+input {
+  width: 200px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgb(0, 128, 0);
+  color:white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+}
+#history {
+  text-align: left;
+  max-width: 300px;
+  margin: 20px auto;
+}
+.box{
+  background-color:rgba(0, 0, 0, 0.829);
+  width:25%;
+  box-shadow:4px 8px 5px rgba(0, 0, 0, 0.918);
+  margin-top:10px;
+  border-radius:10px;
+
+}
+.main{
+  justify-content:center;
+  justify-items:center;
+  align-items:center;
+  display:flex;
+  border:black 5px;
+  flex-direction:column;
+
+}
+h2{
+  color:white;
+}
+h1 {
+  font-size: 36px;
+  animation: colorChange 5s infinite; /* 5s duration, infinite iterations */
+}
+
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: purple;
+  }
+}
