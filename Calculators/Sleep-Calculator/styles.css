@@ -106,14 +106,13 @@ display: block;
 }
 
 .error-box, .option-error-box {
-    background-color: #ffcccc; /* Light red background color */
-    color: #ff0000; /* Red text color */
-    border: 1px solid #ff0000; /* Red border */
-    padding: 10px; /* Padding around the text */
-    border-radius: 10px; /* Rounded corners */
-    margin-bottom: 10px; /* Margin at the bottom to separate from other elements */
+    background-color: #ffcccc; 
+    color: #ff0000;
+    border: 1px solid #ff0000; 
+    padding: 10px;
+    border-radius: 10px; 
+    margin-bottom: 10px; 
 }
-
 .input-group {
     position: relative;
     margin-bottom: 33px;
