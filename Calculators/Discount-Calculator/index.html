@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Discount Calculator</title>
+</head>
+<body>
+    <div class="heading">Discount Calculator</div>
+    <div class="container">
+        <div class="input-container">
+            <label for="PriceBeforeInput">PriceBefore</label>
+            <input type="number" name="PriceBefore" id="PriceBeforeInput">
+        </div>
+        <div class="input-container">
+            <label for="PriceBeforeInput">Discount(%)</label>
+            <input type="number" name="Discount" id="DiscountInput">
+        </div>
+
+        <button id="calculate-btn">Calculate Discount</button>
+        <div class="result-container">
+            <div id="error-message"></div>
+            <div>Price after Discount: <span id="priceAfter">Rs 00.00</span></div>
+            <div>You saved: <span id="savedAmount">Rs 00.00</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
