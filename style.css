@@ -91,18 +91,15 @@ nav li {
     font-size: 2.3rem;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
-
     /* New hover animation: shrink and fade */
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  }
-  
-  nav li:hover {
+}
+
+nav li:hover {
     border-bottom: 0.4rem var(--light) solid;
     transition: 0.4s ease-in-out;
     transform: scale(0.95);
     opacity: 0.95;
-  }
-
     margin-right: 10px;
 }
 
@@ -110,7 +107,6 @@ nav li:hover {
     border-bottom: 0.4rem var(--secondary) solid;
     transition:0.3s ease-in-out;
 }
-
 
 .logo {
     font-size: 2.3rem;
