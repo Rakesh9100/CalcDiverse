@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-    --primary: #ff1b82;
-    --secondary: #f4eff0;
-    --ternary: #1327ff;
-    --light: #f7f26c;
-    --dark: #f50414;
+  --primary: #ff1b82;
+  --secondary: #f4eff0;
+  --ternary: #1327ff;
+  --light: #f7f26c;
+  --dark: #f50414;
+  --navbar-bg: #1a1a1a;  /* New background color for the navbar */
+  --navbar-text: #ffffff; /* New text color for the navbar */
 }
 
 * {
@@ -51,16 +53,15 @@ html {
 }
 
 header {
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 100;
     background: linear-gradient(315deg, var(--ternary), var(--light));
-}
-
-.navbar {
-    margin: 0 auto;
-}
-
+  }
+  
+  .navbar {
+    background-color: var(--navbar-bg); /* Apply new background color */
+    color: var(--navbar-text);     /* Apply new text color */
+  }
 a {
     text-decoration: none;
     color: var(--secondary);
@@ -83,18 +84,20 @@ nav ul {
     display: flex;
     gap: 3.5rem;
 }
-
 nav li {
     font-size: 2.3rem;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
-    margin-right: 10px;
-}
-
-nav li:hover {
+    /* New hover animation: shrink and fade */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  nav li:hover {
     border-bottom: 0.4rem var(--light) solid;
-    transition: 0.3s ease-in-out;
-}
+    transition: 0.4s ease-in-out;
+    transform: scale(0.95);
+    opacity: 0.95;
+  }
 
 .logo {
     font-size: 2.3rem;
