@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../../style.css" />    <!-- Original style.css in the home directory -->
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" type="text/css" href="./contact.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Contact - CalcDiverse</title>
@@ -16,15 +16,15 @@
 
     <header>
         <nav class="navbar">
-            <a href='../../index.html'> <!-- Adjusted the relative path to navigate to the home page -->
+            <a href='../../index.html'>
                 <div class="logo">CalcDiverse</div>
             </a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../../index.html" class="nav-link">Home</a> <!-- Adjusted the relative path to navigate to the home page -->
+                    <a href="../../index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../index.html#calculators" class="nav-link">Calculators</a> <!-- Adjusted the relative path to navigate to the calculators section on the home page -->
+                    <a href="../../index.html#calculators" class="nav-link">Calculators</a>
                 </li>
                 <li>
                     <a href="#" class="nav-link">Contact</a>
@@ -38,11 +38,11 @@
         </nav>
     </header>
 
-    <section class="contact-section">
+<
+    <div class="box">
         <section class="contact-container">
             <h2>Contact Us</h2>
             <p>If you have any questions or feedback, feel free to reach out to us!</p>
-			<!-- <p>We're here to answer any questions you may have.</p> -->
             <form id="contact-form">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -58,21 +58,35 @@
         </div>
     </section>
 
-    <div class="footer" id="about">
+    <!-------------------------------------Footer Code Starts --------------------------------------------->
+    <div class="footer-basic">
         <footer>
-            <ul class="social-icon">
-                <li>
-                    <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fas fa-link"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                </li>
+            <div class="social">
+                <a href="https://rakesh9100.bio.link/" target="_blank">
+                    <img src="../profile.png" alt="Profile">
+                </a>
+                <a href="mailto:roshanrakesh7362@gmail.com" target="_blank">
+                    <img src="../gmail.png" alt="Gmail">
+                </a>
+                <a href="https://www.github.com/Rakesh9100" targer="_blank">
+                    <img src="../github.png" alt="Github">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="../twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../facebook.png" alt="Facebook">
+                </a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="../../index.html#home">Home</a></li>
+                <li class="list-inline-item"><a href="../../index.html#calculators">Calculators</a></li>
+                <li class="list-inline-item"><a href="./assets/contact/contact.html#contact">Contact</a></li>
             </ul>
-            <p>Created By <a href="https://github.com/Rakesh9100" target="_blank">Rakesh Roshan ❤️</a> | © 2023: All Rights Reserved</p>
+            <p class="copyright">Created By Rakesh Roshan ❤️ | © <script>document.write(new Date().getFullYear());</script>: All Rights Reserved</p>
         </footer>
     </div>
 
-    <script src="../../script.js"></script>     <!-- Original script.js in the home directory -->
     <script src="./contact.js"></script>
 </body>
 

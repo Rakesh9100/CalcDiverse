@@ -29,7 +29,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--dark);
+    background: var(--primary);
 }
 
 body {
@@ -55,6 +55,7 @@ html {
 header {
     position: relative;
     z-index: 100;
+
     background: linear-gradient(315deg, var(--ternary), var(--light));
   }
   
@@ -62,9 +63,19 @@ header {
     background-color: var(--navbar-bg); /* Apply new background color */
     color: var(--navbar-text);     /* Apply new text color */
   }
+
+    background: linear-gradient(315deg, #ff1b82 , #4597f5, #000000) ;
+}
+
+.navbar {
+    margin: 0 auto;
+}
+
+
 a {
     text-decoration: none;
-    color: var(--secondary);
+    color: #e0dd00 ;
+    text-shadow: 2px 2px 2px #000000;
     font-weight: 500;
 }
 
@@ -77,7 +88,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    box-shadow: 0px 5px 10px 0px var(--dark);
+    box-shadow: 0px 5px 10px 0px var(--secondary);
 }
 
 nav ul {
@@ -88,6 +99,7 @@ nav li {
     font-size: 2.3rem;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
+
     /* New hover animation: shrink and fade */
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
@@ -99,13 +111,28 @@ nav li {
     opacity: 0.95;
   }
 
+    margin-right: 10px;
+}
+
+nav li:hover {
+    border-bottom: 0.4rem var(--secondary) solid;
+    transition:0.3s ease-in-out;
+}
+
+
 .logo {
     font-size: 2.3rem;
     font-weight: 700;
     margin-left: 10px;
     font-family: Ubuntu;
-    color: var(--dark);
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
 }
+
+.logo:hover {
+    color: #b400a5; /* Change to the desired color of logo when hovered */
+}
+
 .hamburger {
     display: none;
 }
@@ -140,8 +167,7 @@ section {
     z-index: 200;
 }
 
-.comp-section .compcontainer h1 {
-    font-size: 7rem;
+.comp-section .compcontainer h1 { 
     text-shadow: 2px 2px 10px var(--light);
 }
 
@@ -173,10 +199,10 @@ section {
 
 .paragraph {
     font-size: 2rem;
-    width: 70%;
+    width: 85%;
     text-align: center;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     color: var(--secondary);
 }
 
@@ -191,7 +217,7 @@ section {
 }
 
 .comp-section h1 {
-    font-size: 96px;
+    font-size: 65px;
 }
 
 .comp-section h3 {
@@ -209,7 +235,8 @@ section {
 
 .container .box {
     position: relative;
-    width: 320px;
+    width: 300px;
+    height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,7 +251,7 @@ section {
 .container .box .content {
     position: relative;
     left: 0;
-    padding: 20px 40px;
+    padding: 20px 32px;
     text-align: center;
     transition: 0.5s;
 }
@@ -232,14 +259,15 @@ section {
 .container .box .content h2 {
     font-size: 25px;
     color: var(--ternary);
-    margin-top: 21px;
     text-decoration: underline dashed;
+    cursor: pointer;
 }
 
 .container .box .content h3 {
     font-size: 19px;
     color: var(--primary);
     margin-top: 21px;
+    transition: all 0.3s;
 }
 
 .container .box .content button {
@@ -248,8 +276,8 @@ section {
     font-size: 21px;
     font-weight: 900;
     color: var(--ternary);
-    margin-top: 21px;
-    margin-bottom: 10px;
+    /* margin-top: 21px;
+    margin-bottom: 10px; */
     padding: 9px 14px;
     border-radius: 36px;
     background-color: var(--light);
@@ -267,8 +295,8 @@ section {
     width: 36px;
     font-weight: 900;
     color: var(--ternary);
-    margin-top: 45px;
-    margin-right: -25px;
+    /* margin-top: 45px;
+    margin-right: -25px; */
     border-radius: 25px;
     background-color: var(--light);
     border: 4px solid var(--primary);
@@ -278,73 +306,14 @@ section {
     transform: rotate(10deg);
 }
 
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 /* Footer Css */
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    min-height: 25vh;
-}
-
-footer {
-    position: relative;
-    width: 100%;
-    background: var(--ternary);
-    min-height: 100px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-footer .social-icon {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-footer .social-icon li {
-    list-style: none;
-}
-
-footer .social-icon li a {
-    font-size: 2em;
-    color: var(--secondary);
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-}
-
-.footer-links {
-    transition: transform .2s;
-}
-
-footer .social-icon li a:hover {
-    transform: translateY(-10px);
-}
-
-footer p {
-    color: var(--secondary);
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    display: inline-block;
-}
-
-footer p a {
-    background-color: var(--light);
-    color: var(--dark);
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    display: inline-block;
-}
 
 /* Media Queries */
 
@@ -388,6 +357,9 @@ footer p a {
         height: 6rem;
         width: 50rem;
     }
+    .comp-section h1 {
+        font-size: 55px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -420,19 +392,21 @@ footer p a {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
-
+    .container{
+        margin-top: 170px;
+    }
     .compcontainer {
-        padding: 40px;
+        padding-top: 10px; /*Fixes #107 */
     }
 
     .compcontainer h1 {
-        font-size: 400%;
-        padding-bottom: 40px;
+        font-size: 300%;
+        padding-bottom: 10px;
     }
 
     .compcontainer h3 {
         font-size: 200%;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
 
     .compcontainer p {
@@ -471,3 +445,175 @@ footer p a {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+/* -------------------------------------------   Updated Contributors Styling --------------------------------------- */
+.contributors {
+    margin: 0;
+    padding: 0;
+}
+
+.contributors h1 {
+    font: 5.5vw/1 Permanent Marker;
+    text-align: center;
+    color: white;
+    font-size: 4.5rem;
+    margin-bottom: 4%;
+}
+
+.contributors h1:hover {
+    text-decoration: underline;
+}
+
+#contributor {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contributor-card {
+    width: 65px;
+    height: 65px;
+    clip-path: polygon(50% 0%, 91% 25%, 91% 75%, 50% 100%, 9% 75%, 9% 25%);
+    margin: 5px;
+    transition: transform 0.3s ease-in-out , opacity 0.3s ease-in-out;
+}
+
+.contributor-card:hover{
+    transform: scale(1.35);
+    opacity: 0.85;
+}
+
+.contributor-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contributor-card:nth-child(4n+1),
+.contributor-card:nth-child(4n+3) {
+    margin-top: -4px;
+}
+/* ----------------------------------------------  Contributors Styling Ends  -------------------------------------- */
+
+/* ----------------------------------------------  Scroll to Button Styling  --------------------------------------- */
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    transition: opacity 0.3s, background-color 0.3s;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2),
+                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+#progress:hover{
+    opacity: 1;
+    background-color: #df87ef;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    50%{
+        transform: translateY(-8px);
+    }
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: rgb(104, 98, 232);
+    background: linear-gradient(90deg, rgb(159, 157, 235) 0%, rgb(212, 153, 222) 39%, rgb(253, 199, 134) 100%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    color: black;
+}
+/* -------------------------------------------  Scroll to Button Styling Ends  ------------------------------------- */
+
+/*-----------------------------------------------   Updated  Footer  Styling  ---------------------------------------*/
+.footer-basic {
+    padding:40px 0;
+    background-color:#1b1b1b;
+    color:#024edb;
+}
+  
+.footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+    display:flex;
+    justify-content: center;
+}
+  
+.footer-basic li {
+    padding:0 10px;
+}
+  
+.footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+}
+  
+.footer-basic ul a:hover {
+    opacity:1;
+    color: rgb(21, 153, 206);
+}
+  
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px; 
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social img {
+    width: 100%;
+    height: 100%; 
+    border-radius: 50%; 
+    margin-right: 5px;
+    background-color: #ffffff;
+}
+
+.footer-basic .social > a:hover {
+    opacity: 0.9;
+    background-color: #e0dd00;
+    transform: scale(1.2);
+}
+
+  
+.footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:rgb(255, 255, 255);
+    margin-bottom:0;
+}
+
+/* ------------------------------------Footer Styling Ends -------------------------------- */
