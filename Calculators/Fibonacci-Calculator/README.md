@@ -20,7 +20,8 @@
 
 ## **ScreenShot 📸**
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/114330097/1b5826af-c3ce-4c76-bde4-f090fbb2e4c7)
+![fibo2](https://github.com/ak4631/CalcDiverse/assets/132299371/901de200-a508-4645-bfca-78c7163b3683)
+
 
 <br>
 
