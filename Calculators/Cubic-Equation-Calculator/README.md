@@ -12,4 +12,5 @@ This calculator solves cubic equations, and provides real or complex solutions.
 
 ## Screenshots :-
 
+![Uploading image.png…]()
 
