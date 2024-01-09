@@ -6,8 +6,6 @@
     --ternary: #1327ff;
     --light: #f7f26c;
     --dark: #f50414;
-    --navbar-bg: #1a1a1a;  /* New background color for the navbar */
-    --navbar-text: #ffffff; /* New text color for the navbar */
 }
 
 * {
@@ -26,10 +24,12 @@
 
 ::-webkit-scrollbar-track {
     background: var(--secondary);
+    border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary);
+    background: var(--ternary);
+    border-radius: 25px;
 }
 
 body {
@@ -53,22 +53,20 @@ html {
 }
 
 header {
-    position: relative;
+    position: sticky;
     z-index: 100;
-    background: linear-gradient(315deg, var(--ternary), var(--light));
+    background: linear-gradient(315deg, var(--primary), var(--ternary));
 }
 
 .navbar {
     margin: 0 auto;
-    background-color: var(--navbar-bg); /* Apply new background color */
-    color: var(--navbar-text);     /* Apply new text color */
 }
 
 a {
     text-decoration: none;
     color: #e0dd00 ;
     text-shadow: 2px 2px 2px #000000;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 ul {
@@ -87,11 +85,12 @@ nav ul {
     display: flex;
     gap: 3.5rem;
 }
+
 nav li {
     font-size: 2.3rem;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
-    /* New hover animation: shrink and fade */
+    margin-right: 10px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -156,11 +155,13 @@ section {
 
 .comp-section .compcontainer h1 { 
     text-shadow: 2px 2px 10px var(--light);
+    margin-top: 16px;
 }
 
 .comp-section .compcontainer h3 {
     font-weight: 300;
     font-size: 2.8rem;
+    margin-top: 14px;
 }
 
 .comp-section .compcontainer a {
@@ -189,6 +190,7 @@ section {
     width: 85%;
     text-align: center;
     margin: auto;
+    margin-top: 18px;
     padding: 10px;
     color: var(--secondary);
 }
