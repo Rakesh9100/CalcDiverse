@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.container {
+    height: auto;
+    width: 35%;
+    display: flex;
+    margin: auto;
+    padding: 40px 50px 20px 50px;
+    flex-direction: column;
+    gap: 2rem;
+    color: aliceblue;
+    border-radius: 40px;
+    background-image: linear-gradient(to right top, #3b3b3b, #2f3031, #222626, #181c1a, #0f110a);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.container p {
+    font-size: 1.2rem;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form {
+    font-size: 1.2rem;
+}
+
+form input {
+    height: 30px;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px rgb(250, 249, 249);
+    margin-bottom: 3.5rem;
+}
+
+form input[type=text] {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+}
+
+form input::after {
+    box-shadow: 0 5px 15px rgba(255, 253, 253, 0.986);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+form input:hover::after {
+    opacity: 1;
+}
+
+form button {
+    margin: auto;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    margin-top: 0;
+    height: 50px;
+    width: 150px;
+    border-radius: 40px;
+    border: white
+}
+
+form button:hover {
+    cursor: pointer;
+    background: rgb(42, 104, 196);
+    color: aliceblue;
+
+}
