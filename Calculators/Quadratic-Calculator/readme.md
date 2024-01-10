@@ -13,3 +13,5 @@ Quadratic Calculator take the values of co-efficients of the variable and calcul
 
 ## Screenshots/ GIFs:-
 
+![Quadratic-Calculator](./assets/Screenshot%20(179).png)
+![Image-2](./assets/Screenshot%20(180).png)

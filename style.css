@@ -24,10 +24,12 @@
 
 ::-webkit-scrollbar-track {
     background: var(--secondary);
+    border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary);
+    background: var(--ternary);
+    border-radius: 25px;
 }
 
 body {
@@ -52,9 +54,8 @@ html {
 
 header {
     position: sticky;
-    top: 0;
     z-index: 100;
-    background: linear-gradient(315deg, #ff1b82 , #4597f5, #000000) ;
+    background: linear-gradient(315deg, var(--primary), var(--ternary));
 }
 
 .navbar {
@@ -65,7 +66,7 @@ a {
     text-decoration: none;
     color: #e0dd00 ;
     text-shadow: 2px 2px 2px #000000;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 ul {
@@ -90,6 +91,14 @@ nav li {
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
     margin-right: 10px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+nav li:hover {
+    border-bottom: 0.4rem var(--light) solid;
+    transition: 0.4s ease-in-out;
+    transform: scale(0.95);
+    opacity: 0.95;
 }
 
 nav li:hover {
@@ -146,11 +155,13 @@ section {
 
 .comp-section .compcontainer h1 { 
     text-shadow: 2px 2px 10px var(--light);
+    margin-top: 16px;
 }
 
 .comp-section .compcontainer h3 {
     font-weight: 300;
     font-size: 2.8rem;
+    margin-top: 14px;
 }
 
 .comp-section .compcontainer a {
@@ -179,6 +190,7 @@ section {
     width: 85%;
     text-align: center;
     margin: auto;
+    margin-top: 18px;
     padding: 10px;
     color: var(--secondary);
 }
@@ -206,8 +218,9 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 90px;
+    margin-top: 100px;
     padding: 50px 0;
+    padding-top: 25px;
 }
 
 .container .box {
