@@ -7,15 +7,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="calculator">
-      <h1>LCM Calculator</h1>
-      <label for="numbers">Enter Numbers (comma-separated):</label>
-      <input type="text" id="numbers" placeholder="Enter numbers" />
-
-      <button onclick="calculateLCM()">Calculate LCM</button>
-
-      <p id="result"></p>
+    <div class="main">
+        <div class="cal">
+          <h1>LCM CALCULATOR</h1>
+          <label for="numbers">Enter Numbers (comma-separated):</label>
+          <input type="text" id="numbers" placeholder="Enter numbers" />
+        
+          <button onclick="calculateLCM()">Calculate</button>
+          <div id="result"></div>
+        </div>
+        <div id="desp">
+          <div id="formula">
+            LCM(a,b) = |a*b| / GCD(a,b)
+          </div>
+          <div id="answer"></div>
+        </div>
     </div>
+    
+    <!-- <div id="answer"></div> -->
+
 
     <script src="script.js"></script>
   </body>

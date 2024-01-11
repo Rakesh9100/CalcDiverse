@@ -11,4 +11,7 @@ Simple LCM calculator for multiple numbers.
 - JavaScript
 
 ## Screenshots :-
-![Screenshot 2024-01-07 194659](https://github.com/Govind516/CalcDiverse/assets/102366719/e4c3ed37-9247-4be6-96db-d4dbf36c89d4)
+![image1](./assets/Screenshot.PNG)
+---
+![image2](./assets/mobileScreenshot.PNG)
+---
