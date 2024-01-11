@@ -1,8 +1,8 @@
 window.convertPercentToFraction = function() {
     var percentInput = document.getElementById('percentInput').value;
   
-    // Check if the input is a valid number
-    if (isNaN(percentInput)) {
+    // Check if the input is empty or not a valid number
+    if (percentInput.trim() === '' || isNaN(percentInput)) {
       alert('Please enter a valid number.');
       return;
     }
