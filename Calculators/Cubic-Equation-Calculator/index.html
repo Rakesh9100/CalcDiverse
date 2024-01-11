@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubic Equation Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Cubic Equation Calculator</h1>
+            <div class="equation">
+                <p>A <b>X<sup>3</sup></b> + B <b>X<sup>2</sup></b> + C <b>X<sup>1</sup></b> + D = 0</p>
+            </div>
+            <div class="inputs">
+                A: <input type="number" id="a" value="1" size="25" maxlength="25">
+                <br>B: <input type="number" id="b" value="2" size="25" maxlength="25">
+                <br>C: <input type="number" id="c" value="2" size="25" maxlength="25">
+                <br>D: <input type="number" id="d" value="2" size="25" maxlength="25">
+                <br>
+
+                <button class="css-button-rounded--yellow" onclick="calculate()">Calculate</button>
+                <b id="roots"></b>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

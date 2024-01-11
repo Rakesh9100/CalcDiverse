@@ -1,12 +1,20 @@
 function calculate(event) {
     event.preventDefault();
     var shape = document.getElementById("shape").value;
-    var length = parseFloat(document.getElementById("length").value);
-    var width = parseFloat(document.getElementById("width").value);
+    var length = parseFloat(document.getElementById("length").value) || 0;
+    var width = parseFloat(document.getElementById("width").value) || 0;
+    var radius = parseFloat(document.getElementById("radius").value) || 0;
+    var diagonal1 = parseFloat(document.getElementById("diagonal1").value) || 0;
+    var diagonal2 = parseFloat(document.getElementById("diagonal2").value) || 0;
     var resultContainer = document.getElementById("result");
 
-    if (isNaN(length) || (isNaN(width) && (shape !== "circle"))) {
-        resultContainer.textContent = "Please enter valid numerical values.";
+    if (shape === "") {
+        resultContainer.textContent = "Please select a shape.";
+        return;
+    }
+
+    if (length < 0 || width < 0 || radius < 0 || diagonal1 < 0 || diagonal2 < 0) {
+        resultContainer.textContent = "Enter a positive value.";
         return;
     }
 
@@ -22,8 +30,8 @@ function calculate(event) {
             area = Math.pow(length, 2);
             break;
         case "circle":
-            perimeter = 2 * Math.PI * length;
-            area = Math.PI * Math.pow(length, 2);
+            perimeter = 2 * Math.PI * radius;
+            area = Math.PI * Math.pow(radius, 2);
             break;
         case "triangle":
             perimeter = 3 * length;
@@ -33,9 +41,72 @@ function calculate(event) {
             perimeter = 2 * (length + width);
             area = length * width;
             break;
+        case "rhombus":
+            perimeter = 4 * Math.sqrt(Math.pow(diagonal1 / 2, 2) + Math.pow(diagonal2 / 2, 2));
+            area = (diagonal1 * diagonal2) / 2;
+            break;
+        case "trapezoid":
+            // Assuming the height is the average of the parallel sides
+            var height = (length + width) / 2;
+            perimeter = length + width;
+            area = ((length + width) * height) / 2;
+            break;
+        case "hexagon":
+            perimeter = 6 * length;
+            area = (3 * Math.sqrt(3) * Math.pow(length, 2)) / 2;
+            break;
+        // Add cases for more shapes as needed
         default:
             break;
     }
 
     resultContainer.textContent = "Perimeter: " + perimeter.toFixed(2) + ", Area: " + area.toFixed(2);
 }
+
+
+    function showDimensions() {
+        var shape = document.getElementById("shape").value;
+
+        // Hide all dimension rows initially
+        document.getElementById("length-row").style.display = "none";
+        document.getElementById("width-row").style.display = "none";
+        document.getElementById("radius-row").style.display = "none";
+        document.getElementById("diagonal1-row").style.display = "none";
+        document.getElementById("diagonal2-row").style.display = "none";
+
+        // Show the relevant dimension row based on the selected shape
+        switch (shape) {
+            case "rectangle":
+                document.getElementById("length-row").style.display = "block";
+                document.getElementById("width-row").style.display = "block";
+                break;
+            case "square":
+                document.getElementById("length-row").style.display = "block";
+                break;
+            case "circle":
+                document.getElementById("radius-row").style.display = "block";
+                break;
+            case "triangle":
+                document.getElementById("length-row").style.display = "block";
+                document.getElementById("width-row").style.display = "block";
+                break;
+            case "parallelogram":
+                document.getElementById("length-row").style.display = "block";
+                document.getElementById("width-row").style.display = "block";
+                break;
+            case "rhombus":
+                document.getElementById("diagonal1-row").style.display = "block";
+                document.getElementById("diagonal2-row").style.display = "block";
+                break;
+            case "trapezoid":
+                document.getElementById("length-row").style.display = "block";
+                document.getElementById("width-row").style.display = "block";
+                break;
+            case "hexagon":
+                document.getElementById("length-row").style.display = "block";
+                break;
+            // Add cases for more shapes as needed
+            default:
+                break;
+        }
+    }
