@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  input {
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(0, 128, 0);
+    color:white;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+  }
+  #history {
+    text-align: left;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  .box{
+    background-color:rgba(0, 0, 0, 0.829);
+    width:25%;
+    box-shadow:4px 8px 5px rgba(0, 0, 0, 0.918);
+    margin-top:10px;
+    border-radius:10px;
+  
+  }
+  .main{
+    justify-content:center;
+    justify-items:center;
+    align-items:center;
+    display:flex;
+    border:black 5px;
+    flex-direction:column;
+  
+  }
+  h2{
+    color:white;
+  }
+  h1 {
+    font-size: 36px;
+    animation: colorChange 5s infinite; /* 5s duration, infinite iterations */
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: red;
+    }
+    25% {
+      color: blue;
+    }
+    50% {
+      color: green;
+    }
+    75% {
+      color: orange;
+    }
+    100% {
+      color: purple;
+    }
+  }
+  
