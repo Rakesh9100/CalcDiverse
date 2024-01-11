@@ -113,3 +113,21 @@ function resetForm() {
     resultContainer.innerHTML = '';
     createMatrixInputs();
 }
+function setResult(resultMatrix) {
+    const resultContainer = document.getElementById("result");
+
+    if (Array.isArray(resultMatrix)) {
+        // Check for NaN values in the result matrix
+        const hasNaN = resultMatrix.some(row => row.some(value => isNaN(value)));
+
+        if (hasNaN) {
+            resultContainer.innerHTML = "Error: Result contains NaN values.";
+        } else {
+            resultContainer.innerHTML = resultMatrix.map(row => row.join(" ")).join("<br>");
+        }
+    } else if (isNaN(resultMatrix)) {
+        resultContainer.innerHTML = "Error: Result is NaN.";
+    } else {
+        resultContainer.innerHTML = resultMatrix;
+    }
+}

@@ -11,3 +11,4 @@ A web-based matrix calculator supporting basic operations (addition, subtraction
 - JavaScript
 
 ## Screenshots :-
+![Screenshot 2024-01-11 023839](https://github.com/Rakesh9100/CalcDiverse/assets/138357063/25a4c2d2-a0ad-48af-abea-7fd73e74c561)
