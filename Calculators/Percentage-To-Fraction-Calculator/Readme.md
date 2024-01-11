@@ -28,3 +28,6 @@ For example, to calculate the fraction of percentage 62.5%:
 - HTML
 - CSS
 - JavaScript
+
+## Screenshots
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/17878225-14c0-4b02-8d9a-dcd919271ab2)
