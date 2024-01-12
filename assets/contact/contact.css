@@ -6,6 +6,11 @@ header {
     top: 0;
     z-index: 100;
 }
+.navbar {
+    font-family: 'Poppins',sans-serif;
+    background-color: rgb(9, 5, 40);
+    margin: 0 auto;
+}
 .box{
     padding: 50px;
     text-align: center;
