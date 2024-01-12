@@ -1,4 +1,4 @@
-# <p align="center">Advanced Calculator</p>
+# <p align="center">Basic Calculator</p>
 
 ## Description :-
 
