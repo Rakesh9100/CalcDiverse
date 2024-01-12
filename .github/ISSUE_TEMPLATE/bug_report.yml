@@ -3,17 +3,17 @@ description: Report an issue to help us improve the project.
 title: "[Bug] <write a small description here>"
 body:
   - type: textarea
+    id: description
     attributes:
       label: Description
-      id: description
       description: A brief description of the issue or bug you are facing, also include what you tried and what didn't work.
     validations:
       required: false
 
   - type: textarea
+    id: screenshots
     attributes:
       label: Screenshots
-      id: screenshots
       description: Please add screenshots if applicable.
     validations:
       required: false
@@ -44,5 +44,5 @@ body:
       label: Code of Conduct
       description: By submitting this issue, you agree to follow our "[Code of Conduct](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CODE_OF_CONDUCT.md)"
       options:
-        - label: I agree to follow this project's "[Code of Conduct](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CODE_OF_CONDUCT.md)."
+        - label: I agree to follow this project's "[Code of Conduct](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CODE_OF_CONDUCT.md)".
           required: true
