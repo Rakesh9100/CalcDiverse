@@ -1,109 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    overflow-y: hidden;
-        overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
-    width: 100vw;
-    height: 100vh;
-    line-height: 1.4;
-    background-image: url('car.jpg');
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  line-height: 1.4;
+  background-image: url("car.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
-.container{
-    display: grid;
-    max-width: 1200px;
-    height: 100vh;
-    margin: 0 auto;
-
+.container {
+  display: grid;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
 }
 
-.calculator{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    place-self: center;
-    opacity: 0.8;
-    padding: 0 20px;
-    border: 1px ;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: white;
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  place-self: center;
+  opacity: 0.8;
+  padding: 0 20px;
+  border: 1px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
 }
-.heading{
-    margin-top: 20px;
-    font-size: 2rem;
-    font-weight: 700;
+.heading {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-label{
-    font-size: 1.5rem;
-    font-weight: 500;
+label {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 input {
-    width: 80%;
-    padding: 8px;
-    
+  width: 80%;
+  padding: 8px;
 }
 
 button {
-    background-color: #994a9b;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    box-shadow: 5px 2px 5px rgba(139, 87, 87, 0.1);
+  background-color: #994a9b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: 5px 2px 5px rgba(139, 87, 87, 0.1);
 }
 
 button:hover {
-    transform: scale(1.1);
-    
+  transform: scale(1.1);
 }
 
 #result {
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 28px;
-    padding: 0 10px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: black;
-    opacity: 0.6;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 28px;
+  padding: 0 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
+  opacity: 1;
 }
 
-@media(max-width:786px) {
-    .container{
-        max-width: 80vw;
-        margin: 0 auto;
-    }
-    .calculator{
-        gap: 20px;
-        
-    }
-    .heading{
-       
-        font-size: 28px;
-        font-weight: 400;
-    }
-    label{
-        font-size: 18px;
-        font-weight: 300;
-    }
-    input {
-        width: 60%;
-        padding: 6px;
-        
-    }
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.button-container button:first-child {
+  margin-right: 10px;
+}
+
+@media (max-width: 786px) {
+  .container {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+  .calculator {
+    gap: 20px;
+  }
+  .heading {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  label {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  input {
+    width: 60%;
+    padding: 6px;
+  }
 }
