@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Equation in Two Variables Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h3>System of Two Linear Equation</h3>
+
+        <div class="input-container">
+            <div class="first-equation">
+                <input type="number" name="a1" value="" class="field" id="a1">
+                x +
+                <input type="number" name="b1" value="" class="field" id="b1">
+                y +
+                <input type="number" name="c1" value="" class="field" id="c1">
+                = 0
+
+            </div>
+            <div class="second-equation">
+                <input type="number" name="a2" value="" class="field" id="a2">
+                x +
+                <input type="number" name="b2" value="" class="field" id="b2">
+                y +
+                <input type="number" name="c2" value="" class="field" id="c2">
+                = 0
+
+            </div>
+        </div>
+        <!-- Input container end here -->
+
+        <div class="btn-container">
+            <button type="button" name="button" class="btn calculate-btn" onclick="result()">Calculate</button>
+            <button type="button" name="button" class="btn clear-btn" onclick="clearData()">Clear</button>
+        </div>
+
+        <div class="warning-msg" id="warning-msg">
+
+        </div>
+
+        <div class="output-container">
+            <div class="outputBox">
+                <div class="text">x</div>
+                <span class="equal">=</span>
+                <div class="x-result" id="x-result"></div>
+            </div>
+
+            <div class="outputBox">
+                <div class="text">y</div>
+                <span class="equal">=</span>
+                <div class="y-result" id="y-result"></div>
+            </div>
+        </div>
+
+        <!-- Output-container ends here -->
+
+        <div class="solution-type" id="solution-type">
+
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

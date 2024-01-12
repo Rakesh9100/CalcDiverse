@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+#gcd {
+  font-family: 'Bungee Spice', sans-serif;
+  font-size: 40px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #282c35;
+  color: #fff;
+  font-weight: 500;
+}
+
+.main {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  border: 1px solid #bbb;
+  padding: 40px;
+  margin: 20px;
+  margin-bottom: 40px;
+  background-color: #545454;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.inputs {
+  margin-right: 20px;
+}
+
+span {
+  font-weight: bold;
+  color: #ffc107;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#answer,
+#answer-multi {
+  max-height: 100px;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000000;
+  white-space: nowrap;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#answer::before,
+#answer-multi::before {
+  content: "Answer: ";
+  font-weight: bold;
+  color: #555;
+}
+
+#headings {
+  display: flex;
+  font-size: 30px;
+  color: #ffc107;
+}
+
+#single,
+#multiple-heading {
+  font-family: 'Bungee Spice', sans-serif;
+  padding: 40px;
+  margin: 20px;
+  background-color: #545454;
+  margin-right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#single {
+  margin-left: 50px;
+  text-align: center;
+  padding: 60px;
+}
+
+#multiple-heading {
+  padding-top: 60px;
+}
+
+.container .message {
+  color: #ffff00;
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+#error-single {
+  color: red;
+  font-weight: 400;
+}
