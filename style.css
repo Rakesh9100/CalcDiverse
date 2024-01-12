@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
     --primary: #ff1b82;
@@ -12,9 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
-    font-family: Ubuntu;
-}
+} 
 
 /* Scrollbar Css */
 
@@ -23,20 +21,23 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--secondary);
-    border-radius: 25px;
+    background: #1d013c;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--ternary);
-    border-radius: 25px;
+    background: rgb(9,5,40);
+    border-radius: 5px;
 }
 
 body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #5b0053;
+    background-image: url(assets/bg2-img.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 1.4rem;
 }
 
@@ -46,7 +47,7 @@ html {
 
 body,
 html {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     line-height: 1.4;
     scroll-behavior: smooth;
@@ -55,22 +56,29 @@ html {
 header {
     position: sticky;
     z-index: 100;
-    background: linear-gradient(315deg, var(--primary), var(--ternary));
 }
 
 .navbar {
+    font-family: 'Poppins',sans-serif;
+    background-color: rgb(9, 5, 40, 0.5);
     margin: 0 auto;
 }
 
-a {
+.navbar a {
     text-decoration: none;
-    color: #e0dd00 ;
-    text-shadow: 2px 2px 2px #000000;
+  
+    font-size: 2rem;
     font-weight: 700;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    color: #C5C6C7;
+    transition: 0.3s ease-in-out;
 }
 
-ul {
-    list-style: none;
+.nav-link:hover{
+    color: #ff1b82;
+    border-top-color: #ff1b82;
+    border-bottom-color: #ff1b82;
 }
 
 nav {
@@ -78,32 +86,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    box-shadow: 0px 5px 10px 0px var(--secondary);
 }
 
 nav ul {
     display: flex;
-    gap: 3.5rem;
-}
 
-nav li {
-    font-size: 2.3rem;
-    border-bottom: 0.4rem transparent solid;
-    transition: 0.3s ease-in-out;
-    margin-right: 10px;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-nav li:hover {
-    border-bottom: 0.4rem var(--light) solid;
-    transition: 0.4s ease-in-out;
-    transform: scale(0.95);
-    opacity: 0.95;
-}
-
-nav li:hover {
-    border-bottom: 0.4rem var(--secondary) solid;
-    transition:0.3s ease-in-out;
+    gap: 2rem;
+    list-style: none;
 }
 
 .logo {
@@ -154,14 +143,17 @@ section {
 }
 
 .comp-section .compcontainer h1 { 
+    font-family: Ubuntu;
     text-shadow: 2px 2px 10px var(--light);
     margin-top: 16px;
 }
 
 .comp-section .compcontainer h3 {
+    font-family: 'Poppins',sans-serif;
+    color: rgb(244 239 240 / 79%);
+    margin-top: 2rem;
     font-weight: 300;
-    font-size: 2.8rem;
-    margin-top: 14px;
+    font-size: 2.5rem;
 }
 
 .comp-section .compcontainer a {
@@ -169,20 +161,21 @@ section {
 }
 
 .comp-section .compcontainer .started {
-    font-size: 25px;
-    font-weight: 900;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
     margin-top: 21px;
     padding: 10px 45px;
-    border-radius: 45px;
-    color: var(--light);
-    background: var(--dark);
+    border-radius: 18px;
+    color: #ffffff;
+    background: var(--primary);
     cursor: pointer;
-    transition: transform 0.5s;
+    transition: 0.5s ease-in-out;
 }
 
 .comp-section .compcontainer .started:hover {
-    transform: scale(1.1);
-    border: 5px solid var(--ternary);
+    transform: scale(1.02);
+    background: #ff6984;
 }
 
 .paragraph {
@@ -192,7 +185,7 @@ section {
     margin: auto;
     margin-top: 18px;
     padding: 10px;
-    color: var(--secondary);
+    color: rgb(244 239 240 / 79%);
 }
 
 .comp-section {
@@ -231,11 +224,17 @@ section {
     justify-content: center;
     align-items: center;
     margin: 36px 25px;
-    transition: transform 0.1s;
-    background: var(--secondary);
-    border: 5px solid var(--dark);
+    transition: transform 0.3s;
+    background: rgb(245,230,230);
+    background: linear-gradient(177deg, rgba(245,230,230,0.7232142857142857) 40%, rgba(249,249,249,0.21621148459383754) 100%, rgba(0,0,0,1) 100%);
+    border: 5px solid #682572;
     border-radius: 14px;
-    box-shadow: 2px 2px 4px 2px var(--light);
+    cursor: pointer;
+}
+
+.container .box:hover{
+    transform: scale(1.02);
+    box-shadow: -4px -4px 10px #682572;
 }
 
 .container .box .content {
@@ -248,34 +247,35 @@ section {
 
 .container .box .content h2 {
     font-size: 25px;
-    color: var(--ternary);
-    text-decoration: underline dashed;
+    color: rgb(9,5,40);
+    margin-top: 20px;
     cursor: pointer;
 }
 
 .container .box .content h3 {
-    font-size: 19px;
-    color: var(--primary);
-    margin-top: 21px;
+    font-size: 15px;
+    color: #682572;
+    margin-top: 20px;
     transition: all 0.3s;
 }
 
 .container .box .content button {
     float: left;
     cursor: pointer;
-    font-size: 21px;
-    font-weight: 900;
-    color: var(--ternary);
-    /* margin-top: 21px;
-    margin-bottom: 10px; */
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background: var(--primary);
+    margin-top: 20px;
+    margin-bottom: 10px;
     padding: 9px 14px;
-    border-radius: 36px;
-    background-color: var(--light);
-    border: 5px solid var(--primary);
+    border-radius: 15px;
 }
 
 .container .box .content button:hover {
-    transform: rotate(-10deg);
+    transform: scale(1.02);
+    background: #ff6984;
 }
 
 .container .box .content img {
@@ -284,16 +284,16 @@ section {
     height: 36px;
     width: 36px;
     font-weight: 900;
-    color: var(--ternary);
-    /* margin-top: 45px;
-    margin-right: -25px; */
-    border-radius: 25px;
+    margin-top: 20px;
+    margin-right: -25px;
+    border-radius: 20px;
     background-color: var(--light);
-    border: 4px solid var(--primary);
+    border: 4px solid #682572;
 }
 
 .container .box .content img:hover {
-    transform: rotate(10deg);
+    transform: scale(1.02);
+    background: #ff6984;
 }
 
 .card-footer{
@@ -440,14 +440,14 @@ section {
 .contributors {
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
 }
 
 .contributors h1 {
-    font: 5.5vw/1 Permanent Marker;
     text-align: center;
-    color: white;
-    font-size: 4.5rem;
-    margin-bottom: 4%;
+    color: #cb73d8;
+    font-size: 4rem;
+    margin-bottom: 50px;
 }
 
 .contributors h1:hover {
@@ -534,8 +534,7 @@ section {
 /*-----------------------------------------------   Updated  Footer  Styling  ---------------------------------------*/
 .footer-basic {
     padding:40px 0;
-    background-color:#1b1b1b;
-    color:#024edb;
+    background-color: rgb(9, 5, 40, 0.9);
 }
   
 .footer-basic ul {
@@ -554,14 +553,19 @@ section {
 }
   
 .footer-basic ul a {
-    color:inherit;
+    color:#cb73d8;
+    padding: 8px;
+    border: 1px solid transparent;
     text-decoration:none;
+    transition: 0.3s ease-in;
     opacity:0.8;
 }
   
 .footer-basic ul a:hover {
     opacity:1;
-    color: rgb(21, 153, 206);
+    color: #682572;
+    border-top-color: #682572;
+    border-bottom-color: #682572;
 }
   
 .footer-basic .social {
@@ -569,34 +573,23 @@ section {
     padding-bottom: 25px;
 }
 
-.footer-basic .social > a {
-    font-size: 12px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px; 
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid rgb(255, 255, 255);
-    margin: 0 8px;
-    color: inherit;
-    opacity: 0.75;
+.social{
+    font-size: 3.5rem;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
-
-.footer-basic .social img {
-    width: 100%;
-    height: 100%; 
-    border-radius: 50%; 
-    margin-right: 5px;
-    background-color: #ffffff;
+.social a{
+    color: var(--secondary);
 }
-
-.footer-basic .social > a:hover {
-    opacity: 0.9;
-    background-color: #e0dd00;
-    transform: scale(1.2);
+.social a:hover{
+    color: var(--primary);
 }
-
   
 .footer-basic .copyright {
     margin-top:15px;
