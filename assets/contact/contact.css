@@ -96,8 +96,9 @@ button:hover {
 }
 
 .footer-basic ul a {
-    color:#cb73d8;
+    color: var(--light);
     padding: 8px;
+    font-weight: 500;
     border: 1px solid transparent;
     text-decoration:none;
     transition: 0.3s ease-in;
@@ -105,10 +106,10 @@ button:hover {
 }
   
 .footer-basic ul a:hover {
-    opacity:1;
-    color: #682572;
-    border-top-color: #682572;
-    border-bottom-color: #682572;
+    opacity: 1;
+    color: var(--primary);
+    border-top-color: var(--primary);
+    border-bottom-color: var(--primary);
 }
 
 .footer-basic .social {

@@ -21,19 +21,19 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #1d013c;
+    background: var(--light);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(9,5,40);
-    border-radius: 5px;
+    background: var(--primary);
+    border-radius: 25px;
 }
 
 body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(assets/bg2-img.jpg);
+    background-image: url(./assets/images/background.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,9 +150,9 @@ section {
 
 .comp-section .compcontainer h3 {
     font-family: 'Poppins',sans-serif;
-    color: rgb(244 239 240 / 79%);
+    color: rgb(244 239 240 / 91%);
     margin-top: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2.5rem;
 }
 
@@ -182,10 +182,11 @@ section {
     font-size: 2rem;
     width: 85%;
     text-align: center;
+    font-weight: 500;
     margin: auto;
     margin-top: 18px;
     padding: 10px;
-    color: rgb(244 239 240 / 79%);
+    color: rgb(244 239 240 / 91%);
 }
 
 .comp-section {
@@ -303,7 +304,176 @@ section {
     margin-top: 20px;
 }
 
-/* Footer Css */
+/* Contributors Styling */
+
+.contributors {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+.contributors h1 {
+    text-align: center;
+    color: #cb73d8;
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+.contributors h1:hover {
+    text-decoration: underline;
+}
+
+#contributor {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contributor-card {
+    width: 65px;
+    height: 65px;
+    clip-path: polygon(50% 0%, 91% 25%, 91% 75%, 50% 100%, 9% 75%, 9% 25%);
+    margin: 5px;
+    transition: transform 0.3s ease-in-out , opacity 0.3s ease-in-out;
+}
+
+.contributor-card:hover{
+    transform: scale(1.35);
+    opacity: 0.85;
+}
+
+.contributor-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contributor-card:nth-child(4n+1),
+.contributor-card:nth-child(4n+3) {
+    margin-top: -4px;
+}
+
+/* Contributors Styling Ends */
+
+/* Scroll to Button Styling */
+
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    transition: opacity 0.3s, background-color 0.3s;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2),
+                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+#progress:hover{
+    opacity: 1;
+    background-color: #df87ef;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    50%{
+        transform: translateY(-8px);
+    }
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: rgb(104, 98, 232);
+    background: linear-gradient(90deg, rgb(159, 157, 235) 0%, rgb(212, 153, 222) 39%, rgb(253, 199, 134) 100%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    color: black;
+}
+
+/* Scroll to Button Styling Ends */
+
+/* Footer  Styling */
+
+.footer-basic {
+    padding:40px 0;
+    background-color: rgb(9, 5, 40, 0.9);
+}
+  
+.footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+    display:flex;
+    justify-content: center;
+}
+  
+.footer-basic li {
+    padding:0 10px;
+}
+  
+.footer-basic ul a {
+    color: var(--light);
+    padding: 8px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    text-decoration:none;
+    transition: 0.3s ease-in;
+    opacity:0.8;
+}
+  
+.footer-basic ul a:hover {
+    opacity: 1;
+    color: var(--primary);
+    border-top-color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+  
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.social{
+    font-size: 3.5rem;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.social a{
+    color: var(--secondary);
+}
+.social a:hover{
+    color: var(--primary);
+}
+  
+.footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:rgb(255, 255, 255);
+    margin-bottom:0;
+}
+
+/* Footer Styling Ends */
 
 /* Media Queries */
 
@@ -435,168 +605,3 @@ section {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
-/* -------------------------------------------   Updated Contributors Styling --------------------------------------- */
-.contributors {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 50px;
-}
-
-.contributors h1 {
-    text-align: center;
-    color: #cb73d8;
-    font-size: 4rem;
-    margin-bottom: 50px;
-}
-
-.contributors h1:hover {
-    text-decoration: underline;
-}
-
-#contributor {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.contributor-card {
-    width: 65px;
-    height: 65px;
-    clip-path: polygon(50% 0%, 91% 25%, 91% 75%, 50% 100%, 9% 75%, 9% 25%);
-    margin: 5px;
-    transition: transform 0.3s ease-in-out , opacity 0.3s ease-in-out;
-}
-
-.contributor-card:hover{
-    transform: scale(1.35);
-    opacity: 0.85;
-}
-
-.contributor-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.contributor-card:nth-child(4n+1),
-.contributor-card:nth-child(4n+3) {
-    margin-top: -4px;
-}
-/* ----------------------------------------------  Contributors Styling Ends  -------------------------------------- */
-
-/* ----------------------------------------------  Scroll to Button Styling  --------------------------------------- */
-#progress {
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    height: 50px;
-    width: 50px;
-    display: none;
-    place-items: center;
-    border-radius: 50%;
-    transition: opacity 0.3s, background-color 0.3s;
-    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2),
-                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
-                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
-    cursor: pointer;
-}
-
-#progress:hover{
-    opacity: 1;
-    background-color: #df87ef;
-    animation: animate 1s linear infinite;
-}
-
-@keyframes animate{
-    50%{
-        transform: translateY(-8px);
-    }
-}
-
-#progress-value {
-    display: block;
-    height: calc(100% - 15px);
-    width: calc(100% - 15px);
-    background-color: rgb(104, 98, 232);
-    background: linear-gradient(90deg, rgb(159, 157, 235) 0%, rgb(212, 153, 222) 39%, rgb(253, 199, 134) 100%);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-size: 26px;
-    color: black;
-}
-/* -------------------------------------------  Scroll to Button Styling Ends  ------------------------------------- */
-
-/*-----------------------------------------------   Updated  Footer  Styling  ---------------------------------------*/
-.footer-basic {
-    padding:40px 0;
-    background-color: rgb(9, 5, 40, 0.9);
-}
-  
-.footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-    display:flex;
-    justify-content: center;
-}
-  
-.footer-basic li {
-    padding:0 10px;
-}
-  
-.footer-basic ul a {
-    color:#cb73d8;
-    padding: 8px;
-    border: 1px solid transparent;
-    text-decoration:none;
-    transition: 0.3s ease-in;
-    opacity:0.8;
-}
-  
-.footer-basic ul a:hover {
-    opacity:1;
-    color: #682572;
-    border-top-color: #682572;
-    border-bottom-color: #682572;
-}
-  
-.footer-basic .social {
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-.social{
-    font-size: 3.5rem;
-    text-decoration: none;
-    margin: 0 1rem;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-.social a{
-    color: var(--secondary);
-}
-.social a:hover{
-    color: var(--primary);
-}
-  
-.footer-basic .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:rgb(255, 255, 255);
-    margin-bottom:0;
-}
-
-/* ------------------------------------Footer Styling Ends -------------------------------- */
