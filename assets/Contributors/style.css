@@ -1,0 +1,151 @@
+
+#contributor {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    font-family: Ubuntu;
+}
+div {
+    display: block;
+}
+body, html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #5b0053;
+    font-size: 1.4rem;
+}
+.contributor-card:nth-child(4n+1), .contributor-card:nth-child(4n+3) {
+    margin-top: -4px;
+}
+.contributor-card {
+    width: 100px;
+    height: 100px;
+    clip-path: circle(40%);
+    margin: 5px;
+    transition: transform 0.3s ease-in-out , opacity 0.3s ease-in-out;
+}
+
+
+.contributor-card:hover {
+    box-shadow: 0 0 10px rgba(253, 251, 251, 0.5); /* Adjust the color and size of the glow as needed */
+}
+
+.contributor-card:active {
+    transform: scale(1.1);
+    opacity: 0.8;
+    box-shadow: 0 0 20px rgb(188, 240, 210); /* Adjust the color and size of the glow as needed */
+}
+
+:root {
+    --primary: #ff1b82;
+    --secondary: #f4eff0;
+    --ternary: #1327ff;
+    --light: #f7f26c;
+    --dark: #f50414;
+}
+html {
+    font-size: 62.5%;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--ternary);
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track {
+    background: var(--secondary);
+    border-radius: 25px;
+}
+
+
+
+/*----------------------------------------------- Updated Footer Styling ---------------------------------------*/
+.footer-basic {
+    padding: 40px 0;
+    background-color: #1b1b1b;
+    color: #024edb;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+    color: rgb(21, 153, 206);
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #ffffff;
+}
+
+.footer-basic .social > a:hover {
+    opacity: 0.9;
+    background-color: #e0dd00;
+    transform: scale(1.2);
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+
+}
