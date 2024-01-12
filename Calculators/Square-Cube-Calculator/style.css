@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Sometype+Mono:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Raleway, sans-serif;
+    background: #FEAC5E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.calculator {
+    background-color: #44475a;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+
+h1 {
+    color: #50fa7b;
+}
+
+label {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #bd93f9;
+    text-align: left;
+}
+
+input {
+    font-family: "Sometype Mono", sans-serif;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #6272a4;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #6272a4;
+    color: #f8f8f2;
+}
+
+input::placeholder {
+    color: #8be9fd;
+}
+
+button {
+    background-color: #ff79c6;
+    color: #282a36;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#result {
+    margin-top: 10%;
+    font-size: 18px;
+    color: #f1fa8c;
+    font-family: "Sometype Mono", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.css-button-rounded--green {
+    min-width: 130px;
+    height: 40px;
+    color: #f8f8f2;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #57cc99;
+    background: #57cc99;
+}
+
+.css-button-rounded--green:hover {
+    background: #fff;
+    color: #57cc99
+}
