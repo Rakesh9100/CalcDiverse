@@ -9,4 +9,3 @@ This is a web application which calculates amount of sleep required a night base
 - HTML
 - CSS
 - Javascript
-
