@@ -1,7 +1,11 @@
 body { 
     margin: 0; 
 }
-
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 .box{
     padding: 50px;
     text-align: center;
