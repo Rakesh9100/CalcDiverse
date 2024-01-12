@@ -46,7 +46,7 @@
         <section class="contact-container">
             <h2>Contact Us</h2>
             <p>If you have any questions or feedback, feel free to reach out to us!</p>
-            <form id="contact-form">
+            <form id="contact-form" name="CalcDiverse Contact" autocomplete="off" netlify>
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
 
@@ -54,7 +54,7 @@
                 <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
 
                 <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Enter Your Message"></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
@@ -81,7 +81,6 @@
         </footer>
     </div>
 
-    <script src="./contact.js"></script>
 </body>
 
 </html>
