@@ -1,6 +1,6 @@
-name: ​🐞 Bug
+name: Bug 🐞
 description: Report an issue to help us improve the project.
-title: "[BUG] <write a small description here>"
+title: "[Bug] <write a small description here>"
 body:
   - type: textarea
     attributes:
@@ -14,15 +14,7 @@ body:
     attributes:
       label: Screenshots
       id: screenshots
-      description: Please add screenshots if applicable
-    validations:
-      required: false
-
-  - type: textarea
-    attributes:
-      label: Any additional information?
-      id: extrainfo
-      description: Any additional information or Is there anything we should know about this bug?
+      description: Please add screenshots if applicable.
     validations:
       required: false
 
@@ -31,22 +23,26 @@ body:
     attributes:
       label: "Checklist"
       options:
-        - label: "I have checked the existing issues"
+        - label: "I have checked the existing issues."
           required: true
 
         - label: "I follow [Contributing Guidelines](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CONTRIBUTING_GUIDELINES.md) of this project."
           required: true
 
-        - label: "I am willing to work on this issue (optional)"
+        - label: "I am a IWOC'24 contributor."
           required: false
 
-        - label: "I am a SWOC'24 contributor"
+        - label: "I am a JWOC'24 contributor."
+          required: false
+
+        - label: "I am a SWOC'24 contributor."
           required: false
   
   - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CODE_OF_CONDUCT.md)"
+      description: By submitting this issue, you agree to follow our "[Code of Conduct](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CODE_OF_CONDUCT.md)"
       options:
-        - label: I agree to follow this project's [Code of Conduct](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CODE_OF_CONDUCT.md)"
+        - label: I agree to follow this project's "[Code of Conduct](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CODE_OF_CONDUCT.md)."
+        required: true
