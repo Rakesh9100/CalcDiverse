@@ -55,7 +55,6 @@ html {
 
 header {
     position: sticky;
-    top: 0;
     z-index: 100;
 }
 
@@ -67,6 +66,7 @@ header {
 
 .navbar a {
     text-decoration: none;
+  
     font-size: 2rem;
     font-weight: 700;
     padding: 0.5rem 1rem;
@@ -90,6 +90,7 @@ nav {
 
 nav ul {
     display: flex;
+
     gap: 2rem;
     list-style: none;
 }
@@ -144,6 +145,7 @@ section {
 .comp-section .compcontainer h1 { 
     font-family: Ubuntu;
     text-shadow: 2px 2px 10px var(--light);
+    margin-top: 16px;
 }
 
 .comp-section .compcontainer h3 {
@@ -181,6 +183,7 @@ section {
     width: 85%;
     text-align: center;
     margin: auto;
+    margin-top: 18px;
     padding: 10px;
     color: rgb(244 239 240 / 79%);
 }
@@ -208,8 +211,9 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 90px;
+    margin-top: 100px;
     padding: 50px 0;
+    padding-top: 25px;
 }
 
 .container .box {
@@ -236,7 +240,7 @@ section {
 .container .box .content {
     position: relative;
     left: 0;
-    padding: 20px 40px;
+    padding: 20px 32px;
     text-align: center;
     transition: 0.5s;
 }
@@ -290,6 +294,13 @@ section {
 .container .box .content img:hover {
     transform: scale(1.02);
     background: #ff6984;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 /* Footer Css */
