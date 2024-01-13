@@ -1,4 +1,3 @@
-
 const cont = document.getElementById('contributor');
 const owner = 'Rakesh9100';
 const repoName = 'CalcDiverse';
@@ -40,6 +39,7 @@ async function fetchAllContributors() {
 
             const loginLink = document.createElement('a');
             loginLink.href = contributor.html_url;
+            loginLink.target = '_blank';
             loginLink.appendChild(avatarImg);
 
             contributorCard.appendChild(loginLink);
