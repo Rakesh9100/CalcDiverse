@@ -1,11 +1,10 @@
-<h1 align="center">Contributors Guide⚡ </h1>
-<h3 align="center">Welcome to my programming project! 😍<br> We appreciate your interest in contributing.😊 <br>This guide will help you get started with the project and make your first contribution.</h3>
+<h1 align="center">✨ Contributors Guide ✨</h1>
+<h3 align="center">Welcome to my Web Development project! 😍<br> We appreciate your interest in contributing.😊 <br>This guide will help you get started with the project and make your first contribution.</h3>
 
 ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
-<h1 align="center">Creating first Pull Request 🌟</h1>
+<h2>🌟 Creating your first Pull Request</h2>
 
----
 1. Star this repository.
 2. Fork this repository.
 3. Clone the forked repository.
@@ -47,7 +46,7 @@ git push -u origin <your_branch_name>
 
 ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
-# :zap: Important Guidelines
+<h2>⚡ Important Guidelines</h2>
 <ol>
   <li>The contributors will be allowed to work on the issue ONLY after it has been assigned to them.</li>
   <li>The contributions will be counted only for the time period of the event, after the time period ends contributions can be taken in but wont be counted for the final evaluation.</li>
@@ -59,21 +58,21 @@ git push -u origin <your_branch_name>
 
 ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
-# :zap: [Code of Conduct](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CODE_OF_CONDUCT.md) 😇
+<h2>🌟 Code of Conduct</h2>
 
-1. Please follow our project's code of conduct while contributing.
+1. Please follow our project's [Code of Conduct](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CODE_OF_CONDUCT.md) while contributing.
 2. Treat all contributors and users with respect and create a positive and inclusive environment for everyone.</p>
 
-# :zap: [License](https://github.com/Rakesh9100/CalcDiverse/blob/main/LICENSE) 📄
+<h2>⚡ License</h2>
 
-1. The project is licensed under [Apache-2.0 license]. Make sure to review and comply with the license terms.
+1. The project is licensed under [Apache-2.0 license](https://github.com/Rakesh9100/CalcDiverse/blob/main/LICENSE). Make sure to review and comply with the license terms.
 2. We hope this guide helps you get started with contributing to our open-source project.
 
-Thank you for your contribution!
+Thank you for your contribution!!
 
 ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
-<h1 align="center">Need more help? 🤔</h1>
+<h2 align="center">Need more help? 🤔</h1>
 <p align="center">
   You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck: <br>
   <a href="https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request">How to create a Issue</a> <br>
@@ -83,6 +82,6 @@ Thank you for your contribution!
   <a href="https://docs.github.com/get-started">Getting started with Git and GitHub</a> <br>
 </p>
 
-<h1 align="center">Tip from us 😇</h1>
+<h2 align="center">Tip from us 😇</h1>
 <p align="center">It always takes time to understand and learn. So, don't worry at all. We know <b>you have got this</b>! 💪</p>
 <h3 align="center">Show some &nbsp;❤️&nbsp; by &nbsp;🌟&nbsp; this repository!</h3>

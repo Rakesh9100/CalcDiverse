@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Open+Sans&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #5a5766;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(65deg,
+            hsl(244deg 91% 50%) 0%,
+            hsl(275deg 100% 44%) 20%,
+            hsl(292deg 100% 39%) 38%,
+            hsl(307deg 100% 39%) 53%,
+            hsl(318deg 100% 43%) 65%,
+            hsl(326deg 100% 46%) 74%,
+            hsl(331deg 100% 47%) 81%,
+            hsl(335deg 100% 48%) 86%,
+            hsl(346deg 91% 56%) 91%,
+            hsl(358deg 88% 62%) 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: -4px -1px 25px rgba(226, 68, 203, 0.3);
+}
+
+.calculator {
+    background-color: #1D2B53;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #FF004D;
+}
+
+.equation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FAEF5D;
+}
+
+.inputs {
+    color: #FAEF5D;
+}
+
+input {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #48435c;
+    border-radius: 5px;
+    color: #158035;
+    background-color: #DCF2F1;
+    font-size: large;
+    font-weight: bold;
+}
+
+button {
+    background-color: #48435c;
+    color: #edffec;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#roots {
+    font-family: "Space Mono", sans-serif;
+    margin-top: 20px;
+    color: #FFC436;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#roots h2 {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+#roots ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#roots li {
+    margin-bottom: 10px;
+}
+
+.sol {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+    border-radius: 10px;
+}
+
+.css-button-rounded--yellow {
+    font-size: large;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #ffd819;
+    background: #ffd819;
+    margin-top: 1rem;
+}
+
+.css-button-rounded--yellow:hover {
+    background: #fff;
+    color: #ffd819
+}
