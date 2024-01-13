@@ -1,4 +1,4 @@
-# <p align="center">Geometric-Progression-Calculator Calculator</p>
+# <p align="center">Arithematic-Progression-Calculator Calculator</p>
 
 ## Description :-
 
