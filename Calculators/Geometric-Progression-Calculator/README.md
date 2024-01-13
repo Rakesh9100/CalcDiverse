@@ -9,3 +9,7 @@ Calculates nth Term and sum of n Terms present in an Geometric Sequence.
 - HTML
 - CSS
 - JavaScript
+
+## Screenshots :-
+
+![Alt text](gp-calc.png)
