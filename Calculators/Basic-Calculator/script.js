@@ -6,6 +6,11 @@ function appendToDisplay(value) {
     display.value += value;
 }
 
+function removeFromDisplay() {
+    let value = display.value
+    value = value.substring(0, value.length-1);
+    display.value = value;
+}
 function clearDisplay() {
     display.value = '';
 }
