@@ -30,6 +30,10 @@ async function fetchAllContributors() {
             pageNumber++;
         }
         allContributors.forEach((contributor) => {
+            if (contributor.login === owner) {
+                return;
+            }
+
             const contributorCard = document.createElement('div');
             contributorCard.classList.add('contributor-card');
 
