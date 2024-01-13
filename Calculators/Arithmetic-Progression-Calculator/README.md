@@ -1,4 +1,4 @@
-# <p align="center">Arithematic Progression Calculator</p>
+# <p align="center">Arithmetic Progression Calculator</p>
 
 ## Description :-
 
