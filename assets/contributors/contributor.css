@@ -6,6 +6,23 @@
     --dark: #f50414;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 25px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 h1 {
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -80,23 +97,6 @@ body {
     transform: scale(1.1);
     opacity: 0.8;
     box-shadow: 0 0 20px rgb(188, 240, 210); /* Adjust the color and size of the glow as needed */
-}
-
-html {
-    font-size: 62.5%;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--light);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--primary);
-    border-radius: 25px;
 }
 
 /* Updated Footer Styling */
