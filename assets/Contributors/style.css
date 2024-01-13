@@ -1,7 +1,20 @@
+h1 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 50px;
+    color: yellow;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
 
+h1:hover {
+    color: white;
+}
 #contributor {
     margin: 0;
-    padding: 0;
+    padding-top:35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
