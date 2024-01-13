@@ -215,7 +215,6 @@ section {
     flex-wrap: wrap;
     margin-top: 100px;
     padding: 50px 0;
-    padding-top: 25px;
 }
 
 .container .box {
@@ -358,7 +357,7 @@ section {
 
 /* Contributors Styling Ends */
 
-/* Scroll to Button Styling */
+/* Scroll to Top Button Styling */
 
 #progress {
     position: fixed;
@@ -402,9 +401,9 @@ section {
     color: black;
 }
 
-/* Scroll to Button Styling Ends */
+/* Scroll to Top Button Styling Ends */
 
-/* Footer  Styling */
+/* Footer Styling */
 
 .footer-basic {
     padding:40px 0;
