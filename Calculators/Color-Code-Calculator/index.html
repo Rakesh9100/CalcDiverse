@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Converter</title>
+  </head>
+  <body>
+    <h1>Color Code Calculator</h1>
+    <div class="card">
+      <div class="input">
+        <input type="text" id="input" placeholder="Enter a value" />
+      </div>
+      <div class="dropdowns">
+        <div class="dropdown">
+          <select name="convertFrom" id="convertFrom">
+            <option value="hex">Hexadecimal</option>
+            <option value="rgb">RGB</option>
+            <option value="rgba">RGBA</option>
+            <option value="hsl">HSL</option>
+            <option value="hsv">HSV</option>
+            <option value="cmyk">CMYK</option>
+          </select>
+        </div>
+        <div class="arrow">➡</div>
+        <div class="dropdown">
+          <select name="convertTo" id="convertTo">
+            <option value="rgb">RGB</option>
+            <option value="hex">Hexadecimal</option>
+            <option value="rgba">RGBA</option>
+            <option value="hsl">HSL</option>
+            <option value="hsv">HSV</option>
+            <option value="cmyk">CMYK</option>
+          </select>
+        </div>
+      </div>
+      <div class="button">
+        <button id="convert">Convert 🔄</button>
+      </div>
+      <div class="result">
+        <input type="text" id="result" placeholder="Result" readonly />
+      </div>
+      <div class="button">
+        <button id="copy">Copy 📂</button>
+      </div>
+    </div>
+    <script src="converter.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
