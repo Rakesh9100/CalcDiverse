@@ -4,20 +4,28 @@ body {
     margin-top: 50px;
     background-image: url('https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
-    background-repeat: no-repeat;
   }
   input {
-    width: 200px;
+    width: 16rem;
     padding: 10px;
-    font-size: 18px;
+    font-size: 1rem;
     background-color: rgb(0, 128, 0);
     color:white;
+    font-family: 'Orbitron', sans-serif;
   }
   
   button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 5px;
+    height: 3rem;
+    width: 3rem;
+    margin: .2rem;
+    border: 0;
+    border-radius: .5rem;
+    background: linear-gradient(white ,rgb(139, 133, 133));
+    font-size: 1.1rem;
+    
+  }
+  button:hover{
+    background: linear-gradient(rgb(139, 133, 133),rgb(108, 137, 217) );
   }
   #history {
     text-align: left;
@@ -25,11 +33,12 @@ body {
     margin: 20px auto;
   }
   .box{
-    background-color:rgba(0, 0, 0, 0.829);
-    width:25%;
+    background-color:rgba(35, 36, 36, 0.96);
+    width:20rem;
+    height: 28rem;
     box-shadow:4px 8px 5px rgba(0, 0, 0, 0.918);
     margin-top:10px;
-    border-radius:10px;
+    border-radius:20px;
   
   }
   .main{
