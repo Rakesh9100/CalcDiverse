@@ -3,11 +3,17 @@ function calculateDerivative() {
     const inputFunction = document.getElementById('functionInput').value;
     const resultElement = document.getElementById('result');
 
-    try {
-        const derivative = math.derivative(inputFunction, 'x').toString();
-        displayResult(resultElement, `The derivative is: ${derivative}`, false);
-    } catch (error) {
-        displayResult(resultElement, 'Invalid input. Please enter a valid mathematical function.', true);
+    if (inputFunction === '') {
+        alert("Please Input a Function!");
+    }
+
+    else{
+        try {
+            const derivative = math.derivative(inputFunction, 'x').toString();
+            displayResult(resultElement, `The derivative is: ${derivative}`, false);
+        } catch (error) {
+            displayResult(resultElement, 'Invalid input. Please enter a valid mathematical function.', true);
+        }
     }
 }
 
