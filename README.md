@@ -61,10 +61,18 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 
 <h3>Home/Main Page :-</h3>
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/a38eca2e-3f9b-4794-8361-26b0bffb9746)<br><br>
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/02e41b1c-146d-4733-b7df-8d009b8968f0)<br><br>
 <h3>Calculators Page :-</h3>
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/2c6352d6-9c8f-4a96-9865-09bca5c46a02)<br><br>
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/733a46c6-9a96-4b07-94c5-ff13daa3be37)<br><br>
+
+<h3>Contributors Page :-</h3>
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/66050638-3337-4019-84fe-5e238365a2fa)<br><br>
+<h3>Contact Page :-</h3>
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/fe7dac61-dfaf-47ed-9b33-9f31f5710e3d)
+<br><br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -144,6 +152,14 @@ This project and everyone participating in it is governed by the [Code of Conduc
 </td>
 </tr>
 </table>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<h2>Project Contributors🫂</h2>
+
+<a href="https://github.com/rakesh9100/calcdiverse/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=rakesh9100/calcdiverse" />
+</a>
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
