@@ -1,6 +1,9 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: radial-gradient( ellipse , rgb(219, 168, 211), rgb(122, 132, 223));
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -13,7 +16,7 @@ body {
 }
 
 .calculator {
-    background-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 10px;
     animation: fadeIn 1.5s ease-in-out forwards;
@@ -95,3 +98,19 @@ li span:last-child {
       transform: translateY(0);
     }
   }
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+  }
+  
