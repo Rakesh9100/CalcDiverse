@@ -1,16 +1,19 @@
 body { 
     margin: 0; 
 }
+
 header {
     position: sticky;
     top: 0;
     z-index: 100;
 }
+
 .navbar {
     font-family: 'Poppins',sans-serif;
     background-color: rgb(9, 5, 40);
     margin: 0 auto;
 }
+
 .box{
     padding: 50px;
     text-align: center;
@@ -20,10 +23,11 @@ header {
 
 .contact-container {
     position: relative;
-    max-width: 650px;
+    max-width: 640px;
     min-height: 400px;
     margin: 0 auto;
     padding: 25px;
+    padding-top: 10px;
     background: rgb(245,230,230);
     background: linear-gradient(177deg, rgba(245,230,230,0.7232142857142857) 40%, rgba(249,249,249,0.21621148459383754) 100%, rgba(0,0,0,1) 100%);
     border-radius: 20px;
@@ -36,13 +40,14 @@ header {
 .contact-container h2 {
     color:  rgb(9,5,40);
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .contact-container p {
-    color: #f4eff0;
-    font-size: 18px;
-    margin-bottom: 40px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 28px;
 }
 
 form {
@@ -137,9 +142,11 @@ button:hover {
     justify-content: center;
     gap: 2rem;
 }
+
 .social a{
     color: var(--secondary);
 }
+
 .social a:hover{
     color: var(--primary);
 }
