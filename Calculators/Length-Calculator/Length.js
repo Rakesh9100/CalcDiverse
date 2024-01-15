@@ -1,5 +1,16 @@
 function convertLength() {
-    let inputLength = parseFloat(document.getElementById("lengthInput").value);
+
+    let inputLength = document.getElementById("lengthInput").value;
+    if(!inputLength || !inputLength.trim()) { 
+      alert("Please enter a valid Number !");
+      return;
+    }
+    try {
+      inputLength = parseFloat(inputLength);
+    } catch (error) {
+      alert("Please enter a valid Number !");
+      return;
+    }
     let fromUnit = document.getElementById("unitFrom").value;
     let toUnit = document.getElementById("unitTo").value;
   
