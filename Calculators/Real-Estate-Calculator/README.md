@@ -4,6 +4,11 @@
 
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/142514166/0e40e3c0-2480-4b9a-a7ed-2d8b35054ed5)
 
+## Tech Stacks :-
+
+- HTML
+- CSS
+- JavaScript
 
 ## Overview
 
