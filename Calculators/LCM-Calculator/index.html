@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LCM Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+        <div class="cal">
+          <h1>LCM CALCULATOR</h1>
+          <label for="numbers">Enter Numbers (comma-separated):</label>
+          <input type="text" id="numbers" placeholder="Enter numbers" />
+        
+          <button onclick="calculateLCM()">Calculate</button>
+          <div id="result"></div>
+        </div>
+        <div id="desp">
+          <div id="formula">
+            LCM(a,b) = |a*b| / GCD(a,b)
+          </div>
+          <div id="answer"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fuel Efficiency Calculator</title>
+</head>
+<body>
+    <div class="container">
+      <div class="calculator">
+        <h1 class="heading">Fuel Efficiency Calculator</h1>
+        <label for="distance">Distance (kilometers):</label>
+        <input type="number" id="distance" placeholder="Enter distance" required>
+
+        <label for="fuel">Fuel consumed (liters):</label>
+        <input type="number" id="fuel" placeholder="Enter fuel consumed" required>
+        <div class="button-container">
+          <button onclick="calculateFuelEfficiency()">Calculate</button>
+          <button onclick="clearForm()">Clear</button>
+        </div>
+
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
