@@ -605,3 +605,35 @@ section {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+/* Search box css */
+/* Add this to your existing CSS file or create a new one */
+/* Search box styling */
+.search-container {
+    display: flex;
+    justify-content:center;
+    margin-top:10px;
+  
+}
+
+#calculatorSearch {
+    padding: 10px;
+    width: 200px;
+    border: 2px solid var(--light);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity */
+    color: var(--dark);
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+#calculatorSearch::placeholder {
+    color: var(--dark);
+}
+
+#calculatorSearch:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust the background color and opacity */
+}
+
+/* Adjust the styling according to your design preferences */
