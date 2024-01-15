@@ -1,4 +1,6 @@
-# Health Calculator
+# Heart Rate Calculator
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/142514166/92859ff5-f1cf-47b6-a3a3-d774818d3eff)
 
 ## Overview
 
