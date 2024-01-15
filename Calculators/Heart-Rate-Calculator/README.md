@@ -1,10 +1,10 @@
-# Heart Rate Calculator
+# <p align="center">Heart Rate Calculator</p>
 
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/142514166/92859ff5-f1cf-47b6-a3a3-d774818d3eff)
 
 ## Overview
 
-The Health Calculator is a web application designed to calculate the target heart rate of an individual based on their age and resting heart rate. This tool is useful for individuals involved in fitness activities, providing insights into the optimal heart rate range during exercise.
+The Heart Rate Calculator is a web application designed to calculate the target heart rate of an individual based on their age and resting heart rate. This tool is useful for individuals involved in fitness activities, providing insights into the optimal heart rate range during exercise.
 
 ## Features
 
