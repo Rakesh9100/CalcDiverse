@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Real Estate Calculator</h1>
+        <div>
+            <label for="propertyValue">Property Value ($):</label>
+            <input type="number" id="propertyValue" placeholder="Enter property value">
+        </div>
+        <div>
+            <label for="downPayment">Down Payment (%):</label>
+            <input type="number" id="downPayment" placeholder="Enter down payment percentage">
+        </div>
+        <div>
+            <label for="loanTerm">Loan Term (years):</label>
+            <input type="number" id="loanTerm" placeholder="Enter loan term in years">
+        </div>
+        <div>
+            <label for="interestRate">Interest Rate (%):</label>
+            <input type="number" id="interestRate" placeholder="Enter annual interest rate">
+        </div>
+        <button onclick="calculateMortgage()">Calculate Mortgage</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
