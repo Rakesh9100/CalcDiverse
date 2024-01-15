@@ -22,7 +22,7 @@ function generateMatrixInputs(size, matrixId) {
 
     for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
-            matrixInputs += `<input type="number" id="${matrixId}_${i}_${j}" />`;
+            matrixInputs += `<input type="number" onKeyDown="handleKeyPress(event)" id="${matrixId}_${i}_${j}" />`;
         }
         matrixInputs += "<br>";
     }
@@ -105,6 +105,7 @@ function calculate(operation) {
         setResult("Error: " + error.message);
     }
 }
+
 function resetForm() {
     const matrixInputs = document.querySelectorAll('input[type="number"]');
     matrixInputs.forEach(input => (input.value = ''));
@@ -113,6 +114,20 @@ function resetForm() {
     resultContainer.innerHTML = '';
     createMatrixInputs();
 }
+
+function handleKeyPress(event) {
+    if (event.keyCode === 13) {
+      const currentInput = event.target;
+      const inputs = document.querySelectorAll('input');
+      const currentIndex = Array.from(inputs).indexOf(currentInput);
+
+      const nextIndex = (currentIndex + 1) % inputs.length;
+      inputs[nextIndex].focus();
+  
+      event.preventDefault();
+    }
+}
+
 function setResult(resultMatrix) {
     const resultContainer = document.getElementById("result");
 
