@@ -30,9 +30,8 @@ The Real Estate Calculator is a web application designed to assist users in real
 
 ## Usage
 
-1. Open the `index.html` file in a web browser.
-2. Enter the required property details in the respective input fields.
-3. Click the "Calculate Mortgage" button to see the calculated loan amount and monthly payment.
+1. Enter the required property details in the respective input fields.
+2. Click the "Calculate Mortgage" button to see the calculated loan amount and monthly payment.
 
 ## Disclaimer
 
