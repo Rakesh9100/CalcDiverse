@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Armstrong Number Calculator for N-Digits</h1>
-    <div class="container">
-        <form name="myform">
-            <label for="no">Enter Number of Digits:</label>
-            <input type="number" name="numOfDigits" id="no" min="1" max="8">
-            <button type="button" onclick="findArmstrongNumbers()">Find Armstrong Numbers</button>
-        </form>
-        <div id="armstrongNumbers"></div>
-    </div>
+    <header>
+        <h1>Armstrong Number Calculator for N-Digits</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form name="myform">
+                <label for="no">Enter Number of Digits:</label>
+                <input type="number" name="numOfDigits" id="no">
+                <button type="button" onclick="findArmstrongNumbers()">Find Armstrong Numbers</button>
+            </form>
+            <div id="armstrongNumbers"></div>
+        </div>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>

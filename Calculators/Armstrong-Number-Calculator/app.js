@@ -1,34 +1,48 @@
+// Function to find Armstrong numbers based on user input
 function findArmstrongNumbers() {
-    const n = parseInt(document.forms.myform.numOfDigits.value);
-    const myElement = document.getElementById("armstrongNumbers");
+    const numOfDigits = document.forms.myform.numOfDigits.value;
 
-    let startRange = Math.pow(10, n - 1);
-    let endRange = Math.pow(10, n);
+    // Validate user input
+    if (numOfDigits === "" || Number.isNaN(numOfDigits) || numOfDigits < 1 || numOfDigits > 7) {
+        alert("Please enter a valid number between 1 and 7");
+    } else {
+        const n = parseInt(numOfDigits);
+        const myElement = document.getElementById("armstrongNumbers");
+        const chunkSize = 1000; 
 
-    let armstrongNumbers = [];
+        let startRange = Math.pow(10, n - 1);
+        let endRange = Math.pow(10, n);
 
-    // Optimize the range based on the number of digits
-    const maxSum = 9 ** n * n;
-    for (let num = startRange; num <= endRange; num++) {
-        if (isArmstrongOptimized(num, n, maxSum)) {
-            armstrongNumbers.push(num);
+        let armstrongNumbers = [];
+
+        // Process the range in smaller chunks to improve responsiveness
+        for (let chunkStart = startRange; chunkStart <= endRange; chunkStart += chunkSize) {
+            let chunkEnd = Math.min(chunkStart + chunkSize, endRange);
+
+            // Check for Armstrong numbers in the current chunk
+            for (let num = chunkStart; num < chunkEnd; num++) {
+                if (isArmstrongOptimized(num, n)) {
+                    armstrongNumbers.push(num);
+                }
+            }
         }
-    }
 
-    myElement.textContent = "Armstrong Numbers: " + armstrongNumbers.join(", ");
+        myElement.textContent = "Armstrong Numbers: " + armstrongNumbers.join(", ");
+    }
 }
 
-function isArmstrongOptimized(num, power, maxSum) {
+// Function to check if a number is an Armstrong number 
+function isArmstrongOptimized(num, power) {
     let temp = num;
     let sumOfPowers = 0;
 
-    //Computing the sum of digits raised to the power    
-    while (temp > 0 && sumOfPowers <= maxSum) {
+    // Compute the sum of digits raised to the power    
+    while (temp > 0) {
         let digit = temp % 10;
         sumOfPowers += Math.pow(digit, power);
         temp = Math.floor(temp / 10);
     }
 
-    //check whether sum of Powers gives the original number or not
+    // Check whether sum of powers equals the original number or not
     return sumOfPowers === num;
 }
