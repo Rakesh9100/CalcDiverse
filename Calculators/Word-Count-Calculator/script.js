@@ -44,6 +44,12 @@ function calculateAverageWordLength(wordsArray) {
 
 function exportData() {
     var text = document.getElementById("inputText").value;
+
+    if (text.trim() === '') {
+        alert("Please enter some text before exporting data.");
+        return;
+    }
+    
     var wordsArray = text.split(/\s+/).filter(function (word) {
         return word.length > 0;
     });
