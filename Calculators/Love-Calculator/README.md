@@ -36,3 +36,6 @@ The Love Calculator uses a basic algorithm to generate a love percentage. Here's
 The Love Calculator is created for entertainment purposes only. The algorithm used for calculating the love percentage is arbitrary and does not have any scientific or real-world basis. Results should not be taken seriously, and users are encouraged to enjoy the application in a lighthearted manner.
 
 Feel free to customize the content based on your specific application or any additional information you'd like to include.
+
+# ScreenShot :
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/142514166/36571c14-8080-404e-a81c-1bf0b6a5229a)
