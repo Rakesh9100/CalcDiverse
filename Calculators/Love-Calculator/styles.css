@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-image: linear-gradient(to right, #f67b65 0%, #dc0fa6 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.container h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+label{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1rem;
+}
+input{
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#yourlovescoreis{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1rem;
+}
+#btn{
+    width: 20%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#btn:hover{
+    background-color: #ccc;
+}
+#score{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+#loveInfo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+#reload{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+#reload:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+.fa-heart {
+    color: rgb(60, 0, 60);
+    font-size: 25px;
+    position: absolute;
+    animation:  heartMove linear 1;
+    top: -10vh;
+    z-index: 0;
+}
+@keyframes heartMove {
+    0%{
+        transform: translateY(-10vh) ;
+    }
+    100%{
+        transform: translateY(110vh) ;
+    }
+}
+.footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+}
+.footer a{
+    color: #000;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+    #title{
+        font-size: 2rem;
+    }
+    .container h2{
+        font-size: 2rem;
+    }
+    label{
+        font-size: 1.2rem;
+    }
+    input{
+        width: 70%;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 0 20px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #btn{
+        width: 30%;
+        height: 40px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #score{
+        font-size: 1.5rem;
+    }
+    #reload{
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    .footer{
+        font-size: 0.8rem;
+        bottom: 5%;
+    }
+    .footer a{
+        font-size: 0.8rem;
+    }
+}
