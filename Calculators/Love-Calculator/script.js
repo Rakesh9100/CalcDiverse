@@ -73,6 +73,7 @@ calcBtn.addEventListener("click", function (e) {
   e.preventDefault();
   if (name1.value == "" && name2.value == "") {
     alert("You can't leave fields empty");
+    return;
   }
   else if (name1.value == "") {
     alert("Please Enter Your Name");
@@ -99,3 +100,4 @@ calcBtn.addEventListener("click", function (e) {
 function reset() {
   window.location.reload();
 }
+
