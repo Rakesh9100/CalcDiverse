@@ -49,6 +49,7 @@ function exportData() {
     });
 
     var data = {
+        text: text,
         totalWords: wordsArray.length,
         uniqueWords: countUniqueWords(wordsArray),
         averageWordLength: calculateAverageWordLength(wordsArray).toFixed(2)
