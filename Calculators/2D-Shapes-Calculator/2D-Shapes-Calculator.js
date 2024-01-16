@@ -13,7 +13,7 @@ function calculate(event) {
         return;
     } else if(shape === "square" || shape === "hexagon"){
         if(isNaN(length)){
-            resultContainer.textContent = "Please ";
+            resultContainer.textContent = "Enter valid numerical value";
             return;
         }
     } else if(shape === "rhombus"){
