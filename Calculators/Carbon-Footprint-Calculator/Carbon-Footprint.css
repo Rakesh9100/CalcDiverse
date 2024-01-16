@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10rem;
+    margin-left: 25rem;
+    background: radial-gradient(circle, rgb(247, 246, 248), rgb(13, 13, 13));
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#carbonCalculator {
+    max-width: 400px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(41, 41, 41, 0.913) 15px 20px 40px,
+    rgba(80, 89, 92, 0.788) 5px 5px 10px;
+
+}
+
+#carbonResult {
+    margin-top: 15px;
+}

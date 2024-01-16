@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Carbon-Footprint.css">
+    <title>Carbon Footprint Calculator</title>
+</head>
+<body>
+
+    <div id="carbonCalculator">
+        <h2>Carbon Footprint Calculator</h2>
+        <label for="miles">Miles driven per year:</label>
+        <input type="number" id="miles" placeholder="Enter miles">
+        <button onclick="calculateCarbonFootprint()">Calculate</button>
+        <p id="carbonResult">Your carbon footprint is: <span id="carbonValue">0</span> kg CO2 per year</p>
+    </div>
+
+    <script src="Carbon-Footprint.js"></script>
+</body>
+</html>
