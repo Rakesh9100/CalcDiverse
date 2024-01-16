@@ -1,16 +1,36 @@
 function calculate(event) {
     event.preventDefault();
     var shape = document.getElementById("shape").value;
-    var length = parseFloat(document.getElementById("length").value) || 0;
-    var width = parseFloat(document.getElementById("width").value) || 0;
-    var radius = parseFloat(document.getElementById("radius").value) || 0;
-    var diagonal1 = parseFloat(document.getElementById("diagonal1").value) || 0;
-    var diagonal2 = parseFloat(document.getElementById("diagonal2").value) || 0;
+    var length = parseFloat(document.getElementById("length").value);
+    var width = parseFloat(document.getElementById("width").value);
+    var radius = parseFloat(document.getElementById("radius").value);
+    var diagonal1 = parseFloat(document.getElementById("diagonal1").value);
+    var diagonal2 = parseFloat(document.getElementById("diagonal2").value);
     var resultContainer = document.getElementById("result");
 
     if (shape === "") {
         resultContainer.textContent = "Please select a shape.";
         return;
+    } else if(shape === "square" || shape === "hexagon"){
+        if(isNaN(length)){
+            resultContainer.textContent = "Please ";
+            return;
+        }
+    } else if(shape === "rhombus"){
+        if(isNaN(diagonal1) || isNaN(diagonal2)){
+            resultContainer.textContent = "Enter valid numerical value";
+            return;
+        }
+    } else if(shape === "circle"){
+        if(isNaN(radius)){
+            resultContainer.textContent = "Enter valid numerical value";
+            return;
+        }
+    } else{
+        if(isNaN(length) || isNaN(width)){
+            resultContainer.textContent = "Enter valid numerical value";
+            return;
+        }
     }
 
     if (length < 0 || width < 0 || radius < 0 || diagonal1 < 0 || diagonal2 < 0) {
