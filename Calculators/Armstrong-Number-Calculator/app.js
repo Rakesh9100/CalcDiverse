@@ -22,11 +22,13 @@ function isArmstrongOptimized(num, power, maxSum) {
     let temp = num;
     let sumOfPowers = 0;
 
+    //Computing the sum of digits raised to the power    
     while (temp > 0 && sumOfPowers <= maxSum) {
         let digit = temp % 10;
         sumOfPowers += Math.pow(digit, power);
         temp = Math.floor(temp / 10);
     }
 
+    //check whether sum of Powers gives the original number or not
     return sumOfPowers === num;
 }
