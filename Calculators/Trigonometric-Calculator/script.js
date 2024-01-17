@@ -2,6 +2,16 @@ function calculateBasicTrigo() {
     let angle = parseFloat(document.getElementById('angle').value);
     let unit = document.getElementById('unit').value;
 
+    if (angle === "" || angle <= 0) {
+        alert('Please enter a valid positive angle.');
+        return;
+    }
+
+    if (isNaN(angle) || (angle < 0 && unit === 'radians')) {
+        alert('Please enter a valid positive angle.');
+        return;
+    }
+    
     if (unit === 'degrees') {
         angle = angle * Math.PI / 180;
     }
