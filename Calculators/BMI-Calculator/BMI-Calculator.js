@@ -11,6 +11,9 @@ modalText = document.querySelector("#modalText");
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 
+// Remove the initial setting of the result
+// document.querySelector("#result").innerHTML = "00.00";
+
 function calculate() {
     if (age.value == '' || height.value == '' || weight.value == '' || (male.checked == false && female.checked == false)) {
         modal.style.display = "block";
@@ -35,7 +38,7 @@ function countBmi() {
 
     if (!isPositiveNumber(p[0]) || !isPositiveNumber(p[1]) || !isPositiveNumber(p[2])) {
         modal.style.display = "block";
-        modalText.innerHTML = 'Please enter valid positive values for age, height and weight!';
+        modalText.innerHTML = 'Please enter valid positive values for age, height, and weight!';
         return;
     }
 
@@ -57,6 +60,7 @@ function countBmi() {
 
     resultArea.style.display = "block";
     document.querySelector(".comment").innerHTML = `You are <span id="comment">${result}</span>`;
+    // Update the result only after the calculation
     document.querySelector("#result").innerHTML = bmi.toFixed(2);
 }
 

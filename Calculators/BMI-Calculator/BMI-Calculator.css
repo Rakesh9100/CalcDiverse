@@ -151,6 +151,8 @@ button.calculate:hover {
     padding: 7px 20px;
     border-radius: 55px;
     margin-bottom: 25px;
+    min-height: 50px;
+    min-width: 130px;
 }
 
 #comment {
@@ -284,6 +286,7 @@ button.calculate:hover {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s;
+    padding: 30px;
 }
 
 .close:hover {
