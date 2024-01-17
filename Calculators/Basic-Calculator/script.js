@@ -33,3 +33,9 @@ function updateHistory() {
         historyDiv.appendChild(p);
     });
 }
+
+function handleKeyPress(event) {
+    if(event.key === 'Enter') {
+        calculate();
+    }
+}
