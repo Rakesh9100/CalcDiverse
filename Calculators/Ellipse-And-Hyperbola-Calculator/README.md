@@ -19,4 +19,4 @@ The calculator will display the calculated area for both ellipses and hyperbolas
 
 ## Screenshots :-
 
-![Day_From_Date_Calculator](./Image/Ellipse-And-Hyperbola-Cal.png)
+![Ellipse-And-Hyperbola-Calculator](./Image/Ellipse-And-Hyperbola-Cal.png)
