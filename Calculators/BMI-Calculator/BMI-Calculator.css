@@ -257,10 +257,12 @@ button.calculate:hover {
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding-right: 20px;
     border: 1px solid #888;
     width: 600px;
     box-shadow: #393c76 1px 2px 2px 1px;
+    position: relative;
+    padding: 30px;
 }
 
 #modalText {
@@ -280,13 +282,13 @@ button.calculate:hover {
 }
 
 .close {
+    position: absolute;
     color: #aaaaaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s;
-    padding: 30px;
+    right: 25px;
 }
 
 .close:hover {
