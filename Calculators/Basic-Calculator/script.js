@@ -4,7 +4,7 @@ let historyDiv = document.getElementById('history');
 
 document.addEventListener('keydown', function(event) {
     // Check if the key pressed is alphanumeric or an operator
-    const validKeys = /^[a-zA-Z0-9\+\-\*\/\(\)\^\%\.]$/;
+    const validKeys = /^[0-9.\+\-\*\/\(\)\^\%\{\}\[\]&]$/;
     if (validKeys.test(event.key)) {
         // Append the key to the input box
         document.getElementById('display').value += event.key;
