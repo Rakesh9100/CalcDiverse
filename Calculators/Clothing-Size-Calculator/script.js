@@ -34,9 +34,12 @@ async function getResults() {
     
             sizeMapping = sizeMapping[_gender];
             let obj = null;
-    
+            let min_sz = sizeMapping[0][_from];
+            let max_sz = sizeMapping[0][_from];
             for (let i = 0; i < sizeMapping.length; i++) {
                 let tempObj = sizeMapping[i];
+                min_sz = Math.min(min_sz, tempObj[_from]);
+                max_sz = Math.max(max_sz, tempObj[_from]);
                 if (parseInt(tempObj[_from]) === parseInt(sz)) {
                     obj = tempObj;
                     console.log('found');
@@ -45,7 +48,7 @@ async function getResults() {
             }
     
             if (!obj) {
-                alert('Please enter a size that is available in the selected region');
+                alert(`Please enter a size that is available in the selected region. \nThe size should be between ${min_sz} and ${max_sz} for this region. \nPlease check the link in the footer for reference.`);
                 return;
             }
     
