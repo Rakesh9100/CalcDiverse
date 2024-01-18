@@ -1,7 +1,7 @@
 # <p align="center">Short URL Calculator</p>
 
 ## Description :-
-In this calculator I have an api that take your long url and convert it into the short URL
+In this calculator We have an api that takes your long url and converts it into the short URL.
 
 ## Tech Stacks:-
 
@@ -9,5 +9,4 @@ In this calculator I have an api that take your long url and convert it into the
 - CSS
 - JavaScript
 
-![image](https://private-user-images.githubusercontent.com/137368917/297378247-09f8dd9a-b16b-420b-8606-9946005c09cd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU1OTE4NzMsIm5iZiI6MTcwNTU5MTU3MywicGF0aCI6Ii8xMzczNjg5MTcvMjk3Mzc4MjQ3LTA5ZjhkZDlhLWIxNmItNDIwYi04NjA2LTk5NDYwMDVjMDljZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTE4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDExOFQxNTI2MTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNTkxYTZjNjI4YWRjOWM1NjVhYzI1YTZlMzgxMWM0MWEzZmY0OGFjYjM1OTk0MGYxOTY4ZjAwNjgyMmM4NDBmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.BVIwqhd6f0vmT65GaBvarTC2txq5JXQRzPB-H7HA9A8)
-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/dd6af714-0337-4a39-8303-3ae7ca777ca3)
