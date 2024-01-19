@@ -736,8 +736,7 @@ section {
 .container .box .content a {
   display: inline-block;
   font-size: 1.1em;
-  color: #111;
-  background: #fff;
+  color: #f7dafb;
   padding: 10px;
   border-radius: 4px;
   text-decoration: none;
