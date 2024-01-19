@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayes' Theorem Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div class="calculator-container">
+    <div class="calculator-card">
+      <h2>Bayes' Theorem Calculator</h2>
+
+      <div class="input-container">
+        <label for="probA">Enter the probability of A (P(A)):</label>
+        <input type="number" id="probA" placeholder="Enter P(A)">
+      </div>
+
+      <div class="input-container">
+        <label for="probBA">Enter the probability of B given A (P(B|A)):</label>
+        <input type="number" id="probBA" placeholder="Enter P(B|A)">
+      </div>
+
+      <div class="input-container">
+        <label for="probNotA">Enter the probability of not A (P(~A)):</label>
+        <input type="number" id="probNotA" placeholder="Enter P(~A)">
+      </div>
+
+      <button onclick="calculateBayesTheorem()">Calculate</button>
+
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
