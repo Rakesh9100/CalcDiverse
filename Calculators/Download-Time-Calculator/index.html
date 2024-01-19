@@ -1,0 +1,61 @@
+
+<html>
+  <head>
+    <title>Electricity Bill Calculator</title>
+    <style>
+    
+ </style>
+ <link rel="stylesheet" href="./style.css">
+ <script src="index.js"></script>
+  </head>
+  <body>
+   <div>
+    <form>
+       <h1>Electricity Bill Calculator</h1>
+    <br />
+      <label for="country">Select Country:</label>
+      <select id="country">
+        <option value="US">United States</option>
+        <option value="UK">United Kingdom</option>
+        <option value="CA">Canada</option>
+      </select>
+      <br /><br />
+      <label for="appliance">Typical Appliance:</label>
+      <select id="appliance">
+        <option value="none">-- select --</option>
+        <option value="tv">Television</option>
+        <option value="fridge">Refrigerator</option>
+        <option value="ac">Air Conditioner</option>
+      </select>
+      <br /><br />
+      <label for="power">Power Consumption:</label>
+      <input id="power" type="text" />
+      <select id="unit">
+        <option value="watts">Watts</option>
+        <option value="kilowatts">Kilowatts</option>
+      </select>
+      <br /><br />
+      <label for="hours">Hours of Use Per Day:</label>
+      <input id="hours" type="text" />
+      <br />
+      <label for="cost">1 Kilowatt-Hour (kWh) Cost:</label>
+      <input id="cost" type="text" />
+      <select id="currency">
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+      </select>
+      <br /><br />
+      <button onclick="calculate()" type="button">Calculate</button>
+      <button type="reset">Reset</button>
+    </form>
+    <br />
+    <h2>Results:</h2>
+    <p>Electricity Cost Per Day: <span id="result-day"></span></p>
+    <p>Electricity Cost Per Month: <span id="result-month"></span></p>
+    <p>Electricity Cost Per Year: <span id="result-year"></span></p>
+    <script>
+</script>
+</div>
+ </body>
+</html>

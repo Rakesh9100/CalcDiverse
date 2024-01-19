@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://img.freepik.com/free-vector/vector-banner-illustration-lightning-thunder-abstract-blue-background-with-neon-sparkles-light_528282-302.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705536000&semt=ais");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  
+  form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 1), 0 0 0 3px #006db0;
+    border-radius: 0px; 
+  }
+  
+  label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  select,
+  input[type="text"] {
+    padding: 7px;
+    font-size: 16px;
+    border-radius: px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  select#currency {
+    width: 70px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
