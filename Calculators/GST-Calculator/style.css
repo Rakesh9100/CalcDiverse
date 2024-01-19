@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.2rem;
+  background: linear-gradient(45deg, red, rgb(93, 0, 255));
+  color: aliceblue;
+  height: 100vh;
+}
+
+.container {
+  width: 30rem;
+  margin: 6rem auto;
+  text-align: center;
+  border: 12px solid rgb(0, 195, 255);
+  border-radius: 20px;
+}
+
+div {
+  padding: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: rgb(232, 192, 192);
+  border: 1px dashed red;
+  border-radius: 10px;
+}
+
+button::after {
+  content: "%";
+}
+
+.active {
+  background-color: orangered;
+  color: white;
+}
+
+.amt {
+  display: flex;
+  justify-content: space-between;
+}
