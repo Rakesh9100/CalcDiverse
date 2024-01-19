@@ -2,6 +2,16 @@ function calculateBasicTrigo() {
     let angle = parseFloat(document.getElementById('angle').value);
     let unit = document.getElementById('unit').value;
 
+    if (angle === "" || angle <= 0) {
+        alert('Please enter a valid positive angle for basic Trigonometry.');
+        return;
+    }
+
+    if (isNaN(angle) || (angle < 0 && unit === 'radians')) {
+        alert('Please enter a valid positive angle for basic Trigonometry.');
+        return;
+    }
+    
     if (unit === 'degrees') {
         angle = angle * Math.PI / 180;
     }
@@ -23,9 +33,13 @@ function clearBasicTrigo() {
     document.getElementById('secResult').innerText = '';
     document.getElementById('cotResult').innerText = '';
 }
-
 function calculateInverseTrigo() {
     let inverseAngle = parseFloat(document.getElementById('inverseAngle').value);
+
+    if (isNaN(inverseAngle) || inverseAngle === "") {
+        alert('Please enter a valid numeric value for Inverse Trigonometry.');
+        return;
+    }
 
     let asinResult = Math.asin(inverseAngle);
     document.getElementById('asinResult').innerText = isNaN(asinResult) ? (inverseAngle > 1 ? '+∞' : '-∞') : asinResult.toFixed(3);

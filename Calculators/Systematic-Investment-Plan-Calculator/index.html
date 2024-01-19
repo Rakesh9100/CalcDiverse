@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIP Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+  <h2>SIP Calculator</h2>
+  <label for="investmentAmount">Investment Amount (monthly):</label>
+  <input type="number" id="investmentAmount" placeholder="Enter Investment Amount">
+
+  <label for="duration">Investment Duration (in years):</label>
+  <input type="number" id="duration" placeholder="Enter Investment Duration">
+
+  <label for="growthRate">Growth Rate (%):</label>
+  <input type="number" id="growthRate" placeholder="Enter Growth Rate">
+
+  <button onclick="calculateSIP()">Calculate Future Value</button>
+
+  <h3>Result:</h3>
+  <p id="futureValue">Future Value: </p>
+  <p id="totalInvested">Total Invested: </p>
+  <p id="gains">Gains: </p>
+</div>
+<script src="script.js"></script>
+
+
+</body>
+</html>

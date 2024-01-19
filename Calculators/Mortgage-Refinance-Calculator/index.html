@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Refinance Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Mortgage Refinance Calculator</h1>
+        <div>
+            <label for="currentLoanAmount">Current Loan Amount ($):</label>
+            <input type="number" id="currentLoanAmount" placeholder="Enter current loan amount">
+        </div>
+        <div>
+            <label for="currentInterestRate">Current Interest Rate (%):</label>
+            <input type="number" id="currentInterestRate" placeholder="Enter current interest rate">
+        </div>
+        <div>
+            <label for="newLoanAmount">New Loan Amount ($):</label>
+            <input type="number" id="newLoanAmount" placeholder="Enter new loan amount">
+        </div>
+        <div>
+            <label for="newInterestRate">New Interest Rate (%):</label>
+            <input type="number" id="newInterestRate" placeholder="Enter new interest rate">
+        </div>
+        <button onclick="calculateRefinance()">Calculate Refinance</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
