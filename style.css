@@ -6,6 +6,7 @@
     --ternary: #1327ff;
     --light: #f7f26c;
     --dark: #f50414;
+    --track: rgb(111, 111, 139)
 }
 
 * {
@@ -21,11 +22,11 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--light);
+    background:var(--track);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary);
+    background:var(--light);
     border-radius: 25px;
 }
 
