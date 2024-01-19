@@ -1,4 +1,4 @@
-# <p align="center">Electricity Bill Calculator</p>
+# Electricity Bill Calculator
 
 ## Introduction
 
