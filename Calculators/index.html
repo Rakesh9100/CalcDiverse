@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+    <link rel="stylesheet" type="text/css" href="./Resistance.css" />
+    <title>Resistance Calculator</title>
+</head>
+
+<body>
+
+
+<div class="card-form" id="abc">
+        <form class="calculate" id="def">
+          <div class="form-title">Total Resistance Calculator</div>
+          <div class="form-body">
+            <div class="row">
+              <input type="number" id="resistance1" name="resistance1" placeholder="Enter Resistance One:" required>
+            </div>
+            <div class="row">
+              <input placeholder="Enter Resistace Two: " type="number" id="resistance2" name="resistance2">
+            </div>
+            
+          </div>
+          <div class="form-footer">
+            <button onclick="calculate1(event)">Series</button>
+            <button onclick="calculate2(event)">Parallel</button>
+            <button type="reset">Reset</button>
+          </div>
+          <div id="result-container">ANSWER IS=
+            <p id="result"></p>
+        </div>
+        </form>
+</div>
+
+    <script src="./Resistance.js"></script>
+</body>
+
+</html>
