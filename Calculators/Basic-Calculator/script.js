@@ -2,6 +2,20 @@ let history = [];
 let display = document.getElementById('display');
 let historyDiv = document.getElementById('history');
 
+document.addEventListener('keydown', function(event) {
+    // Check if the key pressed is alphanumeric or an operator
+    const validKeys = /^[0-9.\+\-\*\/\(\)\^\%\{\}\[\]&]$/;
+    if (validKeys.test(event.key)) {
+        // Append the key to the input box
+        document.getElementById('display').value += event.key;
+    } else if(event.key === 'Enter') {
+        event.preventDefault();
+        calculate();
+    } else if(event.key === 'Backspace') {
+        removeFromDisplay();
+    }
+});
+
 function appendToDisplay(value) {
     display.value += value;
 }
