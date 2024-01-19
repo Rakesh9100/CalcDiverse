@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Clothing Size Calculator</title>
+</head>
+<body>
+  <h1>🌏 International Clothing Size Calculator ✨</h1>
+  <div class="card">
+    <div class="row">
+      <label class="toggle-label">
+        🧔🏻‍♂️ Men
+        <input type="checkbox" id="genderToggle" style="display: none;">
+        <span class="toggle-slider"></span>
+        👩🏻‍🦰 Women
+      </label>
+    </div>
+    <div class="row">
+      <label for="size">Size</label>
+      <input type="number" id="size" min="1" placeholder="e.g. 20">
+    </div>
+    <div class="row">
+      <select id="_from">
+        <option value="AU/NZ/UK">AU/NZ/UK</option>
+        <option value="US">US</option>
+        <option value="EU">EU</option>
+        <option value="Italy">Italy</option>
+        <option value="Germany">Germany</option>
+        <option value="Japan">Japan</option>
+        <option value="Russia">Russia</option>
+      </select>
+      <!-- left arrow icon -->
+      <div class="arrow-icon"> ➡️ </div>
+      <select id="_to">
+        <option value="AU/NZ/UK">AU/NZ/UK</option>
+        <option value="US">US</option>
+        <option value="EU">EU</option>
+        <option value="Italy">Italy</option>
+        <option value="Germany">Germany</option>
+        <option value="Japan">Japan</option>
+        <option value="Russia">Russia</option>
+      </select>
+    </div>
+    <div class="row">
+      <button id="convertButton">⭐️ Convert ⭐️</button>
+    </div>
+    <div class="result-box">
+      <div id="resultSize">Size in <span class="red">--</span> : <span class="grey">--</span></div>
+      <div id="internationalSize">International Size : <span class="red">--</span></div>
+      <div id="measurement">Bust : <span class="grey">--</span> | Waist : <span class="grey">--</span> | Hip : <span class="grey">--</span></div>
+    </div>
+  </div>
+  <footer><a href="https://futurefusiononline.com/pages/international-clothing-size-conversion-chart" target="_blank" rel="noreferrer">🌐 International Clothing Size Chart</a></footer>
+  <script src="domManager.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
