@@ -1,6 +1,5 @@
 "use strict";
 var ax,ay,bx,by;
-
 function radToDeg(rads) {
 	return rads * (180/Math.PI);
 }
