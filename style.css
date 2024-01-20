@@ -613,6 +613,7 @@ section {
     margin: 2rem 4rem 0 ;
     padding: 2rem;
     color: white;
+    width: 100%;
 }
 #searchBar input{
     font-family: 'Poppins',sans-serif;
