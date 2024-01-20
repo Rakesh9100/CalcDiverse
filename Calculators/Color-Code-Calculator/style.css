@@ -20,7 +20,7 @@ h1 {
 }
 
 .card {
-    width: 300px;
+    width: 310px;
     padding: 20px 20px 20px 10px;
     border: 1px solid #ccc;
     text-align: center;
@@ -84,20 +84,13 @@ h1 {
 
 .button button:hover {
     background-color: #5f35b3;
-    font-size: medium;
 }
 
 #copy {
     background-color: #494655;
-    transition: all 0.2s ease-in-out;
     text-decoration: none;
 }
 
-#copy:hover {
-    background-color: rgb(44, 45, 46);
-    box-shadow: 0 5px 15px rgba(58, 50, 64, 0.4);
-    font-size: medium;
-}
 
 #reset{
     background-color: #399E5A;
@@ -106,5 +99,4 @@ h1 {
 
 #reset:hover{
     background-color:  #4fc431;
-    font-size: medium;
 }

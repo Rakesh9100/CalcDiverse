@@ -57,7 +57,7 @@ function copyToClipboard() {
 
     if(isEmpty(inputValue)){
         resultInput.style.color = 'red';
-        resultInput.value = 'ENTER VALID INPUT' ;   
+        resultInput.value = 'Invalid Input !!! [ Correct format: ' + pat + ' ]' ;   
     }  
     else{
         resultInput.select();
