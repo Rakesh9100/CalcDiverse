@@ -1,8 +1,8 @@
-# <p align="center">Calories burned Calculator</p>
+# <p align="center">Calories Burnt Calculator</p>
 
 ## Description :-
 
-This is an calorie burned Calculator that calculates the calorie value burnt after heavy exercises.
+This is a calculator which calculates the calorie value burnt after heavy exercises.
 
 ## Tech Stacks:-
 
