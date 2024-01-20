@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Electricity Bill Calculator</title>
+</head>
+<body>
+    <h2 class="tracking-in-expand">Electricity Bill Calculator</h2>
+    <div class="calculator">
+        <label for="units">Enter units consumed:</label>
+        <input type="number" id="units" placeholder="Enter units">
+
+        <label for="rate">Enter rate per unit (in INR):</label>
+        <input type="number" id="rate" placeholder="Enter rate per unit">
+
+        <label for="additionalCharges">Enter additional charges (in INR):</label>
+        <input type="number" id="additionalCharges" placeholder="Enter additional charges">
+
+        <button onclick="calculateBill()">Calculate Bill</button>
+
+        <h3 id="billAmount">Electricity Bill Amount: </h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
