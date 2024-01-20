@@ -214,6 +214,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 180px;
     padding: 50px 0;
 }
 
@@ -609,7 +610,7 @@ section {
 #searchBar{
     text-align: center;
     border-radius: 14px;
-    margin: 18rem 4rem 0 ;
+    margin: 2rem 4rem 0 ;
     padding: 2rem;
     color: white;
 }
