@@ -44,7 +44,7 @@ function convertColors() {
     document.getElementById('result').value = result;
     if (result == 'Invalid input') {
         document.getElementById('result').style.color = 'red';
-        document.getElementById('result').value = 'INVALID INPUT ' ;
+        document.getElementById('result').value ='Invalid Input !!! [ Correct format: ' + pat + ' ]';
 
     } else {
         document.getElementById('result').style.color = 'black';
