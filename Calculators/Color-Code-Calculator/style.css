@@ -50,12 +50,18 @@ h1 {
 }
 
 .input input, .result input, .dropdown select {
-    width: 65%;
+    width:max-content;
     padding: 8px;
     box-sizing: border-box;
     height: max-content;
     border-radius: 4px;
     border: 1px solid #ccc;
+    margin: 5px 5px;
+}
+
+.input input, .result input{
+    height: auto;
+
 }
 
 .button{
