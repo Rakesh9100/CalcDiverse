@@ -46,3 +46,6 @@ Feel free to customize the styling and animations according to your preferences.
 The Bayesian Theorem Calculator is provided for educational and illustrative purposes. It is not a substitute for professional advice. Users are encouraged to understand the context and limitations of Bayesian reasoning.
 
 Enjoy using the Bayesian Theorem Calculator responsibly!
+
+## Screenshot :
+ ![image](https://github.com/Rakesh9100/CalcDiverse/assets/142514166/7b5a8c4a-82ec-47db-988c-9d1bb72a60f1)
