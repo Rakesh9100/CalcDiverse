@@ -43,12 +43,12 @@ input {
 	margin: 10px;
 	line-height: 25px;
 }
-#results:hover{
+/*#results:hover{
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
 	transform: scale(1.2);
-}
+}*/
 .vect {
 	display: block;
 	font-size: 24px;

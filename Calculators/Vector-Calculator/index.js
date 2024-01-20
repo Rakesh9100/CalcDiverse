@@ -10,6 +10,10 @@ function calc() {
 	ay = parseInt(document.getElementById("ay").value);
 	bx = parseInt(document.getElementById("bx").value);
 	by = parseInt(document.getElementById("by").value);
+	if (isNaN(ay) || isNaN(bx) || isNaN(by)) {
+		alert("Please enter proper values for x and y");
+		return;
+	}
 	var cx = ax+bx;
 	var cy = ay+by;
 	var cxdot = ax*bx;
