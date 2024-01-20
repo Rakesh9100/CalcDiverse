@@ -47,4 +47,4 @@ Enjoy exploring Smith numbers with the calculator!
 
 ## Screenshot
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/142514166/fed82401-4ce1-4080-ab44-c0516194f05c)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/142514166/db3a30c4-2125-4171-b5c2-a979fdaaa1a8)
