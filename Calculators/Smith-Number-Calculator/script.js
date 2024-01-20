@@ -15,14 +15,17 @@ function checkSmithNumber() {
     var primeFactors = getPrimeFactors(inputNumber);
     var digitSumPrimeFactors = primeFactors.reduce((sum, factor) => sum + getDigitSum(factor), 0);
 
-    // Check if it's a Smith number
-    var isSmithNumber = digitSumOriginal === digitSumPrimeFactors;
-
-    // Display the result
+    // Display the result details
     var resultElement = document.getElementById("result");
-    resultElement.innerHTML = isSmithNumber
-        ? `${inputNumber} is a Smith Number.`
-        : `${inputNumber} is not a Smith Number.`;
+    resultElement.innerHTML = `
+        <div class="result-details">
+            <div><strong>Original Number:</strong> ${inputNumber}</div>
+            <div><strong>Prime Factors:</strong> ${primeFactors.join(', ')}</div>
+            <div><strong>Sum of Digits (Original):</strong> ${digitSumOriginal}</div>
+            <div><strong>Sum of Digits (Prime Factors):</strong> ${digitSumPrimeFactors}</div>
+            <div><strong>Result:</strong> ${digitSumOriginal === digitSumPrimeFactors ? 'Yes, it is a Smith Number.' : 'No, it is not a Smith Number.'}</div>
+        </div>
+    `;
 }
 
 function getPrimeFactors(number) {
