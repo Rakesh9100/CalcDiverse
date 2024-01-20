@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Taxi Fare Calculator</title>
+</head>
+<body>
+
+<div class="calculator-box">
+    <h2>Taxi Fare Calculator</h2>
+  <label for="basic-fare">Base Fare*</label>
+  <input type="number" id="basic-fare" placeholder="Enter basic fare">
+
+  <label for="distance">Distance (in km)*</label>
+  <input type="number" id="distance" placeholder="Enter distance">
+
+  <label for="rate-per-km">Rate per Kilometer*</label>
+  <input type="number" id="rate-per-km" placeholder="Enter rate per kilometer">
+
+  <label for="time">Time (in minutes)*</label>
+  <input type="number" id="time" placeholder="Enter time">
+
+  <label for="rate-per-minute">Rate per Minute*</label>
+  <input type="number" id="rate-per-minute" placeholder="Enter rate per minute">
+
+  <button id="calculateBtn">Calculate Fare</button>
+
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
