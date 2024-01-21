@@ -191,7 +191,6 @@ section {
 }
 
 .comp-section {
-    height: 70vh;
     display: grid;
     color: var(--secondary);
     justify-content: center;
@@ -264,7 +263,7 @@ section {
 
 .container .box .content h3 {
     font-size: 15px;
-    color: #682572;
+    color: #efe0f1;
     margin-top: 20px;
     transition: all 0.3s;
 }
@@ -627,6 +626,54 @@ section {
 
 .container .box:nth-child(61)::before,
 .container .box:nth-child(61)::after {
+  background: linear-gradient(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(62)::before,
+.container .box:nth-child(62)::after {
+  background: linear-gradie2t(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(63)::before,
+.container .box:nth-child(63)::after {
+  background: linear-gradient(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(64)::before,
+.container .box:nth-child(64)::after {
+  background: linear-gradient(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(65)::before,
+.container .box:nth-child(65)::after {
+  background: linear-gradient(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(66)::before,
+.container .box:nth-child(66)::after {
+  background: linear-gradient(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(67)::before,
+.container .box:nth-child(67)::after {
+  background: linear-gradient(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(68)::before,
+.container .box:nth-child(68)::after {
+  background: linear-gradient(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(69)::before,
+.container .box:nth-child(69)::after {
+  background: linear-gradient(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(70)::before,
+.container .box:nth-child(70)::after {
+  background: linear-gradient(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(71)::before,
+.container .box:nth-child(71)::after {
+  background: linear-gradient(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(72)::before,
+.container .box:nth-child(72)::after {
+  background: linear-gradient(315deg, #ef229a, #b0f806e4);
+}
+.container .box:nth-child(73)::before,
+.container .box:nth-child(73)::after {
   background: linear-gradient(315deg, #ef229a, #b0f806e4);
 }
 
