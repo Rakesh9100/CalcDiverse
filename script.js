@@ -98,3 +98,27 @@ window.addEventListener('scroll', function () {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+
+
+// Function to filter calculators
+function filterCalculators() {
+    var input, filter, calculators, i;
+    input = document.getElementById('calculatorSearch');
+    filter = input.value.toUpperCase();
+    calculators = document.querySelectorAll('.container .box');
+    console.log(filter)
+    console.log(calculators)
+
+    for (i = 0; i < calculators.length; i++) {
+        var calculator = calculators[i];
+        var h2 = calculator.querySelector('h2');
+        var calculatorName = h2.textContent || h2.innerText;
+
+        if (calculatorName.toUpperCase().indexOf(filter) > -1) {
+            calculator.style.display="flex";
+        } else {
+            calculator.style.display="none";
+        }
+    }
+}
