@@ -45,9 +45,14 @@
         <section class="contact-container">
             <h2>Contact Us</h2>
             <p>If you have any questions or feedback, feel free to reach out to us!</p>
-            <form id="contact-form" name="CalcDiverse Contact" autocomplete="off" netlify>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <form id="contact-form" name="CalcDiverse Contact"  autocomplete="off" netlify  >
+                
+                    <!-- <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name"  placeholder="Enter Your Name" required  >
+                    <span id ="Message"></span> -->
+                    
+                 <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required> 
 
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
@@ -59,6 +64,19 @@
             </form>
         </section>
     </div>
+                     
+    <!-- function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+      <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+        </form> -->
+  
 
     <!-------------------------------------Footer Code Starts --------------------------------------------->
     <div class="footer-basic">
@@ -80,6 +98,23 @@
         </footer>
     </div>
 
+     <!-- ADDING FORM VALIDATION IN NAME FIELD  -->
+     <script>
+        
+        function validateForm() {
+        let nameInput = document.getElementById("name").value;
+        let regex = /^[A-Za-z]+$/;
+
+        if (!regex.test(nameInput)) {
+            alert("Please enter only characters in the name field.");
+            return false;
+        }
+        return true;
+    }
+
+    // Adding event listener for form submission
+    document.getElementById("contact-form").addEventListener("submit", validateForm);
+</script>
 </body>
 
 </html>
