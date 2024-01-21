@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Environmental Calculators</title>
+</head>
+<body>
+
+    <div id="energyCalculator">
+        <h2>Energy Consumption Calculator</h2>
+        <label for="kWh">Average energy consumption (kWh per month):</label>
+        <input type="number" id="kWh" placeholder="Enter kWh">
+        <button onclick="calculateEnergyConsumption()">Calculate</button>
+        <p id="energyResult">Your energy consumption is: <span id="energyValue">0</span> kWh per year</p>
+    </div>
+
+    <div id="waterCalculator">
+        <h2>Water Usage Calculator</h2>
+        <label for="gallons">Average water usage (gallons per day):</label>
+        <input type="number" id="gallons" placeholder="Enter gallons">
+        <button onclick="calculateWaterUsage()">Calculate</button>
+        <p id="waterResult">Your water usage is: <span id="waterValue">0</span> gallons per year</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
