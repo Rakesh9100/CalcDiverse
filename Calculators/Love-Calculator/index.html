@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,33 +10,47 @@
   </head>
   <body>
     <div class="container">
-        <h2 id="title">Love Calculator</h2>
-        <label class="form-label">First Name</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="name1"
-          placeholder="Rahul"
-        />
+      <h2 id="title">Love Calculator</h2>
+      <label class="form-label">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name1"
+        placeholder="Rahul"
+        oninput="validateName('name1')"
+      />
 
-        <label class="form-label"
-          >Second Name</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="name2"
-          placeholder="Anjali"
-        />
-      <button type="button" id="btn">Calculate</button>
+      <label class="form-label">Second Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name2"
+        placeholder="Anjali"
+        oninput="validateName('name2')"
+      />
+      <button type="button" id="btn" onclick="calculateLoveScore()">Calculate</button>
       <p id="yourlovescoreis">Your love score is :</p>
-        <h1 id="score"></h1>
+      <h1 id="score"></h1>
       <button id="reload" onclick="reset()">&#128472;</button>
-
+    </div>
 
     <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+      
+              <!-- ADDING VALIDATION IN NAME 1 AND NAME2  -->
 
-    </body>
+    <script>
+      function validateName(inputId) {
+        let input = document.getElementById(inputId);
+        let value = input.value;
+        let regex = /^[A-Za-z]+$/;
+
+        if (!regex.test(value)) {
+          alert("Please enter only characters in the name field.");
+          input.value = value.replace(/[^A-Za-z]/g, ''); // Remove any non-alphabetic characters
+        }
+    }
+      
+    </script>
+  </body>
 </html>
