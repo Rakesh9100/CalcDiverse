@@ -234,7 +234,7 @@ section {
     left: 50px;
     width: 50%;
     height: 100%;
-    background: #fff;
+    background: #d8de07;
     border-radius: 8px;
     transform: skewX(15deg);
     transition: 0.5s;
@@ -247,7 +247,7 @@ section {
     left: 50px;
     width: 50%;
     height: 100%;
-    background: #fff;
+    background: #de652a;
     border-radius: 8px;
     transform: skewX(15deg);
     transition: 0.5s;
