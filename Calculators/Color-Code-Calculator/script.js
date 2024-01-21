@@ -54,20 +54,24 @@ function convertColors() {
 function copyToClipboard() {
     const resultInput = document.getElementById('result');
     const inputValue=document.getElementById('input').value;
+    const copyBtn=document.getElementById('copy').value;
 
     if(isEmpty(inputValue)){
         resultInput.style.color = 'red';
         resultInput.value = 'Invalid Input !!! [ Correct format: ' + pat + ' ]' ;   
     }  
+
     else{
         resultInput.select();
         document.execCommand('copy'); 
     }
- 
+
+    copyBtn.innerText='Copy📂 ';
+    
     //for invalid value
     function isEmpty(value){
         if(value==null || value.trim()===''){
-            document.getElementById('copy').innerText='Copy';
+            copyBtn.innerText='Copy';
             return true; 
         } 
     } 

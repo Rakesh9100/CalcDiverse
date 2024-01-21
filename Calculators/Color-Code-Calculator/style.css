@@ -49,7 +49,7 @@ h1 {
     justify-content: space-around;
 }
 
-.input input, .result input, .dropdown select {
+.input input, .dropdown select {
     width:max-content;
     padding: 8px;
     box-sizing: border-box;
@@ -59,10 +59,20 @@ h1 {
     margin: 5px 5px;
 }
 
-.input input, .result input{
+.input input{
     height: auto;
-
 }
+
+.result input{
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 5px 5px;
+    /* width: 235px;
+    height: 55px; */
+}
+
 
 .button{
     margin: 10px 15px;
@@ -91,6 +101,9 @@ h1 {
     text-decoration: none;
 }
 
+#copy:hover {
+    background-color: #3d3d40;
+}
 
 #reset{
     background-color: #399E5A;
