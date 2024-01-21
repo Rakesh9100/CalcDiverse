@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infix to Postfix Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Infix to Postfix Calculator</h2>
+    <label for="infixExpression">Enter Infix Expression:</label>
+    <input type="text" id="infixExpression">
+    <button onclick="convertToPostfix()">Convert</button>
+    <div id="result"></div>
+
+    <table id="conversionTable">
+        <caption>Conversion Steps</caption>
+        <thead>
+            <tr>
+                <th>Step</th>
+                <th>Infix</th>
+                <th>Stack</th>
+                <th>Postfix</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table content will be dynamically generated -->
+        </tbody>
+    </table>
+
+   
+</body>
+</html>
