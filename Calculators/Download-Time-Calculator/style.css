@@ -13,6 +13,7 @@ table {
     width: 60vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    border: 5px solid white;
 }
 
 .selectbar {
@@ -23,11 +24,7 @@ table {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-
-.filesizetr {
-    /* display: flex; */
-    /* gap: 1rem; */
+    text-align: left !important;
 }
 
 .m-td {
@@ -57,4 +54,9 @@ div {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+input[type="text" i] {
+    font-weight: 700;
+    text-align: center;
 }
