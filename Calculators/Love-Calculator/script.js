@@ -100,4 +100,3 @@ calcBtn.addEventListener("click", function (e) {
 function reset() {
   window.location.reload();
 }
-
