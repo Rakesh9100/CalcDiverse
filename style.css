@@ -63,20 +63,21 @@ header {
 .navbar {
     font-family: 'Poppins',sans-serif;
     background-color: rgb(9, 5, 40);
-    margin: 0 auto;
+    margin: 0 auto
 }
-
 .navbar a {
     text-decoration: none;
-  
     font-size: 2rem;
     font-weight: 700;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     border: 1px solid transparent;
     color: #C5C6C7;
     transition: 0.3s ease-in-out;
 }
-
+.im{
+    align-items:center;
+    display:flex;
+}
 .nav-link:hover{
     color: #ff1b82;
     border-top-color: #ff1b82;
@@ -87,18 +88,21 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 nav ul {
     display: flex;
-
     gap: 2rem;
     list-style: none;
 }
+.im{
+float: left;
+
+}
 
 .logo {
-    font-size: 2.3rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-left: 10px;
     font-family: Ubuntu;
