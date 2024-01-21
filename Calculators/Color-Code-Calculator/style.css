@@ -20,7 +20,7 @@ h1 {
 }
 
 .card {
-    width: 310px;
+    width: 350px;
     padding: 20px 20px 20px 10px;
     border: 1px solid #ccc;
     text-align: center;
@@ -69,8 +69,6 @@ h1 {
     border-radius: 4px;
     border: 1px solid #ccc;
     margin: 5px 5px;
-    /* width: 235px;
-    height: 55px; */
 }
 
 
@@ -88,7 +86,7 @@ h1 {
     border: none;
     border-radius: 14px; 
     cursor: pointer; 
-    margin:2px 2px;
+    margin:2px 2px; 
     width:max-content;
 }
 
