@@ -407,6 +407,7 @@ section {
 /* Footer Styling */
 
 .footer-basic {
+    width: 100%;
     padding:40px 0;
     background-color: rgb(9, 5, 40, 0.9);
 }
@@ -418,8 +419,11 @@ section {
     font-size:18px;
     line-height:1.6;
     margin-bottom:0;
-    display:flex;
+    
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
   
 .footer-basic li {
@@ -446,6 +450,11 @@ section {
 .footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .social{
@@ -520,6 +529,9 @@ section {
     }
     .comp-section h1 {
         font-size: 55px;
+    }
+    .footer-basic > footer > ul > li > a {
+        font-size: 15px;
     }
 }
 
