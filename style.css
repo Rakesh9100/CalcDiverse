@@ -419,8 +419,7 @@ section {
     font-size:18px;
     line-height:1.6;
     margin-bottom:0;
-    
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -450,7 +449,6 @@ section {
 .footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
-
     display: flex;
     justify-content: center;
     align-items: center;
