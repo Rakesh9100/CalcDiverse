@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body { 
     margin: 0; 
 }
@@ -23,7 +24,7 @@ header {
 
 .contact-container {
     position: relative;
-    max-width: 640px;
+    max-width: 550px;
     min-height: 400px;
     margin: 0 auto;
     padding: 25px;
@@ -38,13 +39,15 @@ header {
 }
 
 .contact-container h2 {
-    color:  rgb(9,5,40);
-    font-size: 36px;
-    margin-bottom: 16px;
+    font-family: Ubuntu;
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px var(--light);
+    margin-top: 16px;
+    color: white;
 }
 
 .contact-container p {
-    color: white;
+    color: black;
     font-size: 17px;
     font-weight: 500;
     margin-bottom: 28px;
@@ -52,14 +55,16 @@ header {
 
 form {
     position: relative;
-    display: grid;
-    gap: 10px;
+    display: flex;
+    align-items: center;
+  flex-direction: column;
 }
 
 label {
-    color: #682572;
+    color: #000000;
     font-size: 20px;
-    font-weight: 450;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px var(--light);
 }
 
 input,
@@ -68,13 +73,21 @@ textarea {
     padding: 10px;
     border-radius: 6px;
     margin-top: 8px;
+    margin-bottom: 25px;
+    border: 0;
+    transition: all linear .2s;
+}
+input:hover,
+textarea:hover{
+    box-shadow: 5px 5px 10px black;
 }
 
 button {
     font-size: 20px;
     font-weight: 700;
     margin-top: 21px;
-    padding: 10px 45px;
+    padding: 10px 15px;
+    width: 200px;
     border: none;
     border-radius: 15px;
     color: #ffffff;

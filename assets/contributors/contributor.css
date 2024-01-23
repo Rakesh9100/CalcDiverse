@@ -50,8 +50,6 @@ h1:hover {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
-    font-family: Ubuntu;
 }
 
 div {
@@ -99,7 +97,7 @@ body {
     box-shadow: 0 0 20px rgb(188, 240, 210); /* Adjust the color and size of the glow as needed */
 }
 
-/* Updated Footer Styling */
+/* Footer Styling */
 
 .footer-basic {
     padding:40px 0;
