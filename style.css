@@ -69,13 +69,13 @@ header {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border: 1px solid transparent;
     color: #C5C6C7;
     transition: 0.3s ease-in-out;
 }
 
-.im {
+.image-logo {
     float: left;
     align-items: center;
     display: flex;
@@ -101,9 +101,9 @@ nav ul {
 }
 
 .logo {
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: 700;
-    margin-left: 10px;
+    margin-left: -10px;
     font-family: Ubuntu;
     color: #ffffff;
     transition: color 0.3s ease-in-out;
