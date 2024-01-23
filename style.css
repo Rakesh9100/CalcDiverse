@@ -63,7 +63,7 @@ header {
 .navbar {
     font-family: 'Poppins',sans-serif;
     background-color: rgb(9, 5, 40);
-    margin: 0 auto
+    margin: 0 auto;
 }
 .navbar a {
     text-decoration: none;
@@ -74,10 +74,13 @@ header {
     color: #C5C6C7;
     transition: 0.3s ease-in-out;
 }
-.im{
-    align-items:center;
-    display:flex;
+
+.im {
+    float: left;
+    align-items: center;
+    display: flex;
 }
+
 .nav-link:hover{
     color: #ff1b82;
     border-top-color: #ff1b82;
@@ -95,10 +98,6 @@ nav ul {
     display: flex;
     gap: 2rem;
     list-style: none;
-}
-.im{
-float: left;
-
 }
 
 .logo {
