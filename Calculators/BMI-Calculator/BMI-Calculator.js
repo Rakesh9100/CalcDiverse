@@ -46,13 +46,13 @@ function countBmi() {
     var result = '';
     if (bmi < 18.5) {
         result = 'Underweight';
-    } else if (18.5 <= bmi && bmi <= 24.9) {
+    } else if (18.5 <= bmi && bmi < 25) {
         result = 'Healthy';
-    } else if (25 <= bmi && bmi <= 29.9) {
+    } else if (25 <= bmi && bmi < 30) {
         result = 'Overweight';
-    } else if (30 <= bmi && bmi <= 34.9) {
+    } else if (30 <= bmi && bmi < 35) {
         result = 'Obese (Class 1)';
-    } else if (35 <= bmi && bmi <= 39.9) {
+    } else if (35 <= bmi && bmi < 40) {
         result = 'Obese (Class 2)';
     } else if (bmi >= 40) {
         result = 'Obese (Class 3)';
