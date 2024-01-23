@@ -7,9 +7,3 @@ Tech Stacks :-
 HTML
 CSS
 JavaScript
-
-
-Screenshots :
-![](image.png)
-![](image-1.png)
-![](image-2.png)
