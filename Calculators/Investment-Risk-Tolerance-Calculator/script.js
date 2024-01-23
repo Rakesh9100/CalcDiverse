@@ -11,15 +11,17 @@ function calculateRisk() {
   }
 
   let totalScore = age + horizon + knowledge + experience;
-  let riskLevel = '';
 
-  if (totalScore <= 20) {
+  let riskLevel = '';
+  let riskScore = Math.min(10, Math.max(1, Math.ceil(totalScore / 4))); // Map total score to the range 1-10
+
+  if (riskScore <= 3) {
       riskLevel = 'Low Risk Tolerance';
-  } else if (totalScore <= 30) {
+  } else if (riskScore <= 7) {
       riskLevel = 'Medium Risk Tolerance';
   } else {
       riskLevel = 'High Risk Tolerance';
   }
 
-  document.getElementById('result').innerHTML = `<p>Your investment risk tolerance is: <strong>${riskLevel}</strong></p>`;
+  document.getElementById('result').innerHTML = `<p>Your investment risk tolerance is: <strong>${riskLevel} (${riskScore}/10)</strong></p>`;
 }
