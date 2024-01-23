@@ -344,13 +344,37 @@ section {
       font-weight: 900;
       margin-right: -25px;
       border-radius: 20px;
-      background-color: var(--light);
-      border: 4px solid #682572;
+      background-color: white;
+      color: #ffffff;
+      transition: .5s;
+      z-index: 3;
   }
   
   .container .box .content img:hover {
-      transform: scale(1.02);
-      background: #ffffff;
+      color: #fff;
+      transform: rotateY(180deg);
+  }
+
+  .container .box .content img:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+
+  .container .box .content img:hover:before {
+    top: 0;
+  }
+  
+  .container .box .content img:hover{
+    background-color: #e1ff00;
+    border: 1px solid #e1ff00;
+    box-shadow: 0 0 6px 2px #e1ff00;
   }
   
   .card-footer{
@@ -853,6 +877,7 @@ section {
   right: 10px;
   height: 50px;
   width: 50px;
+  z-index: 10;
   display: none;
   place-items: center;
   border-radius: 50%;
