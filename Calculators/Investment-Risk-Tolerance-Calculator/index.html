@@ -8,27 +8,24 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <h2>Investment Risk Tolerance Calculator</h2>
-  <form id="riskToleranceForm">
+  <div id="calculator">
+    <h2>Risk Tolerance Calculator</h2>
+
     <label for="age">Age:</label>
-    <input type="number" id="age" required>
+    <input type="number" id="age" placeholder="Enter your age">
 
-    <label for="investmentHorizon">Investment Horizon (in years):</label>
-    <input type="number" id="investmentHorizon" required>
+    <label for="horizon">Investment Horizon (in years):</label>
+    <input type="number" id="horizon" placeholder="Enter investment horizon">
 
-    <label for="financialKnowledge">Financial Knowledge (1-10):</label>
-    <input type="number" id="financialKnowledge" min="1" max="10" required>
+    <label for="knowledge">Financial Knowledge (1-10):</label>
+    <input type="number" id="knowledge" placeholder="Enter your financial knowledge">
 
-    <label for="investmentExperience">Investment Experience (1-10):</label>
-    <input type="number" id="investmentExperience" min="1" max="10" required>
+    <label for="experience">Investment Experience (1-10):</label>
+    <input type="number" id="experience" placeholder="Enter your investment experience">
 
-    <button type="button" onclick="calculateRiskTolerance()">Calculate Risk Tolerance</button>
-  </form>
+    <button onclick="calculateRisk()"><b>Calculate Risk</b></button>
 
-  <div id="result"></div>
+    <div id="result"></div>
 
-  <script>
-    
-  </script>
 </body>
 </html>

@@ -1,17 +1,25 @@
-function calculateRiskTolerance() {
-    const age = parseInt(document.getElementById('age').value);
-    const investmentHorizon = parseInt(document.getElementById('investmentHorizon').value);
-    const financialKnowledge = parseInt(document.getElementById('financialKnowledge').value);
-    const investmentExperience = parseInt(document.getElementById('investmentExperience').value);
+function calculateRisk() {
+  const age = parseInt(document.getElementById('age').value);
+  const horizon = parseInt(document.getElementById('horizon').value);
+  const knowledge = parseInt(document.getElementById('knowledge').value);
+  const experience = parseInt(document.getElementById('experience').value);
 
-    // Perform your risk tolerance calculation here
-    // This is a simple example, you can replace it with a more complex algorithm
-    const riskToleranceScore = (financialKnowledge + investmentExperience) / 2;
-
-    displayResult(riskToleranceScore);
+  // Check if any field is empty or not a number
+  if (isNaN(age) || isNaN(horizon) || isNaN(knowledge) || isNaN(experience)) {
+      alert("Please enter valid values for all fields.");
+      return;
   }
 
-  function displayResult(score) {
-    const resultElement = document.getElementById('result');
-    resultElement.innerHTML = `Your Risk Tolerance Score is: ${score.toFixed(2)}`;
+  let totalScore = age + horizon + knowledge + experience;
+  let riskLevel = '';
+
+  if (totalScore <= 20) {
+      riskLevel = 'Low Risk Tolerance';
+  } else if (totalScore <= 30) {
+      riskLevel = 'Medium Risk Tolerance';
+  } else {
+      riskLevel = 'High Risk Tolerance';
   }
+
+  document.getElementById('result').innerHTML = `<p>Your investment risk tolerance is: <strong>${riskLevel}</strong></p>`;
+}
