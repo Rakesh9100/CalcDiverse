@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carbon Footprint Calculator</title>
+</head>
+
+<body>
+    <div class="calculator-container">
+        <h1>Carbon Footprint Calculator</h1>
+        <label for="milesDrivenYear">Enter Miles Driven per Year:</label>
+        <input type="number" id="milesDrivenYear" placeholder="Enter miles driven per year">
+
+        <label for="milesDrivenMonth">Enter Miles Driven per Month:</label>
+        <input type="number" id="milesDrivenMonth" placeholder="Enter miles driven per month">
+
+        <label for="milesDrivenWeek">Enter Miles Driven per Week:</label>
+        <input type="number" id="milesDrivenWeek" placeholder="Enter miles driven per week">
+
+        <button onclick="calculateCarbonFootprint()">Calculate</button>
+
+        <div id="result" class="result-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
