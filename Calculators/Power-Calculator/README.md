@@ -1,4 +1,4 @@
-# Power Converter
+# Power Calculator
 
 Welcome to the Power Calculator, a simple tool designed to help you convert power between different units. This calculator is particularly handy for converting power like kilowatts (kW) and watts (W). Whether you're working on electrical projects, energy efficiency assessments, or just need a quick conversion, this tool has got you covered.
 
