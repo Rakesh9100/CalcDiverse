@@ -1,12 +1,26 @@
 function convertLength() {
-    let inputLength = parseFloat(document.getElementById("lengthInput").value);
+
+    let inputLength = document.getElementById("lengthInput").value;
+    if(!inputLength || !inputLength.trim()) { 
+      alert("Please enter a valid Number !");
+      return;
+    }
+    try {
+      inputLength = parseFloat(inputLength);
+    } catch (error) {
+      alert("Please enter a valid Number !");
+      return;
+    }
     let fromUnit = document.getElementById("unitFrom").value;
     let toUnit = document.getElementById("unitTo").value;
   
     let conversionFactors = {
       km: 1000,
+      hm: 100,
+      dam: 10,
       m: 1,
-      cm: 0.01,
+      dm: 0.1,
+      cm: 0.01, 
       mm: 0.001,
     };
   

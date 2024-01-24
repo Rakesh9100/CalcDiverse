@@ -1,6 +1,10 @@
 // script.js
 function calculateDerivative() {
     const inputFunction = document.getElementById('functionInput').value;
+    if(!inputFunction || !inputFunction.trim()) {
+        alert('Please enter a mathematical function.');
+        return;
+    }
     const resultElement = document.getElementById('result');
 
     try {

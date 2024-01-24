@@ -1,6 +1,9 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -13,38 +16,42 @@ body {
 }
 
 .calculator {
-    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 textarea {
     width: 100%;
     height: 80px;
-    margin-bottom: 10px;
+    font: 1rem sans-serif;
     padding: 10px;
+    background: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
 }
 
 .buttons {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin:20px 20px;
+    animation: fadeInAndFloat 1.5s ease-in-out forwards;
 }
 
 button {
-    padding: 10px;
-    background-color: #4caf50;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #03223b;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.5s ease;
 }
 
-
-h2 {
-    color: #4caf50;
+button:hover{
+    background-color: #0a4c82;
 }
 
 ul {
@@ -62,9 +69,44 @@ ul {
 
 li span:first-child {
     font-weight: bold;
-    color: #4caf50;
+    color: #ffffff;
 }
 
 li span:last-child {
-    color: #2196f3;
+    color: #03223b;
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+@keyframes fadeInAndFloat {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+  }
+  

@@ -11,6 +11,9 @@ modalText = document.querySelector("#modalText");
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 
+// Remove the initial setting of the result
+// document.querySelector("#result").innerHTML = "00.00";
+
 function calculate() {
     if (age.value == '' || height.value == '' || weight.value == '' || (male.checked == false && female.checked == false)) {
         modal.style.display = "block";
@@ -35,7 +38,7 @@ function countBmi() {
 
     if (!isPositiveNumber(p[0]) || !isPositiveNumber(p[1]) || !isPositiveNumber(p[2])) {
         modal.style.display = "block";
-        modalText.innerHTML = 'Please enter valid positive values for age, height and weight!';
+        modalText.innerHTML = 'Please enter valid positive values for age, height, and weight!';
         return;
     }
 
@@ -43,13 +46,13 @@ function countBmi() {
     var result = '';
     if (bmi < 18.5) {
         result = 'Underweight';
-    } else if (18.5 <= bmi && bmi <= 24.9) {
+    } else if (18.5 <= bmi && bmi < 25) {
         result = 'Healthy';
-    } else if (25 <= bmi && bmi <= 29.9) {
+    } else if (25 <= bmi && bmi < 30) {
         result = 'Overweight';
-    } else if (30 <= bmi && bmi <= 34.9) {
+    } else if (30 <= bmi && bmi < 35) {
         result = 'Obese (Class 1)';
-    } else if (35 <= bmi && bmi <= 39.9) {
+    } else if (35 <= bmi && bmi < 40) {
         result = 'Obese (Class 2)';
     } else if (bmi >= 40) {
         result = 'Obese (Class 3)';
@@ -57,6 +60,7 @@ function countBmi() {
 
     resultArea.style.display = "block";
     document.querySelector(".comment").innerHTML = `You are <span id="comment">${result}</span>`;
+    // Update the result only after the calculation
     document.querySelector("#result").innerHTML = bmi.toFixed(2);
 }
 

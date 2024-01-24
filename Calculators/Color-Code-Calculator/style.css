@@ -1,0 +1,113 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background:linear-gradient(to right bottom, #7ed0e7, #77c1ee, #87afee, #a399e1, #bf80c6);
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 50px !important;
+    margin-top: -20px !important;
+    font-size: 40px;
+    margin: 0;
+}
+
+.card {
+    width: 350px;
+    padding: 20px 20px 20px 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 10px 10px 11px 0px rgb(49, 42, 42);
+}
+.row{
+    display: flex;
+    justify-content:space-around;
+}
+
+.input{
+    margin-bottom: 7px;
+}
+
+.result{
+    margin-top: 7px;
+}
+
+.dropdowns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.input input, .dropdown select {
+    width:max-content;
+    padding: 8px;
+    box-sizing: border-box;
+    height: max-content;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 5px 5px;
+}
+
+.input input{
+    height: auto;
+}
+
+.result input{
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 5px 5px;
+}
+
+
+.button{
+    margin: 10px 15px;
+}
+
+.button button {
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    background-color: #9387ab;
+    color: white;
+    border: none;
+    border-radius: 14px; 
+    cursor: pointer; 
+    margin:2px 2px; 
+    width:max-content;
+}
+
+.button button:hover {
+    background-color: #5f35b3;
+}
+
+#copy {
+    background-color: #494655;
+    text-decoration: none;
+}
+
+#copy:hover {
+    background-color: #3d3d40;
+}
+
+#reset{
+    background-color: #399E5A;
+    display: inline;
+}
+
+#reset:hover{
+    background-color:  #4fc431;
+}

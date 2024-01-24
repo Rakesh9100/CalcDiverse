@@ -25,7 +25,8 @@ function calculateage(){
     const userinput = document.getElementById("ip1").value;
 
     //here we check if user don't give any input ,  it will not work further anymmore.
-    if (userinput === '') {
+    if (userinput === "" || userinput2 === "" || !userinput || !userinput2 || !userinput.trim() || !userinput2.trim()) {
+        alert("Please Enter a Valid Date/Time !");
         return;
     }
 

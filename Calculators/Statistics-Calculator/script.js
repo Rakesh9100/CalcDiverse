@@ -1,12 +1,17 @@
 function clearData() {
-    document.getElementById('dataSet').value = '';
-    document.getElementById('statsList').innerHTML = '';
+  document.getElementById("dataSet").value = "";
+  document.getElementById("statsList").innerHTML = "";
 }
 
 function calculateStats() {
-    const dataSet = document.getElementById('dataSet').value;
-    const numbers = dataSet.split(',').map(Number);
-
+  const dataSet = document.getElementById("dataSet").value.replace(/\s/g, '');
+  const numbers = dataSet.split(",").map(Number);
+  const statsList = document.getElementById("statsList");
+  if (dataSet == "") {
+    statsList.innerHTML = `<li><span>Please enter a valid dataset!</span></li>`;
+  } else if (!/^(\d+(\.\d+)?,)*\d+(\.\d+)?$/.test(dataSet)) {
+    statsList.innerHTML = `<li><span>Dataset should only contain numbers!</span></li>`;
+  } else {
     const max = Math.max(...numbers);
     const min = Math.min(...numbers);
     const mean = numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
@@ -20,7 +25,6 @@ function calculateStats() {
     const sum = numbers.reduce((acc, num) => acc + num, 0);
     const count = numbers.length;
 
-    const statsList = document.getElementById('statsList');
     statsList.innerHTML = `
     <li><span>Mean:</span><span>${mean.toFixed(2)}</span></li><hr>
     <li><span>Median:</span><span>${median}</span></li><hr>
@@ -33,27 +37,31 @@ function calculateStats() {
     <li><span>Sum:</span><span>${sum}</span></li><hr>
     <li><span>Count:</span><span>${count}</span></li><hr>
     `;
+  }
 }
 
 function findMode(numbers) {
-    const frequency = {};
-    let maxFrequency = 0;
+  const frequency = {};
+  let maxFrequency = 0;
 
-    for (const num of numbers) {
-        frequency[num] = (frequency[num] || 0) + 1;
-        maxFrequency = Math.max(maxFrequency, frequency[num]);
+  for (const num of numbers) {
+    frequency[num] = (frequency[num] || 0) + 1;
+    maxFrequency = Math.max(maxFrequency, frequency[num]);
+  }
+
+  const mode = [];
+  for (const num in frequency) {
+    if (frequency[num] === maxFrequency) {
+      mode.push(num);
     }
+  }
 
-    const mode = [];
-    for (const num in frequency) {
-        if (frequency[num] === maxFrequency) {
-            mode.push(num);
-        }
-    }
-
-    return mode;
+  return mode;
 }
 
 function calculateVariance(numbers, mean) {
-    return numbers.reduce((acc, num) => acc + Math.pow(num - mean, 2), 0) / numbers.length;
+  return (
+    numbers.reduce((acc, num) => acc + Math.pow(num - mean, 2), 0) /
+    numbers.length
+  );
 }

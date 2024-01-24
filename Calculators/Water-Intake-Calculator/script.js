@@ -31,5 +31,5 @@ function calculateIntake() {
     waterIntake = Math.round(waterIntake); // Round water intake to the nearest integer
 
     // Display the result on the page
-    document.getElementById('result').textContent = 'Your daily water intake should be ' + waterIntake + ' liters.';
+    document.getElementById('result').innerHTML = '<p>Your daily water intake should be <span style="color: red;">' + waterIntake + '</span> liters.</p>';
 }

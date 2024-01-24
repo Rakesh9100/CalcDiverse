@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Burnt Calculator</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+
+    <div id="calculator">
+        <h2>Calories Burnt Calculator</h2>
+        <label for="activity">Select Activity:</label>
+        <select id="activity" name="activity">
+            <option value="3.9">Walking (3.5 mph)</option>
+            <option value="9.8">Running (6 mph)</option>
+            <option value="8.0">Cycling (12-14 mph)</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="weight">Enter Weight (kg):</label>
+        <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
+
+        <label for="duration">Enter Duration (hours):</label>
+        <input type="number" id="duration" name="duration" placeholder="Enter duration in hours" required>
+
+        <button onclick="calculateCalories()">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

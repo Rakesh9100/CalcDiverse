@@ -1,104 +1,88 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
-
-body{
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  font-family: Raleway;
-  color: black;
-  letter-spacing: 1px;
-  background-color: rgba(128, 128, 128, 0.185);
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
 }
 
-.card-form{
-  width: 500px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+.card-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background: linear-gradient(45deg, #3498db, #8e44ad);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
 }
 
-.form-title{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    color: white;
-    font-size: 20px;
+.form-title {
+    font-size: 2em;
     font-weight: bold;
-    background: #27ae60;
-    border-radius: 10px 10px 0 0;
-  }
-  
-.form-body{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
     padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333333;
+    transition: background-color 0.3s ease;
 }
 
-.row{
-      display: flex;
-      justify-content: space-around;
-      padding: 10px;
-    }
-      
-input[type="number"],select{
-        width: 100%;
-        margin: 0 15px;
-        height: 35px;
-        padding: 5px 15px;
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        background: #e8ebed;
-        color: #576366;
-        font-size: 14px;
-    }
-
-    input[type="number"] {
-        appearance: none;
-    }
-.rule{
-    height: 2px;
-    background: #e8ebed;
-    margin: 0px 35px;
-}
-  
-.form-footer{
-    display: grid;
-    justify-items: center;
-    align-items: end;
-    margin: 15px;
-    padding: 15px 10px;}
-
-    
-button{
-      height: 40px;
-      line-height: 40px;
-      border: none;
-      border-radius: 5px;
-      padding: 0px 15px 5px 15px;
-      background: #27ae60;
-      margin-right: 10px;
-      font-size: 14px;
-      font-family: Raleway;
-      color: white;
-      letter-spacing: 1px;
+input:focus,
+select:focus {
+    background-color: rgba(255, 255, 255, 1);
 }
 
-button:focus{
-    background: #108641;
-
+select {
+    cursor: pointer;
 }
 
-button:hover{
-    transition: all 0.5s ease-in;
-    transform: translateY(-5px); 
-    box-shadow: 2px 5px 0 #27ae5faa;
-}
-  
-#result-container{
-    display: grid;
-    align-items: center;
-    justify-items: center;
+.rule {
+    height: 1px;
+    background-color: #ffffff;
+    margin: 20px 0;
 }
 
+.form-footer {
+    text-align: center;
+}
+
+button {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+}
+
+#result-container {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
