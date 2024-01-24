@@ -8,6 +8,14 @@ Pronic Number Calculator is a web application that allows users to check if a gi
 * Finds pronic numbers within a specified range.
 * Responsive design for multiple devices.
 
+## What is a Pronic Number?
+
+A pronic number, also known as an oblong or heteromecic number, is a product of two consecutive integers, that is, the product of n and (n + 1) for some integer n. Mathematically, a pronic number can be expressed as:
+
+\[ P_n = n \times (n + 1) \]
+
+For example, 6 is a pronic number because it can be expressed as \( 2 \times (2 + 1) \).
+
 ## Tech Stacks :-
 
 - HTML
@@ -16,4 +24,5 @@ Pronic Number Calculator is a web application that allows users to check if a gi
 
 ## Screenshots :-
 
+[Add screenshots or GIFs here to showcase the Pronic Number Calculator in action]
 
