@@ -9,11 +9,55 @@
     --track: rgb(111, 111, 139)
 }
 
+#voiceButton {
+    font-size: 40px;
+    color: red;
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#voiceButton.active {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adjust the shadow color and size as needed */
+}
+
+@keyframes glow {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100% {
+        transform: scale(1.2);
+        filter: brightness(150%);
+    }
+}
+
+.stable
+{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+} 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } 
+
+/* calci contaainer*/
+#calci_container
+{
+    margin: 1px;
+}
+
+#calculators
+{
+    margin: 1px;
+    padding: 2%;
+}
 
 /* Scrollbar Css */
 
@@ -218,7 +262,7 @@ section {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 180px;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .container .box {
@@ -624,7 +668,7 @@ section {
     text-align: center;
     border-radius: 14px;
     margin: 2rem 4rem 0 ;
-    padding: 2rem;
+    padding: 1rem;
     color: white;
     width: 100%;
 }

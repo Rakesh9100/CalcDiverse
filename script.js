@@ -1,3 +1,50 @@
+const voiceButton = document.getElementById('voiceButton');
+
+voiceButton.addEventListener('click', () => {
+    voiceButton.classList.add('active');
+
+    setTimeout(() => {
+        voiceButton.classList.remove('active');
+    }, 5000); // Remove 'active' class after 5 seconds
+
+});
+
+
+function filterCalculators() {
+    // Implement your filtering logic here
+    // This function will be called when the user types or speaks
+}
+
+
+if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+
+    const calculatorSearch = document.getElementById('calculatorSearch');
+    const voiceButton = document.getElementById('voiceButton');
+
+    voiceButton.addEventListener('click', () => {
+        recognition.start();
+    });
+
+    recognition.onresult = (event) => {
+        const last = event.results.length - 1;
+        const query = event.results[last][0].transcript;
+        calculatorSearch.value = query;
+        filterCalculators(); // Call your existing filter function after setting the search value
+    };
+
+    recognition.onerror = (event) => {
+        console.error('Speech recognition error:', event.error);
+    };
+} else {
+    alert('Speech recognition is not supported in this browser. Please use a modern browser that supports the Web Speech API.');
+}
+
+// Your existing filter function
+function filterCalculators() {
+    // Implement your filtering logic here
+    // This function will be called when the user types or speaks
+}
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
