@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <style>
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #121212;
+}
+
+.calculator {
+  text-align: center;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.calculator:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  color: #ffffff;
+}
+
+label {
+  display: block;
+  margin: 20px 0 10px;
+  color: #ddd;
+}
+
+input, select {
+  width: calc(100% - 20px);
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #333;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  background-color: #333;
+  color: #ddd;
+}
+
+button {
+  padding: 15px 30px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.08);
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #ffffff;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>QR Code Generator</h1>
+    <textarea id="text-input" placeholder="Enter text"></textarea>
+    <button onclick="generateQRCode()">Generate QR Code</button>
+    <div id="qrcode"></div>
+  </div>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <script >
+    function generateQRCode() {
+  // Get the text from the textarea
+  const textInput = document.getElementById('text-input').value;
+
+  // Get the div element where the QR code will be rendered
+  const qrcodeDiv = document.getElementById('qrcode');
+
+  // Clear any previous QR code
+  qrcodeDiv.innerHTML = '';
+
+  // Generate the QR code
+  const qrcode = new QRCode(qrcodeDiv, {
+    text: textInput,
+    width: 128,
+    height: 128,
+  });
+}
+
+  </script>
+</body>
+</html>
