@@ -2,6 +2,8 @@ function performOperation(operation) {
     const input1 = document.getElementById('input1').value;
     const input2 = document.getElementById('input2').value;
     let result;
+    
+//Here switch is used to execute the program as per the user's choice of operation
 
     switch (operation) {
         case 'and':
