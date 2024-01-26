@@ -1,27 +1,44 @@
 function calculateRisk() {
-  const age = parseInt(document.getElementById('age').value);
-  const horizon = parseInt(document.getElementById('horizon').value);
-  const knowledge = parseInt(document.getElementById('knowledge').value);
-  const experience = parseInt(document.getElementById('experience').value);
+    const getInputValue = (id) => parseInt(document.getElementById(id).value);
 
-  // Check if any field is empty or not a number
-  if (isNaN(age) || isNaN(horizon) || isNaN(knowledge) || isNaN(experience)) {
-      alert("Please enter valid values for all fields.");
-      return;
-  }
+    const age = getInputValue('age');
+    const horizon = getInputValue('horizon');
+    const knowledge = getInputValue('knowledge');
+    const experience = getInputValue('experience');
 
-  let totalScore = age + horizon + knowledge + experience;
+    if ([age, horizon, knowledge, experience].some(isNaN)) {
+        alert("Please enter valid values for all fields.");
+        return;
+    }
 
-  let riskLevel = '';
-  let riskScore = Math.min(10, Math.max(1, Math.ceil(totalScore / 4))); // Map total score to the range 1-10
+    const calculateWeightedAverage = (values, weights) => {
+        const sum = values.reduce((acc, value, index) => acc + value * weights[index], 0);
+        const weightSum = weights.reduce((acc, weight) => acc + weight, 0);
+        return sum / weightSum;
+    };
 
-  if (riskScore <= 3) {
-      riskLevel = 'Low Risk Tolerance';
-  } else if (riskScore <= 7) {
-      riskLevel = 'Medium Risk Tolerance';
-  } else {
-      riskLevel = 'High Risk Tolerance';
-  }
+    const weights = [0.5, 0.5]; // Equal weights for knowledge and experience
 
-  document.getElementById('result').innerHTML = `<p>Your investment risk tolerance is: <strong>${riskLevel} (${riskScore}/10)</strong></p>`;
+    const riskScore = calculateWeightedAverage([knowledge, experience], weights);
+
+    const mapToRiskScale = (value) => Math.min(10, Math.max(1, Math.ceil(value)));
+
+    const riskScale = mapToRiskScale(riskScore);
+
+    const riskCategories = {
+        1: 'Low Risk Tolerance',
+        2: 'Low Risk Tolerance',
+        3: 'Low Risk Tolerance',
+        4: 'Medium Risk Tolerance',
+        5: 'Medium Risk Tolerance',
+        6: 'Medium Risk Tolerance',
+        7: 'Medium Risk Tolerance',
+        8: 'High Risk Tolerance',
+        9: 'High Risk Tolerance',
+        10: 'High Risk Tolerance'
+    };
+
+    const riskLevel = riskCategories[riskScale];
+
+    document.getElementById('result').innerHTML = `<p>Your investment risk tolerance is: <strong>${riskLevel} (${riskScale}/10)</strong></p>`;
 }
