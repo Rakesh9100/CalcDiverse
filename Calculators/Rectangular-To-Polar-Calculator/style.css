@@ -17,7 +17,7 @@ input {
 }
 
 button {
-  width: 500px;
+  width: 75%;
   padding: 10px;
   margin-top: 10px;
   background-color: #4CAF50;
@@ -39,7 +39,7 @@ button {
   margin-left:50px;
   margin-top:100px;
   box-shadow: 4px 8px 10px black;
-}
+} 
 .result{
   display:flex;
   align-items:center;
@@ -60,13 +60,14 @@ button {
   padding-right:8%;
 }
 .input-div-x, .input-div-y{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
   margin: 5px;
-  padding: 15px;
+  padding-left: 20px;
 }
-label{
-  margin-top: 15px;
-  margin-left:50px;
-}
+
 h3{
   margin-top:20px;
   margin-bottom:0;
