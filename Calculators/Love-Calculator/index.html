@@ -34,27 +34,9 @@
       <p id="yourlovescoreis">Your love score is :</p>
         <h1 id="score"></h1>
       <button id="reload" onclick="reset()">&#128472;</button>
-
-
+    </div>
     <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
-       <!-- ADDING VALIDATION IN NAME 1 AND NAME2  -->
-
-    <script>
-        
-
-      function validateName(inputId) {
-        let input = document.getElementById(inputId);
-        let value = input.value;
-        let regex = /^[A-Za-z ]+$/;
-
-        if (!regex.test(value)) {
-          alert("Please enter only characters in the name field.");
-          input.value = value.replace(/[^A-Za-z ]/g, ''); // Remove any non-alphabetic characters
-        }
-    }
-      
-    </script>
     </body>
 </html>
