@@ -666,8 +666,9 @@ section {
     transform: scale(1.02);
     box-shadow: -5px -5px 10px #682572;
 }
-@media (max-width: 550px){
+@media (max-width: 650px){
     #searchBar input{
-        width: 80%;
+        width: 60%;
+        font-size: 1.5rem;
     }
 }
