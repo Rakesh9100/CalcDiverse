@@ -17,6 +17,7 @@
           class="form-control"
           id="name1"
           placeholder="Rahul"
+           oninput="validateName('name1')"
         />
 
         <label class="form-label"
@@ -27,6 +28,7 @@
           class="form-control"
           id="name2"
           placeholder="Anjali"
+          oninput="validateName('name2')"
         />
       <button type="button" id="btn">Calculate</button>
       <p id="yourlovescoreis">Your love score is :</p>
@@ -37,5 +39,22 @@
     <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
+       <!-- ADDING VALIDATION IN NAME 1 AND NAME2  -->
+
+    <script>
+        
+
+      function validateName(inputId) {
+        let input = document.getElementById(inputId);
+        let value = input.value;
+        let regex = /^[A-Za-z ]+$/;
+
+        if (!regex.test(value)) {
+          alert("Please enter only characters in the name field.");
+          input.value = value.replace(/[^A-Za-z ]/g, ''); // Remove any non-alphabetic characters
+        }
+    }
+      
+    </script>
     </body>
 </html>
