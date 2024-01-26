@@ -52,16 +52,14 @@ function calculateProjectedScore() {
 }
 
 function calculateTarget() {
-    const currentScore = document.getElementById("target-current-score").value;
-    const wicketsDown = document.getElementById("wickets-down").value;
-    const requiredRunsPerWicket = document.getElementById("required-runs-per-wicket").value;
+    const oppositionScore = parseFloat(document.getElementById("opposition-score").value);
 
-    // Check if currentScore, wicketsDown, and requiredRunsPerWicket are not empty
-    if (currentScore !== "" && wicketsDown !== "" && requiredRunsPerWicket !== "") {
-        const oppositionScore = Number(currentScore) + 1; // Add 1 for opposition total
-        const target = oppositionScore + (10 - Number(wicketsDown)) * Number(requiredRunsPerWicket);
+    if (!isNaN(oppositionScore)) {
+        // Check if opposition score is a valid number
+        const target = oppositionScore + 1;
         document.getElementById("target-result").textContent = `Target: ${target.toFixed(0)}`;
     } else {
-        alert("Please enter Current Score, Wickets Down, and Required Runs Per Wicket before calculating Target.");
+        alert("Please enter the Opposition Score before calculating Target.");
     }
 }
+
