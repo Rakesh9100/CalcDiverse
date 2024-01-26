@@ -1,6 +1,6 @@
 function convertToPolar() {
-  let x = parseFloat(document.getElementById('xInput').value);
-  let y = parseFloat(document.getElementById('yInput').value);
+  var x = parseFloat(document.getElementById('xInput').value);
+  var y = parseFloat(document.getElementById('yInput').value);
 
   if (isNaN(x) || isNaN(y)) {
       alert('Please enter valid numerical values for X and Y.');
@@ -8,10 +8,10 @@ function convertToPolar() {
   }
 
 
-  let r = Math.sqrt(x * x + y * y);
-  let theta = Math.atan2(y, x);
+  var r = Math.sqrt(x * x + y * y);
+  var theta = Math.atan2(y, x);
 
-  let thetaDegrees = (theta * 180) / Math.PI;
+  var thetaDegrees = (theta * 180) / Math.PI;
 
-  document.querySelector('.answer').innerHTML = "r = " + r.toFixed(2) + ", θ = " + thetaDegrees.toFixed(2) + " degrees";
+  document.getElementById('result').innerHTML = "r = " + r.toFixed(2) + ", θ = " + thetaDegrees.toFixed(2) + " degrees";
 }
