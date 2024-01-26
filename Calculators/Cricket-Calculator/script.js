@@ -1,34 +1,67 @@
 function calculateStrikeRate() {
     const runs = document.getElementById("runs").value;
     const balls = document.getElementById("balls").value;
-    const strikeRate = (runs / balls) * 100;
-    document.getElementById("strike-rate-result").textContent = `Strike Rate: ${strikeRate.toFixed(2)}`;
-}
 
+    // Check if runs and balls are not empty
+    if (runs !== "" && balls !== "") {
+        const strikeRate = (runs / balls) * 100;
+        document.getElementById("strike-rate-result").textContent = `Strike Rate: ${strikeRate.toFixed(2)}`;
+    } else {
+        // Display an alert if either runs or balls is empty
+        alert("Please enter both Runs and Balls before calculating Strike Rate.");
+    }
+}
 function calculateEconomyRate() {
     const runsConceded = document.getElementById("runs-conceded").value;
     const overs = document.getElementById("overs").value;
-    const economyRate = runsConceded / (overs);
-    document.getElementById("economy-rate-result").textContent = `Economy Rate: ${economyRate.toFixed(2)}`;
+
+    // Check if runsConceded and overs are not empty
+    if (runsConceded !== "" && overs !== "") {
+        const economyRate = runsConceded / (overs * 6);
+        document.getElementById("economy-rate-result").textContent = `Economy Rate: ${economyRate.toFixed(2)}`;
+    } else {
+        alert("Please enter both Runs Conceded and Overs before calculating Economy Rate.");
+    }
 }
 
 function calculateRequiredRunRate() {
     const target = document.getElementById("target").value;
     const ballsRemaining = document.getElementById("balls-remaining").value;
-    const requiredRunRate = (target / (ballsRemaining / 6)).toFixed(2);
-    document.getElementById("required-run-rate-result").textContent = `Required Run Rate: ${requiredRunRate}`;
+
+    // Check if target and ballsRemaining are not empty
+    if (target !== "" && ballsRemaining !== "") {
+        const requiredRunRate = (target / (ballsRemaining / 6)).toFixed(2);
+        document.getElementById("required-run-rate-result").textContent = `Required Run Rate: ${requiredRunRate}`;
+    } else {
+        alert("Please enter both Target and Balls Remaining before calculating Required Run Rate.");
+    }
 }
 
 function calculateProjectedScore() {
-    const currentScore = parseFloat(document.getElementById("current-score").value);
-    const oversRemaining = parseFloat(document.getElementById("overs-remaining").value);
-    const runsPerOver = parseFloat(document.getElementById("runs-per-over").value);
-    const projectedScore = currentScore + (oversRemaining * runsPerOver);
-    document.getElementById("projected-score-result").textContent = `Projected Score: ${projectedScore.toFixed(0)}`;
+    const currentScore = document.getElementById("current-score").value;
+    const oversRemaining = document.getElementById("overs-remaining").value;
+    const runsPerOver = document.getElementById("runs-per-over").value;
+
+    // Check if currentScore, oversRemaining, and runsPerOver are not empty
+    if (currentScore !== "" && oversRemaining !== "" && runsPerOver !== "") {
+        const projectedScore = Number(currentScore) + (Number(oversRemaining) * Number(runsPerOver));
+        document.getElementById("projected-score-result").textContent = `Projected Score: ${projectedScore.toFixed(0)}`;
+    } else {
+        alert("Please enter Current Score, Overs Remaining, and Runs Per Over before calculating Projected Score.");
+    }
 }
 
 function calculateTarget() {
-    const oppositionScore = parseFloat(document.getElementById("opposition-score").value);
-    const target = oppositionScore + 1;
-    document.getElementById("target-result").textContent = `Target: ${target.toFixed(0)}`;
+    const currentScore = document.getElementById("target-current-score").value;
+    const wicketsDown = document.getElementById("wickets-down").value;
+    const requiredRunsPerWicket = document.getElementById("required-runs-per-wicket").value;
+
+    // Check if currentScore, wicketsDown, and requiredRunsPerWicket are not empty
+    if (currentScore !== "" && wicketsDown !== "" && requiredRunsPerWicket !== "") {
+        const oppositionScore = Number(currentScore) + 1; // Add 1 for opposition total
+        const target = oppositionScore + (10 - Number(wicketsDown)) * Number(requiredRunsPerWicket);
+        document.getElementById("target-result").textContent = `Target: ${target.toFixed(0)}`;
+    } else {
+        alert("Please enter Current Score, Wickets Down, and Required Runs Per Wicket before calculating Target.");
+    }
 }
