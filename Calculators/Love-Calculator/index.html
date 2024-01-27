@@ -17,6 +17,7 @@
           class="form-control"
           id="name1"
           placeholder="Rahul"
+           oninput="validateName('name1')"
         />
 
         <label class="form-label"
@@ -27,13 +28,13 @@
           class="form-control"
           id="name2"
           placeholder="Anjali"
+          oninput="validateName('name2')"
         />
       <button type="button" id="btn">Calculate</button>
       <p id="yourlovescoreis">Your love score is :</p>
         <h1 id="score"></h1>
       <button id="reload" onclick="reset()">&#128472;</button>
-
-
+    </div>
     <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
