@@ -56,7 +56,8 @@ div {
     display: block;
 }
 
-body, html {
+body,
+html {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     line-height: 1.4;
@@ -75,7 +76,8 @@ body {
     font-size: 1.4rem;
 }
 
-.contributor-card:nth-child(4n+1), .contributor-card:nth-child(4n+3) {
+.contributor-card:nth-child(4n+1),
+.contributor-card:nth-child(4n+3) {
     margin-top: -4px;
 }
 
@@ -84,64 +86,66 @@ body {
     height: 95px;
     clip-path: circle(40%);
     margin: 5px;
-    transition: transform 0.3s ease-in-out , opacity 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .contributor-card:hover {
-    box-shadow: 0 0 10px rgba(253, 251, 251, 0.5); /* Adjust the color and size of the glow as needed */
+    box-shadow: 0 0 10px rgba(253, 251, 251, 0.5);
+    /* Adjust the color and size of the glow as needed */
 }
 
 .contributor-card:active {
     transform: scale(1.1);
     opacity: 0.8;
-    box-shadow: 0 0 20px rgb(188, 240, 210); /* Adjust the color and size of the glow as needed */
+    box-shadow: 0 0 20px rgb(188, 240, 210);
+    /* Adjust the color and size of the glow as needed */
 }
 
 /* Footer Styling */
 
 .footer-basic {
-    padding:40px 0;
+    padding: 40px 0;
     background-color: rgb(9, 5, 40, 0.9);
 }
-  
+
 .footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-    display:flex;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    display: flex;
     justify-content: center;
 }
-  
+
 .footer-basic li {
-    padding:0 10px;
+    padding: 0 10px;
 }
-  
+
 .footer-basic ul a {
     color: var(--light);
     padding: 8px;
     font-weight: 500;
     border: 1px solid transparent;
-    text-decoration:none;
+    text-decoration: none;
     transition: 0.3s ease-in;
-    opacity:0.8;
+    opacity: 0.8;
 }
-  
+
 .footer-basic ul a:hover {
     opacity: 1;
     color: var(--primary);
     border-top-color: var(--primary);
     border-bottom-color: var(--primary);
 }
-  
+
 .footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
 }
 
-.social{
+.social {
     font-size: 3.5rem;
     text-decoration: none;
     margin: 0 1rem;
@@ -153,18 +157,18 @@ body {
     gap: 2rem;
 }
 
-.social a{
+.social a {
     color: var(--secondary);
 }
 
-.social a:hover{
+.social a:hover {
     color: var(--primary);
 }
-  
+
 .footer-basic .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:rgb(255, 255, 255);
-    margin-bottom:0;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
 }
