@@ -46,24 +46,30 @@
             </div>
         </nav>
     </header>
-    
-    <div class="box">
-        <section class="contact-container">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or feedback, feel free to reach out to us!</p>
-            <form id="contact-form" name="CalcDiverse Contact" autocomplete="off" netlify>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+    <!-------------------------------------- Contact Us Form ----------------------------------------------->
 
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+    <div class="container">
+        <div class="items">
+            <div class="contact">
+                <div>
+                    <h1>Contact Us</h1>
+                    <p>Feel Free to drop us a message with any inquiries or feedback.We're here to assist you!</p>
+                    <img src="/assets/images/Contact Image.jpg">
+                </div>
+            </div>
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <form id="contact-form" name="CalcDiverse Contact" autocomplete="off" netlify>  
+                    <input type="text" id="firstname" placeholder="First Name" required>
+                    <input type="text" id="lastname" placeholder="Last Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <h4>Type your message here..</h4>
+                    <textarea required></textarea>
+                    <input type="submit" value="Send" id="button">
+                </form>
+            </div>
+        </div>
     </div>
 
     <!-------------------------------------Footer Code Starts --------------------------------------------->
