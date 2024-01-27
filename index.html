@@ -12,6 +12,12 @@
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
     <!-- Navigation bar section start  -->
     <header>
         <nav class="navbar">
@@ -32,7 +38,7 @@
                     <a href="#calculators" class="nav-link">Calculators</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/Contributors/Contributor.html" class="nav-link">Contributors</a>
+                    <a href="./assets/contributors/contributor.html" class="nav-link">Contributors</a>
                 </li>
                 <li class="nav-item">
                     <a href="./assets/contact/contact.html" class="nav-link">Contact</a>
@@ -74,7 +80,7 @@
             <h1>Search Calculator</h1><br>
             <input type="text" id="calculatorSearch" placeholder="Enter Calculator Name" oninput="filterCalculators()">
         </div>
-        
+
         <div class="box">
             <div class="content">
                 <h2>2D Shapes Calculator</h2>
@@ -1407,7 +1413,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div>
         <div class="box">
             <div class="content">
                 <h2>Thala For A Reason Calculator</h2>
@@ -1421,8 +1427,13 @@
                     </a>
                 </div>
             </div>
-       </div>
+
+       </div>
        <div class="box">
+
+        </div>
+        <div class="box">
+
             <div class="content">
                 <h2>Cricket Calculator</h2>
                 <h3>Calculates various cricket related terms.</h3>
@@ -1439,7 +1450,7 @@
     </div>
 
     <!-- Calculator Section Ends Here  -->
-   
+
     <!-- Scroll to Top Button Starts Here -->
     <div id="progress">
         <span id="progress-value">&#x1F815;</span>
