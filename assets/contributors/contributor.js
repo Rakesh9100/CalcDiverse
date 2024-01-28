@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        document.querySelector("body").classList.add("loaded");
+    }, 500)
+});
+
 const cont = document.getElementById('contributor');
 const owner = 'Rakesh9100';
 const repoName = 'CalcDiverse';
