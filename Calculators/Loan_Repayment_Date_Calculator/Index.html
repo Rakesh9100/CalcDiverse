@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Loan_Repayment_Date_Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="title">
+            <h2 id="heading">Loan Repayment Calculator</h2>
+        </div>
+        <div class="inputsection">
+            <label for="type">Select the type of Interest</label>
+            <select id="type">
+                <option value="compound" selected>Compound Interest</option>
+                <option value="simple">Simple Interest</option>
+            </select>
+            <label for="interest">Amount of Interest per year:</label>
+            <input type="number" placeholder="Enter the interest amount(in percent)" id="interest">
+            <label for="capital">Enter the amount of loan taken initially</label>
+            <input type="number" placeholder="Enter the loan taken" id="capital">
+            <label for="return_amount">Enter the amount you return yearly</label>
+            <input type="number" placeholder="Enter the return amount" id="return_amount">
+            <label for="date">Enter the year that loan has been taken</label>
+            <input type="number" placeholder="Enter the year of loan approval" id="date">
+        </div>
+        <div class="submitbtn">
+            <button onclick="calculatefunction()">Calculate</button>
+        </div>
+        <div id="result"> </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
