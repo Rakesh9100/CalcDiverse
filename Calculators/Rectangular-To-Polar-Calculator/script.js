@@ -15,3 +15,22 @@ function convertToPolar() {
 
   document.getElementById('result').innerHTML = "r = " + r.toFixed(2) + ", θ = " + thetaDegrees.toFixed(2) + " degrees";
 }
+
+
+function convert() {
+  const angle = parseFloat(document.getElementById('angle').value);
+  const radius = parseFloat(document.getElementById('radius').value);
+
+  if (!isNaN(angle) && !isNaN(radius)) {
+      const x = radius * Math.cos(degreesToRadians(angle));
+      const y = radius * Math.sin(degreesToRadians(angle));
+
+      document.getElementById('result').innerText = `Rectangular Coordinates: (${x.toFixed(2)}, ${y.toFixed(2)})`;
+  } else {
+      document.getElementById('result').innerText = 'Invalid input. Please enter valid numbers.';
+  }
+}
+
+function degreesToRadians(degrees) {
+  return degrees * (Math.PI / 180);
+}
