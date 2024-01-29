@@ -59,7 +59,7 @@
             <p>If you have any questions or feedback, feel free to reach out to us!</p>
             <form id="contact-form" name="CalcDiverse Contact" autocomplete="off" netlify>
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required oninput="validateName('name')">
 
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
@@ -93,6 +93,8 @@
             </p>
         </footer>
     </div>
+
+    <script src="./contact.js"></script>
 
 </body>
 
