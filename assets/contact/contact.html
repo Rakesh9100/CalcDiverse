@@ -94,24 +94,8 @@
         </footer>
     </div>
 
-        <!-- ADDING FORM VALIDATION IN NAME FIELD  -->
-     
+    <script src="./contact.js"></script>
 
-<script>
-        
-
-    function validateName(inputId) {
-      let input = document.getElementById(inputId);
-      let value = input.value;
-      let regex = /^[A-Za-z ]+$/;
-
-      if (!regex.test(value)) {
-        alert("Please enter only characters in the name field.");
-        input.value = value.replace(/[^A-Za-z ]/g, ''); // Remove any non-alphabetic characters
-      }
-  }
-    
-  </script>
 </body>
 
 </html>
