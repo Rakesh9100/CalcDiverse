@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color:yellow;
+     
+}
+div{
+    background-color:rgb(8, 8, 99);
+    color: white;
+}
+h4{
+    text-align: center;
+    color:crimson;
+
+}
+p{
+    text-align: justify;
+}
+h3{
+    text-align: center;
+    text-decoration: underline;
+    color: yellow;
+}
+li{
+    color:greenyellow;
+}
