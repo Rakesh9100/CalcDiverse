@@ -16,4 +16,4 @@ It consist of :
 - JavaScript
 
 ## Screenshots :-
-![Alt text](image.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/5f105d20-ba4d-4ddc-949b-8b8837052330)
