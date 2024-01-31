@@ -2,7 +2,7 @@
 
 ## Description :-
 
-It is a Trigonometric Function graphing calculator which gives the solution with a graph as per the given function
+This is a Trigonometric Function Graphing Calculator which gives the solution with a graph as per the given function.
 
 For example -
 - sin
