@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: white;
+    width: 700px;
+    height: 400px;
+    box-shadow: 0px 10px 10px 0px black;
+}
+.left-box{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: #00d2d3;
+
+}
+.left-box h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 850;
+    letter-spacing: 3px;
+}
+
+.acc-F{
+    text-align: center;
+    display: grid;
+    place-content: center;
+    min-height: 30vh;
+}
+.acc-F h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 20px 0px;
+    font-size: 20px;
+}
+.content .right-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    min-width: 62vw;
+}
+
+.right-box input{
+margin: 10px 0px;
+width: 300px;
+height: 35px;
+padding: 10px;
+outline: none;
+border: 1;
+border-radius: 35px;
+font-size: 0.9rem;
+
+}
+.right-box button{
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+    padding: 0px 10px;
+    background-color: #00d2d3;
+    color: white;
+    border: 1;
+    outline: none;
+    font-size: medium;
+    font-weight: 900;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
