@@ -37,7 +37,7 @@ body {
     background:linear-gradient(to right bottom, #7ed0e7, #77c1ee, #87afee, #a399e1, #bf80c6);
     height: 100vh;
     margin: 0;
-    background-image: url(/assets/images/colourcode.jpg);
+    background-image: url(colourcode.jpg);
     background-size: cover; 
   background-position: center;
 }
