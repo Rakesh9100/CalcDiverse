@@ -30,4 +30,5 @@ This is a basic web-based calculator that calculates the angle between the hour 
 - Ensure the entered time is in the correct format (24-hour format).
 - The calculator calculates the absolute angle between the hour and minute hands and ensures the angle is not greater than 180 degrees.
 
-Feel free to customize and extend this calculator based on your needs!
+## Screenshot
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/fac573e7-ff9f-49f9-ad9a-72aaa8339616)
