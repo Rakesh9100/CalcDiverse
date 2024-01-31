@@ -5,11 +5,17 @@ function show_result(){
    
     let acc =  parseFloat(v) * parseFloat(v) /parseFloat(r);
    
-    document.querySelector(".acc").innerHTML = acc;
+    document.querySelector(".acc").innerHTML = acc + " m/s^2";
    
     let f =  parseFloat(m) * parseFloat(v) * parseFloat(v) / parseFloat(r);
    
-    document.querySelector(".f").innerHTML = f;
+    document.querySelector(".f").innerHTML = f + " N";
+
+    if(m == "" || v== "" || r == ""){
+        alert("Please provide input before submitting.");
+        location.reload();
+    }
    }
+
    
    
