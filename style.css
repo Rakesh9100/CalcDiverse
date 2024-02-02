@@ -1528,8 +1528,7 @@ section {
 #searchBar {
     text-align: center;
     border-radius: 14px;
-    margin: 2rem 4rem 0;
-    padding: 2rem;
+    margin: 2rem 2rem 0;
     color: white;
     width: 100%;
 }
@@ -1578,7 +1577,10 @@ section {
 
 @media (max-width: 650px) {
     #searchBar input {
-        width: 60%;
+        width: 100%;
         font-size: 1.5rem;
+    }
+    #searchBar button {
+        margin-top: 0.5em ;
     }
 }
