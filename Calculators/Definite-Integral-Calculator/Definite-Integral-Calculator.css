@@ -2,13 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
 }
 
 body {
   color: rgb(0, 0, 0);background: rgb(255,255,255);
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(224,177,226,1) 35%, rgba(117,210,230,1) 100%);
-  font-family: 'Inconsolata', monospace;
- 
 }
 
 header {  
@@ -128,6 +127,7 @@ input {
   background-color: #98fb98;
   border: 1px solid #4cbb17;
   border-radius: 10px;
+  padding: 8px 8px;
 }
 
 .chart-info {
@@ -136,4 +136,23 @@ input {
   
 .is-hidden {
   display: none;
+}
+/* result div */
+.result-rect, .result-trap, .result{
+  padding:5px 5px;
+  margin:5px 5px 10px 5px;
+}
+
+.result-rect, .result-trap{
+  width: 50%;
+  display:inline;
+}
+
+.result-trap{
+  text-align: right;
+  margin-left: 10%;
+}
+.result{
+  text-align: center;
+  font-size: 20px;
 }
