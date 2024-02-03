@@ -115,3 +115,13 @@ button:hover {
     width: 70%;
     height: 55px;
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    button, .output {
+        width: 50%;
+    }
+}
