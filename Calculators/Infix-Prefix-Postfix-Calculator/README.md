@@ -26,4 +26,4 @@ A simple web application that allows users to convert mathematical expressions b
 
 ## Screenshots
 
-![image](Screenshot%20from%202024-01-27%2014-55-25.png)
+![image](https://github.com/thesri/CalcDiverse/assets/73993775/ab326b46-36ed-4bef-b12b-e7ecf6e20ad3)
