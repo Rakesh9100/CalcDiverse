@@ -8,7 +8,7 @@ function cubeRootCalc() {
     // cubeAns = Math.pow(numb,(1/3));
     let roundAns = cubeAns.toFixed(4);
     const resultPara = document.querySelector(".res-stat");
-    resultPara.innerHTML = `<h3>Cube Root of number ${numb}= <h2>${roundAns}</h2></h3>`;
+    resultPara.innerHTML = `<h3>Cube Root of number ${numb}= </h3><h2>${roundAns}</h2>`;
     document.getElementById("numb").value = "";
 }
 

@@ -31,8 +31,11 @@ h1 {
 }
 
 h2 {
+    margin: 10px auto;
     background-color: rgb(255, 255, 0);
     color: black;
+    width: fit-content;
+    padding: 15px 25px;
 }
 
 .card {
