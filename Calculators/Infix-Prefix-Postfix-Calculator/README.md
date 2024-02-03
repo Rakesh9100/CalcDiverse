@@ -1,7 +1,7 @@
 # <p align="center">Infix Prefix Postfix Calculator</p>
 
 ## Description:-
-A simple web application that allows users to convert mathematical expressions between different notations such as infix, postfix, and prefix.
+A simple web application that allows users to convert mathematical expressions between different notations such as Infix, Prefix, and Postfix.
 
 ## Features
 
