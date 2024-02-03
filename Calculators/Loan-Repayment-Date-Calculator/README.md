@@ -11,10 +11,12 @@ This is a loan repayment date calculator which gives you the year by which your 
 - JavaScript
 
 ## Screenshots :-
-![image](./Screenshot%20(1).png)
+![image](./Screenshot1.png)
 
-![image](./Screenshot%20(2).png)
+![image](./Screenshot2.png)
 
-![image](./Screenshot%20(3).png)
+![image](./Screenshot3.png)
 
-![image](./Screenshot%20(4).png)
+![image](./Screenshot4.png)
+
+![image](./Screenshot5.png)

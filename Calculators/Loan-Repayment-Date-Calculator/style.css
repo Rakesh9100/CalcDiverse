@@ -5,11 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(./background.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: radial-gradient(#24DB25, #2524DB);
     font-size: 1.4rem;
 }
 
@@ -66,4 +62,17 @@ html {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 5rem;
+}
+.submitbtn button{
+    background-color: #2524DB;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+}
+#interest,#capital,#return_amount,#date,#type{
+    background-color: #f6a7a7;
+    color: black;
+    border-radius: 10px;
+    font-weight: 500;
 }
