@@ -1,29 +1,34 @@
-# <p align="center">Pronic Number Calculator</p>
+# Disarium Number Checker
 
-## Description :-
+<p align="center">
+  <img src="Your_Disarium_Image_URL" alt="Disarium Number Checker">
+</p>
 
-Pronic Number Calculator is a web application that allows users to check if a given number is a pronic number and find pronic numbers within a specified range.
+## Description
 
-* Checks if a number is a pronic number.
-* Finds pronic numbers within a specified range.
-* Responsive design for multiple devices.
+Disarium Number Checker is a web application that allows users to check if a given number is a Disarium number and find Disarium numbers within a specified range.
 
-## What is a Pronic Number?
+- Checks if a number is a Disarium number.
+- Finds Disarium numbers within a specified range.
+- Responsive design for multiple devices.
 
-A pronic number, also known as an oblong or heteromecic number, is a product of two consecutive integers, that is, the product of n and (n + 1) for some integer n. Mathematically, a pronic number can be expressed as:
+## What is a Disarium Number?
 
-\[ P_n = n \times (n + 1) \]
+A Disarium number is a number defined by the following process: sum of its digits each raised to the power of its respective position is equal to the number itself.
 
-For example, 6 is a pronic number because it can be expressed as \( 2 \times (2 + 1) \).
+For example, 89 is a Disarium number because \(8^1 + 9^2 = 8 + 81 = 89\).
 
-## Tech Stacks :-
+## Tech Stacks
 
 - HTML
 - CSS
 - JavaScript
 
-## Screenshots :-
+## Screenshots
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/8459c846-f755-4934-8b47-8255c6efd562)
-<br><br>
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c8ff9b86-77fa-4c33-8a5a-6a7810b5c796)
+![DS](https://github.com/Rakesh9100/CalcDiverse/assets/125949765/d998235e-3c00-457e-87f4-c6fe47205cbe)
+
+<hr>
+
+
+![DN](https://github.com/Rakesh9100/CalcDiverse/assets/125949765/9b7ede93-e02a-4491-9560-0373ef8a1848)
