@@ -142,7 +142,7 @@ if (SpeechRecognition) {
     // recognition.lang = "en-US";
 
     searchBar.insertAdjacentHTML("beforeend", '<button type="button"><i class="fas fa-microphone"></i></button>');
-    searchBarInput.style.paddingRight = "50px";
+    // searchBarInput.style.paddingRight = "50px";
 
     const micBtn = searchBar.querySelector("button");
     const micIcon = micBtn.firstElementChild;
