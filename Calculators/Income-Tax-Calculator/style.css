@@ -1,0 +1,42 @@
+.container{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+  }
+  .form-group{
+    margin: 20px 0;
+    text-align: left;
+  }
+  label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  input[type='number']{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border:solid 1px gray;
+    margin-bottom: 20px;
+  }
+  button{
+    padding: 10px 20px;
+    background-color: rgb(34, 33, 33);
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    border:none
+  }
+  .myWrapTable{
+    text-align: left;
+    border-collapse: collapse;
+  }
+  .myWrapTable td{
+    border: solid 1px gray;
+    padding: 5px 10px;
+  }
+  h2{
+    color:red;
+  }

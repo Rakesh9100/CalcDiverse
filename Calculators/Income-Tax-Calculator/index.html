@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Income Tax Calculator </title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Income Tax Calculator</h1>
+      <p>
+        The income tax slabs under the new income tax regime will be as follows:
+      </p>
+      <table class="myWrapTable"><tbody><tr><td><strong>Income tax slabs under new tax regime</strong></td><td><strong>Income tax rates under new tax regime</strong></td></tr><tr><td>O to Rs 3 lakh</td><td>0</td></tr><tr><td>Rs 3 lakh to Rs 6 lakh</td><td>5%</td></tr><tr><td>Rs 6 lakh to Rs 9 lakh</td><td>10%</td></tr><tr><td>Rs 9 lakh to Rs 12 lakh</td><td>15%</td></tr><tr><td>Rs 12 lakh to Rs 15 lakh</td><td>20%</td></tr><tr><td>Income above Rs 15 lakh</td><td>30%</td></tr></tbody></table>
+
+      <form id="tax-form">
+        <div class="form-group">
+          <label for="income">Annual Income:</label>
+            <input type="number" id="income" name="income"
+            placeholder="Enter your annual income"
+            required />
+        </div>
+        <div class="form-group">
+          <button type="submit">Calculate Tax</button>
+        </div>
+      </form>
+    <h2 id="ans">
+      
+    </h2>
+      </div>
+    <script src="index.js"></script>
+  </body>
+</html>
