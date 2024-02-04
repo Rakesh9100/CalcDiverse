@@ -2,7 +2,7 @@
 
 ## Description :-
 
-![Preview Screenshot](./assets/PreviewScreenshot.png)
+![Preview Screenshot](./assets/previewScreenshot.png)
 
 Calculates Cube Root of any Number
 

@@ -38,6 +38,11 @@ h2 {
     padding: 15px 25px;
 }
 
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
 .card {
     /* text-align: center; */
     height: 32rem;
@@ -61,6 +66,9 @@ h2 {
     font-size: 22px;
     max-width: 400px;
     min-width: 80%;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
 }
 
 .result {
@@ -70,12 +78,22 @@ h2 {
     border: 2px solid black;
     border-radius: 5px;
     padding: 0 10px 2px 10px;
+    text-align: center;
+    position: relative;
+    bottom: 1.7rem;
+
 }
 
 .result:hover {
     transition: 0.2s ease-out;
     background-color: white;
     color: red;
+}
+
+.centerbtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
