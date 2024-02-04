@@ -5,7 +5,7 @@ function calculateQuotientAndRemainder() {
     var dividendNumber = parseFloat(dividend);
     var divisorNumber = parseFloat(divisor);
 
-    if (isNaN(dividendNumber) || isNaN(divisorNumber)) {
+    if ((isNaN(dividendNumber) || isNaN(divisorNumber)) || divisorNumber === 0){
         alert("Please enter valid numeric values");
         return;
     }
