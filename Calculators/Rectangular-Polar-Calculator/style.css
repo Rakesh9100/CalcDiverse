@@ -72,3 +72,21 @@ background-color:green;
 button:active{
   background-color: rgba(0, 128, 0, 0.4);
 }
+
+
+#converter {
+  text-align: center;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

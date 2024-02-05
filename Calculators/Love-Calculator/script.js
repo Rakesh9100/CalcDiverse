@@ -7,8 +7,6 @@ var loveInfo = document.getElementById("loveInfo");
 var reloadBtn = document.getElementById("reload");
 loveScore = Math.floor(loveScore) + 1;
 
-
-
 const body = document.querySelector("body");
 
 function createHeart() {
@@ -18,10 +16,6 @@ function createHeart() {
     heart.style.animationDuration = (Math.random()*3)+2+"s"
     body.appendChild(heart);
 }
-
-
-
-
 
 //capitalize input values
 function capitalize(str) {
@@ -101,3 +95,13 @@ function reset() {
   window.location.reload();
 }
 
+function validateName(inputId) {
+    let input = document.getElementById(inputId);
+    let value = input.value;
+    let regex = /^[A-Za-z ]+$/;
+
+    if (!regex.test(value)) {
+        alert("Please enter only characters in the name field.");
+        input.value = value.replace(/[^A-Za-z ]/g, ''); // Remove any non-alphabetic characters
+    }
+}

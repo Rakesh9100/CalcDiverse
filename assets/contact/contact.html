@@ -8,17 +8,29 @@
     <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" type="text/css" href="./contact.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <title>Contact - CalcDiverse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="../../script.js"></script>
+    <title>CalcDiverse | Contact Us</title>
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
     <header>
         <nav class="navbar">
-            <a href='../../index.html'>
-                <div class="logo">CalcDiverse</div>
-            </a>
+            <div class="image-logo">
+                <a href="../../index.html">
+                    <img src="../images/favicon.png" height="36px" width="36px">
+                </a>
+                <a href="../../index.html">
+                    <span class="logo">CalcDiverse</span>
+                </a>
+            </div>
+
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="../../index.html" class="nav-link">Home</a>
@@ -40,14 +52,14 @@
             </div>
         </nav>
     </header>
-    
+
     <div class="box">
         <section class="contact-container">
             <h2>Contact Us</h2>
             <p>If you have any questions or feedback, feel free to reach out to us!</p>
             <form id="contact-form" name="CalcDiverse Contact" autocomplete="off" netlify>
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required oninput="validateName('name')">
 
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
@@ -67,8 +79,8 @@
                 <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fa-solid fa-user"></i></a>
                 <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                 <a href="https://www.github.com/Rakesh9100" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
             </div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="../../index.html#home">Home</a></li>
@@ -76,9 +88,13 @@
                 <li class="list-inline-item"><a href="../contributors/contributor.html">Contributors</a></li>
                 <li class="list-inline-item"><a href="./contact.html">Contact</a></li>
             </ul>
-            <p class="copyright">Created By Rakesh Roshan ❤️ | © <script>document.write(new Date().getFullYear());</script>: All Rights Reserved</p>
+            <p class="copyright">Created By Rakesh Roshan ❤️ | ©
+                <script>document.write(new Date().getFullYear());</script>: All Rights Reserved
+            </p>
         </footer>
     </div>
+
+    <script src="./contact.js"></script>
 
 </body>
 
