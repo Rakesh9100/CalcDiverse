@@ -64,6 +64,12 @@ header {
     font-family: 'Poppins',sans-serif;
     background-color: rgb(9, 5, 40);
     margin: 0 auto;
+    background: linear-gradient(135deg,rgba(255,255,255,0),rgba(46, 151, 192, 0.8));
+     backdrop-filter: blur(20px);
+     -webkit-backdrop-filter: blur(20px);
+     border-radius: 50px;
+     border: 1px solid rgba(255, 255, 255,0.18);
+     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 .navbar a {
     text-decoration: none;
