@@ -36,6 +36,8 @@ function convertPercentageToCGPA() {
 		// for too low percentage cgpa goes negative
 		if (cgpa < 0) {
 			showError('Percentage too low')
+		} else {
+			cgpaInput.value = cgpa
 		}
 	} else {
 		// resetting values
