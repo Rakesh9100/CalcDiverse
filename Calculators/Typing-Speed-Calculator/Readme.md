@@ -2,7 +2,7 @@
 
 ## Description :-
 
-A typing speed calculator that calculates the speed with one can type in two units: <br/>
+A typing speed calculator that calculates the typing speed in two different units: <br/>
 i) words/sec and <br/>
 ii) characters/sec
 
@@ -11,3 +11,6 @@ ii) characters/sec
 - HTML
 - CSS
 - JavaScript
+
+## Screenshots :-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/dc4f9d88-cd93-40b6-a0be-f93210bc54ab)
