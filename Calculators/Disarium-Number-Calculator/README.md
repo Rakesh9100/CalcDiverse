@@ -1,8 +1,4 @@
-# Disarium Number Checker
-
-<p align="center">
-  <img src="Your_Disarium_Image_URL" alt="Disarium Number Checker">
-</p>
+# <p align="center">Disarium Number Checker</p>
 
 ## Description
 
