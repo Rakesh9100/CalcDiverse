@@ -1,4 +1,4 @@
-# Book Reading Time Calculator
+# <p align="center">Book Reading Time Calculator</p>
 
 ## Overview
 
@@ -10,10 +10,12 @@ It is a simple web application that helps you estimate the time it will take to 
 - User-friendly and simple- Book Reading Time Calculator.
 - Responsive design for various devices.
 
-## Techstack
+## Tech Stacks :-
+
 - HTML
 - CSS
 - JavaScript
 
+## Screenshot :-
 
-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/24a6e2a3-c9dc-498e-a40f-7838473afef1)
