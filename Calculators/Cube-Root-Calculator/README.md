@@ -2,9 +2,7 @@
 
 ## Description :-
 
-![Preview Screenshot](./assets/previewScreenshot.png)
-
-Calculates Cube Root of any Number
+Calculates Cube Root of any number.
 
 ## Tech Stacks :-
 
