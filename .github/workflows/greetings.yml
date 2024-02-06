@@ -14,5 +14,10 @@ jobs:
       - uses: EddieHubCommunity/gh-action-community/src/welcome@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: 'Congratulations, @${{ github.actor }}! 🎉 Thank you for creating your issue for CalcDiverse project. Your contribution is greatly appreciated and we look forward to working with you to resolve the issue. Keep up the great work! Should you have any queries or require guidance, do not hesitate to ask.'
-          pr-message: 'Great job, @${{ github.actor }}! 🎉 Thank you for submitting your pull request for CalcDiverse project. Our dedicated team will review it diligently.Your contribution is valuable and we appreciate your efforts to improve our project.'
+          issue-message: |
+            Hey @${{ github.actor }}, Welcome to the project CalcDiverse! 🎊
+            Thanks for opening an issue! 🙌 Please wait for the issue to be assigned. Happy Coding!! ✨
+          pr-message: |
+            Hey @${{ github.actor }}, Welcome to the project CalcDiverse! 🎊
+            Thanks for your contribution! Your effort makes this project better. Keep it up! 🙌 
+            Please wait for the PR to be reviewed. Happy Coding!! ✨
