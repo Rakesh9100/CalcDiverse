@@ -10,5 +10,8 @@ The Stress and Strain Calculator is a web-based tool designed to assist users in
 - JavaScript
 
 ## Screenshots :-
+<img width="739" alt="image" src="https://github.com/Imbiber/CalcDiverse/assets/118832071/2faed881-883c-4e3f-ad84-5e720028896b">
+
+
 
 
