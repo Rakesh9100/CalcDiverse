@@ -12,4 +12,4 @@ Start typing in any field and the value will be calculated automatically.
 - JavaScript
 
 ## Screenshot :-
-![image](https://github.com/srshah27/CalcDiverse/assets/73993775/68385d95-c556-4b93-81db-7404206bbe43)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/e33cfdae-2c31-4ff0-9964-82dffa5495e3)
