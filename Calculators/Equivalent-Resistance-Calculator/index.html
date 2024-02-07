@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equivalent Resistance Calculator</title>
+  <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.calculator:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h1>Equivalent Resistance Calculator</h1>
+    
+    <label for="resistance-type">Select Resistance Configuration:</label>
+    <select id="resistance-type">
+      <option value="series">Series</option>
+      <option value="parallel">Parallel</option>
+    </select>
+
+    <label for="resistances">Enter Resistances (comma-separated):</label>
+    <input type="text" id="resistances" placeholder="e.g., 10, 20, 30">
+    
+    <button onclick="calculateEquivalentResistance()">Calculate</button>
+    
+    <p id="result">Equivalent Resistance: <span id="equivalentResistance">---</span> ohms</p>
+  </div>
+
+  <script >
+    function calculateEquivalentResistance() {
+  // Get selected resistance type
+  const resistanceType = document.getElementById('resistance-type').value;
+
+  // Get input value and split into an array of resistances
+  const input = document.getElementById('resistances').value;
+  const resistancesArray = input.split(',').map(Number);
+
+  // Calculate equivalent resistance based on selected type
+  const equivalentResistance = (resistanceType === 'series') ?
+    calculateEquivalentSeries(resistancesArray) :
+    calculateEquivalentParallel(resistancesArray);
+
+  // Display the result
+  const resultElement = document.getElementById('equivalentResistance');
+  resultElement.textContent = isNaN(equivalentResistance) ? 'Invalid Input' : equivalentResistance;
+}
+
+function calculateEquivalentSeries(resistances) {
+  // Check if resistances array is empty or contains non-numeric values
+  if (resistances.length === 0 || resistances.some(isNaN)) {
+    return NaN;
+  }
+
+  // Calculate equivalent resistance for resistors in series
+  const equivalentResistance = resistances.reduce((sum, resistance) => sum + resistance, 0);
+
+  return equivalentResistance;
+}
+
+function calculateEquivalentParallel(resistances) {
+  // Check if resistances array is empty or contains non-numeric values
+  if (resistances.length === 0 || resistances.some(isNaN)) {
+    return NaN;
+  }
+
+  // Calculate equivalent resistance for resistors in parallel
+  const reciprocalSum = resistances.reduce((sum, resistance) => sum + 1 / resistance, 0);
+  const equivalentResistance = 1 / reciprocalSum;
+
+  return equivalentResistance;
+}
+
+  </script>
+</body>
+</html>

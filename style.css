@@ -30,6 +30,134 @@
     border-radius: 25px;
 }
 
+/* Preloader Css */
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 99999;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* Preloader Css Ends */
+
 body {
     justify-content: center;
     align-items: center;
@@ -64,6 +192,12 @@ header {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(9, 5, 40);
     margin: 0 auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(46, 151, 192, 0.8));
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .navbar a {
@@ -72,7 +206,7 @@ header {
     font-weight: 700;
     padding: 0.5rem 1rem;
     border: 1px solid transparent;
-    color: #C5C6C7;
+    color: var(--secondary);
     transition: 0.3s ease-in-out;
 }
 
@@ -112,7 +246,6 @@ nav ul {
 
 .logo:hover {
     color: #b400a5;
-    /* Change to the desired color of logo when hovered */
 }
 
 .hamburger {
@@ -399,11 +532,6 @@ section {
     background: linear-gradient(315deg, #00ff88, #f200ff);
 }
 
-.container .box:nth-child(1)::before,
-.container .box:nth-child(1)::after {
-    background: linear-gradient(315deg, #ffbc00, #ff0058);
-}
-
 .container .box:nth-child(2)::before,
 .container .box:nth-child(2)::after {
     background: linear-gradient(315deg, #03a9f4, #ff0058);
@@ -421,7 +549,7 @@ section {
 
 .container .box:nth-child(5)::before,
 .container .box:nth-child(5)::after {
-    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(6)::before,
@@ -431,7 +559,7 @@ section {
 
 .container .box:nth-child(7)::before,
 .container .box:nth-child(7)::after {
-    background: linear-gradient(315deg, #ffbc00, #ff0058);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
 .container .box:nth-child(8)::before,
@@ -451,22 +579,17 @@ section {
 
 .container .box:nth-child(11)::before,
 .container .box:nth-child(11)::after {
-    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(12)::before,
 .container .box:nth-child(12)::after {
-    background: linear-gradient(315deg, rgb(210, 61, 86), #00d0ff);
-}
-
-.container .box:nth-child(6)::before,
-.container .box:nth-child(6)::after {
     background: linear-gradient(315deg, #1e470c, #00d0ff);
 }
 
 .container .box:nth-child(13)::before,
 .container .box:nth-child(13)::after {
-    background: linear-gradient(315deg, #ffbc00, #ff0058);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
 .container .box:nth-child(14)::before,
@@ -486,7 +609,7 @@ section {
 
 .container .box:nth-child(17)::before,
 .container .box:nth-child(17)::after {
-    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(18)::before,
@@ -496,7 +619,7 @@ section {
 
 .container .box:nth-child(19)::before,
 .container .box:nth-child(19)::after {
-    background: linear-gradient(315deg, #ffbc00, #ff0058);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
 .container .box:nth-child(20)::before,
@@ -516,7 +639,7 @@ section {
 
 .container .box:nth-child(23)::before,
 .container .box:nth-child(23)::after {
-    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(24)::before,
@@ -526,7 +649,7 @@ section {
 
 .container .box:nth-child(25)::before,
 .container .box:nth-child(25)::after {
-    background: linear-gradient(315deg, #ffbc00, #ff0058);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
 .container .box:nth-child(26)::before,
@@ -546,231 +669,407 @@ section {
 
 .container .box:nth-child(29)::before,
 .container .box:nth-child(29)::after {
-    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(30)::before,
 .container .box:nth-child(30)::after {
-    background: linear-gradient(315deg, #01c785, #190d9f);
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
 }
 
 .container .box:nth-child(31)::before,
 .container .box:nth-child(31)::after {
-    background: linear-gradient(315deg, #1e470c, #00d0ff);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
 .container .box:nth-child(32)::before,
 .container .box:nth-child(32)::after {
-    background: linear-gradient(315deg, #ffbc00, #ff0058);
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
 }
 
 .container .box:nth-child(33)::before,
 .container .box:nth-child(33)::after {
-    background: linear-gradient(315deg, #03a9f4, #ff0058);
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
 }
 
 .container .box:nth-child(34)::before,
 .container .box:nth-child(34)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #2b3427, #0a596a);
 }
 
 .container .box:nth-child(35)::before,
 .container .box:nth-child(35)::after {
-    background: linear-gradient(315deg, #2b3427, #0a596a);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(36)::before,
 .container .box:nth-child(36)::after {
-    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
 }
 
 .container .box:nth-child(37)::before,
 .container .box:nth-child(37)::after {
-    background: linear-gradient(315deg, #1e470c, #00d0ff);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
 .container .box:nth-child(38)::before,
 .container .box:nth-child(38)::after {
-    background: linear-gradient(315deg, #ffbc00, #ff0058);
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
 }
 
 .container .box:nth-child(39)::before,
 .container .box:nth-child(39)::after {
-    background: linear-gradient(315deg, #03a9f4, #ff0058);
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
 }
 
 .container .box:nth-child(40)::before,
 .container .box:nth-child(40)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #2b3427, #0a596a);
 }
 
 .container .box:nth-child(41)::before,
 .container .box:nth-child(41)::after {
-    background: linear-gradient(315deg, #2b3427, #0a596a);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(42)::before,
 .container .box:nth-child(42)::after {
-    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
 }
 
 .container .box:nth-child(43)::before,
 .container .box:nth-child(43)::after {
-    background: linear-gradient(315deg, #1e470c, #00d0ff);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
 .container .box:nth-child(44)::before,
 .container .box:nth-child(44)::after {
-    background: linear-gradient(315deg, #ffbc00, #ff0058);
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
 }
 
 .container .box:nth-child(45)::before,
 .container .box:nth-child(45)::after {
-    background: linear-gradient(315deg, #03a9f4, #ff0058);
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
 }
 
 .container .box:nth-child(46)::before,
 .container .box:nth-child(46)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #2b3427, #0a596a);
 }
 
 .container .box:nth-child(47)::before,
 .container .box:nth-child(47)::after {
-    background: linear-gradient(315deg, #2b3427, #0a596a);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(48)::before,
 .container .box:nth-child(48)::after {
-    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
 }
 
 .container .box:nth-child(49)::before,
 .container .box:nth-child(49)::after {
-    background: linear-gradient(315deg, #a3ac9f, #00d0ff);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
 .container .box:nth-child(50)::before,
 .container .box:nth-child(50)::after {
-    background: linear-gradient(315deg, #69b947, #dc0ce3);
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
 }
 
 .container .box:nth-child(51)::before,
 .container .box:nth-child(51)::after {
-    background: linear-gradient(315deg, #bf37c4, #00d0ff);
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
 }
 
 .container .box:nth-child(52)::before,
 .container .box:nth-child(52)::after {
-    background: linear-gradient(315deg, #c19ead, #0dff00);
+    background: linear-gradient(315deg, #2b3427, #0a596a);
 }
-
 
 .container .box:nth-child(53)::before,
 .container .box:nth-child(53)::after {
-    background: linear-gradient(315deg, #c40055, #00aeff);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(54)::before,
 .container .box:nth-child(54)::after {
-    background: linear-gradient(315deg, #ebb7cd, #1900ff);
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
 }
 
 .container .box:nth-child(55)::before,
 .container .box:nth-child(55)::after {
-    background: linear-gradient(315deg, #00b0c4, #f6ff00);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
-
 
 .container .box:nth-child(56)::before,
 .container .box:nth-child(56)::after {
-    background: linear-gradient(315deg, #c40055, #00d0ff);
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
 }
 
 .container .box:nth-child(57)::before,
 .container .box:nth-child(57)::after {
-    background: linear-gradient(315deg, #ea3e88, #30b27a);
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
 }
 
 .container .box:nth-child(58)::before,
 .container .box:nth-child(58)::after {
-    background: linear-gradient(315deg, #e73535d5, #d6fc00);
+    background: linear-gradient(315deg, #2b3427, #0a596a);
 }
-
-
 
 .container .box:nth-child(59)::before,
 .container .box:nth-child(59)::after {
-    background: linear-gradient(315deg, #2e4bed, #d9fc70d6);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(60)::before,
 .container .box:nth-child(60)::after {
-    background: linear-gradient(315deg, #19cb28, #00d0ff);
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
 }
 
 .container .box:nth-child(61)::before,
 .container .box:nth-child(61)::after {
-    background: linear-gradient(315deg, #2e4bed, #d9fc70d6);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
 .container .box:nth-child(62)::before,
 .container .box:nth-child(62)::after {
-    background: linear-gradie2t(315deg, #ef229a, #b0f806e4);
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
 }
 
 .container .box:nth-child(63)::before,
 .container .box:nth-child(63)::after {
-    background: linear-gradient(315deg, #2255ef, #b0f806e4);
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
 }
 
 .container .box:nth-child(64)::before,
 .container .box:nth-child(64)::after {
-    background: linear-gradient(315deg, #ef229a, #06f8d8e4);
+    background: linear-gradient(315deg, #2b3427, #0a596a);
 }
 
 .container .box:nth-child(65)::before,
 .container .box:nth-child(65)::after {
-    background: linear-gradient(315deg, #00b0c4, #f6ff00);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(66)::before,
 .container .box:nth-child(66)::after {
-    background: linear-gradient(315deg, #ef229a, #b0f806e4);
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
 }
 
 .container .box:nth-child(67)::before,
 .container .box:nth-child(67)::after {
-    background: linear-gradient(315deg, #14de43, #b0f806e4);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
 .container .box:nth-child(68)::before,
 .container .box:nth-child(68)::after {
-    background: linear-gradient(315deg, #ef229a, #b0f806e4);
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
 }
 
 .container .box:nth-child(69)::before,
 .container .box:nth-child(69)::after {
-    background: linear-gradient(315deg, #9a6a86, #f80606e4);
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
 }
 
 .container .box:nth-child(70)::before,
 .container .box:nth-child(70)::after {
-    background: linear-gradient(315deg, #22bfef, #b0f806e4);
+    background: linear-gradient(315deg, #2b3427, #0a596a);
 }
 
 .container .box:nth-child(71)::before,
 .container .box:nth-child(71)::after {
-    background: linear-gradient(315deg, #ef229a, #06f80ae4);
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
 .container .box:nth-child(72)::before,
 .container .box:nth-child(72)::after {
-    background: linear-gradient(315deg, #95d10a, #06e8f8e4);
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
 }
 
 .container .box:nth-child(73)::before,
 .container .box:nth-child(73)::after {
-    background: linear-gradient(315deg, #ef2222, #e5f1c7e4);
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+}
+
+.container .box:nth-child(74)::before,
+.container .box:nth-child(74)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(75)::before,
+.container .box:nth-child(75)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(76)::before,
+.container .box:nth-child(76)::after {
+    background: linear-gradient(315deg, #2b3427, #0a596a);
+}
+
+.container .box:nth-child(77)::before,
+.container .box:nth-child(77)::after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container .box:nth-child(78)::before,
+.container .box:nth-child(78)::after {
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
+}
+
+.container .box:nth-child(79)::before,
+.container .box:nth-child(79)::after {
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+}
+
+.container .box:nth-child(80)::before,
+.container .box:nth-child(80)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(81)::before,
+.container .box:nth-child(81)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(82)::before,
+.container .box:nth-child(82)::after {
+    background: linear-gradient(315deg, #2b3427, #0a596a);
+}
+
+.container .box:nth-child(83)::before,
+.container .box:nth-child(83)::after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container .box:nth-child(84)::before,
+.container .box:nth-child(84)::after {
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
+}
+
+.container .box:nth-child(85)::before,
+.container .box:nth-child(85)::after {
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+}
+
+.container .box:nth-child(86)::before,
+.container .box:nth-child(86)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(87)::before,
+.container .box:nth-child(87)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(88)::before,
+.container .box:nth-child(88)::after {
+    background: linear-gradient(315deg, #2b3427, #0a596a);
+}
+
+.container .box:nth-child(89)::before,
+.container .box:nth-child(89)::after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container .box:nth-child(90)::before,
+.container .box:nth-child(90)::after {
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
+}
+
+.container .box:nth-child(91)::before,
+.container .box:nth-child(91)::after {
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+}
+
+.container .box:nth-child(92)::before,
+.container .box:nth-child(92)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(93)::before,
+.container .box:nth-child(93)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(94)::before,
+.container .box:nth-child(94)::after {
+    background: linear-gradient(315deg, #2b3427, #0a596a);
+}
+
+.container .box:nth-child(95)::before,
+.container .box:nth-child(95)::after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container .box:nth-child(96)::before,
+.container .box:nth-child(96)::after {
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
+}
+
+.container .box:nth-child(97)::before,
+.container .box:nth-child(97)::after {
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+}
+
+.container .box:nth-child(98)::before,
+.container .box:nth-child(98)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(99)::before,
+.container .box:nth-child(99)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(100)::before,
+.container .box:nth-child(100)::after {
+    background: linear-gradient(315deg, #2b3427, #0a596a);
+}
+
+.container .box:nth-child(101)::before,
+.container .box:nth-child(101)::after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container .box:nth-child(102)::before,
+.container .box:nth-child(102)::after {
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
+}
+
+.container .box:nth-child(103)::before,
+.container .box:nth-child(103)::after {
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+}
+
+.container .box:nth-child(104)::before,
+.container .box:nth-child(104)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(105)::before,
+.container .box:nth-child(105)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(106)::before,
+.container .box:nth-child(106)::after {
+    background: linear-gradient(315deg, #2b3427, #0a596a);
+}
+
+.container .box:nth-child(107)::before,
+.container .box:nth-child(107)::after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container .box:nth-child(108)::before,
+.container .box:nth-child(108)::after {
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
+}
+
+.container .box:nth-child(109)::before,
+.container .box:nth-child(109)::after {
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
 .container .box span {
@@ -886,7 +1185,6 @@ section {
     font-weight: 700;
     margin-top: 5px;
 }
-
 
 /* Contributors Styling */
 
@@ -1084,7 +1382,6 @@ section {
 @media (max-width: 1030px) {
     .hero-section {
         flex-direction: column;
-        /* background-color: pink; */
         text-align: center;
         width: auto;
         height: 80vh;
@@ -1094,7 +1391,6 @@ section {
 @media (max-width: 925px) {
     .hero-section {
         flex-direction: column;
-        /* background-color: blue; */
         text-align: center;
         width: auto;
         height: 85vh;
@@ -1109,7 +1405,6 @@ section {
 @media (max-width: 786px) {
     .hero-section {
         flex-direction: column;
-        /* background-color: red; */
         text-align: center;
         width: auto;
         height: 95vh;
@@ -1239,8 +1534,7 @@ section {
 #searchBar {
     text-align: center;
     border-radius: 14px;
-    margin: 2rem 4rem 0;
-    padding: 2rem;
+    margin: 2rem 2rem 0;
     color: white;
     width: 100%;
 }
@@ -1251,7 +1545,8 @@ section {
     text-shadow: 2px 2px 10px var(--light);
     margin-top: 16px;
 }
-#searchBar button{
+
+#searchBar button {
     font-size: 2.5rem;
     background: transparent;
     border: 0;
@@ -1262,7 +1557,8 @@ section {
     width: 8rem;
     border-radius: 5rem;
 }
-#searchBar button:hover{
+
+#searchBar button:hover {
     transform: scale(1.02);
     background: #ff6984;
 }
@@ -1284,9 +1580,14 @@ section {
     transform: scale(1.02);
     box-shadow: -5px -5px 10px #682572;
 }
-@media (max-width: 650px){
-    #searchBar input{
-        width: 60%;
+
+@media (max-width: 650px) {
+    #searchBar input {
+        width: 100%;
         font-size: 1.5rem;
+    }
+
+    #searchBar button {
+        margin-top: 0.5em;
     }
 }

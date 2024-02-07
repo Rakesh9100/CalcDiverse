@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-body { 
-    margin: 0; 
+
+body {
+    margin: 0;
 }
 
 header {
@@ -10,12 +11,12 @@ header {
 }
 
 .navbar {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(9, 5, 40);
     margin: 0 auto;
 }
 
-.box{
+.box {
     padding: 50px;
     text-align: center;
     position: sticky;
@@ -29,8 +30,8 @@ header {
     margin: 0 auto;
     padding: 25px;
     padding-top: 10px;
-    background: rgb(245,230,230);
-    background: linear-gradient(177deg, rgba(245,230,230,0.7232142857142857) 40%, rgba(249,249,249,0.21621148459383754) 100%, rgba(0,0,0,1) 100%);
+    background: rgb(245, 230, 230);
+    background: linear-gradient(177deg, rgba(245, 230, 230, 0.7232142857142857) 40%, rgba(249, 249, 249, 0.21621148459383754) 100%, rgba(0, 0, 0, 1) 100%);
     border-radius: 20px;
     display: grid;
     justify-content: center;
@@ -57,7 +58,7 @@ form {
     position: relative;
     display: flex;
     align-items: center;
-  flex-direction: column;
+    flex-direction: column;
 }
 
 label {
@@ -77,8 +78,9 @@ textarea {
     border: 0;
     transition: all linear .2s;
 }
+
 input:hover,
-textarea:hover{
+textarea:hover {
     box-shadow: 5px 5px 10px black;
 }
 
@@ -127,11 +129,11 @@ button:hover {
     padding: 8px;
     font-weight: 500;
     border: 1px solid transparent;
-    text-decoration:none;
+    text-decoration: none;
     transition: 0.3s ease-in;
-    opacity:0.8;
+    opacity: 0.8;
 }
-  
+
 .footer-basic ul a:hover {
     opacity: 1;
     color: var(--primary);
@@ -144,7 +146,7 @@ button:hover {
     padding-bottom: 25px;
 }
 
-.social{
+.social {
     font-size: 3.5rem;
     text-decoration: none;
     margin: 0 1rem;
@@ -156,11 +158,11 @@ button:hover {
     gap: 2rem;
 }
 
-.social a{
+.social a {
     color: var(--secondary);
 }
 
-.social a:hover{
+.social a:hover {
     color: var(--primary);
 }
 
