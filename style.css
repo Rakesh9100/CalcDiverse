@@ -192,6 +192,12 @@ header {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(9, 5, 40);
     margin: 0 auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(46, 151, 192, 0.8));
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .navbar a {
@@ -200,7 +206,7 @@ header {
     font-weight: 700;
     padding: 0.5rem 1rem;
     border: 1px solid transparent;
-    color: #C5C6C7;
+    color: var(--secondary);
     transition: 0.3s ease-in-out;
 }
 
@@ -1580,7 +1586,8 @@ section {
         width: 100%;
         font-size: 1.5rem;
     }
+
     #searchBar button {
-        margin-top: 0.5em ;
+        margin-top: 0.5em;
     }
 }
