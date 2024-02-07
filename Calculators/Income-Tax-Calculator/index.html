@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Income Tax Calculator </title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Income Tax Calculator</h1>
-      <p>
-        The income tax slabs under the new income tax regime will be as follows:
-      </p>
-      <table class="myWrapTable"><tbody><tr><td><strong>Income tax slabs under new tax regime</strong></td><td><strong>Income tax rates under new tax regime</strong></td></tr><tr><td>O to Rs 3 lakh</td><td>0</td></tr><tr><td>Rs 3 lakh to Rs 6 lakh</td><td>5%</td></tr><tr><td>Rs 6 lakh to Rs 9 lakh</td><td>10%</td></tr><tr><td>Rs 9 lakh to Rs 12 lakh</td><td>15%</td></tr><tr><td>Rs 12 lakh to Rs 15 lakh</td><td>20%</td></tr><tr><td>Income above Rs 15 lakh</td><td>30%</td></tr></tbody></table>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Income Tax Calculator</title>
+  <link rel="stylesheet" href="./style.css">
 
-      <form id="tax-form">
-        <div class="form-group">
-          <label for="income">Annual Income:</label>
-            <input type="number" id="income" name="income"
-            placeholder="Enter your annual income"
-            required />
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income Tax Calculator</title>
+  <link rel="stylesheet" href="./incometax.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Income Tax Calculator</h1>
+    <br>
+    <div class="allpart">
+      <div class="input-part">
+        <div class="main-income">
+          <label for="earnigs">Income</label>
+          <br>
+          <input type="number" name="earnigs" id="my-income" placeholder="Earnigs">
         </div>
-        <div class="form-group">
-          <button type="submit">Calculate Tax</button>
+  
+        
+        <div class="other-income">
+          <label for="travel">Travel allowance</label>
+          <input type="number" name="travel" id="travel" placeholder="Travel allowance">
+
+          <br>
+
+          <label for="house">House allowance</label>
+          <input type="number" name="house" id="house" placeholder="House allowance">
+          <br>
+
+          <label for="helth">Health allowance</label>
+          <input type="number" name="helth" id="helth" placeholder="Helth allowance">
         </div>
-      </form>
-    <h2 id="ans">
-      
-    </h2>
       </div>
-    <script src="index.js"></script>
-  </body>
+
+
+      <button id="btn">Calculate</button>
+  
+      
+      <div class="output-part">
+        <h3>Your Total tax</h3>
+        <p id="show-tax"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./incometax.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
 </html>

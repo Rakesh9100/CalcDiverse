@@ -20,7 +20,7 @@ The provided code implements a basic income tax calculator web application. User
 2. Click the "Calculate" button to see the calculated income tax.
 
 
-![image](screenshot.PNG)
+![image](screenshot.png)
 
 
 ## Disclaimer
