@@ -14,12 +14,20 @@
     justify-content: center;
 }
 
-#main { 
+#main {
     background-color: white;
     width: 60%;
     border: 2px solid blue;
-    border-radius: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
 
+#main:hover {
+    border-color: #19248d;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
+    transition: border-color 0.3s, box-shadow 0.3s;  
 }
 
 #heading{
@@ -30,8 +38,22 @@
     margin-bottom: 2.5vmax;
 }
 
-#heading h1{
-    font-size: 1.5vmax;
+#heading h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 1s ease-in-out;  
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 #oneone{
@@ -75,17 +97,7 @@
     padding-right: 1vmax;
 
 }
-
-#onetwo button{
-    padding: 0.7vmax;
-    font-size: 0.8vmax;
-    text-align: center;
-    border-radius: 0.8vmax;
-    border-color: rgb(255, 123, 0);
-    background-color: rgb(40, 155, 249);
-    cursor: pointer;
-}
-
+ 
 #twomain{
     margin-top: 3vmax;
     margin-bottom: 3vmax;
@@ -100,4 +112,63 @@
 }
 #twotwo h2{
     font-size: 1.3vmax;
+}
+
+/* css for button */
+#onetwo button {
+    padding: 0.7em 1.5em;
+    font-size: 1em;  
+    text-align: center;
+    border-radius: 0.5em; 
+    border: none;
+    background-color: rgb(40, 155, 249);  
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#onetwo button:hover {
+    background-color: #277eae; 
+}
+
+
+
+/* css for the alert */
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: none;
+    width: 90%;  
+    max-width: 400px; 
+}
+
+.alert-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#alert-message {
+    margin: 0;
+}
+
+#close-alert {
+    background-color: #f5c6cb;
+    color: #721c24;
+    border: none;
+    padding: 10px 20px;  
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-alert:hover {
+    background-color: #f8d7da;
 }
