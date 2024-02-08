@@ -14,7 +14,7 @@ h1{
 
 .container{
   height: 100vh;
-  width: 1000px;
+  width: 100vw;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -31,7 +31,7 @@ label{
 }
 .allpart{
   height: 500px;
-  width: 1000px;
+  width: 100vw;
   background: #999;
   padding: 40px;
   border-radius: 10px;
@@ -45,7 +45,7 @@ label{
 .main-income{
   background: tomato;
   height: 200px;
-  width: 450px;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +60,7 @@ label{
 .other-income{
   background: orange;
   height: 200px;
-  width: 450px;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,7 +70,7 @@ label{
 
 input#my-income {
   height: 75px;
-  width: 354px;
+  width: 30vw;
 }
 
 input {
@@ -87,10 +87,16 @@ input:focus{
   background: #fff;
   transition: all 1 s;
 }
+.btnn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
 
 .other-income input {
   height: 35px;
-  width: 322px;
+  width: 30vw;
 }
 
 ::-webkit-input-placeholder {
@@ -101,7 +107,6 @@ input:focus{
 .output-part{
   background: yellow;
   height: 200px;
-  width: 900px;
   margin: 0 auto;
   padding: 20px;
   align-items: center;
@@ -116,7 +121,6 @@ input:focus{
 .output-part p{
   background: #ddd;
   height: 30px;
-  width: 800px;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -132,9 +136,6 @@ button{
   outline: none;
   height: 50px;
   width: 100px;
-  position: relative;
-  left: 410px;
-  top: -30px;
   border-radius: 10px;
   color: rgb(249, 250, 250);
   font-size: 1rem;
