@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css" />
-    <link rel="stylesheet" type="text/css" href="./contributor.css" />
+    <link rel="stylesheet" type="text/css" href="./faq.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <title>CalcDiverse | Contributors</title>
+    <title>FAQ | CalcDiverse</title>
 </head>
 
 <body>
@@ -19,7 +19,8 @@
         <div class="loader-section section-right"></div>
     </div>
 
-    <header>
+    <!-- Navigation bar section start  -->
+    <header style="position: fixed;font-family: 'Montserrat', sans-serif; width: 100%;">
         <nav class="navbar">
             <div class="image-logo">
                 <a href="../../index.html">
@@ -38,14 +39,15 @@
                     <a href="../../index.html#calculators" class="nav-link">Calculators</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./contributor.html" class="nav-link">Contributors</a>
+                    <a href="../contributors/contributor.html" class="nav-link">Contributors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../faq/faq.html" class="nav-link">FAQ</a>
+                    <a href="./faq.html" class="nav-link">FAQ</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="../contact/contact.html" class="nav-link">Contact</a>
                 </li>
+
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -55,34 +57,51 @@
         </nav>
     </header>
 
-    <h1>Faces of Dedication: Our Contributing Heroes</h1>
-    <div id="contributor"></div>
+    <!-- FAQ Main -->
+    <main class="faqWrapper">
+        <div class="faqHeading">Frequently Asked Questions</div>
+        <div class="faqs">
+            <div class="faqs_container"></div>
+            <div class="faqs_container"></div>
+        </div>
+    </main>
 
-    <!-------------------------------------Footer Code Starts --------------------------------------------->
+    <!-- Scroll to Top Button Starts Here -->
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+
+    <!-- -----------------------------------Footer Code Starts ------------------------------------------- -->
     <div class="footer-basic">
         <footer>
             <div class="social">
                 <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fa-solid fa-user"></i></a>
                 <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.github.com/Rakesh9100" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                <a href="https://twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.github.com/Rakesh9100" target="_blank"><i
+                        class="fa-brands fa-square-github"></i></a>
+                <a href="https://twitter.com/rakeshroshan73" target="_blank"><i
+                        class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i
+                        class="fa-brands fa-square-facebook"></i></a>
             </div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="../../index.html#home">Home</a></li>
+                <li class="list-inline-item"><a href="../../index.html">Home</a></li>
                 <li class="list-inline-item"><a href="../../index.html#calculators">Calculators</a></li>
-                <li class="list-inline-item"><a href="./contributor.html">Contributors</a></li>
-                <li class="list-inline-item"><a href="../faq/faq.html">FAQ</a></li>
+                <li class="list-inline-item"><a href="../contributors/contributor.html">Contributors</a></li>
+                <li class="list-inline-item"><a href="./faq.html">FAQ</a></li>
                 <li class="list-inline-item"><a href="../contact/contact.html">Contact</a></li>
             </ul>
             <p class="copyright">Created By Rakesh Roshan ❤️ | ©
-                <script>document.write(new Date().getFullYear());</script>: All Rights Reserved
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>: All Rights Reserved
             </p>
         </footer>
     </div>
 
-    <script src="./contributor.js"></script>
-
+    <!-- ----------------------------------------- Footer Code Ends--------------------------------- -->
+    <script src="../../script.js"></script>
+    <script src="faq.js"></script>
 </body>
 
 </html>

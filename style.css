@@ -192,6 +192,12 @@ header {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(9, 5, 40);
     margin: 0 auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(46, 151, 192, 0.8));
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .navbar a {
@@ -200,7 +206,7 @@ header {
     font-weight: 700;
     padding: 0.5rem 1rem;
     border: 1px solid transparent;
-    color: #C5C6C7;
+    color: var(--secondary);
     transition: 0.3s ease-in-out;
 }
 
@@ -1066,6 +1072,126 @@ section {
     background: linear-gradient(315deg, #3a3f38, #6abd1b);
 }
 
+.container .box:nth-child(110)::before,
+.container .box:nth-child(110)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(111)::before,
+.container .box:nth-child(111)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(112)::before,
+.container .box:nth-child(112)::after {
+    background: linear-gradient(315deg, #2b3427, #0a596a);
+}
+
+.container .box:nth-child(113)::before,
+.container .box:nth-child(113)::after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container .box:nth-child(114)::before,
+.container .box:nth-child(114)::after {
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
+}
+
+.container .box:nth-child(115)::before,
+.container .box:nth-child(115)::after {
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+}
+
+.container .box:nth-child(116)::before,
+.container .box:nth-child(116)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(117)::before,
+.container .box:nth-child(117)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(118)::before,
+.container .box:nth-child(118)::after {
+    background: linear-gradient(315deg, #2b3427, #0a596a);
+}
+
+.container .box:nth-child(119)::before,
+.container .box:nth-child(119)::after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container .box:nth-child(120)::before,
+.container .box:nth-child(120)::after {
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
+}
+
+.container .box:nth-child(121)::before,
+.container .box:nth-child(121)::after {
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+}
+
+.container .box:nth-child(122)::before,
+.container .box:nth-child(122)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(123)::before,
+.container .box:nth-child(123)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(124)::before,
+.container .box:nth-child(124)::after {
+    background: linear-gradient(315deg, #2b3427, #0a596a);
+}
+
+.container .box:nth-child(125)::before,
+.container .box:nth-child(125)::after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container .box:nth-child(126)::before,
+.container .box:nth-child(126)::after {
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
+}
+
+.container .box:nth-child(127)::before,
+.container .box:nth-child(127)::after {
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+}
+
+.container .box:nth-child(128)::before,
+.container .box:nth-child(128)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box:nth-child(129)::before,
+.container .box:nth-child(129)::after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container .box:nth-child(130)::before,
+.container .box:nth-child(130)::after {
+    background: linear-gradient(315deg, #2b3427, #0a596a);
+}
+
+.container .box:nth-child(131)::before,
+.container .box:nth-child(131)::after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.container .box:nth-child(132)::before,
+.container .box:nth-child(132)::after {
+    background: linear-gradient(315deg, #1e470c, #00d0ff);
+}
+
+.container .box:nth-child(133)::before,
+.container .box:nth-child(133)::after {
+    background: linear-gradient(315deg, #3a3f38, #6abd1b);
+}
+
 .container .box span {
     display: block;
     position: absolute;
@@ -1580,7 +1706,8 @@ section {
         width: 100%;
         font-size: 1.5rem;
     }
+
     #searchBar button {
-        margin-top: 0.5em ;
+        margin-top: 0.5em;
     }
 }
