@@ -10,5 +10,7 @@ Calculates the Probability of different events based on user input.
 - CSS
 - JavaScript
 
-## Screenshot:-
-![image (2)](https://github.com/Rakesh9100/CalcDiverse/assets/141774057/b9db1237-a46d-4c41-9a75-f6baabbdfed9)
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/a5f8aa5e-0775-46f9-9f26-69bb8c734c18)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/d769fcc3-4abd-43f2-8d5e-65d05b0f8fdd)
