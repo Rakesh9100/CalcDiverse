@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE GENERATOR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 1.2px;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 350px;
+            min-width: 240px;
+            box-shadow: 0px 0px 10px #0093E9, 0px 0px 20px #0093E9, 0px 0px 40px #ffffff;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            padding: 20px 10px 40px;
+        }
+
+        .heading {
+            font-size: 30px;
+            padding: 0 5px;
+            color: #ffffff;
+        }
+
+        .input-box {
+            font-size: 28px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px 5px;
+            letter-spacing: 1px;
+        }
+
+        .submit {
+            font-size: 24px;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            background-color: #252B4880;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 5px;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .submit:hover {
+            background-color: #252B4895;
+            transform: scale(1.02);
+            transition: all 0.1s ease-in-out;
+        }
+
+        img {
+            margin: 0 auto;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .button {
+            position: absolute;
+            padding: 10px 22px;
+            border-radius: 6px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            background-color: #7d2ae8;
+            transition: all 0.2s ease;
+            top: 10px;
+            left: 10px;
+        }
+
+        .button:active {
+            transform: scale(0.96);
+        }
+
+        .button:before,
+        .button:after {
+            position: absolute;
+            content: "";
+            width: 150%;
+            left: 50%;
+            height: 100%;
+            transform: translateX(-50%);
+            z-index: -1000;
+            background-repeat: no-repeat;
+        }
+
+        .button.animate::before {
+            top: -70%;
+            background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+                radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+            background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+                10% 10%, 18% 18%;
+            animation: greentopBubbles ease-in-out 0.6s forwards infinite;
+        }
+
+        @keyframes greentopBubbles {
+            0% {
+                background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+                    40% 90%, 55% 90%, 70% 90%;
+            }
+            50% {
+                background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+                    50% 50%, 65% 20%, 90% 30%;
+            }
+            100% {
+                background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+                    50% 40%, 65% 10%, 90% 20%;
+                background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+            }
+        }
+
+        .button.animate::after {
+            bottom: -70%;
+            background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+                radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+            background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+            animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+        }
+
+        @keyframes greenbottomBubbles {
+            0% {
+                background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+                    70% -10%, 70% 0%;
+            }
+            50% {
+                background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+                    105% 0%;
+            }
+            100% {
+                background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+                    110% 10%;
+                background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+            }
+        }
+    </style>
+    <script>
+        function generateQRCode() {
+            let input = document.getElementById('input');
+            let img = document.getElementById('qrCodeImage');
+
+            img.classList.add('hidden');
+            if (input.value == "") {
+                alert('Please Provide Valid Details!');
+                img.classList.add('hidden');
+            } else {
+                document.querySelector('.submit').innerHTML = "Generating Qr Code...";
+                setTimeout(() => {
+                    document.querySelector('.submit').innerHTML = "Generate Qr Code";
+                    img.classList.remove('hidden');
+                    img.setAttribute('src', `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${input.value}`);
+                }, 500);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <a href="../../../index.html" class="button">Back</a>
+
+    <div class="container">
+        <div class="box">
+            <h2 class="heading">QR CODE GENERATOR</h2>
+            <input type="text" name="" id="input" class="input-box">
+            <button onclick="generateQRCode()" class="submit">Generate Qr Code</button>
+            <img src="" alt="" height="200" width="200" class="hidden" id="qrCodeImage">
+        </div>
+    </div>
+</body>
+
+</html>
