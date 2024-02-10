@@ -36,7 +36,7 @@ function checkNeonNumbersInRange() {
 }
 
 function validateInput(number) {
-    return /^[1-9]\d*$/.test(number);
+    return /^(0|[1-9]\d*)$/.test(number);
 }
 
 function isNeonNumber(number) {
