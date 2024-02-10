@@ -12,4 +12,4 @@ It can take a input form user and  generate  QR code for that perticular data.
 
 ## Screenshots :-
 
-![QR](https://github.com/Rakesh9100/CalcDiverse/assets/125949765/97a8e46a-7b89-44b0-9abe-d2693abc91e5)
+![QR-CD](https://github.com/Rakesh9100/CalcDiverse/assets/125949765/9d307d2a-d258-41ea-a91a-d39d912e1962)
