@@ -1,49 +1,80 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
+    background-color: #f5f9fc;
 }
 
 .container {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 40px;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #00274c;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 600px; /* Adjusted container width */
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #00274c;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 30px; /* Increased gap between form elements */
+    margin-top: 20px;
 }
 
 label {
-    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #00274c;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
 }
 
 button {
-    padding: 12px;
-    background-color: #007BFF;
+    background-color: #005cbf;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
     cursor: pointer;
-    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #003366;
 }
-
 #results {
-    margin-top: 30px; 
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    display: none; /* Added to hide initially */
 }
 
-.hidden {
-    display: none;
-}
+#results.show {
+    opacity: 1;
+    display: block; 
