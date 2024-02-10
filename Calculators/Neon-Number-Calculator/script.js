@@ -8,11 +8,7 @@ function checkNeonNumber() {
 
     let result = isNeonNumber(number);
 
-    if (result.isNeon) {
-        document.getElementById('resultSingle').innerText = `${number} is a Neon number.`;
-    } else {
-        document.getElementById('resultSingle').innerText = `${number} is not a Neon number. ${result.explanation}`;
-    }
+    document.getElementById('resultSingle').innerText = `${number} is ${result.isNeon ? '' : 'not '}a Neon number. ${result.explanation}`;
 }
 
 function checkNeonNumbersInRange() {
