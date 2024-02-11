@@ -20,16 +20,17 @@
 
             <input type="text" class="value" readonly name="txt">
 
+            <span class="num clear" onclick="calc.txt.value = '' "><i>C</i></span>
             <span class="num" onclick="calc.txt.value += '(' "><i>(</i></span>
             <span class="num" onclick="calc.txt.value += ')' "><i>)</i></span>
             <span class="num" onclick="calc.txt.value += '/' "><i>/</i></span>
-            <span class="num" onclick="calc.txt.value += '*' "><i>*</i></span>
-            <span class="num clear" onclick="calc.txt.value = '' "><i>C</i></span>
+            <span class="num clear-one" onclick="clearOne()"><i>CE</i></span>
 
             <span class="num" onclick="calc.txt.value += '7' "><i>7</i></span>
             <span class="num" onclick="calc.txt.value += '8' "><i>8</i></span>
             <span class="num" onclick="calc.txt.value += '9' "><i>9</i></span>
             <span class="num" onclick="calc.txt.value += '+' "><i>+</i></span>
+            <span class="num" onclick="calc.txt.value += '*' "><i>*</i></span>
             <span class="num" onclick="calc.txt.value += '-' "><i>-</i></span>
 
             <span class="num" onclick="calc.txt.value += '4' "><i>4</i></span>
@@ -37,19 +38,24 @@
             <span class="num" onclick="calc.txt.value += '6' "><i>6</i></span>
             <span class="num" onclick="calc.txt.value += 'Math.sqrt(' "><i>√</i></span>
             <span class="num" onclick="calc.txt.value += '%' "><i>%</i></span>
+            <span class="num" onclick="calc.txt.value += '.' "><i>.</i></span>
 
             <span class="num" onclick="calc.txt.value += '1' "><i>1</i></span>
             <span class="num" onclick="calc.txt.value += '2' "><i>2</i></span>
             <span class="num" onclick="calc.txt.value += '3' "><i>3</i></span>
             <span class="num" onclick="calc.txt.value += 'Math.sin(' "><i>sin</i></span>
             <span class="num" onclick="calc.txt.value += 'Math.cos(' "><i>cos</i></span>
-            <span class="num" onclick="calc.txt.value += '.' "><i>.</i></span>
 
-            <span class="num" onclick="calc.txt.value += '0' "><i>0</i></span>
+            <span class="num result-give equal" onclick="document.calc.txt.value=eval(calc.txt.value)"><i>=</i></span>
+
             <span class="num" onclick="calc.txt.value += ',' "><i>,</i></span>
+            <span class="num" onclick="calc.txt.value += '0' "><i>0</i></span>
             <span class="num" onclick="calc.txt.value += 'Math.pow(' "><i>^</i></span>
 
-            <span class="num result-give" onclick="document.calc.txt.value=eval(calc.txt.value)"><i>=</i></span>
+            <!-- New column of buttons -->
+            <span class="num" onclick="calc.txt.value += 'Math.exp(' "><i>exp</i></span>
+
+            <span class="num" onclick="calc.txt.value += 'Math.log(' "><i>log</i></span>
         </form>
     </div>
 
@@ -71,6 +77,11 @@
             } catch (err) {
                 txt.value = 'Error';
             }
+        }
+
+        function clearOne() {
+            let currentValue = calc.txt.value;
+            calc.txt.value = currentValue.slice(0, -1);
         }
 
     </script>

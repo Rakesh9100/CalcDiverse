@@ -41,12 +41,12 @@ body.light .container {
 .calculator {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns as needed */
+    grid-template-columns: repeat(6, 1fr); /* Adjust the number of columns as needed */
 }
 
 .calculator .value {
     position: relative;
-    grid-column: span 5; /* Adjust the span to match the number of columns */
+    grid-column: span 6; /* Adjust the span to match the number of columns */
     height: 100px;
     left: 10px;
     width: calc(100% - 20px);
@@ -117,9 +117,14 @@ body.light .calculator span.result-give i {
 
 body.light .calculator .clear,
 .calculator .clear {
-    /* grid-column: span 2;
-    width: 180px; */
+    grid-column: span 2;
+    width: 180px;
     background: #f00;
+}
+
+body.light .calculator .clear-one,
+.calculator .clear-one {
+    background: #2196f3;
 }
 
 body.light .calculator .clear::before,
@@ -130,7 +135,7 @@ body.light .calculator .clear::before,
     border-top: 1px solid #fff4;
 }
 
-.calculator .plus {
+.calculator .equal {
     grid-row: span 2;
     height: 180px;
 }
