@@ -49,8 +49,7 @@ window.convertFractionToPercent = function () {
     document.getElementById('resultValue').innerText = '= ' + percent.toFixed(2) + '%';
 
     // Showing work steps
-    var workSteps = fractionInput + ' = ' + simplifiedNumerator + '/' + simplifiedDenominator;
-    workSteps += ' = ' + (simplifiedNumerator / simplifiedDenominator).toFixed(2);
+    var workSteps = fractionInput + ' = (' + numerator + '/' + denominator + ') * 100';
     workSteps += ' = ' + percent.toFixed(2) + '%';
 
     // Display the work steps
