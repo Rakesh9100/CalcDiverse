@@ -1,24 +1,19 @@
-# Percentage Fraction Calculator
+# <p align="center">Percentage Fraction Calculator</div>
 
- This is a simple online calculator converts a percent to a fraction and vice-versa
+ This is a simple online calculator which converts Percent to a Fraction and vice-versa.
 
-## Features
+## Features :-
 
 - Converts Percent to Fraction or Fraction to Percent.
-- It also provide detail solution
-- You can reset the calculation to starting
+- It also provide detail solution.
+- You can reset the calculation to starting.
 
-## Example
-
-For example, to calculate the fraction of percentage 62.5%:
-- Enter 62.5
-- Click "Convert" to see the result.
-
-## Tech Stack
+## Tech Stacks :-
 
 - HTML
 - CSS
 - JavaScript
 
-## Screenshots
-![Alt text](image.png)
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/3e9341d1-25c4-426e-b615-6f7ccaed2baa)
