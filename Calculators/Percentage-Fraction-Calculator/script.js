@@ -31,6 +31,12 @@ window.convertFractionToPercent = function () {
     var numerator = parseInt(parts[0]);
     var denominator = parseInt(parts[1]);
 
+    // Check if denominator is zero
+    if (denominator === 0) {
+        alert('Denominator cannot be zero. Please enter a valid fraction.');
+        return;
+    }
+
     // Calculate percentage
     var percent = (numerator / denominator) * 100;
 
