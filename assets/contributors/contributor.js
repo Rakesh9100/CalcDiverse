@@ -1,8 +1,19 @@
+const hamBurger = document.querySelector(".hamburger");
+const nMenu = document.querySelector(".nav-menu");
+
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.querySelector("body").classList.add("loaded");
     }, 500)
 });
+
+// Hamburger menu 
+hamBurger.addEventListener("click", mobileMenu);
+function mobileMenu() {
+    hamBurger.classList.toggle("active");
+    nMenu.classList.toggle("active");
+}
+
 
 const cont = document.getElementById('contributor');
 const owner = 'Rakesh9100';
