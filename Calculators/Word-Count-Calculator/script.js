@@ -26,8 +26,8 @@ function countWords() {
     document.getElementById("result").innerHTML = 
         "<span class='total-words'>Total words: " + totalWords + "</span> | " +
         "<span class='unique-words'>Unique words: " + uniqueWords + "</span> | " +
-        "<span class='total-words'>Shortest words: " + shortest_count + "</span> | " +
-        "<span class='total-words'>Longest words: " + longest_count + "</span> | " +
+        "<span class='shortest-words'>Shortest words: " + shortest_count + "</span> | " +
+        "<span class='longest-words'>Longest words: " + longest_count + "</span> | " +
         "<span class='average-length'>Average Word Length: " + averageWordLength.toFixed(2) + " characters</span>";
 }
 function shortestWord(wordsArray) {
@@ -80,6 +80,8 @@ function exportData() {
     var data = {
         text: text,
         totalWords: wordsArray.length,
+        shortestWord: shortestWord(wordsArray).length,
+        longestWord: longestWord(wordsArray).length,
         uniqueWords: countUniqueWords(wordsArray),
         averageWordLength: calculateAverageWordLength(wordsArray).toFixed(2)
     };
