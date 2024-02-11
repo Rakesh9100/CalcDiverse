@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator In CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="btn">
+        <strong>🌞</strong>
+        <strong>🌙</strong>
+    </div>
+
+    <div class="container">
+        <form class="calculator" name="calc">
+
+            <input type="text" class="value" readonly name="txt">
+
+            <span class="num" onclick="calc.txt.value += '(' "><i>(</i></span>
+            <span class="num" onclick="calc.txt.value += ')' "><i>)</i></span>
+            <span class="num" onclick="calc.txt.value += '/' "><i>/</i></span>
+            <span class="num" onclick="calc.txt.value += '*' "><i>*</i></span>
+            <span class="num clear" onclick="calc.txt.value = '' "><i>C</i></span>
+
+            <span class="num" onclick="calc.txt.value += '7' "><i>7</i></span>
+            <span class="num" onclick="calc.txt.value += '8' "><i>8</i></span>
+            <span class="num" onclick="calc.txt.value += '9' "><i>9</i></span>
+            <span class="num" onclick="calc.txt.value += '+' "><i>+</i></span>
+            <span class="num" onclick="calc.txt.value += '-' "><i>-</i></span>
+
+            <span class="num" onclick="calc.txt.value += '4' "><i>4</i></span>
+            <span class="num" onclick="calc.txt.value += '5' "><i>5</i></span>
+            <span class="num" onclick="calc.txt.value += '6' "><i>6</i></span>
+            <span class="num" onclick="calc.txt.value += 'Math.sqrt(' "><i>√</i></span>
+            <span class="num" onclick="calc.txt.value += '%' "><i>%</i></span>
+
+            <span class="num" onclick="calc.txt.value += '1' "><i>1</i></span>
+            <span class="num" onclick="calc.txt.value += '2' "><i>2</i></span>
+            <span class="num" onclick="calc.txt.value += '3' "><i>3</i></span>
+            <span class="num" onclick="calc.txt.value += 'Math.sin(' "><i>sin</i></span>
+            <span class="num" onclick="calc.txt.value += 'Math.cos(' "><i>cos</i></span>
+            <span class="num" onclick="calc.txt.value += '.' "><i>.</i></span>
+
+            <span class="num" onclick="calc.txt.value += '0' "><i>0</i></span>
+            <span class="num" onclick="calc.txt.value += ',' "><i>,</i></span>
+            <span class="num" onclick="calc.txt.value += 'Math.pow(' "><i>^</i></span>
+
+            <span class="num result-give" onclick="document.calc.txt.value=eval(calc.txt.value)"><i>=</i></span>
+        </form>
+    </div>
+
+    <script>
+        let body = document.querySelector('body');
+        let btn = document.querySelector('.btn');
+        let calc = document.forms['calc'];
+        let txt = calc.elements['txt'];
+        let math = window.math;
+
+        btn.onclick = function () {
+            body.classList.toggle('light')
+        }
+
+        calc.onsubmit = function (e) {
+            e.preventDefault();
+            try {
+                txt.value = math.evaluate(txt.value);
+            } catch (err) {
+                txt.value = 'Error';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
