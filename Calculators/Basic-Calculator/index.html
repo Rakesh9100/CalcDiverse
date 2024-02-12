@@ -16,7 +16,7 @@
 
     <div class="container">
         <form class="calculator" name="calc">
-            <input type="text" class="value" readonly name="txt">
+            <input type="text" class="value" id="display" name="txt">
             <span class="num clear" onclick="calc.txt.value = '' "><i>C</i></span>
             <span class="num" onclick="calc.txt.value += '(' "><i>(</i></span>
             <span class="num" onclick="calc.txt.value += ')' "><i>)</i></span>
@@ -49,32 +49,7 @@
             <span class="num" onclick="calc.txt.value += 'Math.log(' "><i>log</i></span>
         </form>
     </div>
-
-    <script>
-        let body = document.querySelector('body');
-        let btn = document.querySelector('.btn');
-        let calc = document.forms['calc'];
-        let txt = calc.elements['txt'];
-        let math = window.math;
-
-        btn.onclick = function () {
-            body.classList.toggle('light')
-        }
-
-        calc.onsubmit = function (e) {
-            e.preventDefault();
-            try {
-                txt.value = math.evaluate(txt.value);
-            } catch (err) {
-                txt.value = 'Error';
-            }
-        }
-
-        function clearOne() {
-            let currentValue = calc.txt.value;
-            calc.txt.value = currentValue.slice(0, -1);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
