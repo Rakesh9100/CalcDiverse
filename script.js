@@ -7,6 +7,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500)
 });
 
+const toggleSwitch = document.querySelector('.toggle-switch');
+const body = document.querySelector('body');
+
+toggleSwitch.addEventListener('change', () => {
+  if (toggleSwitch.checked) {
+    body.classList.add('light-mode');
+  } else {
+    body.classList.remove('light-mode');
+  }
+});
+
 hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");
