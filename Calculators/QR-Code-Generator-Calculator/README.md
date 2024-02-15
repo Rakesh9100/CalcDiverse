@@ -1,4 +1,4 @@
-# <p align="center">QR-Code-Generator-Calculator</p>
+# <p align="center">QR Code Generator Calculator</p>
 
 ## Description :-
 
