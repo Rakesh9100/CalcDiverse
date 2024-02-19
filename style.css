@@ -213,6 +213,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 1.4rem;
+  transition: all 0.8s ease-in-out;
 }
 
 html {
@@ -227,7 +228,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* LIGHT MODE */
+/* LIGHT MODE CODE STARTS HERE */
 
 body.light-mode {
   background-image: url(./bg2.jpg);
@@ -277,6 +278,24 @@ body.light-mode .paragraph {
   color: rgba(0, 0, 0, 0.91);
 }
 
+body.light-mode #searchBar h1 {
+  font-family: Ubuntu;
+  font-size: 4rem;
+  color: black;
+  text-shadow: 2px 2px 10px rgb(12, 219, 219);
+  margin-top: 16px;
+}
+
+body.light-mode .container .box .content h2 {
+  font-size: 2em;
+  /* color: #fff; */
+  color: #181b1c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* LIGHT MODE CODE ENDS HERE */
+
 header {
   position: sticky;
   top: 0;
@@ -297,6 +316,7 @@ header {
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 1s ease-in-out;
 }
 
 .navbar a {
@@ -326,6 +346,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
+  transition: all 1s ease-in-out;
 }
 
 nav ul {
@@ -379,6 +400,7 @@ section {
   flex-direction: column;
   gap: 30px;
   z-index: 200;
+  transition: all 1s ease-in-out;
 }
 
 .comp-section .compcontainer h1 {
@@ -426,6 +448,7 @@ section {
   margin-top: 18px;
   padding: 10px;
   color: rgb(244 239 240 / 91%);
+  transition: all 1s ease-in-out;
 }
 
 .comp-section {
