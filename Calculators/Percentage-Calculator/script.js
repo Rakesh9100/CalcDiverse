@@ -7,6 +7,7 @@ function calculatePercentage() {
     alert("Please enter valid numbers");
     return;
   }
+  
 
   var result = (number * percentage) / 100;
 
@@ -17,6 +18,7 @@ function calculatePercentage() {
   document.getElementById(
     "result"
   ).innerText = `Result: ${percentage}% of ${number} is ${result}`;
+
 }
 
 // Add a reset function to clear input fields and result
@@ -26,6 +28,7 @@ function resetCalculator() {
   document.getElementById("round").value = "0";
   document.getElementById("result").innerText = "";
 }
+
 
 // Add an event listener to the reset button
 document.getElementById("reset").addEventListener("click", resetCalculator);
