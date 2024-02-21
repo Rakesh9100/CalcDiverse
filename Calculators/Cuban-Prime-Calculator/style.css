@@ -80,3 +80,36 @@ p {
     font-weight: bold;
     margin-bottom: 15px;
 }
+
+.information {
+    text-align: justify;
+    margin-top: 30px;
+    color: #fff;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #00f;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+
+.information h2 {
+    color: #FFC300;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.information p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.cuban-prime {
+    color: #2ECC71; /* Green color for Cuban Prime */
+}
+
+.not-cuban-prime {
+    color: #E74C3C; /* Red color for not Cuban Prime */
+}

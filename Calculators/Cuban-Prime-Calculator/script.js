@@ -19,6 +19,11 @@ function isCubanPrime(num) {
     return isPrime(res) && isPrime(num);
 }
 
+function getCubanSolution(num) {
+    let res = cubeOfNum(num) - cubeOfNum(num - 1);
+    return `<br>The cube of ${num} is ${cubeOfNum(num)}.<br>The cube of ${num - 1} is ${cubeOfNum(num - 1)}.<br>The difference is ${res}.<br>This number is Cuban Prime because both ${num} and ${res} are prime.`;
+}
+
 function checkCubanPrime() {
     let number = document.getElementById('number').value;
 
@@ -28,8 +33,9 @@ function checkCubanPrime() {
     }
 
     let result = isCubanPrime(parseInt(number));
+    let message = result ? `${number} is a Cuban Prime number. ${getCubanSolution(parseInt(number))}` : `${number} is not a Cuban Prime number.`;
 
-    document.getElementById('resultSingle').innerText = `${number} is ${result ? '' : 'not '}a Cuban Prime number.`;
+    document.getElementById('resultSingle').innerHTML = `<span class="${result ? 'cuban-prime' : 'not-cuban-prime'}">${message}</span>`;
 }
 
 function checkCubanPrimesInRange() {
@@ -50,9 +56,10 @@ function checkCubanPrimesInRange() {
     }
 
     if (cubanPrimes.length > 0) {
-        document.getElementById('rangeResult').innerText = `Cuban Prime numbers in the range ${fromRange} to ${toRange}: ${cubanPrimes.join(', ')}`;
+        let solutions = cubanPrimes.map(num => getCubanSolution(num));
+        document.getElementById('rangeResult').innerHTML = `<span class="cuban-prime">Cuban Prime numbers in the range ${fromRange} to ${toRange}: ${cubanPrimes.join(', ')}. Solutions:<br>${solutions.join('<br>')}</span>`;
     } else {
-        document.getElementById('rangeResult').innerText = `There are no Cuban Prime numbers in the range ${fromRange} to ${toRange}.`;
+        document.getElementById('rangeResult').innerHTML = `There are no Cuban Prime numbers in the range ${fromRange} to ${toRange}.`;
     }
 }
 
