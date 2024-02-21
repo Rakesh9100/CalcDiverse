@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cuban Prime Calculator</title>
+</head>
+
+<body>
+
+    <h1 class="title">Cuban Prime Calculator</h1>
+
+    <div class="calculator">
+        <div class="section">
+            <p class="calculator-title">Check Single Cuban Prime</p>
+            <label for="number">Enter a number:</label>
+            <input type="number" id="number" placeholder="Enter a number">
+            <button onclick="checkCubanPrime()">Check</button>
+            <p id="resultSingle"></p>
+        </div>
+
+        <div class="section">
+            <p class="calculator-title">Check Cuban Primes in Range</p>
+            <label for="fromRange">From:</label>
+            <input type="number" id="fromRange" placeholder="Enter from number">
+            <label for="toRange">To:</label>
+            <input type="number" id="toRange" placeholder="Enter to number">
+            <button onclick="checkCubanPrimesInRange()">Check</button>
+            <p id="rangeResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
