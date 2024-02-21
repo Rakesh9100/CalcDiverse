@@ -160,6 +160,34 @@
 
 /* Dark-Light Mode Switch */
 
+#hybrid {
+  visibility: hidden;
+}
+
+#theme-toggle {
+  visibility: hidden;
+}
+
+#theme-toggle + label {
+  content: '';
+  display: inline-block;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.8s ease-in-out;
+}
+
+#theme-toggle:not(:checked) + label {
+  background-color: gold;
+}
+
+#theme-toggle:checked + label {
+  background-color: transparent;
+  box-shadow: inset -18px -16px 1px 1px #fff;
+}
+
+/* 
 #toggle {
   display: none;
 }
@@ -199,7 +227,7 @@
 
 .toggle-switch:checked + .toggle-label::after {
   transform: translateX(25px);
-}
+} */
 
 /* Main Body Starts here */
 
@@ -306,6 +334,7 @@ header {
   font-family: "Poppins", sans-serif;
   background-color: rgb(9, 5, 40);
   margin: 0 auto;
+  margin-top: 10px;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0),
@@ -351,8 +380,16 @@ nav {
 
 nav ul {
   display: flex;
+  justify-content: center;
+  align-self: center;
   gap: 2rem;
   list-style: none;
+}
+
+.nav-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500)
 });
 
-const toggleSwitch = document.querySelector('.toggle-switch');
+const toggleSwitch = document.querySelector('#theme-toggle');
 const body = document.querySelector('body');
 
 toggleSwitch.addEventListener('change', () => {
