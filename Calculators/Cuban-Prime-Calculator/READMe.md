@@ -12,4 +12,4 @@ Bits, Nibbles,Bytes,Kilobytes,Megabytes,Gigabytes,Terabytes,Petabytes,Exabytes,Z
 - JavaScript
 
 ## Screenshots :-
-![image](https://github.com/Akshansh8/CalcDiverse/assets/91936333/a87fab3e-2619-41dc-a62f-2193fe62c082)
+![Cuban](https://github.com/Rakesh9100/CalcDiverse/assets/125949765/61d9e288-e8bd-4be2-8a09-babb2bac3f1b)
