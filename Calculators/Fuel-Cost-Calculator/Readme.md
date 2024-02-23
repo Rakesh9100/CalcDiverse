@@ -12,4 +12,4 @@ This calculator calculates the cost of fuel based on fuel efficiency and distanc
 
 ## Screenshots :-
 
-![image](https://github.com/Hansawani/CalcDiverse/assets/73993775/4fae22a6-bd22-4458-8d6a-a8d1759c1041)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/19fe6a71-0355-4b82-a648-279046143fbe)
