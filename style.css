@@ -1650,13 +1650,6 @@ section {
 
 /* Search Bar Css */
 
-
-
-
-
-
-
-
 #searchBar {
     text-align: center;
     border-radius: 14px;
@@ -1676,10 +1669,7 @@ section {
     margin-left: 8rem;
     align-items: center;
     display: inline;
-    
 }
-
-
 
 #searchBar button {
     font-size: 2rem;
@@ -1691,9 +1681,7 @@ section {
     padding: .7rem;
     width: 8rem;
     border-radius: 5rem;
-    
 }
-
 
 #searchBar button:hover {
     transform: scale(1.02);
