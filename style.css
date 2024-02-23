@@ -230,8 +230,7 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 3rem;
-    padding: 2rem;
+    gap: 2rem;
     list-style: none;
 }
 
