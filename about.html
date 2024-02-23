@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
@@ -36,6 +37,9 @@
                     <a href="index.html" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fi fi-rs-info" aria-hidden="true"></i></i> About</a>
+                </li>
+                <li class="nav-item">
                     <a href="./assets/contributors/contributor.html" class="nav-link"><i class="fa fa-users"
                             aria-hidden="true"></i> Contributors</a>
                 </li>
@@ -46,9 +50,6 @@
                 <li class="nav-item">
                     <a href="./assets/contact/contact.html" class="nav-link"><i class="fa fa-phone"
                             aria-hidden="true"></i> Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> About</a>
                 </li>
 
             </ul>
@@ -118,43 +119,7 @@
 
     <script src="./script.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        var tl = gsap.timeline();
-
-        tl.from("header" , {
-            opacity:0,
-            duration:1,
-            delay:1.5,
-        })
-
-        tl.from(".image-logo" , {
-            opacity:0,
-            duration:0.3,
-        })
-
-        tl.from(".nav-item" , {
-            opacity:0,
-            stagger:0.2,
-        })
-
-        tl.from(".heading-container" , {
-            opacity:0,
-            scale : 1.25,
-            duration:0.5,
-        })
-        tl.from(".para-section" , {
-            opacity:0,
-            y:10,
-            duration:0.5,
-        })
-
-        tl.from("footer" , {
-            opacity:0,
-        })
-    </script>
-
+    
 </body>
 
 </html>
