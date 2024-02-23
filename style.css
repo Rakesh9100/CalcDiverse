@@ -1650,6 +1650,13 @@ section {
 
 /* Search Bar Css */
 
+
+
+
+
+
+
+
 #searchBar {
     text-align: center;
     border-radius: 14px;
@@ -1665,17 +1672,28 @@ section {
     margin-top: 16px;
 }
 
+.search-input-container {
+    margin-left: 8rem;
+    align-items: center;
+    display: inline;
+    
+}
+
+
+
 #searchBar button {
-    font-size: 2.5rem;
+    font-size: 2rem;
     background: transparent;
     border: 0;
     color: white;
-    margin-left: 1rem;
+    margin-left: 5px;
     background-color: #ff1b82;
     padding: .7rem;
     width: 8rem;
     border-radius: 5rem;
+    
 }
+
 
 #searchBar button:hover {
     transform: scale(1.02);
@@ -1704,6 +1722,8 @@ section {
     #searchBar input {
         width: 100%;
         font-size: 1.5rem;
+        align-items: center;
+        display: flex;
     }
 
     #searchBar button {
