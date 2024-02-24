@@ -172,10 +172,10 @@
   content: '';
   display: inline-block;
   cursor: pointer;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #theme-toggle:not(:checked) + label {
@@ -241,7 +241,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 1.4rem;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 html {
