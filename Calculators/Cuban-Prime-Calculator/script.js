@@ -56,8 +56,7 @@ function checkCubanPrimesInRange() {
     }
 
     if (cubanPrimes.length > 0) {
-        let solutions = cubanPrimes.map(num => getCubanSolution(num));
-        document.getElementById('rangeResult').innerHTML = `<span class="cuban-prime">Cuban Prime numbers in the range ${fromRange} to ${toRange}: ${cubanPrimes.join(', ')}. Solutions:<br>${solutions.join('<br>')}</span>`;
+        document.getElementById('rangeResult').innerHTML = `<span class="cuban-prime-result">Cuban Prime numbers in the range ${fromRange} to ${toRange}: ${cubanPrimes.join(', ')}</span>`;
     } else {
         document.getElementById('rangeResult').innerHTML = `There are no Cuban Prime numbers in the range ${fromRange} to ${toRange}.`;
     }
