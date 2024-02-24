@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>CalcDiverse</title>
 </head>
 
@@ -32,19 +33,22 @@
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#calculators" class="nav-link">Calculators</a>
+                    <a href="./assets/about/about.html" class="nav-link"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></i> About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/contributors/contributor.html" class="nav-link">Contributors</a>
+                    <a href="#calculators" class="nav-link"><i class="fa fa-calculator" aria-hidden="true"></i> Calculators</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/faq/faq.html" class="nav-link">FAQ</a>
+                    <a href="./assets/contributors/contributor.html" class="nav-link"><i class="fa fa-users" aria-hidden="true"></i> Contributors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/contact/contact.html" class="nav-link">Contact</a>
+                    <a href="./assets/faq/faq.html" class="nav-link"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./assets/contact/contact.html" class="nav-link"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
                 </li>
 
             </ul>
@@ -81,7 +85,9 @@
         <!-- Search Bar -->
         <div id="searchBar">
             <h1>Search Calculator</h1><br>
-            <input type="text" id="calculatorSearch" placeholder="Enter Calculator Name" oninput="filterCalculators()">
+            <div class="search-input-container">
+                <input type="text" id="calculatorSearch" placeholder="Enter Calculator Name" oninput="filterCalculators()">
+            </div>
         </div>
 
         <div class="box">
@@ -760,12 +766,26 @@
         <div class="box">
             <div class="content">
                 <h2>Fuel Efficiency Calculator</h2>
-                <h3>Calculates efficiency of the vehicle</h3>
+                <h3>Calculates the efficiency of a vehicle.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Fuel-Efficiency-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Fuel-Efficiency-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Fuel Cost Calculator</h2>
+                <h3>Calculates the cost of fuel based on fuel efficiency and distance travelled.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Fuel-Cost-Calculator/fuel-cost.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Fuel-Cost-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -1768,7 +1788,7 @@
         <div class="box">
             <div class="content">
                 <h2>Stress Strain Calculator</h2>
-                <h3>Compute stress and strain using force, area, and length inputs.</h3>
+                <h3>Computes stress and strain using force, area, and length inputs.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Stress-Strain-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
@@ -1795,8 +1815,64 @@
         </div>
         <div class="box">
             <div class="content">
+                <h2>Aspect Ratio Calculator</h2>
+                <h3>Calculates the aspect ratio of the specified height and width.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Aspect-Ratio-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Aspect-Ratio-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>QR Code Generator Calculator</h2>
+                <h3>Generates the QR Code according to the given input.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/QR-Code-Generator-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/QR-Code-Generator-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Circular Prime Calculator</h2>
+                <h3>Checks if a number is circular prime and finds circular prime numbers in a range.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Circular-Prime-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Circular-Prime-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Yarn Density Calculator</h2>
+                <h3>Calculates the linear density of the yarn from unit system to another.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Yarn-Density-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Yarn-Density-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
                 <h2>Credit Card Payoff Calculator</h2>
-                <h3>Gives you the time in which you can payoff your Credits</h3>
+                <h3>Calculates the time in which you can payoff your Credits.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Credit-Card-Payoff-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
@@ -1829,6 +1905,7 @@
             </div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#home">Home</a></li>
+                <li class="list-inline-item"><a href="./assets/about/about.html">About</a></li>
                 <li class="list-inline-item"><a href="#calculators">Calculators</a></li>
                 <li class="list-inline-item"><a href="./assets/contributors/contributor.html">Contributors</a></li>
                 <li class="list-inline-item"><a href="./assets/faq/faq.html">FAQ</a></li>

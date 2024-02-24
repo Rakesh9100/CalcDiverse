@@ -9,12 +9,16 @@ function countWords() {
     var wordsArray = text.split(/\s+/).filter(function (word) {
         return word.length > 0;
     });
-
+   
     // Calculate total words
     var totalWords = wordsArray.length;
 
     // Calculate unique words
     var uniqueWords = countUniqueWords(wordsArray);
+    
+    // Calculate maximum and minimum words count
+    var shortest_count = shortestWord(wordsArray).length;
+    var longest_count = longestWord(wordsArray).length;
 
     // Calculate average word length 
     var averageWordLength = calculateAverageWordLength(wordsArray);
@@ -22,7 +26,26 @@ function countWords() {
     document.getElementById("result").innerHTML = 
         "<span class='total-words'>Total words: " + totalWords + "</span> | " +
         "<span class='unique-words'>Unique words: " + uniqueWords + "</span> | " +
+        "<span class='shortest-words'>Shortest words: " + shortest_count + "</span> | " +
+        "<span class='longest-words'>Longest words: " + longest_count + "</span> | " +
         "<span class='average-length'>Average Word Length: " + averageWordLength.toFixed(2) + " characters</span>";
+}
+function shortestWord(wordsArray) {
+    let minimum = wordsArray[0]
+    for( let i = 0; i < wordsArray.length; i++) {
+        if(minimum.length > wordsArray[i].length) 
+            minimum = wordsArray[i];
+    }
+    return minimum;
+}
+
+function longestWord(wordsArray) {
+    let maximum = wordsArray[0]
+    for( let i = 0; i < wordsArray.length; i++) {
+        if(maximum.length < wordsArray[i].length) 
+            maximum = wordsArray[i];
+    }
+    return maximum;
 }
 
 function countUniqueWords(wordsArray) {
@@ -57,6 +80,8 @@ function exportData() {
     var data = {
         text: text,
         totalWords: wordsArray.length,
+        shortestWord: shortestWord(wordsArray).length,
+        longestWord: longestWord(wordsArray).length,
         uniqueWords: countUniqueWords(wordsArray),
         averageWordLength: calculateAverageWordLength(wordsArray).toFixed(2)
     };
