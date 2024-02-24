@@ -1,4 +1,4 @@
-# Credit Card Payoff Calculator
+# <p align="center">Credit Card Payoff Calculator</p>
 
 <p> This is a credit card payoff calculator that helps you determine how long it will take to pay off your credit card debt, given your current balance, interest rate, and monthly payment. It can also help you calculate how much interest you will pay over the life of the loan. <p>
 
