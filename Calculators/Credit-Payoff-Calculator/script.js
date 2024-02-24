@@ -16,3 +16,10 @@ function calculate() {
 
     document.getElementById('result').innerHTML = result;
 }
+
+function reset() {
+    document.getElementById('balance').value = '';
+    document.getElementById('apr').value = '';
+    document.getElementById('monthly-payment').value = '';
+    document.getElementById('result').innerHTML = '';
+}
