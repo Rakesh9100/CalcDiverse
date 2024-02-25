@@ -21,4 +21,7 @@ For example, the number 19 is a happy number:
 - JavaScript
 
 ## Screenshots :-
-![Happy](https://github.com/Rakesh9100/CalcDiverse/assets/125949765/515bdefd-d7d8-4e9e-9497-b4521a9a7f2c)
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/bf62ba25-dfd8-4204-8dd8-e25f1e350527)
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/ad540815-ad43-49a8-8d2c-f2b09fe20bbb)
