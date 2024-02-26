@@ -1,6 +1,7 @@
 function calculate(event) {
     event.preventDefault();
     var shape = document.getElementById("shape").value;
+    var numSides = parseFloat(document.getElementById("nofsides").value);
     var length = parseFloat(document.getElementById("length").value);
     var width = parseFloat(document.getElementById("width").value);
     var radius = parseFloat(document.getElementById("radius").value);
@@ -11,7 +12,7 @@ function calculate(event) {
     if (shape === "") {
         resultContainer.textContent = "Please select a shape.";
         return;
-    } else if(shape === "square" || shape === "hexagon"){
+    } else if(shape === "square" || shape === "hexagon" || shape === "nsides"){
         if(isNaN(length)){
             resultContainer.textContent = "Enter valid numerical value";
             return;
@@ -75,6 +76,10 @@ function calculate(event) {
             perimeter = 6 * length;
             area = (3 * Math.sqrt(3) * Math.pow(length, 2)) / 2;
             break;
+        case "nsides":
+            perimeter = numSides * length;
+            area = (numSides * length * length) / (4 * Math.tan(Math.PI / numSides));
+            break;
         // Add cases for more shapes as needed
         default:
             break;
@@ -88,6 +93,7 @@ function calculate(event) {
         var shape = document.getElementById("shape").value;
 
         // Hide all dimension rows initially
+        document.getElementById("nsides-row").style.display = "none";
         document.getElementById("length-row").style.display = "none";
         document.getElementById("width-row").style.display = "none";
         document.getElementById("radius-row").style.display = "none";
@@ -123,6 +129,10 @@ function calculate(event) {
                 document.getElementById("width-row").style.display = "block";
                 break;
             case "hexagon":
+                document.getElementById("length-row").style.display = "block";
+                break;
+            case "nsides":
+                document.getElementById("nsides-row").style.display = "block";
                 document.getElementById("length-row").style.display = "block";
                 break;
             // Add cases for more shapes as needed

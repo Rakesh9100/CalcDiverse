@@ -146,6 +146,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
 <h2>This repo has been part of the following Open Source Programs🥳</h2>
 
 <table>
+
 <tr>
 <td align="center">
 <a href="https://iwoc.codes/"><img src="https://github.com/Rakesh9100/CalcDiverse/assets/73993775/88ffb36d-4488-431f-84d1-92cc88cb045b" height="140px" width="140px" alt="IWOC2024"></a><br><sub><b>IWOC 2k24</b></sub>
@@ -157,6 +158,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
 <a href="https://www.socialwinterofcode.com/"><img src="https://github.com/Rakesh9100/CalcDiverse/assets/73993775/25eaca50-f883-481c-a531-8d1ce9cf4b66" height="140px" width="180px" alt="SWOC2024"></a><br><sub><b>SWOC 2k24</b></sub>
 </td>
 </tr>
+
 </table>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -167,7 +169,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
 <table>
 <tr>
 <td align="center">
-<a href="https://github.com/Rakesh9100/"><img src="https://avatars.githubusercontent.com/u/73993775?v=4" height="150px" width="150px" alt="Rakesh Roshan"></a><br><sub><b>Rakesh Roshan</b></sub>
+<a href="https://github.com/Rakesh9100/"><img src="https://avatars.githubusercontent.com/u/73993775?v=4" height="140px" width="140px" alt="Rakesh Roshan"></a><br><sub><b>Rakesh Roshan</b><br><a href="https://www.linkedin.com/in/rakesh-roshan-9100/"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/73993775/278833250-adb040ea-e3ef-446e-bcd4-3e8d7d4c0176.png" width="45px" height="45px"></a></sub>
 </td>
 </tr>
 </table>

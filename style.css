@@ -195,9 +195,8 @@ header {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(46, 151, 192, 0.8));
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
-    border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
 .navbar a {
@@ -1570,16 +1569,18 @@ section {
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        height: 100%;
+        height: 100vh;
         left: -100%;
-        top: 5rem;
+        top: 0rem;
         flex-direction: column;
-        background-color: black;
+        background-color: rgba(26, 9, 46, 0.9);
         width: 100%;
         border-radius: 10px;
         text-align: center;
+        padding: auto;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        transition: 0.5s ease-in-out;
     }
 
     .herocontainer {
@@ -1603,10 +1604,13 @@ section {
 
     .nav-menu.active {
         left: 0;
+        height:100vh;
+        backdrop-filter: blur(7px);
+        transition: 0.5s ease-in-out;
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 3.5rem 0;
         font-size: 20px;
     }
 
@@ -1666,12 +1670,18 @@ section {
     margin-top: 16px;
 }
 
+.search-input-container {
+    margin-left: 8rem;
+    align-items: center;
+    display: inline;
+}
+
 #searchBar button {
-    font-size: 2.5rem;
+    font-size: 2rem;
     background: transparent;
     border: 0;
     color: white;
-    margin-left: 1rem;
+    margin-left: 5px;
     background-color: #ff1b82;
     padding: .7rem;
     width: 8rem;
@@ -1705,6 +1715,8 @@ section {
     #searchBar input {
         width: 100%;
         font-size: 1.5rem;
+        align-items: center;
+        display: flex;
     }
 
     #searchBar button {
