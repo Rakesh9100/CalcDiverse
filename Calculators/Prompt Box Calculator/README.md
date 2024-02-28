@@ -2,7 +2,7 @@
 
 This is a basic calculator application built using JavaScript. It performs standard arithmetic operations such as addition, subtraction, multiplication, and division.
 
-![ouput](calc_output.PNG
+![ouput](/calc_output.PNG)
 
 ## Features
 
