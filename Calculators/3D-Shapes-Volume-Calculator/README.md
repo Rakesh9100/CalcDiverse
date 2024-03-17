@@ -12,7 +12,4 @@ Calculates the volume of different important and useful 3D shapes.
 
 ## Screenshots :-
 
-![image1](./assets/screenshot1.png)
----
-![image2](./assets/screenshot2.PNG)
----
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/64203d2f-a9b8-49e3-9b86-be3a00368190)

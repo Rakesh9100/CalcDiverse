@@ -1,5 +1,6 @@
 /* Default settings */
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -104,20 +105,22 @@ input[type="number"]::-webkit-output-spin-button {
     overflow: auto;
     /* Wrap the answer into a fixed container */
     transition: all 0.5s;
-    font-family:'Kanit', sans-serif;
+    font-family: 'Kanit', sans-serif;
 }
 
 
 #output p {
     word-wrap: break-word;
 }
+
 #output h4 {
     font-size: 1.5rem;
-    margin-top:3vw;
+    margin-top: 3vw;
 }
-#output img{
-    margin-top:30px;
-    width:60%;
+
+#output img {
+    margin-top: 30px;
+    width: 60%;
 }
 
 /* Responsiveness of the website */

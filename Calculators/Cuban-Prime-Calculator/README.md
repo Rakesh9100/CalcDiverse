@@ -1,4 +1,4 @@
-# <p align="center">Cuban Prime Checker</p>
+# <p align="center">Cuban Prime Calculator</p>
 
 ## Description :-
 
@@ -19,6 +19,6 @@ For example, 2, 19, 37 are Cuban primes as they satisfy the mentioned Diophantin
 - CSS
 - JavaScript
 
-
 ## Screenshots :-
+
 ![Cuban](https://github.com/Rakesh9100/CalcDiverse/assets/125949765/61d9e288-e8bd-4be2-8a09-babb2bac3f1b)

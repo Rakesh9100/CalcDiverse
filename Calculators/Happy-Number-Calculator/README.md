@@ -14,7 +14,7 @@ For example, the number 19 is a happy number:
 6^2 + 8^2 = 100
 1^2 + 0^2 + 0^2 = 1
 
-## Tech Stacks:-
+## Tech Stacks :-
 
 - HTML
 - CSS

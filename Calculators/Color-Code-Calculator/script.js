@@ -1,6 +1,6 @@
 document.getElementById('convert').addEventListener('click', convertColors);
 document.getElementById('copy').addEventListener('click', copyToClipboard);
-document.getElementById('reset').addEventListener('click',  resetFields); 
+document.getElementById('reset').addEventListener('click', resetFields);
 
 function convertColors() {
     const input_div = document.getElementById('input');
@@ -13,7 +13,7 @@ function convertColors() {
     let pat;
 
     switch (convertFrom) {
-        case 'rgb': 
+        case 'rgb':
             pat = "rgb(255, 255, 255)";
             result = convertRGB(input, convertTo);
             break;
@@ -29,7 +29,7 @@ function convertColors() {
             pat = "hsl(360, 100%, 100%)";
             result = convertHSL(input, convertTo);
             break;
-        case 'hsv' :
+        case 'hsv':
             pat = "hsv(360, 100%, 100%)";
             result = convertHSV(input, convertTo);
             break;
@@ -39,42 +39,42 @@ function convertColors() {
             break;
         default:
             result = 'Invalid conversion';
-    
+
     }
     document.getElementById('result').value = result;
     if (result == 'Invalid input') {
         document.getElementById('result').style.color = 'red';
-        document.getElementById('result').value ='Invalid Input !!! [ Correct format: ' + pat + ' ]';
+        document.getElementById('result').value = 'Invalid Input !!! [ Correct format: ' + pat + ' ]';
 
     } else {
         document.getElementById('result').style.color = 'black';
-    }     
+    }
 }
 
 function copyToClipboard() {
     const resultInput = document.getElementById('result');
-    const inputValue=document.getElementById('input').value;
-    const copyBtn=document.getElementById('copy').value;
+    const inputValue = document.getElementById('input').value;
+    const copyBtn = document.getElementById('copy').value;
 
-    if(isEmpty(inputValue)){
+    if (isEmpty(inputValue)) {
         resultInput.style.color = 'red';
-        resultInput.value = 'Invalid Input !!! [ Correct format: ' + pat + ' ]' ;   
-    }  
-
-    else{
-        resultInput.select();
-        document.execCommand('copy'); 
+        resultInput.value = 'Invalid Input !!! [ Correct format: ' + pat + ' ]';
     }
 
-    copyBtn.innerText='Copy📂 ';
-    
+    else {
+        resultInput.select();
+        document.execCommand('copy');
+    }
+
+    copyBtn.innerText = 'Copy📂 ';
+
     //for invalid value
-    function isEmpty(value){
-        if(value==null || value.trim()===''){
-            copyBtn.innerText='Copy';
-            return true; 
-        } 
-    } 
+    function isEmpty(value) {
+        if (value == null || value.trim() === '') {
+            copyBtn.innerText = 'Copy';
+            return true;
+        }
+    }
 }
 
 function convertRGB(input, convertTo) {
@@ -204,14 +204,14 @@ function convertCMYK(input, convertTo) {
 }
 
 // reset button functionality
-function resetFields(){ 
-    var inputOnReset=document.getElementById('input');
-    var resultOnReset=document.getElementById('result');
-    var copyButton=document.getElementById('copy').value; 
-   
-    if((inputOnReset.value) || (resultOnReset).value ){
-        inputOnReset.value='';
-        resultOnReset.value='';
+function resetFields() {
+    var inputOnReset = document.getElementById('input');
+    var resultOnReset = document.getElementById('result');
+    var copyButton = document.getElementById('copy').value;
+
+    if ((inputOnReset.value) || (resultOnReset).value) {
+        inputOnReset.value = '';
+        resultOnReset.value = '';
     }
 
 }

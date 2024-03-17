@@ -1,21 +1,25 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #fff8dc, #fff0b3); /* Yellowish light gradient */
+    background: linear-gradient(to right, #fff8dc, #fff0b3);
+    /* Yellowish light gradient */
     color: #000000;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Changed to min-height for smaller screens */
+    min-height: 100vh;
+    /* Changed to min-height for smaller screens */
 }
 
 .container {
-    background-color: #fff8dc; /* Yellowish light background */
+    background-color: #fff8dc;
+    /* Yellowish light background */
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 30px;
     max-width: 400px;
-    width: 90%; /* Changed to percentage for responsiveness */
+    width: 90%;
+    /* Changed to percentage for responsiveness */
     text-align: center;
 }
 
@@ -24,7 +28,8 @@ body {
 }
 
 h1 {
-    color: #e20c0c; /* Reddish text color */
+    color: #e20c0c;
+    /* Reddish text color */
 }
 
 label {
@@ -41,11 +46,13 @@ button {
     margin: 5px 0;
     width: 100%;
     box-sizing: border-box;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px;
+    /* Rounded corners */
 }
 
 button {
-    background-color: #0000ff; /* Blue button color */
+    background-color: #0000ff;
+    /* Blue button color */
     color: #fff;
     cursor: pointer;
     border: none;
@@ -57,11 +64,13 @@ button {
 }
 
 button:hover {
-    background-color: #8b0000; /* Darker red on hover */
+    background-color: #8b0000;
+    /* Darker red on hover */
 }
 
 #powerResult {
     margin-top: 20px;
     font-size: 18px;
-    color: #000080; /* Dark blue text color */
+    color: #000080;
+    /* Dark blue text color */
 }

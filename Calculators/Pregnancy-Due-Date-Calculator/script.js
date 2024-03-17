@@ -14,6 +14,5 @@ function calculateDueDate() {
 
     // Display the result
     var formattedDueDate = dueDate.toDateString();
-    document.getElementById("result").innerHTML =
-        "Estimated Due Date: " + formattedDueDate;
+    document.getElementById("result").innerHTML = "Estimated Due Date: " + formattedDueDate;
 }

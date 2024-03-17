@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Bitwise Calculator</title>
+</head>
+
+<body>
+    <div id="calculator">
+        <h2>Bitwise Operation Calculator</h2>
+        <label for="input1"><B>Input 1 (Binary):</B></label>
+        <input type="text" id="input1" placeholder="Enter binary number">
+        <br>
+
+        <label for="input2"><B>Input 2 (Binary):</B></label>
+        <input type="text" id="input2" placeholder="Enter binary number">
+
+        <button onclick="performOperation('and')"><B>AND</B></button>
+        <button onclick="performOperation('or')"><B>OR</B></button>
+        <button onclick="performOperation('xor')"><B>XOR</B></button>
+        <button onclick="performOperation('not')"><B>NOT (Input 1)</B></button>
+        <br>
+
+        <label><B>Result:</B></label>
+        <input type="text" id="result" readonly>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

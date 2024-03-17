@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: rgb(61, 4, 61);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(241, 219, 240);
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.cont p {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.cont img {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    border-radius: 3rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.cont2 {
+    width: 50vw;
+    height: 60vh;
+    background-color: rgb(37, 240, 179);
+    border-radius: 3rem;
+}
+
+.cont2 p {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.cont3 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont3 #day {
+    margin-top: 5rem;
+}
+
+.cont3 #res,
+#day {
+    margin-top: 2rem;
+    height: 3rem;
+    background-color: rgb(243, 223, 243);
+    width: 15rem;
+    border: none;
+    text-align: center;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+
+.cont3 p {
+    margin: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    margin-top: 2rem;
+}
+
+button {
+    width: 11rem;
+    height: 3.5rem;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    margin-right: 1rem;
+    border: none;
+}
+
+#btn1:hover {
+    cursor: pointer;
+    background-color: #2eeb27;
+    color: black;
+}
+
+#btn2:hover {
+    cursor: pointer;
+    background-color: red;
+    color: black;
+}
+
+#btn1 {
+    background-color: green;
+}
+
+#btn2 {
+    background-color: #ec1a12;
+}
+
+
+/*Media Query*/
+@media(max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 39%;
+    }
+
+    .cont2 {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    input::placeholder {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:300px) {
+    html {
+        font-size: 25%;
+    }
+
+    input::placeholder {
+        font-size: 1.8rem;
+    }
+}

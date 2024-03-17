@@ -14,7 +14,6 @@ function mobileMenu() {
     nMenu.classList.toggle("active");
 }
 
-
 const cont = document.getElementById('contributor');
 const owner = 'Rakesh9100';
 const repoName = 'CalcDiverse';

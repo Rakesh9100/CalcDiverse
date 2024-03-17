@@ -1,0 +1,72 @@
+body {
+    background-color: #449f6c;
+}
+
+.container {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #93cfc9;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    padding-top: 20px;
+    margin-top: 36px;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    text-align: justify;
+}
+
+.labelId {
+    margin-left: 64px;
+}
+
+input[type="radio"] {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#resultId {
+    background-color: #93cfc9;
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#result {
+    font-weight: bold;
+}

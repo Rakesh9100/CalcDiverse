@@ -18,4 +18,4 @@ In this new age calculator we can check age in real-time. The real-time time and
 
 ![image](https://github.com/sanketshinde3001/CalcDiverse/assets/126979961/2aa2f78b-b4d6-4f18-8210-93fb726e7149)
 
-![aga](https://github.com/sanketshinde3001/CalcDiverse/assets/126979961/adc0cfda-8fb3-4f53-a953-2fdc446c483e)
+![age](https://github.com/sanketshinde3001/CalcDiverse/assets/126979961/adc0cfda-8fb3-4f53-a953-2fdc446c483e)

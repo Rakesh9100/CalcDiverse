@@ -1,10 +1,15 @@
-# General Root Calculator
+# <p align="center">General Root Calculator</p>
+
+## Description :-
 
 Welcome to the Root Calculator, a simple tool that calculates the nth root of a given number and also n precision.
-![image](https://github.com/TheDarkW3b/CalcDiverse/assets/54339318/19807a50-ccfb-4c10-9c21-38a7e0d18f18)
 
+## Tech Stacks :-
 
-## Tech Stack
 - HTML
 - CSS
-- Javascript
+- JavaScript
+
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/2b7303a3-11ec-4c9e-a9fb-316d43809ec6)

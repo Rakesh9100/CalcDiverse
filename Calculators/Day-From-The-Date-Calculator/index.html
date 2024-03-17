@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Day From The Date Calculator</title>
+</head>
+
+<body>
+    <div class="cont">
+        <p>Day From The Date Calculator</p>
+        <img src="images/calendar.png">
+    </div>
+    <div class="container">
+        <div class="cont2">
+            <p>Enter the Date and I will Find you the Day!!!</p>
+            <div class="cont3">
+                <p>Enter The Date <input type="text" placeholder="mm-dd-yyyy" name="Datebox" id="day"></p>
+                <div class="btn">
+                    <button id="btn1" onclick="convert()">FIND</button>
+                    <button type="reset" id="btn2" onclick="reset()">RESET</button>
+                </div>
+                <p>Day <input type="text" name="result" id="res"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

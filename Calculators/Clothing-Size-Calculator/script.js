@@ -1,6 +1,6 @@
 async function fetchJSONData() {
     try {
-        const response = await fetch('./size_mapping.json');
+        const response = await fetch('./assets/size_mapping.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -16,8 +16,8 @@ async function fetchJSONData() {
 
 async function getResults() {
     // EXTRACT FROM DOM
-    const {_gender, _from, _to, sz } = extractInput();
-    
+    const { _gender, _from, _to, sz } = extractInput();
+
     if (!sz || !sz.trim()) {
         alert('Please enter a size');
         return;
@@ -27,11 +27,11 @@ async function getResults() {
         let sizeMapping = await fetchJSONData();
 
         if (sizeMapping) {
-            if(!sizeMapping[_gender]) {
+            if (!sizeMapping[_gender]) {
                 alert('Please select a valid option for men/women');
                 return;
             }
-    
+
             sizeMapping = sizeMapping[_gender];
             let obj = null;
             let min_sz = sizeMapping[0][_from];
@@ -46,16 +46,16 @@ async function getResults() {
                     break;
                 }
             }
-    
+
             if (!obj) {
                 alert(`Please enter a size that is available in the selected region. \nThe size should be between ${min_sz} and ${max_sz} for this region. \nPlease check the link in the footer for reference.`);
                 return;
             }
-    
+
             let res = obj[_to];
             let international = obj['international'];
             let details = obj['details'];
-    
+
             updateResult(_to, res, international, details);
         } else {
             console.log('Data fetch failed or returned null.');

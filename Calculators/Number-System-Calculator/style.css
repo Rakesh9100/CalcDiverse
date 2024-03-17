@@ -1,0 +1,73 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background: radial-gradient(circle, rgb(231, 219, 245), rgb(185, 105, 242));
+}
+
+h1 {
+    margin-top: 9rem;
+    color: #333;
+}
+
+#calculator {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 2em;
+    position: absolute;
+    background-color: rgb(243, 235, 253);
+    color: rgb(44, 44, 44);
+    border-radius: 8%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: auto;
+    box-shadow: rgba(221, 124, 245, 0.913) 15px 20px 40px,
+        rgba(248, 137, 237, 0.788) 5px 5px 10px;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.convert select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}

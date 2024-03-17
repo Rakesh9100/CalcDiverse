@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main {
+    background-color: white;
+    width: 60%;
+    border: 2px solid blue;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main:hover {
+    border-color: #19248d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5vmax;
+    margin-bottom: 2.5vmax;
+}
+
+#heading h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#oneone {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+#onemain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmax;
+}
+
+#ip1name {
+    font-size: 1vmax;
+}
+
+#ip1 {
+    font-size: 0.9vmax;
+    text-align: center;
+    border-radius: 0.5vmax;
+    height: 1.8vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+
+}
+
+#ip2name {
+    font-size: 1vmax;
+}
+
+#ip2 {
+    font-size: 0.9vmax;
+    text-align: center;
+    border-radius: 0.5vmax;
+    height: 1.8vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
+
+}
+
+#twomain {
+    margin-top: 3vmax;
+    margin-bottom: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#twoone img {
+    height: 15vmax;
+    max-width: 80%;
+}
+
+#twotwo h2 {
+    font-size: 1.3vmax;
+}
+
+/* Button CSS */
+
+#onetwo button {
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 0.5em;
+    border: none;
+    background-color: rgb(40, 155, 249);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#onetwo button:hover {
+    background-color: #277eae;
+}
+
+/* Css for the alert */
+
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    width: 90%;
+    max-width: 400px;
+}
+
+.alert-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#alert-message {
+    margin: 0;
+}
+
+#close-alert {
+    background-color: #f5c6cb;
+    color: #721c24;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-alert:hover {
+    background-color: #f8d7da;
+}

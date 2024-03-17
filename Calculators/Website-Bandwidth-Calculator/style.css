@@ -14,7 +14,7 @@ body {
     border: 1px solid black;
     /* Add 3d box shadow */
     box-shadow: 0 0 10px 5px #333A73,
-                0 0 20px 10px #333A73;
+        0 0 20px 10px #333A73;
 
     border-radius: 20px;
     margin-top: calc(50vh - 280px);

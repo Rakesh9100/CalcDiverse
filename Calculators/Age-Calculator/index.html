@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="main">
+            <div id="heading">
+                <h1>Age Calculator</h1>
+            </div>
+
+            <div id="onemain">
+                <div id="oneone">
+                    <label for="ip1" id="ip1name">DOB - <input type="datetime-local" name="ip1" id="ip1"
+                            value="yyyy-01-01T00:00"></label>
+
+                    <label for="ip2" id="ip2name">Till - &nbsp;&nbsp;&nbsp;&nbsp;<input type="datetime-local" name="ip2"
+                            id="ip2"></label>
+                </div>
+                <div id="onetwo">
+                    <button type="button" onclick="calculateage()">Calculate</button>
+                </div>
+            </div>
+
+            <div id="twomain">
+                <div id="twoone">
+                    <img src="./assets/child1.svg" alt="child" id="photo">
+                </div>
+
+                <div id="twotwo">
+                    <h2 id="op1">Age = 0 Years 0 Months</h2>
+                    <br>
+                    <h2>OR</h2>
+                    <br>
+                    <h2 id="op2">- 0 Months</h2>
+                    <h2 id="op7">- 0 Weeks</h2>
+                    <h2 id="op3">- 0 Days</h2>
+                    <h2 id="op4">- 0 Hrs</h2>
+                    <h2 id="op5">- 0 Minutes</h2>
+                    <h2 id="op6">- 0 Seconds</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="custom-alert" class="custom-alert">
+        <div class="alert-content">
+            <p id="alert-message"></p>
+            <button id="close-alert">Close</button>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

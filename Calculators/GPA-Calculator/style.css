@@ -83,8 +83,10 @@ button:hover {
         font-size: 14px;
     }
 
-    input, select {
+    input,
+    select {
         width: 100%;
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
     }
 }

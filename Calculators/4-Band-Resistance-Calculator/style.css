@@ -1,26 +1,24 @@
-
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: rgb(244,240,240);
-    background: linear-gradient(180deg, rgba(244,240,240,1) 0%, rgba(244,118,107,1) 99%);
+    background: rgb(244, 240, 240);
+    background: linear-gradient(180deg, rgba(244, 240, 240, 1) 0%, rgba(244, 118, 107, 1) 99%);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     justify-content: center;
     align-items: center;
     height: 120vh;
-    /* overflow-y: hidden; */
 }
 
-.title{
-    /* padding-bottom: 3%; */
+.title {
     color: rgb(107, 30, 2);
 }
 
-.container{
+.container {
     display: flex;
 }
-.value_inp{
+
+.value_inp {
     font-size: 1.2rem;
     font-weight: 600;
     width: 30%;
@@ -28,17 +26,17 @@ body{
     padding: 3%;
     background-color: aliceblue;
     border-radius: 10px;
-    -webkit-box-shadow: -7px 0px 93px 19px rgba(0,0,0,0.23);
-    -moz-box-shadow: -7px 0px 93px 19px rgba(0,0,0,0.23);
-    box-shadow: -7px 0px 93px 19px rgba(0,0,0,0.23);
+    -webkit-box-shadow: -7px 0px 93px 19px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -7px 0px 93px 19px rgba(0, 0, 0, 0.23);
+    box-shadow: -7px 0px 93px 19px rgba(0, 0, 0, 0.23);
 }
 
-label{
+label {
     display: block;
     text-align: left;
 }
 
-select{
+select {
     font-weight: 650;
     width: 100%;
     margin: 5% 0;
@@ -47,7 +45,7 @@ select{
     padding: 2%;
 }
 
-.btn{
+.btn {
     font-size: 1.3rem;
     width: 40%;
     border: 5px solid brown;
@@ -65,9 +63,9 @@ select{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 999;
-  }
-  
-  .popup-content {
+}
+
+.popup-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,53 +77,54 @@ select{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-  }
-  
-  #closebtn {
+}
+
+#closebtn {
     margin-top: 10px;
     width: 40%;
     border: 5px solid brown;
-  }
+}
 
 
-  @media only screen and (max-width: 786px) {
+@media only screen and (max-width: 786px) {
     body {
-      font-size: 14px;
-      /* height: auto; */
-      overflow-y: hidden;
-      margin-top: 10%;
+        font-size: 14px;
+        /* height: auto; */
+        overflow-y: hidden;
+        margin-top: 10%;
     }
-  
-    .title{
+
+    .title {
         padding-bottom: 11%;
     }
+
     .container {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-  
+
     .value_inp {
-      width: 80%;
-      padding: 2%;
+        width: 80%;
+        padding: 2%;
     }
-    
+
     .btn {
-      width: 60%;
+        width: 60%;
     }
-  
+
     select {
-      margin: 2% 0;
+        margin: 2% 0;
     }
-  
+
     .popup-content {
-      width: 90%;
-      padding: 10px;
+        width: 90%;
+        padding: 10px;
     }
-  
-    #popup-result{
+
+    #popup-result {
         font-size: 20px;
     }
 
     #closebtn {
-      width: 60%;
+        width: 60%;
     }
-  }
+}

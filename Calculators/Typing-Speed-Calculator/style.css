@@ -10,18 +10,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('./assets/bg.jpg');
+    background-image: url('./assets/background.jpg');
     background-position: 30% 30%;
     background-repeat: no-repeat;
     background-size: cover;
 }
-h1{
+
+h1 {
     color: #fff;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 20px;
 
 }
+
 #typing-box {
     background-color: #fff;
     border-radius: 8px;
@@ -66,7 +68,7 @@ button:hover {
     margin-top: 20px;
 }
 
-.form-wrapper{
+.form-wrapper {
     display: flex;
     flex-direction: column;
     gap: 10px;

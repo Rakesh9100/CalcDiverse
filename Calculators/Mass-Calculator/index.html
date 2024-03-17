@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mass Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <form data-form="weight">
+            <h1>Weight unit conversion</h1>
+            <div>
+                <label for="weight-from">Initial Unit:</label>
+                <select id="weight-from" aria-label="From unit select" required name="from">
+                    <option selected disabled value="">Select the unit</option>
+                    <option value="kg">Kilogram (kg)</option>
+                    <option value="hg">Hektogram (hg)</option>
+                    <option value="dag">Dekagram (dag)</option>
+                    <option value="g">Gram (g)</option>
+                    <option value="dg">Desigram (dg)</option>
+                    <option value="cg">Centigram (cg)</option>
+                    <option value="mg">Miligram (mg)</option>
+                </select>
+            </div>
+            <div>
+                <label for="weight-to">End Unit:</label>
+                <select id="weight-to" aria-label="To unit select" required name="to">
+                    <option selected disabled value="">Select the unit</option>
+                    <option value="kg">Kilogram (kg)</option>
+                    <option value="hg">Hektogram (hg)</option>
+                    <option value="dag">Dekagram (dag)</option>
+                    <option value="g">Gram (g)</option>
+                    <option value="dg">Desigram (dg)</option>
+                    <option value="cg">Centigram (cg)</option>
+                    <option value="mg">Miligram (mg)</option>
+                </select>
+            </div>
+            <div id="inputValue">
+                <label for="weight-number" id="weight-label" class="form-label">Value to be Converted:</label>
+                <input type="number" id="weight-number" required name="number" />
+            </div>
+            <button type="submit">Convert</button>
+        </form>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

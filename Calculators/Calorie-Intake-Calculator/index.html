@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calorie Intake Calculator</title>
-  <link rel="stylesheet" href="style.css">
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calorie Intake Calculator</title>
 </head>
+
 <body>
-  <div id="inputContainer">
-    <h2>Calorie Intake Calculator</h2>
-    <label for="age">Age:</label>
-    <input type="number" id="age" placeholder="Enter your age" min="0" />
+    <div id="inputContainer">
+        <h2>Calorie Intake Calculator</h2>
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" min="0" />
 
-    <label for="gender">Gender:</label>
-    <select id="gender">
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select>
+        <label for="gender">Gender:</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
 
-    <label for="weight">Weight (kg):</label>
-    <input type="number" id="weight" placeholder="Enter your weight" min="0" />
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter your weight" min="0" />
 
-    <label for="height">Height (cm):</label>
-    <input type="number" id="height" placeholder="Enter your height" min="0" />
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter your height" min="0" />
 
-    <label for="activityLevel">Activity Level:</label>
-    <select id="activityLevel">
-      <option value="sedentary">Sedentary</option>
-      <option value="lightlyActive">Lightly Active</option>
-      <option value="moderatelyActive">Moderately Active</option>
-      <option value="veryActive">Very Active</option>
-      <option value="extraActive">Extra Active</option>
-    </select>
+        <label for="activityLevel">Activity Level:</label>
+        <select id="activityLevel">
+            <option value="sedentary">Sedentary</option>
+            <option value="lightlyActive">Lightly Active</option>
+            <option value="moderatelyActive">Moderately Active</option>
+            <option value="veryActive">Very Active</option>
+            <option value="extraActive">Extra Active</option>
+        </select>
 
-    <label for="weightGoal">Weight Goal:</label>
-    <select id="weightGoal">
-      <option value="maintain">Maintain Weight</option>
-      <option value="lose">Lose Weight</option>
-      <option value="gain">Gain Weight</option>
-    </select>
+        <label for="weightGoal">Weight Goal:</label>
+        <select id="weightGoal">
+            <option value="maintain">Maintain Weight</option>
+            <option value="lose">Lose Weight</option>
+            <option value="gain">Gain Weight</option>
+        </select>
 
-    <button onclick="calculateCaloricIntake()">Calculate</button>
-    <div id="result"></div>
-  </div>
+        <button onclick="calculateCaloricIntake()">Calculate</button>
+        <div id="result"></div>
+    </div>
 
-  
-  <!-- Hollow circles with borders -->
-<div class="shape circle" style="transform: translate(-50%, -50%);"></div>
-<div class="shape circle" style="transform: translate(-50%, -50%);"></div>
-<div class="shape circle" style="transform: translate(-50%, -50%);"></div>
-<div class="shape circle" style="transform: translate(-50%, -50%);"></div>
 
-<script src="script.js"></script>
+    <!-- Hollow circles with borders -->
+    <div class="shape circle" style="transform: translate(-50%, -50%);"></div>
+    <div class="shape circle" style="transform: translate(-50%, -50%);"></div>
+    <div class="shape circle" style="transform: translate(-50%, -50%);"></div>
+    <div class="shape circle" style="transform: translate(-50%, -50%);"></div>
+
+    <script src="script.js"></script>
 </body>
-</html>
 
+</html>

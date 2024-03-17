@@ -13,7 +13,7 @@ Example -
 
 Math.sin(x/30)*100
 
-## Tech Stack:-
+## Tech Stacks :-
 
 - HTML
 - CSS
@@ -21,4 +21,4 @@ Math.sin(x/30)*100
 
 ## Screenshots :-
 
-https://github.com/Rakesh9100/CalcDiverse/assets/140608790/e7747a2b-70b7-4578-b560-103f6f9253bc
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/854a310c-dfcd-43bc-90ad-1940a1b5af6f)

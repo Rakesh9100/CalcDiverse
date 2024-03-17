@@ -1,24 +1,15 @@
 # <p align="center">Credit Card Payoff Calculator</p>
 
-<p> This is a credit card payoff calculator that helps you determine how long it will take to pay off your credit card debt, given your current balance, interest rate, and monthly payment. It can also help you calculate how much interest you will pay over the life of the loan. <p>
+## Description :-
 
-## How to use the calculator:
+This is a credit card payoff calculator that helps you determine how long it will take to pay off your credit card debt, given your current balance, interest rate, and monthly payment. It can also help you calculate how much interest you will pay over the life of the loan.
 
-1) Enter your current credit card balance in the "Enter Credit Card Balance" field.
-2) Enter your annual percentage rate (APR) in the "Enter Annual Percentage Rate(APR)" field.
-3) Enter your monthly payment in the "Enter Monthly Payment" field.
-4) Click the "Calculate" button.
+## Tech Stacks:-
 
-### The calculator will display the following results:
+- HTML
+- CSS
+- JavaScript
 
-The number of years and months it will take to pay off your credit card debt.
+## Screenshots :-
 
-## Benefits of using the credit card payoff calculator:
-
-It can help you understand how much debt you really have.
-It can help you create a plan to pay off your debt faster.
-It can help you save money on interest.
-
-## Screenshots:
-
-![Screenshot](image.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/fce32673-51ae-43d3-ba97-f2d2e8f41efc)

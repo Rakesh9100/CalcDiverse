@@ -78,7 +78,7 @@ function findCircularPrimesInRange() {
     let result;
     if (circularPrimes.length > 0) {
         result = `Circular Primes in the range ${fromRange} to ${toRange}: ${circularPrimes
-            .map(cp => `${cp.number} `) 
+            .map(cp => `${cp.number} `)
             .join(', ')}`;
     } else {
         result = `There are no Circular Primes in the range ${fromRange} to ${toRange}.`;
@@ -88,12 +88,12 @@ function findCircularPrimesInRange() {
 }
 
 function clearSection() {
-document.getElementById('numberInput').value = '';
-document.getElementById('result').innerText = '';
+    document.getElementById('numberInput').value = '';
+    document.getElementById('result').innerText = '';
 }
 
 function clearRangeSection() {
-document.getElementById('fromRange').value = '';
-document.getElementById('toRange').value = '';
-document.getElementById('rangeResult').innerText = '';
+    document.getElementById('fromRange').value = '';
+    document.getElementById('toRange').value = '';
+    document.getElementById('rangeResult').innerText = '';
 }

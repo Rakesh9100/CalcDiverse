@@ -10,7 +10,7 @@ body {
 .calculator {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start; /* Adjusted alignment */
+    align-items: flex-start;
     margin: 50px auto;
     max-width: 900px;
 }

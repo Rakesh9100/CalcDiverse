@@ -28,8 +28,13 @@ body {
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 input {
@@ -86,7 +91,7 @@ p {
     margin-bottom: 15px;
 }
 
-.information{
+.information {
     width: 800px;
     margin: 0 auto;
     text-align: justify;
@@ -96,5 +101,5 @@ p {
 }
 
 h2 {
-    color:  red;
+    color: red;
 }

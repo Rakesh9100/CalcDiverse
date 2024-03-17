@@ -1,28 +1,15 @@
 # <p align="center">Income Tax Calculator</p>
 
-## Overview
+## Description :-
 
-The provided code implements a basic income tax calculator web application. Users can input their annual income, and upon submission, the calculator computes the income tax based on predefined tax brackets. The calculated tax amount is displayed on the webpage. The calculator utilizes HTML for structure, CSS for styling, and JavaScript for functionality, providing a simple interface for users to estimate their income tax liability.
-## Features
+Calculates tax liability based on user input annual income.
 
-### Input Fields:
+## Tech Stacks :-
 
-- **Annual Income:** Enter the annual income of the person.
+- HTML
+- CSS
+- JavaScript
 
-### Output:
+## Screenshots :-
 
-- The result is displayed on the page, showing the calculated income tax.
-
-## Usage
-
-
-1. Enter the person's anuual income.
-2. Click the "Calculate" button to see the calculated income tax.
-
-
-![image](screenshot.png)
-
-
-## Disclaimer
-
-This calculator provides general information and is not a substitute for professional income tax calculation. Visit official website for actual information.
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/4d9fdf3a-1b2e-49e6-9fa2-b459f49f6634)

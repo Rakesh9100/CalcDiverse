@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Exponent Calculator</title>
+</head>
+
+<body>
+
+    <div class="card-form" id="2d-shapes">
+        <form class="calculate" id="2d-shapes-calculator">
+            <div class="form-title">Exponent Calculator</div>
+            <div class="form-body">
+                <div class="row">
+                    <input type="number" id="Number1" name="Number1" placeholder="Enter Number One:" required>
+                </div>
+                <div class="row">
+                    <input placeholder="Enter Number Two" type="number" id="Number2" name="Number2">
+                </div>
+
+            </div>
+            <div class="rule"></div>
+            <div class="form-footer">
+                <button onclick="calculate(event)">Calculate</button>
+                <button type="reset">Reset</button>
+            </div>
+            <div id="result-container">
+                <p id="result"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

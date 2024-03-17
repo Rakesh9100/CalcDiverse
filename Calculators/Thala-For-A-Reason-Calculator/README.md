@@ -12,4 +12,4 @@ Thala For A Reason Calculator is a simple fun calculator that takes whatever num
 
 ## Screenshots :-
 
-![image](screenshot.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/6dcd4a70-1cb7-4f90-ba48-024b8d625744)

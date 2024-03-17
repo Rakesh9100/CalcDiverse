@@ -12,4 +12,4 @@ Calculates the multiplication table of any number.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/da86fe79-e43d-447c-be4c-e7ba33366017)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/1d695c5c-f94a-4df2-b2e6-48c0932ca4fd)

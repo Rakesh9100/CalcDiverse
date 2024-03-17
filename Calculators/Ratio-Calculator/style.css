@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+    color: black;
+    letter-spacing: 1px;
+    background-color: rgba(128, 128, 128, 0.185);
+}
+
+.card-form {
+    width: 500px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+
+.form-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: #000000;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-body {
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    margin: 0 15px;
+    height: 35px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #e8ebed;
+    color: #576366;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    appearance: none;
+}
+
+.rule {
+    height: 2px;
+    background: #e8ebed;
+    margin: 0px 35px;
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: end;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px 10px;
+}
+
+
+button {
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 15px 5px 15px;
+    background: #000000;
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: Raleway;
+    color: white;
+    letter-spacing: 1px;
+}
+
+button:focus {
+    background: #000000;
+
+}
+
+button:hover {
+    transition: all 0.5s ease-in;
+    transform: translateY(-5px);
+    box-shadow: 2px 5px 0 #ffffffaa;
+}
+
+#result-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}

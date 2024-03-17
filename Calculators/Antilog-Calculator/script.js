@@ -3,7 +3,7 @@ function calculateAntilog() {
 	const base = parseFloat(document.getElementById('base').value);
 
 	if (!isNaN(number) && !isNaN(base) && number > 0 && base > 0 && base !== 1) {
-		const result = (base)**(number);
+		const result = (base) ** (number);
 		document.getElementById('resultb').innerText = `${result}`;
 		document.getElementById('result').innerText = `Antilog for base ${base} of ${number} is ${result}`;
 	} else {

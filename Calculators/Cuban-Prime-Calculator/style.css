@@ -59,8 +59,9 @@ p {
     margin-top: 20px;
     color: #fff;
 }
+
 .cuban-prime-result {
-    color: #2ECC71; 
+    color: #2ECC71;
 }
 
 .title {
@@ -109,12 +110,15 @@ p {
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
 .cuban-prime {
-    color: #2ECC71; }
+    color: #2ECC71;
+}
 
 .not-cuban-prime {
-    color: #E74C3C; 
+    color: #E74C3C;
 }
-.rangeResult{
-    color:  #2ECC71;
+
+.rangeResult {
+    color: #2ECC71;
 }

@@ -1,4 +1,4 @@
-# <p align="center">Vowel and Consonant Calculator</p>
+# <p align="center">Vowel Consonant Calculator</p>
 
 ## Description :-
 

@@ -1,18 +1,21 @@
+# <p align="center">4 Band Resistance Calculator</p>
 
-# 4 Band Resistance Calculator ⚡
+# Description :-
 
-# What is it?
 As the name suggest this is a Calculator which will help you calculate the resistance value by input the 4 colour bands present on the resistor and it will return the resistance value for it with including the tolerance value. The calculator is responsive also and can be viewed on any device.
 
-## Tech Stack used
+## Tech Stacks :-
+
 - HTML 
 - CSS 
 - Javascript
 
-## Features
+## Features :-
+
 - Gives the theoritical reistance value of a given resistor.
 
-## Demo images of the project
+## Screenshots :-
+
 ![Project demo 1](./assets/demo.png)
 ---
 ![Project demo 2](./assets/demo1.png)
@@ -25,20 +28,3 @@ As the name suggest this is a Calculator which will help you calculate the resis
 ---
 ![Project demo 6](./assets/demo5.png)
 ---
-
-## How to run it locally?
-- Fork the repository.
-- Clone the repository by using the command:-
----
-    git clone [github url of the repository]
-
-- go to the directory of the project using command:-
----
-    cd [path of the project folder]
-    
-- Open the index.html file in any browser and see it running :)
-
-### Thank you :)
-
-
-

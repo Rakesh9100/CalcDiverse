@@ -2,9 +2,9 @@
 
 ## Description :-
 
-Add the sides and get all the values about that triangle.
+Calculates the different results of a triangle based on input sides.
 
-## Tech Stack :-
+## Tech Stacks :-
 
 - HTML
 - CSS
@@ -12,4 +12,4 @@ Add the sides and get all the values about that triangle.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/134225415/d38d939c-c93a-4216-b30d-aeae4e853a49)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/e737d8d2-dc27-4383-b03b-7b3e4fa670ec)

@@ -45,12 +45,13 @@ span {
     position: relative;
 }
 
-input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.input-field input{
+.input-field input {
     width: 350px;
     height: 60px;
     border-radius: 6px;
@@ -90,16 +91,18 @@ input:focus {
         transform: translate(-50%, -50%);
 
     }
-    .input-field input{
+
+    .input-field input {
         width: 90%;
     }
-    .field{
+
+    .field {
         align-items: stretch;
     }
 }
 
 @media screen and (max-width: 400px) {
-    p{
+    p {
         font-size: 1.5rem;
     }
 }

@@ -124,11 +124,11 @@ function calculateMolecularWeight() {
 
     let chemicalFormula = chemicalFormulaInput.value.toUpperCase();
 
-    if (!chemicalFormula || chemicalFormula.trim() === ''){
+    if (!chemicalFormula || chemicalFormula.trim() === '') {
         resultElement.innerHTML = '<b>Enter a valid chemical formula!</b>';
         return;
     }
-    
+
     let formattedFormula = '';
 
     let molecularWeight = 0;

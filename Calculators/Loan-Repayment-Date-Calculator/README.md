@@ -1,4 +1,4 @@
-# <p align="center">Loan Repayment Calculator</p>
+# <p align="center">Loan Repayment Date Calculator</p>
 
 ## Description :-
 
@@ -11,12 +11,5 @@ This is a loan repayment date calculator which gives you the year by which your 
 - JavaScript
 
 ## Screenshots :-
-![image](./Screenshot1.png)
 
-![image](./Screenshot2.png)
-
-![image](./Screenshot3.png)
-
-![image](./Screenshot4.png)
-
-![image](./Screenshot5.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/f0ce5bee-9012-4ab7-9555-e954b3e719bc)

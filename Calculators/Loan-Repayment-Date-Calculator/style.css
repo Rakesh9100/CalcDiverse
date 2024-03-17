@@ -21,22 +21,22 @@ html {
     scroll-behavior: smooth;
 }
 
-.calculator{
+.calculator {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60rem;
     width: 35rem;
-    border: 2px solid rgba(255,255,255,0.35);
+    border: 2px solid rgba(255, 255, 255, 0.35);
     border-radius: 2rem;
     flex-wrap: wrap;
 }
 
-#heading{
+#heading {
     color: white;
 }
 
-.inputsection{
+.inputsection {
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -44,16 +44,20 @@ html {
     align-items: center;
 }
 
-#interest,#capital,#return_amount,#date,#type{
+#interest,
+#capital,
+#return_amount,
+#date,
+#type {
     width: 29rem;
     margin-bottom: 2rem;
 }
 
-#interest input{
+#interest input {
     border-radius: 2rem;
 }
 
-#result{
+#result {
     height: 5rem;
     width: 29rem;
     color: white;
@@ -63,14 +67,20 @@ html {
     font-weight: 700;
     margin-bottom: 5rem;
 }
-.submitbtn button{
+
+.submitbtn button {
     background-color: #2524DB;
     color: white;
     height: 30px;
     width: 100px;
     border-radius: 20px;
 }
-#interest,#capital,#return_amount,#date,#type{
+
+#interest,
+#capital,
+#return_amount,
+#date,
+#type {
     background-color: #f6a7a7;
     color: black;
     border-radius: 10px;

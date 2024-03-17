@@ -1,4 +1,4 @@
-# <p align="center">Circular Prime Checker</p>
+# <p align="center">Circular Prime Calculator</p>
 
 ## Description :-
 
@@ -27,5 +27,3 @@ and 131) are prime.
 ## Screenshots :-
 
 ![CPC](https://github.com/Rakesh9100/CalcDiverse/assets/125949765/34d359b2-23d5-456c-b88f-51fb413bebbc)
-
-

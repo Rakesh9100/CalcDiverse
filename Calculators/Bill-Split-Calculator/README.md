@@ -4,7 +4,7 @@
 
 Effortlessly split bills with our calculator. Input total bill, number of people, get fair shares instantly. Simplify expense sharing now!
 
-## Tech Stack :-
+## Tech Stacks :-
 
 - HTML
 - CSS

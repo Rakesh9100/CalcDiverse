@@ -5,7 +5,7 @@ function graphEquation() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     const equationInput = document.getElementById('equation').value;
-    
+
     try {
         const func = new Function('x', `return ${equationInput};`);
 

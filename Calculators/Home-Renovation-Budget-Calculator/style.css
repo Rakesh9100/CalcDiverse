@@ -10,7 +10,8 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent white */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     animation: fadeIn 0.5s ease-out;
@@ -62,6 +63,7 @@ button:hover {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -72,6 +74,7 @@ button:hover {
         margin-top: -20px;
         opacity: 0;
     }
+
     to {
         margin-top: 0;
         opacity: 1;

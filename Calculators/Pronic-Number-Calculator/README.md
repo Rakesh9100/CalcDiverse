@@ -25,5 +25,5 @@ For example, 6 is a pronic number because it can be expressed as \( 2 \times (2 
 ## Screenshots :-
 
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/8459c846-f755-4934-8b47-8255c6efd562)
-<br><br>
+
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c8ff9b86-77fa-4c33-8a5a-6a7810b5c796)

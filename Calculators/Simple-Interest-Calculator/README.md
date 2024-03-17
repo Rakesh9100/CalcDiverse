@@ -1,8 +1,8 @@
-# <p align="center">Simple Intrest Calculator</p>
+# <p align="center">Simple Interest Calculator</p>
 
 ## Description :-
 
-Calculates the Simple intrest.
+Calculates the Simple Interest by taking Principal Amount (in ₹), Interest Rate (in %), and Time (in years).
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ Calculates the Simple intrest.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/134225415/8dfa666b-5d22-4def-9916-cbeb95cee9b7)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/71e79300-b2f6-45c4-8251-1038ee093933)

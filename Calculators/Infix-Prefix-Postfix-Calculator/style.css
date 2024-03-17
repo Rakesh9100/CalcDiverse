@@ -37,8 +37,8 @@ body {
 }
 
 .input {
-    display: flex; 
-    gap: 1em; 
+    display: flex;
+    gap: 1em;
     align-items: center;
     margin-bottom: 10px;
 }

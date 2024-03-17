@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <title>GCD Calculator</title>
+</head>
 
-  <body>
+<body>
     <h1 id="gcd">GCD Calculator</h1>
     <div id="headings">
-      <div id="single">GCD For Two numbers</div>
-      <div id="multiple-heading">GCD For Multiple numbers</div>
+        <div id="single">GCD For Two numbers</div>
+        <div id="multiple-heading">GCD For Multiple numbers</div>
     </div>
 
     <div class="main">
-      <div class="container">
-        <div class="inputs">
-          <span>A : </span><input type="text" id="a" name="fname" />
-          <br />
-          <br />
-          <span>B : </span><input type="text" id="b" name="fname" />
+        <div class="container">
+            <div class="inputs">
+                <span>A : </span><input type="text" id="a" name="fname" />
+                <br />
+                <br />
+                <span>B : </span><input type="text" id="b" name="fname" />
+            </div>
+
+            <div class="calculator">
+                <button type="button" id="calculate">
+                    Calculate for Two Numbers
+                </button>
+                <div id="answer"></div>
+            </div>
         </div>
 
-        <div class="calculator">
-          <button type="button" id="calculate">
-            Calculate for Two Numbers
-          </button>
-          <div id="answer"></div>
-        </div>
-      </div>
+        <div class="container">
+            <div>
+                <div class="message">add multiple values separated by commas</div>
+                <div class="inputs">
+                    <input type="text" id="multiple" name="fname" />
+                </div>
+            </div>
 
-      <div class="container">
-        <div>
-          <div class="message">add multiple values separated by commas</div>
-          <div class="inputs">
-            <input type="text" id="multiple" name="fname" />
-          </div>
+            <div class="calculator">
+                <button type="button" id="calculate-multiple">
+                    GCD Calculate for Multiple Numbers
+                </button>
+                <div id="answer-multi"></div>
+            </div>
         </div>
-
-        <div class="calculator">
-          <button type="button" id="calculate-multiple">
-            GCD Calculate for Multiple Numbers
-          </button>
-          <div id="answer-multi"></div>
-        </div>
-      </div>
     </div>
     <div id="error-single"></div>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

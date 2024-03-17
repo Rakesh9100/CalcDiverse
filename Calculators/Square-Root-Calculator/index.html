@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!-- Title of the webpage -->
-  <title>Square Root Calculator</title>
-  <!-- Linking the external CSS file for styling -->
-  <link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-<body>
-  <!-- Container to hold the calculator elements -->
-  <div class="container">
-    <!-- Title heading for the calculator -->
-    <h1>Square Root Calculator</h1>
-    <!-- Input field for entering the number -->
-    <input type="number" id="numberInput" placeholder="Enter a number">
-    <br>
-    <!-- Input field for entering the precision -->
-    <input type="number" id="precisionInput" placeholder="Enter precision">
-    <!-- Button to trigger the calculation -->
-    <button onclick="calculateSquareRoot()">Calculate Square Root</button>
-    <!-- Display area for the result -->
-    <p id="result"></p>
-  </div>
 
-  <!-- Linking the external JavaScript file -->
-  <script src="./script.js"></script>
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Square Root Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Square Root Calculator</h1>
+        <input type="number" id="numberInput" placeholder="Enter a number">
+
+        <br>
+
+        <input type="number" id="precisionInput" placeholder="Enter precision">
+        <button onclick="calculateSquareRoot()">Calculate Square Root</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>

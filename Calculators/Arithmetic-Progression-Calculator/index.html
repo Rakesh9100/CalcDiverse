@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arithmetic Progression Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <title>Arithmetic Progression Calculator</title>
 </head>
+
 <body>
     <header>
         <h1>Arithmetic Progression Calculator</h1>
     </header>
-    
+
     <section id="calculator">
         <label for="firstTerm">First Term (a₁):</label>
         <input type="number" id="firstTerm" required>
-        
+
         <label for="commonDifference">Common Difference (d):</label>
         <input type="number" id="commonDifference" required>
-        
+
         <label for="termNumber">Term Number (n):</label>
         <input type="number" id="termNumber" required>
 
@@ -26,12 +28,13 @@
             <option value="nthTerm">Nth Term</option>
             <option value="sumOfTerms">Sum of First N Terms</option>
         </select>
-        
+
         <button onclick="calculate()">Calculate</button>
-        
+
         <p id="result"></p>
     </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>

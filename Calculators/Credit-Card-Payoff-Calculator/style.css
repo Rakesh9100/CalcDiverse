@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #f4f4f4; */
     background: linear-gradient(90deg, #9AD0C2, #2D9596);
     margin: 0;
     padding: 0;
@@ -13,8 +12,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),
-                0 0 20px rgba(0, 0, 0, 0.1),
-                0 0 40px rgba(0, 0, 0, 0.1);
+        0 0 20px rgba(0, 0, 0, 0.1),
+        0 0 40px rgba(0, 0, 0, 0.1);
 }
 
 h1 {

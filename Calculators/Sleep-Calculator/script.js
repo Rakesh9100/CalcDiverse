@@ -1,14 +1,12 @@
 
 // styling for select option
 const label = document.getElementById('activity-label')
-const selectElement =  document.getElementById('dropdown')
+const selectElement = document.getElementById('dropdown')
 
-selectElement.addEventListener('change', function() {
+selectElement.addEventListener('change', function () {
     label.style.fontSize = '13px'
     label.style.color = '#03e9f4'
 })
-
-
 
 // eventlistener for submit button
 const button = document.querySelector('.btn')
@@ -22,65 +20,64 @@ button.addEventListener('click', function () {
     const dropdownError = dropdownErrorHandler(dropdown)
 
     // display error
-    if( !dropdownError && !ageError ) {
+    if (!dropdownError && !ageError) {
         const sleepDuration = calculateSleepDuration(age, dropdown)
         displaySleepDuration(sleepDuration)
     }
-    else{
+    else {
         // remove display if there is error
         removeDisplayDiv()
     }
-    
-})
 
+})
 
 const removeDisplayDiv = () => {
     var existingDiv = document.querySelector('.content')
     existingDiv.remove()
 }
 
-const displaySleepDuration = (sleepDuration) =>{
+const displaySleepDuration = (sleepDuration) => {
     const contentBox = document.querySelector('.content-box')
     var existingDiv = document.querySelector('.content')
-    if(!existingDiv){
+    if (!existingDiv) {
         var displayDiv = document.createElement('div')
         displayDiv.className = 'content'
         contentBox.appendChild(displayDiv)
         displayDiv.textContent = `You need ${sleepDuration} hrs of sleep.`
     }
-    else{
+    else {
         existingDiv.textContent = `You need ${sleepDuration} hrs of sleep.`
     }
 
 }
 
 // get the user selected activity level from dropdown
-const getUserActivityLevel = () =>{
+const getUserActivityLevel = () => {
     const dropdown = document.getElementById('dropdown').value
     return dropdown
 }
 
-const ageErrorHandler = (age) =>{
+const ageErrorHandler = (age) => {
     const errorContainer = document.querySelector('.error-container')
     var existingError = document.querySelector('.error-box')
 
-    if(age > 100 || age < 0 || age === ''){
-        if(!existingError){
-             // console.log("fahshfksad")
+    if (age > 100 || age < 0 || age === '') {
+        if (!existingError) {
+            // console.log("fahshfksad")
             var errorDiv = document.createElement("div")
             errorDiv.className = "error-box"
 
             // Set the error message as the content of the div
             errorDiv.textContent = "Age should be between 1 and 100"
-        
+
             // Append the div to the body or any other container element
             errorContainer.appendChild(errorDiv)
         }
         return true
     }
-    else{
+    else {
         var existingError = document.querySelector('.error-box')
-  
+
         if (existingError) {
             // Remove the existing error message if it exists
             existingError.remove()
@@ -89,27 +86,27 @@ const ageErrorHandler = (age) =>{
     }
 }
 
-const dropdownErrorHandler = (dropdownOption) =>{
+const dropdownErrorHandler = (dropdownOption) => {
     const optionContainer = document.querySelector('.option-container')
     var existingError = document.querySelector('.option-error-box')
 
-    if(dropdownOption === 'Select an option'){
-        if(!existingError){
+    if (dropdownOption === 'Select an option') {
+        if (!existingError) {
             var errorDiv = document.createElement("div")
             errorDiv.className = "option-error-box"
 
             // Set the error message as the content of the div
             errorDiv.textContent = "You need to select atleast one option."
-        
+
             // Append the div to the body or any other container element
             optionContainer.appendChild(errorDiv)
-         }
-         return true
+        }
+        return true
     }
-        
-    else{
+
+    else {
         var existingError = document.querySelector('.option-error-box')
-  
+
         if (existingError) {
             // Remove the existing error message if it exists
             existingError.remove()
@@ -151,5 +148,3 @@ function getActivityLevelIndex(activityLevel) {
     const activityLevels = ["Sedentary: little or no exercise", "Exercise 1-3 times/week", "Exercise 4-5 times/week", "Daily exercise", "Intense exercise 6-7 times/week", "Very intense exercise daily, or physical job"]
     return activityLevels.indexOf(activityLevel)
 }
-
-

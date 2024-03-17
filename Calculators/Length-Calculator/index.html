@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Length Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="lengthConverter">
+            <h2>Length Calculator</h2>
+            <label for="lengthInput">Enter length</label>
+            <input type="number" id="lengthInput" name="lengthInput" step="any" />
+
+            <label for="unitFrom">From</label>
+            <select id="unitFrom">
+                <option value="km" selected>Kilometers</option>
+                <option value="hm">Hectometers</option>
+                <option value="dam">Decameters</option>
+                <option value="m">Meters</option>
+                <option value="dm">Decimeters</option>
+                <option value="cm">Centimeters</option>
+                <option value="mm">Millimeters</option>
+            </select>
+
+            <label for="unitTo">To</label>
+            <select id="unitTo">
+                <option value="km">Kilometers</option>
+                <option value="hm">Hectometers</option>
+                <option value="dam">Decameters</option>
+                <option value="m" selected>Meters</option>
+                <option value="dm">Decimeters</option>
+                <option value="cm">Centimeters</option>
+                <option value="mm">Millimeters</option>
+            </select>
+
+            <button onclick="convertLength()">Convert</button>
+            <p id="lengthResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

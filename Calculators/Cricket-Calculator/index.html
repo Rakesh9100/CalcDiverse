@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Cricket Calculator</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Cricket Calculator</h1>
@@ -54,15 +55,19 @@
                 <button onclick="calculateProjectedScore()">Calculate</button>
                 <p id="projected-score-result"></p>
             </div>
-          
+
             <div class="calculator target">
                 <h3>Target</h3>
                 <label for="opposition-score">Opposition Score:</label>
                 <input type="number" id="opposition-score" name="opposition-score" min="0" required>
                 <button onclick="calculateTarget()">Calculate</button>
                 <p id="target-result"></p>
-            </div>         
+            </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

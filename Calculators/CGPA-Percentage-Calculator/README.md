@@ -1,4 +1,4 @@
-# <p align="center">CGPA ⟷ Percentage Calculator</p>
+# <p align="center">CGPA Percentage Calculator</p>
 
 ## Description :-
 
@@ -7,9 +7,11 @@ Quickly convert your CGPA to percentage and vice versa with the CGPA ⟷ Percent
 Start typing in any field and the value will be calculated automatically.
 
 ## Tech Stacks :-
+
 - HTML
 - CSS
 - JavaScript
 
-## Screenshot :-
+## Screenshots :-
+
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/e33cfdae-2c31-4ff0-9964-82dffa5495e3)

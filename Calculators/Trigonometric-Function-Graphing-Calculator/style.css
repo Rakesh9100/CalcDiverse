@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
-  }
-  
-  .canvas {
+}
+
+.canvas {
     width: 100%;
     position: fixed;
     top: 0;
@@ -10,9 +10,9 @@
     right: 0;
     bottom: 80px;
     background: lightblue;
-  }
-  
-  .controls {
+}
+
+.controls {
     position: fixed;
     z-index: 2;
     bottom: 0;
@@ -23,36 +23,35 @@
     height: 80px;
     display: flex;
     align-items: center;
-  }
-  
-  .form {
+}
+
+.form {
     display: flex;
     align-items: center;
     width: 100%;
-  }
-  
-  .form__label {
+}
+
+.form__label {
     flex: 0 0 40px;
-  }
-  
-  .form__input,
-  .form__submit {
+}
+
+.form__input,
+.form__submit {
     display: inline-block;
     border: 0;
     padding: 10px 15px;
     background-color: transparent;
     outline: none;
-  }
-  
-  .form__input {
+}
+
+.form__input {
     border-radius: 50px 0 0 50px;
     background: rgba(0, 0, 0, 0.1);
     flex: 1;
-  }
-  
-  .form__submit {
+}
+
+.form__submit {
     border-radius: 0 50px 50px 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     flex: 0 0 100px;
-  }
-  
+}

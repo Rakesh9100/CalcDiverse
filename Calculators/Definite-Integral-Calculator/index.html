@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Definite Integral Calculator</title>
+</head>
+
+<body>
+    <header>Definite Integral Calculator</header>
+    <main>
+        <div class="container">
+            <section class="container">
+
+                <div class="container" style="background-color: rgba(194, 232, 201, 0.849);">
+                    <label>
+                        <span class="label-text">Enter integrand f(x) </span>
+                        <input class="input-cb" type="text"></label>
+
+                    <fieldset>
+                        <label><span class="label-text">Range from </span><input class="input-range-from"
+                                type="number"></label>
+                        <label><span class="label-text">To </span><input class="input-range-to" type="number"></label>
+                    </fieldset>
+                    <br>
+                    <label><span class="label-text">Enter Step</span><input class="input-step" type="number"
+                            value="0.01" step="0.1" min="0"></label>
+                    <p class="error-message is-hidden"></p>
+                    <br>
+                    <div class="btn-div"> <button class="btn">
+                            CALCULATE
+                        </button></div>
+                    <br>
+                    <div class="results is-hidden">
+                        <p class="result">RESULTS</p>
+                        <p class="result-rect"></p>
+                        <p class="result-trap"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chart-container">
+                <p class="chart-info is-hidden">The chart is only available for real number results</p>
+                <canvas id="myChart"></canvas>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.0.2/math.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

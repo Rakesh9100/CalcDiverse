@@ -9,7 +9,6 @@ const sentences = [
     'The quick onyx goblin jumps over the lazy dwarf',
 ];
 
-
 function getRandomSentence() {
     let randomIndex = Math.floor(Math.random() * sentences.length);
     document.getElementById('text-to-type').textContent = sentences[randomIndex];

@@ -23,9 +23,9 @@ function calculate() {
         // Display the result and calculation on the page
         document.getElementById("result").innerText = `The final answer is: ${finalResult.toFixed(0)}! Thala for a Reason!`;
         document.getElementById("calculation").innerText = `Calculations:\n${calculationText}`;
-    }else if (/^0\d{5}$/.test(userInput)) {
-         // Display an alert for an input starting with 0
-         alert("Please enter a six-digit number where the first digit is non-zero.");
+    } else if (/^0\d{5}$/.test(userInput)) {
+        // Display an alert for an input starting with 0
+        alert("Please enter a six-digit number where the first digit is non-zero.");
     } else {
         // Display an error message
         document.getElementById("result").innerText = "Invalid input, Thala. Please enter a 6-digit number where first digit is non-zero.";

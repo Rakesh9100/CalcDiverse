@@ -10,7 +10,6 @@ function validate() {
     b = document.forms["input_form"]["bterm"].value;
     c = document.forms["input_form"]["cterm"].value;
 
-
     // validate a, b and c
     if (a == 0) {
         outputText = "<em>a</em> cannot equal zero!";

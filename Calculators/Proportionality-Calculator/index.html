@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>Proportionality Calculator</title>
+</head>
+
+<body>
+    <div class="calculator-container" style="font-family: 'Montserrat', sans-serif;">
+
+        <form id="calculator-form">
+            <h1>Proportionality Calculator</h1>
+            <p>Fill in three of the fields below and press Enter to reveal the value of the fourth field.</p>
+
+            <table align="center">
+                <tr>
+                    <td><label for="f1">A</label><input type="text" id="f1" placeholder="Enter value"></td>
+                    <td class="equal-sign" rowspan="2">=</td>
+                    <td><label for="f3">C</label><input type="text" id="f3" placeholder="Enter value"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="f2">B</label><input type="text" id="f2" placeholder="Enter value"></td>
+
+                    <td><label for="f4">D</label><input type="text" id="f4" placeholder="Answer"></td>
+                </tr>
+
+            </table>
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="ratioOutput"></div>
+        <div id="solutionOutput"></div>
+        <button onclick="resetForm(document.getElementById('ratioForm'))">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -26,5 +26,3 @@ function calculateBill() {
         alert('Please enter non-negative values for units and rate.');
     }
 }
-
-

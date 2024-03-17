@@ -1,4 +1,4 @@
-# <p align="center">Bouncy Number Checker</p>
+# <p align="center">Bouncy Number Calculator</p>
 
 ## Description :-
 
@@ -24,4 +24,3 @@ For example, 101, 321, 43682 are bouncy numbers because they don't follow a spec
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/125949765/3e328c30-30b5-41d3-8ac0-c4f9a28f2038)
 
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/125949765/e8149259-4a5c-43db-8363-de4aafb5c0b5)
-

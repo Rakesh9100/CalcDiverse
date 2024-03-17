@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <title>2D Shapes Calculator</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="waviy">
+            <span style="--i:1">2</span>
+            <span style="--i:2">D</span>
+            <span style="--i:11">&nbsp;</span>
+            <span style="--i:3">S</span>
+            <span style="--i:4">H</span>
+            <span style="--i:5">A</span>
+            <span style="--i:6">P</span>
+            <span style="--i:7">E</span>
+            <span style="--i:8">S</span>
+            <span style="--i:9">&nbsp;</span>
+            <span style="--i:10">C</span>
+            <span style="--i:11">A</span>
+            <span style="--i:12">L</span>
+            <span style="--i:13">C</span>
+            <span style="--i:14">U</span>
+            <span style="--i:15">L</span>
+            <span style="--i:16">A</span>
+            <span style="--i:17">T</span>
+            <span style="--i:18">O</span>
+            <span style="--i:19">R</span>
+        </div>
+        <br><br>
+        <div class="row">
+            <select id="shape" name="shape" onchange="showDimensions()" required>
+                <option value="" disabled selected hidden>Select a shape</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="square">Square</option>
+                <option value="circle">Circle</option>
+                <option value="triangle">Triangle</option>
+                <option value="parallelogram">Parallelogram</option>
+                <option value="rhombus">Rhombus</option>
+                <option value="trapezoid">Trapezoid</option>
+                <option value="hexagon">Hexagon</option>
+                <option value="nsides">N-Sided Polygon</option>
+            </select>
+        </div>
+        <br>
+        <div class="row" id="nsides-row" style="display: none;">
+            <label for="nofsides">No. of sides of polygon:</label>
+            <input type="number" id="nofsides" name="nofsides">
+        </div><br>
+        <div class="row" id="length-row" style="display: none;">
+            <label for="length">Enter Length:</label>
+            <input type="number" id="length" name="length">
+        </div><br>
+        <div class="row" id="width-row" style="display: none;">
+            <label for="width">Enter Width:</label>
+            <input type="number" id="width" name="width">
+        </div><br>
+        <div class="row" id="radius-row" style="display: none;">
+            <label for="radius">Enter Radius:</label>
+            <input type="number" id="radius" name="radius">
+        </div><br>
+        <div class="row" id="diagonal1-row" style="display: none;">
+            <label for="diagonal1">Enter Diagonal 1:</label>
+            <input type="number" id="diagonal1" name="diagonal1">
+        </div>
+        <br>
+        <div class="row" id="diagonal2-row" style="display: none;">
+            <label for="diagonal2">Enter Diagonal 2:</label>
+            <input type="number" id="diagonal2" name="diagonal2">
+        </div>
+        <div class="rule"></div>
+        <div class="form-footer">
+            <button class="button" onclick="calculate(event)">Calculate</button>
+        </div>
+        <div id="result-container">
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

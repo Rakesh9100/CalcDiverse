@@ -1,32 +1,33 @@
-# Cricket Calculator
+# <p align="center">Cricket Calculator</p>
 
-## Overview
+## Description :-
+
 The Cricket Calculator is a website.
 
-## Features
+## Tech Stacks :-
+
+- HTML
+- CSS
+- JavaScript
+
+## Features :-
+
 - Batsman Strike Rate Calculator
 - Bowler Economy Rate Calculator
 - Required Run Rate Calculator
 - Projected Score Calculator
 - Target Calculator
 
-## How to Use
+## How to Use :-
+
 1. Open the `index.html` file in your web browser.
 2. Input the required values in the respective field.
 3. Click the "Calculate" button to get the result.
 
-## Project Structure
-- `index.html`: The main HTML file containing the basic structure.
-- `style.css`: Cascading Style Sheets for styling.
-- `script.js`: JavaScript file containing the log.
+## Screenshots:-
 
-## Styling
-The project has been styled using a light yellow.
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/453a8094-db0d-4988-99b0-c291674a483b)
 
-## Contributing
-Feel free to contribute to the project.
+![image2](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/01120cda-6963-4793-b93b-783f5dc17cb1)
 
-## Screenshots
-![IMG_20240124_153524](https://github.com/GarvVirmani/CalcDiverse/assets/131982472/df7244eb-8315-4413-87b0-24be443e006b)
-![IMG_20240124_153539](https://github.com/GarvVirmani/CalcDiverse/assets/131982472/9856b445-f025-478d-98d8-43a48a13c0f5)
-![IMG_20240124_153558](https://github.com/GarvVirmani/CalcDiverse/assets/131982472/47e946fc-07dc-458c-baf4-cb1e09ede391)
+![image3](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/2d167116-24fe-4513-bfb5-f956a51257ac)

@@ -6,6 +6,7 @@ body {
 	margin: 0 auto;
 	font-family: 'Raleway', sans-serif;
 }
+
 button {
 	background: #cde7f3;
 	border: 0;
@@ -16,12 +17,15 @@ button {
 	width: 120px;
 	border-radius: 5px;
 }
+
 button:active {
-  background: #2C3E50;
+	background: #2C3E50;
 }
+
 h1 {
 	font-size: 70px;
 }
+
 input {
 	border: 0;
 	border-radius: 5px;
@@ -29,20 +33,23 @@ input {
 	margin: 10px;
 	padding: 10px;
 }
+
 .calc {
 	background: #1d0a4c;
 	color: #c474a8;
-    border: #011c28;
-    text-shadow: 0 7px 0 #011c28;
+	border: #011c28;
+	text-shadow: 0 7px 0 #011c28;
 	padding: 10px;
 	position: relative;
 }
-#results{
+
+#results {
 	color: #C5EBFE;
 	font-size: 24px;
 	margin: 10px;
 	line-height: 25px;
 }
+
 /*#results:hover{
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -55,6 +62,7 @@ input {
 	color: #C5EBFE;
 	margin: 10px;
 }
-.vect > p {
+
+.vect>p {
 	font-weight: bold;
 }

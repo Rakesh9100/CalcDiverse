@@ -11,6 +11,7 @@ function validateName(inputId) {
 
 const ham = document.querySelector(".hamburger");
 const navMe = document.querySelector(".nav-menu");
+
 // Hamburger menu 
 ham.addEventListener("click", mobileMenu);
 function mobileMenu() {

@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Unit Converter</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Unit Calculator</title>
 </head>
+
 <body>
-<div id="main">
-    <div class="left"><h1>CSS Unit Converter</h1>
-       <div id="image">
+    <div id="main">
+        <div class="left">
+            <h1>CSS Unit Converter</h1>
+            <div id="image">
 
-        <img src="
-        https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img src="
+        https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+            </div>
+        </div>
+        <div class="right">
+
+            <label for="value">Enter Value:</label>
+            <input type="number" id="value" placeholder="Enter the value to convert" oninput="convert()">
+
+            <label for="sourceUnit">Source Unit:</label>
+            <select id="sourceUnit" onchange="convert()">
+                <option value="px">px</option>
+                <option value="rem">rem</option>
+                <option value="em">em</option>
+                <option value="vw">vw</option>
+                <option value="vh">vh</option>
+            </select>
+
+            <label for="targetUnit">Target Unit:</label>
+            <select id="targetUnit" onchange="convert()">
+                <option value="px">px</option>
+                <option value="rem">rem</option>
+                <option value="em">em</option>
+                <option value="vw">vw</option>
+                <option value="vh">vh</option>
+            </select>
+
+            <h3>Result:</h3>
+            <div id="result"></div>
+        </div>
     </div>
-</div>
-<div class="right">
-  
-  
-  <label for="value">Enter Value:</label>
-  <input type="number" id="value" placeholder="Enter the value to convert" oninput="convert()">
-
-  <label for="sourceUnit">Source Unit:</label>
-  <select id="sourceUnit" onchange="convert()">
-    <option value="px">px</option>
-    <option value="rem">rem</option>
-    <option value="em">em</option>
-    <option value="vw">vw</option>
-    <option value="vh">vh</option>
-  </select>
-
-  <label for="targetUnit">Target Unit:</label>
-  <select id="targetUnit" onchange="convert()">
-    <option value="px">px</option>
-    <option value="rem">rem</option>
-    <option value="em">em</option>
-    <option value="vw">vw</option>
-    <option value="vh">vh</option>
-  </select>
-
-  <h3>Result:</h3>
-  <div id="result"></div>
-</div>
-</div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
