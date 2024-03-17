@@ -1,4 +1,4 @@
-# <p align="center">Ellipse and Hyperbola Calculator</p>
+# <p align="center">Ellipse And Hyperbola Calculator</p>
 
 ## Description :-
 
