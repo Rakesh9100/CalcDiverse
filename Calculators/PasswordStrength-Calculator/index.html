@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: 20px;">Password Strength Calculator</h2>
+    <input type="password" id="password" placeholder="Enter your password">
+    <div id="strength"></div>
+    <div class="bar-container">
+      <div class="bar weak"></div>
+      <div class="bar medium"></div>
+      <div class="bar strong"></div>
+      <div class="bar very-strong"></div>
+    </div>
+    <div class="feedback" id="feedback">Password feedback will appear here</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
