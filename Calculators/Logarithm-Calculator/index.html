@@ -17,8 +17,8 @@
         <hr>
         <div class="content">
             <p>Calculate Logarithm of a number to any base:</p>
-            <div id="base1"><input type="number" id="base" placeholder="Enter base"></div>
-            <div id="number1"><input type="number" id="number" placeholder="Enter number"></div>
+            <div id="base1"><input type="number" id="base" min="0" oninput="validity.valid||(value='');" step="any" placeholder="Enter base"></div>
+            <div id="number1"><input type="number" id="number" min="1" oninput="validity.valid||(value='');" placeholder="Enter number"></div>
             <button onclick="calculateLog()" id="button">Calculate Log</button>
             <h3>Result:</h3>
             <p id="result"></p>
