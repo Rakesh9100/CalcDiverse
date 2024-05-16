@@ -187,15 +187,3 @@ else {
     console.log("Your Browser does not support speech Recognition");
     info.textContent = "Your Browser does not support Speech Recognition";
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('lightMode').addEventListener('click', function() {
-        document.body.classList.add('light-theme');
-        document.body.classList.remove('dark-theme');
-    });
-
-    document.getElementById('darkMode').addEventListener('click', function() {
-        document.body.classList.add('dark-theme');
-        document.body.classList.remove('light-theme');
-    });
-});
