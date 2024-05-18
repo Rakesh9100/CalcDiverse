@@ -2,7 +2,7 @@
 **This calculator can evaluate the values of probability mass function and probability distribution function for a random binomial variable for the input values given by user.**
 
 # Tech-Stacks
-**HTML, CSS AND JavaScript**
+**HTML, CSS and JavaScript**
 
 # Screenshot of The Website
 
