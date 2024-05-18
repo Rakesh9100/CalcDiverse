@@ -1,1 +1,1 @@
-
+I have made a calculator to find out the value of probability mass function and probability distribution function of a random binomial variable for input values given by user. The codes are present in index.html, style.css and script.js files. A screenshot of the website, calc.png is also present in this folder. The techstack used is HTML, CSS and JS.
