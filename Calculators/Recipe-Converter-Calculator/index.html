@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Converter Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Converter</h1>
+        <img src="recipe.jpeg" alt="Recipe Image" class="header-image">
+        <form id="recipe-form">
+            <div class="form-group">
+                <label for="ingredient">Ingredient</label>
+                <input type="text" id="ingredient" placeholder="e.g., Sugar" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Original Quantity</label>
+                <input type="number" id="quantity" placeholder="e.g., 100" required>
+                <select id="unit">
+                    <option value="grams">grams</option>
+                    <option value="cups">cups</option>
+                    <option value="ml">ml</option>
+                    <option value="oz">oz</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="original-serving">Original Serving Size</label>
+                <input type="number" id="original-serving" placeholder="e.g., 4" required>
+            </div>
+            <div class="form-group">
+                <label for="desired-serving">Desired Serving Size</label>
+                <input type="number" id="desired-serving" placeholder="e.g., 6" required>
+            </div>
+            <button type="button" onclick="convertRecipe()">Convert Recipe</button>
+        </form>
+        <div id="results" class="hidden">
+            <img src="converted_recipe.jpg" alt="Converted Recipe Image" class="results-image">
+            <h2>Converted Recipe</h2>
+            <p id="converted-ingredient"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
