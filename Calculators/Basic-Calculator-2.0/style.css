@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+}
+
+body.light {
+    background: #f8f8f8;
+}
+
+.container {
+    position: relative;
+    min-width: 300px;
+    min-height: 400px;
+    background: #333;
+    padding: 40px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        10px 10px 75px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.light .container {
+    background: #fafafa;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.15),
+        10px 10px 75px rgba(0, 0, 0, 0.15), inset -5px -5px 15px rgba(0, 0, 0, 0.15),
+        inset 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.calculator .value {
+    position: relative;
+    grid-column: span 6;
+    height: 100px;
+    left: 10px;
+    width: calc(100% - 20px);
+    border: none;
+    outline: none;
+    background: #a7af7c;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
+    text-align: right;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.calculator span {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+        inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
+        10px 20px 25px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+body.light .calculator span::before {
+    background: linear-gradient(90deg, #e6e6e6, #efefef);
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25),
+        10px 5px 10px rgba(0, 0, 0, 0.15);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff9;
+}
+
+.calculator span:active {
+    filter: brightness(1.5);
+}
+
+body.light .calculator span:active {
+    filter: brightness(0.9);
+}
+
+.calculator span i {
+    position: relative;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+body.light .calculator span i {
+    color: #fff;
+}
+
+body.light .calculator span.clear i,
+body.light .calculator span.result-give i {
+    color: #fff;
+}
+
+body.light .calculator .clear,
+.calculator .clear {
+    grid-column: span 2;
+    width: 180px;
+    background: #f00;
+}
+
+body.light .calculator .clear-one,
+.calculator .clear-one {
+    background: #2196f3;
+}
+
+body.light .calculator .clear::before,
+.calculator .clear::before {
+    background: linear-gradient(90deg, #d20030, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+
+.calculator .equal {
+    grid-row: span 2;
+    height: 180px;
+}
+
+body.light .calculator .result-give,
+.calculator .result-give {
+    background: #2196f3;
+}
+
+body.light .calculator .result-give::before,
+.calculator .result-give::before {
+    background: linear-gradient(90deg, #1479c9, #ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+
+.btn {
+    position: absolute;
+    border: rgba(0, 0, 0, 0.1) solid;
+    border-radius: 10px;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #333;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25), 5px 5px 30px rgba(0, 0, 0, 0.25),
+        inset -2px -2px -5px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+body.light .btn {
+    background: #000;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), 5px 5px 30px rgba(0, 0, 0, 0.05),
+        inset -2px -2px -5px rgba(0, 0, 0, 0.1),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.btn strong {
+    display: none;
+    color: yellow;
+}
+
+.btn strong:nth-child(1) {
+    display: block;
+}
+
+body.light .btn strong:nth-child(1) {
+    display: none;
+}
+
+body.light .btn strong:nth-child(2) {
+    display: block;
+}
