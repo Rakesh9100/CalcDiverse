@@ -13,4 +13,4 @@ This is a loan repayment date calculator which provides the amount of money you 
 
 ## Screenshots :-
 
-![image]()
+![image](https://github.com/manishh12/CalcDiverse/blob/main/Calculators/Loan_Calculator/image_calc.jpeg)
