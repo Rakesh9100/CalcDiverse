@@ -11,6 +11,6 @@ Calculates Maximum, minimum, mean, median, mode, standard deviation, etc. for a 
 - JavaScript
 
 ## Screenshots :-
-![Screenshot 2024-05-23 211526](https://github.com/abhay-sen/CalcDiverse/assets/144714595/b41578a3-8f72-4571-b8c8-e76e44e08e81)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/144714595/1f1ff4ef-598f-4155-b10b-371e187e0cdc)
 
 
