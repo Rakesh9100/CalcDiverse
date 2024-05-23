@@ -154,3 +154,23 @@ function calculateTarget() {
         oppositionScoreInput.value = "";
     }
 }
+
+
+function calculateRunRate() {
+    var runsScored = parseInt(document.getElementById("runsScored").value);
+    var oversPlayed = parseInt(document.getElementById("oversPlayed").value);
+    var runsConceded = parseInt(document.getElementById("runsConceded").value);
+    var oversBowled = parseInt(document.getElementById("oversBowled").value);
+  
+    if (!isNaN(runsScored) && !isNaN(oversPlayed) && !isNaN(runsConceded) &&!isNaN(oversBowled) ) {
+        var netRunRate = ((runsScored / oversPlayed) - (runsConceded / oversBowled)).toFixed(2);
+
+        document.getElementById("net-runrate-result").innerHTML = "Net Run Rate: " + netRunRate;
+    } else {
+        alert("Please enter all required details.");
+        // Clear input field if invalid input is detected
+        oppositionScoreInput.value = "";
+    }
+    
+}
+

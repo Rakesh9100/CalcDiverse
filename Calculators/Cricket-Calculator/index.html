@@ -64,7 +64,24 @@
                 <p id="target-result"></p>
             </div>
         </div>
+
+        <div class="calculator net-runrate">
+            <h3>Net Run Rate Calculator</h3>
+            <label for="runs-scored">Run Scored:</label>
+            <input type="number" id="runsScored" name="runs-scored" min="0" required>
+            <label for="overs-played">Overs Played:</label>
+            <input type="number" id="oversPlayed"  name="overs-played" min="0" required>
+            <label for="runs-conceded">Run Conceded:</label>
+            <input type="number" id="runsConceded" name="runs-conceded" min="0" required>
+            <label for="overs-bowled">Overs Bowled:</label>
+            <input type="number" id="oversBowled"  name="overs-bowled" min="0" required>
+            <button onclick="calculateRunRate()">Calculate</button>
+            <p id="net-runrate-result"></p>
+        </div>
+      
+        
     </div>
+
 
     <script src="script.js"></script>
 
