@@ -18,7 +18,7 @@ A simple web-based Population Density Calculator that allows users to calculate 
 
 ## Screenshots :-
 
-![image]_("C:\Users\ishit\OneDrive\Pictures\Screenshots\Screenshot 2024-05-23 114624.png")
+![image](https://github.com/Ishitamukherjee2004/CalcDiverse/assets/138589633/a9e0b7d8-eadf-4ddb-8796-2882bd3f2ac4))
 
 ![image](https://github.com/Ishitamukherjee2004/CalcDiverse/assets/138589633/a9e0b7d8-eadf-4ddb-8796-2882bd3f2ac4)
 
