@@ -1723,3 +1723,57 @@ section {
         margin-top: 0.5em;
     }
 }
+/* ------------------------------------------Testimonial Starts -------------------------------------------------------*/
+.tcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.tcontainer .tbox {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition: all 0.5s;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 32px rgba(245, 245, 245, 0.999); /* Box shadow for glassy effect */
+}
+
+.tcontainer .tbox:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.915); /* Adjusted box shadow on hover */
+}
+
+.tcontainer .tbox .tcontent {
+    text-align: center;
+    padding: 20px;
+}
+
+.tcontainer .tbox .tcontent h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.tcontainer .tbox .tcontent h3 {
+    font-size: 16px;
+    color: #eee;
+    margin-top: 10px;
+    font-style:italic ;
+    
+}
+
+.tcontainer .tbox .tcontent  {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* ------------------------------------------Testimonial Ends -------------------------------------------------------*/
