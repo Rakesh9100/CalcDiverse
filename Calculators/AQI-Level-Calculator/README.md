@@ -1,4 +1,4 @@
-# <p align="center">AQI Level Calculator</p>
+# <p align="center">Air Quality Index Calculator</p>
 
 ## Description :-
 
@@ -11,10 +11,3 @@ Calculates the level of the air quality using AQI index.
 - JavaScript
 
 ## Screenshots :-
-
-![Screenshot of the WebPage](assets/Screenshot.png)
-
-In the main website
-
-
-![Screenshot of the Main Website](assets/Screenshot2.png)
