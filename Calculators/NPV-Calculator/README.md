@@ -21,3 +21,7 @@ Where:
 - \( r \) is the discount rate
 - \( C_0 \) is the initial investment
 - \( t \) is the time period (year)
+
+## Screenshots :-
+
+![image](https://github.com/Manav173/CalcDiverse/assets/73993775/640d6aa4-b68b-4057-865c-bee17e8c7e1b)
