@@ -9,6 +9,17 @@ function validateName(inputId) {
     }
 }
 
+const message=document.querySelector("#message");
+const btn=document.querySelector("#button");
+message.addEventListener("input",validate);
+function validate(){
+    if (message.value===""){
+        btn.setAttribute("disabled","disabled");
+    } else {
+      btn.removeAttribute("disabled");  
+    }
+}
+
 const ham = document.querySelector(".hamburger");
 const navMe = document.querySelector(".nav-menu");
 

@@ -103,6 +103,13 @@ button:hover {
     background: #ff6984;
 }
 
+button:disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    transition: none;
+
+}
+
 /*----------------------------------------------- Updated Footer Styling ---------------------------------------*/
 .footer-basic {
     padding: 40px 0;
