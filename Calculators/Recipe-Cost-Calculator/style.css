@@ -1,0 +1,131 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #223f6b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #6772b0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #271954;
+    margin-bottom: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #d5cece;
+    font-size: larger;
+}
+
+/* Input and select styling */
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d3969;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #44316e;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Delete button styling */
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 2px 5px;
+    font-size: 0.8rem;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Total cost styling */
+#total-cost {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 20px;
+}
+
+/* Heading hover effect */
+h1:hover,
+h2:hover {
+    text-shadow: 0 0 10px rgba(190, 172, 232, 0.8);
+}
+
+/* Ingredient name hover effect */
+ul li:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
