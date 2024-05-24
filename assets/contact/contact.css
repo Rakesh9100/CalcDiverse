@@ -69,7 +69,8 @@ label {
     text-shadow: 2px 2px 10px var(--light);
 }
 
-input {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border-radius: 6px;
@@ -80,13 +81,7 @@ input {
 }
 
 textarea {
-    width: 100%;
-    padding: 10px;    
-    border-radius: 6px;
-    margin-top: 8px;
-    margin-bottom: 25px;
     border: 1px solid #ccc;
-    transition: all linear .2s;
     resize: vertical; 
 }
 
