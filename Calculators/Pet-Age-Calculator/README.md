@@ -1,8 +1,8 @@
-# <p align="center">Statistics Calculator</p>
+# <p align="center">Pet Age Calculator</p>
 
 ## Description :-
 
-Calculates Maximum, minimum, mean, median, mode, standard deviation, etc. for a list of numbers.
+Calculates a pet's age in human years.
 
 ## Tech Stacks :-
 
@@ -11,6 +11,5 @@ Calculates Maximum, minimum, mean, median, mode, standard deviation, etc. for a 
 - JavaScript
 
 ## Screenshots :-
+
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/144714595/1f1ff4ef-598f-4155-b10b-371e187e0cdc)
-
-
