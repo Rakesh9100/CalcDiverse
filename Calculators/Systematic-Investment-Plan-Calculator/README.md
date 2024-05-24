@@ -12,4 +12,4 @@ A SIP calculator is a simple tool that allows individuals to get an idea of the 
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/9837769a-63dc-4815-922d-2eb5bce8a289)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/3bc9dfaa-3b3d-44a2-ac8e-58515c6863af)
