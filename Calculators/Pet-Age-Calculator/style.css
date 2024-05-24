@@ -8,6 +8,7 @@ body {
     height: 100vh;
     background: linear-gradient(to right, #393E46, #222831);
     color: white;
+    animation: gradientAnimation 10s linear infinite;
 }
 
 #container {
@@ -112,8 +113,4 @@ button:hover {
     100% {
         background-position: 0% 50%;
     }
-}
-
-body {
-    animation: gradientAnimation 10s linear infinite;
 }
