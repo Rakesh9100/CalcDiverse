@@ -12,4 +12,4 @@ Unit Calculator aims to empower users with the ability to convert various units 
 
 ## Screenshots :-
 
-![image](https://github.com/m3kvt/CalcDiverse/assets/98379619/2787c139-f376-4e3a-808f-9f59c905c63c)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/9eee5840-cf91-4d69-8e2b-0276ce622bf3)
