@@ -2,7 +2,7 @@
 
 ## Description :-
 
-This "Days Until Deadline Calculator" is a simple tool which allows users to select a date and calculates the number of days remaining until that date.
+This calculator is a simple tool that allows users to select a date and calculate the number of days remaining until that date.
 
 ## Tech Stacks :-
 
@@ -13,9 +13,12 @@ This "Days Until Deadline Calculator" is a simple tool which allows users to sel
 ## Screenshots :-
 
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/163159351/662042f9-431e-4070-b78c-b9c8846de5cb)
-After Clicking the Try Now,
+
+### After Clicking the Try Now,
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/163159351/244b6177-71e8-4594-8097-7ece1b9f875f)
-To check how the date is selected,
+
+### To check how the date is selected,
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/163159351/63ed3da9-e0e7-46c3-b77b-7fab7340363a)
-Sample Output,
+
+### Sample Output,
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/163159351/8b07ad6e-8db4-4e22-8989-2bc107c16691)
