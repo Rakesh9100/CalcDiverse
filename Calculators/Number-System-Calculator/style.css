@@ -51,9 +51,9 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 75px; 
-    margin: 5px; 
-    font-size: 12px; 
+    width: 75px; /* same width of both buttons*/
+    margin: 5px; /* Adds space between buttons */
+    font-size: 12px; /* same font size */
 }
 
 button:hover {

@@ -16,6 +16,7 @@
         <div class="convert">
             <label for="fromBase">From Base:</label>
             <select id="fromBase">
+                  <!-- Adding option "Select an option" which initial value of dropdown box -->
                 <option value="" selected disabled>Select an option</option>
                 <option value="2">Binary</option>
                 <option value="8">Octal</option>
@@ -25,7 +26,8 @@
 
             <label for="toBase">To Base:</label>
             <select id="toBase">
-                <option value="" selected disabled>Select an option</option>
+                <!-- Adding option "Select an option" which initial value of dropdown box -->
+                <option value="" selected disabled>Select an option</option> 
                 <option value="2">Binary</option>
                 <option value="8">Octal</option>
                 <option value="10">Decimal</option>
@@ -34,7 +36,7 @@
         </div>
 
         <button onclick="convert()">Convert</button>
-        <button onclick="clear_fun()">Clear</button> // clear function
+        <button onclick="clear_fun()">Clear</button> 
 
         <div id="result"></div>
     </div>

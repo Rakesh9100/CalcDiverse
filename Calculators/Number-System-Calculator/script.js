@@ -11,8 +11,8 @@ function convert() {
 
 // claer function 
 function clear_fun() {
-    document.getElementById('number').value = '';
-    document.getElementById('fromBase').value = '';
+    document.getElementById('number').value = ''; // clearing input field value
+    document.getElementById('fromBase').value = ''; // setting option "Select an option" in as initial value 
     document.getElementById('toBase').value = '';
-    document.getElementById('result').innerHTML = '';
+    document.getElementById('result').innerHTML = ''; // Clearing the result
 }
