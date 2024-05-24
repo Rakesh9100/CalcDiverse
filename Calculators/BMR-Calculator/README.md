@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculates the Basal Metabolic Rate of an individual.
+Calculates the Basal Metabolic Rate of a person using height, weight & age.
 
 ## Tech Stacks :-
 
@@ -12,5 +12,4 @@ Calculates the Basal Metabolic Rate of an individual.
 
 ## Screenshots :-
 
-![Screenshot 2024-05-10 233027](https://github.com/Nayanika1402/CalcDiverse/assets/132455412/cc5c1a67-f6b5-4d99-bc9c-9ca2dd138f2f)
-
+![Screenshot 2024-05-10 233027](https://github.com/Rakesh9100/CalcDiverse/assets/132455412/92808faf-d5b6-4fb3-83c0-b35d4623e893)
