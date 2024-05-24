@@ -76,18 +76,16 @@ input {
     margin-top: 8px;
     margin-bottom: 25px;
     border: 0;
-    /* transition: all linear .2s; */
+    transition: all linear .2s;
 }
 
 textarea {
-    /* max-width: 550px; */
     width: 100%;
     padding: 10px;    
     border-radius: 6px;
     margin-top: 8px;
     margin-bottom: 25px;
     border: 1px solid #ccc;
-    /* box-sizing: border-box; Include padding and border in the width calculation */
     transition: all linear .2s;
     resize: vertical; 
 }
