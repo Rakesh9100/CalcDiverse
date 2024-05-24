@@ -17,21 +17,14 @@
             <label for="calculator">Select Calculator: </label>
             <select id="calculator" name="calculator">
                 <option value="None">--Select calculator type--</option>
-                <option value="3D-Shapes-Volume-Calculator">3D Shape Volume Calculator</option>
-                <option value="Surface-Area-Calculator">3D Shape Surface Area Calculator</option>
+                <option value="3D-Shapes-Volume-Calculator">Volume Calculator</option>
+                <option value="Surface-Area-Calculator">Surface Area Calculator</option>
             </select>
         </div>
         <button class="submit-button" onclick="navigateToCalculator()">Submit</button>
     </header>
 
-    <script>
-        function navigateToCalculator() {
-            const select = document.getElementById('calculator');
-            if (select.value !== "None") {
-                window.location.href = `./${select.value}/index.html`;
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
