@@ -66,3 +66,15 @@ input {
 .vect>p {
 	font-weight: bold;
 }
+/*Added Css Property*/
+.operation{
+    margin: 10px;
+}
+.operation label{
+  color: #C5EBFE;
+  font-size: 20px;
+}
+.operation select{
+    color: #1d0a4c;
+    font-size: 20px;
+}
