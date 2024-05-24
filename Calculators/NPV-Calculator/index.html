@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NPV Calculator</title>
+</head>
+
+<body>
+    <div class="calculator-container">
+        <h1>Net Present Value (NPV) Calculator</h1>
+        <div class="input-container">
+            <label for="initialInvestment">Initial Investment (INR)</label>
+            <input id="initialInvestment" type="number" />
+        </div>
+        <div class="input-container">
+            <label for="discountRate">Discount Rate (%)</label>
+            <input id="discountRate" type="number" />
+        </div>
+        <div class="input-container">
+            <label>Cash Flows</label>
+            <div id="cashFlows"></div>
+            <button type="button" onclick="addCashFlow()">+ Add Year</button>
+        </div>
+        <button type="button" onclick="calculateNPV()">Calculate</button>
+        <div class="result-container">
+            <div id="result">NPV: <span id="npvResult" class="red">Rs. 0.00</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
