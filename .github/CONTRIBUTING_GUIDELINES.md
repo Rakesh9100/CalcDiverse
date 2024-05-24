@@ -44,7 +44,9 @@ git push -u origin <your_branch_name>
 10. Create a Pull Request.
 11. Congratulations! 🎉 you've made your contribution.
 
-### Alternatively, contribute using GitHub Desktop
+![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
+
+<h3>💫 Alternatively, contribute using GitHub Desktop</h3>
 
 1. **Open GitHub Desktop:**
    Launch GitHub Desktop and log in to your GitHub account if you haven't already.
