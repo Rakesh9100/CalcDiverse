@@ -6,28 +6,21 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
-}
-body {
-    background-image: url('back2.webp'); /* Replace 'background.jpg' with the path to your background image */
+    background-image: url('assets/background.jpg'); /* Replace 'background.jpg' with the path to your background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
 }
+
 
 .header {
     color: white;
     text-shadow: 0.5px 0.5px 1px #302f2f;
     animation: fadeInScale 2s ease-in-out;
 }
+
 @keyframes fadeInScale {
     0% {
         opacity: 0;
@@ -38,6 +31,7 @@ body {
         transform: scale(1);
     }
 }
+
 .selectCalculator {
     text-align: center;
     margin: 20px 0;
@@ -57,6 +51,7 @@ body {
 .submit-button:hover {
     background-color: #45a049;
 }
+
 .main {
     text-align: center;
     background: #fff;
