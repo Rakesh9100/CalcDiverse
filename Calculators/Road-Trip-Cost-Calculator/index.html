@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Road Trip Cost Calculator</h1>
+        <label for="distance">Distance (Km):</label>
+        <input type="number" id="distance" placeholder="Enter distance in Km">
+
+        <label for="fuel-efficiency">Fuel Efficiency (mpKm):</label>
+        <input type="number" id="fuel-efficiency" placeholder="Enter fuel efficiency in mpKm">
+
+        <label for="fuel-cost">Fuel Cost (₹ per Km):</label>
+        <input type="number" id="fuel-cost" placeholder="Enter fuel cost per Km">
+
+        <button onclick="calculateTravelCost()">Calculate</button>
+
+        <h2 id="result"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
