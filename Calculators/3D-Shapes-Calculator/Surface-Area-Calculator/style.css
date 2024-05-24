@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(imgbackground.png);
+    background-image: url('assets/background.jpg');
     margin: 0;
 }
 
@@ -16,6 +16,7 @@ body {
     width: 350px;
     text-align: center;
 }
+
 .waviy {
     display: flex;
     justify-content: center;
