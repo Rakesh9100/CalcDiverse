@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(200deg, #b7a4a4, #1a354a);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 600px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.382);
+    box-shadow: 5px 5px 20px rgba(25, 0, 255, 0.2);
+}
+
+.description {
+    text-align: center;
+    margin-top: 18%;
+    width: 70vw;
+}
+
+.description h1 {
+    font-weight: bolder;
+    font-size: 45px;
+    margin-left: 10px;
+    text-align: center;
+    color: rgb(220, 238, 238);
+}
+
+.description p {
+    font-size: 20px;
+    padding: 15px;
+    color: rgb(253, 253, 253);
+}
+
+.calculate__box {
+    background: #95c7dc38;
+    border-radius: 20px;
+    width: 70%;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculate__box label {
+    margin: 5px;
+}
+
+.calculate__box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    background: rgb(236, 241, 241);
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-size: cover;
+    }
+
+    .container {
+        display: grid;
+        width: 90%;
+        height: fit-content;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .description h1 {
+        font-size: 30px;
+    }
+
+    .description p {
+        font-size: 13px;
+    }
+
+    .calculate__box {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .calculate__box input {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    body {
+        height: fit-content;
+    }
+
+    .container {
+        width: 90%;
+        height: fit-content;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .description h1 {
+        font-size: 30px;
+    }
+
+    .description p {
+        font-size: 13px;
+    }
+
+    .calculate__box {
+        width: 80%;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .calculate__box input {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .description {
+        position: relative;
+        margin-left: 20px;
+    }
+}
