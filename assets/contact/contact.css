@@ -37,6 +37,7 @@ header {
     justify-content: center;
     align-items: center;
     box-shadow: -10px -10px 50px #b400a5;
+    overflow: auto;
 }
 
 .contact-container h2 {
@@ -77,6 +78,11 @@ textarea {
     margin-bottom: 25px;
     border: 0;
     transition: all linear .2s;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    resize: vertical; 
 }
 
 input:hover,
