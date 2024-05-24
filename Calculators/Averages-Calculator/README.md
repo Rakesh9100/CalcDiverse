@@ -14,4 +14,4 @@ This is a simple web-based averages calculator that allows users to input comma-
 - Clean and responsive user interface.
 
 ## Screenshots
-![alt text](./assets/demo.png)
+![alt text](./assets/image.png)
