@@ -9,6 +9,7 @@ function convert() {
     document.getElementById('result').innerHTML = `Converted Value: ${convertedValue}`;
 }
 
+// claer function 
 function clear_fun() {
     document.getElementById('number').value = '';
     document.getElementById('fromBase').value = '';
