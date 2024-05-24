@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Productivity Calculator</h1>
+        <div class="form-group">
+            <label for="technique">Select Technique:</label>
+            <select id="technique" onchange="showParameters()">
+                <option value="">--Select--</option>
+                <option value="Pomodoro-Technique">Pomodoro Technique</option>
+                <option value="Time-blocking">Time Blocking</option>
+                <option value="Task-Prioritization">Task Prioritization</option>
+            </select>
+        </div>
+        <div id="technique-description"></div>
+        <div id="parameter-input" class="form-group"></div>
+        <div id="recommendations"></div>
+        <button onclick="calculateProductivity()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
