@@ -1,4 +1,4 @@
-# <p align="center">Number of Days Calculator</p>
+# <p align="center">Square Root Calculator</p>
 
 ## Description :-
 
@@ -12,4 +12,4 @@ Calculates the square-root of a number upto provided precision.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/111569459/b2caedc0-773c-42d0-8876-9ffa78878fd0)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/b0261a9f-9709-435c-9407-f282104b1610)

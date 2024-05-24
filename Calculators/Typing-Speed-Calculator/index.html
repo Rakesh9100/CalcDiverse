@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Typing Speed Calculator</title>
+</head>
+
+<body onload="getRandomSentence()">
+    <h1>Typing Speed Test</h1>
+    <div id="typing-box">
+        <p>Type the following text:</p>
+        <p id="text-to-type"></p>
+        <div class="form-wrapper">
+            <input type="text" id="user-input" oninput="checkInput()" onpaste="return false;">
+            <button onclick="resetInput()">Reset</button>
+        </div>
+        <p id="speed-result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

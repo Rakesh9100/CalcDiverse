@@ -39,7 +39,7 @@ h1 {
     border: none;
 }
 
-.grp_btns{
+.grp_btns {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -57,16 +57,16 @@ h1 {
 
 button.btn {
     transition: all 0.03s linear;
-  }
-  
-  button.btn:hover {
+}
+
+button.btn:hover {
     background-color: #65b9e6;
-  }
-  
-  button.btn:active {
+}
+
+button.btn:active {
     box-shadow: 0 0 2px darkslategray;
     transform: translateY(2px);
-  }
+}
 
 #output {
     display: flex;
@@ -78,17 +78,17 @@ button.btn {
     position: relative;
     padding: 20px;
     top: 100px;
-    border:none;
+    border: none;
     border-radius: 8px;
     min-height: 90px;
     box-sizing: border-box;
 }
 
-.sup_id{
+.sup_id {
     font-weight: lighter;
 }
 
-.spn{
+.spn {
     font-weight: lighter;
     margin-right: 9px;
 }

@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     height: 100vh;
     background: linear-gradient(45deg, #2e3192 0%, #1bffff 100%);
 }
 
-.container{
+.container {
     width: 400px;
     max-width: 100%;
     position: absolute;
@@ -21,18 +21,18 @@ body{
     left: 50%;
 }
 
-h2{
+h2 {
     text-align: center;
     margin: 10px;
     color: #000;
 }
 
-.card{
+.card {
     width: 100%;
-    background-color: rgba(0, 0, 0,.7);
+    background-color: rgba(0, 0, 0, .7);
     backdrop-filter: blur(10px);
     padding: 30px 10px;
-    box-shadow: 0 5px 30px rgba(87,11,16,0.5);
+    box-shadow: 0 5px 30px rgba(87, 11, 16, 0.5);
     position: relative;
     border-radius: 8px;
     text-align: center;
@@ -40,7 +40,8 @@ h2{
     flex-wrap: wrap;
 }
 
-#latitude, #longitude{
+#latitude,
+#longitude {
     width: 100%;
     height: 40px;
     padding: 10px;
@@ -53,35 +54,37 @@ h2{
     background-color: rgb(211, 211, 211);
 }
 
-.card > *{
+.card>* {
     width: 100%;
     padding: 1rem;
 }
 
-.rise-label, .set-label{
+.rise-label,
+.set-label {
     font-size: 18px;
     margin-bottom: 5px;
 }
 
-.rise-label{
+.rise-label {
     color: rgb(250, 228, 83);
 }
 
-.set-label{
+.set-label {
     color: rgb(91, 147, 255)
 }
 
-#rise-time, #set-time{
+#rise-time,
+#set-time {
     font-size: 18px;
     color: #fff;
 }
 
-.btn-container{
+.btn-container {
     margin: 20px;
     text-align: center;
 }
 
-#button{
+#button {
     padding: 10px 20px;
     font-size: 18px;
     border-radius: 8px;
@@ -92,16 +95,16 @@ h2{
     transition: scale 0.3s ease-in-out;
 }
 
-#button:hover{
+#button:hover {
     cursor: pointer;
 }
 
-#button:active{
+#button:active {
     scale: 1;
 }
 
-@media (max-width: 768px){
-    .card > *{
+@media (max-width: 768px) {
+    .card>* {
         width: 50%;
     }
 }

@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Triangle Calculator</title>
 </head>
+
 <body class="bg">
-  <div class="content-div">
-    <h1>Enter at least 3 valid values</h1>
-    <div class="sides">
-      <label for="sideA">Side a: </label>
-      <input type="number" id="sideA" placeholder="Enter value">
-      <label for="sideB">Side b: </label>
-      <input type="number" id="sideB" placeholder="Enter value">
-      <label for="sideC">Side c: </label>
-      <input type="number" id="sideC" placeholder="Enter value">
+    <div class="content-div">
+        <h1>Enter at least 3 valid values</h1>
+        <div class="sides">
+            <label for="sideA">Side a: </label>
+            <input type="number" id="sideA" placeholder="Enter value">
+            <label for="sideB">Side b: </label>
+            <input type="number" id="sideB" placeholder="Enter value">
+            <label for="sideC">Side c: </label>
+            <input type="number" id="sideC" placeholder="Enter value">
+        </div>
+        <div class="Angles">
+            <label for="angleA">Angle A: </label>
+            <input type="number" id="angleA" placeholder="Enter value">
+            <label for="angleB">Angle B: </label>
+            <input type="number" id="angleB" placeholder="Enter value">
+            <label for="angleC">Angle C: </label>
+            <input type="number" id="angleC" placeholder="Enter value">
+            <label for="angleType">Angle Type: </label>
+            <select id="angleType">
+                <option value="standard" selected>Standard</option>
+                <option value="radian">Radian</option>
+            </select>
+        </div>
+        <div style="display:flex; justify-content:center; margin-top: 50px;">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+        <div id="output"></div>
+        <script src="script.js"></script>
     </div>
-    <div class="Angles">
-      <label for="angleA">Angle A: </label>
-      <input type="number" id="angleA" placeholder="Enter value">
-      <label for="angleB">Angle B: </label>
-      <input type="number" id="angleB" placeholder="Enter value">
-      <label for="angleC">Angle C: </label>
-      <input type="number" id="angleC" placeholder="Enter value">
-      <label for="angleType">Angle Type: </label>
-      <select id="angleType">
-        <option value="standard" selected>Standard</option>
-        <option value="radian">Radian</option>
-      </select>
-    </div>
-    <div style="display:flex; justify-content:center; margin-top: 50px;">
-      <button onclick="calculate()">Calculate</button>
-    </div>
-    <div id="output"></div>
-    <script src="script.js"></script>
-  </div>
 </body>
+
 </html>

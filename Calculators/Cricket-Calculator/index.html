@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cricket Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cricket Calculator</h1>
+        <div class="calculators">
+            <div class="calculator strike-rate">
+                <h3>Batsman Strike Rate</h3>
+                <label for="runs">Runs Scored:</label>
+                <input type="number" id="runs" name="runs" min="0" required>
+                <label for="balls">Balls Faced:</label>
+                <input type="number" id="balls" name="balls" min="0" required>
+                <button onclick="calculateStrikeRate()">Calculate</button>
+                <p id="strike-rate-result"></p>
+            </div>
+
+            <div class="calculator economy-rate">
+                <h3>Bowler Economy Rate</h3>
+                <label for="runs-conceded">Runs Conceded:</label>
+                <input type="number" id="runs-conceded" name="runs-conceded" min="0" required>
+                <label for="overs">Overs Bowled:</label>
+                <input type="number" id="overs" name="overs" min="0" required>
+                <button onclick="calculateEconomyRate()">Calculate</button>
+                <p id="economy-rate-result"></p>
+            </div>
+
+            <div class="calculator required-run-rate">
+                <h3>Required Run Rate</h3>
+                <label for="target">Target:</label>
+                <input type="number" id="target" name="target" min="0" required>
+                <label for="balls-remaining">Balls Remaining:</label>
+                <input type="number" id="balls-remaining" name="balls-remaining" min="0" required>
+                <label for="wickets-remaining">Wickets Remaining:</label>
+                <input type="number" id="wickets-remaining" name="wickets-remaining" min="0" required>
+                <button onclick="calculateRequiredRunRate()">Calculate</button>
+                <p id="required-run-rate-result"></p>
+            </div>
+
+            <div class="calculator projected-score">
+                <h3>Projected Score</h3>
+                <label for="current-score">Current Score:</label>
+                <input type="number" id="current-score" name="current-score" min="0" required>
+                <label for="overs-remaining">Overs Remaining:</label>
+                <input type="number" id="overs-remaining" name="overs-remaining" min="0" required>
+                <label for="runs-per-over">Runs Per Over (Average):</label>
+                <input type="number" id="runs-per-over" name="runs-per-over" min="0" required>
+                <button onclick="calculateProjectedScore()">Calculate</button>
+                <p id="projected-score-result"></p>
+            </div>
+
+            <div class="calculator target">
+                <h3>Target</h3>
+                <label for="opposition-score">Opposition Score:</label>
+                <input type="number" id="opposition-score" name="opposition-score" min="0" required>
+                <button onclick="calculateTarget()">Calculate</button>
+                <p id="target-result"></p>
+            </div>
+        </div>
+
+        <div class="calculator net-runrate">
+            <h3>Net Run Rate Calculator</h3>
+            <label for="runs-scored">Run Scored:</label>
+            <input type="number" id="runsScored" name="runs-scored" min="0" required>
+            <label for="overs-played">Overs Played:</label>
+            <input type="number" id="oversPlayed"  name="overs-played" min="0" required>
+            <label for="runs-conceded">Run Conceded:</label>
+            <input type="number" id="runsConceded" name="runs-conceded" min="0" required>
+            <label for="overs-bowled">Overs Bowled:</label>
+            <input type="number" id="oversBowled"  name="overs-bowled" min="0" required>
+            <button onclick="calculateRunRate()">Calculate</button>
+            <p id="net-runrate-result"></p>
+        </div>
+      
+        
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

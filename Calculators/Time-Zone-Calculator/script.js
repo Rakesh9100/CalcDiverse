@@ -10,7 +10,6 @@ function populateTimeZones() {
         { value: 9, label: 'Japan Standard Time (UTC+9:00)' },
         { value: 10, label: 'Australian Eastern Standard Time (UTC+10:00)' },
         { value: -8, label: 'Pacific Standard Time (UTC-8:00)' },
-        
     ];
 
     const originTimeZoneSelect = document.getElementById("originTimeZone");
@@ -26,7 +25,7 @@ function populateTimeZones() {
     });
 }
 
-populateTimeZones(); 
+populateTimeZones();
 
 function calculateTimeZone() {
     const originTimeZone = parseFloat(document.getElementById("originTimeZone").value);
@@ -36,12 +35,12 @@ function calculateTimeZone() {
     let resultMessage = "";
 
     if (calculationType === "simple") {
-        
+
         const timeDifference = (destinationTimeZone - originTimeZone) * 60;
         const destinationTime = new Date(dateTime.getTime() + timeDifference * 60000);
         resultMessage = `Converted Time: ${destinationTime.toLocaleString()}`;
     } else if (calculationType === "difference") {
-        
+
         const timeDifference = (destinationTimeZone - originTimeZone) * 60;
         const hoursDifference = Math.floor(Math.abs(timeDifference) / 60);
         const minutesDifference = Math.abs(timeDifference) % 60;

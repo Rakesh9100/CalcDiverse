@@ -2,6 +2,7 @@ body {
     margin-top: 100px;
     background-color: #8ACDD7;
 }
+
 .container {
     width: 700px;
     margin: 0 auto;
@@ -10,6 +11,7 @@ body {
     border-radius: 20px;
     background-color: #FFC0D9;
 }
+
 .container input {
     width: 80%;
     margin-bottom: 10px;
@@ -17,6 +19,7 @@ body {
     padding: 10px;
     border-radius: 65px;
 }
+
 .container button {
     width: 80%;
     padding: 10px;
@@ -25,20 +28,25 @@ body {
     border: none;
     border-radius: 65px;
 }
+
 .container h1 {
     margin-bottom: 20px;
 }
+
 .container h2 {
     margin-top: 20px;
 }
+
 .result {
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
 #result {
     font-size: 20px;
     font-weight: bold;
 }
+
 .container button:hover {
     transform: scale(1.1);
     transition: 1s;

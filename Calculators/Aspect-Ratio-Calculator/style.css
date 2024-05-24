@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    background: #010d1b;
+    color: #fff;
+}
+
+.calculator {
+    text-align: center;
+    border: 1px solid #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 5px;
+    padding: 10px;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+}

@@ -1,27 +1,15 @@
-# FACTORIAL CALCULATOR
+# <p align="center">Factorial Calculator</p>
 
----
+## Description :-
 
-## **Description 📃**
+Calculates the factorial of any large number instantly.
 
-- This project is made by using HTML, CSS and JS.
-- This project can calculate factorial of the very large numbers.
-- This project is responsive towards the small devices also.
+## Tech Stacks :-
 
-<br>
+- HTML
+- CSS
+- JavaScript
 
-## **Functionalities 🎮**
+## Screenshots :-
 
-- Enter the number you want to know the factorial of that number.
-- Project will calculate and show the answer instantly.
-- Best front-end project.
-
-<br>
-
-## **ScreenShot 📸**
-
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/114330097/1b5826af-c3ce-4c76-bde4-f090fbb2e4c7)
-
-<br>
-
-### **Happy Coding 🧑‍💻**
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c1fe7e1e-a396-46f6-a5db-fb211cbf1a0b)

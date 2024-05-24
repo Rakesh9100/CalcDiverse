@@ -5,11 +5,12 @@ body {
     font-size: 20px;
     background-color: rgb(113, 105, 201);
 }
-#heading{
+
+#heading {
     text-align: center;
-    
 }
-.content{
+
+.content {
     background-color: rgb(234, 230, 231);
     padding: 30px;
     border: 1px solid #efeced;
@@ -20,15 +21,25 @@ body {
     padding: 50px 50px 50px 50px;
     text-align: center;
 }
-#base{
-    padding: 10px 15px 10px 10px ;
+
+#base {
+    padding: 10px 15px 10px 10px;
     margin-bottom: 15px;
 }
-#number{
+
+#baseError {
+    color: rgb(241, 63, 63);
+    display: none;
+    font-size : 15px ;
+}
+
+#number {
     padding: 10px 15px 10px 10px;
     margin-bottom: 10px;
 }
-#button{
+
+#button {
+    margin-top: 20px;
     padding: 20px 20px 20px 20px;
     font-size: 20px;
 }

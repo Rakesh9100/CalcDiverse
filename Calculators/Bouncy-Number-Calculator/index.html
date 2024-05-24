@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bouncy Number Calculator</title>
+</head>
+
+<body>
+
+    <p class="title">Bouncy Number Checker</p>
+
+    <div class="calculator">
+        <div class="section">
+            <p class="calculator-title">Check Bouncy Number</p>
+            <label for="number">Enter a number:</label>
+            <input type="number" id="number" placeholder="Enter a number">
+            <button class="check" onclick="checkBouncyNumber()">Check</button>
+            <button class="clear" onclick="clearSection()">Clear</button>
+            <p id="result"></p>
+            <p id="explanation"></p>
+        </div>
+
+        <div class="section">
+            <p class="calculator-title">Find Bouncy Numbers in Range</p>
+            <label for="fromRange">From:</label>
+            <input type="number" id="fromRange" placeholder="Enter from number">
+            <label for="toRange">To:</label>
+            <input type="number" id="toRange" placeholder="Enter to number">
+            <button class="check" onclick="findBouncyNumbersInRange()">Find</button>
+            <button class="clear" onclick="clearRangeSection()">Clear</button>
+            <p id="rangeResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

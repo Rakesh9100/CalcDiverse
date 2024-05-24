@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Centripetal Force Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-box">
+            <h1>Result</h1>
+            <div class="acc-F">
+                <h2>Centripetal Acceleration - <span class="acc"></span></h2>
+                <h2>Centripetal Force - <span class="f"></span></h2>
+            </div>
+        </div>
+        <div class="content">
+            <div class="right-box">
+                <input type="number" id="m" placeholder="Mass (in kg)">
+                <input type="number" id="v" placeholder="Velocity (in m/s)">
+                <input type="number" id="r" placeholder="Radius (in m)">
+                <button type="button" onclick="show_result()">Show Result</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

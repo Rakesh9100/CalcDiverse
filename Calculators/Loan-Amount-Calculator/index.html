@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Loan Amount Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class = "calc-wrapper">
+            <div class = "calc-content">
+                <h2>Loan Amount Calculator</h2>
+                <form id = "calc-form">
+                    <!-- item -->
+                    <div class = "form-item">
+                        <div class = "input-name">
+                            <span>1</span>
+                            <label for = "loan-amount">Loan Amount</label>
+                        </div>
+                        <div class = "input-control">
+                            <span>(in rupees)</span>
+                            <input type = "number" placeholder="0" id = "loan-amount" min = "0" step = "any" required>
+                        </div>
+                    </div>
+                    <!-- end of item -->
+                    <!-- item -->
+                    <div class = "form-item">
+                        <div class = "input-name">
+                            <span>2</span>
+                            <label for = "interest-rate">Interest Rate</label>
+                        </div>
+                        <div class = "input-control">
+                            <span>(in percent)</span>
+                            <input type = "number" placeholder="0" id = "interest-rate" min = "0" step = "any" required>
+                        </div>
+                    </div>
+                    <!-- end of item -->
+                    <!-- item -->
+                    <div class = "form-item">
+                        <div class = "input-name">
+                            <span>3</span>
+                            <label for = "no-of-month">Number Of Months</label>
+                        </div>
+                        <div class = "input-control">
+                            <span>(in months)</span>
+                            <input type = "number" placeholder="0" id = "no-of-month" min = "0" step = "any" required>
+                        </div>
+                    </div>
+                    <!-- end of item -->
+                    <div class = "btns">
+                        <input type = "submit" id = "calc-btn" value = "Calculate">
+                        <input type = "button" id = "clear-btn" value = "Clear">
+                    </div>
+                </form>
+            </div>
+            <div class = "result-content">
+                <h2>Your Monthly Payments</h2>
+                <div class = "payment-info">
+                    <div>
+                        <h4>Loan Amount</h4>
+                        <span>&mdash;</span>
+                    </div>
+                    <div>
+                        <h4>Interest Rate</h4>
+                        <span>&mdash;</span>
+                    </div>
+                    <div>
+                        <h4>Number of Months</h4>
+                        <span>&mdash;</span>
+                    </div>
+                    <div>
+                        <h4>Monthly Payments</h4>
+                        <span>&mdash;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

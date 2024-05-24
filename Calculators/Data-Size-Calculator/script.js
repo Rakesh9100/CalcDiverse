@@ -12,13 +12,13 @@ function convertSize() {
         'nibbles': 4,
         'bytes': 8,
         'kilobytes': 8 * 1024,
-        'megabytes': 8 * 1024**2,
-        'gigabytes': 8 * 1024**3,
-        'terabytes': 8 * 1024**4,
-        'petabytes': 8 * 1024**5,
-        'exabytes': 8 * 1024**6,
-        'zetabytes': 8 * 1024**7,
-        'yottabytes': 8 * 1024**8
+        'megabytes': 8 * 1024 ** 2,
+        'gigabytes': 8 * 1024 ** 3,
+        'terabytes': 8 * 1024 ** 4,
+        'petabytes': 8 * 1024 ** 5,
+        'exabytes': 8 * 1024 ** 6,
+        'zetabytes': 8 * 1024 ** 7,
+        'yottabytes': 8 * 1024 ** 8
     };
 
     if (isNaN(size) || size < 0) {

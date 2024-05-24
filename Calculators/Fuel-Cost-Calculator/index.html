@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Fuel Cost Calculator</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="waviy">
+            <span style="--i:1">F</span>
+            <span style="--i:2">U</span>
+            <span style="--i:3">E</span>
+            <span style="--i:4">L</span>
+            <span style="--i:11">&nbsp;</span>
+            <span style="--i:5">C</span>
+            <span style="--i:6">O</span>
+            <span style="--i:7">S</span>
+            <span style="--i:8">T</span>
+            <span style="--i:9">&nbsp;</span>
+            <span style="--i:10">C</span>
+            <span style="--i:11">A</span>
+            <span style="--i:12">L</span>
+            <span style="--i:13">C</span>
+            <span style="--i:14">U</span>
+            <span style="--i:15">L</span>
+            <span style="--i:16">A</span>
+            <span style="--i:17">T</span>
+            <span style="--i:18">O</span>
+            <span style="--i:19">R</span>
+        </div>
+        <br><br>
+        <label for="distance" id="labelname">Distance (in km):</label>
+        <input type="number" id="distance" placeholder="Enter distance"><br><br>
+        <label for="fuelEfficiency" id="labelname">Fuel Efficiency (km/l):</label>
+        <input type="number" id="fuelEfficiency" placeholder="Enter fuel efficiency"><br><br>
+        <label for="fuelPrice" id="labelname">Fuel Price (per liter):</label>
+        <input type="number" id="fuelPrice" placeholder="Enter fuel price"><br><br>
+        <button class="button" onclick="calculateCost()">Calculate</button>
+        <h3 id="result"></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

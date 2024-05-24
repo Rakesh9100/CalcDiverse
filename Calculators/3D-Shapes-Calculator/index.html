@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>3D Shapes Calculator</title>
+</head>
+
+<body>
+    <header class="main">
+        <h1 class="header">3D Shapes Calculator</h1>
+        <div class="selectCalculator">
+            <label for="calculator">Select Calculator: </label>
+            <select id="calculator" name="calculator">
+                <option value="None">--Select calculator type--</option>
+                <option value="3D-Shapes-Volume-Calculator">Volume Calculator</option>
+                <option value="Surface-Area-Calculator">Surface Area Calculator</option>
+            </select>
+        </div>
+        <button class="submit-button" onclick="navigateToCalculator()">Submit</button>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

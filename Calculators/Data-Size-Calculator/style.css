@@ -31,7 +31,9 @@ label {
     color: #555;
 }
 
-input, select, button {
+input,
+select,
+button {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
@@ -44,7 +46,8 @@ input, select, button {
     background-color: #fff;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     border-color: #3498db;
 }
 
@@ -79,6 +82,7 @@ button:hover {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -89,6 +93,7 @@ button:hover {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -99,9 +104,11 @@ button:hover {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }

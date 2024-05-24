@@ -1,61 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
-    <title>Color Converter</title>
-  </head>
-  <body>
-    <h1>Color Code Calculator</h1>
-    <div class="card">
-      <div class="row input ">
-        <div class="dropdowns">
-        <div class="dropdown">
-          <select name="convertFrom" id="convertFrom">
-            <option value="hex">HEXCODE</option>
-            <option value="rgb">RGB</option>
-            <option value="rgba">RGBA</option>
-            <option value="hsl">HSL</option>
-            <option value="hsv">HSV</option>
-            <option value="cmyk">CMYK</option>
-          </select>
-        </div>
-        </div>
-        <input type="text" id="input" placeholder="Enter a value" />
-       
-      </div>
-    
-      <div class="row"> 
-      <div class="button">
-        <button id="convert">Convert 🔄</button>
-        <button id="copy">Copy📂 </button>
-        <button id="reset">Reset ❌ </button>
-      </div> 
-    </div> 
-    
-      <div class="row result">
-        <div class="dropdowns">       
-          <div class="dropdown"> 
-            <select name="convertTo" id="convertTo">
-              <option value="rgb">RGB</option>
-              <option value="hex">HEXCODE</option>
-              <option value="rgba">RGBA</option>
-              <option value="hsl">HSL</option>
-              <option value="hsv">HSV</option>
-              <option value="cmyk">CMYK</option>
-            </select>
-          </div> 
-        </div> 
-        <textarea id="result" placeholder="Result" rows="3" columns="8" readonly> </textarea>
-        
-      </div>
-      
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <title>Color Code Calculator</title>
+</head>
+
+<body>
+    <div class="waviy">
+        <span style="--i:1">C</span>
+        <span style="--i:2">O</span>
+        <span style="--i:3">L</span>
+        <span style="--i:4">O</span>
+        <span style="--i:5">R</span>
+        <span style="--i:6">&nbsp;</span>
+        <span style="--i:7">C</span>
+        <span style="--i:8">O</span>
+        <span style="--i:9">D</span>
+        <span style="--i:10">E</span>
+        <span style="--i:11">&nbsp;</span>
+        <span style="--i:12">C</span>
+        <span style="--i:13">A</span>
+        <span style="--i:14">L</span>
+        <span style="--i:15">C</span>
+        <span style="--i:16">U</span>
+        <span style="--i:17">L</span>
+        <span style="--i:18">A</span>
+        <span style="--i:19">T</span>
+        <span style="--i:20">O</span>
+        <span style="--i:21">R</span>
     </div>
-    <script src="converter.js"></script>
+    <br><br>
+    <div class="card">
+        <div class="row input ">
+            <div class="dropdowns">
+                <div class="dropdown">
+                    <select name="convertFrom" id="convertFrom">
+                        <option value="hex">HEXCODE</option>
+                        <option value="rgb">RGB</option>
+                        <option value="rgba">RGBA</option>
+                        <option value="hsl">HSL</option>
+                        <option value="hsv">HSV</option>
+                        <option value="cmyk">CMYK</option>
+                    </select>
+                </div>
+            </div>
+            <input type="text" id="input" placeholder="Enter a value" />
+
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="buttons">
+                <button id="convert">Convert 🔄</button>
+                <button id="copy">Copy📂 </button>
+                <button id="reset">Reset ❌ </button>
+            </div>
+        </div>
+        <br><br>
+        <div class="row result">
+            <div class="dropdowns">
+                <div class="dropdown">
+                    <select name="convertTo" id="convertTo">
+                        <option value="rgb">RGB</option>
+                        <option value="hex">HEXCODE</option>
+                        <option value="rgba">RGBA</option>
+                        <option value="hsl">HSL</option>
+                        <option value="hsv">HSV</option>
+                        <option value="cmyk">CMYK</option>
+                    </select>
+                </div>
+            </div>
+            <textarea id="result" placeholder="Result" rows="3" columns="8" readonly> </textarea>
+
+        </div>
+
+    </div>
+    <script src="assets/converter.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

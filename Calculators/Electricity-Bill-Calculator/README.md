@@ -1,21 +1,15 @@
-# Electricity Bill Calculator
+# <p align="center">Electricity Bill Calculator</p>
 
-## Introduction
+## Description :-
 
 The Electricity Bill Calculator is a web application designed to help users estimate their electricity bills. Users can input the consumed units, rate per unit, and additional charges to calculate the total electricity bill amount.
 
-## Features
-
-- Calculate electricity bill based on units, rate per unit, and additional charges
-- User-friendly interface
-- Real-time bill calculation
-
-## Tech Stacks Used
+## Tech Stacks :-
 
 - HTML
 - CSS
 - JavaScript
 
-## Screenshots
+## Screenshots :-
 
-![Electricity Bill Calculator](./Image/Electricity-Cost-Cal.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/10f941b5-eab8-4493-ac9a-f0848be6b5e6)

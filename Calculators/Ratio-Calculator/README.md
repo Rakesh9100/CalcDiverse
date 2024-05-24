@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Which takes two numbers X and Y and then calculate X / Y.
+Calculator which takes two numbers X and Y and then calculate X / Y.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ Which takes two numbers X and Y and then calculate X / Y.
 
 ## Screenshots :-
 
-![image](https://i.ibb.co/TKQMkz0/Screenshot-from-2024-01-11-09-21-26.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/ac4c00e3-7541-46fb-8e0d-16e010bd4d22)

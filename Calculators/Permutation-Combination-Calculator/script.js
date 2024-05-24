@@ -4,7 +4,7 @@ function calculate() {
     const r = parseInt(document.getElementById('chooseItems').value);
     const result = document.getElementById('result');
     if (n < 0 || r < 0 || n < r) {
-        result.innerHTML ="Please enter valid numbers for n and r , for eg : n = 4 , r = 2 (remember n>r)";
+        result.innerHTML = "Please enter valid numbers for n and r , for eg : n = 4 , r = 2 (remember n>r)";
         return;
     }
 
@@ -12,7 +12,7 @@ function calculate() {
     var combinationResult = calculateCombination(n, r);
 
     result.innerHTML = "Permutation (" + n + "P" + r + ")= " + permutationResult +
-                                                    "<br>Combination (" + n + "C" + r + ")= " + combinationResult;
+        "<br>Combination (" + n + "C" + r + ")= " + combinationResult;
 }
 
 function calculatePermutation(n, r) {
@@ -39,7 +39,7 @@ function factorial(num) {
     }
     return num * factorial(num - 1);
 }
-function reset(){
+function reset() {
     document.getElementById('totalItems').value = ''
     document.getElementById('chooseItems').value = ''
     const result = document.getElementById('result');

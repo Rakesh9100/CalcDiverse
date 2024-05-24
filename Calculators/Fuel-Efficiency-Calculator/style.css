@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     overflow-y: hidden;
     overflow-x: hidden;
@@ -11,12 +13,13 @@ body {
     width: 100vw;
     height: 100vh;
     line-height: 1.4;
-    background-image: url("car.jpg");
+    background-image: url("./assets/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
+
 .container {
     display: grid;
     max-width: 1200px;
@@ -38,6 +41,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
 }
+
 .heading {
     margin-top: 20px;
     font-size: 2rem;
@@ -50,8 +54,8 @@ label {
 }
 
 input {
-  width: 80%;
-  padding: 8px;
+    width: 80%;
+    padding: 8px;
 }
 
 button {
@@ -66,48 +70,52 @@ button {
 }
 
 button:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #result {
-  margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 28px;
-  padding: 0 10px;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: black;
-  opacity: 1;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 28px;
+    padding: 0 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 1;
 }
 
 .button-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .button-container button:first-child {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 @media (max-width: 786px) {
-  .container {
-    max-width: 80vw;
-    margin: 0 auto;
-  }
-  .calculator {
-    gap: 20px;
-  }
-  .heading {
-    font-size: 28px;
-    font-weight: 400;
-  }
-  label {
-    font-size: 18px;
-    font-weight: 300;
-  }
-  input {
-    width: 60%;
-    padding: 6px;
-  }
+    .container {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    .calculator {
+        gap: 20px;
+    }
+
+    .heading {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    input {
+        width: 60%;
+        padding: 6px;
+    }
 }

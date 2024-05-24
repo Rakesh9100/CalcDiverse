@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: tomato;
+}
+
+header {
+    background-color: #333;
+    color: rgb(16, 75, 170);
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: white;
+    height: 5px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+.time-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+    /* can remove this line */
+}
+
+.time-container {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgb(238, 232, 234);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(237, 235, 235, 0.1);
+    box-sizing: border-box;
+    margin: 20px;
+    /* Adjust margin accordingly*/
+}
+
+.time-container h1 {
+    color: #333;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    /* Increase margin between h1 and form */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Increase the gap between lines */
+}
+
+label,
+input,
+select {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+input,
+select {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #04703a;
+    color: white;
+    padding: 15px;
+    /* Increase padding for a larger button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    transition: 0.4s;
+    background-color: #555;
+}
+
+#result-container {
+    margin-top: 20px;
+    /* Increase margin between button and result */
+}
+
+#result {
+    font-weight: bold;
+    font-size: 30px;
+    background-color: none;
+    /*  can set background for Result box */
+}
+
+.pink-box {
+    background-color: rgb(234, 230, 231);
+    padding: 30px;
+    /* Adjust padding as needed */
+    border: 1px solid #efeced;
+    /* Border color for the pink box */
+    border-radius: 8px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 20px;
+    width: 45rem;
+    /* Can change width of the App  */
+}
+
+.pink-box:hover {
+    transition: 0.6s;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.4);
+
+}

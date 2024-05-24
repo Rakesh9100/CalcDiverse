@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Infix Prefix Postfix Calculator</title>
+</head>
+
+<body>
+
+    <div class="converter">
+        <div class="column">
+            <h2>Infix Prefix Postfix Calculator</h2>
+
+            <div class="input">
+                <label for="expression">Expression:</label>
+                <input type="text" id="expression" placeholder="Enter expression">
+            </div>
+
+            <div class="options">
+                <label for="conversionType">Select Conversion:</label>
+                <select id="conversionType">
+                    <option value="infixToPostfix">Infix to Postfix</option>
+                    <option value="postfixToInfix">Postfix to Infix</option>
+                    <option value="prefixToPostfix">Prefix to Postfix</option>
+                    <option value="postfixToPrefix">Postfix to Prefix</option>
+                    <option value="infixToPrefix">Infix to Prefix</option>
+                    <option value="prefixToInfix">Prefix to Infix</option>
+                </select>
+            </div>
+
+            <div class="buttons">
+                <button onclick="convertExpression()">Convert</button>
+                <button onclick="clearInput()">Clear</button>
+            </div>
+
+            <div class="result" id="result">
+                <!-- Result will be displayed here -->
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

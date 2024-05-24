@@ -100,9 +100,3 @@ const clearData = () => {
     document.getElementById('y-result').innerHTML = "";
     document.getElementById('solution-type').innerText = "";
 }
-
-
-
-
-
-

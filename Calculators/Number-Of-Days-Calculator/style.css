@@ -1,0 +1,120 @@
+* {
+    padding: 10px;
+    margin: 0;
+}
+
+body {
+    font-size: large;
+    box-sizing: border-box;
+    background: radial-gradient(circle, rgb(252, 195, 195), rgb(250, 129, 129));
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#calculator-container {
+    position: absolute;
+    background-color: rgb(253, 235, 235);
+    color: rgb(44, 44, 44);
+    border-radius: 8%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 35vw;
+    height: auto;
+    padding: 2%;
+    box-shadow: rgba(255, 100, 100, 0.6) 15px 20px 40px,
+        rgba(248, 56, 56, 0.6) 5px 5px 10px;
+    text-align: center;
+}
+
+.heading {
+    color: black;
+    font-size: 23px;
+    padding: 5px;
+    text-align: center;
+}
+
+.inp-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.1em;
+    flex-direction: column;
+}
+
+label {
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="date"] {
+    font-size: 16px;
+    padding: 1em;
+    color: black;
+    border: 1px solid rgb(7, 108, 147);
+    outline: none;
+    border-radius: 0.4em;
+    margin-top: 0.6em;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #7eceee;
+    padding: 0.2em;
+    cursor: pointer;
+    border-radius: 0.1em;
+}
+
+button {
+    display: block;
+    background-color: rgba(34, 98, 162, 0.918);
+    color: rgb(230, 223, 235);
+    font-size: 1em;
+    margin: 2.2em auto 2em auto;
+    border: 1px solid black;
+    padding: 0.7em 2em;
+    border-radius: 0.8rem;
+    font-weight: 8%;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0 0 0 1px rgba(8, 29, 63, 0.712), 2px 2.5px 2px 0 rgba(8, 27, 63, 0.712);
+}
+
+button:hover {
+    background: rgba(17, 66, 115, 0.918);
+    box-shadow: 0 0 0 1px rgba(8, 29, 63, 0.712), 2px 3px 5px 0 rgba(8, 27, 63, 0.712);
+}
+
+#output {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding-left: 5%;
+}
+
+#output span {
+    color: #9d0f0f;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1030px) {
+    #calculator-container {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    #calculator-container {
+        width: 80%;
+        border-radius: 6%;
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #calculator-container {
+        width: 80%;
+        font-size: 80%;
+    }
+}

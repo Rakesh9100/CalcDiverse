@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Credit Card Payoff Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Credit Card Payoff Calculator</h1>
+        <label for="balance">Enter Credit Card Balance:</label>
+        <input type="number" id="balance" placeholder="Enter balance (in ₹)">
+
+        <label for="apr">Enter Annual Percentage Rate(APR):</label>
+        <input type="number" id="apr" placeholder="Enter APR (in %)">
+
+        <label for="monthly-payment">Enter Monthly Payment:</label>
+        <input type="number" id="monthly-payment" placeholder="Enter monthly payment (in ₹)">
+
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="reset()">Reset</button>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

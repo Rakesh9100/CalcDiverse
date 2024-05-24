@@ -4,7 +4,7 @@
 
 This calculator will help you calculate efficiency of your vehicle based on the distance traveled and fuel consumed
 
-## Tech Stack :-
+## Tech Stacks :-
 
 - HTML
 - CSS
@@ -12,4 +12,4 @@ This calculator will help you calculate efficiency of your vehicle based on the 
 
 ## Screenshots :-
 
-![image](<Screenshot 2024-01-07 220817.png>)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/0781cb6c-aa7c-4662-8a35-a3775ca74c94)

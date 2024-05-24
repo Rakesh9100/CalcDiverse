@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2980B9, #6DD5FA);
+    color: #fff;
+}
+
+.calculator {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.section {
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #1E2A39, #394A5E);
+    border: 1px solid #00f;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498DB;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #2980B9;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.cuban-prime-result {
+    color: #2ECC71;
+}
+
+.title {
+    padding: 20px;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 900;
+    color: #FFC300;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.title:hover {
+    color: #E74C3C;
+    transform: scale(1.1);
+}
+
+.calculator-title {
+    color: #2ECC71;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.information {
+    text-align: justify;
+    margin-top: 30px;
+    color: #fff;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #00f;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+
+.information h2 {
+    color: #FFC300;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.information p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cuban-prime {
+    color: #2ECC71;
+}
+
+.not-cuban-prime {
+    color: #E74C3C;
+}
+
+.rangeResult {
+    color: #2ECC71;
+}

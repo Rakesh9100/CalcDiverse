@@ -1,6 +1,6 @@
 # <p align="center">Graphing Calculator</p>
 
-## Overview
+## Description :-
 
 The Graphing Calculator is a web application designed for graphing mathematical functions and equations. This calculator includes a graphical display to visualize functions commonly used in mathematics and science.
 
@@ -10,7 +10,7 @@ The Graphing Calculator is a web application designed for graphing mathematical 
 - CSS
 - JavaScript
 
-## Features
+## Features :-
 
 - **Graphical Display:**
   - Equipped with an HTML canvas for rendering graphs.
@@ -21,20 +21,11 @@ The Graphing Calculator is a web application designed for graphing mathematical 
 - **Graph Rendering:**
   - The calculator dynamically renders and displays the graph based on the entered equation.
 
-## Usage
+## Usage :-
 
 1. Enter a mathematical equation in the provided input field (e.g., y = x^2).
 2. Click the "Graph" button to visualize the graph of the entered equation.
 
-## Notes
+# Screenshots :-
 
-- The calculator uses basic HTML, CSS, and JS to create a simple graphing interface.
-- Invalid equations or mathematical expressions will result in an alert message.
-
-## Disclaimer
-
-This calculator provides a basic graphing functionality and may not handle all mathematical equations or edge cases. For more advanced graphing capabilities, consider exploring dedicated graphing libraries or APIs.
-
-# Screenshot
-
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/142514166/b6ee9aed-6629-408c-8236-f418581f1481)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/61d5ff9c-a463-4416-b398-b772a114d2ef)

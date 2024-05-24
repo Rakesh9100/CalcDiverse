@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Website Bandwidth Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Website Bandwidth Calculator</h1>
+        <label for="pageViews">Page Views:</label>
+        <br><br>
+        <input type="number" id="pageViews" name="pageViews">
+        <br><br>
+        <label for="pageSize">Average Page Size (MB):</label>
+        <br><br>
+        <input type="number" id="pageSize" name="pageSize">
+        <br><br>
+        <label for="redundancyFactor">Page Views Per Visitor:</label>
+        <br><br>
+        <input type="number" id="redundancyFactor" name="redundancyFactor">
+        <br><br>
+        <button type="button" onclick="calculateBandwidth()">Calculate</button>
+        <button type="button" onclick="reset()">Clear</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

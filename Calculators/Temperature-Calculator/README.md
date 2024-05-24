@@ -1,4 +1,4 @@
-# <p align="center">Temperature Conversion Calculator</p>
+# <p align="center">Temperature Calculator</p>
 
 ## Description :-
 
@@ -12,4 +12,4 @@ Calculates the Temperature conversion between two specified units.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/60788663/dae90a8b-317b-457d-8735-823d29aab28a)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/20dd2afd-5eef-4c33-bd02-d9d4cc955f14)

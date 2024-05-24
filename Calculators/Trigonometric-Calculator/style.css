@@ -37,8 +37,8 @@ sup {
 }
 
 .input {
-    display: flex; 
-    gap: 1em; 
+    display: flex;
+    gap: 1em;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -89,6 +89,7 @@ select {
 select:hover {
     background-color: #eeeeee;
 }
+
 h2 {
     background-color: #D4F4D4;
     color: #228B22;

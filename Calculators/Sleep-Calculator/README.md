@@ -1,11 +1,15 @@
-Sleep Calculator 
+# <p align="center">Sleep Calculator</p>
+
+## Description :-
 
 This is a web application which calculates amount of sleep required a night based on age and activity level. The amount of sleep required is based on data from The National Sleep Foundation.
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/89672957/a823b929-7bd2-41d7-9919-8165729b25fd)
+## Tech Stacks :-
 
-
-## Tech Stack
 - HTML
 - CSS
-- Javascript
+- JavaScript
+
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/748e306d-5685-4e44-af84-5cce5491b311)

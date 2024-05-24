@@ -15,18 +15,20 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     animation: fadeInUp 0.8s ease-out;
-    max-width: 400px; /* Adjust max-width for responsiveness */
+    max-width: 400px;
     width: 100%;
 }
 
 button {
     background-color: #4caf50;
     color: #fff;
-    padding: 12px 20px; /* Smaller button padding */
+    padding: 12px 20px;
+    /* Smaller button padding */
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 16px; /* Slightly smaller font size */
+    font-size: 16px;
+    /* Slightly smaller font size */
     margin-top: 15px;
     transition: background-color 0.3s ease, transform 0.2s ease-out;
 }
@@ -37,11 +39,15 @@ button:hover {
 }
 
 input {
-    padding: 10px; /* Smaller input padding */
-    margin: 10px 0; /* Reduced margin */
-    width: 90%; /* Adjusted width for responsiveness */
+    padding: 10px;
+    /* Smaller input padding */
+    margin: 10px 0;
+    /* Reduced margin */
+    width: 90%;
+    /* Adjusted width for responsiveness */
     box-sizing: border-box;
-    font-size: 14px; /* Slightly smaller font size */
+    font-size: 14px;
+    /* Slightly smaller font size */
     border: 1px solid #ccc;
     border-radius: 6px;
     transition: border-color 0.3s ease, transform 0.2s ease-out;
@@ -54,7 +60,8 @@ input:focus {
 }
 
 .result-container {
-    font-size: 18px; /* Slightly larger font size for result */
+    font-size: 18px;
+    /* Slightly larger font size for result */
     font-weight: bold;
     color: #333;
     margin-top: 15px;
@@ -88,6 +95,7 @@ input:focus {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -98,6 +106,7 @@ input:focus {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }

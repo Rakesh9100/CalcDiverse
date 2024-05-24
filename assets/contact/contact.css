@@ -1,5 +1,7 @@
-body { 
-    margin: 0; 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+    margin: 0;
 }
 
 header {
@@ -9,12 +11,12 @@ header {
 }
 
 .navbar {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(9, 5, 40);
     margin: 0 auto;
 }
 
-.box{
+.box {
     padding: 50px;
     text-align: center;
     position: sticky;
@@ -23,28 +25,31 @@ header {
 
 .contact-container {
     position: relative;
-    max-width: 640px;
+    max-width: 550px;
     min-height: 400px;
     margin: 0 auto;
     padding: 25px;
     padding-top: 10px;
-    background: rgb(245,230,230);
-    background: linear-gradient(177deg, rgba(245,230,230,0.7232142857142857) 40%, rgba(249,249,249,0.21621148459383754) 100%, rgba(0,0,0,1) 100%);
+    background: rgb(245, 230, 230);
+    background: linear-gradient(177deg, rgba(245, 230, 230, 0.7232142857142857) 40%, rgba(249, 249, 249, 0.21621148459383754) 100%, rgba(0, 0, 0, 1) 100%);
     border-radius: 20px;
     display: grid;
     justify-content: center;
     align-items: center;
     box-shadow: -10px -10px 50px #b400a5;
+    overflow: auto;
 }
 
 .contact-container h2 {
-    color:  rgb(9,5,40);
-    font-size: 36px;
-    margin-bottom: 16px;
+    font-family: Ubuntu;
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px var(--light);
+    margin-top: 16px;
+    color: white;
 }
 
 .contact-container p {
-    color: white;
+    color: black;
     font-size: 17px;
     font-weight: 500;
     margin-bottom: 28px;
@@ -52,14 +57,16 @@ header {
 
 form {
     position: relative;
-    display: grid;
-    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 label {
-    color: #682572;
+    color: #000000;
     font-size: 20px;
-    font-weight: 450;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px var(--light);
 }
 
 input,
@@ -68,13 +75,27 @@ textarea {
     padding: 10px;
     border-radius: 6px;
     margin-top: 8px;
+    margin-bottom: 25px;
+    border: 0;
+    transition: all linear .2s;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    resize: vertical; 
+}
+
+input:hover,
+textarea:hover {
+    box-shadow: 5px 5px 10px black;
 }
 
 button {
     font-size: 20px;
     font-weight: 700;
     margin-top: 21px;
-    padding: 10px 45px;
+    padding: 10px 15px;
+    width: 200px;
     border: none;
     border-radius: 15px;
     color: #ffffff;
@@ -114,11 +135,11 @@ button:hover {
     padding: 8px;
     font-weight: 500;
     border: 1px solid transparent;
-    text-decoration:none;
+    text-decoration: none;
     transition: 0.3s ease-in;
-    opacity:0.8;
+    opacity: 0.8;
 }
-  
+
 .footer-basic ul a:hover {
     opacity: 1;
     color: var(--primary);
@@ -131,7 +152,7 @@ button:hover {
     padding-bottom: 25px;
 }
 
-.social{
+.social {
     font-size: 3.5rem;
     text-decoration: none;
     margin: 0 1rem;
@@ -143,11 +164,11 @@ button:hover {
     gap: 2rem;
 }
 
-.social a{
+.social a {
     color: var(--secondary);
 }
 
-.social a:hover{
+.social a:hover {
     color: var(--primary);
 }
 

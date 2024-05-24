@@ -7,8 +7,8 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #f4f4f4;
-    background: rgb(19,19,125);
-    background: linear-gradient(90deg, rgba(19,19,125,1) 12%, rgba(17,222,219,1) 44%, rgba(83,19,81,1) 75%);
+    background: rgb(19, 19, 125);
+    background: linear-gradient(90deg, rgba(19, 19, 125, 1) 12%, rgba(17, 222, 219, 1) 44%, rgba(83, 19, 81, 1) 75%);
 }
 
 .calculator-container {
@@ -17,8 +17,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    background: rgb(255,181,74);
-    background: linear-gradient(318deg, rgba(255,181,74,1) 20%, rgba(213,40,100,1) 78%);
+    background: rgb(255, 181, 74);
+    background: linear-gradient(318deg, rgba(255, 181, 74, 1) 20%, rgba(213, 40, 100, 1) 78%);
 }
 
 h1 {
@@ -39,28 +39,29 @@ input {
     margin-top: 5px;
     box-sizing: border-box;
 }
-        
+
 .btn-grad {
-    background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
+    background-image: linear-gradient(to right, #134E5E 0%, #71B280 51%, #134E5E 100%);
     margin: 19px 79px;
     padding: 9px 65px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
+    color: white;
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
     align-items: center;
-  }
+}
 
-  .btn-grad:hover {
-    background-position: right center; /* change the direction of the change here */
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
-  }
- 
+}
+
 
 button:hover {
     background-color: #45a049;

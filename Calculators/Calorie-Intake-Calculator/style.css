@@ -1,45 +1,50 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     text-align: center;
     padding: 20px;
-    overflow: hidden; /* To hide overflowing elements */
+    overflow: hidden;
+    /* To hide overflowing elements */
     background: linear-gradient(to right, #1c3251, #727c86);
-  }
+}
 
-  #inputContainer {
+#inputContainer {
     position: absolute;
     top: 50%;
     left: 50%;
     border-radius: 20px;
     transform: translate(-50%, -50%);
-    box-shadow: 10px 15px 10px rgba(40, 127, 85, 0.7); /* Green glow effect */
+    box-shadow: 10px 15px 10px rgba(40, 127, 85, 0.7);
+    /* Green glow effect */
     padding: 20px;
     transition: box-shadow 0.3s ease-out;
     background-color: #f4f4f4;
-  }
+}
 
-  label {
+label {
     display: block;
     margin-bottom: 5px;
-  }
+}
 
-  input, select {
+input,
+select {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
     transition: border-color 0.3s ease-out;
-    border: 1px solid #ddd; /* Default border color */
+    border: 1px solid #ddd;
+    /* Default border color */
     border-radius: 5px;
-  }
+}
 
-  button {
+button {
     background-color: #4caf50;
     color: white;
     padding: 12px 20px;
@@ -47,82 +52,89 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-out;
-  }
+}
 
-  button:hover {
-    background-color: #45a049; /* Darker green on hover */
-  }
+button:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
 
-  #result {
-      margin-top: 30px;
-      color: #fff;
-      background-color: #1a0d55;
-      padding: 15px;
-      border-radius: 5px;
-      opacity: 1;
-      transform: translateY(-20px);
-      transition: opacity 0.5s, transform 0.5s;
-    }
-  /* Responsive styles */
-  @media (min-width: 600px) {
+#result {
+    margin-top: 30px;
+    color: #fff;
+    background-color: #1a0d55;
+    padding: 15px;
+    border-radius: 5px;
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
     #inputContainer {
-      max-width: 400px;
-      margin: 0 auto;
+        max-width: 400px;
+        margin: 0 auto;
     }
-  }
+}
 
-  /* Circles and squares animation */
-  .shape {
+/* Circles and squares animation */
+.shape {
     position: absolute;
     border-radius: 50%;
     animation: moveShape 10s infinite;
     transform-origin: center;
-    
-  } 
 
-  .circle {
+}
+
+.circle {
     width: 50px;
     height: 50px;
     background-color: transparent;
-    border: 2px solid #1aaa21; /* Blue border for circles */
+    border: 2px solid #1aaa21;
+    /* Blue border for circles */
     box-sizing: border-box;
     box-shadow: 10px 5px 15px #f4f4f4;
-  }
+}
 
-  .shape:nth-child(1) {
+.shape:nth-child(1) {
     top: 10%;
     left: 0;
-  }
+}
 
-  .shape:nth-child(2) {
+.shape:nth-child(2) {
     top: 0;
     right: 0;
-  }
+}
 
-  .shape:nth-child(3) {
+.shape:nth-child(3) {
     bottom: 0;
     left: 0;
-  }
+}
 
-  .shape:nth-child(4) {
+.shape:nth-child(4) {
     bottom: 0;
     right: 0;
-  }
+}
 
-  @keyframes moveShape {
+@keyframes moveShape {
     0% {
-      transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
     }
+
     25% {
-      transform: translate(-50%, -50%) rotate(90deg);
+        transform: translate(-50%, -50%) rotate(90deg);
     }
+
     50% {
-      transform: translate(-50%, -50%) rotate(180deg);
+        transform: translate(-50%, -50%) rotate(180deg);
     }
+
     75% {
-      transform: translate(-50%, -50%) rotate(270deg);
+        transform: translate(-50%, -50%) rotate(270deg);
     }
+
     100% {
-      transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
     }
-  }
+}

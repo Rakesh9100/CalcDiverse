@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Equivalent Resistance Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Equivalent Resistance Calculator</h1>
+
+        <label for="resistance-type">Select Resistance Configuration:</label>
+        <select id="resistance-type">
+            <option value="series">Series</option>
+            <option value="parallel">Parallel</option>
+        </select>
+
+        <label for="resistances">Enter Resistances (comma-separated):</label>
+        <input type="text" id="resistances" placeholder="e.g., 10, 20, 30">
+
+        <button onclick="calculateEquivalentResistance()">Calculate</button>
+
+        <p id="result">Equivalent Resistance: <span id="equivalentResistance">---</span> ohms</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

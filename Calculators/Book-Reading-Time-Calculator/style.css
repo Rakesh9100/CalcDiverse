@@ -1,0 +1,122 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    background-color: rgba(206, 253, 113, 0.375);
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.header {
+    color: whitesmoke;
+    background-color: rgba(229, 201, 41, 0.78);
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 8px 5px rgba(69, 4, 48, 0.5);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 50px 0;
+    box-sizing: border-box;
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(195, 193, 194, 0.1);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.37);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: large;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #7bd1ff97;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: whitesmoke;
+    width: 100%;
+    max-width: 300px;
+    height: 55px;
+}
+
+button:hover {
+    background-color: #bac671de;
+    transform: scale(1.1);
+}
+
+.output {
+    margin: 30px 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    button,
+    .output {
+        width: 100%;
+        max-width: none;
+    }
+}

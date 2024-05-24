@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grade Calculator</title>
+</head>
+
+<body>
+
+    <div id="calculator-container">
+        <h2>Subject Grade Calculator</h2>
+
+        <div id="subjectFields">
+            <label for="subject1">Enter marks for Subject 1:</label>
+            <input type="text" id="subject1" class="marks" placeholder="Enter marks (e.g., 85,100)">
+        </div>
+
+        <button onclick="addSubjectField()">Add Another Subject</button>
+        <button onclick="calculateGrade()">Calculate Grade</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

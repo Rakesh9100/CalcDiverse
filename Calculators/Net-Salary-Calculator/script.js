@@ -1,5 +1,3 @@
-
-
 function calculateNetSalary() {
     // Get user inputs and convert to numbers, defaulting to 0 if not a valid number
     const ctc = parseFloat(document.getElementById('ctc').value) || 0;
@@ -58,4 +56,3 @@ function calculateNetSalary() {
     const netSalary = grossSalary - pf - esic - tax;
     document.getElementById('netSalary').textContent = netSalary.toFixed(2);
 }
-

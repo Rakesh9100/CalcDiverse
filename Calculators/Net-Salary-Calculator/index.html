@@ -2,46 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Net Salary Calculator</title>
 </head>
 
 <body>
     <div class="calculator">
-        <h2>Net Salary Calculator</h2>
-        <label for="ctc">CTC:</label>
-        <input type="number" id="ctc" placeholder="Enter CTC">
+        <h2>💰 Net Salary Calculator 💰</h2>
+        <div class="container">
+            <div class="input-row">
+                <input type="number" id="ctc" placeholder="Enter CTC" />
+                <input type="number" id="basePercentage" placeholder="Basic Salary %" />
+            </div>
 
-        <label for="basePercentage">How much % of CTC is your basic salary</label>
-        <input type="number" id="basePercentage" placeholder="Basic Salary %">
+            <div class="input-row">
+                <input type="number" id="hraPercentage" placeholder="HRA %" />
+                <input type="number" id="medicalAllowance" placeholder="Medical Allowance" />
+            </div>
 
-        <label for="hraPercentage">How much % of basic salary is your House rent allowance</label>
-        <input type="number" id="hraPercentage" placeholder="HRA %">
+            <div class="input-row">
+                <input type="number" id="conveyanceAllowance" placeholder="Conveyance Allowance" />
+                <input type="number" id="otherAllowances" placeholder="Other Allowances" />
+            </div>
 
-        <label for="medicalAllowance">Medical Allowance:</label>
-        <input type="number" id="medicalAllowance" placeholder="Medical Allowance">
+            <div class="input-row">
+                <input type="number" id="pfPercentage" placeholder="PF %" />
+                <input type="number" id="esic" placeholder="ESIC %" />
+                <input type="number" id="tax" placeholder="Tax" />
+            </div>
+        </div>
+        <button class="button-19" role="button" onclick="calculateNetSalary()">Calculate Net salary</button>
 
-        <label for="conveyanceAllowance">Conveyance Allowance:</label>
-        <input type="number" id="conveyanceAllowance" placeholder="Conveyance Allowance">
+        <hr>
 
-        <label for="otherAllowances">Other Allowances:</label>
-        <input type="number" id="otherAllowances" placeholder="Other Allowances">
-
-
-        <label for="pfPercentage">PF Employee deduction % of basic salary:</label>
-        <input type="number" id="pfPercentage" placeholder="PF %">
-
-        <label for="esic">ESIC Employee deduction % of Gross salary:</label>
-        <input type="number" id="esic" placeholder="ESIC %">
-
-        <label for="tax">Professional Tax:</label>
-        <input type="number" id="tax" placeholder="Tax">
-
-        <button onclick="calculateNetSalary()">Calculate Net salary</button>
-
-        <h3>Net Salary: <span id="netSalary">0</span></h3>
+        <h3>Net Salary: <span id="netSalary">--</span></h3>
     </div>
 
     <script src="script.js"></script>

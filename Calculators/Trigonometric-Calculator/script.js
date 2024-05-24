@@ -11,7 +11,7 @@ function calculateBasicTrigo() {
         alert('Please enter a valid positive angle for basic Trigonometry.');
         return;
     }
-    
+
     if (unit === 'degrees') {
         angle = angle * Math.PI / 180;
     }

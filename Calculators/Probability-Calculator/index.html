@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Probability Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Probability Calculator</h2>
+        <label for="option">Select Option:</label>
+        <select id="option" onchange="showInputs()">
+            <option value="">Select</option>
+            <option value="coins">Different Probabilities in Coins</option>
+            <option value="dices">Different Probabilities in Dices</option>
+            <option value="events">Different Probabilities in Two Events</option>
+        </select>
+        <div id="inputs" style="display: none;">
+            <!-- Input fields will be dynamically added here based on user's selection -->
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

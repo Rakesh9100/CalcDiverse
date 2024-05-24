@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Which takes two numbers X and Y and then calculate X<sup>Y</sup>.
+Calculator which takes two numbers X and Y and then calculate X<sup>Y</sup>.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ Which takes two numbers X and Y and then calculate X<sup>Y</sup>.
 
 ## Screenshots :-
 
-![image](https://i.ibb.co/SR4fYM8/exponent.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/a108d372-15d3-4d5e-9dfa-3a89fb7c5863)

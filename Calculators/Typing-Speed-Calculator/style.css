@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./assets/background.jpg');
+    background-position: 30% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+}
+
+#typing-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+#text-to-type {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#user-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    background-color: #19238d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #19238d;
+}
+
+#speed-result {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

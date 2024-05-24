@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Disarium Number Calculator</title>
+</head>
+
+<body>
+
+    <p class="title">Disarium Number Checker</p>
+
+    <div class="calculator-container">
+        <div class="calculator" id="firstCalculator">
+            <label for="number" class="calculator-title">Enter a number:</label>
+            <input type="number" id="number" placeholder="Enter a number">
+            <button onclick="checkDisariumNumber()">Check</button>
+            <button onclick="clearSection()">Clear</button>
+            <p id="result"></p>
+            <p id="explanation"></p>
+        </div>
+
+        <div class="calculator" id="secondCalculator">
+            <label for="fromRange" class="calculator-title">From:</label>
+            <input type="number" id="fromRange" placeholder="Enter from number">
+            <label for="toRange" class="calculator-title">To:</label>
+            <input type="number" id="toRange" placeholder="Enter to number">
+            <button onclick="findDisariumNumbersInRange()">Find</button>
+            <button onclick="clearRangeSection()">Clear</button>
+            <p id="rangeResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
