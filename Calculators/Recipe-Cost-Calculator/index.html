@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Cost Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Cost Calculator</h1>
+        <form id="ingredient-form">
+            <div class="form-group">
+                <label for="ingredient-name">Ingredient:</label>
+                <input type="text" id="ingredient-name" placeholder="Enter ingredient name">
+            </div>
+            <div class="form-group">
+                <label for="ingredient-quantity">Quantity:</label>
+                <input type="number" id="ingredient-quantity" placeholder="Enter quantity">
+            </div>
+            <div class="form-group">
+                <label for="ingredient-unit">Unit:</label>
+                <select id="ingredient-unit">
+                    <option value="units">Units</option>
+                    <option value="kgs">Kilograms</option>
+                    <option value="pounds">Pounds</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ingredient-price">Price per unit ($):</label>
+                <input type="number" id="ingredient-price" step="0.01" placeholder="Enter price per unit">
+            </div>
+            <button type="button" onclick="addIngredient()">Add Ingredient</button>
+        </form>
+        <h2>Ingredients List</h2>
+        <ul id="ingredient-list"></ul>
+        <h2>Total Cost</h2>
+        <p id="total-cost">$0.00</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
