@@ -2,7 +2,7 @@
 
 ## Description :-
 
-It calculates the distance between 2 points (upto 3 decimal places) in a 3-Dimensional Space. User can input the x, y and z co-ordinates of the two points and after hitting the "Get Distance" button, the calculated distance appears.
+This calculator calculates the distance between 2 points (up to 3 decimal places) in a 3-Dimensional Space.
 
 ## Tech Stacks :-
 
@@ -10,12 +10,12 @@ It calculates the distance between 2 points (upto 3 decimal places) in a 3-Dimen
 - CSS
 - JavaScript
 
+## Features :-
+
+- Input fields for entering coordinates of two points in 3D space.
+- Calculation of the Euclidean distance between the points.
+- Clear and intuitive user interface for ease of use.
+
 ## Screenshots :-
 
-![Screenshot 2024-05-24 143608](https://github.com/CoderUzumaki/CalcDiverse/assets/149368945/eb4f8300-d60f-47a2-9608-58fa5a5210c0)
-![Screenshot 2024-05-24 143639](https://github.com/CoderUzumaki/CalcDiverse/assets/149368945/c7e1178e-d246-40b6-af54-7e894a5f760f)
-
-
-
-
-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/9b596292-24af-424f-b94d-fd7dde37b1d6)
