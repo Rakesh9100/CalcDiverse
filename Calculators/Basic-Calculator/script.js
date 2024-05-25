@@ -4,10 +4,6 @@ let calc = document.forms["calc"];
 let txt = calc.elements["txt"];
 let math = window.math;
 let display = document.getElementById("display");
-// let zero = document.getElementById("display");
-
-let res = document.querySelector(".result-give");
-
 
 document.addEventListener("keydown", function (event) {
     const validKeys = /^[0-9.\+\-\*\/\(\)\^\%\{\}\[\]&]$/;

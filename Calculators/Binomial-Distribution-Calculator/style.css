@@ -1,0 +1,110 @@
+@media only screen and (max-width: 700px){
+    #head{
+        background-color: blue;
+        color: aliceblue;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 35px;
+        font-size: 1.5em;
+    }
+    #box{
+        margin: auto;
+        background-color: whitesmoke;
+        border: solid 2px black;
+        width: 300px;
+        text-align: center;
+        /* height: 400px; */
+    }
+    #info{
+        margin: auto;
+        background-color: whitesmoke;
+        border: solid 2px black;
+        width: 300px;
+        padding: 10px;
+    }
+    .text{
+        font-size: 1.25em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #explanation{
+        font-size: 1.25em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .button{
+        cursor: pointer;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 0px;
+        background-color:rgb(208, 207, 207);
+        font-weight: bold;
+    }
+    #heading{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #calculate{
+        margin-left: 0px;
+    }
+    .button:hover{
+        color: black;
+        font-weight: bold;
+        background-color: rgb(251, 250, 250);
+    }
+}
+@media only screen and (min-width: 700px){
+    #head{
+        background-color: blue;
+        color: aliceblue;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 35px;
+        font-size: 1.5em;
+    }
+    #box{
+        margin: auto;
+        background-color: whitesmoke;
+        border: solid 2px black;
+        width: 600px;
+        /* text-align: center; */
+        /* height: 400px; */
+    }
+    #info{
+        margin: auto;
+        background-color: whitesmoke;
+        border: solid 2px black;
+        width: 1200px;
+        padding: 10px;
+    }
+    .text{
+        font-size: 1.25em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #explanation{
+        font-size: 1.25em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .button{
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 0px;
+        background-color:rgb(208, 207, 207);
+        font-weight: bold;
+    }
+    #heading{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #calculate{
+        margin-left: 360px;
+    }
+    .button:hover{
+        color: black;
+        font-weight: bold;
+        background-color: rgb(251, 250, 250);
+    }
+}
