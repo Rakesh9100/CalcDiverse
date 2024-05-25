@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculates wind chill factor, dew point, heat index, displays human thermal comfort and converts temperature.
+Calculates wind chill factor, dew point, and heat index, displays human thermal comfort, and converts temperature.
 
 ## Tech Stacks :-
 
@@ -12,6 +12,6 @@ Calculates wind chill factor, dew point, heat index, displays human thermal comf
 
 ## Screenshots :-
 
- ![weather Calci1](https://github.com/anagha-chaudhari/CalcDiverse/assets/143149376/51b3bc8e-2740-403d-b46f-ee134bbe9235)
- 
- ![weather Calci2](https://github.com/anagha-chaudhari/CalcDiverse/assets/143149376/f1943cfd-e569-45ef-aa04-202ba97c8d2c)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/143149376/7a9b9357-d3c2-4289-9ac7-5e6f9f2c9106)
+
+![image2](https://github.com/Rakesh9100/CalcDiverse/assets/143149376/891c9458-9758-4d0f-b848-0c182be5d1b5)
