@@ -8,7 +8,15 @@ let display = document.getElementById("display");
 document.addEventListener("keydown", function (event) {
     const validKeys = /^[0-9.\+\-\*\/\(\)\^\%\{\}\[\]&]$/;
     if (validKeys.test(event.key)) {
-        document.getElementById("display").value += event.key;
+        if (event.key === ".") {
+            console.log(event.key)
+            event.preventDefault();
+            point();
+        }
+        else {
+            event.preventDefault();
+            document.getElementById("display").value += event.key;
+        }
     } else if (event.key === "Enter") {
         event.preventDefault();
         calculate();
@@ -46,3 +54,31 @@ function clearOne() {
     let currentValue = calc.txt.value;
     calc.txt.value = currentValue.slice(0, -1);
 }
+
+function point() {
+    let currentValue = calc.txt.value;
+    if (currentValue == "") {
+        calc.txt.value = '0' + '.';
+    }
+    else {
+
+        if (currentValue.charAt(currentValue.length - 1) == "." || currentValue.charAt(currentValue.length - 1) == "(") {
+            calc.txt.value = calc.txt.value + '0' + '.';
+            return;
+        }
+        if (currentValue.charAt(currentValue.length - 1) == "+" ||
+            currentValue.charAt(currentValue.length - 1) == "*" ||
+            currentValue.charAt(currentValue.length - 1) == "-" ||
+            currentValue.charAt(currentValue.length - 1) == "/" ||
+            currentValue.charAt(currentValue.length - 1) == "%" ||
+            currentValue.charAt(currentValue.length - 1) == "√" ||
+            currentValue.charAt(currentValue.length - 1) == "^") {
+            calc.txt.value = calc.txt.value + '0' + '.';
+            return;
+        }
+        else {
+            calc.txt.value = calc.txt.value + ".";
+            return;
+        }
+    }
+};
