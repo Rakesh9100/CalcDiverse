@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('./assets/background.jpg') center/cover fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(146, 206, 229, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.inp {
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #555;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border: 1px solid #337ab7;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #49c36a;
+}
+
+#clearButton {
+    margin-top: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.answer {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fraction {
+    font-size: 1.5rem;
+}
+
+.showingWork {
+    font-style: italic;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.showingWorkText {
+    font-style: italic;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+#percentResult {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#workStepsFraction {
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}

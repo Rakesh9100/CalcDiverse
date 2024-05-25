@@ -1,15 +1,12 @@
-
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and overall styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #6dd5ed, #2193b0); /* Gradient background */
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
     color: #333;
     line-height: 1.6;
     display: flex;
@@ -19,7 +16,6 @@ body {
     padding: 20px;
 }
 
-/* Calculator box styling */
 #calculator {
     background: #ffffff;
     padding: 25px;
@@ -29,7 +25,6 @@ body {
     width: 100%;
 }
 
-/* Heading styling */
 #calculator h1 {
     font-size: 24px;
     color: #0d47a1;
@@ -37,7 +32,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Form element styling */
 label {
     display: block;
     font-weight: 600;

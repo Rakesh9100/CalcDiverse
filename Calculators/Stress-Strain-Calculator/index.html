@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stress Strain Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Stress and Strain Calculator</h1>
+        <form id="calculatorForm">
+            <label for="force">Applied Force (N):</label>
+            <input type="number" id="force" required>
+
+            <label for="area">Cross-sectional Area (m<sup>2</sup>):</label>
+            <input type="number" id="area" required>
+
+            <label for="originalLength">Original Length (m):</label>
+            <input type="number" id="originalLength" required>
+
+            <label for="deformedLength">Deformed Length (m):</label>
+            <input type="number" id="deformedLength" required>
+
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+
+        <div id="results" class="hidden">
+            <h2>Results:</h2>
+            <p id="stressResult"></p>
+            <p id="strainResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

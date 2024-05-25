@@ -15,7 +15,7 @@ function calculate() {
         area = Math.PI * a * b;
         perimeter = calculateEllipsePerimeter(a, b);
     } else if (shape === 'hyperbola') {
-        area = Math.PI * Math.sqrt(a**2 + b**2);
+        area = Math.PI * Math.sqrt(a ** 2 + b ** 2);
     }
 
     var resultText = `${capitalizeFirstLetter(shape)} Area: ${area.toFixed(2)}`;

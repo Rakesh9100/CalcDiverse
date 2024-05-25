@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Date Time Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="calculated-heading">Date And Time Calculator</h1>
+        <div id="calculated-time"></div>
+        <div class="convert-box">
+            <fieldset>
+                <form id="convert-form" action="" target="_top">
+                    <div class="col-amount">
+                        <input name="amount" required id="amount" step="1" type="number" min="1" max="1000"
+                            placeholder="number">
+                    </div>
+                    <div class="col-period">
+                        <select name="period" id="period">
+                            <option value="minutes-ago-from-now">minutes ago from now</option>
+                            <option value="hours-ago-from-now">hours ago from now</option>
+                            <option value="days-ago-from-today">days ago from today</option>
+                            <option value="weeks-ago-from-today">weeks ago from today</option>
+                            <option value="months-ago-from-today">months ago from today</option>
+                            <option value="years-ago-from-today">years ago from today</option>
+                            <option value="minutes-from-now">minutes from now</option>
+                            <option value="hours-from-now">hours from now</option>
+                            <option value="days-from-today">days from today</option>
+                            <option value="weeks-from-today">weeks from today</option>
+                            <option value="months-from-today">months from today</option>
+                            <option value="years-from-today">years from today</option>
+                        </select>
+                    </div>
+                    <div class="col-button">
+                        <button type="submit">Calculate</button>
+                    </div>
+            </fieldset>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

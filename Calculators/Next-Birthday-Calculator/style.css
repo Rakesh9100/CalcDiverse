@@ -1,0 +1,72 @@
+body {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: all 0.8s ease-in-out;
+}
+
+.container {
+    margin-top: calc(50vh - 180px);
+    margin-left: calc(50vw - 200px);
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+}
+
+input[type="date"] {
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* animation css */
+
+body.pop {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+}
+
+canvas {
+    margin: 0;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    color: #00F;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Percentage Fraction Calculator</title>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <h1>Percentage Fraction Calculator</h1>
+
+        <!-- Percentage input section -->
+        <div class="inp">
+            <label for="percentInput">Enter a Percentage:</label>
+            <input type="text" id="percentInput" placeholder="Enter percent">
+            <button onclick="convertPercentToFraction()">Convert to Fraction</button>
+        </div>
+
+        <!-- Fraction input section -->
+        <div class="inp">
+            <label for="fractionInput">Enter a Fraction:</label>
+            <input type="text" id="fractionInput" placeholder="Enter fraction (e.g., 3/4)">
+            <button onclick="convertFractionToPercent()">Convert to Percentage</button>
+        </div>
+
+        <!-- Result display -->
+        <div id="result">
+            <p class="answer">Answer:</p>
+            <p class="resultValue" id="resultValue"></p>
+            <p class="showingWorkText">Showing Work:</p>
+            <p class="showingWork" id="showingWork"></p>
+        </div>
+
+        <!-- Clear button -->
+        <button id="clearButton" onclick="clearInputs()">Clear</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

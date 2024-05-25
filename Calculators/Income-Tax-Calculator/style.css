@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #ddd;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #333333;
+}
+
+.allpart {
+    height: 500px;
+    width: 100vw;
+    background: #999;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.input-part {
+    display: flex;
+    justify-content: space-around;
+    /* margin-bottom: 40px; */
+}
+
+.main-income {
+    background: tomato;
+    height: 200px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.main-income label {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.other-income {
+    background: orange;
+    height: 200px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+input#my-income {
+    height: 75px;
+    width: 30vw;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: lightgray;
+    padding-left: 15px;
+    color: #334250;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+input:focus {
+    background: #fff;
+    transition: all 1 s;
+}
+
+.btnn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.other-income input {
+    height: 35px;
+    width: 30vw;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color: #b4b4b4;
+}
+
+.output-part {
+    background: yellow;
+    height: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #333333;
+
+}
+
+.output-part p {
+    background: #ddd;
+    height: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: large;
+    border-radius: 10px;
+}
+
+button {
+    background: linear-gradient(-135deg, yellow, tomato);
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    color: rgb(249, 250, 250);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px;
+}

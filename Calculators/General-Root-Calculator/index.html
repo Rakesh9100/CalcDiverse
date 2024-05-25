@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>General Root Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>General Root Calculator</h1>
+        <input type="number" onkeydown="handleKeyDown(event)" id="numberInput" placeholder="Enter a number">
+        <br>
+        <input type="number" onkeydown="handleKeyDown(event)" id="root" placeholder="Enter n" step="1" min="1" required>
+        <br>
+        <input type="number" onkeydown="handleKeyDown(event)" id="precisionInput" placeholder="Enter precision">
+        <br>
+        <button onclick="calculateRoot()">Calculate Root</button>
+        <p id="result"></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

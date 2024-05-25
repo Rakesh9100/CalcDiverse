@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Molecular Weight Calculator</title>
+</head>
+
+<body>
+    <div class="glassmorphic-card">
+        <div class="header">
+            <h1>Molecular Weight Calculator</h1>
+        </div>
+        <div class="calculator-container">
+            <label for="chemicalFormula">Enter Chemical Formula:</label>
+            <input type="text" id="chemicalFormula" placeholder="e.g., H2O, C6H12O6" class="monospace-font">
+            <button onclick="calculateMolecularWeight()">Calculate</button>
+            <p id="result"><span id="output" class="monospace-font">~Enter a chemical formula to see~</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

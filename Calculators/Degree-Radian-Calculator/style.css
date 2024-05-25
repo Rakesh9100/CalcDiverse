@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image: radial-gradient(#ff5d71, #EB3349);
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: fit-content;
+    width: 600px;
+    display: flex;
+    flex-flow: column;
+    background-color: #353842;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+span {
+    color: #ffcc00;
+}
+
+.field {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.input-field {
+    position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-field input {
+    width: 350px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    transition: border .3s ease-in-out;
+}
+
+
+.input-field label {
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background: #353842;
+}
+
+input:focus {
+    border: 2px solid #ffcc00;
+}
+
+/* Responsive for Small Screen */
+
+@media screen and (max-width: 600px) {
+    .container {
+        position: absolute;
+        max-width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .input-field input {
+        width: 90%;
+    }
+
+    .field {
+        align-items: stretch;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    p {
+        font-size: 1.5rem;
+    }
+}

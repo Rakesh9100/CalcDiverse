@@ -1,18 +1,15 @@
-# Speed Converter
+# <p align="center">Speed Calculator</p>
+
+## Description :-
 
 The Speed Converter is a versatile tool that allows users to convert speed between different units, such as kilometers per hour (km/h) to meters per second (m/s). Whether you're dealing with different unit systems or simply need to switch between commonly used speed measurements, this calculator has you covered.
 
-![image](https://github.com/TheDarkW3b/CalcDiverse/assets/54339318/5aa13cda-de00-4322-a56e-fabd611491f9)
+## Tech Stacks :-
 
-## How to Use
-- Open the Speed Converter in your web browser or launch the application.
-- Input the speed value in the desired unit (km/h or m/s).
-- Select the current unit from the dropdown menu.
-- Choose the target unit for conversion from the second dropdown menu.
-- Click the "Convert" button.
-- View the converted speed in the selected unit.
-
-## Tech Stack
 - HTML
 - CSS
-- Javascript
+- JavaScript
+
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/501aeade-9dd7-4dd9-a99b-ad565af34962)

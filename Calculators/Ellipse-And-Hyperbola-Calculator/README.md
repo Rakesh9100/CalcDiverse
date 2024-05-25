@@ -1,17 +1,10 @@
-# Ellipse and Hyperbola Calculator
+# <p align="center">Ellipse And Hyperbola Calculator</p>
 
-This is a simple web-based calculator that allows users to calculate the area and, where applicable, the perimeter of ellipses and hyperbolas. The project is implemented using HTML, CSS, and JavaScript.
+## Description :-
 
-## Usage
+This is a simple web-based calculator that allows users to calculate the area and, where applicable, the perimeter of ellipses and hyperbolas.
 
-1. Open the `index.html` file or `Ellipse and Hyperbola Calculator` in a web browser.
-2. Select the desired shape from the dropdown menu: Ellipse or Hyperbola.
-3. Enter the values for the major axis ('a') and minor axis ('b').
-4. Click the "Calculate" button.
-
-The calculator will display the calculated area for both ellipses and hyperbolas. If the shape is an ellipse, the perimeter will also be displayed.
-
-## Files
+## Tech Stacks :-
 
 - HTML
 - CSS
@@ -19,4 +12,4 @@ The calculator will display the calculated area for both ellipses and hyperbolas
 
 ## Screenshots :-
 
-![Ellipse-And-Hyperbola-Calculator](./Image/Ellipse-And-Hyperbola-Cal.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/1ce85307-ee90-4bec-81e6-a8fba092c342)

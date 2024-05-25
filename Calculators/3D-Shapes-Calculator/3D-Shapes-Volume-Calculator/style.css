@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+body::before {
+    content: "";
+    background: url("./assets/background.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.shape {
+    display: none;
+    background-color: #fbfcfb;
+    height: 300px;
+    border: 5px solid #0c0f46;
+    border-radius: 10px;
+    width: 45%;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formula {
+    font-size: 1.4rem;
+}
+
+input {
+    width: 8vw;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.3rem;
+    margin-bottom: 5%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type=text]:focus,
+input:hover {
+    border: 1px solid #612b4f;
+}
+
+button {
+    background-color: #522743;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+
+}
+
+button:hover {
+    background-color: #552f48;
+}
+
+.answer {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main {
+    margin: 2rem;
+}
+
+.header {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #0c0f46;
+}
+
+.selectShape {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+select {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.4rem;
+    color: #0c0f46;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+    * {
+        font-size: 0.8rem;
+    }
+
+    .answer {
+        font-size: 1.5rem;
+    }
+
+    .shape {
+        height: 250px;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .answer {
+        font-size: 1.5rem;
+    }
+
+    .shape {
+        width: 60vw;
+    }
+
+    input {
+        width: 12vw;
+    }
+
+    .header {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .answer {
+        font-size: 1.5rem;
+    }
+
+    .shape {
+        width: 80vw;
+        padding: 1rem;
+
+    }
+
+    input {
+        width: 17vw;
+    }
+
+    body::before {
+        background-image: linear-gradient(rgb(125, 133, 182), rgb(185, 126, 212));
+    }
+
+    .header {
+        font-size: 2rem;
+    }
+}

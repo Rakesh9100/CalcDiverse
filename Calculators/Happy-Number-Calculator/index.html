@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Number Calculator</title>
+</head>
+
+<body>
+
+    <h1 class="title">Happy Number Calculator</h1>
+
+    <div class="information">
+        <h2>What is a Happy Number?</h2>
+        <p>
+            A happy number is a positive integer that, when replaced by the sum of the squares of its digits repeatedly,
+            eventually reaches the number 1.
+            If this process results in an endless cycle containing the number 4, then the number is called an unhappy
+            number.
+        </p>
+
+        <h2>Definition:</h2>
+        <p>
+            A number is called a happy number if, after replacing the number by the sum of the squares of its digits,
+            the process is repeated until the number becomes 1.
+        </p>
+
+        <h2>Example:</h2>
+        <p>
+            For example, the number 32 is a happy number because the process yields 1 as follows:
+            <br> \(3^2 + 2^2 = 13\)
+            <br> \(1^2 + 3^2 = 10\)
+            <br> \(1^2 + 0^2 = 1\)
+        </p>
+
+        <h2>Formula:</h2>
+        <p>
+            Let \(n\) be the original number, and \(d_1, d_2, ..., d_k\) be its digits. The sum of the squares of its
+            digits is given by:
+            <br> \(n = d_1^2 + d_2^2 + ... + d_k^2\)
+        </p>
+
+        <h2>Solution Process:</h2>
+        <p>
+            1. Start with a positive integer.
+            <br> 2. Replace the number by the sum of the squares of its digits.
+            <br> 3. Repeat the process until the number becomes 1 (happy) or an endless cycle containing 4 (unhappy).
+        </p>
+    </div>
+
+    <div class="calculator">
+        <div class="section">
+            <p class="calculator-title">Check Single Happy Number</p>
+            <label for="number">Enter a number:</label>
+            <input type="number" id="number" placeholder="Enter a number">
+            <button onclick="checkHappyNumber()">Check</button>
+            <p id="resultSingle"></p>
+        </div>
+
+        <div class="section">
+            <p class="calculator-title">Check Happy Numbers in Range</p>
+            <label for="fromRange">From:</label>
+            <input type="number" id="fromRange" placeholder="Enter from number">
+            <label for="toRange">To:</label>
+            <input type="number" id="toRange" placeholder="Enter to number">
+            <button onclick="checkHappyNumbersInRange()">Check</button>
+            <p id="rangeResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

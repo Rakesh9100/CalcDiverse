@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Time Calculator</title>
+</head>
+
+<body>
+    <section class="time-section" id="timeCalculator">
+        <div id="time-container" class="pink-box">
+            <h1>Time Calculator</h1>
+            <label for="hours">Time (hours):</label>
+            <input type="number" id="hours" placeholder="Enter hours">
+
+            <label for="minutes">Time (minutes):</label>
+            <input type="number" id="minutes" placeholder="Enter minutes">
+
+            <label for="seconds">Time (seconds):</label>
+            <input type="number" id="seconds" placeholder="Enter seconds">
+
+            <button onclick="calculateTime()">Calculate Time</button>
+
+            <h3>Result:</h3>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

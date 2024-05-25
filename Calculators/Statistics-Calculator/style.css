@@ -1,9 +1,9 @@
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 8s ease infinite;
-	height: 100vh;
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -35,7 +35,7 @@ textarea {
 .buttons {
     display: flex;
     justify-content: space-between;
-    margin:20px 20px;
+    margin: 20px 20px;
     animation: fadeInAndFloat 1.5s ease-in-out forwards;
 }
 
@@ -50,7 +50,7 @@ button {
     transition: background-color 0.5s ease;
 }
 
-button:hover{
+button:hover {
     background-color: #0a4c82;
 }
 
@@ -78,35 +78,41 @@ li span:last-child {
 
 @keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
+
 @keyframes fadeInAndFloat {
     0% {
-      opacity: 0;
-      transform: translateY(40px);
+        opacity: 0;
+        transform: translateY(40px);
     }
+
     100% {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 ::placeholder {
     color: rgb(0, 0, 0);
     opacity: 0.6;
-  }
-  
+}

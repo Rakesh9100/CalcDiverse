@@ -27,7 +27,8 @@ label {
     color: #333;
 }
 
-select, input {
+select,
+input {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;

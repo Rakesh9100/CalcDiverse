@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logarithm Calculator</title>
     <link rel="stylesheet" href="./style.css">
+    <title>Logarithm Calculator</title>
 </head>
+
 <body>
 
     <div id="calculator">
         <div id="heading">
-        <h1>Logarithm Calculator</h1>
+            <h1>Logarithm Calculator</h1>
         </div>
         <hr>
         <div class="content">
             <p>Calculate Logarithm of a number to any base:</p>
-        <div id="base1"><input type="number" id="base" placeholder="Enter base"></div>
-        <div id="number1"><input type="number" id="number" placeholder="Enter number"></div>
-        <button onclick="calculateLog()" id="button">Calculate Log</button>
-        <h3>Result:</h3>
-        <p id="result"></p>
+            <div id="number1"><input type="number" id="number"  min="0" step="any" oninput="validity.valid && value!=0 || (value='');" placeholder="Enter number" required></div>
+
+            <div id="base1"><input type="number" id="base" min="0.000001" step="any"   oninput="validity.valid && value!=0 || (value='');" onchange="validateBaseInput(this)" placeholder="Enter base" required><br><span id="baseError">INVALID INPUT *Base can't be 1*</span></div>
+
+            <button onclick="calculateLog()" id="button">Calculate Log</button>
+            <h3>Result:</h3>
+            <p id="result"></p>
         </div>
     </div>
-    
+
     <script src="./script.js"></script>
 
 </body>
+
 </html>

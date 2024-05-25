@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pressure Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="PressureConverter">
+            <h2>Pressure Calculator</h2>
+
+            <!-- Input field for pressure value -->
+            <label for="PressureInput">Enter value</label>
+            <input type="number" id="PressureInput" name="PressureInput" step="any" />
+
+            <!-- Dropdown for selecting the unit to convert from -->
+            <label for="unitFrom">From</label>
+            <select id="unitFrom">
+                <option value="Pa">Pascal</option>
+                <option value="kPa">Kilo Pascal</option>
+                <option value="atm" selected>atm</option>
+                <option value="bar">bar</option>
+                <option value="mmHg">mm of Hg</option>
+            </select>
+
+            <!-- Dropdown for selecting the unit to convert to -->
+            <label for="unitTo">To</label>
+            <select id="unitTo">
+                <option value="Pa" selected>Pascal</option>
+                <option value="kPa">Kilo Pascal</option>
+                <option value="atm">atm</option>
+                <option value="bar">bar</option>
+                <option value="mmHg">mm of Hg</option>
+            </select>
+
+            <!-- Button to trigger the conversion -->
+            <button onclick="convertPressure()">Convert</button>
+
+            <!-- Result paragraph to display the converted pressure -->
+            <p id="PressureResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

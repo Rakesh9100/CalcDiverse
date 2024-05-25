@@ -1,0 +1,288 @@
+{
+    "women": [
+        {
+            "international": "XS",
+            "AU/NZ/UK": 6,
+            "US": 2,
+            "EU": 34,
+            "Italy": 38,
+            "Germany": 32,
+            "Japan": 7,
+            "Russia": 40,
+            "details": {
+                "Bust": "80 cm / 31 in",
+                "Waist": "62 cm / 24 in",
+                "Hips": "87 cm / 34 in"
+            }
+        },
+        {
+            "international": "S",
+            "AU/NZ/UK": 8,
+            "US": 4,
+            "EU": 36,
+            "Italy": 40,
+            "Germany": 34,
+            "Japan": 9,
+            "Russia": 42,
+            "details": {
+                "Bust": "85 cm / 33 in",
+                "Waist": "67 cm / 26 in",
+                "Hips": "92 cm / 36 in"
+            }
+        },
+        {
+            "international": "S",
+            "AU/NZ/UK": 10,
+            "US": 6,
+            "EU": 38,
+            "Italy": 42,
+            "Germany": 36,
+            "Japan": 11,
+            "Russia": 44,
+            "details": {
+                "Bust": "90 cm / 35 in",
+                "Waist": "72 cm / 28 in",
+                "Hips": "97 cm / 38 in"
+            }
+        },
+        {
+            "international": "M",
+            "AU/NZ/UK": 12,
+            "US": 8,
+            "EU": 40,
+            "Italy": 44,
+            "Germany": 38,
+            "Japan": 13,
+            "Russia": 46,
+            "details": {
+                "Bust": "95 cm / 37 in",
+                "Waist": "77 cm / 30 in",
+                "Hips": "102 cm / 40 in"
+            }
+        },
+        {
+            "international": "M",
+            "AU/NZ/UK": 14,
+            "US": 10,
+            "EU": 42,
+            "Italy": 46,
+            "Germany": 40,
+            "Japan": 15,
+            "Russia": 48,
+            "details": {
+                "Bust": "100 cm / 39 in",
+                "Waist": "82 cm / 32 in",
+                "Hips": "107 cm / 42 in"
+            }
+        },
+        {
+            "international": "L",
+            "AU/NZ/UK": 16,
+            "US": 12,
+            "EU": 44,
+            "Italy": 48,
+            "Germany": 42,
+            "Japan": 17,
+            "Russia": 50,
+            "details": {
+                "Bust": "105 cm / 41 in",
+                "Waist": "87 cm / 34 in",
+                "Hips": "112 cm / 44 in"
+            }
+        },
+        {
+            "international": "L",
+            "AU/NZ/UK": 18,
+            "US": 14,
+            "EU": 46,
+            "Italy": 50,
+            "Germany": 44,
+            "Japan": 19,
+            "Russia": 52,
+            "details": {
+                "Bust": "110 cm / 43 in",
+                "Waist": "92 cm / 36 in",
+                "Hips": "117 cm / 46 in"
+            }
+        },
+        {
+            "international": "XL",
+            "AU/NZ/UK": 20,
+            "US": 16,
+            "EU": 48,
+            "Italy": 52,
+            "Germany": 46,
+            "Japan": 21,
+            "Russia": 54,
+            "details": {
+                "Bust": "115 cm / 45 in",
+                "Waist": "97 cm / 38 in",
+                "Hips": "122 cm / 48 in"
+            }
+        },
+        {
+            "international": "XL",
+            "AU/NZ/UK": 22,
+            "US": 18,
+            "EU": 50,
+            "Italy": 54,
+            "Germany": 48,
+            "Japan": 23,
+            "Russia": 56,
+            "details": {
+                "Bust": "120 cm / 47 in",
+                "Waist": "102 cm / 40 in",
+                "Hips": "127 cm / 50 in"
+            }
+        },
+        {
+            "international": "XXL",
+            "AU/NZ/UK": 24,
+            "US": 20,
+            "EU": 52,
+            "Italy": 56,
+            "Germany": 50,
+            "Japan": 25,
+            "Russia": 24,
+            "details": {
+                "Bust": "125 cm / 49 in",
+                "Waist": "107 cm / 42 in",
+                "Hips": "132 cm / 52 in"
+            }
+        },
+        {
+            "international": "XXL",
+            "AU/NZ/UK": 26,
+            "US": 22,
+            "EU": 54,
+            "Italy": 58,
+            "Germany": 52,
+            "Japan": 27,
+            "Russia": 26,
+            "details": {
+                "Bust": "130 cm / 51 in",
+                "Waist": "112 cm / 44 in",
+                "Hips": "137 cm / 54 in"
+            }
+        }
+    ],
+    "men": [
+        {
+            "international": "S",
+            "AU/UK/US": 34,
+            "EU/Russia": 44,
+            "Japan": 36,
+            "Korea": 90,
+            "details": {
+                "Chest": "90 cm / 35.5 in",
+                "Low Waist": "78.5 cm / 31 in",
+                "Hip": "91 cm / 35.75 in",
+                "Overarm": "82.5 cm / 32.5 in"
+            }
+        },
+        {
+            "international": "S",
+            "AU/UK/US": 36,
+            "EU/Russia": 46,
+            "Japan": 38,
+            "Korea": 95,
+            "details": {
+                "Chest": "94 cm / 37 in",
+                "Low Waist": "82.5 cm / 32.5 in",
+                "Hip": "95 cm / 37.5 in",
+                "Overarm": "84 cm / 33 in"
+            }
+        },
+        {
+            "international": "M",
+            "AU/UK/US": 38,
+            "EU/Russia": 48,
+            "Japan": 40,
+            "Korea": 100,
+            "details": {
+                "Chest": "98 cm / 38.5 in",
+                "Low Waist": "86.5 cm / 34 in",
+                "Hip": "99 cm / 38.75 in",
+                "Overarm": "85.5 cm / 33.5 in"
+            }
+        },
+        {
+            "international": "M",
+            "AU/UK/US": 40,
+            "EU/Russia": 50,
+            "Japan": 42,
+            "Korea": 105,
+            "details": {
+                "Chest": "102 cm / 40.25 in",
+                "Low Waist": "90.5 cm / 35.5 in",
+                "Hip": "103 cm / 40.5 in",
+                "Overarm": "87 cm / 34.25 in"
+            }
+        },
+        {
+            "international": "L",
+            "AU/UK/US": 42,
+            "EU/Russia": 52,
+            "Japan": 44,
+            "Korea": 110,
+            "details": {
+                "Chest": "106 cm / 41.75 in",
+                "Low Waist": "94.5 cm / 37.25 in",
+                "Hip": "107 cm / 42.25 in",
+                "Overarm": "89 cm / 34.5 in"
+            }
+        },
+        {
+            "international": "L",
+            "AU/UK/US": 44,
+            "EU/Russia": 54,
+            "Japan": 46,
+            "Korea": 115,
+            "details": {
+                "Chest": "110 cm / 43.25 in",
+                "Low Waist": "98.5 cm / 38.75 in",
+                "Hip": "111 cm / 43.75 in",
+                "Overarm": "90 cm / 35 in"
+            }
+        },
+        {
+            "international": "XL",
+            "AU/UK/US": 46,
+            "EU/Russia": 56,
+            "Japan": 48,
+            "Korea": 120,
+            "details": {
+                "Chest": "114 cm / 44.75 in",
+                "Low Waist": "102.5 cm / 40.25 in",
+                "Hip": "115 cm / 45.25 in",
+                "Overarm": "91 cm / 35.5 in"
+            }
+        },
+        {
+            "international": "XXL",
+            "AU/UK/US": 48,
+            "EU/Russia": 58,
+            "Japan": 50,
+            "Korea": 125,
+            "details": {
+                "Chest": "118 cm / 46.5 in",
+                "Low Waist": "106.5 cm / 42 in",
+                "Hip": "119 cm / 46.75 in",
+                "Overarm": "92 cm / 35.75 in"
+            }
+        },
+        {
+            "international": "XXL",
+            "AU/UK/US": 50,
+            "EU/Russia": 60,
+            "Japan": 52,
+            "Korea": 130,
+            "details": {
+                "Chest": "122 cm / 48 in",
+                "Low Waist": "110.5 cm / 43.5 in",
+                "Hip": "123 cm / 48.5 in",
+                "Overarm": "93 cm / 36.5 in"
+            }
+        }
+    ]
+}

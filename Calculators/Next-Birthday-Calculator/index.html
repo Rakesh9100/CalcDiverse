@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Next Birthday Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Birthday Calculator</h1>
+        <label for="birthday">Select your birthday: &nbsp;</label>
+        <input type="date" id="birthday" required>
+        <br><br>
+        <button onclick="calculateTimeUntilBirthday()">Calculate</button>
+        <div id="result"></div>
+
+        <!-- For animation -->
+        <canvas id="fallingLeavesCanvas" class="hidden"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

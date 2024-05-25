@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Investment Risk Tolerance Calculator</title>
+</head>
+
+<body>
+    <div id="calculator">
+        <h2>Investment Risk Tolerance Calculator</h2>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age">
+
+        <label for="horizon">Investment Horizon (in years):</label>
+        <input type="number" id="horizon" placeholder="Enter investment horizon">
+
+        <label for="knowledge">Financial Knowledge (1-10):</label>
+        <input type="number" id="knowledge" placeholder="Enter your financial knowledge">
+
+        <label for="experience">Investment Experience (1-10):</label>
+        <input type="number" id="experience" placeholder="Enter your investment experience">
+
+        <button onclick="calculateRisk()"><b>Calculate Risk</b></button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(#24DB25, #2524DB);
+    font-size: 1.4rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+    width: 35rem;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 2rem;
+    flex-wrap: wrap;
+}
+
+#heading {
+    color: white;
+}
+
+.inputsection {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#interest,
+#capital,
+#return_amount,
+#date,
+#type {
+    width: 29rem;
+    margin-bottom: 2rem;
+}
+
+#interest input {
+    border-radius: 2rem;
+}
+
+#result {
+    height: 5rem;
+    width: 29rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.submitbtn button {
+    background-color: #2524DB;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+#interest,
+#capital,
+#return_amount,
+#date,
+#type {
+    background-color: #f6a7a7;
+    color: black;
+    border-radius: 10px;
+    font-weight: 500;
+}

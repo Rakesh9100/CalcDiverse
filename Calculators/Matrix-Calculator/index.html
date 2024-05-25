@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.0.0/math.min.js"></script>
+    <title>Matrix Calculator</title>
+</head>
+
+<body>
+    <div id="matrixCalculator">
+        <h2>Matrix Calculator</h2>
+
+        <label for="matrixSize">Matrix Size:</label>
+        <select id="matrixSize" onchange="createMatrixInputs()">
+            <option value="2" class="size">2 x 2</option>
+            <option value="3" class="size">3 x 3</option>
+            <option value="4" class="size">4 x 4</option>
+        </select>
+
+        <div id="matrixInputs">
+            <!-- Matrix A -->
+            <h3>Matrix A</h3>
+            <div id="matrixA"></div>
+
+            <!-- Matrix B -->
+            <h3>Matrix B</h3>
+            <div id="matrixB"></div>
+        </div>
+
+        <button onclick="calculate('add')">Add</button>
+        <button onclick="calculate('subtract')">Subtract</button>
+        <button onclick="calculate('multiply')">Multiply</button><br>
+        <button onclick="calculate('determinant')">Determinant</button>
+        <button onclick="calculate('inverse')">Inverse</button>
+        <button onclick="calculate('transpose')">Transpose</button>
+
+        <h3>Result</h3>
+        <div id="result"></div>
+        <button onclick="resetForm()">Reset</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    </div>
+</body>
+
+</html>

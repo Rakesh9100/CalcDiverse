@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Income Tax Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Income Tax Calculator</h1>
+        <br>
+        <div class="allpart">
+            <div class="input-part">
+                <div class="main-income">
+                    <label for="earnigs">Income</label>
+                    <br>
+                    <input type="number" name="earnigs" id="my-income" placeholder="Earnigs">
+                </div>
+
+
+                <div class="other-income">
+                    <label for="travel">Travel allowance</label>
+                    <input type="number" name="travel" id="travel" placeholder="Travel allowance">
+
+                    <br>
+
+                    <label for="house">House allowance</label>
+                    <input type="number" name="house" id="house" placeholder="House allowance">
+                    <br>
+
+                    <label for="helth">Health allowance</label>
+                    <input type="number" name="helth" id="helth" placeholder="Helth allowance">
+                </div>
+            </div>
+
+            <div class="btnn">
+
+                <button id="btn">Calculate</button>
+            </div>
+
+
+            <div class="output-part">
+                <h3>Your Total tax</h3>
+                <p id="show-tax"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+button,
+input,
+select {
+    vertical-align: middle
+}
+
+a,
+button {
+    text-decoration: none
+}
+
+body,
+html {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-size: 100%;
+    background-image: radial-gradient(#ff5d71, #EB3349);
+}
+
+* {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #333447;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #757575;
+    margin: 10px;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    font-size: 14px
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0
+}
+
+.container {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.3);
+}
+
+.convert-box {
+    background-color: #e2e2e2;
+    margin: 15px 0 0;
+    padding: 18px 13px 13px;
+    border-radius: 5px;
+}
+
+.col-amount,
+.col-button,
+.col-period {
+    margin: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    display: inline-block
+}
+
+.col-amount {
+    width: 25%;
+    margin-right: 2%;
+    float: left
+}
+
+.col-period {
+    width: 73%;
+    float: left
+}
+
+.col-button {
+    width: 100%;
+    margin-top: 15px
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+button,
+input {
+    display: inline-block
+}
+
+input {
+    border: 0 solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 35px;
+    outline: none;
+    text-align: center
+}
+
+select {
+    box-shadow: none;
+    border: 0 solid #ccc;
+    border-radius: 4px;
+    margin: 0;
+    background-color: #fff;
+    padding: 0 5px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 16px;
+    height: 35px;
+    width: 100%;
+    outline: none;
+}
+
+button {
+    background-color: #ffcc00;
+    color: #353842;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: transparent;
+    border-radius: 4px;
+    text-align: center;
+    zoom: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 35px;
+    width: 100%;
+    transition: scale .2s ease-in-out;
+}
+
+button:active {
+    scale: 0.98;
+}
+
+
+.content {
+    float: none;
+    width: 100%;
+    margin: 0 10px
+}
+
+#time {
+    font-size: 22px;
+    margin: 0
+}
+
+#date {
+    font-size: 18px;
+    margin: 0
+}
+
+.hide {
+    display: none
+}
+
+.show {
+    display: block
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 600px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 10px 0
+    }
+
+    h2 {
+        font-size: 18px
+    }
+
+    .col-amount {
+        width: 20%;
+        float: left;
+        margin: 0
+    }
+
+    .col-period {
+        width: 45%;
+        float: left;
+        margin: 0 5%
+    }
+
+    .col-button {
+        width: 25%;
+        float: left;
+        margin: 0
+    }
+
+    #time {
+        font-size: 36px;
+        margin: 0
+    }
+
+    #date {
+        font-size: 24px;
+        margin: 0
+    }
+
+    .convert-box {
+        margin: 25px 0;
+        padding: 30px 25px 26px
+    }
+
+    input,
+    select,
+    button {
+        height: 45px
+    }
+}

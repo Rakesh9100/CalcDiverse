@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pronic Number Calculator</title>
+</head>
+
+<body>
+
+    <p class="title">Pronic Number Calculator</p>
+
+    <div class="calculator">
+        <div class="section">
+            <p class="calculator-title">Check Pronic Number</p>
+            <label for="number">Enter a number:</label>
+            <input type="number" id="number" placeholder="Enter a number">
+            <button onclick="checkPronicNumber()">Check</button>
+            <button onclick="clearCheckSection()">Clear</button>
+            <p id="result"></p>
+            <p id="explanation"></p>
+        </div>
+
+        <div class="section">
+            <p class="calculator-title">Find Pronic Numbers in Range</p>
+            <label for="from">From:</label>
+            <input type="number" id="from" placeholder="Enter from number">
+            <label for="to">To:</label>
+            <input type="number" id="to" placeholder="Enter to number">
+            <button onclick="findPronicNumbersInRange()">Find</button>
+            <button onclick="clearRangeSection()">Clear</button>
+            <p id="rangeResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

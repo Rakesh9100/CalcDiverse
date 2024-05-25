@@ -1,0 +1,89 @@
+body {
+    background-color: #0e1538;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    font-family: 'Times New Roman', sans-serif;
+    margin: 35px auto 20px;
+}
+
+hr {
+    border-top: 2px solid black;
+    width: 40%;
+    margin-bottom: 55px;
+}
+
+.main {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+label {
+    font-size: 20px;
+}
+
+.btn {
+    width: 200px;
+    background-color: darkorange;
+}
+
+#finalAmount {
+    font-family: 'Lobster', cursive;
+    display: none;
+    margin: 50px auto;
+    color: white;
+    /* Added to set font color to white */
+}
+
+#finalAmount h2 {
+    font-size: 50px;
+    color: lightsalmon;
+}
+
+.finalValue {
+    font-family: 'Calibri', serif;
+}
+
+#heading {
+    color: deepskyblue;
+}
+
+#fromCountryDetails,
+#toCountryDetails {
+    color: white;
+    /* Added to set font color to white */
+}
+
+@media (max-width: 768px) {
+    hr {
+        width: 60%;
+    }
+
+    .main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .heading {
+        font-size: 60px;
+    }
+
+    hr {
+        width: 75%;
+    }
+
+    #finalAmount h2,
+    .finalValue {
+        font-size: 40px;
+    }
+}

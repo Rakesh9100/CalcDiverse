@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Index Calculator</title>
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Air Quality Index(AQI) Calculator</h1>
+        <br><br>
+        <label for="aqi-idx" id="input-label">Enter AQI of your region : </label>
+        <input type="number" id="input-id" min="1" max="500" step="any" oninput="validity.valid||(value='');" onchange="validateBaseInput(this)" placeholder="Enter AQI" required>
+        <br><br>
+        <button onclick="calculateAQI()">Calculate Level</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

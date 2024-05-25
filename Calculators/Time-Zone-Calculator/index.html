@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Zone Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <title>Time Zone Calculator</title>
 </head>
+
 <body>
     <header>
         <h1>Time Zone Calculator</h1>
     </header>
-    
+
     <section id="calculator">
         <label for="originTimeZone">Origin Time Zone:</label>
         <select id="originTimeZone" required></select>
-        
+
         <label for="destinationTimeZone">Destination Time Zone:</label>
         <select id="destinationTimeZone" required></select>
-        
+
         <label for="dateTime">Date and Time:</label>
         <input type="datetime-local" id="dateTime" required>
 
@@ -28,10 +30,11 @@
         </select>
 
         <button onclick="calculateTimeZone()">Convert</button>
-        
+
         <p id="result"></p>
     </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>

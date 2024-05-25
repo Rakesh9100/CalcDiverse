@@ -1,8 +1,8 @@
-# <p align="center">Mass Conversion Calculator</p>
+# <p align="center">Mass Calculator</p>
 
 ## Description :-
 
-Calculates the Mass conversion between two specified units..
+Calculates the Mass conversion between two specified units.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ Calculates the Mass conversion between two specified units..
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/60788663/a7e10e23-d674-4eb4-b6b3-dbff0e30b603)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/40ab57f4-8322-4af9-ac5f-e5eed6754b7d)

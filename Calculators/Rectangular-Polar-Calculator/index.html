@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rectangular Polar Calculator</title>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Rectangular to Polar</h2>
+        <div class="input-div">
+            <label for="xInput">Enter X coordinate:</label><br>
+            <input type="text" id="xInput" placeholder="Enter X coordinate"><br>
+
+            <label for="yInput">Enter Y coordinate:</label><br>
+            <input type="text" id="yInput" placeholder="Enter Y coordinate"><br>
+        </div>
+        <div class="button">
+            <button onclick="convertToPolar()">Convert to Polar</button>
+        </div>
+
+        <div id="converter">
+            <h2>Polar to Rectangular</h2>
+            <label for="angle">Angle (in degrees): </label><br>
+            <input type="number" id="angle" placeholder="Enter angle" required><br><br>
+            <label for="radius">Radius: </label><br>
+            <input type="number" id="radius" placeholder="Enter radius" required><br>
+            <button onclick="convert()">Convert to Rectangular</button>
+            <p id="result"></p>
+        </div>
+        <h3> Result</h3>
+        <div class="result-div">
+            <div class="result">
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

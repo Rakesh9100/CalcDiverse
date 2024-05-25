@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-image: url('https://images.unsplash.com/photo-1438986710423-1bf13038bc14?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    border: solid white 2px;
+}
+
+button {
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 10%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(13, 51, 189, 0.345);
+    height: 100%;
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 100px;
+    box-shadow: 4px 8px 10px black;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.result-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.input-div {
+    display: flex;
+    justify-content: center;
+    padding-right: 8%;
+}
+
+label {
+    margin-top: 15px;
+    /* margin-left: 50px; */
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+button:hover {
+    background-color: green;
+}
+
+button:active {
+    background-color: rgba(0, 128, 0, 0.4);
+}
+
+#converter {
+    text-align: center;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 8px 0px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    width: 80px;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 740px) {
+    .box {
+        width: 100%;
+        margin: 20px;
+    }
+
+    input,
+    button {
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .input-div {
+        display: block;
+        /* justify-content: center; */
+        margin-left: 40px;
+        padding-right: 8%;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cuban Prime Calculator</title>
+</head>
+
+<body>
+
+    <h1 class="title">Cuban Prime Calculator</h1>
+    <div class="information">
+        <h2>What is a Cuban Prime?</h2>
+        <p>
+            A Cuban prime is a prime number that is a solution to the Diophantine equation <em>x^3 + y^3 = z^3 + 1</em>,
+            where x, y, and z are positive integers.
+            It's a special type of prime number related to the sum of cubes.
+        </p>
+
+        <h2>Formula:</h2>
+        <p>
+            The Diophantine equation for Cuban primes is <em>x^3 + y^3 = z^3 + 1</em>.
+        </p>
+
+        <h2>Solution Process:</h2>
+        <p>
+            When checking a number for Cuban primality, the application verifies if the given number satisfies the
+            Diophantine equation.
+            The application then checks if both the calculated value and the given number are prime. If the conditions
+            are met, the number is identified as a Cuban Prime.
+        </p>
+    </div>
+    <div class="calculator">
+        <div class="section">
+            <p class="calculator-title">Check Single Cuban Prime</p>
+            <label for="number">Enter a number:</label>
+            <input type="number" id="number" placeholder="Enter a number">
+            <button onclick="checkCubanPrime()">Check</button>
+            <p id="resultSingle"></p>
+        </div>
+
+        <div class="section">
+            <p class="calculator-title">Check Cuban Primes in Range</p>
+            <label for="fromRange">From:</label>
+            <input type="number" id="fromRange" placeholder="Enter from number">
+            <label for="toRange">To:</label>
+            <input type="number" id="toRange" placeholder="Enter to number">
+            <button onclick="checkCubanPrimesInRange()">Check</button>
+            <p id="rangeResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

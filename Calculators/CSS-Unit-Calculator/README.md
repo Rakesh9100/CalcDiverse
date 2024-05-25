@@ -1,10 +1,10 @@
-# <p align="center">CSS Unit Convertor</p>
+# <p align="center">CSS Unit Calculator</p>
 
 ## Description :-
 
-This calculator converts various css units like px to rem, px to em, px to vh etc;
+This calculator converts various css units like px to rem, px to em, px to vh etc.
 
-## Tech Stack :-
+## Tech Stacks :-
 
 - HTML
 - CSS
@@ -12,4 +12,4 @@ This calculator converts various css units like px to rem, px to em, px to vh et
 
 ## Screenshots :-
 
-![image](image.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/fd146cf5-543e-46ef-9f69-1d1f440e9f0d)

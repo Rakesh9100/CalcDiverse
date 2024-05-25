@@ -1,8 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    margin-left: 35rem;
     margin-top: 5rem;
     background: radial-gradient(circle, rgb(243, 245, 245), rgb(69, 234, 152));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -20,7 +23,7 @@ input {
 }
 
 button {
-    padding: 8px 15px;
+    padding: 8px 8px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -34,13 +37,13 @@ button:hover {
 
 #energyCalculator,
 #waterCalculator {
-    max-width: 400px;
+    width: 350px;
     margin-bottom: 30px;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
     box-shadow: rgba(46, 47, 46, 0.913) 15px 20px 40px,
-    rgba(80, 89, 92, 0.788) 5px 5px 10px;
+        rgba(80, 89, 92, 0.788) 5px 5px 10px;
 
 }
 

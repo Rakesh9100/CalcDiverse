@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+}
+
+.glassmorphic-card {
+    background: rgba(189, 189, 189, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(14, 15, 18, 0.55);
+    backdrop-filter: blur(2.15px);
+    border-radius: 5px;
+    border: 15px solid rgba(255, 255, 255, 0.06);
+    width: 25%;
+}
+
+.header {
+    background-color: #2E3B4E;
+    border-radius: 15px 15px 0 0;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.calculator-container {
+    text-align: center;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #2E3B4E;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 20px;
+    font-family: Cousine, Courier, monospace;
+    color: #2E3B4E;
+}
+
+.monospace-font {
+    font-family: Cousine, Courier, monospace;
+}

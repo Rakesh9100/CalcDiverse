@@ -4,11 +4,12 @@
 
 A daily water intake calculator that helps users determine their daily water intake based on body weight, activity level, and climate.
 
-## Tech Stack :-
+## Tech Stacks :-
 
 - HTML
 - CSS
 - JavaScript
 
 ## Screenshots :-
-![image](https://github.com/ShatilKhan/CalcDiverse/assets/52494840/95331a0e-9454-4a69-9413-3153d07a149a)
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/16e4be69-a0cf-4862-a79e-98e81061d6e2)

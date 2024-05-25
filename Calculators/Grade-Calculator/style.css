@@ -1,0 +1,121 @@
+* {
+    padding: 10px;
+}
+
+body {
+    font-size: large;
+    box-sizing: border-box;
+    background: radial-gradient(circle, rgb(222, 195, 255), rgb(183, 129, 250));
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#calculator-container {
+    position: absolute;
+    background-color: rgb(243, 235, 253);
+    color: rgb(44, 44, 44);
+    border-radius: 8%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: auto;
+    box-shadow: rgba(172, 100, 255, 0.753) 15px 20px 40px,
+        rgba(142, 56, 248, 0.774) 5px 5px 10px;
+    text-align: center;
+}
+
+label,
+select,
+button,
+input {
+    display: block;
+    margin: 10px auto;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select,
+input {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+button {
+    background-color: rgba(73, 23, 119, 0.781);
+    text-align: center;
+    border-radius: 13px;
+    color: rgb(230, 223, 235);
+    cursor: pointer;
+    font-weight: 8%;
+    padding: 10px 15px;
+    width: auto;
+    font-size: 0.9em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button:hover {
+    background: rgba(73, 23, 119, 0.938);
+    box-shadow: 0 0 0 1px rgba(41, 8, 63, 0.712), 0 3px 5px 0 rgba(41, 8, 63, 0.712);
+}
+
+p {
+    position: relative;
+    font-size: large;
+    text-align: center;
+    color: rgb(91, 53, 126);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin: 5%;
+}
+
+.marks {
+    width: 20vw;
+    border-color: rgb(45, 43, 43);
+}
+
+@media only screen and (max-width: 1030px) {
+    #calculator-container {
+        width: 45%;
+    }
+
+    .marks {
+        width: 90%;
+        /* Adjusted width for smaller screens */
+        max-width: none;
+        /* Removed max-width for smaller screens */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 430px) {
+    #calculator-container {
+        width: 80%;
+    }
+
+    .marks {
+        width: 80%;
+        /* Adjusted width for smaller screens */
+        max-width: none;
+        /* Removed max-width for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 350) {
+    #calculator-container {
+        width: 60%;
+    }
+
+    .marks {
+        width: 90%;
+        /* Adjusted width for smaller screens */
+        max-width: none;
+        /* Removed max-width for smaller screens */
+    }
+}
