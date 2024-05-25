@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background: linear-gradient(to right, #da6854,#ee3405);
 }
 
 .converter {
@@ -25,7 +25,7 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 94%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -35,7 +35,7 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #c73d07;
     color: white;
     border: none;
     border-radius: 5px;
@@ -43,7 +43,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #d4804f;
 }
 
 #result {
@@ -51,3 +51,4 @@ button:hover {
     text-align: center;
     font-size: 1.2em;
 }
+
