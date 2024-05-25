@@ -13,5 +13,5 @@ This calculator only works within the specified range of standard roman numeral 
 
 ## Screenshots :-
 
-![image](![image](https://github.com/sweta-singh28/CalcDiverse/assets/126580286/8eb6e672-e671-4040-b1b7-45354baa84aa)
-)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/126580286/12199939-353d-431f-84b8-9c934a4b3be1)
+
