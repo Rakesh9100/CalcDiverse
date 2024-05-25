@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torque Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Torque Calculator</h1>
+        <div class="method-selector">
+            <label for="method">Select Calculation Method:</label>
+            <select id="method" onchange="showMethod()">
+                <option value="force-radius">Force and Radius</option>
+                <option value="power-angular-velocity">Power and Angular Velocity</option>
+                <option value="moment-angular-acceleration">Moment of Inertia and Angular Acceleration</option>
+            </select>
+        </div>
+        
+        <div id="force-radius" class="method">
+            <div class="input-group">
+                <label for="force">Force:</label>
+                <input type="number" id="force" placeholder="Enter force">
+                <select id="force-unit">
+                    <option value="N">Newton (N)</option>
+                    <option value="lbf">Pound-force (lbf)</option>
+                    <option value="kN">Kilonewton (kN)</option>
+                    <option value="kgf">Kilogram-force (kgf)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="radius">Radius:</label>
+                <input type="number" id="radius" placeholder="Enter radius">
+                <select id="radius-unit">
+                    <option value="m">Meters (m)</option>
+                    <option value="cm">Centimeters (cm)</option>
+                    <option value="mm">Millimeters (mm)</option>
+                    <option value="ft">Feet (ft)</option>
+                    <option value="in">Inches (in)</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="power-angular-velocity" class="method" style="display:none;">
+            <div class="input-group">
+                <label for="power">Power:</label>
+                <input type="number" id="power" placeholder="Enter power">
+                <select id="power-unit">
+                    <option value="W">Watt (W)</option>
+                    <option value="kW">Kilowatt (kW)</option>
+                    <option value="hp">Horsepower (hp)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="angular-velocity">Angular Velocity:</label>
+                <input type="number" id="angular-velocity" placeholder="Enter angular velocity">
+                <select id="angular-velocity-unit">
+                    <option value="rad/s">Radians per second (rad/s)</option>
+                    <option value="rpm">Revolutions per minute (rpm)</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="moment-angular-acceleration" class="method" style="display:none;">
+            <div class="input-group">
+                <label for="moment">Moment of Inertia:</label>
+                <input type="number" id="moment" placeholder="Enter moment of inertia">
+                <select id="moment-unit">
+                    <option value="kgm2">Kilogram-meter² (kg·m²)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="angular-acceleration">Angular Acceleration:</label>
+                <input type="number" id="angular-acceleration" placeholder="Enter angular acceleration">
+                <select id="angular-acceleration-unit">
+                    <option value="rad/s2">Radians per second² (rad/s²)</option>
+                </select>
+            </div>
+        </div>
+
+        <button onclick="calculateTorque()">Calculate Torque</button>
+        <div class="result">
+            <h2>Torque: <span id="torque-result">0</span> Nm</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
