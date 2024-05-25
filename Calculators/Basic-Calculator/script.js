@@ -17,14 +17,12 @@ document.addEventListener("keydown", function (event) {
             event.preventDefault();
             document.getElementById("display").value += event.key;
         }
-
     } else if (event.key === "Enter") {
         event.preventDefault();
         calculate();
     } else if (event.key === "Backspace") {
         removeFromDisplay();
     }
-
 });
 
 function removeFromDisplay() {
@@ -51,8 +49,6 @@ btn.onclick = function () {
 };
 
 calc.onsubmit = calculate(e);
-
-
 
 function clearOne() {
     let currentValue = calc.txt.value;
@@ -86,7 +82,3 @@ function point() {
         }
     }
 };
-
-
-
-
