@@ -2,8 +2,8 @@
 
 ## Description :-
 
-Put the values in roman numeral form and get the results in decimal format.
-This calculator only works within the specified range of standard roman numeral form i.e. within the range 1 to 3999.
+Calculator which takes the value in Roman numeral form and gives the results in decimal format.
+This calculator only works within the specified range of standard Roman numeral form i.e. within the range 1 to 3999.
 
 ## Tech Stacks :-
 
@@ -13,5 +13,4 @@ This calculator only works within the specified range of standard roman numeral 
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/126580286/12199939-353d-431f-84b8-9c934a4b3be1)
-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/3328c033-55ca-42a8-866e-60afbbc151cd)
