@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Net Worth Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Net Worth Calculator</h1>
+        <form id="netWorthForm">
+            <div class="flex-container">
+                <div class="half">
+                    <h2>Assets</h2>
+                    <div class="input-group">
+                        <label for="cash">Cash:</label>
+                        <input type="number" id="cash" name="cash" value=""required>
+                    </div>
+                    <div class="input-group">
+                        <label for="investments">Investments:</label>
+                        <input type="number" id="investments" name="investments" value=""required>
+                    </div>
+                    <div class="input-group">
+                        <label for="realEstate">Real Estate:</label>
+                        <input type="number" id="realEstate" name="realEstate" value=""required>
+                    </div>
+                    <div class="input-group">
+                        <label for="otherAssets">Other Assets:</label>
+                        <input type="number" id="otherAssets" name="otherAssets" value=""required>
+                    </div>
+                </div>
+                <div class="half">
+                    <h2>Liabilities</h2>
+                    <div class="input-group">
+                        <label for="mortgage">Mortgage:</label>
+                        <input type="number" id="mortgage" name="mortgage" value=""required>
+                    </div>
+                    <div class="input-group">
+                        <label for="loans">Loans:</label>
+                        <input type="number" id="loans" name="loans" value=""required>
+                    </div>
+                    <div class="input-group">
+                        <label for="creditCardDebt">Credit Card Debt:</label>
+                        <input type="number" id="creditCardDebt" name="creditCardDebt" value=""required>
+                    </div>
+                    <div class="input-group">
+                        <label for="otherLiabilities">Other Liabilities:</label>
+                        <input type="number" id="otherLiabilities" name="otherLiabilities" value=""required>
+                    </div>
+                </div>
+            </div>
+            <button type="button" onclick="calculateNetWorth()">Calculate Net Worth</button>
+        </form>
+        <h2>Your Net Worth: <span id="netWorthResult">$0.00</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
