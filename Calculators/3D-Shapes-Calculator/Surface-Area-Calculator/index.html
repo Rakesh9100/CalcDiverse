@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <title>3D Shapes Surface Area Calculator</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="waviy">
+            <span style="--i:1">S</span>
+            <span style="--i:2">U</span>
+            <span style="--i:4">R</span>
+            <span style="--i:5">F</span>
+            <span style="--i:6">A</span>
+            <span style="--i:7">C</span>
+            <span style="--i:8">E</span>
+            <span style="--i:9">&nbsp;</span>
+            <span style="--i:10">A</span>
+            <span style="--i:10">R</span>
+            <span style="--i:10">E </span>
+            <span style="--i:10">A</span>
+            <span style="--i:9">&nbsp;</span>
+            <span style="--i:11">C</span>
+            <span style="--i:12">A</span>
+            <span style="--i:13">L</span>
+            <span style="--i:14">C</span>
+            <span style="--i:15">U</span>
+            <span style="--i:16">L</span>
+            <span style="--i:17">A</span>
+            <span style="--i:18">T</span>
+            <span style="--i:19">O</span>
+            <span style="--i:20">R</span>
+        </div>
+        <br><br>
+        <div class="row">
+            <select id="shape" name="shape" onchange="showDimensions()" required>
+                <option value="" disabled selected hidden>Select a shape</option>
+                <option value="cube">Cube</option>
+                <option value="cuboid">Cuboid</option>
+                <option value="cone">Cone</option>
+                <option value="cylinder">Cylinder</option>
+                <option value="sphere">Sphere</option>
+                <option value="triangularPrism">Triangular Prism</option>
+                <option value="rectangularPrism">Rectangular Prism</option>
+                <option value="torus">Torus</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div class="row" id="length-row" style="display: none;">
+            <label for="length">Enter Length:</label>
+            <input type="number" id="length" name="length">
+        </div><br>
+        <div class="row" id="width-row" style="display: none;">
+            <label for="width">Enter Width:</label>
+            <input type="number" id="width" name="width">
+        </div><br>
+        <div class="row" id="height-row" style="display: none;">
+            <label for="height">Enter Height:</label>
+            <input type="number" id="height" name="height">
+        </div><br>
+        <div class="row" id="radius-row" style="display: none;">
+            <label for="radius">Enter Radius:</label>
+            <input type="number" id="radius" name="radius">
+        </div><br>
+        <div class="row" id="slant-height-row" style="display: none;">
+            <label for="slant-height">Enter Slant Height:</label>
+            <input type="number" id="slant-height" name="slant-height">
+        </div><br>
+        <div class="row" id="base-length-row" style="display: none;">
+            <label for="base-length">Enter Base Length:</label>
+            <input type="number" id="base-length" name="base-length">
+        </div><br>
+        <div class="row" id="base-width-row" style="display: none;">
+            <label for="base-width">Enter Base Width:</label>
+            <input type="number" id="base-width" name="base-width">
+        </div><br>
+        <div class="row" id="minor-radius-row" style="display: none;">
+            <label for="minor-radius">Enter Minor Radius:</label>
+            <input type="number" id="minor-radius" name="minor-radius">
+        </div><br>
+        <div class="rule"></div>
+        <div class="form-footer">
+            <button class="button" onclick="calculate(event)">Calculate</button>
+        </div>
+        <div id="result-container">
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
