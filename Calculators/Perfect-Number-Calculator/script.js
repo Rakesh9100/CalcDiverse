@@ -6,21 +6,28 @@ const checkPerfect=()=>{
     
   let sum=0;
   let txt=document.querySelector(".text");
+  let s=document.querySelector(".showHow");
+  let divisors = [];
   for(let i=1;i<num;i++)
     {
       if(num%i==0)
-        {
+        { 
           sum=sum+i;
+          divisors.push(i);
+          
         }
     }
     
+    s.textContent = divisors.join('+') + `=${sum}`;
     if(sum==num)
-      { txt.textContent="It is a Perfect Number!";
-        
-       
+      { 
+        s.textContent+=` =  ${num}`
+        txt.textContent="It is a Perfect Number!";
       }
       else
-      {txt.textContent="Not a Perfect Number!";
+      {
+        s.textContent+=` ≠  ${num}`
+        txt.textContent="Not a Perfect Number!";
       }
     }
     else
