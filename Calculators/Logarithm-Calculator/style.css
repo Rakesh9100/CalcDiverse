@@ -8,7 +8,6 @@ body {
 
 #heading {
     text-align: center;
-
 }
 
 .content {
@@ -28,12 +27,19 @@ body {
     margin-bottom: 15px;
 }
 
+#baseError {
+    color: rgb(241, 63, 63);
+    display: none;
+    font-size : 15px ;
+}
+
 #number {
     padding: 10px 15px 10px 10px;
     margin-bottom: 10px;
 }
 
 #button {
+    margin-top: 20px;
     padding: 20px 20px 20px 20px;
     font-size: 20px;
 }
