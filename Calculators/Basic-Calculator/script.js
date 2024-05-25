@@ -6,17 +6,29 @@ let math = window.math;
 let display = document.getElementById("display");
 // let zero = document.getElementById("display");
 
+let res = document.querySelector(".result-give");
+
 
 document.addEventListener("keydown", function (event) {
     const validKeys = /^[0-9.\+\-\*\/\(\)\^\%\{\}\[\]&]$/;
     if (validKeys.test(event.key)) {
-        document.getElementById("display").value += event.key;
+        if (event.key === ".") {
+            console.log(event.key)
+            event.preventDefault();
+            point();
+        }
+        else {
+            event.preventDefault();
+            document.getElementById("display").value += event.key;
+        }
+
     } else if (event.key === "Enter") {
         event.preventDefault();
         calculate();
     } else if (event.key === "Backspace") {
         removeFromDisplay();
     }
+
 });
 
 function removeFromDisplay() {
@@ -43,6 +55,8 @@ btn.onclick = function () {
 };
 
 calc.onsubmit = calculate(e);
+
+
 
 function clearOne() {
     let currentValue = calc.txt.value;
@@ -76,3 +90,7 @@ function point() {
         }
     }
 };
+
+
+
+
