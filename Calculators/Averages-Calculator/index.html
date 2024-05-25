@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Averages Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+        />
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Averages Calculator</h2>
+        <hr />
+        <div class="input-section">
+            <label for="values-input">Enter comma-separated values:</label>
+            <textarea
+                id="values-input"
+                rows="4"
+                placeholder="e.g., 1, 2, 3, 4"
+                ></textarea>
+        </div>
+        <button id="calculate-btn">Calculate Averages</button>
+        <div class="results">
+            <h3>Results</h3>
+            <div class="result">
+                <span>Arithmetic Mean:</span>
+                <span id="arithmetic-mean">-</span>
+            </div>
+            <div class="result">
+                <span>Geometric Mean:</span>
+                <span id="geometric-mean">-</span>
+            </div>
+            <div class="result">
+                <span>Harmonic Mean:</span>
+                <span id="harmonic-mean">-</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

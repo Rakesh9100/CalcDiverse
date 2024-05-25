@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Life Insurance Needs Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Life Insurance Needs Calculator</h1>
+        <form id="insuranceForm">
+            <label for="annualIncome">Annual Income ($):</label>
+            <input type="number" id="annualIncome" required>
+
+            <label for="yearsSupport">Years of Support Needed:</label>
+            <input type="number" id="yearsSupport" required>
+
+            <label for="outstandingDebts">Outstanding Debts ($):</label>
+            <input type="number" id="outstandingDebts" required>
+
+            <label for="funeralCosts">Funeral Costs ($):</label>
+            <input type="number" id="funeralCosts" required>
+
+            <label for="savings">Savings and Investments ($):</label>
+            <input type="number" id="savings" required>
+
+            <button type="button" onclick="calculateInsurance()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
