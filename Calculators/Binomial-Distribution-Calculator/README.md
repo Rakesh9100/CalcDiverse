@@ -1,9 +1,15 @@
-# Description
-**This calculator can evaluate the values of probability mass function and probability distribution function for a random binomial variable for the input values given by user.**
+# <p align="center">Binomial Distribution Calculator</p>
 
-# Tech-Stacks
-**HTML, CSS and JavaScript**
+## Description :-
 
-# Screenshot of The Website
+This calculator evaluates the values of the probability mass function and probability distribution function for a random binomial variable for the input values given by the user.
 
-![calc](https://github.com/Sara1428/CalcDiverse/assets/146193518/6a40c736-6567-4567-baca-dd16a7e46598)
+## Tech Stacks :-
+
+- HTML
+- CSS
+- JavaScript
+
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/63a8e177-938b-4d74-a068-8b2d70a3ec25)
