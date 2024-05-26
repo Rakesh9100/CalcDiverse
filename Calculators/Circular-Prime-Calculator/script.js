@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const title = document.getElementById('animatedTitle');
     title.addEventListener('mouseover', (event) => {
@@ -14,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
 
 function isPrime(num) {
     if (num < 2) return false;
