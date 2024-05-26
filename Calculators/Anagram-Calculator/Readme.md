@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculator which is used to check whether 2 words are Anagram or not.
+Calculator which is used to check whether the two words are Anagram or not.
 
 ## Tech Stacks :-
 
