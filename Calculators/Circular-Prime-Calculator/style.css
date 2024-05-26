@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif; /* Changed to a more modern font */
+    font-family: 'Arial', sans-serif; 
     text-align: center;
     margin: 0;
     padding: 0;
@@ -16,8 +16,8 @@ body {
     padding: 20px;
     margin-top: 30px;
     font-size: 50px;
-    background: rgba(255, 255, 255, 0.1); /* Add a subtle background */
-    border-radius: 10px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
 }
 
 @keyframes fadeInUp {
@@ -37,15 +37,15 @@ body {
 
 .title:hover {
     color: #002630;
-    transform: scale(1.1); /* Scale transform for hover effect */
+    transform: scale(1.1); 
 }
 
 .calculator {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; /* Reduced gap for a more compact layout */
-    padding: 40px 20px; /* Added padding for overall spacing */
+    gap: 40px; 
+    padding: 40px 20px; 
 }
 
 .section {
@@ -53,14 +53,14 @@ body {
     max-width: 400px;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #f8f8f8; /* Changed to a lighter background */
+    background-color: #f8f8f8; 
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
-    transition: transform 0.3s ease; /* Add transition for hover effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
 }
 
 .section:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
+    transform: translateY(-10px); 
 }
 
 .calculator-title {
@@ -76,7 +76,7 @@ input {
     margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid #ddd; /* Softer border color */
+    border: 1px solid #ddd; */
     border-radius: 10px;
 }
 
@@ -87,19 +87,19 @@ label {
 
 button {
     padding: 10px 20px;
-    font-size: 18px; /* Slightly smaller font size */
+    font-size: 18px; 
     cursor: pointer;
     color: #fff;
-    background-color: #008080; /* Primary button color */
-    border: none; /* Removed border */
+    background-color: #008080; 
+    border: none;
     border-radius: 10px;
     margin-top: 25px;
-    margin-right: 10px; /* Reduced margin-right */
+    margin-right: 10px; 
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #006666; /* Darker shade on hover */
+    background-color: #006666; 
 }
 
 p {
