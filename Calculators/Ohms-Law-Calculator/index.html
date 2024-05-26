@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ohm's Law Calculator</h1>
+    <div class="container">
+        <p>Enter any two known values and press "Calculate" to solve for the others</p>
+        <div class="input-box">
+            <label for="volt">Voltage (V) :</label>
+            <div class="input-unit"><input type="number" id="volt" name="fname" > volt (V)</div>
+        </div>
+        <div class="input-box">
+            <label for="current">Current (I) :</label>
+            <div class="input-unit"><input type="text" id="current" name="fname" > amps (A)</div>
+        </div>
+        <div class="input-box">
+            <label for="resistance">Resistance (R) :</label>
+            <div class="input-unit"><input type="text" id="resistance" name="fname" > ohms (Ω)</div>
+        </div>
+        <div class="input-box">
+            <label for="power">Power (P) :</label>
+            <div class="input-unit"><input type="number" id="power" name="fname" > watts (W)</div>
+         
+        </div>
+        <button onclick="calculate()">Calculate</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
