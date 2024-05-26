@@ -1,45 +1,70 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Changed to a more modern font */
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #091020;
+    background-image: linear-gradient(135deg, #2c3e50, #4ca1af);
     color: #fff;
 }
 
 .title {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s ease-out forwards;
+    transition: color 0.3s ease;
+    display: inline-block;
     padding: 20px;
-    margin: 0;
-    font-size: 36px;
-    font-weight: 900;
-    color: yellow;
-    padding-top: 90px;
+    margin-top: 30px;
+    font-size: 50px;
+    background: rgba(255, 255, 255, 0.1); /* Add a subtle background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title span {
+    transition: color 0.3s ease;
 }
 
 .title:hover {
-    color: red;
-    scale: 1.3;
+    color: #002630;
+    transform: scale(1.1); /* Scale transform for hover effect */
 }
 
 .calculator {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 40px; /* Reduced gap for a more compact layout */
+    padding: 40px 20px; /* Added padding for overall spacing */
 }
 
 .section {
     width: 90%;
     max-width: 400px;
-    margin: 20px;
     padding: 20px;
     box-sizing: border-box;
-
-    border: 2px solid #da0808;
+    background-color: #f8f8f8; /* Changed to a lighter background */
     border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.section:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
 }
 
 .calculator-title {
-    color: #bbed06;
+    color: #091020;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -51,30 +76,34 @@ input {
     margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
+    border: 1px solid #ddd; /* Softer border color */
+    border-radius: 10px;
 }
 
 label {
     font-size: large;
-    color: white;
+    color: #4e085f;
 }
 
 button {
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 18px; /* Slightly smaller font size */
     cursor: pointer;
-    background-color: yellow;
-    color: red;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    color: #fff;
+    background-color: #008080; /* Primary button color */
+    border: none; /* Removed border */
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-right: 10px; /* Reduced margin-right */
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: rgb(235, 192, 21);
+    background-color: #006666; /* Darker shade on hover */
 }
 
 p {
     font-size: 18px;
     margin-top: 20px;
-    color: #d4eb0b;
+    color: #091020;
 }
