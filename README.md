@@ -109,7 +109,7 @@ cd CalcDiverse
 ```
 git checkout -b <your_branch_name>
 ```
-- Perfom your desired changes to the code base.
+- Perform your desired changes to the code base.
 - Track and stage your changes.
 ```
 # Track the changes

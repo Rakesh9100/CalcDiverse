@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1> Weather Calculator </h1>
+        <div>
+            <h2> Temperature </h2>
+            <input type="number" id="temperature" placeholder="Temperature (°C)">
+            <h3> Humidity </h3>
+            <input type="number" id="humidity" placeholder="Humidity (%)">
+            <h4> Wind Speed </h4>
+            <input type="number" id="windSpeed" placeholder="Wind Speed (m/s)">
+        </div>
+        <button id="calculate">Calculate</button>
+
+        <div class="resultsContainer">
+        <div id="results" class="results"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
