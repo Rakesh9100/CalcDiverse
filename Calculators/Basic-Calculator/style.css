@@ -91,9 +91,6 @@ body.light .calculator span::before {
     filter: brightness(1.5);
 }
 
-
-
-
 body.light .calculator span:active {
     filter: brightness(0.9);
 }
@@ -141,8 +138,6 @@ body.light .calculator .clear::before,
     border-bottom: 1px solid #fff4;
     border-top: 1px solid #fff4;
 }
-
-
 
 .calculator .equal {
     grid-row: span 2;
@@ -209,8 +204,6 @@ body.light .btn strong:nth-child(1) {
 body.light .btn strong:nth-child(2) {
     display: block;
 }
-
-
 
 span:hover {
     border: 2px solid red;
