@@ -13,13 +13,13 @@ body {
 
 .header p {
     margin: 30px auto 0 auto;
-    font-size: 50px;
+    font-size: 27px;
     text-align: center;
     font-weight: 700;
     color: #ffffff;
 }
 
-.main-container{
+.main-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -59,24 +59,24 @@ body {
     padding: 2px 8px;
 }
 
-.input-exceeded{
+.input-exceeded {
     border-color: red;
 }
 
-.button{
+.button {
     width: 100%;
     font-size: 18px;
     font-weight: 500;
     background: #10ac37;
     color: white;
-    padding: 10px ;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 12px;
 }
 
-.result-card{
+.result-card {
     /* display: none; */
     width: 500px;
     padding: 25px;
@@ -86,19 +86,19 @@ body {
     box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.1);
 }
 
-.result-header{
+.result-header {
     font-size: 18px;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.result-text{
+.result-text {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 6px;
 }
 
-.result{
+.result {
     font-size: 30px;
     font-weight: 700;
 }
@@ -107,13 +107,16 @@ body {
     .header p {
         font-size: 40px;
     }
-    .container{
+
+    .container {
         width: 350px;
     }
-    .result-card{
+
+    .result-card {
         width: 350px;
     }
-    .main-container{
+
+    .main-container {
         flex-direction: column;
     }
 }
