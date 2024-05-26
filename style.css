@@ -1449,13 +1449,14 @@ section {
     cursor: pointer;
     display: flex;
     justify-content: center;
-        align-items: center;
-    gap: 3.5rem;
+    align-items: center;
+    gap: 3rem;
     
 }
+
 .social-icon {
     width: 35px;
-    height: 35px;
+    height: 45px;
 }
 .social a {
     color: var(--secondary);
