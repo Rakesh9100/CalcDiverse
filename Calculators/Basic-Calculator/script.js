@@ -5,6 +5,91 @@ let txt = calc.elements["txt"];
 let math = window.math;
 let display = document.getElementById("display");
 
+// onClick for all span
+
+document.addEventListener('DOMContentLoaded', () => {
+    let numElements = document.querySelectorAll('.num');
+    const removeBorder = (element) => {
+        setTimeout(() => {
+            element.style.border = "none";
+        }, 1000);
+    };
+
+    // Function to handle click and keyboard events
+    const handleEvent = (element) => {
+        numElements.forEach((el) => {
+            el.style.border = "none";
+        });
+        element.style.border = "2px solid red";
+        removeBorder(element);
+    };
+
+    // Add event listeners for click events
+    numElements.forEach((element) => {
+        element.addEventListener("click", () => {
+            handleEvent(element);
+        });
+    });
+
+    // Add event listener for keyboard events
+    document.addEventListener('keydown', (event) => {
+        const key = event.key;
+        if (!isNaN(key) || "+-*/()^%,.=".includes(key)) {
+            let pressedElement = null;
+            numElements.forEach((element) => {
+                if (element.innerText === key) {
+                    pressedElement = element;
+                }
+            });
+            if (pressedElement) {
+                handleEvent(pressedElement);
+            }
+        }
+    });
+});
+
+
+// onClick for result and CE
+document.addEventListener('DOMContentLoaded', () => {
+    let numElements = document.querySelectorAll('.cle');
+    const removeBorder = (element) => {
+        setTimeout(() => {
+            element.style.border = "none";
+        }, 1000);
+    };
+    // Function to handle click and keyboard events
+    const handleEvent = (element) => {
+        numElements.forEach((el) => {
+            el.style.border = "none";
+        });
+        element.style.border = "2px solid black";
+        removeBorder(element);
+    };
+
+    // Add event listeners for click events
+    numElements.forEach((element) => {
+        element.addEventListener("click", () => {
+            handleEvent(element);
+        });
+    });
+
+    // Add event listener for keyboard events
+    document.addEventListener('keydown', (event) => {
+        const key = event.key;
+        if (!isNaN(key) || "+-*/()^%,.=".includes(key)) {
+            let pressedElement = null;
+            numElements.forEach((element) => {
+                if (element.innerText === key) {
+                    pressedElement = element;
+                }
+            });
+            if (pressedElement) {
+                handleEvent(pressedElement);
+            }
+        }
+    });
+});
+
 document.addEventListener("keydown", function (event) {
     const validKeys = /^[0-9.\+\-\*\/\(\)\^\%\{\}\[\]&]$/;
     if (validKeys.test(event.key)) {
@@ -81,6 +166,7 @@ function point() {
             return;
         }
     }
+
 };
 
 
@@ -185,4 +271,5 @@ function cosine() {
     }
     calc.txt.value = currentValue + "Math.cos(";
 }
+
 

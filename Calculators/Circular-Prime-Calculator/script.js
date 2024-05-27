@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const title = document.getElementById('animatedTitle');
+    title.addEventListener('mouseover', (event) => {
+        if (event.target.tagName === 'SPAN') {
+            event.target.style.color = '#4ca1af'; 
+        }
+    });
+
+    title.addEventListener('mouseout', (event) => {
+        if (event.target.tagName === 'SPAN') {
+            event.target.style.color = ''; 
+        }
+    });
+});
+
 function isPrime(num) {
     if (num < 2) return false;
     for (let i = 2; i <= Math.sqrt(num); i++) {
