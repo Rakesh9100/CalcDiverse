@@ -7,13 +7,15 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 95vh;
-    width: 99%;
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .header {
@@ -24,25 +26,24 @@ body {
     width: 100%;
     backdrop-filter: blur(8px);
     box-shadow: 0px 8px 5px rgba(69, 4, 48, 0.5);
-    margin: 0px;
+    margin: 0;
     margin-bottom: 10px;
 }
 
 h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
 .container {
-    display: flexbox;
-    margin: auto;
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    /* background-color: rgba(255, 192, 203, 0.677); */
-    height: 400px;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     padding: 20px;
-    /* border-radius: 8px; */
-
+    margin: 50px 0;
+    box-sizing: border-box;
 }
 
 .glass {
@@ -52,6 +53,9 @@ h1 {
     border-radius: 20px;
     border: 1px solid rgba(195, 193, 194, 0.1);
     box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.37);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 label {
@@ -65,64 +69,54 @@ input {
     padding: 10px;
     margin-bottom: 16px;
     box-sizing: border-box;
-
+    font-size: 1rem;
 }
 
 button {
     background-color: #7bd1ff97;
     border: none;
-    text-decoration: none;
     padding: 10px;
     border-radius: 50px;
     cursor: pointer;
-    margin: 30px 140px;
-    align-items: center;
-    text-align: center;
-    padding: 3px;
-    padding-bottom: -13px;
-    border-radius: 50px;
+    margin: 30px 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     font-weight: 500;
     color: whitesmoke;
-
-    width: 50%;
+    width: 100%;
+    max-width: 300px;
     height: 55px;
-    /* background-color: #b5e396;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 18px; */
 }
 
 button:hover {
     background-color: #bac671de;
     transform: scale(1.1);
-
 }
 
-
 .output {
-    margin: 30px auto;
+    margin: 30px 0;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
-    align-items: center;
     text-align: center;
-    padding: 3px;
-    padding-bottom: -13px;
-
-    width: 70%;
-    height: 55px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 @media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
     .container {
-        width: 90%;
+        margin-top: 20px;
+        padding: 10px;
     }
 
     button,
     .output {
-        width: 50%;
+        width: 100%;
+        max-width: none;
     }
 }

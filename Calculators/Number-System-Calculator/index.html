@@ -16,6 +16,8 @@
         <div class="convert">
             <label for="fromBase">From Base:</label>
             <select id="fromBase">
+                <!-- Intial option added into menu dropdown box -->
+                <option value="" selected disabled>Select an option</option>
                 <option value="2">Binary</option>
                 <option value="8">Octal</option>
                 <option value="10">Decimal</option>
@@ -24,6 +26,8 @@
 
             <label for="toBase">To Base:</label>
             <select id="toBase">
+                 <!-- Intial option added into menu dropdown box -->
+                <option value="" selected disabled>Select an option</option>
                 <option value="2">Binary</option>
                 <option value="8">Octal</option>
                 <option value="10">Decimal</option>
@@ -31,7 +35,11 @@
             </select>
         </div>
 
+        <!-- Convert button -->
         <button onclick="convert()">Convert</button>
+
+        <!-- Clear button -->
+        <button onclick="clear_fun()">Clear</button>
 
         <div id="result"></div>
     </div>

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(#a07eff,#ffffff) ;
+}
+
+.container {
+    text-align: center;
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container h1{
+    font-family:'Lucida Sans', Arial, sans-serif;
+    color:#4f1591;
+    font-size: 30px;
+}
+
+.container h2, h3, h4{
+    font-size: 15px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+input[type="number"] {
+    display: block;
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+input[type="number"]:hover {
+    background-color: rgb(255, 230, 221);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #8d6fde;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #7d62ca;
+    border-bottom: 3px solid #4f1591;
+}
+
+.resultsContainer {
+    background-color: rgb(255, 230, 221);
+    border-radius: 8px;
+    border-right:3px solid #484848;
+    border-bottom:3px solid #484848;
+}
+
+.results {
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.results p {
+    display: block;
+    width: 90%;
+    text-align: left;
+    padding: 8px;
+    margin: 10px 10px;
+    border-radius: 50px;
+}
