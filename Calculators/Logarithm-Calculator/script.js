@@ -9,3 +9,12 @@ function calculateLog() {
 		alert('Invalid input. Please enter positive numbers for both the base and the number, and ensure that the base is not equal to 1.')
 	}
 }
+
+function validateBaseInput(base) {
+	const errorElement = document.getElementById('baseError');
+	if (base.value == 1) {
+		errorElement.style.display = 'inline';
+	} else {
+		errorElement.style.display = 'none';
+	}
+}

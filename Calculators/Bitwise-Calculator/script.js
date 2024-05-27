@@ -14,7 +14,14 @@ function performOperation(operation) {
             result = (parseInt(input1, 2) ^ parseInt(input2, 2)).toString(2);
             break;
         case 'not':
-            result = (~parseInt(input1, 2)).toString(2);
+            let bitLength = input1.length;
+            result = (~parseInt(input1, 2) >>> 0).toString(2).slice(-bitLength);
+            break;
+        case 'leftshift':
+            result = (parseInt(input1, 2) << 1).toString(2);
+            break;
+        case 'rightshift':
+            result = (parseInt(input1, 2) >> 1).toString(2);
             break;
         default:
             result = 'Invalid operation';

@@ -17,8 +17,10 @@
         <hr>
         <div class="content">
             <p>Calculate Logarithm of a number to any base:</p>
-            <div id="base1"><input type="number" id="base" placeholder="Enter base"></div>
-            <div id="number1"><input type="number" id="number" placeholder="Enter number"></div>
+            <div id="number1"><input type="number" id="number"  min="0" step="any" oninput="validity.valid && value!=0 || (value='');" placeholder="Enter number" required></div>
+
+            <div id="base1"><input type="number" id="base" min="0.000001" step="any"   oninput="validity.valid && value!=0 || (value='');" onchange="validateBaseInput(this)" placeholder="Enter base" required><br><span id="baseError">INVALID INPUT *Base can't be 1*</span></div>
+
             <button onclick="calculateLog()" id="button">Calculate Log</button>
             <h3>Result:</h3>
             <p id="result"></p>
