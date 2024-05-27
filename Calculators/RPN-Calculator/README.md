@@ -1,27 +1,15 @@
+# <p align="center">RPN Calculator</p>
 
-# RPN Calculator ❄️
-RPN Calculator stands for Reverse Polish notation is a method for representing expressions in which the operator symbol is placed after the arguments being operated on.
+## Description :-
 
-### Example: 
-1,000 x (1 + 0.02) x (1 + 0.05)^2 x (1 + 0.02)^2
+RPN(Reverse Polish Notation) Calculator represents expressions by placing the operator symbol after the operands.
 
-
-## Installation
-
-Install my-project with npm
-
-```bash
-  cd my-project
-  git clone 
-```
-    
-## TechStack
+## Tech Stacks :-
 
 - HTML
 - CSS
-- JAVASCRIPT
+- JavaScript
 
+## Screenshots :-
 
-
-
-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/18f3c287-2e10-4b2a-a714-5f5faf03dc7b)
