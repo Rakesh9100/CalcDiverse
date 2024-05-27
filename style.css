@@ -1723,7 +1723,8 @@ section {
         margin-top: 0.5em;
     }
 }
- @media (min-width:320px) and (max-width:801px) {
+
+@media (min-width:320px) and (max-width:801px) {
     #progress {
         bottom: 2px;
         height: 40px;
