@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculates the Tip based on Billing Amount
+Calculates the tip amount and final amount on the basis of tip percentage and bill amount.
 
 ## Tech Stacks :-
 
@@ -11,4 +11,5 @@ Calculates the Tip based on Billing Amount
 - JavaScript
 
 ## Screenshots :-
-![image](https://github.com/Archit-Ash/CalcDiverse/assets/95583743/e123d907-2f66-4cad-9a62-e5a70e48fc6b)
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/d192fc57-906c-4858-8748-ade21471015f)
