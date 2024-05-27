@@ -363,7 +363,10 @@ section {
     margin: 40px 30px;
     transition: 0.5s;
 }
-
+.content{
+    width: 320px;
+    height: 360px;
+}
 .container .box::before {
     content: "";
     position: absolute;
