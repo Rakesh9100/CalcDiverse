@@ -1362,10 +1362,10 @@ section {
 
 #progress {
     position: fixed;
-    bottom: 2px;
+    bottom: 20px;
     right: 10px;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     z-index: 10;
     display: none;
     place-items: center;
@@ -1378,14 +1378,14 @@ section {
 
 #progress-value {
     display: block;
-    height: calc(100% - 12px);
-    width: calc(100% - 12px);
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
     background-color: rgb(104, 98, 232);
     background: linear-gradient(90deg, rgb(159, 157, 235) 0%, rgb(212, 153, 222) 39%, rgb(253, 199, 134) 100%);
     border-radius: 50%;
     display: grid;
     place-items: center;
-    font-size: 23px;
+    font-size: 26px;
     color: black;
 }
 
@@ -1433,7 +1433,7 @@ section {
 
 .footer-basic .social {
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1723,3 +1723,18 @@ section {
         margin-top: 0.5em;
     }
 }
+ @media (min-width:320px) and (max-width:801px){
+    #progress{
+        bottom: 2px;
+        height: 40px;
+        width: 40px;
+    }
+    #progress-value{
+        height: calc(100%-12px);
+        width: calc(100%-12px);
+        font-size: 23px;
+    }
+    .footer-basic .social{
+        padding-bottom: 15px;
+    }
+ }
