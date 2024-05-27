@@ -1461,7 +1461,7 @@ section {
 }
 
 .footer-basic .copyright {
-    /* margin-top: 15px; */
+    margin-top: 15px;
     text-align: center;
     font-size: 13px;
     color: rgb(255, 255, 255);
@@ -1723,18 +1723,20 @@ section {
         margin-top: 0.5em;
     }
 }
- @media (min-width:320px) and (max-width:801px){
-    #progress{
+ @media (min-width:320px) and (max-width:801px) {
+    #progress {
         bottom: 2px;
         height: 40px;
         width: 40px;
     }
-    #progress-value{
+    
+    #progress-value {
         height: calc(100%-12px);
         width: calc(100%-12px);
         font-size: 23px;
     }
-    .footer-basic .social{
+    
+    .footer-basic .social {
         padding-bottom: 15px;
     }
  }
