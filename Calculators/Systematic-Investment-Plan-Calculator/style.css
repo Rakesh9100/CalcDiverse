@@ -1,53 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffcc70, #3b6978);
+    color: #333;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e9ffff;
 }
 
-h2 {
-    font-size: 3.0em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 20px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-.calculator {
-    background-color: #a1f4eb;
-    margin: 30px;
-    border: 1px solid #050505;
-    padding: 20px;
+.container {
+    background: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-input {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
     width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-button {
-    background-color: #020e32;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+h1 {
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    color: #3b6978;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    background: #3b6978;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 4px;
 }

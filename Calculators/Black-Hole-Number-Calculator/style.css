@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(to bottom right, rgb(216, 82, 82), rgb(215, 215, 76)); /* Gradient background from red to yellow */
+    display: flex;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 50px; /* Add padding to create some space from the top */
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack the red and yellow boxes vertically */
+    align-items: center; /* Center align items horizontally */
+}
+
+.square {
+    background-color: #FFF9C4; /* Light yellow square */
+    padding: 20px;
+    border: 2px solid #FFB74D;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: auto;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 20px; /* Increase font size of label */
+}
+
+input[type="text"] {
+    font-size: 18px; /* Increase font size of input field */
+    margin-bottom: 10px; /* Add space below input field */
+}
+
+button[type="submit"] {
+    font-size: 20px; /* Increase font size of button */
+    padding: 5px 10px; /* Increase button size */
+    margin-top: 10px; /* Add space above button */
+}
+
+.header {
+    background-color: #FFCDD2; /* Light red */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #B71C1C; /* Dark red border */
+    margin-bottom: 20px; /* Add margin to create space between the red box and the yellow box */
+}
+
+.title {
+    color: rgb(230, 34, 34);
+    font-size: 24px;
+    padding: 5px 10px; /* Add padding inside the red box */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    display: inline-block; /* Ensure the red box only takes up the necessary space */
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+}
