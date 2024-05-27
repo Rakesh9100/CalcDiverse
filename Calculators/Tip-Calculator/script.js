@@ -13,9 +13,10 @@ function calculateTip() {
     alert("Please enter valid numbers.");
     return;
   }
+  // checks for blank inputs
 
-  var tipAmount = (billAmount * tipPercentage) / 100;
-  var totalAmount = billAmount + tipAmount;
+  var tipAmount = (billAmount * tipPercentage) / 100; // calculates the tip amount
+  var totalAmount = billAmount + tipAmount; // calculate the total amount
 
   document.getElementById(
     "tipAmount"
