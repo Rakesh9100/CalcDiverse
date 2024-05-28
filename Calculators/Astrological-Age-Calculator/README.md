@@ -17,4 +17,4 @@ This is a simple calculator that gives back the age of user on different planets
 
 ## Screenshots :-
 
-![image]()
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/144714595/f622c077-8390-407d-9d4d-5e35867aff7d)
