@@ -398,7 +398,21 @@ section {
     left: 20px;
     width: calc((100% - 90px));
 }
+.content{
+    height: 350px;
 
+}
+.content:hover{
+    height: 400px;
+}
+.card-footer{
+    margin-left: -20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .container .box .content h3 {
     font-size: 15px;
     color: #efe0f1;
