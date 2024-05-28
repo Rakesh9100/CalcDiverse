@@ -87,6 +87,7 @@ body.light .calculator span::before {
 }
 
 .calculator span:active {
+    border: 2px solid red;
     filter: brightness(1.5);
 }
 
@@ -115,6 +116,14 @@ body.light .calculator .clear,
     grid-column: span 2;
     width: 180px;
     background: #f00;
+}
+
+.clear:hover {
+    border: none;
+}
+
+.clear:active {
+    border: none;
 }
 
 body.light .calculator .clear-one,
@@ -146,6 +155,11 @@ body.light .calculator .result-give::before,
     border-left: 1px solid #fff4;
     border-bottom: 1px solid #fff4;
     border-top: 1px solid #fff4;
+}
+
+.result-give::after,
+.clear::after {
+    border: 2px solid #1479c9;
 }
 
 .btn {
@@ -189,4 +203,17 @@ body.light .btn strong:nth-child(1) {
 
 body.light .btn strong:nth-child(2) {
     display: block;
+}
+
+span:hover {
+    border: 2px solid red;
+}
+
+.clear :hover {
+    border: 2px solid #1479c9;
+}
+
+.result-give:hover,
+.clear-one:hover {
+    border: none;
 }
