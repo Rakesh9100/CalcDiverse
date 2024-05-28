@@ -10,17 +10,29 @@ function calculateComplexity() {
 
     let complexity = "Unknown";
 
-    // Basic checks for common algorithm patterns
-    if (algorithm.includes('for') && algorithm.includes('while')) {
-        complexity = "O(n * m) - Nested loops";
-    } else if (algorithm.match(/for\s*\(.*\)/g)?.length > 1) {
-        complexity = "O(n^2) - Multiple nested loops";
-    } else if (algorithm.includes('for')) {
+    // Remove comments and whitespaces
+    const cleanedAlgorithm = algorithm.replace(/\/\/.*|\/\*[\s\S]*?\*\/|^\s*|\s*$/gm, '');
+
+    // Check for various patterns
+    const forLoopCount = (cleanedAlgorithm.match(/for\s*\(.*\)\s*{[^}]*}/g) || []).length;
+    const whileLoopCount = (cleanedAlgorithm.match(/while\s*\(.*\)\s*{[^}]*}/g) || []).length;
+    const functionNameMatch = cleanedAlgorithm.match(/function\s+(\w+)\s*\(/);
+    const functionName = functionNameMatch ? functionNameMatch[1] : null;
+    const recursionCount = functionName ? (cleanedAlgorithm.match(new RegExp(`\\b${functionName}\\(.*\\)`, 'g')) || []).length : 0;
+    const sortingAlgorithms = /(sort\s*\(|mergeSort|quickSort|heapSort|timSort)/g;
+
+    if (sortingAlgorithms.test(cleanedAlgorithm)) {
+        complexity = "O(n log n) - Sorting algorithm";
+    } else if (forLoopCount > 1 || whileLoopCount > 1 || (forLoopCount > 0 && whileLoopCount > 0)) {
+        complexity = `O(n^${forLoopCount + whileLoopCount}) - Multiple nested loops`;
+    } else if (forLoopCount === 1 || whileLoopCount === 1) {
         complexity = "O(n) - Single loop";
-    } else if (algorithm.includes('while')) {
-        complexity = "O(n) - Single loop";
-    } else if (algorithm.includes('recursion')) {
+    } else if (recursionCount > 1) {
         complexity = "O(2^n) - Recursion";
+    } else if (recursionCount === 1) {
+        complexity = "O(n) - Tail recursion";
+    } else if (cleanedAlgorithm.includes('Math.floor') || (cleanedAlgorithm.includes('left') && cleanedAlgorithm.includes('right'))) {
+        complexity = "O(log n) - Logarithmic time";
     }
 
     resultDiv.innerHTML = `Estimated Time Complexity: ${complexity}`;
