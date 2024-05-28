@@ -14,8 +14,22 @@ document.addEventListener("keydown", function (event) {
             point();
         }
         else {
-            event.preventDefault();
-            document.getElementById("display").value += event.key;
+            if(event.key==="/" || event.key==="*" || event.key==="+" || event.key==="-" || event.key==="%" || event.key==="^"){
+                //prevent the default behaviour of event
+                event.preventDefault();
+                let currentValue = display.value;
+                let lastChar= currentValue.charAt(currentValue.length-1);
+
+                if(lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^"){
+                    //if last character is operator, remove it
+                    currentValue=currentValue.substring(0, currentValue.length-1);
+                }
+                //append new operator
+                display.value = currentValue+event.key;
+            }else {
+                event.preventDefault();
+                document.getElementById("display").value += event.key;
+            }                  
         }
     } else if (event.key === "Enter") {
         event.preventDefault();
