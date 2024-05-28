@@ -162,6 +162,9 @@ This project and everyone participating in it is governed by the [Code of Conduc
 <td align="center">
 <a href="https://www.socialwinterofcode.com/"><img src="https://github.com/Rakesh9100/CalcDiverse/assets/73993775/25eaca50-f883-481c-a531-8d1ce9cf4b66" height="140px" width="180px" alt="SWOC2024"></a><br><sub><b>SWOC 2k24</b></sub>
 </td>
+<td align="center">
+<a href="https://gssoc.girlscript.tech/"><img src="https://github.com/d1vyadharsh1n1/CalcDiverse/assets/146218077/a2b3f7ea-c550-4031-b576-7987b9f5af18" height="140px" width="180px" alt="GSSoC2024"></a><br><sub><b>GSSoC 2k24</b></sub>
+</td>
 </tr>
 
 </table>
