@@ -17,8 +17,11 @@
         <hr>
         <div class="content">
             <p>Calculate the antilog of any number to any base:</p>
-            <div id="number1"><input type="number" id="number" placeholder="Enter number"></div>
-            <div id="base1"><input type="number" id="base" placeholder="Enter base" default="10"></div>
+            
+            <div id="number1"><input type="number" id="number"  min="0" step="any" oninput="validity.valid && value!=0 || (value='');" placeholder="Enter number" required></div>
+
+            <div id="base1"><input type="number" id="base" min="0.000001" step="any"   oninput="validity.valid && value!=0 || (value='');" onchange="validateBaseInput(this)" placeholder="Enter base" required><br><span id="baseError">INVALID INPUT *Base can't be 1*</span></div>
+
             <button onclick="calculateAntilog()" id="button">Calculate Antilog</button>
             <h3>Result:</h3>
             <h3 id="resultb"></h3>

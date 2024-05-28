@@ -3,12 +3,11 @@ body {
     margin: 0;
     padding: 0;
     font-size: 20px;
-    background-color: rgb(113, 105, 201);
+    background-image: linear-gradient(to right,rgb(113, 105, 201),rgb(175, 169, 169));
 }
 
 #heading {
     text-align: center;
-
 }
 
 .content {
@@ -24,16 +23,38 @@ body {
 }
 
 #base {
+    border: solid 2px black;
+    border-radius: 5px;
     padding: 10px 15px 10px 10px;
     margin-bottom: 15px;
 }
 
+
+#baseError {
+    color: rgb(241, 63, 63);
+    display: none;
+    font-size : 15px ;
+}
+
 #number {
+    border: solid 2px black;
+    border-radius: 5px;
     padding: 10px 15px 10px 10px;
     margin-bottom: 10px;
 }
 
 #button {
+    margin-top: 20px;
     padding: 20px 20px 20px 20px;
     font-size: 20px;
+    border: solid 3px black;
+    border-radius: 5px;
+    background-color: rgb(113, 105, 201);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#button:hover{
+    border: none;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(113, 105, 201);
 }

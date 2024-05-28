@@ -26,4 +26,4 @@ and 131) are prime.
 
 ## Screenshots :-
 
-![CPC](https://github.com/Rakesh9100/CalcDiverse/assets/125949765/34d359b2-23d5-456c-b88f-51fb413bebbc)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/b8e37212-62dd-4ee9-a3c9-507024dd7d86)
