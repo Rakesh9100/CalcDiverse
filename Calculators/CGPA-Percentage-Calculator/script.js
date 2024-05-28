@@ -1,10 +1,10 @@
 // functions to convert values
 function cgpaToPercentage(cgpa) {
-	return cgpa * 7.1 + 11
+	return cgpa * 9.5
 }
 
 function percentageToCGPA(percentage) {
-	return (percentage - 11) / 7.1
+	return percentage / 9.5
 }
 
 // Function to handle conversion and display values

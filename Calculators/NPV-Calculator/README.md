@@ -24,4 +24,4 @@ Where:
 
 ## Screenshots :-
 
-![image](https://github.com/Manav173/CalcDiverse/assets/73993775/640d6aa4-b68b-4057-865c-bee17e8c7e1b)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/2fdc1931-466b-4b4d-89e7-d3592d3c9769)

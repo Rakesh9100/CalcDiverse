@@ -12,4 +12,4 @@ Calculates results of different bitwise operations based on inputs.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c578e9c1-ff1c-471f-810b-af706e4c5dcd)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/d6322908-ddc7-4dfe-930d-b9248b4ef84d)
