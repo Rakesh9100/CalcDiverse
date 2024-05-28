@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Population Density Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator-section">
+            <div class="headings">
+                <h2>Population Density</h2>
+                <h2 class="heading-line-2">Calculator</h2>
+            </div>
+            <div class="form-field">
+                <input type="number" id="population" min="0" placeholder="No. of population: ">
+            </div>
+            <div class="form-field">
+                <input type="number" id="area" min="0" placeholder="Area of the place in km: ">
+            </div>
+            <div class="buttons-container">
+                <button class="button-64" role="button"><span class="text"
+                        onclick="calculate()">Calculate</span></button>
+                <button class="button-64" role="button"><span class="text" onclick="reset()">Reset</span></button>
+            </div>
+            <div class="result-container">
+                <p id="result"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
