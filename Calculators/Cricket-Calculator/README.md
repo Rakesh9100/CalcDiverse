@@ -17,6 +17,7 @@ The Cricket Calculator is a website.
 - Required Run Rate Calculator
 - Projected Score Calculator
 - Target Calculator
+- Net Run Rate Calculator
 
 ## How to Use :-
 
