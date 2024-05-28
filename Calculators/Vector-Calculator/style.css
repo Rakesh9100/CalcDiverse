@@ -68,13 +68,16 @@ input {
 }
 /*Added Css Property*/
 .operation{
-    margin: 10px;
+	margin: 35px 0; /* Increased margin for space above and below */
 }
-.operation label{
+.operation label{	
   color: #C5EBFE;
-  font-size: 20px;
+  font-size: 24px;
 }
 .operation select{
-    color: #1d0a4c;
-    font-size: 20px;
+	border: 0;
+	border-radius: 5px; /*added same border radius as x & y input*/
+	font-size: 16px; /*added same font size as x & y input*/
+	padding: 10px; /*added same padding as x & y input*/
+	margin: 10px; /*added same margin as x & y input*/	
 }
