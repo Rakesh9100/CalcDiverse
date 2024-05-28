@@ -1,0 +1,61 @@
+body{
+    background-image: linear-gradient(to right, white,grey );;
+}
+
+.leapyr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('https://t3.ftcdn.net/jpg/02/99/23/56/360_F_299235692_zbfXpgeYVVFnPq0mEhUE0yeU3E4eYWxN.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity:90%;
+    height: 580px;
+    width: 680px;
+    color: azure;
+    margin:40px;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.leapyr form{
+    color: black;
+  
+}
+
+.leapyr form input{
+    height:25px;
+    width:250px;
+    border: 1px solid black;
+}
+
+.leapyr label{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.leapyr form h3{
+    margin-left: 90px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.leapyr button{
+    height:40px;
+    width: 80px;
+    margin-left: 140px;
+    margin-top: 10px;
+    background-color: cornflowerblue;
+    color: black;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 5px;
+}
+
+p{
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color:rgb(244, 162, 31);
+    font-weight: bold;
+}
