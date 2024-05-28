@@ -523,7 +523,7 @@ section {
 
 .container .box:nth-child(even)::before,
 .container .box:nth-child(even)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(odd)::before,
@@ -538,7 +538,7 @@ section {
 
 .container .box:nth-child(3)::before,
 .container .box:nth-child(3)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(4)::before,
@@ -568,7 +568,7 @@ section {
 
 .container .box:nth-child(9)::before,
 .container .box:nth-child(9)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(10)::before,
@@ -598,7 +598,7 @@ section {
 
 .container .box:nth-child(15)::before,
 .container .box:nth-child(15)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(16)::before,
@@ -628,7 +628,7 @@ section {
 
 .container .box:nth-child(21)::before,
 .container .box:nth-child(21)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(22)::before,
@@ -658,7 +658,7 @@ section {
 
 .container .box:nth-child(27)::before,
 .container .box:nth-child(27)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(28)::before,
@@ -688,7 +688,7 @@ section {
 
 .container .box:nth-child(33)::before,
 .container .box:nth-child(33)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(34)::before,
@@ -718,7 +718,7 @@ section {
 
 .container .box:nth-child(39)::before,
 .container .box:nth-child(39)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(40)::before,
@@ -748,7 +748,7 @@ section {
 
 .container .box:nth-child(45)::before,
 .container .box:nth-child(45)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(46)::before,
@@ -778,7 +778,7 @@ section {
 
 .container .box:nth-child(51)::before,
 .container .box:nth-child(51)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(52)::before,
@@ -808,7 +808,7 @@ section {
 
 .container .box:nth-child(57)::before,
 .container .box:nth-child(57)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(58)::before,
@@ -838,7 +838,7 @@ section {
 
 .container .box:nth-child(63)::before,
 .container .box:nth-child(63)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(64)::before,
@@ -868,7 +868,7 @@ section {
 
 .container .box:nth-child(69)::before,
 .container .box:nth-child(69)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(70)::before,
@@ -898,7 +898,7 @@ section {
 
 .container .box:nth-child(75)::before,
 .container .box:nth-child(75)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(76)::before,
@@ -928,7 +928,7 @@ section {
 
 .container .box:nth-child(81)::before,
 .container .box:nth-child(81)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(82)::before,
@@ -958,7 +958,7 @@ section {
 
 .container .box:nth-child(87)::before,
 .container .box:nth-child(87)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(88)::before,
@@ -988,7 +988,7 @@ section {
 
 .container .box:nth-child(93)::before,
 .container .box:nth-child(93)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(94)::before,
@@ -1018,7 +1018,7 @@ section {
 
 .container .box:nth-child(99)::before,
 .container .box:nth-child(99)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(100)::before,
@@ -1048,7 +1048,7 @@ section {
 
 .container .box:nth-child(105)::before,
 .container .box:nth-child(105)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(106)::before,
@@ -1078,7 +1078,7 @@ section {
 
 .container .box:nth-child(111)::before,
 .container .box:nth-child(111)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(112)::before,
@@ -1108,7 +1108,7 @@ section {
 
 .container .box:nth-child(117)::before,
 .container .box:nth-child(117)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(118)::before,
@@ -1138,7 +1138,7 @@ section {
 
 .container .box:nth-child(123)::before,
 .container .box:nth-child(123)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(124)::before,
@@ -1168,7 +1168,7 @@ section {
 
 .container .box:nth-child(129)::before,
 .container .box:nth-child(129)::after {
-    background: linear-gradient(315deg, #4dff03, #00d0ff);
+    background: linear-gradient(315deg, #03ff37, #0300ff);
 }
 
 .container .box:nth-child(130)::before,
@@ -1723,3 +1723,21 @@ section {
         margin-top: 0.5em;
     }
 }
+
+@media (min-width:320px) and (max-width:801px) {
+    #progress {
+        bottom: 2px;
+        height: 40px;
+        width: 40px;
+    }
+    
+    #progress-value {
+        height: calc(100%-12px);
+        width: calc(100%-12px);
+        font-size: 23px;
+    }
+    
+    .footer-basic .social {
+        padding-bottom: 15px;
+    }
+ }

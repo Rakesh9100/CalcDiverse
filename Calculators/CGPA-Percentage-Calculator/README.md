@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Quickly convert your CGPA to percentage and vice versa with the CGPA ⟷ Percentage Calculator. On the basis of formula `Percentage = CGPA * 7.1 + 11` and `CGPA = (Percentage - 11) / 7.1` this calculator will help you to convert your CGPA to percentage and vice versa.
+Quickly convert your CGPA to percentage and vice versa with the CGPA ⟷ Percentage Calculator. On the basis of formula `Percentage = CGPA * 9.5` and `CGPA = Percentage / 9.5` this calculator will help you to convert your CGPA to percentage and vice versa.
 
 Start typing in any field and the value will be calculated automatically.
 
