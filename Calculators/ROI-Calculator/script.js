@@ -1,4 +1,3 @@
-// scripts.js
 function calculateROI() {
     const amountInvested = parseFloat(document.getElementById('amountInvested').value);
     const amountReturned = parseFloat(document.getElementById('amountReturned').value);
