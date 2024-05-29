@@ -1,0 +1,266 @@
+<!-- Matthew Malone -->
+<!-- Last Updated 2/18/2021 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toolbox</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-11C4CME50R"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'G-11C4CME50R');
+   </script>
+   
+</head>
+<body>
+
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+  <script>
+    $(document).ready(function(){   
+          $(function(){
+        $("#nav-placeholder").load("common/nav.html");
+      });
+     });
+  </script>
+
+ 
+<!-- Calc Box -->
+  <div class="grid-section grid">
+    <div class="code-area">
+
+      <div class="box">
+        <div class="wrapper wrapper--w680">
+        <div class="card card-4">
+          <div class="card-body">
+            <h2 class="title"> Pipe Flow Calculator</h2>
+
+<!-- Solve Selection -->
+              <div class="row row-space">
+              <div class="input-group">
+                <label class="label">Solve For</label>
+                <div class="p-t-10">
+                    <label class="radio-container m-r-45">Velocity
+                        <input type="radio" checked="checked" id="input_sel_vel" name="input_sel"onclick=" toggleInputVel();">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">Flow Rate
+                        <input type="radio" id="input_sel_flow" name="input_sel" onclick="toggleInputFlow();">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">Diameter
+                      <input type="radio" id="input_sel_diameter" name="input_sel" onclick="toggleInputDia();">
+                      <span class="checkmark"></span>
+                  </label>
+                </div>
+            </div>
+          </div>
+
+  <!-- Inputs -->
+
+  <div class="row row-space hidden" id="input-block-vel">
+    <div class="col-2">
+        <div class="input-group">
+            <label class="label">Fluid Velocity</label>
+            <input class="input--style-4" type="number" value=5 step="1" name="velocity" id="input_vel">
+        </div>
+    </div>
+    <div class="col-2">
+      <div class="input-group">
+        <label class="label transparent">Unit</label>
+            <select class="input-style-1" name="unit" id="unit_vel">
+                <option>ft/s</option>
+                <option>m/s</option>
+            </select>
+            <div class="select-dropdown"></div>
+    </div>
+    </div>
+  </div>
+
+
+          <div class="row row-space" id="input-block-flow">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Flow Rate</label>
+                    <input class="input--style-4" type="number" value=60 step="1" name="flow_rate" id="input_flow">
+                </div>
+            </div>
+            <div class="col-2">
+              <div class="input-group">
+                <label class="label transparent">Unit</label>
+                    <select class="input-style-1" name="unit" id="unit_flow">
+                        <option>lpm</option>
+                        <option>gpm</option>
+                    </select>
+                    <div class="select-dropdown"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="row row-space" id="input-block-diameter">
+          <div class="col-2">
+              <div class="input-group">
+                  <label class="label">Outer Diameter</label>
+                  <input class="input--style-4" type="number" value=1.5 step="0.5" name="flow_rate" id="input_diameter">
+              </div>
+          </div>
+
+          <div class="col-2">
+            <div class="input-group">
+              <label class="label transparent">Unit</label>
+                  <select class="input-style-1" name="unit" id="unit_diameter">
+                      <option>in</option>
+                      <option>cm</option>
+                  </select>
+                  <div class="select-dropdown"></div>
+          </div>
+          </div>
+      </div>
+
+
+      <div class="row row-space" id="input-block-thickness">
+        <div class="col-2">
+            <div class="input-group">
+                <label class="label">Pipe Thickness</label>
+                <input class="input--style-4" type="number" value=0.065 step="0.001" name="flow_rate" id="input_thickness">
+            </div>
+        </div>
+        
+        <div class="col-2">
+          <div class="input-group">
+            <label class="label transparent">Unit</label>
+                <select class="input-style-1" name="unit" id="unit_thickness">
+                    <option>in</option>
+                    <option>cm</option>
+                </select>
+                <div class="select-dropdown"></div>
+        </div>
+        </div>
+    </div>
+<!-- Calc Button -->
+                <div class="button-row">
+                    <button class="btn btn--radius-2 btn--blue" onclick="solvePipeFlow()">Calculate</button>
+                </div>
+<!-- Not used. (Previously for answers) -->
+                <div class="row row-space hidden" >
+                  <div class="col-2">
+                      <div class="input-group">
+                          <label class="label">Velocity</label>
+                          <label class="label--style-4" >5.0</label>
+                      </div>
+                  </div>
+                  
+                  <div class="col-2">
+                    <div class="input-group">
+                      <label class="label transparent">Unit</label>
+                          <select class="input-style-1" name="unit">
+                              <option>ft/s</option>
+                              <option>m/s</option>
+                          </select>
+                          <div class="select-dropdown"></div>
+                  </div>
+                  </div>
+              </div>
+
+ <!-- Error Text -->
+ <div class="row row-space hidden" id="error-text-box">
+  <P id="error-text">Error</P>
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Answer Block -->
+<div class="wrapper wrapper--w680 box hidden" id="answer-block">
+  <div class="card card-4">
+    <div class="card-body">
+      <h2 class="title"> Answer</h2>
+
+        <div class="row row-space hidden" id="answer-block-vel">
+          <div class="col-2">
+              <div class="input-group">
+                  <label class="label">Velocity</label>
+                  <label class="label--style-4" id="answer-vel">5.0</label>
+              </div>
+          </div>
+             <div class="col-2">
+               <div class="input-group">
+                <label class="label transparent">Unit</label>
+                  <select class="input-style-1" name="unit" id="unit_answer_vel" onfocus="getAnswerVelUnit()" onchange="changeAnswerVelUnits()">
+                  <option>ft/s</option>
+                  <option>m/s</option>
+                </select>
+                <div class="select-dropdown"></div>
+               </div>
+            </div>
+        </div>
+
+        <div class="row row-space hidden" id="answer-block-flow">
+          <div class="col-2">
+              <div class="input-group">
+                  <label class="label">Fluid Flow Rate</label>
+                  <label class="label--style-4" id="answer-flow">5.0</label>
+              </div>
+          </div>
+             <div class="col-2">
+               <div class="input-group">
+                <label class="label transparent">Unit</label>
+                  <select class="input-style-1" name="unit" id="unit_answer_flow" onfocus="getAnswerFlowUnit()" onchange="changeAnswerFlowUnits()">
+                  <option>lpm</option>
+                  <option>gpm</option>
+                </select>
+                <div class="select-dropdown"></div>
+               </div>
+            </div>
+        </div>
+
+        <div class="row row-space hidden" id="answer-block-dia">
+          <div class="col-2">
+              <div class="input-group">
+                  <label class="label">Outer Diameter</label>
+                  <label class="label--style-4" id="answer-dia">5.0</label>
+              </div>
+          </div>
+             <div class="col-2">
+               <div class="input-group">
+                <label class="label transparent">Unit</label>
+                  <select class="input-style-1" name="unit" id="unit_answer_dia" onfocus="getAnswerDiaUnit()" onchange="changeAnswerDiaUnits()">
+                  <option>in</option>
+                  <option>cm</option>
+                </select>
+                <div class="select-dropdown"></div>
+               </div>
+            </div>
+        </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+  <script src="scripts/index.js"></script>
+  <script src="scripts/unitConversions.js"></script>
+  <script src="scripts/fluidflow.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
