@@ -1,4 +1,6 @@
-### Calculation Of Various Parameters Of Planetary Motion
+## Calculation Of Various Parameters Of Planetary Motion
+
+### Description
 Using this calculator, one can calculate orbital time period, semi-major, semi-minor axis lengths and areal velocity using Kepler's laws.
 
 ### Tech-stack Used
