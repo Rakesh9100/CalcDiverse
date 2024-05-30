@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono:wght@500&display=swap" rel="stylesheet">
+    <title>Weight Calculator</title>
+</head>
+
+<body>
+    <div class="converter">
+        <div class="converterbox">
+            <label for="Weight-on-earth">Weight of an object on Earth:</label><br>
+            <input type="number" id="Weight-on-earth" name="Weight-on-earth" placeholder="Weight"> 
+            <label for=""></label>
+            <select title="unit" name="unit" id="unit">
+                <option value="kg">Kg</option>
+                <option value="mt">Mt</option>
+                <option value="t">t</option>
+                <option value="g">g</option>
+                <option value="mg">mg</option>
+                <option value="ug">µg</option>
+            </select>
+            <center class="ctr">to</center>
+            <label for="Weight-on-another-planet" id="woap">Weight on different Planet:</label><br>
+            <select title="planet" name="planet" id="planet">
+                <option value="Mercury">Mercury</option>
+                <option value="Venus">Venus</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Neptune">Neptune</option>
+            </select><br>
+            <center><button class="calculate" onclick="Calculate()">Calculate</button></center>
+            <div class="answer"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
