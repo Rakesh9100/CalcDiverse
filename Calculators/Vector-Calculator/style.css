@@ -50,12 +50,6 @@ input {
 	line-height: 25px;
 }
 
-/*#results:hover{
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-	transform: scale(1.2);
-}*/
 .vect {
 	display: block;
 	font-size: 24px;
@@ -65,4 +59,21 @@ input {
 
 .vect>p {
 	font-weight: bold;
+}
+
+.operation {
+	margin: 35px 0;
+}
+
+.operation label {
+	color: #C5EBFE;
+	font-size: 24px;
+}
+
+.operation select {
+	border: 0;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px;
+	margin: 10px;
 }
