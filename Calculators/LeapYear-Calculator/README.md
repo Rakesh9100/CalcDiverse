@@ -11,3 +11,5 @@ Leap Year calculator to check whether the specified year is leap year or not
 - JavaScript
 
 ##  Screenshots
+
+![Screenshot](image-1.png)
