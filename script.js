@@ -135,7 +135,8 @@ function filterCalculators() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('noResults').style.display = 'none';
+    document.getElementById('noResults').style.display = 'none'; 
+
 });
 
 // Voice command in search bar feature
