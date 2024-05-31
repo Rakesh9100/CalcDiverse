@@ -18,13 +18,11 @@ function calculateDistance() {
     document.getElementById('result').innerHTML = 'Distance: ' + distance.toFixed(2);
 
     //To Reset
-    
-        document.getElementById('resetButton').addEventListener('click',function(resetForm){
-            document.getElementById('x1').value='';
-            document.getElementById('y1').value='';
-            document.getElementById('x2').value='';
-            document.getElementById('y2').value='';
-        document.getElementById('result').innerHTML='';
-        
+    document.getElementById('resetButton').addEventListener('click', function (resetForm) {
+        document.getElementById('x1').value = '';
+        document.getElementById('y1').value = '';
+        document.getElementById('x2').value = '';
+        document.getElementById('y2').value = '';
+        document.getElementById('result').innerHTML = '';
     })
 }
