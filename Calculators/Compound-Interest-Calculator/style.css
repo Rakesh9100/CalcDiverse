@@ -1,32 +1,34 @@
 body {
     margin-top: 100px;
     background-color: #8ACDD7;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
-    width: 700px;
+    width: 90%;
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
     border: 2px solid #000000;
     border-radius: 20px;
     background-color: #FFC0D9;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.container input {
-    width: 80%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+.container input, .container button {
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    margin: 10px auto;
     padding: 10px;
     border-radius: 65px;
+    box-sizing: border-box;
 }
 
 .container button {
-    width: 80%;
-    padding: 10px;
     background-color: #F9F9E0;
     outline: 1px solid #000000;
     border: none;
-    border-radius: 65px;
 }
 
 .container h1 {
@@ -50,4 +52,41 @@ body {
 .container button:hover {
     transform: scale(1.1);
     transition: 1s;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        margin-top: 50px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .container input, .container button {
+        width: calc(100% - 20px);
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    .container h1, .container h2 {
+        font-size: 1.2em;
+    }
+
+    .container input, .container button {
+        width: calc(100% - 10px);
+    }
+
+    #result {
+        font-size: 16px;
+    }
 }
