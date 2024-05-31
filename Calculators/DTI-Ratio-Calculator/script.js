@@ -8,14 +8,10 @@ function calculateDTI() {
 
     const rental = parseFloat(document.getElementById('rental').value) * 12;
     const mortgage = parseFloat(document.getElementById('mortgage').value) * 12;
-    const propertyTax = parseFloat(document.getElementById('property-tax').value);
-    const insurance = parseFloat(document.getElementById('insurance').value);
     const creditCards = parseFloat(document.getElementById('credit-cards').value) * 12;
-    const studentLoan = parseFloat(document.getElementById('student-loan').value) * 12;
-    const autoLoan = parseFloat(document.getElementById('auto-loan').value) * 12;
     const otherLoans = parseFloat(document.getElementById('other-loans').value) * 12;
 
-    const totalDebt = rental + mortgage + propertyTax + insurance + creditCards + studentLoan + autoLoan + otherLoans;
+    const totalDebt = rental + mortgage + creditCards + otherLoans;
 
     const dtiRatio = (totalDebt / totalIncome) * 100;
 
