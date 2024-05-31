@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: large;
+    background: radial-gradient(circle, rgb(195, 252, 195), rgb(129, 250, 129));
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+}
+
+#calculator-container {
+    background-color: rgb(235, 253, 235);
+    color: rgb(44, 44, 44);
+    border-radius: 8%;
+    margin: 5vh auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 2%;
+    box-shadow: rgba(100, 255, 100, 0.6) 15px 20px 40px,
+        rgba(56, 248, 56, 0.6) 5px 5px 10px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.heading {
+    color: black;
+    font-size: 23px;
+    padding: 5px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.inp-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+}
+
+.food-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+    flex: 1 0 45%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    font-size: 16px;
+    padding: 0.5em;
+    color: black;
+    border: 1px solid rgb(7, 108, 147);
+    outline: none;
+    border-radius: 0.4em;
+    flex: 1 0 45%;
+}
+
+button {
+    display: block;
+    background-color: rgba(34, 162, 98, 0.918);
+    color: rgb(230, 223, 235);
+    font-size: 1em;
+    margin: 2.2em auto;
+    border: 1px solid black;
+    padding: 0.7em 2em;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0 0 0 1px rgba(8, 63, 29, 0.712), 2px 2.5px 2px 0 rgba(8, 63, 27, 0.712);
+}
+
+button:hover {
+    background: rgba(17, 115, 66, 0.918);
+    box-shadow: 0 0 0 1px rgba(8, 63, 29, 0.712), 2px 3px 5px 0 rgba(8, 63, 27, 0.712);
+}
+
+#output {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    text-align: left;
+    padding-left: 5%;
+}
+
+#output span {
+    color: #0f9d0f;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.output-text {
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.result-item {
+    background-color: rgba(235, 253, 235, 0.8);
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(100, 255, 100, 0.6) 3px 5px 10px,
+        rgba(56, 248, 56, 0.6) 2px 2px 5px;
+    text-align: left;
+    min-width: 150px;
+    flex: 1;
+}
+
+.result-content {
+    font-size: 0.9em;
+}
+
+@media only screen and (max-width: 1030px) {
+    #calculator-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    #calculator-container {
+        width: 95%;
+        border-radius: 6%;
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #calculator-container {
+        width: 95%;
+        font-size: 80%;
+    }
+
+    .result-item {
+        min-width: 100%;
+    }
+}
