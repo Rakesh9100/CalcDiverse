@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Planetary Motion Calculator</title>
+</head>
+<body>
+    <h1 id="head">Calculate Various Planetary Motion Parameters</h1>
+    <div id="info">
+    <p><a href="https://commons.wikimedia.org/wiki/File:Kepler-second-law.gif#/media/File:Kepler-second-law.gif"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Kepler-second-law.gif" alt="Kepler-second-law.gif" height="240" width="360" style="float: left;" id="y"></a><br></p>
+    <p><a href="https://commons.wikimedia.org/wiki/File:Kepler_laws_diagram.svg#/media/File:Kepler_laws_diagram.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Kepler_laws_diagram.svg" alt="Kepler laws diagram.svg" height="240" width="360" style="float: right;" id="z"></a><br></p>
+    <p id="info-info">
+    According to <b>Kepler's First Law</b>, The orbit of every planet is an ellipse with the sun at one of the two foci.
+    According to <b>Kepler's Second Law</b>, A line joining a planet and the Sun sweeps out equal areas during equal intervals of time.
+    According to <b>Kepler's Third Law</b>, The ratio of the square of an object's orbital period with the cube of the semi-major axis of its orbit is the same for all objects orbiting the same primary.</p>
+    </div>
+    <h4 id="ele1">Source: Wikipedia</h4>
+    <br><br>
+    <div class="ele2">
+        <h2 class="head2">Calculation of lengths of semi-major axis (<em>a</em>) and semi-minor axis (<em>b</em>) from <em>r<sub>min</sub></em> and <em>r<sub>max</sub></em></h2>
+        <p class="head2"><em>r<sub>min</sub></em>
+        : distance from sun at perihelion  (minimum distance)</p>
+        <p class="head2"><em>r<sub>max</sub></em>
+        : distance from sun at aphelion  (maximum distance)</p>
+        <div id="p1">
+        Enter the value of <em>r<sub>max</sub></em> : <input type="number" id="inp1">
+        <br> <br>
+        Enter the value of <em>r<sub>min</sub></em> : <input type="number" id="inp2">
+        <br> <br>
+        <button class="button" id="cal1">Calculate</button>
+        <button class="button" id="b1">Clear</button>
+        <br>
+        <p id="res1"><b>Value of <em>a</em> <em>(in the same unit as of <em>r<sub>max</sub></em> and <em>r<sub>min</sub></em>):</em> </b></p>
+        <p id="res2"><b>Value of <em>b</em> <em>(in the same unit as of <em>r<sub>max</sub></em> and <em>r<sub>min</sub></em>):</em> </b></p>
+        </div>
+        </div>
+        <br><br>
+        <div class="ele2">
+        <h2 class="head2">Calculation of value of Orbital Time Period from <em>a</em></h2>
+        <p class="head2"><em>a</em>
+        : length of semi-major axis of the orbit </p>
+        <p class="head2"><b>Please enter the value of <em>a</em> in AU </b></p>
+        <p class="head2">1 AU = 1.496*10<sup>11</sup> m </p>
+        <div id="p1">
+        Enter the value of <em>a</em> : <input type="number" id="inp3">
+        <br> <br>
+        <button class="button" id="cal2">Calculate</button>
+        <button class="button" id="b2">Clear</button>
+        <br>
+        <p id="res3"><b>Value of Orbital Time Period <em>(in Earth years):</em> </b></p>
+        </div>
+        </div>
+        <br><br>
+        <div class="ele2">
+        <h2 class="head2">Calculation of value of Areal Velocity from <em>a</em>,  <em>b</em> and <em>T</em></h2>
+        <p class="head2"><em>a</em>
+        : length of semi-major axis of the orbit </p>
+        <p class="head2"><em>b</em>
+        : length of semi-minor axis of the orbit</p>
+        <p class="head2"><em>T</em>
+        : orbital time period</p>
+        <div id="p1">
+        Enter the value of <em>a</em> : <input type="number" id="inp4">
+        <br> <br>
+        Enter the value of <em>b</em> : <input type="number" id="inp5">
+        <br> <br>
+        Enter the value of <em>T</em> : <input type="number" id="inp6">
+        <br> <br>
+        <button class="button" id="cal3">Calculate</button>
+        <button class="button" id="b3">Clear</button>
+        <br>
+        <p id="res4"><b>Value of Areal Velocity <em>(in unit corresponding to that of <em>a, b, T</em>):</em> </b></p>
+        </div>
+        </div>
+    <br><br>
+    <p id="llp"><a href="https://commons.wikimedia.org/wiki/File:Solar_system_orbital_period_vs_semimajor_axis.svg#/media/File:Solar_system_orbital_period_vs_semimajor_axis.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Solar_system_orbital_period_vs_semimajor_axis.svg" alt="Solar system orbital period vs semimajor axis.svg" height="512" width="512" id="x"></a>
+    <p id="lp">Source: Wikipedia</p>
+    </p>
+    <br><br>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* Style for the body with background image */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container styling */
+#converter-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto 0; /* Center align the container with margin at the top */
+}
+
+/* Header styling */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Input and select field styling */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px; 
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Result text styling */
+#result {
+    text-align: center;
+    font-weight: bold;
+}
