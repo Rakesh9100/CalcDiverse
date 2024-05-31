@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,67 +10,93 @@ body {
 }
 
 .container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
     box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 34px;
     text-align: center;
     color: #333;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
 }
 
 input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border: 2px solid #ced4da;
     border-radius: 5px;
     box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff512f;
+    box-shadow: 0 0 8px rgba(255, 81, 47, 0.3);
+    outline: none;
 }
 
 button {
     width: 100%;
-    padding: 12px;
-    background: #007bff;
+    padding: 15px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-    background: #0056b3;
+    background: linear-gradient(to right, #ff512f, #b82e6d);
+    transform: scale(1.05);
 }
 
 #result {
     margin-top: 20px;
     font-size: 18px;
     text-align: center;
+    color: #333;
 }
 
 @media (max-width: 600px) {
     .container {
-        padding: 20px;
+        padding: 30px;
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
     }
 }
