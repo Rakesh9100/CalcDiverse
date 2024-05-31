@@ -111,8 +111,8 @@ function filterCalculators() {
     input = document.getElementById('calculatorSearch');
     filter = input.value.toUpperCase();
     calculators = document.querySelectorAll('.container .box');
-    console.log(filter)
-    console.log(calculators)
+    var noResults = document.getElementById('noResults');
+    var hasResults = false;
 
     for (i = 0; i < calculators.length; i++) {
         var calculator = calculators[i];
@@ -121,11 +121,22 @@ function filterCalculators() {
 
         if (calculatorName.toUpperCase().indexOf(filter) > -1) {
             calculator.style.display = "flex";
+            hasResults = true;
         } else {
             calculator.style.display = "none";
         }
     }
+
+    if (hasResults) {
+        noResults.style.display = 'none';
+    } else {
+        noResults.style.display = 'block';
+    }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('noResults').style.display = 'none';
+});
 
 // Voice command in search bar feature
 const searchBar = document.querySelector("#searchBar");
