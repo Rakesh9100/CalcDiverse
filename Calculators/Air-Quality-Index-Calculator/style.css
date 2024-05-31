@@ -13,7 +13,7 @@ body {
     display: flex;
     height: 100vh;
     margin: 0;
-    background-image: url('./assets/bg2.jpg');
+    background-image: url('./assets/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
