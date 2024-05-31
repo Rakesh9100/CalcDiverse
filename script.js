@@ -127,7 +127,6 @@ function filterCalculators() {
     }
 }
 
-
 // Voice command in search bar feature
 const searchBar = document.querySelector("#searchBar");
 const searchBarInput = searchBar.querySelector("input");
