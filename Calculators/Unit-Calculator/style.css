@@ -87,8 +87,6 @@ h2 {
     padding-left: 50px;
 }
 
-.right {}
-
 @media (max-width: 600px) {
     .converter {
         width: 79%;
