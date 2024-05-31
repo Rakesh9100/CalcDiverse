@@ -1,12 +1,21 @@
-## Calculation Of Various Parameters Of Planetary Motion
+# <p align="center">Planetary Motion Calculator</p>
 
-### Description
-Using this calculator, one can calculate orbital time period, semi-major, semi-minor axis lengths and areal velocity using Kepler's laws.
+## Description :-
 
-### Tech-stack Used
-HTML, CSS, JavaScript
+This calculator calculates orbital time period, semi-major, semi-minor axis lengths, and areal velocity using Kepler's laws.
 
-### Screenshots
-![page1](https://github.com/Sara1428/CalcDiverse/assets/146193518/371f4415-5e45-4689-b192-5ff146f4e695)
-![page2](https://github.com/Sara1428/CalcDiverse/assets/146193518/6411c38d-2554-4474-80bb-96c9bfff0961)
-![page3](https://github.com/Sara1428/CalcDiverse/assets/146193518/a4d85c12-ac76-4f44-84d5-fc9184dee00a)
+## Tech Stacks :-
+
+- HTML
+- CSS
+- JavaScript
+
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/a58b6dcd-aba2-4947-aa7a-b3cc1eab5cb3)
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/0d0a4cfa-cf5e-4ab8-8cdf-67520b23e69d)
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/06ca4be6-c1dc-4d1f-9433-85f16905c698)
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/df26cb36-5268-4eea-b93a-7d57d0e7cc2e)
