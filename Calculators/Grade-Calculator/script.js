@@ -2,17 +2,16 @@ function openPage(calcName, element) {
     // Hide all elements with class="tabcontent" by default */
     let calc = document.getElementsByClassName("calculator-container");
     for (let i = 0; i < calc.length; i++) {
-      calc[i].style.display = "none";
+        calc[i].style.display = "none";
     }
     // Show the specific tab content
     document.getElementById(calcName).style.display = "block";
-  
-  }
+
+}
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-  
 
-function calculateRelGrade(){
+function calculateRelGrade() {
     // Get marks, mean and std for each subject
     let marksInputs = document.querySelectorAll('#relative .marks');
     let totalPoints = 0;
@@ -31,32 +30,31 @@ function calculateRelGrade(){
     let mean = parseFloat(marksInputs[1].value);
     let std = parseFloat(marksInputs[2].value);
 
-    let percentage = marks[0]/marks[1];
+    let percentage = marks[0] / marks[1];
 
     let grade;
-    
-    if(percentage>=0.9 && marks[0] > mean + 1.5*std){
+
+    if (percentage >= 0.9 && marks[0] > mean + 1.5 * std) {
         grade = "S";
-    } else if(marks[0] > mean + 0.5*std){
+    } else if (marks[0] > mean + 0.5 * std) {
         grade = "A";
-    } else if(marks[0] > mean - 0.5*std){
+    } else if (marks[0] > mean - 0.5 * std) {
         grade = "B";
-    } else if(marks[0] > mean - std){
+    } else if (marks[0] > mean - std) {
         grade = "C";
-    } else if(marks[0] > mean - 1.5*std){
+    } else if (marks[0] > mean - 1.5 * std) {
         grade = "D";
-    } else if(marks[0] > mean - 2*std){
+    } else if (marks[0] > mean - 2 * std) {
         grade = "E";
-    } else{
+    } else {
         grade = "F";
     }
 
     let resultElement = document.querySelector('#relative .result');
     resultElement.innerHTML = "Percentage: " + percentage.toFixed(2) + "%<br>" +
         "Grade: " + grade;
-    
-}
 
+}
 
 // ------------------------------------------ Absolute Grade Calculator ---------------------------------------------
 
@@ -116,6 +114,4 @@ function calculateGradeFromPercentage(percentage) {
     }
 }
 
-
 // ------------------------------------------ Relative Grade Calculator ---------------------------------------------
-
