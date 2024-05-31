@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #b5d7ec;
@@ -13,6 +14,7 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
+
 h1 {
     margin-bottom: 20px;
     font-size: 2em;
@@ -20,6 +22,7 @@ h1 {
     font-family: Georgia;
     text-shadow: #b5d7ec;
 }
+
 form {
     width: 100%;
     max-width: 400px;
@@ -29,6 +32,7 @@ form {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 label {
     display: block;
     margin: 15px 0 5px;
