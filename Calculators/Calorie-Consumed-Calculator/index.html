@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calorie Consumed Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Consumed Calculator</h1>
+        <div class="categories">
+            <div class="category">
+                <h2>Carbs <button class="toggle-btn" onclick="toggleCategory('carbs')"><span class="plus-sign">+</span></button></h2>
+                <div id="carbs" class="food-items">
+                    <label for="rice">Rice (grams):</label>
+                    <input type="number" id="rice" placeholder="grams">
+                    <label for="roti">Roti (number):</label>
+                    <input type="number" id="roti" placeholder="number">
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>Curry <button class="toggle-btn" onclick="toggleCategory('curry')"><span class="plus-sign">+</span></button></h2>
+                <div id="curry" class="food-items">
+                    <label for="paneer">Paneer (grams):</label>
+                    <input type="number" id="paneer" placeholder="grams">
+                    <label for="chicken">Chicken (grams):</label>
+                    <input type="number" id="chicken" placeholder="grams">
+                    <label for="fish">Fish (grams):</label>
+                    <input type="number" id="fish" placeholder="grams">
+                    <label for="egg">Egg (number):</label>
+                    <input type="number" id="egg" placeholder="number">
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>Snacks <button class="toggle-btn" onclick="toggleCategory('snacks')"><span class="plus-sign">+</span></button></h2>
+                <div id="snacks" class="food-items">
+                    <label for="pakoda">Fritters (grams):</label>
+                    <input type="number" id="pakoda" placeholder="grams">
+                    <label for="fries">Fries (grams):</label>
+                    <input type="number" id="fries" placeholder="grams">
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>Beverages <button class="toggle-btn" onclick="toggleCategory('beverages')"><span class="plus-sign">+</span></button></h2>
+                <div id="beverages" class="food-items">
+                    <label for="tea">Tea (cup):</label>
+                    <input type="number" id="tea" placeholder="number">
+                    <label for="coffee">Coffee (cup):</label>
+                    <input type="number" id="coffee" placeholder="number">
+                    <label for="juice">Juice (ml):</label>
+                    <input type="number" id="juice" placeholder="ml">
+                    <label for="soft_drinks">Soft Drinks (ml):</label>
+                    <input type="number" id="soft_drinks" placeholder="ml">
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>Desserts <button class="toggle-btn" onclick="toggleCategory('desserts')"><span class="plus-sign">+</span></button></h2>
+                <div id="desserts" class="food-items">
+                    <label for="sweets">Sweets (grams):</label>
+                    <input type="number" id="sweets" placeholder="grams">
+                    <label for="icecream">Ice Cream (grams):</label>
+                    <input type="number" id="icecream" placeholder="grams">
+                    <label for="cake">Cake (grams):</label>
+                    <input type="number" id="cake" placeholder="grams">
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>Junk Food <button class="toggle-btn" onclick="toggleCategory('junkFood')"><span class="plus-sign">+</span></button></h2>
+                <div id="junkFood" class="food-items">
+                    <label for="chips">Chips (grams):</label>
+                    <input type="number" id="chips" placeholder="grams">
+                    <label for="pizza">Pizza (slice):</label>
+                    <input type="number" id="pizza" placeholder="number">
+                    <label for="burger">Burger (number):</label>
+                    <input type="number" id="burger" placeholder="number">
+                    <label for="sandwich">Sandwich (number):</label>
+                    <input type="number" id="sandwich" placeholder="number">
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>Fruits <button class="toggle-btn" onclick="toggleCategory('fruits')"><span class="plus-sign">+</span></button></h2>
+                <div id="fruits" class="food-items">
+                    <label for="fruits">Fruits (grams):</label>
+                    <input type="number" id="fruits" placeholder="grams">
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>Dairy <button class="toggle-btn" onclick="toggleCategory('dairy')"><span class="plus-sign">+</span></button></h2>
+                <div id="dairy" class="food-items">
+                    <label for="milk">Milk (ml):</label>
+                    <input type="number" id="milk" placeholder="ml">
+                    <label for="cheese">Cheese (grams):</label>
+                    <input type="number" id="cheese" placeholder="grams">
+                    <label for="yogurt">Yogurt (grams):</label>
+                    <input type="number" id="yogurt" placeholder="grams">
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>Vegetables <button class="toggle-btn" onclick="toggleCategory('vegetables')"><span class="plus-sign">+</span></button></h2>
+                <div id="vegetables" class="food-items">
+                    <label for="broccoli">Broccoli (grams):</label>
+                    <input type="number" id="broccoli" placeholder="grams">
+                    <label for="carrots">Carrots (grams):</label>
+                    <input type="number" id="carrots" placeholder="grams">
+                    <label for="spinach">Spinach (grams):</label>
+                    <input type="number" id="spinach" placeholder="grams">
+                    <label for="potatoes">Potatoes (grams):</label>
+                    <input type="number" id="potatoes" placeholder="grams">
+                </div>
+            </div>
+            
+            <div class="category">
+                
+                <h2>Nuts and Seeds <button class="toggle-btn" onclick="toggleCategory('nutsSeeds')"><span class="plus-sign">+</span></button></h2>
+                <div id="nutsSeeds" class="food-items">
+                    <label for="almonds">Almonds (grams):</label>
+                    <input type="number" id="almonds" placeholder="grams">
+                    <label for="walnuts">Walnuts (grams):</label>
+                    <input type="number" id="walnuts" placeholder="grams">
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2>Grains and Pulses <button class="toggle-btn" onclick="toggleCategory('grainsPulses')"><span class="plus-sign">+</span></button></h2>
+                <div id="grainsPulses" class="food-items">
+                    <label for="lentils">Lentils (grams):</label>
+                    <input type="number" id="lentils" placeholder="grams">
+                    <label for="beans">Beans (grams):</label>
+                    <input type="number" id="beans" placeholder="grams">
+                </div>
+            </div>
+            <div class="category">
+                <h2>Soup and Stews <button class="toggle-btn" onclick="toggleCategory('soupStews')"><span class="plus-sign">+</span></button></h2>
+                <div id="soupStews" class="food-items">
+                    <label for="chickenSoup">Chicken Soup (ml):</label>
+                    <input type="number" id="chickenSoup" placeholder="ml">
+                    <label for="vegetableSoup">Vegetable Soup (ml):</label>
+                    <input type="number" id="vegetableSoup" placeholder="ml">
+                    <label for="beefStew">Beef Stew (ml):</label>
+                    <input type="number" id="beefStew" placeholder="ml">
+                    <label for="lentilSoup">Lentil Soup (ml):</label>
+                    <input type="number" id="lentilSoup" placeholder="ml">
+                </div>
+            </div>
+            
+        </div>
+        
+        <button onclick="calculateCalories()">Calculate</button>
+        <h2>Total Calories: <span id="totalCalories">0</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

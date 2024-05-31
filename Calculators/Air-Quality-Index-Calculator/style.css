@@ -7,7 +7,6 @@
 html {
     height: 100%;
     margin: 0;
-    background-image: linear-gradient(to right, #72ff5f, #d3ef34, #f1543c);
 }
 
 body {
@@ -15,7 +14,7 @@ body {
     height: 100vh;
     margin: 0;
     background-image: url('./assets/background.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
@@ -23,18 +22,19 @@ body {
 }
 
 .container {
-    background-color: rgba(222, 133, 123, 0.5);
+    background-color: rgba(189, 181, 179, 0.5);
     padding: 20px;
     border-radius: 8px;
     color: rgb(10, 10, 10);
     text-align: center;
-    max-width: 35%;
-    height: 48%;
+    width: 40%;
+    height: 40%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 50px;
 }
 
 #input-label {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: #000000;
 }
@@ -45,6 +45,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px;
+    margin-left: 15px;
 }
 
 button {
@@ -52,9 +53,9 @@ button {
     border: none;
     border-radius: 10px;
     padding: 10px;
-    background-image: linear-gradient(to right, #72ff5f, #d3ef34, #de361c);
+    background-image: linear-gradient(to right, #e4b06c, #897443, #90441d);
     font-weight: bold;
-    box-shadow: 0 4px 6px rgba(12, 162, 27, 0.3);
+    box-shadow: 0 4px 6px rgba(133, 68, 10, 0.3);
     transition: box-shadow 0.3s;
 }
 
