@@ -12,4 +12,4 @@ This project involves creating a web-based nutrition calculator using HTML, CSS,
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/ea194577-0adb-4719-9692-5cc8282fd3a6)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c4b598d3-733b-4f57-9265-55b8afa2e905)
