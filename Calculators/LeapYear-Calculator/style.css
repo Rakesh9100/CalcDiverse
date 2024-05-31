@@ -1,61 +1,77 @@
-body{
-    background-image: linear-gradient(to right, white,grey );;
+body {
+    background-image: linear-gradient(to right, white, lightgrey);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
-.leapyr{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-image: url('https://t3.ftcdn.net/jpg/02/99/23/56/360_F_299235692_zbfXpgeYVVFnPq0mEhUE0yeU3E4eYWxN.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity:90%;
-    height: 580px;
-    width: 680px;
-    color: azure;
-    margin:40px;
-    margin-left: 400px;
-    margin-top: 50px;
+h1{
+    padding-left:350px;
 }
 
-.leapyr form{
-    color: black;
-  
+.leapyr {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    margin-left: 550px;
+    margin-top: 150px;
 }
 
-.leapyr form input{
-    height:25px;
-    width:250px;
-    border: 1px solid black;
+.leapyr form {
+    width: 100%;
+    color: #333;
 }
 
-.leapyr label{
-    font-size: 24px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.leapyr form h3{
-    margin-left: 90px;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.leapyr button{
-    height:40px;
-    width: 80px;
-    margin-left: 140px;
-    margin-top: 10px;
-    background-color: cornflowerblue;
-    color: black;
-    font-weight: bold;
-    border: transparent;
+.leapyr form input {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
-p{
-    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color:rgb(244, 162, 31);
+.leapyr label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: #444;
+}
+
+.leapyr form h3 {
+    margin-bottom: 20px;
     font-weight: bold;
+    color: #444;
+    font-size: 24px;
+}
+
+.leapyr button {
+    height: 40px;
+    width: 100%;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leapyr button:hover {
+    background-color: royalblue;
+}
+
+p {
+    font-size: 18px;
+    color: #f4961f;
+    font-weight: bold;
+    margin-top: 20px;
 }
