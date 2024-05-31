@@ -187,3 +187,26 @@ else {
     console.log("Your Browser does not support speech Recognition");
     info.textContent = "Your Browser does not support Speech Recognition";
 }
+// Add this script at the bottom of your index.html or in a separate JS file
+document.getElementById('subscription-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const messageBox = document.getElementById('subscription-message');
+  
+    // Here you would send the email to your server or an email service provider
+    // This example just shows a success message for demonstration purposes
+    if (validateEmail(email)) {
+      messageBox.textContent = 'Thank you for subscribing!';
+      messageBox.style.color = 'green';
+    } else {
+      messageBox.textContent = 'Please enter a valid email address.';
+      messageBox.style.color = 'red';
+    }
+  });
+  
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  }
+  

@@ -1741,3 +1741,57 @@ section {
         padding-bottom: 15px;
     }
  }
+/* Styles for the subscription box */
+#subscription-box {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  #subscription-box h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  #subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #email {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #subscription-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #subscription-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  #subscription-message {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
