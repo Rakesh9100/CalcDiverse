@@ -17,5 +17,6 @@ For relative grading, it takes the mean and standard deviation of the class and 
 
 ## Screenshots :-
 
-![image](https://github.com/A-b-i-r-a-m-i-G-S/CalcDiverse/assets/89207514/d0b39059-2cad-4733-8d47-da70e8fead3e)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/d49d3f0f-b9e2-4b65-b9da-5e44e60ed5c8)
 
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/b0753e3b-0fd2-4cb6-9337-d3db9b882869)
