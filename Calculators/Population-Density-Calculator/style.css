@@ -1,0 +1,111 @@
+body {
+    background-color: #66876e;
+    background-image: linear-gradient(62deg, #296a2b 0%, #a0c6a6 100%);
+
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: 500px;
+    background: transparent;
+    border-radius: 10px;
+    border: 3px solid rgba(12, 12, 12, 0.5);
+    box-shadow: 0 0 10 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+.calculator-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.calculator-section h2 {
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 700;
+}
+
+.calculator-section .heading-line-2 {
+    text-align: center;
+}
+
+.headings {
+    line-height: 18px;
+}
+
+.form-field input {
+    width: 15rem;
+    height: 1.2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid black;
+    font-size: 1.2rem;
+}
+
+::placeholder {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.button-64 {
+    align-items: center;
+    background-image: linear-gradient(144deg, #93a380, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(37, 74, 29, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 120px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+    outline: 0;
+}
+
+.button-64 span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button-64:hover span {
+    background: none;
+}
+
+#result {
+    font-size: 1.5rem;
+    margin: 10px 7px;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}

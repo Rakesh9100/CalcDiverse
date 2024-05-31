@@ -1,0 +1,107 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('assets/background.jpg');
+    margin: 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent to see some background */
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+.waviy {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.waviy span {
+    display: inline-block;
+    font-size: 30px;
+    color: #a40c8b;
+    animation: waviy 1.2s infinite;
+}
+
+.waviy span:nth-child(even) {
+    animation-delay: 0.1s;
+}
+
+@keyframes waviy {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-12px);
+    }
+}
+
+.row {
+    margin-bottom: 1.5em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.6em;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.8em;
+    background: linear-gradient(135deg, #6A82FB, #FC5C7D);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #FC5C7D, #6A82FB);
+    transform: translateY(-2px);
+}
+
+.rule {
+    border-bottom: 2px solid #eee;
+    margin: 1em 0;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+}
+
+#result-container {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+#result {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}

@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <title>Systematic Investment Plan Calculator</title>
 </head>
-
 <body>
-
-    <div class="calculator">
-        <h2>SIP Calculator</h2>
-        <label for="investmentAmount">Investment Amount (monthly):</label>
-        <input type="number" id="investmentAmount" placeholder="Enter Investment Amount">
-
-        <label for="duration">Investment Duration (in years):</label>
-        <input type="number" id="duration" placeholder="Enter Investment Duration">
-
-        <label for="growthRate">Growth Rate (%):</label>
-        <input type="number" id="growthRate" placeholder="Enter Growth Rate">
-
-        <button onclick="calculateSIP()">Calculate Future Value</button>
-
-        <h3>Result:</h3>
-        <p id="futureValue">Future Value: </p>
-        <p id="totalInvested">Total Invested: </p>
-        <p id="gains">Gains: </p>
+    <div class="container">
+        <h1>SIP Calculator</h1>
+        <div class="form-group">
+            <label for="mode">Investment Mode:</label>
+            <select id="mode" class="form-control" onchange="toggleInputFields()">
+                <option value="sip">SIP</option>
+                <option value="lumpsum">Lumpsum</option>
+            </select>
+        </div>
+        <div class="form-group" id="monthly-investment-group">
+            <label for="monthly-amount">Monthly Investment Amount:</label>
+            <input type="number" id="monthly-amount" class="form-control" placeholder="Enter monthly amount">
+        </div>
+        <div class="form-group" id="lumpsum-investment-group" style="display:none;">
+            <label for="amount">Lumpsum Investment Amount:</label>
+            <input type="number" id="amount" class="form-control" placeholder="Enter amount">
+        </div>
+        <div class="form-group">
+            <label for="rate">Expected Annual Return Rate (%):</label>
+            <input type="number" id="rate" class="form-control" placeholder="Enter rate">
+        </div>
+        <div class="form-group">
+            <label for="years">Investment Duration (years):</label>
+            <input type="number" id="years" class="form-control" placeholder="Enter duration">
+        </div>
+        <button class="btn" onclick="calculate()">Calculate</button>
+        <div id="result" class="result"></div>
     </div>
-
     <script src="script.js"></script>
-
 </body>
-
 </html>

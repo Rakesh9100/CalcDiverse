@@ -30,27 +30,26 @@ header {
     margin: 0 auto;
     padding: 25px;
     padding-top: 10px;
-    background: rgb(245, 230, 230);
     background: linear-gradient(177deg, rgba(245, 230, 230, 0.7232142857142857) 40%, rgba(249, 249, 249, 0.21621148459383754) 100%, rgba(0, 0, 0, 1) 100%);
     border-radius: 20px;
     display: grid;
     justify-content: center;
     align-items: center;
-    box-shadow: -10px -10px 50px #b400a5;
+    box-shadow: -5px -5px 25px #b400a5;
+    overflow: auto;
 }
 
 .contact-container h2 {
     font-family: Ubuntu;
     font-size: 4rem;
-    text-shadow: 2px 2px 10px var(--light);
     margin-top: 16px;
-    color: white;
+    color: #ffffff;
 }
 
 .contact-container p {
     color: black;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 28px;
 }
 
@@ -77,6 +76,11 @@ textarea {
     margin-bottom: 25px;
     border: 0;
     transition: all linear .2s;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    resize: vertical; 
 }
 
 input:hover,
