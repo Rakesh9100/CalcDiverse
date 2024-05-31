@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Retirement Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Retirement Calculator</h1>
+        <form id="retirementForm" class="form-group">
+            <div class="form-control">
+                <label for="currentAge">Current Age:</label>
+                <input type="number" id="currentAge" min="0" required>
+            </div>
+            <div class="form-control">
+                <label for="retirementAge">Retirement Age:</label>
+                <input type="number" id="retirementAge" min="0" required>
+            </div>
+            <div class="form-control">
+                <label for="currentSavings">Current Savings (₹):</label>
+                <input type="number" id="currentSavings" min="0" required>
+            </div>
+            <div class="form-control">
+                <label for="annualContribution">Annual Contribution (₹):</label>
+                <input type="number" id="annualContribution" min="0" required>
+            </div>
+            <div class="form-control">
+                <label for="annualReturn">Annual Return on Investment (%):</label>
+                <input type="number" id="annualReturn" min="0" required>
+            </div>
+            <button type="button" class="btn" onclick="calculateRetirement()">Calculate</button>
+        </form>
+        <div id="result" class="result" style="display: none;">
+            <h2>Estimated Amount Needed for Retirement:</h2>
+            <p id="retirementAmount"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
