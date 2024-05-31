@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-image: url('shoe.png');
+    background-image: url('assets/background.png');
     background-size: cover;
     background-position: center;
 }
