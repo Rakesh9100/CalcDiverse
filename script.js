@@ -1,84 +1,189 @@
-const band1 = document.getElementById('band1');
-const band2 = document.getElementById('band2');
-const band3 = document.getElementById('band3');
-const band4 = document.getElementById('band4');
-const band5 = document.getElementById('band5');
-const calcBtn = document.querySelector('.btn');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-// Define color options for each band
-const colorOptions = {
-    band1: ['Black', 'Brown', 'Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Violet', 'Gray', 'White'],
-    band2: ['Black', 'Brown', 'Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Violet', 'Gray', 'White'],
-    band3: ['Black', 'Brown', 'Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Violet', 'Gray', 'White'],
-    band4: ['Black', 'Brown', 'Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Violet', 'Gray', 'White'],
-    band5: ['Gold', 'Silver', 'No Colour']
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        document.querySelector("body").classList.add("loaded");
+    }, 500)
+});
+
+hamburger.addEventListener("click", mobileMenu);
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+const cont = document.getElementById('contributor');
+const owner = 'Rakesh9100';
+const repoName = 'CalcDiverse';
+
+async function fetchContributors(pageNumber) {
+    const perPage = 100;
+    const url = `https://api.github.com/repos/${owner}/${repoName}/contributors?page=${pageNumber}&per_page=${perPage}`;
+
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch contributors data. Status code: ${response.status}`);
+    }
+
+    const contributorsData = await response.json();
+    return contributorsData;
+}
+
+// Function to fetch all contributors
+async function fetchAllContributors() {
+    let allContributors = [];
+    let pageNumber = 1;
+
+    try {
+        while (true) {
+            const contributorsData = await fetchContributors(pageNumber);
+            if (contributorsData.length === 0) {
+                break;
+            }
+            allContributors = allContributors.concat(contributorsData);
+            pageNumber++;
+        }
+        allContributors.forEach((contributor) => {
+            const contributorCard = document.createElement('div');
+            contributorCard.classList.add('contributor-card');
+
+            const avatarImg = document.createElement('img');
+            avatarImg.src = contributor.avatar_url;
+            avatarImg.alt = `${contributor.login}'s Picture`;
+
+            const loginLink = document.createElement('a');
+            loginLink.href = contributor.html_url;
+            loginLink.appendChild(avatarImg);
+
+            contributorCard.appendChild(loginLink);
+
+            cont.appendChild(contributorCard);
+        });
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+fetchAllContributors();
+
+let calcScrollValue = () => {
+    let scrollProg = document.getElementById("progress");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    if (pos > 100) {
+        scrollProg.style.display = "grid";
+    } else {
+        scrollProg.style.display = "none";
+    }
+    scrollProg.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+    });
+    scrollProg.style.background = `conic-gradient(#0063ba ${scrollValue}%, #d499de ${scrollValue}%)`;
 };
 
-function updateDropdownOptions(dropdown, options) {
-    dropdown.innerHTML = ''; // Clear existing options
-
-    for (let i = 0; i < options.length; i++) {
-        const option = document.createElement('option');
-        option.value = options[i].toLowerCase();
-        option.text = options[i];
-        option.style.backgroundColor = options[i];
-        dropdown.appendChild(option);
-    }
-}
-
-// Update dropdown options initially and on change
-updateDropdownOptions(band1, colorOptions.band1);
-updateDropdownOptions(band2, colorOptions.band2);
-updateDropdownOptions(band3, colorOptions.band3);
-updateDropdownOptions(band4, colorOptions.band4)
-updateDropdownOptions(band5, colorOptions.band5);
-
-//adding event listener to the button to calculate the resistance
-calcBtn.addEventListener('click', calcResistance);
-
-//resistance calculating function
-function calcResistance() {
-    const band1Value = band1.value.toLowerCase();
-    const band2Value = band2.value.toLowerCase();
-    const band3Value = band3.value.toLowerCase();
-    const band4Value = band4.value.toLowerCase();
-    const band5Value = band5.value.toLowerCase();
-    console.log(band4Value);
-    const resistorValues = {
-        black: 0,
-        brown: 1,
-        red: 2,
-        orange: 3,
-        yellow: 4,
-        green: 5,
-        blue: 6,
-        violet: 7,
-        gray: 8,
-        white: 9
-    };
-
-    const resistanceValue = (resistorValues[band1Value] * 100 + resistorValues[band2Value] * 10 + resistorValues[band3Value]);
-
-    let tolerancePercentage = '';
-
-    if (band5Value === 'gold') {
-        tolerancePercentage = '5%';
-    } else if (band5Value === 'silver') {
-        tolerancePercentage = '10%';
+window.addEventListener('scroll', function () {
+    var scrollToTopButton = document.getElementById('progress');
+    if (window.pageYOffset > 200) {
+        scrollToTopButton.style.display = 'block';
     } else {
-        tolerancePercentage = '20%';
+        scrollToTopButton.style.display = 'none';
     }
+});
 
-    // Open the popup for the resistance result
-    const popup = document.getElementById('popup');
-    const popupResult = document.getElementById('popup-result');
-    popupResult.textContent = `The value of Resistance is ${resistanceValue} x 10^${resistorValues[band4Value]} Ω ± ${tolerancePercentage} tolerance`;
-    popup.style.display = 'flex';
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+// Function to filter calculators
+function filterCalculators() {
+    var input, filter, calculators, i;
+    input = document.getElementById('calculatorSearch');
+    filter = input.value.toUpperCase();
+    calculators = document.querySelectorAll('.container .box');
+    console.log(filter)
+    console.log(calculators)
+
+    for (i = 0; i < calculators.length; i++) {
+        var calculator = calculators[i];
+        var h2 = calculator.querySelector('h2');
+        var calculatorName = h2.textContent || h2.innerText;
+
+        if (calculatorName.toUpperCase().indexOf(filter) > -1) {
+            calculator.style.display = "flex";
+        } else {
+            calculator.style.display = "none";
+        }
+    }
 }
 
-// Hide the popup when OK button is clicked
-const okButton = document.getElementById('closebtn');
-okButton.addEventListener('click', () => {
-    const popup = document.getElementById('popup');
-    popup.style.display = 'none';
-});
+// Voice command in search bar feature
+const searchBar = document.querySelector("#searchBar");
+const searchBarInput = searchBar.querySelector("input");
+
+// The speech recognition interface lives on the browser’s window object
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; // if none exists -> undefined
+
+if (SpeechRecognition) {
+    console.log("Your Browser supports speech Recognition");
+
+    const recognition = new SpeechRecognition();
+    recognition.continuous = true;
+    // recognition.lang = "en-US";
+
+    searchBar.insertAdjacentHTML("beforeend", '<button type="button"><i class="fas fa-microphone"></i></button>');
+    // searchBarInput.style.paddingRight = "50px";
+
+    const micBtn = searchBar.querySelector("button");
+    const micIcon = micBtn.firstElementChild;
+
+    micBtn.addEventListener("click", micBtnClick);
+    function micBtnClick() {
+        if (micIcon.classList.contains("fa-microphone")) { // Start Voice Recognition
+            recognition.start(); // First time you have to allow access to mic!
+        }
+        else {
+            recognition.stop();
+        }
+    }
+
+    recognition.addEventListener("start", startSpeechRecognition); // <=> recognition.onstart = function() {...}
+    function startSpeechRecognition() {
+        micIcon.classList.remove("fa-microphone");
+        micIcon.classList.add("fa-microphone-slash");
+        searchFormInput.focus();
+        console.log("Voice activated, SPEAK");
+    }
+
+    recognition.addEventListener("end", endSpeechRecognition); // <=> recognition.onend = function() {...}
+    function endSpeechRecognition() {
+        micIcon.classList.remove("fa-microphone-slash");
+        micIcon.classList.add("fa-microphone");
+        searchBarInput.focus();
+        console.log("Speech recognition service disconnected");
+    }
+
+    recognition.addEventListener("result", resultOfSpeechRecognition); // <=> recognition.onresult = function(event) {...} - Fires when you stop talking
+    function resultOfSpeechRecognition(event) {
+        const current = event.resultIndex;
+        const transcript = event.results[current][0].transcript;
+        newtranscript = transcript.endsWith('.') ? transcript.slice(0, -1) : transcript;
+        console.log(newtranscript)
+        searchBarInput.value = newtranscript;
+        filterCalculators();
+    }
+}
+else {
+    console.log("Your Browser does not support speech Recognition");
+    info.textContent = "Your Browser does not support Speech Recognition";
+}
