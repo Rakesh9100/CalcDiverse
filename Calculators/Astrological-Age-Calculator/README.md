@@ -2,7 +2,7 @@
 
 ## Description :-
 
-This is a simple calculator that gives back the age of user on different planets as selected by the user
+This is a simple calculator that gives back the age of the user on different planets as selected by the user.
 
 ## Tech Stacks :-
 
@@ -13,8 +13,8 @@ This is a simple calculator that gives back the age of user on different planets
 ## Features :-
 
 - Input validation ensures only numerical values are accepted.
-- calculates age on different planets
+- Calculates age on different planets.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/144714595/f622c077-8390-407d-9d4d-5e35867aff7d)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/fe890c37-805c-4de3-a2b8-fda22313d807)
