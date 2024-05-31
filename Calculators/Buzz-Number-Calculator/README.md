@@ -14,3 +14,5 @@ For example, 57 is a buzz number because the number ends with seven. Another exa
 - JavaScript
 
 ## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/83c65931-5b31-421b-b1a3-3b82e42ff981)
