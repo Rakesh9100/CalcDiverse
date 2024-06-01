@@ -1,26 +1,31 @@
 body {
-    background-image: linear-gradient(to right, white, lightgrey);
+    background-image: url('https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/02/28/Pictures/_30b665ca-5a2a-11ea-a545-768c83e117c2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1{
-    padding-left:350px;
+h1, h2, h3 {
+    text-align: center;
+    color: burlywood;
 }
 
 .leapyr {
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 40px;
+    padding: 30px;
     max-width: 400px;
     width: 100%;
-    margin: 20px;
     text-align: center;
-    margin-left: 550px;
-    margin-top: 150px;
 }
 
 .leapyr form {
