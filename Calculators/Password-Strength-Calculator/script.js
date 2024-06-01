@@ -15,6 +15,7 @@ document.getElementById('password').addEventListener('input', function() {
         strengthBar.className = 'strength-bar ' + strength.class;
         strengthBar.style.width = strength.width;
     }
+    
 });
 
 function getPasswordStrength(password) {
