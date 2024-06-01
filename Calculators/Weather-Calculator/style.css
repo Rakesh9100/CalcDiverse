@@ -118,7 +118,7 @@ button:hover {
     }
 
     .resultsContainer {
-        width: calc(100% - 10px);
+        width: auto;
     }
 
     .results p {
