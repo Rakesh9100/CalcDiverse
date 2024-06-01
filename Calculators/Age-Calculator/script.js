@@ -172,5 +172,5 @@ function generatePDF() {
     doc.text(seconds, 10, 100);
 
     // Save the PDF
-    doc.save('age_calculator_results.pdf');
+    doc.save('Age_Calculator_Results.pdf');
 }
