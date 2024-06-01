@@ -22,8 +22,3 @@ function calculateTDS() {
         document.getElementById("result").innerHTML = `<span class="red"></span> ${tds.toFixed(2)} <span class="red">ppm  , HIGHLY SALINE WATER</span>`;
     }
 }
-    
-
-    
-  
-   
