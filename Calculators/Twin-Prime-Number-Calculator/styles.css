@@ -13,6 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     color: #333;
+    overflow: hidden;
 }
 
 .container {
@@ -23,6 +24,8 @@ body {
     max-width: 500px;
     width: 100%;
     text-align: center;
+    overflow-y: auto;
+    max-height: 80vh;
 }
 
 h1 {
@@ -106,6 +109,8 @@ button#reset-button:hover {
 
 #result {
     margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 ul {
