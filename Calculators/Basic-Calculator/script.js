@@ -99,8 +99,22 @@ document.addEventListener("keydown", function (event) {
             point();
         }
         else {
-            event.preventDefault();
-            document.getElementById("display").value += event.key;
+            if(event.key==="/" || event.key==="*" || event.key==="+" || event.key==="-" || event.key==="%" || event.key==="^"){
+                //prevent the default behaviour of event
+                event.preventDefault();
+                let currentValue = display.value;
+                let lastChar= currentValue.charAt(currentValue.length-1);
+
+                if(lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^"){
+                    //if last character is operator, remove it
+                    currentValue=currentValue.substring(0, currentValue.length-1);
+                }
+                //append new operator
+                display.value = currentValue+event.key;
+            }else {
+                event.preventDefault();
+                document.getElementById("display").value += event.key;
+            }                  
         }
     } else if (event.key === "Enter") {
         event.preventDefault();
@@ -166,4 +180,110 @@ function point() {
             return;
         }
     }
+
 };
+
+
+function add() {
+    let currentValue = calc.txt.value;
+    // Check if the last character is an operator
+    let lastChar = currentValue.charAt(currentValue.length - 1);
+    if (lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^") {
+        // If the last character is an operator, replace it with the new one
+        currentValue = currentValue.substring(0, currentValue.length - 1);
+    }
+    // Append the "+" operator
+    calc.txt.value = currentValue + "+";
+}
+
+function subtract() {
+    let currentValue = calc.txt.value;
+    let lastChar = currentValue.charAt(currentValue.length - 1);
+    if (lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^") {
+        currentValue = currentValue.substring(0, currentValue.length - 1);
+    }
+    calc.txt.value = currentValue + "-";
+}
+
+function multiply() {
+    let currentValue = calc.txt.value;
+    let lastChar = currentValue.charAt(currentValue.length - 1);
+    if (lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^") {
+        currentValue = currentValue.substring(0, currentValue.length - 1);
+    }
+    calc.txt.value = currentValue + "*";
+}
+
+function divide() {
+    let currentValue = calc.txt.value;
+    let lastChar = currentValue.charAt(currentValue.length - 1);
+    if (lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^") {
+        currentValue = currentValue.substring(0, currentValue.length - 1);
+    }
+    calc.txt.value = currentValue + "/";
+}
+
+function modulus() {
+    let currentValue = calc.txt.value;
+    let lastChar = currentValue.charAt(currentValue.length - 1);
+    if (lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^") {
+        currentValue = currentValue.substring(0, currentValue.length - 1);
+    }
+    calc.txt.value = currentValue + "%";
+}
+
+function power() {
+    let currentValue = calc.txt.value;
+    let lastChar = currentValue.charAt(currentValue.length - 1);
+    if (lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^") {
+        currentValue = currentValue.substring(0, currentValue.length - 1);
+    }
+    calc.txt.value = currentValue + "^";
+}
+
+function logarithm() {
+    let currentValue = calc.txt.value;
+    let lastChar = currentValue.charAt(currentValue.length - 1);
+    if (lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^") {
+        currentValue = currentValue.substring(0, currentValue.length - 1);
+    }
+    calc.txt.value = currentValue + "Math.log10(";
+}
+
+function exponent() {
+    let currentValue = calc.txt.value;
+    let lastChar = currentValue.charAt(currentValue.length - 1);
+    if (lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^") {
+        currentValue = currentValue.substring(0, currentValue.length - 1);
+    }
+    calc.txt.value = currentValue + "Math.exp(";
+}
+
+function squareRoot() {
+    let currentValue = calc.txt.value;
+    let lastChar = currentValue.charAt(currentValue.length - 1);
+    if (lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^") {
+        currentValue = currentValue.substring(0, currentValue.length - 1);
+    }
+    calc.txt.value = currentValue + "Math.sqrt(";
+}
+
+function sine() {
+    let currentValue = calc.txt.value;
+    let lastChar = currentValue.charAt(currentValue.length - 1);
+    if (lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^") {
+        currentValue = currentValue.substring(0, currentValue.length - 1);
+    }
+    calc.txt.value = currentValue + "Math.sin(";
+}
+
+function cosine() {
+    let currentValue = calc.txt.value;
+    let lastChar = currentValue.charAt(currentValue.length - 1);
+    if (lastChar === "+" || lastChar === "-" || lastChar === "*" || lastChar === "/" || lastChar === "%" || lastChar === "^") {
+        currentValue = currentValue.substring(0, currentValue.length - 1);
+    }
+    calc.txt.value = currentValue + "Math.cos(";
+}
+
+
