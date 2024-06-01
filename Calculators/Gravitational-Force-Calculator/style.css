@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(./background-image/hello.jpg);
+    background-image: url('assets/background.jpg');
     background-repeat: no-repeat;
     background-size: 1500px 850px;
 }
@@ -17,7 +17,6 @@ label {
 }
 
 .calculator {
-    /*text-align: center;*/
     background-color: rgba(40, 86, 151, 0.9);
     border-radius: 10px;
     padding: 20px;
