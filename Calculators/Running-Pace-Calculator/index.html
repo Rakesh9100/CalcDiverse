@@ -12,6 +12,7 @@
     <h1>Running Pace Calculator</h1>
     
     <div id="calculator">
+        <!-- Section to calculate running pace -->
         <h2>Calculate Pace</h2>
         <label for="timePace">Enter Time (HH:MM:SS):</label>
         <input type="text" id="timePace" placeholder="Enter time">
@@ -19,6 +20,7 @@
         <label for="distancePace">Enter Distance:</label>
         <input type="text" id="distancePace" placeholder="Enter distance">
 
+        <!-- Flex container for distance unit selection and calculate button -->
         <div class="flex-container">
             <label for="distanceUnitPace">Distance Unit:</label>
             <select id="distanceUnitPace" onchange="setPredefinedDistance('distancePace', this.value)">
@@ -42,10 +44,12 @@
         </div>
         <div id="resultPace"></div>
 
+        <!-- Section to calculate time required to run a distance -->
         <h2>Calculate Time</h2>
         <label for="paceTime">Enter Pace (HH:MM:SS):</label>
         <input type="text" id="paceTime" placeholder="Enter pace">
 
+        <!-- Flex container for pace unit selection -->
         <div class="flex-container">
             <label for="paceUnitTime">Pace Unit:</label>
             <select id="paceUnitTime">
@@ -62,6 +66,7 @@
         <label for="distanceTime">Enter Distance:</label>
         <input type="text" id="distanceTime" placeholder="Enter distance">
 
+        <!-- Flex container for distance unit selection and calculate button -->
         <div class="flex-container">
             <label for="distanceUnitTime">Distance Unit:</label>
             <select id="distanceUnitTime" onchange="setPredefinedDistance('distanceTime', this.value)">
@@ -86,6 +91,7 @@
 
         <div id="resultTime"></div>
 
+        <!-- Section to calculate distance that can be covered in a given time and pace -->
         <h2>Calculate Distance</h2>
         <label for="timeDistance">Enter Time (HH:MM:SS):</label>
         <input type="text" id="timeDistance" placeholder="Enter time">
@@ -93,6 +99,7 @@
         <label for="paceDistance">Enter Pace (HH:MM:SS):</label>
         <input type="text" id="paceDistance" placeholder="Enter pace">
 
+        <!-- Flex container for pace unit selection and calculate button -->
         <div class="flex-container">
             <label for="paceUnitDistance">Pace Unit:</label>
             <select id="paceUnitDistance">
@@ -110,6 +117,7 @@
 
         <div id="resultDistance"></div>
 
+        <!-- Button to clear all inputs and results -->
         <button onclick="clear_fun()">Clear</button>
     </div>
 
