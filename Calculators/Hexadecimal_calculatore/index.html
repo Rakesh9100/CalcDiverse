@@ -7,15 +7,20 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
   <style>
     .calculator {
       max-width: 400px;
       margin: 0 auto;
+      margin-top: 100px;
+      background-color: aliceblue;
+      padding: 30px;
+      border-radius: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="container calculator">
+  <div class="calculator">
     <h2 class="text-center">Hexadecimal Calculator</h2>
     <form id="calculatorForm">
       <div class="form-group">
@@ -39,8 +44,8 @@
         <label for="result">Result:</label>
         <input type="text" class="form-control" id="result" disabled>
       </div>
-      <button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button>
-      <button type="button" class="btn btn-secondary" onclick="clearInput()">Clear</button>
+      <button type="button" class="button-85" onclick="calculate()">Calculate</button>
+      <button type="button" class="button-85" onclick="clearInput()">Clear</button>
     </form>
   </div>
 
