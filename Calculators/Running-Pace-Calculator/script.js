@@ -1,3 +1,4 @@
+// Function to set predefined distances based on selected value
 function setPredefinedDistance(inputId, value) {
     const distanceInput = document.getElementById(inputId);
     switch (value) {
@@ -36,6 +37,7 @@ function setPredefinedDistance(inputId, value) {
     }
 }
 
+// Function to parse time string and convert it to seconds
 function parseTime(timeStr) {
     const parts = timeStr.split(':');
     const hours = parseInt(parts[0], 10) || 0;
@@ -44,20 +46,23 @@ function parseTime(timeStr) {
     return hours * 3600 + minutes * 60 + seconds;
 }
 
+// Function to format time from seconds to HH:MM:SS format
 function formatTime(seconds) {
     const hours = Math.floor(seconds / 3600);
     seconds %= 3600;
     const minutes = Math.floor(seconds / 60);
     seconds %= 60;
-    return `${hours}:${minutes}:${seconds.toFixed(2)}`;
+    return `${hours}:${minutes}:${seconds.toFixed(2)}`; // Ensure seconds are formatted to 2 decimal places
 }
 
+// Function to convert pace string to seconds per kilometer
 function convertPaceToSeconds(paceStr, paceUnit) {
     const parts = paceStr.split(':');
     const minutes = parseInt(parts[0], 10) || 0;
     const seconds = parseFloat(parts[1]) || 0;
     let paceInSeconds = minutes * 60 + seconds;
 
+    // Convert pace based on selected pace unit
     if (paceUnit === 'mph') {
         paceInSeconds = 3600 / paceInSeconds;
     } else if (paceUnit === 'kph') {
@@ -75,6 +80,7 @@ function convertPaceToSeconds(paceStr, paceUnit) {
     return paceInSeconds;
 }
 
+// Function to calculate pace
 function calculatePace() {
     const timeStr = document.getElementById('timePace').value;
     const distance = parseFloat(document.getElementById('distancePace').value);
@@ -82,6 +88,7 @@ function calculatePace() {
 
     let distanceInKm = distance;
 
+    // Convert distance to kilometers if unit is other than kilometers
     if (distanceUnit === 'miles') {
         distanceInKm *= 1.60934;
     } else if (distanceUnit === 'meters') {
@@ -93,6 +100,7 @@ function calculatePace() {
     const timeInSeconds = parseTime(timeStr);
     const paceInSecondsPerKm = timeInSeconds / distanceInKm;
 
+    // Check if pace exceeds 1 hour (3600 seconds)
     if (paceInSecondsPerKm >= 3600) {
         const formattedTime = formatTime(paceInSecondsPerKm);
         document.getElementById('resultPace').innerText = `Pace: ${formattedTime} per km`;
@@ -112,6 +120,7 @@ function calculatePace() {
     }
 }
 
+// Function to calculate time required to cover a distance
 function calculateTime() {
     const distance = parseFloat(document.getElementById('distanceTime').value);
     const distanceUnit = document.getElementById('distanceUnitTime').value;
@@ -121,6 +130,7 @@ function calculateTime() {
 
     let distanceInKm = distance;
 
+    // Convert distance to kilometers if unit is other than kilometers
     if (distanceUnit === 'miles') {
         distanceInKm *= 1.60934;
     } else if (distanceUnit === 'meters') {
@@ -135,6 +145,7 @@ function calculateTime() {
     document.getElementById('resultTime').innerText = `Time: ${formattedTime}`;
 }
 
+// Function to calculate distance based on time and pace
 function calculateDistance() {
     const timeStr = document.getElementById('timeDistance').value;
     const paceStr = document.getElementById('paceDistance').value;
@@ -147,6 +158,7 @@ function calculateDistance() {
     document.getElementById('resultDistance').innerText = `Distance: ${distanceInKm.toFixed(2)} km`;
 }
 
+// Function to clear all input fields and result displays
 function clear_fun() {
     document.getElementById('timePace').value = '';
     document.getElementById('distancePace').value = '';
@@ -154,12 +166,4 @@ function clear_fun() {
     document.getElementById('resultPace').innerText = '';
 
     document.getElementById('distanceTime').value = '';
-    document.getElementById('distanceUnitTime').value = '';
-    document.getElementById('paceTime').value = '';
-    document.getElementById('resultTime').innerText = '';
-
-    document.getElementById('timeDistance').value = '';
-    document.getElementById('paceDistance').value = '';
-    document.getElementById('paceUnitDistance').value = '';
-    document.getElementById('resultDistance').innerText = '';
-}
+    document.getElementById('distanceUnit
