@@ -2,7 +2,7 @@
 
 ## Description :-
 
-This is a simple Aspect Ratio Calculator that allows users to input width and height values and calculates the simplified aspect ratio. The calculator uses the greatest common divisor (GCD) to simplify the ratio.
+This is a simple Aspect Ratio Calculator that allows users to input width and height values and calculates the simplified aspect ratio. The calculator uses the greatest common divisor (GCD) to simplify the ratio. Also, this calculator also provides a toggle switch to switch between dark and light mode.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,10 @@ This is a simple Aspect Ratio Calculator that allows users to input width and he
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/63e9041c-1041-474b-a621-1c49fab10224)
+### Dark Mode
+
+![Dark](assets/image.png)
+
+### Light Mode
+
+![Light](assets/image-1.png)
