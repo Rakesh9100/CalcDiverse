@@ -12,4 +12,4 @@ Welcome to the Root Calculator, a simple tool that calculates the nth root of a 
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/2b7303a3-11ec-4c9e-a9fb-316d43809ec6)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/5a292fea-96d2-485c-a23d-e5b66a235195)
