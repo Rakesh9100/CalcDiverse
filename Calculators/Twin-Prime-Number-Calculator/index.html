@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Prime Number Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Twin Prime Number Calculator</h1>
+        <form id="twin-prime-form">
+            <label for="limit">Enter the limit:</label>
+            <input type="number" id="limit" name="limit" required>
+            <div class="button-group">
+                <button type="submit">Calculate Twin Primes</button>
+                <button type="button" id="show-primes-button">Show Primes</button>
+                <button type="button" id="clear-button">Clear</button>
+                <button type="button" id="reset-button">Reset</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
