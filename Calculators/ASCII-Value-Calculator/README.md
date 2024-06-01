@@ -1,8 +1,8 @@
-# <p align="center">ASCII value Calculator</p>
+# <p align="center">ASCII Value Calculator</p>
 
 ## Description :-
 
-This is an Antilog Calculator that calculates the antilog value of a given number for any base.
+Calculates the ASCII value of any character.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ This is an Antilog Calculator that calculates the antilog value of a given numbe
 
 ## Screenshots :-
 
-NILL
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/3347fb83-254b-4838-9b0f-662dbc6b9f54)
