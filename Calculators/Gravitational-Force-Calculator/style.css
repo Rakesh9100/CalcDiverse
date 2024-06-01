@@ -1,13 +1,15 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-image: url('assets/background.jpg');
-    background-repeat: no-repeat;
-    background-size: 1500px 850px;
+    background-image: url('./background-image/background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 label {
@@ -17,6 +19,7 @@ label {
 }
 
 .calculator {
+
     background-color: rgba(40, 86, 151, 0.9);
     border-radius: 10px;
     padding: 20px;
@@ -31,8 +34,9 @@ label {
 
 input {
     margin-bottom: 10px;
-    padding: 9px;
-    width: 90%;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
     border: 3px solid #ccc;
     border-radius: 8px;
     transition: border-color 0.3s ease-in-out;
