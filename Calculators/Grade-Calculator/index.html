@@ -10,19 +10,42 @@
 </head>
 
 <body>
+    <span>
+    <button class="tablink" onclick="openPage('absolute', this)">Absolute Grade</button>
+    <button class="tablink" onclick="openPage('relative', this)" id="defaultOpen">Relative Grade</button>
+    </span>
 
-    <div id="calculator-container">
-        <h2>Subject Grade Calculator</h2>
+    <div id="absolute" class="calculator-container">
+        <h2>Absolute Grade Calculator</h2>
 
-        <div id="subjectFields">
+        <div class="subjectFields">
             <label for="subject1">Enter marks for Subject 1:</label>
             <input type="text" id="subject1" class="marks" placeholder="Enter marks (e.g., 85,100)">
         </div>
 
-        <button onclick="addSubjectField()">Add Another Subject</button>
-        <button onclick="calculateGrade()">Calculate Grade</button>
+        <button onclick="addSubjectField('abs')">Add Another Subject</button>
+        <button onclick="calculateAbsGrade()">Calculate Grade</button>
 
-        <p id="result"></p>
+        <p class="result"></p>
+    </div>
+
+    <div id="relative" class="calculator-container">
+        <h2>Relative Grade Calculator</h2>
+
+        <div class="subjectFields">
+            <label for="subject1">Enter marks for Subject 1:</label>
+            <input type="text" id="subject1" class="marks" placeholder="Enter marks (e.g., 85,100)">
+
+            <label for="subject1">Enter mean for Subject 1:</label>
+            <input type="text" id="mean1" class="marks" placeholder="Enter mean">
+
+            <label for="subject1">Enter standard deviation for Subject 1:</label>
+            <input type="text" id="std1" class="marks" placeholder="Enter standard deviation">
+        </div>
+        
+        <button onclick="calculateRelGrade()">Calculate Grade</button>
+
+        <p class="result"></p>
     </div>
 
     <script src="script.js"></script>

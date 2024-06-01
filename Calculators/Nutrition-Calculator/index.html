@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nutrition Calculator</title>
+</head>
+
+<body>
+    <div id="calculator-container" class="container">
+        <h2 class="heading">Nutrition Calculator</h2>
+        <div id="inp-wrapper" class="inp-wrapper">
+            <div class="food-item-wrapper" id="food-item-1">
+                <label for="food-item-name-1">Food Item 1</label>
+                <input type="text" id="food-item-name-1" placeholder="Enter Food Item" />
+                <label for="quantity-1">Quantity (g)</label>
+                <input type="number" id="quantity-1" placeholder="In grams" />
+                <label for="calories-1">Calories</label>
+                <input type="number" id="calories-1" placeholder="In Kcal" />
+                <label for="protein-1">Protein (g)</label>
+                <input type="number" id="protein-1" placeholder="In grams" />
+                <label for="fat-1">Fat (g)</label>
+                <input type="number" id="fat-1" placeholder="In grams" />
+                <label for="carbs-1">Carbohydrates (g)</label>
+                <input type="number" id="carbs-1" placeholder="In grams" />
+            </div>
+        </div>
+        <button id="add-item">Add Another Food Item</button>
+        <button id="submit">Calculate</button>
+        <div id="output">~ Add the food items to get started ~</div>
+    </div>
+    <div id="results-container" class="results-container"></div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
