@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Goal Calculator</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="calculator-container">
+            <h2 class="text-center">Savings Goal Calculator</h2>
+
+            <form id="calculatorForm">
+                <div class="form-group">
+                    <label for="startingBalance">Starting Balance :</label>
+                    <input type="number" class="form-control" id="startingBalance">
+                </div>
+                <div class="form-group">
+                    <label for="interestRate">Interest Rate (%) <small>(monthly)</small> :</label>
+                    <input type="number" class="form-control" id="interestRate">
+                </div>
+
+                <div class="form-group">
+                    <label for="regularSavings">Regular Savings :</label>
+                    <input type="number" class="form-control" id="regularSavings">
+                </div>
+                <div class="form-group">
+                    <label for="savingsFrequency">Savings Frequency :</label>
+                    <select class="form-control" id="savingsFrequency">
+                        <option value="monthly">monthly</option>
+                        <option value="daily">daily</option>
+                        <option value="yearly">yearly</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="years">Years :</label>
+                    <input type="number" class="form-control" id="years">
+                </div>
+
+                <button type="button" class="btn btn-dark form-control" onclick="calculateSavings()">Calculate Savings</button>
+            </form>
+
+            <div class="result" style="display: none;">
+                <div class="alert alert-dark text-center" id="result" role="alert" style="font-size: 20px;color: black;">
+                </div>
+                <button class="btn btn-dark form-control" onclick="location.reload()">Calculate Again</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
