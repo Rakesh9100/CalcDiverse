@@ -1,0 +1,82 @@
+body {
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: burlywood;
+}
+
+.leapyr {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.leapyr form {
+    width: 100%;
+    color: #333;
+}
+
+.leapyr form input {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.leapyr label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: #444;
+}
+
+.leapyr form h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #444;
+    font-size: 24px;
+}
+
+.leapyr button {
+    height: 40px;
+    width: 100%;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leapyr button:hover {
+    background-color: royalblue;
+}
+
+p {
+    font-size: 18px;
+    color: #f4961f;
+    font-weight: bold;
+    margin-top: 20px;
+}
