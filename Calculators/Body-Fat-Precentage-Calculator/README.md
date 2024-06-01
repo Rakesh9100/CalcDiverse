@@ -1,4 +1,4 @@
-# <p align="center">Body Fat Precentage Calculator</p>
+# <p align="center">Body Fat Percentage Calculator</p>
 
 ## Description :-
 
@@ -36,4 +36,5 @@ Here, the measurements for waist, neck, hips, and height should be in the same u
 
 ## Screenshots :-
 
-![image](https://github.com/manishh12/CalcDiverse/blob/main/Calculators/Electric-Power-Calculator/Electric-Power-Calculator.jpeg)
+![image](https://github.com/manishh12/CalcDiverse/assets/97523900/e6f92e0b-3f0e-4f7c-a43c-349ded7f9cae)
+![image](https://github.com/manishh12/CalcDiverse/assets/97523900/1ab4cbc6-be06-4803-8a9b-c401766f9feb)
