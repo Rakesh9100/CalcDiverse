@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anagram Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1><marquee>Anagram Calculator</marquee></h1>
+        <div class="input-group">
+            <label for="word1"><b>Enter the first word:</b></label>
+            <input type="text" id="word1" placeholder="First word">
+        </div>
+        <div class="input-group">
+            <label for="word2"><b>Enter the second word:
+            <b></label>
+            <input type="text" id="word2" placeholder="Second word">
+        </div>
+        <button onclick="checkAnagram()">Check Anagram</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

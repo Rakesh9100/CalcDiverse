@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    background: radial-gradient(circle, #00a6ff, #0f1624);
+}
+
+.converter {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px #fff;
+}
+
+.converter h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.radio-group {
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.radio-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 6px 0px 9px #000000;
+}
+
+.radio-group {
+    display: inline-block;
+}
+
+.left {
+    padding-right: 100px;
+    padding-left: 50px;
+}
+
+@media (max-width: 600px) {
+    .converter {
+        width: 79%;
+        font-size: 10px;
+    }
+
+    .radio-group {
+        display: flex;
+    }
+
+    .left {
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 50px;
+    }
+
+    .right {
+        flex-direction: column;
+    }
+
+    input[type="number"],
+    select {
+        font-size: 10px;
+    }
+
+    #result {
+        font-size: 15px;
+    }
+}

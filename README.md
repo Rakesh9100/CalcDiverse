@@ -109,7 +109,7 @@ cd CalcDiverse
 ```
 git checkout -b <your_branch_name>
 ```
-- Perfom your desired changes to the code base.
+- Perform your desired changes to the code base.
 - Track and stage your changes.
 ```
 # Track the changes
@@ -161,6 +161,9 @@ This project and everyone participating in it is governed by the [Code of Conduc
 </td>
 <td align="center">
 <a href="https://www.socialwinterofcode.com/"><img src="https://github.com/Rakesh9100/CalcDiverse/assets/73993775/25eaca50-f883-481c-a531-8d1ce9cf4b66" height="140px" width="180px" alt="SWOC2024"></a><br><sub><b>SWOC 2k24</b></sub>
+</td>
+<td align="center">
+<a href="https://gssoc.girlscript.tech/"><img src="https://github.com/Rakesh9100/CalcDiverse/assets/73993775/910a2a16-0906-4234-bc7f-90f65b259527" height="140px" width="140px" alt="GSSOC2024"></a><br><sub><b>GSSOC 2k24</b></sub>
 </td>
 </tr>
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Electric Power Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Electric Power Calculator</h1>
+        <div class="input-group">
+            <label for="voltage">Voltage (V):</label>
+            <input type="number" id="voltage" placeholder="Enter voltage">
+        </div>
+        <div class="input-group">
+            <label for="current">Current (A):</label>
+            <input type="number" id="current" placeholder="Enter current">
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <div id="result"></div>
+        <div id="history">
+            <h2>Calculation History</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
