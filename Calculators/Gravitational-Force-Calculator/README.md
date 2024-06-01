@@ -10,17 +10,6 @@ Gravitational Force Calculator is a web application that calculates the gravitat
 - CSS
 - JavaScript
 
-## Features:-
-
--Calculates Gravitational-Force.
--Modern design and styling.
-
-## Usage :-
-
--Enter the mass of the body 1 in kilogram.
--Enter the mass of the body 2 in kilogram.
--Enter the distance between body 1 and body 2 in meter.
-
 ## Screenshots :-
 
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/c843cd9e-3ca9-43e1-b58b-0501fd1d39ac)
