@@ -51,9 +51,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
 }
-
+.social a i {
+    transition: transform 0.3s ease-in-out;
+}
 /* Pop up effect */
 
 .social a:hover i{
