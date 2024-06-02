@@ -11,12 +11,12 @@ body {
 }
 
 body.dark-mode {
-    background: #2c3e50;
+    background: linear-gradient(135deg, #028391, #01204E);
     color: #ecf0f1;
 }
 
 body.light-mode {
-    background: #ecf0f1;
+    background: linear-gradient(135deg, #03AED2, #94FFD8);
     color: #2c3e50;
 }
 
@@ -91,9 +91,11 @@ body.light-mode .calculator {
 body.dark-mode input {
     background: #34495e;
     color: #ecf0f1;
+    border: 3px solid #2980b9;
 }
 
 body.light-mode input {
     background: #ffffff;
     color: #2c3e50;
+    border: 3px solid #2980b9;
 }
