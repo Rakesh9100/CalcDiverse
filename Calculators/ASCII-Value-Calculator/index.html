@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ASCII Value Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>ASCII Value Calculator</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form name="myform">
+                <label for="charInput">Enter a Character (Length should be 1):</label>
+                <input type="text" name="charInput" id="charInput" maxlength="1" />
+                <button type="button" onclick="displayAsciiValue()">
+                Get ASCII Value
+                </button>
+            </form>
+            <div id="asciiValue"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
