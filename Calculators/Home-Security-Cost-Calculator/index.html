@@ -28,7 +28,7 @@
             <label for="currency">Select Currency:</label>
             <select id="currency" name="currency">
                 <option value="1">USD</option>
-                <option value="74.57">INR</option>
+                <option value="74.57" selected>INR</option> <!-- Setting INR as selected -->
                 <option value="0.82">EUR</option>
                 <option value="0.72">GBP</option>
             </select>
@@ -36,7 +36,7 @@
             <button type="button" onclick="calculateCost()">Calculate</button>
         </form>
         <div id="result">
-            Total Cost: <span id="currencySymbol">$</span><span id="totalCost">0.00</span>
+            Total Cost: <span id="currencySymbol">₹</span><span id="totalCost">0.00</span> <!-- Displaying ₹ initially -->
         </div>
     </div>
 
