@@ -43,13 +43,13 @@ header {
     font-family: Ubuntu;
     font-size: 4rem;
     margin-top: 16px;
-    color: white;
+    color: #ffffff;
 }
 
 .contact-container p {
     color: black;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 28px;
 }
 
