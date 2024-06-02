@@ -147,3 +147,30 @@ function calculateage() {
         document.getElementById("photo").src = "./assets/god.svg";
     }
 }
+
+//PDF Generation code 
+function generatePDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    const age = document.getElementById('op1').innerText;
+    const months = document.getElementById('op2').innerText;
+    const weeks = document.getElementById('op7').innerText;
+    const days = document.getElementById('op3').innerText;
+    const hours = document.getElementById('op4').innerText;
+    const minutes = document.getElementById('op5').innerText;
+    const seconds = document.getElementById('op6').innerText;
+
+    // Add the rest of the content
+    doc.setFontSize(12);
+    doc.text(age, 10, 40);
+    doc.text(months, 10, 50);
+    doc.text(weeks, 10, 60);
+    doc.text(days, 10, 70);
+    doc.text(hours, 10, 80);
+    doc.text(minutes, 10, 90);
+    doc.text(seconds, 10, 100);
+
+    // Save the PDF
+    doc.save('Age_Calculator_Results.pdf');
+}

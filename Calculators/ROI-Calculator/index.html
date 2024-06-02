@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ROI Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>ROI Calculator</h1>
+        <form id="roiForm">
+            <div class="form-group">
+                <label for="amountInvested">Amount Invested:</label>
+                <input type="number" id="amountInvested" required>
+            </div>
+            <div class="form-group">
+                <label for="amountReturned">Amount Returned:</label>
+                <input type="number" id="amountReturned" required>
+            </div>
+            <div class="form-group">
+                <label for="investmentFrom">Investment From:</label>
+                <input type="date" id="investmentFrom" required>
+            </div>
+            <div class="form-group">
+                <label for="investmentTo">Investment To:</label>
+                <input type="date" id="investmentTo" required>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="calculateROI()">Calculate ROI</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
