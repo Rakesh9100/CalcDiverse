@@ -299,24 +299,70 @@ section {
     margin-top: 50px;
 }
 
-.comp-section .compcontainer .started {
+/* button */
+.started {
     font-size: 20px;
     font-weight: 700;
+    margin: 100px;
+    padding: 15px 50px;
     border: none;
-    margin-top: 21px;
-    padding: 10px 45px;
-    border-radius: 18px;
-    color: #ffffff;
-    background: var(--primary);
+    outline: none;
+    color: white;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    position: relative;
+    z-index: 0;
+    border-radius: 25px;
+    transition: .3s ease-in-out;
+    background: #fff; /* Ensure the button background is visible */
+    box-shadow: 0 0 0 4px transparent; /* Set up for glow effect */
 }
 
-.comp-section .compcontainer .started:hover {
-    transform: scale(1.02);
-    background: #ff6984;
+.started::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300,
+        #00FFD5, #FF00C8, #FF0000
+    );
+    background-size: 600%;
+    z-index: -1;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    border-radius: 27px; /* Slightly larger than button for glow effect */
+    opacity: 1; /* Keep the border glowing continuously */
 }
 
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* button glow on hover */
+.started:hover {
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300,
+        #00FFD5, #FF00C8, #580d0d
+    );
+    background-size: 600%;
+    color: #fff; /* Change text color for better visibility */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Add glow effect around button */
+    animation: glowing 20s linear infinite;
+}
+
+.started:hover::before {
+    filter: blur(15px); /* Enhance the glow effect */
+}
+
+.started:active {
+    transform: scale(0.95); /* Scale down on click for effect */
+}
 .paragraph {
     font-size: 2rem;
     width: 85%;
