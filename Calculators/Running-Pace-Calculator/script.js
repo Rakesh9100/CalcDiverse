@@ -160,10 +160,25 @@ function calculateDistance() {
 
 // Function to clear all input fields and result displays
 function clear_fun() {
+    // Clear pace calculation fields
     document.getElementById('timePace').value = '';
     document.getElementById('distancePace').value = '';
     document.getElementById('distanceUnitPace').value = '';
     document.getElementById('resultPace').innerText = '';
 
+    // Clear time calculation fields
     document.getElementById('distanceTime').value = '';
-    document.getElementById('distanceUnit
+    document.getElementById('distanceUnitTime').value = '';
+    document.getElementById('paceTime').value = '';
+    document.getElementById('paceUnitTime').value = '';
+    document.getElementById('resultTime').innerText = '';
+
+    // Clear distance calculation fields
+    document.getElementById('timeDistance').value = '';
+    document.getElementById('paceDistance').value = '';
+    document.getElementById('paceUnitDistance').value = '';
+    document.getElementById('resultDistance').innerText = '';
+
+    // Clear predefined distance selection
+    document.querySelectorAll('select').forEach(select => select.value = '');
+}

@@ -29,7 +29,7 @@ h1 {
     box-shadow: rgba(221, 124, 245, 0.913) 15px 20px 40px, rgba(248, 137, 237, 0.788) 5px 5px 10px; /* Box shadow */
     margin-left: auto; /* Center horizontally */
     margin-right: auto; /* Center horizontally */
-    overflow: scroll; /* Enable scrolling if content overflows */
+    overflow: auto; /*Enable scrolling if content overflows*/
     margin-bottom: 2rem; /* Bottom margin for calculator container */
 }
 
