@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Swiftly convert weight from kgs to pounds ,grams to ounce, kgs to grams, pounds to ounce,kgs to ounce,grams to pounds, and vice versa ...
+This is a web application that calculates weight between different units.
 
 ## Tech Stacks :-
 
