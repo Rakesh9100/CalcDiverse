@@ -15,7 +15,7 @@ function checkNivenNumber() {
         .reduce((acc, digit) => acc + digit, 0);
 
     if (number % sumOfDigits === 0) {
-        resultElement.textContent = `${number} is a Niven number.For example: ${number} is divisible by ${sumOfDigits} (sum of its digits).`;
+        resultElement.textContent = `${number} is a Niven number.\nFor example: ${number} is divisible by ${sumOfDigits} (sum of its digits).`;
     } else {
         resultElement.textContent = `${number} is not a Niven number.`;
     }
