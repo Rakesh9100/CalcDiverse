@@ -12,4 +12,4 @@ This calculator helps photographers determine the depth of field (the range of d
 
 ## Screenshots :-
 
-![image](https://github.com/diyaaa19/CalcDiverse/assets/151644762/65bfff58-15c5-4b15-a196-1c4edb2ae8da)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/4dc1b38b-3f48-4a33-9c69-e5af96850b61)
