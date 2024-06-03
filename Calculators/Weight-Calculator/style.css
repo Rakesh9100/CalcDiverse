@@ -8,6 +8,7 @@ body {
     align-items: center;
     height: 100vh;
 }
+
 h1.heading{
     text-align: center;
     color:rgb(235, 59, 88);
@@ -22,7 +23,6 @@ h1.heading{
     max-width: 400px;
     width: 100%;
 }
-
 
 label {
     display: block;
