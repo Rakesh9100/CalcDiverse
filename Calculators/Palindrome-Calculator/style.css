@@ -1,18 +1,24 @@
+
 body {
     background: linear-gradient(to right, #5E1675, #344955);
-    font-family: Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 700px;
     margin: 100px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #e79797;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 h1 {
@@ -39,7 +45,7 @@ button {
     padding: 10px;
     margin-top: 10px;
     font-size: 16px;
-    background-color: #337357;
+    background-color: #4b524f;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -53,5 +59,12 @@ button:hover {
 
 p#result {
     margin-top: 20px;
-    text-align: center;
+    justify-content: center;
+}
+form {
+    width: 100%;
+}
+.calculator-container > h1 {
+    text-shadow: 2px 2px rgb(150, 150, 150);
+    margin-bottom: 40px;
 }
