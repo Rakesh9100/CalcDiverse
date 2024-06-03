@@ -3,7 +3,7 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #4CAF50, #45a049);
+  background: linear-gradient(to right, #4c91af, rgb(0, 60, 255));
   transition: background 0.5s ease-in-out;
 }
 h1{
@@ -39,12 +39,12 @@ h1{
   
   .calculator button {
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #4c91af;
     color: white;
   }
   
   .calculator button:hover {
-    background-color: #3e8e41;
+    background-color: #4c91af;
   }
   
   #result {
