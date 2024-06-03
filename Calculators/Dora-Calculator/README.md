@@ -12,4 +12,4 @@ Calculates the distance which can be viewed by Dora.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/Calculators/assets/Dora-Calculator.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/6df61f62-301e-4e9c-bf28-b68e3eb41c45)
