@@ -8,6 +8,7 @@ body{
 }
 h1{
  text-align: center;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
   
@@ -41,6 +42,7 @@ h1{
     cursor: pointer;
     background-color: #4c91af;
     color: white;
+    
   }
   
   .calculator button:hover {
@@ -49,4 +51,10 @@ h1{
   
   #result {
     font-weight: bold;
+  }
+  #force{
+    max-width: 590px;
+  }
+  #velocity{
+    max-width: 590px;
   }
