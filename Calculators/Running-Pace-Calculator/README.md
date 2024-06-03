@@ -24,5 +24,4 @@ The same calculator can be again used to calculate time and distance using Pace 
 
 ## Screenshots :-
 
-![screenshot1](https://github.com/priyavratamohan/CalcDiverse/assets/91372958/bd2a37b6-47ee-4d0a-a4ad-a365e05d77c0)
-![screenshot2](https://github.com/priyavratamohan/CalcDiverse/assets/91372958/5a3a9ba6-a083-42ef-8013-5098317424a0)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/257cdab9-ae0b-4262-b610-dbfd309633f0)
