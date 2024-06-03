@@ -1,4 +1,4 @@
-# <p align="center"Twin Prime Number Calculator</p>
+# <p align="center">Twin Prime Number Calculator</p>
 
 ## Description :-
 
@@ -11,4 +11,5 @@ This calculator identifies pairs of prime numbers that are exactly 2 units apart
 - JavaScript
 
 ## Screenshots :-
-![Screenshot 2024-06-01 205830](https://github.com/Pujan-sarkar/CalcDiverse/assets/144250917/a4747897-701c-4f83-8f8b-fdac39cac56d)
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/5daf274c-f829-439a-b43d-3b0e90c23c12)
