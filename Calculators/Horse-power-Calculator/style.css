@@ -49,7 +49,7 @@ h1 {
   cursor: pointer;
   background-color: rgba(0, 255, 255, 0.2); /* Semi-transparent neon blue */
   color: #ddd; /* Light gray text */
-  text-shadow: 0 0 2px #00ffff; /* Text glow effect */
+  text-shadow: 0 0 2px #00aaff; /* Text glow effect */
 }
 
 .calculator button:hover {
