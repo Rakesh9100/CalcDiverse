@@ -43,7 +43,7 @@ body {
     margin-bottom: 10px;
 }
 
-#button {
+button {
     margin-top: 20px;
     background-color: rgb(113, 105, 201);
     color: white;
@@ -61,7 +61,8 @@ body {
 button::before{
     content:"";
     position: absolute;
-    background-color: rgb(175, 169, 169);
+    
+    background-color: rgb(255, 255, 255);
     top: 0px;
     left: 0;
     right: 0;
@@ -75,7 +76,7 @@ button:hover::before{
     transform: scaleX(1);
 }
 button:hover{
-    border: solid 3px #6c65cd;
+    border: solid 3px #4e45d5;
     color: black;
 }
 h4{
