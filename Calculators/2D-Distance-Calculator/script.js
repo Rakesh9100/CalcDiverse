@@ -16,5 +16,4 @@ function calculateDistance() {
 
     // Display the result
     document.getElementById('result').innerHTML = 'Distance: ' + distance.toFixed(2);
-
 }
