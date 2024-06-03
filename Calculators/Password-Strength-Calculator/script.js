@@ -1,4 +1,3 @@
-
 document.getElementById('password').addEventListener('input', function() {
     var password = this.value;
     var strengthMessage = document.getElementById('strengthMessage');
