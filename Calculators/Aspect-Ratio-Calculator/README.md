@@ -13,9 +13,7 @@ This is a simple Aspect Ratio Calculator that allows users to input width and he
 ## Screenshots :-
 
 ### Dark Mode
-
-![Dark](assets/image.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/908a2850-bab5-497e-9185-4040b7caed3e)
 
 ### Light Mode
-
-![Light](assets/image-1.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/15362f5f-3a48-4760-b72d-6d75ae1daae4)
