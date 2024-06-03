@@ -1,3 +1,4 @@
+// Function to calculate the distance
 function calculateDistance() {
     // Get input values
     var x1 = parseFloat(document.getElementById('x1').value);
@@ -17,3 +18,15 @@ function calculateDistance() {
     // Display the result
     document.getElementById('result').innerHTML = 'Distance: ' + distance.toFixed(2);
 }
+
+// Function to reset the form
+function resetForm() {
+    document.getElementById('x1').value = '';
+    document.getElementById('y1').value = '';
+    document.getElementById('x2').value = '';
+    document.getElementById('y2').value = '';
+    document.getElementById('result').innerHTML = '';
+}
+
+// Add event listener to reset button
+document.getElementById('resetButton').addEventListener('click', resetForm);
