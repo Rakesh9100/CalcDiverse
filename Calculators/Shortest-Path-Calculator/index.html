@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <title>Shortest Path Calculator</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Shortest Path Calculator (Dijkstra's Algorithm)</h1>
+        <div class="grid-container">
+            <div id="controls">
+                <div>
+                    <label for="node-name">Node Name:</label>
+                    <input type="text" id="node-name">
+                    <button onclick="addNode()">Add Node</button>
+                </div>
+                <div>
+                    <label for="edge-from">From:</label>
+                    <select id="edge-from"></select>
+                    <label for="edge-to">To:</label>
+                    <select id="edge-to"></select>
+                    <label for="edge-weight">Weight:</label>
+                    <input type="number" id="edge-weight" min="1" value="1">
+                    <button onclick="addEdge()">Add Edge</button>
+                </div>
+                <div>
+                    <label for="start-node">Start:</label>
+                    <select id="start-node"></select>
+                    <label for="end-node">End:</label>
+                    <select id="end-node"></select>
+                    <button onclick="findShortestPath()">Find Shortest Path</button>
+                </div>
+            </div>
+            <div id="network"></div>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
