@@ -25,5 +25,7 @@ The Periodic Table Calculator is a tool designed to provide detailed information
 - JavaScript
 
 ## Screenshots:
-![image](https://github.com/user/PeriodicTableCalculator/blob/main/screenshots/periodic_table.png)
 
+![image](https://github.com/manishh12/CalcDiverse/assets/97523900/c4f573c9-23ef-4686-b0a4-b1450c474a33)
+
+![image](https://github.com/manishh12/CalcDiverse/assets/97523900/667c0058-0a44-4237-a4ca-550e31dcf2bf)
