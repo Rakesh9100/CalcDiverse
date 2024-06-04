@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DTI Ratio Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Debt to Income Ratio Calculator</h1>
+        <div class="box-container">
+            <div class="box">
+                <h2>Incomes (Before Tax)</h2>
+                <form id="income-form">
+                    <div class="form-group">
+                        <label for="salary">Salary & Earned Income: (Per Year)</label>
+                        <input type="number" id="salary" name="salary" value="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pension">Pension & Social Security: (Per Year)</label>
+                        <input type="number" id="pension" name="pension" value="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="investment">Investment & Savings: (Per Year)</label>
+                        <input type="number" id="investment" name="investment" value="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="other-income">Other Income: (Per Year)</label>
+                        <input type="number" id="other-income" name="other-income" value="0" required>
+                    </div>
+                </form>
+            </div>
+
+            <div class="box">
+                <h2>Debts / Expenses</h2>
+                <form id="expense-form">
+                    <div class="form-group">
+                        <label for="rental">Rental Cost: (Per Year)</label>
+                        <input type="number" id="rental" name="rental" value="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mortgage">Mortgage: (Per Month)</label>
+                        <input type="number" id="mortgage" name="mortgage" value="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="credit-cards">Credit Cards: (Per Year)</label>
+                        <input type="number" id="credit-cards" name="credit-cards" value="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="other-loans">Other Loans and Liabilities: (Per Month)</label>
+                        <input type="number" id="other-loans" name="other-loans" value="0" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="button-box">
+            <button type="button" onclick="calculateDTI()">Calculate DTI</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

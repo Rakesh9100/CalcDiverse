@@ -23,6 +23,15 @@
         X:<input type="text" id="bx">
         Y:<input type="text" id="by">
     </div>
+    <div class="operation">
+        <!-- Added dropdown for selecting operation -->
+        <label for="operation">Operation:</label>
+        <select id="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="dot">Dot Product</option> 
+        </select>
+    </div>
     <button id="calc" onmouseup="calc();">Calculate</button>
     <div id="results"></div>
 
