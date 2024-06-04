@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000, #1E1E1E);
+    /* Black gradient */
+    color: #ddd;
+    /* Light gray text */
+    overflow: hidden;
+    /* Hide potential scrollbars */
+}
+
+h1 {
+    text-align: center;
+    color: #00ffff;
+    /* Light blue for title */
+    text-shadow: 0 0 3px #00ffff, 0 0 5px #4CAF50;
+    /* Text glow effect */
+}
+
+.calculator {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2), 0 0 40px rgba(0, 255, 255, 0.1);
+    /* Neon blue glow */
+    border-radius: 10px;
+    /* Increased corner roundness */
+    animation: fadeIn 0.5s ease-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.calculator label {
+    margin-bottom: 5px;
+    display: block;
+    color: #ddd;
+    /* Light gray text */
+}
+
+.calculator input,
+.calculator button {
+    padding: 15px;
+    /* Increased padding for better spacing */
+    border: none;
+    /* Removed border for cleaner look */
+    border-radius: 10px;
+    /* Consistent corner roundness */
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    /* Increased font size for better readability */
+    background-color: rgba(222, 211, 211, 0.21);
+    /* Slightly transparent black */
+    color: #ddd;
+    /* Light gray text */
+    text-shadow: 0 0 2px #00ffff;
+    /* Text glow effect */
+}
+
+
+.calculator button {
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0.2);
+    /* Semi-transparent neon blue */
+    color: #ddd;
+    /* Light gray text */
+    text-shadow: 0 0 2px #00aaff;
+    /* Text glow effect */
+}
+
+.calculator button:hover {
+    background-color: rgba(0, 255, 255, 0.3);
+    /* Brighter neon blue on hover */
+}
+
+#result {
+    font-weight: bold;
+    color: #00ffff;
+    /* Light blue for result */
+    text-shadow: 0 0 3px #00ffff, 0 0 5px #4CAF50;
+    /* Text glow effect */
+}
+
+#force {
+    max-width: 580px;
+}
+
+#velocity {
+    max-width: 580px;
+}
