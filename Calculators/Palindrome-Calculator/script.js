@@ -2,14 +2,12 @@ function checkPalindrome() {
     var userInput = document.getElementById("input").value;
     var reversedInput = userInput.split('').reverse().join('');
     var isPalindrome = (userInput === reversedInput);
-    let resultDiv = document.querySelector('.result');
-    let formDiv = document.getElementById('calculatorForm');
-    formDiv.style.display = 'none'; 
-    resultDiv.style.display = '';
+    var resultElement = document.getElementById("result");
 
     if (isPalindrome) {
-        document.getElementById("result").innerHTML =  ` ${userInput} is a palindrome.`;
-    } else {
-        document.getElementById("result").innerHTML =` ${userInput} is not a palindrome.`;
+        document.getElementById("result").innerHTML = `<span class="red"></span> ${userInput} <span class="red">is a palindrome.</span>`;
+    }
+    else {
+        document.getElementById("result").innerHTML =`<span class="red"></span> ${userInput} <span class="red">is not a palindrome.</span>`;
     }
 }
