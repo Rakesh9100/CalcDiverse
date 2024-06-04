@@ -12,4 +12,4 @@ Welcome to the Horse Power Conversion Calculator! This tool helps you calculate 
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/137085798/af128182-f9d2-4cc6-b192-132c2095d529)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/137085798/2c8ec34d-c1d3-4891-965e-e0172f392759)
