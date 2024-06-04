@@ -2,7 +2,7 @@
 
 ## Description :-
 
-In this calculator we can calculate the slope of the line. If two points (in form of x and y coordinates) are given we can calculate the distance between the two points with their slope.
+In this calculator, we can calculate the slope of the line. If two points (in the form of x and y coordinates) are given we can calculate the distance between the two points with their slope.
 
 ## Tech Stacks :-
 
@@ -15,12 +15,6 @@ In this calculator we can calculate the slope of the line. If two points (in for
 - It can calculate the slope of the line.
 - It can calculate the distance between two points.
 
-## How to Use :-
-
-1. Open the `index.html` file in your web browser.
-2. Input the required values in the respective field.
-3. Click the "Calculate" button to get the result.
-
 ## Screenshots:-
 
-![Sample](assets/image.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/bf6c7187-639a-4ffb-bfb6-373248103ec3)
