@@ -104,7 +104,41 @@ window.addEventListener('scroll', function () {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+const input = document.getElementById('calculatorSearch');
+let calculators = document.querySelectorAll('.container .box');
+let h2TextContents = [];
 
+calculators.forEach(calculator => {
+    let h2Element = calculator.querySelector('h2');
+    if (h2Element) {
+        h2TextContents.push(h2Element.textContent);
+    }
+});
+let search_input_container=document.querySelector('.search-input-container'),
+    calculatorSearch=document.getElementById('calculatorSearch')
+input.addEventListener('input',(e)=>{
+    let searchResults_Container=document.createElement('div')
+    let div=document.createElement('div')
+    searchResults_Container.setAttribute('id','searchResults_Container')
+    let filtered=h2TextContents.filter(ele=>ele.toLowerCase().includes(e.target.value.toLowerCase()))
+    if(filtered && e.target.value.length>0){
+        filtered.map((item,index)=>{
+            let p=document.createElement('p')
+            p.textContent=item
+            p.setAttribute('key',index)
+            div.appendChild(p)
+            p.addEventListener('click',()=>{
+                calculatorSearch.value=item
+                searchResults_Container.removeChild(div)
+            })
+        })
+        searchResults_Container.appendChild(div)
+        search_input_container.appendChild(searchResults_Container)
+    }
+    if(e.target.value.length===0){
+        searchResults_Container.removeChild(div)
+    }
+})
 // Function to filter calculators
 function filterCalculators() {
     var input, filter, calculators, i;
@@ -113,7 +147,6 @@ function filterCalculators() {
     calculators = document.querySelectorAll('.container .box');
     var noResults = document.getElementById('noResults');
     var hasResults = false;
-
     for (i = 0; i < calculators.length; i++) {
         var calculator = calculators[i];
         var h2 = calculator.querySelector('h2');
