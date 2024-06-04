@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Amortization Calculator</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Amortization Calculator</h1>
+        <div class="box-shadow p-4 mb-4">
+            <form id="amortization-form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="loanAmount">Loan Amount (₹)</label>
+                        <input type="number" class="form-control thin-input" id="loanAmount"
+                            placeholder="Enter loan amount" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="interestRate">Interest Rate (%)</label>
+                        <input type="number" step="0.01" class="form-control thin-input" id="interestRate"
+                            placeholder="Enter interest rate" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="loanTerm">Loan Term (years)</label>
+                        <input type="number" class="form-control thin-input" id="loanTerm" placeholder="Enter loan term"
+                            required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" class="form-control thin-input" id="startDate" required>
+                    </div>
+                </div>
+                <button type="submit" class="button-34">Calculate</button>
+            </form>
+        </div>
+        <div class="box-shadow p-4">
+            <h2 class="text-center">Monthly Payment: <span id="monthlyPayment">₹0.00</span></h2>
+            <h3 class="text-center mt-4">Amortization Schedule</h3>
+            <table class="table table-striped mt-3">
+                <thead>
+                    <tr>
+                        <th>Payment #</th>
+                        <th>Date</th>
+                        <th>Principal</th>
+                        <th>Interest</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody id="amortizationSchedule"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
