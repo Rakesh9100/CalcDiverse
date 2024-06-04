@@ -1391,54 +1391,128 @@ section {
 
 /* Footer Section Css */
 
-.footer-basic {
-    width: 100%;
-    padding: 40px 0;
+footer {
     background-color: rgb(9, 5, 40, 0.9);
+    color:#ccc;
+    padding: 30px 0;
 }
 
-.footer-basic ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.footer-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: flex-start;
+margin: 0 auto;
+max-width: 1300px;
+}
+.company-info{
+font-weight:600;
+}
+.quick-links{
+font-weight:600;
+}
+.company-info,
+.quick-links,
+.send-message{
+flex-basis: 27%;
 }
 
-.footer-basic li {
-    padding: 0 10px;
+.company-name {
+font-size: 24px;
+margin-bottom: 10px;
 }
 
-.footer-basic ul a {
-    color: var(--light);
-    padding: 8px;
-    font-weight: 500;
-    border: 1px solid transparent;
-    text-decoration: none;
-    transition: 0.3s ease-in;
-    opacity: 0.8;
+.company-info p {
+line-height: 1.5;
 }
 
-.footer-basic ul a:hover {
-    opacity: 1;
-    color: var(--primary);
-    border-top-color: var(--primary);
-    border-bottom-color: var(--primary);
+.quick-links h2,
+.send-message h2 {
+font-size: 18px;
+margin-bottom: 10px;
 }
 
-.footer-basic .social {
-    text-align: center;
-    padding-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.quick-links ul,
+.send-message form {
+list-style: none;
+padding: 0;
+margin: 0;
 }
+
+.quick-links li,
+.send-message button {
+margin-bottom: 10px;
+}
+
+.quick-links a,
+.send-message button {
+text-decoration: none;
+color: #ccc;
+}
+
+.send-message input[type="email"] {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+
+.copyright {
+margin-top:30px;
+text-align: center;
+padding: 10px 0;
+color: #ccc;
+}
+
+
+.heading{
+font-size: 24px;
+margin-bottom: 20px;
+background: #00F260;
+background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+background: linear-gradient(to right, #0575E6, #00F260);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+.group1{
+display:flex;
+flex-direction: row;
+gap:10px;
+}
+
+input,
+textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 16px;
+}
+
+textarea {
+height: 50px;
+color:#f7f26c;
+}
+
+.send-message button {
+height: 50px;
+background: -webkit-linear-gradient(to right, #0575E6, #00F260); 
+background: linear-gradient(to right, #0575E6, #00F260); 
+color: white; 
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 20px;
+font-weight: bold;
+}
+
 
 .social {
     font-size: 3.5rem;
@@ -1449,7 +1523,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .social a {
@@ -1458,14 +1532,6 @@ section {
 
 .social a:hover {
     color: var(--primary);
-}
-
-.footer-basic .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 0;
 }
 
 /* Sticky ScrollToTop Button */
@@ -1741,3 +1807,15 @@ section {
         padding-bottom: 15px;
     }
  }
+ @media (max-width: 768px) {
+    .footer-container{
+    margin:2px 12px;
+    }
+    .company-info,
+    .quick-links,
+    .send-message {
+    margin-top:8px;
+    text-align: center;
+    flex-basis: 100%;
+    }
+    }
