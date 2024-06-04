@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Depth Of Field Calculator</title>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="calculator-container">
+            <h2 class="text-center">Depth of Field Calculator</h2>
+
+            <form id="calculatorForm">
+                <div class="form-group">
+                    <label for="sensor">Sensor Size(mm) :</label>
+                    <input type="number" class="form-control" id="sensor">
+                </div>
+                <div class="form-group">
+                    <label for="focal">Lens Focal Length<small>(mm)</small> :</label>
+                    <input type="number" class="form-control" id="focal">
+                </div>
+
+                <div class="form-group">
+                    <label for="aperture">Aperture f-stop(mm) :</label>
+                    <input type="number" class="form-control" id="aperture">
+                </div>
+                <div class="form-group">
+                    <label for="distance">Focusing Distance(u)(mm) :</label>
+                    <input type="number" class="form-control" id="distance">
+                </div>
+
+                <button type="button" class="btn btn-dark form-control" onclick="calculateDof()">Calculate Depth Of Field</button>
+            </form>
+
+            <div class="result" style="display: none;">
+                <div class="alert alert-dark text-center" id="result" role="alert" style="font-size: 20px;color: black;">
+                </div>
+                <button class="btn btn-dark form-control" onclick="location.reload()">Calculate Again</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

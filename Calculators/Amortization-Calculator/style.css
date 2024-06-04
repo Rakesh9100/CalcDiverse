@@ -1,0 +1,54 @@
+body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #343a40;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+h2,
+h3 {
+    color: #343a40;
+    font-weight: bold;
+}
+
+#monthlyPayment {
+    color: #28a745;
+}
+
+.box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.thin-input {
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.button-34 {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    padding: 8px 18px;
+    width: fit-content;
+    border: 0;
+}
+
+.button-34:hover {
+    transform: scale(1.1);
+}

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #6c5b7b, #c06c84);
+    background: linear-gradient(to bottom, #f9f7fa, #f1698f);
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,16 +9,20 @@ body {
     height: 100vh;
 }
 
+h1.heading{
+    text-align: center;
+    color:rgb(235, 59, 88);
+}
+
 #converter {
-    background: linear-gradient(to bottom, #fdfcdc, #fed9b7);
+    background: linear-gradient(to bottom, #f6f6f4, #6bd2e6);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    /* text-align: center; */
     max-width: 400px;
     width: 100%;
 }
-
 
 label {
     display: block;
@@ -30,21 +34,23 @@ input {
     padding: 8px;
     box-sizing: border-box;
     margin-bottom: 20px;
+   
 }
 
 button {
-    background-color: #4caf50;
+    background-color: rgb(235, 59, 88);
     color: #fff;
     border: none;
     padding: 12px 24px;
     font-size: 16px;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    margin-left:150px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: rgb(235, 59, 88);
 }
 
 #result {
