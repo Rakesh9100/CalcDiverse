@@ -20,7 +20,7 @@ jobs:
       run: |
         COMMENT=$(cat <<EOF
         {
-          "body": "Congrats on getting your PR merged to the repo under GSSOC 2k24 🥳🎉 @${{ github.event.pull_request.user.login }} !! Thank you for your contribution to our project. 🚀"
+          "body": "Congrats, Your pull request has been successfully merged 🥳🎉 @${{ github.event.pull_request.user.login }} !! Thank you for your contribution to my project. 🚀 Keep Contributing!! ✨"
         }
         EOF
         )
