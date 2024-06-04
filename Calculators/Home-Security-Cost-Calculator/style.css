@@ -1,0 +1,88 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to bottom, #cfefff, #a5d8ff, #6db5ff, #007bff); /* Gradient background with shades of blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.calculator-container {
+    background-color: rgba(255, 255, 255, 0.9); /* White container background color with transparency */
+    padding: 20px; /* Reduced padding */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px; /* Reduced margin */
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+label {
+    margin-bottom: 10px; /* Reduced margin */
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+}
+
+input, select, button {
+    margin-bottom: 16px; /* Reduced margin */
+    padding: 12px; /* Reduced padding */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+#result {
+    margin-top: 20px; /* Reduced margin */
+    font-size: 20px;
+    color: #333;
+}
+
+#totalCost {
+    font-weight: bold;
+}
+
+#currencySymbol {
+    font-weight: bold;
+    margin-right: 5px;
+}

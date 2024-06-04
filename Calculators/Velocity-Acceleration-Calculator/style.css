@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/free-photo/fantasy-style-galaxy-background_23-2151114393.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.base-div {
+    height: 650px;
+    width: 600px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobhUeNjGSQRIVKF-U_dnfhEIPr4VFxZJ_9HeCkcpRag&s");
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+.cal-name {
+    justify-content: center;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.p {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#indistance {
+    height: 20px;
+    margin-top: 20px; 
+    margin-left: 10px;
+}
+
+#intime {
+    height: 20px;
+    margin-top: 20px; 
+    margin-left: 10px;
+}
+
+.speed {
+    display: flex;
+    margin-left: 110px;
+    margin-top: 50px;
+}
+
+.time {
+    display: flex;
+    margin-left: 109px;
+}
+
+.button {
+    background-color: aqua;
+    height: 40px;
+    width: 400px;
+    border-radius: 0.8rem;
+    margin-left: 15%;
+    margin-top: 2%;
+    cursor: pointer;
+    border: 1.5px solid white;
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+ 
+@media only screen and (max-width: 360px) {
+    body {
+        height: 100vh;
+        width: 360px;
+    }
+
+    .base-div {
+        height: 550px;
+        width: 83%;
+        margin-left: 10%;
+        margin-top: 12%;
+    }
+
+    .cal-name {
+        padding-left: 25px;
+        padding-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .speed {
+        font-weight: 600;
+        font-size: 1rem;
+        margin-left: 0px;
+     }
+
+     #indistance {
+        height: 20px;
+        width: 65px;
+    } 
+
+    .time {
+        font-weight: 600;
+        font-size: 1rem;
+        margin-left: 0px;
+        padding-left: 12px;
+    }
+
+    #intime {
+        height: 20px;
+        width: 65px;
+    }
+
+    .button {
+        background-color: aqua;
+        height: 40px;
+        width: 250px;
+        border-radius: 0.8rem;
+        margin-left: 10%;
+        margin-top: 3%;
+        cursor: pointer;
+        border: 1.5px solid white;
+        font-size: 1rem;
+        font-weight: 550;
+    }
+}

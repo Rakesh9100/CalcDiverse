@@ -83,11 +83,36 @@ h2 {
 }
 
 .left {
-    float: left;
     padding-right: 100px;
     padding-left: 50px;
 }
 
-.right {
-    float: right;
+@media (max-width: 600px) {
+    .converter {
+        width: 79%;
+        font-size: 10px;
+    }
+
+    .radio-group {
+        display: flex;
+    }
+
+    .left {
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 50px;
+    }
+
+    .right {
+        flex-direction: column;
+    }
+
+    input[type="number"],
+    select {
+        font-size: 10px;
+    }
+
+    #result {
+        font-size: 15px;
+    }
 }

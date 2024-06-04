@@ -12,21 +12,32 @@
 
     <div id="calculator">
         <div id="heading">
-            <h1>Antilog Calculator</h1>
+            <h1 id="animated-heading" class="animated-heading">Antilog Calculator</h1>
         </div>
         <hr>
-        <div class="content">
-            <p>Calculate the antilog of any number to any base:</p>
-            <div id="number1"><input type="number" id="number" placeholder="Enter number"></div>
-            <div id="base1"><input type="number" id="base" placeholder="Enter base" default="10"></div>
-            <button onclick="calculateAntilog()" id="button">Calculate Antilog</button>
-            <h3>Result:</h3>
-            <h3 id="resultb"></h3>
-            <p id="result"></p>
+        <div class="outer-content">
+            <div class="content">
+                <p>Calculate the antilog of any number to any base:</p>
+                <div id="number1"><input type="number" id="number" placeholder="Enter number"></div>
+                <div id="base1"><input type="number" id="base" placeholder="Enter base" default="10"></div>
+                <button onclick="calculateAntilog()" id="button">Calculate Antilog</button>
+                <h3>Result:</h3>
+                <h3 id="resultb"></h3>
+                <p id="result"></p>
+            </div>
         </div>
     </div>
 
     <script src="./script.js"></script>
+    <script>
+        window.onload = function() {
+            const heading = document.getElementById('animated-heading');
+            heading.classList.add('animated-heading');
+            heading.addEventListener('animationend', () => {
+                heading.classList.remove('animated-heading');
+            });
+        }
+    </script>
 
 </body>
 
