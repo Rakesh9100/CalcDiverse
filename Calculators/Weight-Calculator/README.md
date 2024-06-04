@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Swiftly convert weight from kgs to pounds and vice-versa.
+This is a web application that calculates weight between different units.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ Swiftly convert weight from kgs to pounds and vice-versa.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/27b88c39-5c6b-4bd0-bf7a-a369137f59ca)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/142529986/0103f104-fd3e-4a98-9e61-27a847a5fdfc)
