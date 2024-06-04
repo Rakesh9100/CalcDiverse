@@ -16,4 +16,3 @@ function calculate() {
         ${stream} Cut-off: ${cutOff.toFixed(2)}
     `;
 }
-
