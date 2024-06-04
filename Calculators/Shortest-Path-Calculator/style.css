@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 18px;
+    text-decoration: underline;
+}
+
+#app {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 100%;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    border: 2px solid #74ebd5;
+    border-radius: 10px;
+}
+
+#controls div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    padding: 5px 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+#network {
+    width: 600px;
+    height: 435px;
+    border: 2px solid #74ebd5;
+    border-radius: 10px;
+}
+
+#output {
+    grid-column: span 2;
+    margin-top: 15px;
+    padding: 15px;
+    width: 350px;
+    height: 20px;
+    margin: auto;
+    border: 2px solid #74ebd5;
+    background: #f9f9f9;
+}

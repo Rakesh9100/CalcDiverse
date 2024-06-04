@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Savings Calculator</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <p>Savings Calculator</p>
+    </div>
+    <div class="main-container">
+        <div class="container">
+            <div class="element">
+                <label for="initial-invst" class="text">Initial Investment</label>
+                <input type="number" min="0" max="1000000" step="500" id="initial-invst" class="input"
+                    placeholder="0 - 1000000/-">
+            </div>
+            <div class="element">
+                <label for="monthly-contro" class="text">Monthly contribution amount</label>
+                <input type="number" min="0" max="100000" step="500" id="monthly-contro" class="input"
+                    placeholder="0 - 10000/-">
+            </div>
+            <div class="element">
+                <label for="interest" class="text">Rate of Interest (%)</label>
+                <input type="number" min="0" max="10" id="interest" class="input" placeholder="0 - 10%">
+            </div>
+            <div class="element">
+                <label for="time" class="text">Time in years</label>
+                <input type="number" min="1" max="30" id="time" class="input" placeholder="1 - 30 years" value="1">
+            </div>
+            <div class="element">
+                <label for="compound" class="text">compounding frequency</label>
+                <select name="compound" id="compound" class="input">
+                    <option value="12">Monthly</option>
+                    <option value="3">Quarterly</option>
+                    <option value="1" selected>Yearly</option>
+                </select>
+            </div>
+            <button class="button">Calculate</button>
+        </div>
+        <div class="result-card">
+            <div class="result-header">Details of savings</div>
+            <div class="element">
+                <div class="result-text">Total investments</div>
+                <div class="result" id="r-invst">/-</div>
+            </div>
+            <div class="element">
+                <div class="result-text">Total savings accumulated</div>
+                <div class="result" id="r-t-s">/-</div>
+            </div>
+            <div class="element">
+                <div class="result-text">Total interest earned</div>
+                <div class="result" id="r-t-i">/-</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

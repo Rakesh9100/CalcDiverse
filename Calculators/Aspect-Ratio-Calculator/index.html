@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Aspect Ratio Calculator</title>
 </head>
-
 <body>
     <div class="calculator">
+        <button id="toggleMode" onclick="toggleMode()">Switch to Light Mode</button>
         <h2>Aspect Ratio Calculator</h2>
 
-        <label for="width">Width:</label>
-        <input type="number" id="width" placeholder="Enter width" oninput="calculateAspectRatio()">
-
-        <label for="height">Height:</label>
-        <input type="number" id="height" placeholder="Enter height" oninput="calculateAspectRatio()">
+        <div class="input-group">
+            <label for="width">Width:</label>
+            <input type="number" id="width" placeholder="Enter width" oninput="calculateAspectRatio()">
+        </div>
+        <div class="input-group">
+            <label for="height">Height:</label>
+            <input type="number" id="height" placeholder="Enter height" oninput="calculateAspectRatio()">
+        </div>
 
         <h3>Aspect Ratio:</h3>
         <p id="aspectRatio"></p>
     </div>
 
     <script src="script.js"></script>
-
 </body>
-
 </html>
