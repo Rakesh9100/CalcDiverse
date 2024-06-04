@@ -1,0 +1,125 @@
+body {
+    background-image: url('assets/background.jpg');
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.category {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+.category h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.category .toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: absolute; /* Add this line */
+    right: 10px; /* Adjust this value as needed */
+    text-align: center;
+}
+.plus-sign {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.food-items {
+    display: none;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #085300;
+}
+
+#totalCalories {
+    font-weight: bold;
+}

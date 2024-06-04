@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CPU Scheduling Calculator</title>
+</head>
+
+<body>
+    <div id="input-section">
+        <h1 style=" text-align: center;">CPU Scheduling Calculator</h1>
+        <form id="input-form">
+            <fieldset>
+                <label for="algorithm">Algorithm</label>
+                <select id="algorithm">
+                    <option value="FCFS">First Come First Serve, FCFS</option>
+                    <option value="SJF">Shortest Job First, SJF </option>
+                    <option value="RR">Round-Robin, RR</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="arrival-time">Arrival Times</label>
+                <input type="text" id="arrival-time" placeholder="e.g. 0 2 4 6 8">
+            </fieldset>
+            <fieldset>
+                <label for="burst-time">Burst Times</label>
+                <input type="text" id="burst-time" placeholder="e.g. 2 4 6 8 10">
+            </fieldset>
+            <fieldset id="time-quantum-field" style="display: none;">
+                <label for="time-quantum">Time Quantum</label>
+                <input type="number" id="time-quantum" placeholder="e.g. 3" min="1" step="1">
+            </fieldset>
+            <button type="submit">Solve</button>
+        </form>
+    </div>
+    <div id="output-section" style="display: none;">
+        <h2 style=" text-align: center;">Output</h2>
+        <table id="output-table" border="1px">
+            <thead>
+                <tr>
+                    <th>Process ID</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Start Time</th>
+                    <th>Completion Time</th>
+                    <th>Turnaround Time</th>
+                    <th>Waiting Time</th>
+                </tr>
+            </thead>
+            <tbody id="output-body">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
