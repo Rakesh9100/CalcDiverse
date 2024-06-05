@@ -1,22 +1,23 @@
 "use strict";
 var ax, ay, bx, by;
+
 function radToDeg(rads) {
-	return rads * (180 / Math.PI);
+    return rads * (180 / Math.PI);
 }
 
 function calc() {
-	ax = parseInt(document.getElementById("ax").value);
-	ay = parseInt(document.getElementById("ay").value);
-	bx = parseInt(document.getElementById("bx").value);
-	by = parseInt(document.getElementById("by").value);
+    ax = parseInt(document.getElementById("ax").value);
+    ay = parseInt(document.getElementById("ay").value);
+    bx = parseInt(document.getElementById("bx").value);
+    by = parseInt(document.getElementById("by").value);
 
-	const operation = document.getElementById("operation").value;
+    const operation = document.getElementById("operation").value;
 
-	if (isNaN(ay) || isNaN(bx) || isNaN(by)) {
-		alert("Please enter proper values for x and y");
-		return;
-	}
-	let result, angleResult;
+    if (isNaN(ay) || isNaN(bx) || isNaN(by)) {
+        alert("Please enter proper values for x and y");
+        return;
+    }
+    let result, angleResult;
     switch (operation) {
         case "add":
             const cx_add = ax + bx;
@@ -42,5 +43,5 @@ function calc() {
             result = "Invalid operation";
     }
     document.getElementById("results").innerHTML = result + "<br>" + (angleResult ? angleResult : "");
-	
-} 
+
+}

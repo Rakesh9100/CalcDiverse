@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(to bottom, #ff66cc 0%, #ffff99 100%);
+    font-family: 'Poppins';
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-shadow: 5px 5px 0px 5px#dd2b2b;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(18, 18, 18)
+
+}
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+
+
+}
+
+.left,.right{
+    /* border: 2px solid black; */
+    width: 200px;
+}
+
+.distance{
+    
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* width: 200px; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.distance label{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+.distance input{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6b6969;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #868484;
+    border-radius: 5px;
+    width: 70px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
