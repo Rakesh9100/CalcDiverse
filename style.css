@@ -221,6 +221,7 @@ header {
     border-bottom-color: #ff1b82;
 }
 
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -1563,7 +1564,17 @@ section {
     width: 40rem;
     transition: all linear .2s;
     font-weight: 600;
+
 }
+.search-icon-container{
+    height: 100%;
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
 
 #searchBar input:hover {
     transform: scale(1.02);
