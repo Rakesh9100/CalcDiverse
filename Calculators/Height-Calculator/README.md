@@ -2,7 +2,7 @@
 
 ## Description :-
 
-The Height Calculator is designed to perform various height conversions. It allows users to convert between different units such as feet, meters, and inches.
+The Height Calculator is designed to perform various height conversions. It allows users to convert between different units such as feet, meters, centimeters and inches.
 
 ## Tech Stacks :-
 
