@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arithmetic Geometric Progression Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Arithmetic Geometric Progression Calculator</h1>
+    </header>
+
+    <section id="calculator">
+        <label for="firstTerm">First Term (a):</label>
+        <input type="number" id="firstTerm" required placeholder="Enter (a)">
+
+        <label for="commonRatio">Common Ratio (r):</label>
+        <input type="number" id="commonRatio" required placeholder="Enter (r)">
+
+        <label for=" commonDifference">Common Difference (d):</label>
+        <input type="number" id="commonDifference" required placeholder="Enter (d)">
+
+        <label for=" termNumber">Term Number (n):</label>
+        <input type="number" id="termNumber" required placeholder="Enter (n)">
+
+        <label for=" calculationType">Choose Calculation:</label>
+        <select id="calculationType">
+            <option value="nthTerm">Nth Term</option>
+            <option value="sumOfTerms">Sum of First N Terms</option>
+        </select>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <p id="result"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

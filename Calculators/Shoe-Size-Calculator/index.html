@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shoe Size Calculator</title>
+</head>
+<body>
+    <div id="converter-container">
+        <h2>Shoe Size Calculator</h2>
+        <form id="shoeSizeConverter">
+            <label for="originalSize">Original Size:</label>
+            <input type="text" id="originalSize" name="originalSize" placeholder="Enter shoe size">
+            
+            <label for="originalUnit">Original Unit:</label>
+            <select id="originalUnit" name="originalUnit" onchange="enableOptions(this)">
+                <option value="" disabled selected>Select an option</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="EU">EU</option>
+            </select>
+            
+            <label for="targetUnit">Target Unit:</label>
+            <select id="targetUnit" name="targetUnit" onchange="enableOptions(this)">
+                <option value="" disabled selected>Select an option</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="EU">EU</option>
+            </select>
+            
+            <input type="submit" value="Convert">
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
