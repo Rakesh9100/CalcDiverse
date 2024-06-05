@@ -1,21 +1,15 @@
-# Random Number Generator
+# <p align="center">Random Number Calculator</p>
 
-This is a simple Random Number Generator built using HTML, CSS, and JavaScript. 
+## Description :-
 
-## Features
+This is a calculator that helps to generate a random number between 1 and 100.
 
-- Generates a random number between 1 and 100.
-- Attractive blue-themed design.
-- Responsive and centered layout.
+## Tech Stacks :-
 
-## How to Use
+- HTML
+- CSS
+- JavaScript
 
-1. Clone the repository or download the files.
-2. Open the `index.html` file in your web browser.
-3. Click the "Generate Number" button to see a random number displayed.
+## Screenshots :-
 
-## File Structure
-
-- `index.html`: The main HTML file.
-- `styles.css`: The CSS file for styling the page.
-- `script.js`: The JavaScript file containing the logic for generating a random number.
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/ac5ea55b-c95b-42f3-ae6b-9b593f1b0ec1)
