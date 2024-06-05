@@ -1,8 +1,8 @@
-# Arithmetic-Geometric Progression Calculator
+# <p align="center">Arithmetic Geometric Progression Calculator</p>
 
 ## Description :-
 
-Calculates nth Term and sum of n Terms of the Arithematic-Geometric Sequence.
+Calculates the nth Term and sum of n Terms of the Arithematic-Geometric Sequence.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ Calculates nth Term and sum of n Terms of the Arithematic-Geometric Sequence.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/d625786c-1bc7-4b5e-8e28-fc9b4e27436e)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/b9e14255-30e4-48f5-8134-8b472bfd12a3)
