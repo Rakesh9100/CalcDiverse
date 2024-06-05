@@ -12,8 +12,8 @@ This is a simple website that checks whether a entered number or string is a pal
 
 ## Features :-
 
-> Checks for single words and phrases (including spaces and punctuation).
-Displays a clear message indicating if the input is a palindrome or not.
+Checks for single words and phrases (including spaces and punctuation).<br>
+Displays a clear message indicating if the input is a palindrome or not.<br>
 Handles case-insensitivity (e.g., "Racecar" and "RACECAR" are both considered palindromes).
 
 ## Screenshots :-
