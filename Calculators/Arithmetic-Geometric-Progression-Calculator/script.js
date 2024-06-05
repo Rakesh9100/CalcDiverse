@@ -6,7 +6,6 @@ function calculate() {
     const commonDifference = parseInt(document.getElementById('commonDifference').value);
     const calculationType = document.getElementById('calculationType').value;
 
-
     const n = termNumber;
     const a = firstTerm;
     const d = commonDifference;
@@ -14,7 +13,6 @@ function calculate() {
     if (isNaN(a) || isNaN(d) || isNaN(n) || isNaN(r)) {
         document.getElementById("result").innerText = "Please enter the valid numbers for all fields.";
         return;
-
     }
     // Perform the selected calculation
     let result;
