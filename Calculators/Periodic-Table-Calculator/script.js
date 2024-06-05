@@ -3,8 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     createPeriodicTable();
 });
 
-
-
 function createPeriodicTable() {
     const elements = [
         { symbol: "H", name: "Hydrogen", atomicNumber: 1, atomicMass: 1.008 },
@@ -290,12 +288,11 @@ function calculateMass() {
     }
 }
 
+const element = elements.find(el => el.symbol.toLowerCase() === input.toLowerCase());
+const result = document.getElementById('calculated-mass');
 
-    const element = elements.find(el => el.symbol.toLowerCase() === input.toLowerCase());
-    const result = document.getElementById('calculated-mass');
-    
-    if (element) {
-        result.innerText = `Atomic Mass of ${element.name} (${element.symbol}) is ${element.atomicMass}`;
-    } else {
-        result.innerText = 'Element not found';
-    }
+if (element) {
+    result.innerText = `Atomic Mass of ${element.name} (${element.symbol}) is ${element.atomicMass}`;
+} else {
+    result.innerText = 'Element not found';
+}
