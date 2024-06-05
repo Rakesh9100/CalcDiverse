@@ -1,4 +1,4 @@
-# Ideal Gas Calculator
+# Ideal Gas Law Calculator
 
 The Ideal Gas Calculator is a web application that helps you calculate one of the variables (Pressure, Volume, Moles, or Temperature) of an ideal gas using the Ideal Gas Law equation: PV = nRT.
 
