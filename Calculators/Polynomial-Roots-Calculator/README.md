@@ -1,4 +1,4 @@
-# <p align="center">Polynomial-Roots-Calculator</p>
+# <p align="center">Equation-Roots-Calculator</p>
 
 ## Description :-
 
