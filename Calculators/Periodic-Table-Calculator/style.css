@@ -5,9 +5,11 @@ body {
     padding: 0;
     text-align: center;
 }
-.h1{
+
+.h1 {
     text-align: center;
 }
+
 #periodic-table {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
@@ -34,14 +36,15 @@ body {
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #element-info p {
     margin: 5px 0;
 }
 
-input, button {
+input,
+button {
     margin: 10px 0;
     padding: 10px;
     border: none;
