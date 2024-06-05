@@ -53,22 +53,22 @@ header {
     margin-bottom: 28px;
 }
 
-form {
+.contact-container form {
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-label {
+.contact-container label {
     color: #000000;
     font-size: 20px;
     font-weight: 600;
     text-shadow: 2px 2px 10px var(--light);
 }
 
-input,
-textarea {
+.contact-container input,
+.contact-container textarea {
     width: 100%;
     padding: 10px;
     border-radius: 6px;
@@ -78,7 +78,7 @@ textarea {
     transition: all linear .2s;
 }
 
-textarea {
+.contact-container input {
     border: 1px solid #ccc;
     resize: vertical; 
 }
@@ -88,7 +88,7 @@ textarea:hover {
     box-shadow: 5px 5px 10px black;
 }
 
-button {
+.contact-container button {
     font-size: 20px;
     font-weight: 700;
     margin-top: 21px;

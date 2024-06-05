@@ -1485,8 +1485,7 @@ flex-direction: row;
 gap:10px;
 }
 
-input,
-textarea {
+.send-message input,.send-message textarea{
 width: 100%;
 padding: 10px;
 border: 1px solid #ccc;
@@ -1495,7 +1494,7 @@ box-sizing: border-box;
 font-size: 16px;
 }
 
-textarea {
+.send-message textarea {
 height: 50px;
 color:#f7f26c;
 }
@@ -1512,8 +1511,14 @@ cursor: pointer;
 font-size: 20px;
 font-weight: bold;
 }
-
-
+.heading{
+    text-align:center;
+}
+.footer-ul{
+   justify-items:start;
+    align-items:start;
+    text-align:center;
+}
 .social {
     font-size: 3.5rem;
     text-decoration: none;
