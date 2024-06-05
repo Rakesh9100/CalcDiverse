@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+label {
+    color: #dcdbdd;
+    font-weight: bold;
+    text-align: left;
+}
+
+.calculator {
+
+    background-color: rgba(40, 86, 151, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 4px 6px rgba(64, 84, 110, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.calculator:hover {
+    box-shadow: 0 8px 12px rgba(48, 105, 185, 0.2);
+}
+
+input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #332b91;
+    text-align: left;
+}
+
+button {
+    padding: 12px;
+    cursor: pointer;
+    text-align: center;
+    background: linear-gradient(90deg, #d15a2f, #2e4fb3);
+    color: rgb(224, 224, 224);
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #4429bc, #5e3eb7);
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f3f3f0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        width: 90%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

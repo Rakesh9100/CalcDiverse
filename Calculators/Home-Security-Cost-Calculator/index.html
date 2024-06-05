@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Security Cost Calculator</title>
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Home Security Cost Calculator</h1>
+        <form id="securityForm">
+            <label for="cameraCount">Number of Cameras:</label>
+            <input type="number" id="cameraCount" name="cameraCount" min="0" value="0">
+
+            <label for="sensorCount">Number of Sensors:</label>
+            <input type="number" id="sensorCount" name="sensorCount" min="0" value="0">
+
+            <label for="alarmCount">Number of Alarms:</label>
+            <input type="number" id="alarmCount" name="alarmCount" min="0" value="0">
+
+            <label for="monitoring">24/7 Monitoring Service:</label>
+            <select id="monitoring" name="monitoring">
+                <option value="0">No</option>
+                <option value="50">Yes - $50/month</option>
+            </select>
+
+            <label for="currency">Select Currency:</label>
+            <select id="currency" name="currency">
+                <option value="1">USD</option>
+                <option value="74.57" selected>INR</option> <!-- Setting INR as selected -->
+                <option value="0.82">EUR</option>
+                <option value="0.72">GBP</option>
+            </select>
+
+            <button type="button" onclick="calculateCost()">Calculate</button>
+        </form>
+        <div id="result">
+            Total Cost: <span id="currencySymbol">₹</span><span id="totalCost">0.00</span> <!-- Displaying ₹ initially -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
