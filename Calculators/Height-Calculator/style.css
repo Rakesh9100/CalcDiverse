@@ -35,6 +35,21 @@ body {
 h1 {
     margin-bottom: 20px;
     color: #00796b;
+    animation-name: scaleHeading;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+}
+
+@keyframes scaleHeading {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 
 label {
@@ -46,7 +61,7 @@ label {
 
 input, select, button {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     margin-top: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
