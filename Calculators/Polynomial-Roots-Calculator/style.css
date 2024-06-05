@@ -5,10 +5,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    /* background:url("/CalcDiverse/assets/images/background.jpg"); */
     background-color: rgb(244, 152, 81);
-    background: url("boy.svg");
-  
+    background: url("assets/boy.svg");
     background-size: cover;
 }
 
@@ -19,11 +17,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 110%;
-    /* margin-left: 500px; */
     box-shadow: 7px 0px 15px #e5d64b, -7px 0px 15px #faf9f9;
-    
-    
-   
 }
 
 h1 {
@@ -34,9 +28,6 @@ h1 {
    margin-left: -200px;
    font-size: 50px;
 }
-/* select #degree{
-    width: 25rem;
-} */
 
 .input-group, .output-group {
     margin-bottom: 15px;
