@@ -18,4 +18,6 @@ Handles case-insensitivity (e.g., "Racecar" and "RACECAR" are both considered pa
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/146326636/95d593fd-4e29-4780-86ee-268523c51c1c)
+![image](https://github.com/diyaaa19/CalcDiverse/assets/151644762/d78a2572-21fd-451c-81eb-aefdc1959e9a)
+
+
