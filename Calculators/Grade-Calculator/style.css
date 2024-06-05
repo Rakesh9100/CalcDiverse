@@ -72,6 +72,8 @@ input {
     padding: 8px;
     box-sizing: border-box;
     width: 100%;
+    margin-top:0rem;
+    margin-left: 2rem;
 }
 
 button {
@@ -145,4 +147,22 @@ p {
         max-width: none;
         /* Removed max-width for smaller screens */
     }
+}
+.subject-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.remove-subject {
+    background-color: rgb(142, 131, 131);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 0rem;
+    margin-right:2rem;
+}
+
+.remove-subject:hover {
+    background-color: rgb(221, 138, 138);
 }
