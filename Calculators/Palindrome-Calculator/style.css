@@ -1,6 +1,6 @@
 
 body {
-    background: linear-gradient(to right, #5E1675, #344955);
+    background: linear-gradient(to right, #5E1675, #7daeca);
     font-family:Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -11,7 +11,7 @@ body {
     max-width: 700px;
     margin: 100px auto;
     padding: 20px;
-    background-color: #e79797;
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -26,6 +26,9 @@ h1 {
 }
 
 label {
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
     display: block;
     margin-bottom: 10px;
 }
@@ -45,10 +48,10 @@ button {
     padding: 10px;
     margin-top: 10px;
     font-size: 16px;
-    background-color: #4b524f;
+    background: linear-gradient(to left, #8189ef, #2f0b78);;
     color: #fff;
-    border: none;
-    border-radius: 4px;
+    border:#0a300d;
+    border-radius: 40px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
