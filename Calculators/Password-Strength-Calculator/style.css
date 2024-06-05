@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e3f2fd;
+}
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    transition: all 0.3s ease;
+}
+.container:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    margin-bottom: 20px;
+    color: #1e88e5;
+    font-size: 28px;
+    font-weight: bold;
+}
+.password-container {
+    position: relative;
+    width: 100%;
+}
+input[type="password"] {
+    width: 100%;
+    padding: 15px 45px 15px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #90caf9;
+    border-radius: 6px;
+    font-size: 18px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+input[type="password"]:focus {
+    border-color: #1e88e5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.5);
+}
+#togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #90caf9;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+#togglePassword:hover {
+    color: #1e88e5;
+}
+#strengthMessage {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #1565c0;
+    font-weight: bold;
+}
+.strength-meter {
+    width: 100%;
+    height: 12px;
+    background: #bbdefb;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.strength-bar {
+    height: 100%;
+    transition: width 0.3s, background-color 0.3s;
+}
+.strength-bar.weak {
+    background: #ef5350;
+    width: 20%;
+}
+.strength-bar.medium {
+    background: #ffca28;
+    width: 50%;
+}
+.strength-bar.strong {
+    background: #66bb6a;
+    width: 75%;
+}
+.strength-bar.very-strong {
+    background: #2e7d32;
+    width: 100%;
+}
