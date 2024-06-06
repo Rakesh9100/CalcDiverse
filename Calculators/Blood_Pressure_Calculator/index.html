@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BP Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Pressure Calculator</h1>
+        <form id="bp-form">
+            <label for="systolic">Systolic (mmHg):</label>
+            <input type="number" id="systolic" name="systolic" required>
+            
+            <label for="diastolic">Diastolic (mmHg):</label>
+            <input type="number" id="diastolic" name="diastolic" required>
+            
+            <button type="button" onclick="calculateBP()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
