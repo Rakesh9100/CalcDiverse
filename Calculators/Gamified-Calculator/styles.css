@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 20rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.calculator {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    overflow-x: auto;
+}
+
+textarea {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+.game-info {
+    margin-top: 20px;
+}
+
+#message {
+    margin-bottom: 10px;
+}
+
+.leaderboard {
+    margin-top: 30px;
+}
+
+#leaderboard-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#leaderboard-list li {
+    background-color: #ececec;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
