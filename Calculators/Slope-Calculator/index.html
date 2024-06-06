@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slope Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Slope Calculator</h1>
+        <form id="calculator-form">
+            <div class="group1">
+                <div class="input-group">
+                    <label for="x1">X1:</label>
+                    <input type="number" id="x1" required>
+                </div>
+                <div class="input-group">
+                    <label for="y1">Y1:</label>
+                    <input type="number" id="y1" required>
+                </div>
+            </div>
+            <div class="group2">
+                <div class="input-group">
+                    <label for="x2">X2:</label>
+                    <input type="number" id="x2" required>
+                </div>
+                <div class="input-group">
+                    <label for="y2">Y2:</label>
+                    <input type="number" id="y2" required>
+                </div>
+            </div>
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        <div id="results">
+            <p id="slope"></p>
+            <p id="distance"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

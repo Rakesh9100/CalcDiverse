@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sleep Cycle Calculator</title>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>Sleep Cycle Calculator</h1>
+            <div class="input-box">
+                <div class="time-input">
+                    <input type="number" id="hours" placeholder="HH" min="1" max="12">
+                    <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+                    <select id="ampm">
+                        <option value="am">AM</option>
+                        <option value="pm">PM</option>
+                    </select>
+                </div>
+                <button onclick="calculateBedTimes()">Calculate</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
