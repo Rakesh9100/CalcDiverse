@@ -11,15 +11,18 @@ function calculateMortgage() {
         return;
     }
 
-    // Calculate mortgage details
-    var loanAmount = propertyValue - (propertyValue * downPaymentPercentage / 100);
-    var monthlyInterestRate = (annualInterestRate / 100) / 12;
-    var numberOfPayments = loanTermInYears * 12;
+ // Calculate mortgage details
+ var loanAmount = propertyValue - (propertyValue * downPaymentPercentage / 100);
+ var monthlyInterestRate = (annualInterestRate / 100) / 12;
+ var numberOfPayments = loanTermInYears * 12;
+ var inrLoanAmount= loanAmount*83.49
+ var monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
+ var inrMonthly= monthlyPayment*83.49
 
-    var monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
+ // Display the result
+ document.getElementById("result").innerHTML =
+     "Loan Amount: $" + loanAmount.toFixed(2) + "  ( "+ inrLoanAmount.toFixed(2) + " rs )"+ "<br>" +
+     "Monthly Payment: $" + monthlyPayment.toFixed(2) +" ( "+ inrMonthly.toFixed(2) + " rs )";
 
-    // Display the result
-    document.getElementById("result").innerHTML =
-        "Loan Amount: $" + loanAmount.toFixed(2) + "<br>" +
-        "Monthly Payment: $" + monthlyPayment.toFixed(2);
 }
+
