@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heat Index Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Heat Index Calculator</h1>
+        <form id="heatIndexForm">
+            <label for="temperature">Temperature (°F):</label>
+            <input type="number" id="temperature" name="temperature" required>
+            
+            <label for="humidity">Relative Humidity (%):</label>
+            <input type="number" id="humidity" name="humidity" required>
+            
+            <button type="submit">Calculate Heat Index</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
