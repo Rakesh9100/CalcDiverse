@@ -22,8 +22,8 @@ For example, the number 192 is fascinating because (192 * 2 = 384 and 192 * 3 = 
 
 ## Screenshots :-
 
-![image]()
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/5081d315-b35b-4ba1-bef3-74fb5136221a)
 
-![image]()
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/a27aa1a2-fc96-43e8-96d8-4bc44d478d1c)
 
-![image]()
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/cda3d980-58d5-425f-9e1b-eaba94f15cc5)
