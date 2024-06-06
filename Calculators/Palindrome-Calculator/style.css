@@ -1,18 +1,23 @@
+
 body {
-    background: linear-gradient(to right, #5E1675, #344955);
-    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #5E1675, #7daeca);
+    font-family:Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 700px;
     margin: 100px auto;
     padding: 20px;
-    background-color: #fff;
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -20,6 +25,9 @@ h1 {
 }
 
 label {
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
     display: block;
     margin-bottom: 10px;
 }
@@ -39,10 +47,10 @@ button {
     padding: 10px;
     margin-top: 10px;
     font-size: 16px;
-    background-color: #337357;
+    background: linear-gradient(to left, #8189ef, #2f0b78);;
     color: #fff;
-    border: none;
-    border-radius: 4px;
+    border:#0a300d;
+    border-radius: 40px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -53,5 +61,14 @@ button:hover {
 
 p#result {
     margin-top: 20px;
-    text-align: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+}
+
+.calculator-container > h1 {
+    text-shadow: 2px 2px rgb(150, 150, 150);
+    margin-bottom: 40px;
 }

@@ -1,4 +1,4 @@
-# <p align="center">Random Word Generator Calculator</p>
+# <p align="center">Random Word Calculator</p>
 
 ## Description :-
 

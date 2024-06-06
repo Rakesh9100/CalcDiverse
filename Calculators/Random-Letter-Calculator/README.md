@@ -1,8 +1,8 @@
-# <p align="center">Random Letter Generator Calculator</p>
+# <p align="center">Random Letter Calculator</p>
 
 ## Description :-
 
-The Random Letter Generator Calculator is a simple and interactive web-based application that provides users with an entertaining way to test their reflexes and vocabulary. This presents users with a constantly changing random letter from the English alphabet and challenges them to click on the displayed letter as quickly as possible.
+The Random Letter Calculator is a simple and interactive web-based application that provides users with an entertaining way to test their reflexes and vocabulary. This presents users with a constantly changing random letter from the English alphabet and challenges them to click on the displayed letter as quickly as possible.
 
 ## Tech Stacks :-
 
