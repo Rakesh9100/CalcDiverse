@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Polynomial Roots Calculator</title>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="calculator" >
+            <h1 data-aos="fade-right">Roots Calculator</h1>
+            <div class="input-group" >
+                <label for="degree">Degree of Polynomial:</label>
+                <select id="degree" onchange="showCoefficientInputs()" style="width: 25rem;">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div id="coefficients">
+                <div class="input-group" >
+                    <label for="a">Coefficient a:</label>
+                    <input type="number" id="a" placeholder="e.g., 3">
+                </div>
+                <div class="input-group">
+                    <label for="b">Coefficient b:</label>
+                    <input type="number" id="b" placeholder="e.g., 2">
+                </div>
+                <div class="input-group">
+                    <label for="c">Coefficient c:</label>
+                    <input type="number" id="c" placeholder="e.g., 1">
+                </div>
+                <div class="input-group" id="d-group" style="display: none;">
+                    <label for="d">Coefficient d:</label>
+                    <input type="number" id="d" placeholder="e.g., 0">
+                </div>
+                <div class="input-group" id="e-group" style="display: none;">
+                    <label for="e">Coefficient e:</label>
+                    <input type="number" id="e" placeholder="e.g., 0">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="xValue">Value of x:</label>
+                <input type="number" id="xValue" placeholder="e.g., 2">
+            </div>
+            <div class="buttons" data-aos="fade-right">
+                <button class="btn" onclick="findRoots()">Find Roots</button>
+            </div>
+            <div class="output-group">
+                <label for="roots">Roots:</label>
+                <input type="text" id="roots" disabled>
+            </div>
+        </div>
+    </div>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Word Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Word Generator</h1>
+        <label for="start-letter">Enter starting letter:</label>
+        <input type="text" id="start-letter">
+        <label for="word-count">Enter number of words:</label>
+        <input type="number" id="word-count" min="1" value="1">
+        <button onclick="generateWords()">Generate</button>
+    </div>
+    <div id="result-container" class="result-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
