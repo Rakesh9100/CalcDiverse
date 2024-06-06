@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.head {
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    width: 90%;
+    max-width: 600px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 20px 20px 60px #b3b3b3, -20px -20px 60px #ffffff;
+}
+
+.number {
+    display: block;
+    height: 40px;
+    margin: 20px auto;
+    width: calc(100% - 22px); /* Adjust width to be responsive */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    box-shadow: inset 2px 2px 5px #aaaaaa, inset -5px -5px 10px #ffffff;
+}
+
+button {
+    background-color: #6a82fb;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #fc5c7d;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.text:hover {
+    color: #6a82fb;
+}
+
+.showHow {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    .head {
+        font-size: 1.5em;
+    }
+
+    .number, button {
+        font-size: 0.9em;
+    }
+
+    .text {
+        font-size: 1em;
+    }
+
+    .showHow {
+        font-size: 0.9em;
+    }
+}
