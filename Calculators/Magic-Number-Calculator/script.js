@@ -1,5 +1,3 @@
-// script.js
-
 function handleOptionChange() {
     const option = document.getElementById('option-select').value;
     document.getElementById('single-number-section').style.display = option === "single" ? 'block' : 'none';
@@ -16,21 +14,31 @@ function calculateDigitSum(num) {
 }
 
 function isMagicNumber(num) {
+    let steps = [];
     while (num >= 10) {
-        num = calculateDigitSum(num);
+        let currentNum = num;
+        let digitSum = calculateDigitSum(num);
+        steps.push(`${currentNum} → ${currentNum.toString().split('').join(' + ')} = ${digitSum}`);
+        num = digitSum;
     }
-    return num === 1;
+    if(num>10)
+    steps.push(`${num}`);
+    return { isMagic: num === 1, steps: steps };
 }
 
 function checkMagicNumber() {
     const num = document.getElementById('number').value;
     const resultDiv = document.getElementById('result');
+    const stepsDiv = document.getElementById('steps');
     if (num === "") {
         resultDiv.textContent = "Please enter a number.";
+        stepsDiv.textContent = "";
         return;
     }
-    const isMagic = isMagicNumber(parseInt(num));
+    const { isMagic, steps } = isMagicNumber(parseInt(num));
     resultDiv.textContent = isMagic ? `${num} is a Magic Number!` : `${num} is not a Magic Number.`;
+    stepsDiv.innerHTML = `Steps: <br>${steps.join(' <br>')} <br> The recursive sum ${isMagic ? 'adds' : "doesn't add"} to 1. <br> So, the number ${isMagic ? 'is' : "is not "} a magic number`;
+
 }
 
 function findMagicNumbersInRange() {
@@ -44,7 +52,7 @@ function findMagicNumbersInRange() {
 
     let magicNumbers = [];
     for (let i = start; i <= end; i++) {
-        if (isMagicNumber(i)) {
+        if (isMagicNumber(i).isMagic) {
             magicNumbers.push(i);
         }
     }
