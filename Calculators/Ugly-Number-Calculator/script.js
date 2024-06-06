@@ -24,7 +24,7 @@ const checkUgly = () => {
                     n /= 5
                 } else {
                     flag = 1;
-                    txt.textContent = (`${p} is not a Ugly Number!`);
+                    txt.textContent = (`${p} is not an Ugly Number!`);
 
                     how.textContent = (`Proof: (${((prime_factors(p).join(", ")))}): are distinct prime factors of ${p}  which does not belongs from prime numbers( 2, 3, 5) `);
                     break;
@@ -32,7 +32,7 @@ const checkUgly = () => {
             }
 
             if (flag == 0) {
-                txt.textContent = (`${p} is a Ugly Number!`);
+                txt.textContent = (`${p} is an Ugly Number!`);
                 how.textContent = (`Proof: (${((prime_factors(p).join(", ")))}): are distinct prime factors of ${p} which belongs from prime numbers( 2, 3, 5)`);
             }
         }
