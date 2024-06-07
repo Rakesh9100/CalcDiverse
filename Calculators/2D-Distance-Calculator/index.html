@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>2D Distance Calculator</title>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <h1>2D Distance Calculator</h1>
+        <h1 id="animated-text"></h1>
         <label for="x1">Point 1 (x, y): </label>
         <input type="number" id="x1" placeholder="Enter x">
         <input type="number" id="y1" placeholder="Enter y">
@@ -25,8 +26,42 @@
         <button type="button" id="resetButton">Reset</button>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var typed = new Typed("#animated-text", {
+                strings: [
+                    "2D Distance Calculator",
+                    "Calculate distances with ease"
+                ],
+                typeSpeed: 50,
+                backSpeed: 25,
+                loop: true
+            });
+        });
 
+        function calculateDistance() {
+            const x1 = parseFloat(document.getElementById('x1').value);
+            const y1 = parseFloat(document.getElementById('y1').value);
+            const x2 = parseFloat(document.getElementById('x2').value);
+            const y2 = parseFloat(document.getElementById('y2').value);
+
+            if (isNaN(x1) || isNaN(y1) || isNaN(x2) || isNaN(y2)) {
+                document.getElementById('result').innerText = "Please enter valid numbers.";
+                return;
+            }
+
+            const distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+            document.getElementById('result').innerText = `Distance: ${distance.toFixed(2)}`;
+        }
+
+        document.getElementById('resetButton').addEventListener('click', function() {
+            document.getElementById('x1').value = '';
+            document.getElementById('y1').value = '';
+            document.getElementById('x2').value = '';
+            document.getElementById('y2').value = '';
+            document.getElementById('result').innerText = '';
+        });
+    </script>
 </body>
 
 </html>
