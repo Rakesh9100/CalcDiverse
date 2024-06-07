@@ -12,7 +12,7 @@ As the name suggest this is a Calculator which will help you calculate the resis
 
 ## Features :-
 
-- Gives the theoritical reistance value of a given resistor.
+- Gives the theoretical reistance value of a given resistor.
 
 ## Screenshots :-
 
