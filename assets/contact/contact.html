@@ -69,7 +69,7 @@
                 <input type="text" id="name" name="name" placeholder="Enter Your Name" required oninput="validateName('name')">
 
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required oninput="validateEmail('email')">
 
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
@@ -78,6 +78,28 @@
             </form>
         </section>
     </div>
+
+    <script>
+        function validateEmail(emailFieldId) {
+            const emailField = document.getElementById(emailFieldId);
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+            if (!emailPattern.test(emailField.value)) {
+                emailField.setCustomValidity("Please enter a valid Gmail address.");
+            } else {
+                emailField.setCustomValidity("");
+            }
+        }
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert('Thank you for contacting us!');
+            // You can add additional code here to handle the form submission, e.g., send the form data to a server
+        });
+    </script>
+</body>
+
+</html>
+
 
     <!-------------------------------------Footer Code Starts --------------------------------------------->
     <div class="footer-basic">
