@@ -1,22 +1,15 @@
-# Sentence Counter Calculator
+# <p align="center">Sentence Counter Calculator</p>
 
-This is a simple web-based tool that counts the number of sentences in a given text. It's created using HTML, CSS, and JavaScript.
+## Description :-
 
-## How to Use
+This is a simple web-based tool that counts the number of sentences in a given text.
 
-1. Open the `index.html` file in a web browser.
-2. Enter or paste your text into the provided text area.
-3. Click the "Check for Number of Sentences" button.
-4. The tool will display the total number of sentences in the text.
+## Tech Stacks :-
 
-## Files Included
+- HTML
+- CSS
+- JavaScript
 
-- `index.html`: The main HTML file containing the structure of the web page.
-- `style.css`: The CSS file for styling the web page.
-- `script.js`: The JavaScript file containing the logic for counting sentences.
+## Screenshots :-
 
-## Technologies Used
-
-- HTML: For the structure of the web page.
-- CSS: For styling the web page and enhancing its visual appearance.
-- JavaScript: For implementing the logic to count sentences.
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/846580f6-6a0a-4302-9af3-05404203f7fe)
