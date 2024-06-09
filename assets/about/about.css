@@ -56,12 +56,12 @@
 .social a i {
     transition: transform 0.3s ease-in-out;
 }
+
 /* Pop up effect */
 
-.social a:hover i{
+.social a:hover I {
     transform: translateY(-8px);
 }
-
 
 .social a {
     color: var(--secondary);
@@ -70,15 +70,19 @@
 .social a.user:hover {
     color: #4af3b5;
 }
+
 .social a.message:hover {
     color: #73408f;
 }
+
 .social a.github:hover {
     color: #21d061;
 }
+
 .social a.twitter:hover {
     color: #00fff7;
 }
+
 .social a.facebook:hover {
     color: #0026ff;
 }
