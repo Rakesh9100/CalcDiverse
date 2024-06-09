@@ -10,33 +10,39 @@ body {
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
+
 table {
-          border-collapse: collapse;
-          width: 50%;
-          margin: 0 auto;
-      }
-      td {
-          border: none;
-          padding: 8px;
-      }
-      .input-group {
-          display: flex;
-          align-items: center;
-      }
-      .input-group label {
-          margin-right: 10px;
-      }
-      .input-group input {
-          margin-right: 5px;
-          padding: 5px;
-      }
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+}
+
+td {
+    border: none;
+    padding: 8px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    margin-right: 10px;
+}
+
+.input-group input {
+    margin-right: 5px;
+    padding: 5px;
+}
 
 
 input[type="text"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 150px; /* Adjust the width as needed */
+    width: 150px;
+    /* Adjust the width as needed */
 }
 
 .chart {
