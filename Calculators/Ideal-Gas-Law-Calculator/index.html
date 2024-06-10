@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ideal Gas Law Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Ideal Gas Law Calculator</h1>
+        <form id="initialForm">
+            <div class="form-group">
+                <label for="find">What do you want to find?</label>
+                <select id="find" name="find" onchange="showFields()">
+                    <option value="" selected disabled>Select one</option>
+                    <option value="pressure">Pressure (P)</option>
+                    <option value="volume">Volume (V)</option>
+                    <option value="moles">Moles (n)</option>
+                    <option value="temperature">Temperature (T)</option>
+                </select>
+            </div>
+        </form>
+        <form id="gasForm" style="display:none;">
+            <div id="pressureField" class="form-group">
+                <label for="pressure">Pressure (P):</label>
+                <input type="number" id="pressure" name="pressure" step="any">
+                <select id="pressureUnit">
+                    <option value="atm">atm</option>
+                    <option value="pa">Pa</option>
+                    <option value="kpa">kPa</option>
+                    <option value="mmhg">mmHg</option>
+                </select>
+            </div>
+            <div id="volumeField" class="form-group">
+                <label for="volume">Volume (V):</label>
+                <input type="number" id="volume" name="volume" step="any">
+                <select id="volumeUnit">
+                    <option value="liters">liters</option>
+                    <option value="ml">ml</option>
+                    <option value="m3">m³</option>
+                </select>
+            </div>
+            <div id="molesField" class="form-group">
+                <label for="moles">Moles (n):</label>
+                <input type="number" id="moles" name="moles" step="any">
+            </div>
+            <div id="temperatureField" class="form-group">
+                <label for="temperature">Temperature (T):</label>
+                <input type="number" id="temperature" name="temperature" step="any">
+                <select id="temperatureUnit">
+                    <option value="K">K</option>
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

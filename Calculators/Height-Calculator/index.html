@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Height Calculator</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="Height-Converter">
+            <h1>Height Converter</h1>
+            <label for="conversionType">Select Conversion:</label>
+            <select id="conversionType" onchange="updateInputs()">
+                <option value="" disabled selected>Select Conversion</option>
+                <option value="feet-to-meter">Feet to Meters</option>
+                <option value="meter-to-feet">Meters to Feet</option>
+                <option value="inch-to-feet">Inches to Feet</option>
+                <option value="feet-to-inch">Feet to Inches</option>
+                <option value="inch-to-meter">Inches to Meters</option>
+                <option value="meter-to-inch">Meters to Inches</option>
+                <option value="cm-to-inch">Centimeters to Inches</option>
+                <option value="inch-to-cm">Inches to Centimeters</option>
+                <option value="cm-to-feet">Centimeters to Feet</option>
+                <option value="feet-to-cm">Feet to Centimeters</option>
+                <option value="cm-to-meter">Centimeters to Meters</option>
+                <option value="meter-to-cm">Meters to Centimeters</option>
+            </select>
+
+            <div id="inputContainer">
+                <label for="inputValue" id="inputLabel">Enter Value</label>
+                <input type="number" id="inputValue" min="0" placeholder="Enter Value">
+            </div>
+            <button onclick="convert()">Convert</button>
+
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
