@@ -303,7 +303,7 @@ section {
 .started {
     font-size: 20px;
     font-weight: 700;
-    margin: 100px;
+    margin: 30px 100px ; /* Edit: Reduced top margin for upward position */
     padding: 15px 50px;
     border: none;
     outline: none;
@@ -315,9 +315,9 @@ section {
     transition: .3s ease-in-out;
     background: #fff; /* Ensure the button background is visible */
     box-shadow: 0 0 0 4px transparent; /* Set up for glow effect */
-}
-
-.started::before {
+  }
+  
+  .started::before {
     content: "";
     position: absolute;
     top: -2px;
@@ -325,9 +325,9 @@ section {
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     background: linear-gradient(
-        45deg,
-        #FF0000, #FF7300,
-        #00FFD5, #FF00C8, #FF0000
+      45deg,
+      #FF0000, #FF7300,
+      #00FFD5, #FF00C8, #FF0000
     );
     background-size: 600%;
     z-index: -1;
@@ -335,34 +335,35 @@ section {
     animation: glowing 20s linear infinite;
     border-radius: 27px; /* Slightly larger than button for glow effect */
     opacity: 1; /* Keep the border glowing continuously */
-}
-
-@keyframes glowing {
+  }
+  
+  @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
-}
-
-/* button glow on hover */
-.started:hover {
+  }
+  
+  /* button glow on hover */
+  .started:hover {
     background: linear-gradient(
-        45deg,
-        #FF0000, #FF7300,
-        #00FFD5, #FF00C8, #580d0d
+      45deg,
+      #FF0000, #FF7300,
+      #00FFD5, #FF00C8, #580d0d
     );
     background-size: 600%;
     color: #fff; /* Change text color for better visibility */
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Add glow effect around button */
     animation: glowing 20s linear infinite;
-}
-
-.started:hover::before {
+  }
+  
+  .started:hover::before {
     filter: blur(15px); /* Enhance the glow effect */
-}
-
-.started:active {
+  }
+  
+  .started:active {
     transform: scale(0.95); /* Scale down on click for effect */
-}
+  }
+  
 .paragraph {
     font-size: 2rem;
     width: 85%;
@@ -397,6 +398,7 @@ section {
     align-items: center;
     flex-wrap: wrap;
     padding: 40px 0;
+    margin: -80px 100px;
 }
 
 .container .box {
