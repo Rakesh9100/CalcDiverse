@@ -10,7 +10,7 @@ The Carbon Footprint Calculator is a web application that helps users estimate t
 - CSS
 - JavaScript
 
-## Features :-  
+## Features :-
 
 - Calculate the carbon footprint based on:
   - Electricity usage (kWh per month)
