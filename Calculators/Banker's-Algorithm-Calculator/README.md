@@ -7,9 +7,10 @@ A Banker's Algorithm Calculator is a tool designed to determine the safe sequenc
 ## Tech Stacks :-
 
 - HTML
-- Bootstrap
+- CSS
 - JavaScript
+- Bootstrap
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/126322584/5107948c-192b-47bd-96c7-a29f92a52e72)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c016ce66-2850-4c52-8cac-4c58f84ad9c0)
