@@ -18,7 +18,6 @@ function calculateMortgage() {
 
     var monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
 
-
     var currency = document.getElementById("currency").value;
     var currencySymbol = currency === "USD" ? "$" : "₹";
 
@@ -28,6 +27,5 @@ function calculateMortgage() {
         "Monthly Payment("+currencySymbol+"): " + monthlyPayment.toFixed(2);
 }
 
-//adding an event listener to update result when currency is changed
+// Added an event listener to update results when currency is changed
 document.getElementById("currency").addEventListener("change", calculateMortgage);
-
