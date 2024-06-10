@@ -10,9 +10,9 @@ function calculateCarbonFootprint() {
     let flightEmissionFactor = 250; // kg CO2 per flight
 
     let totalEmissions = (electricity * electricityEmissionFactor) +
-                         (gas * gasEmissionFactor) +
-                         (kilometers * carEmissionFactor) +
-                         (flights * flightEmissionFactor / 12);
+        (gas * gasEmissionFactor) +
+        (kilometers * carEmissionFactor) +
+        (flights * flightEmissionFactor / 12);
 
     document.getElementById('result').value = totalEmissions.toFixed(2) + ' kg CO2 per month';
 }
