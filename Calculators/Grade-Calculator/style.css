@@ -109,6 +109,26 @@ p {
     border-color: rgb(45, 43, 43);
 }
 
+.subject-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remove-subject {
+    background-color: rgb(142, 131, 131);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 0rem;
+    margin-right:2rem;
+}
+
+.remove-subject:hover {
+    background-color: rgb(221, 138, 138);
+}
+
 @media only screen and (max-width: 1030px) {
     .calculator-container {
         width: 45%;
@@ -147,22 +167,4 @@ p {
         max-width: none;
         /* Removed max-width for smaller screens */
     }
-}
-.subject-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.remove-subject {
-    background-color: rgb(142, 131, 131);
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    margin-top: 0rem;
-    margin-right:2rem;
-}
-
-.remove-subject:hover {
-    background-color: rgb(221, 138, 138);
 }
