@@ -126,3 +126,18 @@ input:focus {
     height: 100%;
     background: #495057;
 }
+
+@media (max-width: 600px) {
+    .calculator{
+        padding: 10px;
+        max-width: 300px;
+    }
+    .input {
+        height: 40px;
+        font-size: 18px;
+    }
+    .buttons{
+        height: 40px;
+        font-size: 15px;
+    }
+}
