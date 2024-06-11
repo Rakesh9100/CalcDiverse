@@ -41,6 +41,7 @@ form {
 .calculator-container > img {
     width: 100px;
 }
+
 .calculator-container > h2 {
     text-shadow: 2px 2px rgb(240, 172, 172);
     margin-bottom: 40px;
