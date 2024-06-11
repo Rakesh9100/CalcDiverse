@@ -31,3 +31,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+function validateEmail(emailFieldId) {
+    const emailField = document.getElementById(emailFieldId);
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+    if (!emailPattern.test(emailField.value)) {
+        emailField.setCustomValidity("Please enter a valid email address!");
+    } else {
+        emailField.setCustomValidity("");
+    }
+}
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    alert('Thank you for contacting us!');
+    // You can add additional code here to handle the form submission, e.g., send the form data to a server
+});
