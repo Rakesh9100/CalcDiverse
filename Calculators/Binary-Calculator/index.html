@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Binary Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Binary Calculator</h1>
+        <form id="calculator-form">
+            <div class="input-group group1">
+                <label for="binary1">Binary 1:</label>
+                <input type="text" id="binary1" required>
+            </div>
+            <div class="input-group group2">
+                <label for="binary2">Binary 2:</label>
+                <input type="text" id="binary2" required>
+            </div>
+            <div class="input-group group3">
+                <label for="operation">Operation:</label>
+                <select id="operation" required>
+                    <option value="add">Addition</option>
+                    <option value="subtract">Subtraction</option>
+                    <option value="multiply">Multiplication</option>
+                    <option value="leftShift">Left Shift</option>
+                    <option value="rightShift">Right Shift</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        <div id="results">
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
