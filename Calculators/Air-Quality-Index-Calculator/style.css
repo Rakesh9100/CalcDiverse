@@ -73,31 +73,37 @@ button:hover {
     justify-content: center;
     font-weight: bold;
 }
+
 @media (max-width: 992px) {
-    .container{
-        width:60%;
+    .container {
+        width: 60%;
     }
 }
-@media (max-width: 768px){
-    .container{
-        width:60%;
+
+@media (max-width: 768px) {
+    .container {
+        width: 60%;
     }
-    #input-id{
-        margin-top:20px;
+
+    #input-id {
+        margin-top: 20px;
     }
 }
+
 @media (max-width: 576px) {
-    .container{
-        width:70%;
-        padding:20px;
-        height:fit-content;
+    .container {
+        width: 70%;
+        padding: 20px;
+        height: fit-content;
     }
-    #input-id{
-        margin-top:20px;
+
+    #input-id {
+        margin-top: 20px;
         margin-bottom: 0px;
         margin-left: 0px;
     }
-    #input-label{
-        font-size:15px;
+
+    #input-label {
+        font-size: 15px;
     }
 }
