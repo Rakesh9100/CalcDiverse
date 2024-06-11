@@ -1,4 +1,3 @@
-
 function calculateMidpoint() {
     const x1 = document.getElementById("x1").value;
     const y1 = document.getElementById("y1").value;
@@ -9,8 +8,9 @@ function calculateMidpoint() {
     const midpointString = `(${midpointX}, ${midpointY})`;
     localStorage.setItem("midpoint", midpointString);
     document.getElementById("result").innerHTML = `The midpoint is ${midpointString}`;
-  }
-  const midpoint = localStorage.getItem("midpoint");
-  if (midpoint) {
+}
+
+const midpoint = localStorage.getItem("midpoint");
+if (midpoint) {
     document.getElementById("result").innerHTML = `The midpoint is ${midpoint}`;
-  }
+}
