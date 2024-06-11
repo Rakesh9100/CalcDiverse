@@ -29,5 +29,6 @@ To find the amount of water needed for a Tomato plant:
 
 ## Screenshots :-
 
-![Screenshot 2024-06-06 202054](https://github.com/Rakesh9100/CalcDiverse/assets/118645569/0b3007c8-0eb9-4971-9c3e-7138360e72bc)
-![Screenshot 2024-06-06 202106](https://github.com/Rakesh9100/CalcDiverse/assets/118645569/33f501ad-1cff-425b-bcbb-47a80c622cc4)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/03787a4d-ac36-4846-85af-6653fc31a410)
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/4953cd64-98f9-4c3f-bf8a-8b891e43f594)
