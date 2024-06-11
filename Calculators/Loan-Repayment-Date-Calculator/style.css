@@ -4,7 +4,7 @@ body {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-image: url(https://av.sc.com/in/content/images/sc-loan-repay-option-1600x490-1.jpg);
+    background-image: url('assets/background.jpg');
     font-size: 16px;
 }
 

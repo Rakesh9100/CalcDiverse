@@ -12,4 +12,4 @@ This is a loan repayment date calculator which gives you the year by which your 
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/f0ce5bee-9012-4ab7-9555-e954b3e719bc)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/72ced355-728d-42d2-a8c7-71e4510973b1)
