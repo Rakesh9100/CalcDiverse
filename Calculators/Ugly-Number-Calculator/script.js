@@ -5,12 +5,12 @@ const checkUgly = () => {
     let how = document.querySelector(".showHow");
     let p = n;
     if (n === "" || Number.isNaN(n)) {
-        txt.textContent = `("Please enter a number ")`;
+        txt.textContent = `Please enter a number!!`;
         how.textContent = ``
     }
     else {
         if (n <= 0) {
-            txt.textContent = ("Please enter a valid number ");
+            txt.textContent = ("Please enter a valid number");
             how.textContent = ``;
         }
         else {
@@ -26,14 +26,14 @@ const checkUgly = () => {
                     flag = 1;
                     txt.textContent = (`${p} is not an Ugly Number!`);
 
-                    how.textContent = (`Proof: (${((prime_factors(p).join(", ")))}): are distinct prime factors of ${p}  which does not belongs from prime numbers( 2, 3, 5) `);
+                    how.textContent = (`Proof: (${((prime_factors(p).join(", ")))}): are distinct prime factors of ${p} which does not belong from prime numbers (2, 3, 5) `);
                     break;
                 }
             }
 
             if (flag == 0) {
                 txt.textContent = (`${p} is an Ugly Number!`);
-                how.textContent = (`Proof: (${((prime_factors(p).join(", ")))}): are distinct prime factors of ${p} which belongs from prime numbers( 2, 3, 5)`);
+                how.textContent = (`Proof: (${((prime_factors(p).join(", ")))}): are distinct prime factors of ${p} which belong from prime numbers (2, 3, 5)`);
             }
         }
 
