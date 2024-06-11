@@ -119,7 +119,6 @@ const elementMasses = {
     "Og": 294
 };
 
-
 document.getElementById('mass-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const formula = document.getElementById('formula').value;
@@ -144,4 +143,3 @@ function calculateAtomicMass(formula) {
         }
     }
     return totalMass;
-}
