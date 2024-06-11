@@ -1,20 +1,16 @@
-# Blood Pressure Calculator
+# <p align="center">Blood Pressure Calculator</p>
 
-This is a simple web application for calculating blood pressure categories based on the systolic and diastolic values provided by the user. The application is built using HTML, CSS, and JavaScript.
+## Description :-
 
-## Table of Contents
-- [Demo](#demo)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+This is a simple web application for calculating blood pressure categories based on the systolic and diastolic values provided by the user.
 
-## Demo
+## Tech Stacks :-
 
-![Blood Pressure Calculator Screenshot](screenshot.png)
+- HTML
+- CSS
+- JavaScript
 
-## Features
+## Features :-
 
 - User-friendly interface for entering systolic and diastolic values.
 - Real-time calculation and display of blood pressure category.
@@ -25,25 +21,6 @@ This is a simple web application for calculating blood pressure categories based
   - Hypertension Stage 2
   - Hypertensive Crisis
 
+## Screenshots :-
 
-## Usage
-
-1. Open `index.html` in your web browser.
-2. Enter the systolic and diastolic values in the provided fields.
-3. Click the "Calculate" button to see the blood pressure category.
-
-## Code Structure
-
-- `index.html`: Contains the structure of the web page.
-- `styles.css`: Contains the styling for the web page.
-- `script.js`: Contains the JavaScript logic for calculating the blood pressure category.
-
-
-
-## Contact
-
-If you have any questions, feel free to reach out.
-
----
-
-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/2037256c-d31c-4db3-b4f4-5bfb81fa667f)
