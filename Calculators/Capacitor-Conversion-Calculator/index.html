@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Capacitor Conversion Calculator</title>
+</head>
+
+<body>
+    <h1>
+        <center>Capacitor Conversion Calculator</center>
+    </h1>
+    <table>
+        <tr>
+            <td>
+                <div class="input-group">
+                    <label for="picofarad">Picofarad:</label>
+                    <input type="text" id="picofarad" placeholder="Enter picofarad...">
+                    <span>pF</span>
+                </div>
+            </td>
+            <td>
+                <div class="input-group">
+                    <label for="nanofarad">Nanofarad:</label>
+                    <input type="text" id="nanofarad" placeholder="Enter nanofarad...">
+                    <span>nF</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="input-group">
+                    <label for="microfarad">Microfarad:</label>
+                    <input type="text" id="microfarad" placeholder="Enter microfarad...">
+                    <span>µF</span>
+                </div>
+            </td>
+            <td>
+                <div class="input-group">
+                    <label for="farad">Farad:</label>
+                    <input type="text" id="farad" placeholder="Enter farad...">
+                    <span>F</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="input-group">
+                    <label for="code">Code:</label>
+                    <input type="text" id="code" placeholder="Enter code...">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table class="chart" id="conversion-chart">
+        <thead>
+            <tr>
+                <th>picofarad</th>
+                <th>nanofarad</th>
+                <th>microfarad</th>
+                <th>Code</th>
+                <th>picofarad</th>
+                <th>nanofarad</th>
+                <th>microfarad</th>
+                <th>Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10</td>
+                <td>0.01</td>
+                <td>0.00001</td>
+                <td>100</td>
+                <td>4700</td>
+                <td>4.7</td>
+                <td>0.0047</td>
+                <td>472</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>0.015</td>
+                <td>0.000015</td>
+                <td>150</td>
+                <td>5000</td>
+                <td>5</td>
+                <td>0.005</td>
+                <td>502</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>0.022</td>
+                <td>0.000022</td>
+                <td>220</td>
+                <td>5600</td>
+                <td>5.6</td>
+                <td>0.0056</td>
+                <td>562</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>0.033</td>
+                <td>0.000033</td>
+                <td>330</td>
+                <td>6800</td>
+                <td>6.8</td>
+                <td>0.0068</td>
+                <td>682</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>0.047</td>
+                <td>0.000047</td>
+                <td>470</td>
+                <td>10000</td>
+                <td>10</td>
+                <td>0.01</td>
+                <td>103</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>0.1</td>
+                <td>0.0001</td>
+                <td>101</td>
+                <td>15000</td>
+                <td>15</td>
+                <td>0.015</td>
+                <td>153</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>0.12</td>
+                <td>0.00012</td>
+                <td>121</td>
+                <td>22000</td>
+                <td>22</td>
+                <td>0.022</td>
+                <td>223</td>
+            </tr>
+            <tr>
+                <td>130</td>
+                <td>0.13</td>
+                <td>0.00013</td>
+                <td>131</td>
+                <td>33000</td>
+                <td>33</td>
+                <td>0.033</td>
+                <td>333</td>
+            </tr>
+            <tr>
+                <td>150</td>
+                <td>0.15</td>
+                <td>0.00015</td>
+                <td>151</td>
+                <td>47000</td>
+                <td>47</td>
+                <td>0.047</td>
+                <td>473</td>
+            </tr>
+            <tr>
+                <td>180</td>
+                <td>0.18</td>
+                <td>0.00018</td>
+                <td>181</td>
+                <td>68000</td>
+                <td>68</td>
+                <td>0.068</td>
+                <td>683</td>
+            </tr>
+            <tr>
+                <td>220</td>
+                <td>0.22</td>
+                <td>0.00022</td>
+                <td>221</td>
+                <td>100000</td>
+                <td>100</td>
+                <td>0.1</td>
+                <td>104</td>
+            </tr>
+            <tr>
+                <td>330</td>
+                <td>0.33</td>
+                <td>0.00033</td>
+                <td>331</td>
+                <td>150000</td>
+                <td>150</td>
+                <td>0.15</td>
+                <td>154</td>
+            </tr>
+            <tr>
+                <td>470</td>
+                <td>0.47</td>
+                <td>0.00047</td>
+                <td>471</td>
+                <td>200000</td>
+                <td>200</td>
+                <td>0.2</td>
+                <td>204</td>
+            </tr>
+            <tr>
+                <td>560</td>
+                <td>0.56</td>
+                <td>0.00056</td>
+                <td>561</td>
+                <td>220000</td>
+                <td>220</td>
+                <td>0.22</td>
+                <td>224</td>
+            </tr>
+            <tr>
+                <td>680</td>
+                <td>0.68</td>
+                <td>0.00068</td>
+                <td>681</td>
+                <td>330000</td>
+                <td>330</td>
+                <td>0.33</td>
+                <td>334</td>
+            </tr>
+            <tr>
+                <td>750</td>
+                <td>0.75</td>
+                <td>0.00075</td>
+                <td>571</td>
+                <td>470000</td>
+                <td>470</td>
+                <td>0.47</td>
+                <td>474</td>
+            </tr>
+            <tr>
+                <td>820</td>
+                <td>0.82</td>
+                <td>0.00082</td>
+                <td>821</td>
+                <td>680000</td>
+                <td>680</td>
+                <td>0.68</td>
+                <td>684</td>
+            </tr>
+            <tr>
+                <td>1000</td>
+                <td>1</td>
+                <td>0.001</td>
+                <td>102</td>
+                <td>1000000</td>
+                <td>1000</td>
+                <td>1</td>
+                <td>105</td>
+            </tr>
+            <tr>
+                <td>1500</td>
+                <td>1.5</td>
+                <td>0.0015</td>
+                <td>152</td>
+                <td>1500000</td>
+                <td>1500</td>
+                <td>1.5</td>
+                <td>155</td>
+            </tr>
+            <tr>
+                <td>2200</td>
+                <td>2.2</td>
+                <td>0.0022</td>
+                <td>222</td>
+                <td>2200000</td>
+                <td>2200</td>
+                <td>2.2</td>
+                <td>225</td>
+            </tr>
+            <tr>
+                <td>3300</td>
+                <td>3.3</td>
+                <td>0.0033</td>
+                <td>332</td>
+                <td>3300000</td>
+                <td>3300</td>
+                <td>3.3</td>
+                <td>335</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
