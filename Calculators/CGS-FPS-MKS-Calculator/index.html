@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CGS FPS MKS Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CGS-FPS-MKS Unit Calculator</h1>
+        <hr />
+        <div class="converter">
+            <div class="row">
+                <div class="column">Quantity</div>
+                <div class="column">MKS</div>
+                <div class="column">CGS</div>
+                <div class="column">FPS</div>
+            </div>
+            <div class="row">
+                <div class="column">Length</div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="lengthMKS"
+                        placeholder="meters"
+                        oninput="convert('lengthMKS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="lengthCGS"
+                        placeholder="centimeters"
+                        oninput="convert('lengthCGS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="lengthFPS"
+                        placeholder="feet"
+                        oninput="convert('lengthFPS')"
+                        />
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Mass</div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="massMKS"
+                        placeholder="kilograms"
+                        oninput="convert('massMKS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="massCGS"
+                        placeholder="grams"
+                        oninput="convert('massCGS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="massFPS"
+                        placeholder="pounds"
+                        oninput="convert('massFPS')"
+                        />
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Time</div>
+                <div class="column">
+                    <input type="number" id="timeMKS" placeholder="seconds" />
+                </div>
+                <div class="column">
+                    <input type="number" id="timeCGS" placeholder="seconds" />
+                </div>
+                <div class="column">
+                    <input type="number" id="timeFPS" placeholder="seconds" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Area</div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="areaMKS"
+                        placeholder="sq.m"
+                        oninput="convert('areaMKS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="areaCGS"
+                        placeholder="sq.cm"
+                        oninput="convert('areaCGS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="areaFPS"
+                        placeholder="sq.ft"
+                        oninput="convert('areaFPS')"
+                        />
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Volume</div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="volumeMKS"
+                        placeholder="cubic.m"
+                        oninput="convert('volumeMKS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="volumeCGS"
+                        placeholder="cubic.cm"
+                        oninput="convert('volumeCGS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="volumeFPS"
+                        placeholder="cubic.ft"
+                        oninput="convert('volumeFPS')"
+                        />
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Velocity</div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="velocityMKS"
+                        placeholder="m/s"
+                        oninput="convert('velocityMKS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="velocityCGS"
+                        placeholder="cm/s"
+                        oninput="convert('velocityCGS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="velocityFPS"
+                        placeholder="ft/s"
+                        oninput="convert('velocityFPS')"
+                        />
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Acceleration</div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="accMKS"
+                        placeholder="m/s²"
+                        oninput="convert('accMKS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="accCGS"
+                        placeholder="cm/s²"
+                        oninput="convert('accCGS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="accFPS"
+                        placeholder="ft/s²"
+                        oninput="convert('accFPS')"
+                        />
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Force</div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="forceMKS"
+                        placeholder="N"
+                        oninput="convert('forceMKS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="forceCGS"
+                        placeholder="dyne"
+                        oninput="convert('forceCGS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="forceFPS"
+                        placeholder="poundal"
+                        oninput="convert('forceFPS')"
+                        />
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">Energy</div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="energyMKS"
+                        placeholder="J"
+                        oninput="convert('energyMKS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="energyCGS"
+                        placeholder="erg"
+                        oninput="convert('energyCGS')"
+                        />
+                </div>
+                <div class="column">
+                    <input
+                        type="number"
+                        id="energyFPS"
+                        placeholder="foot-pound"
+                        oninput="convert('energyFPS')"
+                        />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
