@@ -21,7 +21,6 @@ body {
     position: relative;
     bottom: 10px;
     padding-bottom: 22px;
-
 }
 
 
@@ -33,22 +32,17 @@ input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     position: relative;
-    
-    
-    
 }
+
 .button-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     margin: 20px auto;
-
-
 }
 
-.button-container button {
-    
+.button-container button {    
     flex: 1 1 calc(50% - 10px);
     padding: 10px 20px;
     font-size: 16px;
@@ -58,7 +52,6 @@ input[type="number"] {
     box-sizing: border-box;
     color: white;
     background-color: #410070;
-    
 }
 
 button:hover {
@@ -76,7 +69,6 @@ h1 {
 }
 
 #result {
-   
     padding: 20px;
     font-size: 22px;
     color: #333;
@@ -86,10 +78,7 @@ h1 {
     width: 300px;
     margin: 0 auto;
     display: none;
-
 }
-
-
 
 .name {
     font-size: 30px;
@@ -98,7 +87,4 @@ h1 {
     display: inline-block;
     font-family: 'Georgia', serif;
     margin-bottom: 15px;
-
-
-
 }
