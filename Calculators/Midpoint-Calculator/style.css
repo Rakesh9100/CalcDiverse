@@ -2,13 +2,13 @@ body {
 /* <<<<<<< HEAD:Calculators/Mid-Point-Calculator/styles.css */
   font-family: Arial, sans-serif;
   padding: 100px;
-  background:url(assets/background.jpeg);
+  background:url(assets/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .container {
   width: 50%;
-  margin: 40px auto;
+  margin: 250px auto;
   padding: 70px;
   background-color: #ccc;
   border: 1px solid #ccc;
