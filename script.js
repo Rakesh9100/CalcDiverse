@@ -117,9 +117,11 @@ function filterCalculators() {
     for (i = 0; i < calculators.length; i++) {
         var calculator = calculators[i];
         var h2 = calculator.querySelector('h2');
+        var h3 = calculator.querySelector('h3');
         var calculatorName = h2.textContent || h2.innerText;
+        var calculatorDescription = h3.textContent || h3.innerText;
 
-        if (calculatorName.toUpperCase().indexOf(filter) > -1) {
+        if ((calculatorName.toUpperCase().indexOf(filter) > -1) || (calculatorDescription.toUpperCase().indexOf(filter) > -1)) {
             calculator.style.display = "flex";
             hasResults = true;
         } else {
@@ -134,7 +136,7 @@ function filterCalculators() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('noResults').style.display = 'none';
 });
 

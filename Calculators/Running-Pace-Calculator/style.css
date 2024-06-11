@@ -1,0 +1,143 @@
+/* Global styles */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center; /* Center align all text */
+    background: radial-gradient(circle, rgb(231, 219, 245), rgb(185, 105, 242)); /* Radial gradient background */
+    margin: auto; /* Center horizontally */
+    padding: auto;
+    overflow: scroll; /* Enable scrolling if content overflows */
+}
+
+/* Heading styles */
+h1 {
+    margin-top: 5rem; /* Top margin for heading */
+    color: #333; /* Heading text color */
+}
+
+/* Calculator container styles */
+#calculator {
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding for calculator container */
+    margin-top: 2rem; /* Top margin for calculator container */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 2em; /* Border radius */
+    background-color: rgb(243, 235, 253); /* Background color */
+    color: rgb(44, 44, 44); /* Text color */
+    border-radius: 8%; /* Border radius */
+    width: 30vw; /* Width of the calculator */
+    height: auto; /* Auto height */
+    box-shadow: rgba(221, 124, 245, 0.913) 15px 20px 40px, rgba(248, 137, 237, 0.788) 5px 5px 10px; /* Box shadow */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    overflow: auto; /*Enable scrolling if content overflows*/
+    margin-bottom: 2rem; /* Bottom margin for calculator container */
+}
+
+/* Label styles */
+label {
+    font-weight: bold; /* Bold font weight */
+    display: block; /* Display as block element */
+    margin-top: 10px; /* Top margin for labels */
+    text-align: left; /* Left align text */
+}
+
+/* Input field styles */
+input {
+    width: 100%; /* Full width */
+    padding: 8px; /* Padding */
+    box-sizing: border-box; /* Include padding in width */
+    margin-bottom: 15px; /* Bottom margin for inputs */
+    margin-top: 5px; /* Top margin for inputs */
+}
+
+/* Button styles */
+button {
+    padding: 10px; /* Padding */
+    background-color: #4CAF50; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Border radius */
+    cursor: pointer; /* Pointer cursor */
+    margin: 5px; /* Margin */
+    font-size: 12px; /* Font size */
+}
+
+/* Button hover styles */
+button:hover {
+    background-color: #45a049; /* Background color on hover */
+}
+
+/* Select box styles */
+select {
+    width: 100%; /* Full width */
+    padding: 8px; /* Padding */
+    box-sizing: border-box; /* Include padding in width */
+    margin-bottom: 15px; /* Bottom margin for select boxes */
+    margin-top: 5px; /* Top margin for select boxes */
+    text-align: left; /* Left align text */
+}
+
+/* Flex container styles */
+.flex-container {
+    display: flex; /* Flex container */
+    align-items: center; /* Center align items */
+    justify-content: space-between; /* Space between items */
+    margin-top: 10px; /* Top margin for flex container */
+}
+
+/* Flex container label styles */
+.flex-container label {
+    flex: 1; /* Flex item */
+    text-align: left; /* Left align text */
+}
+
+/* Flex container select styles */
+.flex-container select {
+    flex: 2; /* Flex item */
+    margin-right: 10px; /* Right margin for select boxes */
+}
+
+/* Flex container button styles */
+.flex-container button {
+    flex: 1; /* Flex item */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+    #calculator {
+        width: 40vw; /* Adjusted width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #calculator {
+        width: 50vw; /* Adjusted width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #calculator {
+        width: 80vw; /* Adjusted width for smaller screens */
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    /* Adjusted flex container styles for smaller screens */
+    .flex-container {
+        flex-direction: column; /* Column direction */
+        align-items: flex-start; /* Left align items */
+    }
+
+    /* Adjusted select and button styles for smaller screens */
+    .flex-container select,
+    .flex-container button {
+        width: 100%; /* Full width */
+        margin-right: 0; /* No right margin */
+        margin-top: 10px; /* Top margin */
+    }
+
+    /* Adjusted button styles for smaller screens */
+    button {
+        width: 100%; /* Full width */
+        margin-top: 10px; /* Top margin */
+    }
+}

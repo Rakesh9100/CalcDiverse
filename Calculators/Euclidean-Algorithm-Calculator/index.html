@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Euclidean Algorithm Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Euclidean Algorithm</h1>
+        <p>
+            The Euclidean algorithm efficiently computes the greatest common divisor (GCD) of two integers, 
+            which is the largest number that divides both without a remainder. Additionally, you can find the 
+            least common multiple (LCM) using the GCD with the formula: LCM(A, B) = (A * B) / GCD(A, B).
+        </p>
+        <form class="form-container">
+            <div class="inp-container">
+                <div class="values">
+                    <label for="val1">VALUE 1</label>
+                    <input type="number" class="num1" placeholder="Enter first number" min="1" />
+                </div>
+                <div class="values">
+                    <label for="val2">VALUE 2</label>
+                    <input type="number" class="num2" placeholder="Enter second number" min="1" />
+                </div>
+            </div>
+            <button type="submit" class="submit">CALCULATE</button>
+        </form>
+        <h2 class="gcd-final">
+            GCD(<span class="n1"></span>, <span class="n2"></span>) = <span class="gcd"></span>
+        </h2>
+        <h2 class="lcm-final">
+            LCM(<span class="n3"></span>, <span class="n4"></span>) = <span class="lcm"></span>
+        </h2>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

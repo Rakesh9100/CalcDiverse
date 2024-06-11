@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff6e7f, #bfe9ff);
+    background: linear-gradient(135deg, #a5797d, #95d9fe);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,14 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    padding-bottom: 22px;
 }
+
 
 input[type="number"] {
     width: calc(100% - 22px);
@@ -24,26 +31,35 @@ input[type="number"] {
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 5px;
+    position: relative;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.button-container button {    
+    flex: 1 1 calc(50% - 10px);
+    padding: 10px 20px;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    color: white;
+    background-color: #410070;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #37108c;
 }
 
 button:active {
-    background-color: #3e8e41;
+    background-color: #3f5ed1;
 }
 
 h1 {
@@ -53,8 +69,22 @@ h1 {
 }
 
 #result {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    font-size: 22px;
+    color: #333;
+    border: 2px solid #000000;
     border-radius: 5px;
+    background-color: #fff;
+    width: 300px;
+    margin: 0 auto;
+    display: none;
+}
+
+.name {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Georgia', serif;
+    margin-bottom: 15px;
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Periodic Table Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Periodic Table Calculator</h1>
+
+        <!-- Periodic Table Card -->
+        <div class="card">
+            <table id="periodic-table"></table>
+        </div>
+
+        <!-- Table Details Card -->
+        <div class="card" id="element-info" style="display: none;">
+            <p id="element-name"></p>
+            <p id="element-symbol"></p>
+            <p id="element-atomic-number"></p>
+            <p id="element-atomic-mass"></p>
+            <p id="element-summary"></p>
+        </div>
+
+        <!-- Mass Calculator Card -->
+        <div class="card" id="periodic-table-calculator">
+            <input type="text" id="mass-input" placeholder="Enter element symbol">
+            <button onclick="calculateMass()">Calculate Mass</button>
+            <p id="calculated-mass"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
