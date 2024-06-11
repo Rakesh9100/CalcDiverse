@@ -3,7 +3,6 @@ function calculateBlf() {
     var battery = parseFloat(document.getElementById('battery').value);
     var current= parseFloat(document.getElementById('current').value);
 
-
     var blf;
     blf=battery/current;
 
