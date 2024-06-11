@@ -1,4 +1,4 @@
-# <p align="center"Automorphic Number Calculator</p>
+# <p align="center">Automorphic Number Calculator</p>
 
 ## Description :-
 
@@ -11,3 +11,5 @@ The Automorphic Number Calculator is a user-friendly tool designed to determine 
 - JavaScript
 
 ## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/d477cad8-bf08-4cab-979e-b6076d77ce6b)
