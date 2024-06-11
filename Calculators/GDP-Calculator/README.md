@@ -2,14 +2,14 @@
 
 ## Description :-
 
- This is a GDP calculator (Gross Domestic Product), which helps you to calculate the aggregate domestic output produced in a given country in a nominal term using the Expenditure Approach.
-
-## Screenshots :-
-
-![Screenshot 2024-06-10 200235](https://github.com/AnandK-pm/CalcDiverse/assets/142206618/35f5d5bc-ad2b-40a8-a843-0b469548770c)
+This is a GDP calculator (Gross Domestic Product), which helps to calculate the aggregate domestic output produced in a given country in a nominal term using the Expenditure Approach.
 
 ## Tech Stacks :-
 
-* HTML
-* CSS
-* JavaScript
+- HTML
+- CSS
+- JavaScript
+
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/1158f5b9-316e-4b03-8d8e-491f2734a77d)
