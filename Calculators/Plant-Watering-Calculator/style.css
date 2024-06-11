@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     background-image: url('assets/background.jpg');
     background-size: cover;
@@ -12,23 +12,28 @@ body{
     padding: 0;
     color: #333;
 }
-h1{
+
+h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-form{
+
+form {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 300px;
 }
-label{
+
+label {
     display: block;
     margin-top: 10px;
 }
-input, select{
+
+input,
+select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -36,7 +41,8 @@ input, select{
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-button{
+
+button {
     display: block;
     margin-top: 10px;
     padding: 10px;
@@ -47,29 +53,35 @@ button{
     width: 100%;
     border-radius: 5px;
 }
-button:hover{
+
+button:hover {
     background-color: #45a049;
 }
-#result{
+
+#result {
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
 }
-section{
+
+section {
     margin-top: 2rem;
     padding: 2rem;
     border-radius: 5px;
     max-width: 60rem;
     background-color: rgba(255, 255, 255, 0.8);
 }
-h2{
+
+h2 {
     color: #333;
     margin-bottom: 0.5rem;
 }
-li{
+
+li {
     margin-bottom: 0.5rem;
     line-height: 1.5;
 }
-strong{
+
+strong {
     color: #007BFF;
 }
