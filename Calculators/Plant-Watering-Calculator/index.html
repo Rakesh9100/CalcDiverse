@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Plant Watering Calculator</title>
+</head>
+
+<body>
+    <h1>Plant Watering Calculator</h1>
+    <form id="plant-form">
+        <label for="plant-type">Plant Type:</label>
+        <select id="plant-type">
+            <option value="succulents">Succulents</option>
+            <option value="ferns">Ferns</option>
+            <option value="flowering">Flowering Plants</option>
+            <option value="vegetables">Vegetables</option>
+        </select>
+        <label for="plant-size">Plant Size (cm):</label>
+        <input type="number" id="plant-size" min="1">
+        <label for="soil-type">Soil Type:</label>
+        <select id="soil-type">
+            <option value="sandy">Sandy</option>
+            <option value="loamy">Loamy</option>
+            <option value="clay">Clay</option>
+        </select>
+        <label for="sunlight">Sunlight Exposure (hours):</label>
+        <input type="number" id="sunlight" min="1" max="24">
+        <button type="submit">Calculate</button>
+    </form>
+    <p id="result"></p>
+    <section>
+        <h2>Plant Types</h2>
+        <ul>
+            <li><strong>Succulents:</strong> These are plants with thick, fleshy parts that are adapted to store water. Examples include cacti and aloe.</li>
+            <li><strong>Ferns:</strong> These are non-flowering plants that reproduce via spores. They typically prefer shady, moist environments.</li>
+            <li><strong>Flowering Plants:</strong> These are plants that produce flowers as part of their reproductive process. Examples include roses and daisies.</li>
+            <li><strong>Vegetables:</strong> These are plants where the leaves, roots, stems, flowers, or seeds are edible. Examples include tomatoes and lettuce.</li>
+        </ul>
+
+        <h2>Soil Types</h2>
+        <ul>
+            <li><strong>Sandy:</strong> This type of soil has large particles and doesn't hold onto water well. It's good for plants that need well-draining soil.</li>
+            <li><strong>Loamy:</strong> This type of soil is a balanced mix of sand, silt, and clay. It's ideal for most plants because it holds moisture but also drains well.</li>
+            <li><strong>Clay:</strong> This type of soil has very small particles and holds onto water for a long time. It's good for plants that need a lot of water, but it can be problematic if it gets waterlogged.</li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
