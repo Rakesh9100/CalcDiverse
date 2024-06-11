@@ -1,4 +1,3 @@
-
 function calculateMidpoint(event) {
   event.preventDefault();  // Prevent form from submitting and refreshing the page
 
@@ -24,5 +23,3 @@ window.onload = function() {
   document.getElementById('y2').value = '';
   document.getElementById('result').textContent = '';
 }
-
-  

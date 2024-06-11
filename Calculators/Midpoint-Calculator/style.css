@@ -1,7 +1,8 @@
 body {
+/* <<<<<<< HEAD:Calculators/Mid-Point-Calculator/styles.css */
   font-family: Arial, sans-serif;
   padding: 100px;
-  background: url(bg.jpeg);
+  background:url(assets/background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }

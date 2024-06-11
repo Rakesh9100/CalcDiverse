@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+
+body {
+    background: linear-gradient(135deg, #2a2a2a, #121212);
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 600px;
+    padding: 40px 20px;
+    backdrop-filter: blur(10px);
+}
+
+.container h1 {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.container p {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.inp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.values {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inp-container label {
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 5px;
+}
+
+.inp-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: #2c2c2c;
+    color: #e0e0e0;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.inp-container input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit:hover {
+    background: linear-gradient(135deg, #2980b9, #27ae60);
+}
+
+.gcd-final, .lcm-final {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.gcd-final.show, .lcm-final.show {
+    display: block;
+}
+
+.gcd-final .gcd, .lcm-final .lcm {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
