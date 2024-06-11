@@ -12,3 +12,5 @@ Users have to fill in this value to get mid point.
 - JavaScript
 
 ## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/99cef613-9c20-4a18-b92b-dcd769b43e96)
