@@ -20,8 +20,8 @@ For example, 6 is an ugly number as it has only 2 and 3 as the prime factors.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/a4ac5374-92e6-47ef-83c6-adccb03409d8)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/6ea60ded-e332-4bb9-ba51-9ebbf2a98ca2)
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/7c6fd16f-eae6-4631-be51-e98f8db33012)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c7537784-cd68-409b-886e-8b7f55c8027c)
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/09c19482-3b7d-4eaa-9f81-597bcfda2b5f)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/f6640d14-12ab-455d-8f60-0f55e57b550c)
