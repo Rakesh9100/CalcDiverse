@@ -5,47 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Percentage Calculator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .no-spinners {
+            -moz-appearance: textfield;
+        }
+
+        .no-spinners::-webkit-outer-spin-button,
+        .no-spinners::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
 </head>
-<body class="bg-light">
-
-<nav class="navbar navbar-expand-lg navbar-body bg-body bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">CalcDiverse</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">CalcDiverse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div class="container mt-5">
-    <h3 class="text-center mb-4">Percentage Calculator</h3>
-    
-    <!-- Number of Subjects Form -->
-    <div class="card mb-4">
-        <div class="card-body">
-            <h5 class="card-title">Enter Number of Subjects</h5>
-            <div class="input-group">
-                <input type="number" class="form-control" id="numSubjects" placeholder="Number of Subjects">
-                <button class="btn btn-primary" type="button" onclick="generateMarksInputs()">Submit</button>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#index.html" target="_blank">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
-    </div>
-    
-    <!-- Marks Input Form -->
-    <div class="card mb-4" id="marksForm" style="display: none;">
-        <div class="card-body">
-            <h5 class="card-title">Enter Marks</h5>
-            <form id="marksInputs">
-                <!-- Marks inputs will be dynamically generated here -->
-            </form>
-            <button class="btn btn-success mt-3" type="button" onclick="calculatePercentage()">Calculate Percentage</button>
+    </nav>
+
+    <div class="container mt-5">
+        <h3 class="text-center mb-4">Percentage Calculator</h3>
+        
+        <!-- Number of Subjects Form -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Enter Number of Subjects</h5>
+                <div class="input-group">
+                    <input type="number" class="form-control no-spinners" id="numSubjects" placeholder="Number of Subjects">
+                    <button class="btn btn-primary" type="button" onclick="generateMarksInputs()">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Marks Input Form -->
+        <div class="card mb-4" id="marksForm" style="display: none;">
+            <div class="card-body">
+                <h5 class="card-title">Enter Marks</h5>
+                <form id="marksInputs">
+                    <!-- Marks inputs will be dynamically generated here -->
+                </form>
+                <button class="btn btn-success mt-3" type="button" onclick="calculatePercentage()">Calculate Percentage</button>
+            </div>
         </div>
     </div>
     
@@ -56,47 +71,46 @@
             <p id="result" class="card-text"></p>
         </div>
     </div>
-</div>
 
-<script>
-function generateMarksInputs() {
-    const numSubjects = document.getElementById('numSubjects').value;
-    const marksForm = document.getElementById('marksInputs');
-    marksForm.innerHTML = ''; // Clear previous inputs
+    <script>
+        function generateMarksInputs() {
+            const numSubjects = document.getElementById('numSubjects').value;
+            const marksForm = document.getElementById('marksInputs');
+            marksForm.innerHTML = ''; // Clear previous inputs
 
-    if (numSubjects > 0) {
-        for (let i = 1; i <= numSubjects; i++) {
-            const formGroup = document.createElement('div');
-            formGroup.className = 'mb-3';
-            formGroup.innerHTML = `
-                <label for="subject${i}" class="form-label">Marks for Subject ${i}</label>
-                <input type="number" class="form-control" id="subject${i}" placeholder="Enter marks">
-            `;
-            marksForm.appendChild(formGroup);
+            if (numSubjects > 0) {
+                for (let i = 1; i <= numSubjects; i++) {
+                    const formGroup = document.createElement('div');
+                    formGroup.className = 'mb-3';
+                    formGroup.innerHTML = `
+                        <label for="subject${i}" class="form-label">Marks for Subject ${i}</label>
+                        <input type="number" class="form-control no-spinners" id="subject${i}" placeholder="Enter marks">
+                    `;
+                    marksForm.appendChild(formGroup);
+                }
+                document.getElementById('marksForm').style.display = 'block';
+            } else {
+                document.getElementById('marksForm').style.display = 'none';
+            }
         }
-        document.getElementById('marksForm').style.display = 'block';
-    } else {
-        document.getElementById('marksForm').style.display = 'none';
-    }
-}
 
-function calculatePercentage() {
-    const numSubjects = document.getElementById('numSubjects').value;
-    let totalMarks = 0;
+        function calculatePercentage() {
+            const numSubjects = document.getElementById('numSubjects').value;
+            let totalMarks = 0;
 
-    for (let i = 1; i <= numSubjects; i++) {
-        const marks = parseFloat(document.getElementById(`subject${i}`).value);
-        if (!isNaN(marks)) {
-            totalMarks += marks;
+            for (let i = 1; i <= numSubjects; i++) {
+                const marks = parseFloat(document.getElementById(`subject${i}`).value);
+                if (!isNaN(marks)) {
+                    totalMarks += marks;
+                }
+            }
+
+            const percentage = totalMarks / numSubjects;
+            document.getElementById('result').innerText = `Your percentage is ${percentage.toFixed(2)}%`;
+            document.getElementById('resultCard').style.display = 'block';
         }
-    }
+    </script>
 
-    const percentage = totalMarks / numSubjects;
-    document.getElementById('result').innerText = `Your percentage is ${percentage.toFixed(2)}%`;
-    document.getElementById('resultCard').style.display = 'block';
-}
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
