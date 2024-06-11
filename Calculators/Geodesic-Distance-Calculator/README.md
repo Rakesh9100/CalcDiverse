@@ -1,8 +1,8 @@
-# <p align="center">Geometric Progression Calculator</p>
+# <p align="center">Geodesic Distance Calculator</p>
 
 ## Description :-
 
-Description: Calculate the geodesic distance between two points on an ellipsoid.
+Calculates the geodesic distance between two points on an ellipsoid.
 Inputs: Coordinates of the two points (latitude and longitude).
 Outputs: Geodesic distance, path on the ellipsoid.
 
