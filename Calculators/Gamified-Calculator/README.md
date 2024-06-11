@@ -10,10 +10,6 @@ This calculator turns math problems into a game, rewarding correct answers with 
 - CSS
 - JavaScript
 
-## Screenshots :-
-
-![Gamified Calculator Screenshot](https://github.com/yourusername/GamifiedCalculator/assets/screenshot.png)
-
 ## Features :-
 
 - Dynamic expression input field using a `textarea`.
@@ -34,3 +30,7 @@ This calculator turns math problems into a game, rewarding correct answers with 
 5. Keep an eye on the timer to manage your time efficiently.
 6. Track your progress and achievements.
 7. Compare your scores on the leaderboard.
+   
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c62e357a-7601-4d83-b79b-75add9473afd)
