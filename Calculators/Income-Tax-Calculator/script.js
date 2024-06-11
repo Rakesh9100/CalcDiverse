@@ -2,15 +2,15 @@ document.querySelector('#btn').addEventListener('click', function () {
     const income0 = parseInt(document.querySelector('#my-income').value)
     const travel = parseInt(document.querySelector('#travel').value)
     const house = parseInt(document.querySelector('#house').value)
-    const helth = parseInt(document.querySelector('#helth').value)
+    const health = parseInt(document.querySelector('#health').value)
     var tax = document.querySelector('#show-tax')
 
     console.log(income0)
     console.log(travel)
-    console.log(helth)
+    console.log(health)
     console.log(house)
 
-    console.log(`helth=${helth}, travel= ${travel}, house= ${house}`)
+    console.log(`health=${health}, travel= ${travel}, house= ${house}`)
 
     if (travel > 500) {
         var total = travel + income0
@@ -19,8 +19,8 @@ document.querySelector('#btn').addEventListener('click', function () {
         total = income0
     )
 
-    if (helth > 300) {
-        var total1 = total + helth
+    if (health > 300) {
+        var total1 = total + health
     } else (
         total1 = total
     )
