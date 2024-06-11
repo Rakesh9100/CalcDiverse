@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+}
+
+td {
+    border: none;
+    padding: 8px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    margin-right: 10px;
+}
+
+.input-group input {
+    margin-right: 5px;
+    padding: 5px;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+    /* Adjust the width as needed */
+}
+
+.chart {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.chart th,
+.chart td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.chart th {
+    background-color: #f0f0f0;
+}
