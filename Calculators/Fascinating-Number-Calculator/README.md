@@ -3,10 +3,10 @@
 ## Description :-
 
 This is a simple web application that allows users to check if a given number is a fascinating number or not. 
-A fascinating number is a positive number which contains all the digits from 1 to 9 exactly once and does not contain any 0's
-after Concatenating number(x) with the numbers 2 * x and 3 * x. 
+A fascinating number is a positive number that contains all the digits from 1 to 9 exactly once and does not contain any 0's
+after concatenating the number(x) with the numbers 2 * x and 3 * x. 
 
-For example, the number 192 is fascinating because (192 * 2 = 384 and 192 * 3 = 576) and after concatenating it become (192384576) which contain all the digits from 1 to 9.
+For example, the number 192 is fascinating because (192 * 2 = 384 and 192 * 3 = 576), and after concatenating it becomes (192384576) which contains all the digits from 1 to 9.
 
 ## Tech Stacks :-
 
