@@ -1,22 +1,28 @@
 function calculateCarbonFootprint() {
-    // Get the input values
-    var milesDrivenYear = parseFloat(document.getElementById("milesDrivenYear").value);
-    var milesDrivenMonth = parseFloat(document.getElementById("milesDrivenMonth").value);
-    var milesDrivenWeek = parseFloat(document.getElementById("milesDrivenWeek").value);
+    let electricity = document.getElementById('electricity').value || 0;
+    let gas = document.getElementById('gas').value || 0;
+    let kilometers = document.getElementById('kilometers').value || 0;
+    let flights = document.getElementById('flights').value || 0;
 
-    // Validate inputs
-    if (isNaN(milesDrivenYear) || isNaN(milesDrivenMonth) || isNaN(milesDrivenWeek)) {
-        alert("Please enter valid numbers for miles driven.");
-        return;
-    }
+    let electricityEmissionFactor = 0.233; // kg CO2 per kWh
+    let gasEmissionFactor = 2.204; // kg CO2 per kg
+    let carEmissionFactor = 0.12; // kg CO2 per km
+    let flightEmissionFactor = 250; // kg CO2 per flight
 
-    // Calculate carbon footprints
-    var carbonFootprintYear = calculateCO2Emissions(milesDrivenYear);
-    var carbonFootprintMonth = calculateCO2Emissions(milesDrivenMonth);
-    var carbonFootprintWeek = calculateCO2Emissions(milesDrivenWeek);
+    let totalEmissions = (electricity * electricityEmissionFactor) +
+        (gas * gasEmissionFactor) +
+        (kilometers * carEmissionFactor) +
+        (flights * flightEmissionFactor / 12);
 
-    // Display the results
-    displayResults(carbonFootprintYear, carbonFootprintMonth, carbonFootprintWeek);
+    document.getElementById('result').value = totalEmissions.toFixed(2) + ' kg CO2 per month';
+}
+
+function resetForm() {
+    document.getElementById('electricity').value = '';
+    document.getElementById('gas').value = '';
+    document.getElementById('kilometers').value = '';
+    document.getElementById('flights').value = '';
+    document.getElementById('result').value = '';
 }
 
 // Function to calculate CO2 emissions based on miles driven

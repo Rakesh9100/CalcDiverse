@@ -5,8 +5,8 @@ const currencyDetailsApi = "https://restcountries.com/v2/currency/";
 // for selecting different controls
 var search = document.querySelector(".searchBox");
 var convert = document.querySelector(".convert");
-var fromCurrecy = document.querySelector(".from");
-var toCurrecy = document.querySelector(".to");
+var fromCurrency = document.querySelector(".from");
+var toCurrency = document.querySelector(".to");
 var finalValue = document.querySelector(".finalValue");
 var finalAmount = document.getElementById("finalAmount");
 var resultFrom;
@@ -14,13 +14,13 @@ var resultTo;
 var searchValue;
 
 // Event when currency is changed
-fromCurrecy.addEventListener('change', (event) => {
+fromCurrency.addEventListener('change', (event) => {
     resultFrom = `${event.target.value}`;
     fetchCurrencyDetails(resultFrom, 'from');
 });
 
 // Event when currency is changed
-toCurrecy.addEventListener('change', (event) => {
+toCurrency.addEventListener('change', (event) => {
     resultTo = `${event.target.value}`;
     fetchCurrencyDetails(resultTo, 'to');
 });
