@@ -2,7 +2,7 @@
 
 ## Description :-
 
-It is a calculator which handles complex numbers and their operations, such as addition, subtraction, multiplication, and division, and provides both rectangular and polar forms of the result. 
+It is a calculator that handles complex numbers and their operations, such as addition, subtraction, multiplication, and division, and provides both rectangular and polar forms of the result. 
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ It is a calculator which handles complex numbers and their operations, such as a
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/5276968a-c78f-4028-9fc6-c9838a72cf32)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/214dbc29-2450-453e-9ab7-0b7326f3dee3)

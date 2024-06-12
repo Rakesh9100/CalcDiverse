@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Curve Fitting Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Curve Fitting Calculator</h1>
+            <div>
+                <label for="numPoints">Number of Points:</label>
+                <input type="number" id="numPoints" value="3">
+                <button onclick="generateFields()">Generate Fields</button>
+            </div>
+            <div id="coordinateFields" class="inputs"></div>
+            <div>
+                <label for="curveType">Curve Type:</label>
+                <select id="curveType">
+                    <option value="linear">Linear</option>
+                    <option value="quadratic">Quadratic</option>
+                    <option value="cubic">Cubic</option>
+                    <option value="exponential">Exponential</option>
+                </select>
+            </div>
+            <button onclick="calculateCurveFitting()">Calculate</button>
+            <div id="results" class="equation"></div>
+            <canvas id="curveChart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
