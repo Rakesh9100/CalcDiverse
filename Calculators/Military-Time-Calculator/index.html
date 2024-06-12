@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Military Time Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Military Time Calculator</h1>
+        <div class="calculator">
+            <div class="time-conversion">
+                <label for="standardTime">Standard Time (12-hour):</label>
+                <input type="text" id="standardTime" placeholder="e.g., 02:30 PM">
+                <button onclick="convertToMilitary()">Convert to Military Time</button>
+                <p id="militaryTimeOutput"></p>
+            </div>
+            <div class="time-conversion">
+                <label for="militaryTime">Military Time (24-hour):</label>
+                <input type="text" id="militaryTime" placeholder="e.g., 14:30">
+                <button onclick="convertToStandard()">Convert to Standard Time</button>
+                <p id="standardTimeOutput"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
