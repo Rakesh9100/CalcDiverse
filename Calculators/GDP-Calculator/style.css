@@ -1,0 +1,174 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.left-section {
+    background-color: #17202A;
+    box-sizing: border-box;
+    color: white;
+    padding: 30px;
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section h1 {
+    font-size: 4rem;
+    margin-top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    /* The cursor */
+    width: 0;
+    /* Ensures the text starts at width 0 */
+    animation: typing 4s steps(22) forwards, blink-caret .75s step-end infinite;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.left-section p {
+    font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.right-section {
+    background-color: #f4f4f9;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.calcfield {
+    margin-bottom: 20px;
+    box-shadow: #000000;
+}
+
+fieldset {
+    width: 30vw;
+    box-shadow: #000000;
+    border-radius: 10px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #17202A;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.field input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button.calculate {
+    background-color: #2e3b4e;
+    color: #fff;
+}
+
+button.clear {
+    background-color: #f4f4f9;
+    color: #2e3b4e;
+}
+
+button.calculate:hover {
+    background-color: #1d2735;
+}
+
+button.clear:hover {
+    background-color: #e4e4e9;
+}
+
+.output {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    /* justify-content: center; */
+    border: 2px solid #ccc;
+    width: 40%;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #2e3b4e;
+}
+
+.output::before {
+    font-weight: 700;
+    content: 'GDP:    ';
+    text-align: center;
+}
+
+.value {
+    color: rgb(75, 2, 2);
+    font-size: 3rem;
+}

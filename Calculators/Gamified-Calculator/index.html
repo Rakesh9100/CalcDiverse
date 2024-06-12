@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gamified Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gamified Calculator</h1>
+        <div class="calculator">
+            <textarea id="expression" rows="2" placeholder="Enter calculation"></textarea>
+            <button id="calculate">Calculate</button>
+        </div>
+        <div class="game-info">
+            <p id="message"></p>
+            <p id="level">Level: 1</p>
+            <p id="timer">Time: 10</p>
+            <p id="points">Points: 0</p>
+            <p id="lives">Lives: 3</p>
+            <p id="achievements"></p>
+        </div>
+        <div class="leaderboard">
+            <h2>Leaderboard</h2>
+            <ol id="leaderboard-list"></ol>
+        </div>
+    </div>
+    <audio id="correct-sound" src="assets/correct.mp3"></audio>
+    <audio id="incorrect-sound" src="assets/incorrect.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
