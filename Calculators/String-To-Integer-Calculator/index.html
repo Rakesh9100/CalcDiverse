@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>String to Integer Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>String to Integer Calculator</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calculator">
-        <h1>String to Integer Calculator</h1>
-        <div class="wave-group">
-            <input required="" type="text" class="input" id="expression">
-            <span class="bar"></span>
-            <label class="label">
-                <span class="label-char" style="--index: 0">E</span>
-                <span class="label-char" style="--index: 1">x</span>
-                <span class="label-char" style="--index: 2">p</span>
-                <span class="label-char" style="--index: 3">r</span>
-                <span class="label-char" style="--index: 4">e</span>
-                <span class="label-char" style="--index: 5">s</span>
-                <span class="label-char" style="--index: 6">s</span>
-                <span class="label-char" style="--index: 7">i</span>
-                <span class="label-char" style="--index: 8">o</span>
-                <span class="label-char" style="--index: 9">n</span>
-            </label>
-        </div>
-        <button id="calculate-button"><span>Calculate</span></button>
-        <div id="result">Result: </div>
+    <div class="converter">
+        <h2>String to Integer calculator</h2>
+        <textarea id="inputString" placeholder="Enter your string here..."></textarea>
+        <br>
+        <button onclick="convertString()">Convert</button>
+        <div id="result"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
