@@ -6,9 +6,6 @@ function calculate() {
 
     let result = '';
 
-
-
-
     if (!isNaN(volt) && !isNaN(current)) {
         document.getElementById('resistance').value = `${volt / current}`;
         console.log("1 2");
