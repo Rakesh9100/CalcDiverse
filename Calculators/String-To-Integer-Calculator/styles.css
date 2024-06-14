@@ -8,94 +8,38 @@ body {
     margin: 0;
 }
 
-.calculator {
+.converter {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 400px;
 }
 
-.calculator h1 {
+.converter h2 {
     margin-bottom: 20px;
+    color: #333;
 }
 
-.wave-group {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.wave-group .input {
+.converter textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
     font-size: 16px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 200px;
-    border: none;
-    border-bottom: 1px solid #515151;
-    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
 }
 
-.wave-group .input:focus {
+.converter textarea:focus {
     outline: none;
+    border-color: #5264AE;
 }
 
-.wave-group .label {
-    color: #999;
-    font-size: 18px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    display: flex;
-}
-
-.wave-group .label-char {
-    transition: 0.2s ease all;
-    transition-delay: calc(var(--index) * 0.05s);
-}
-
-.wave-group .input:focus ~ .label .label-char,
-.wave-group .input:valid ~ .label .label-char {
-    transform: translateY(-20px);
-    font-size: 14px;
-    color: #5264AE;
-}
-
-.wave-group .bar {
-    position: relative;
-    display: block;
-    width: 200px;
-}
-
-.wave-group .bar:before,
-.wave-group .bar:after {
-    content: '';
-    height: 2px;
-    width: 0;
-    bottom: 1px;
-    position: absolute;
-    background: #5264AE;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-}
-
-.wave-group .bar:before {
-    left: 50%;
-}
-
-.wave-group .bar:after {
-    right: 50%;
-}
-
-.wave-group .input:focus ~ .bar:before,
-.wave-group .input:focus ~ .bar:after {
-    width: 50%;
-}
-
-.calculator button {
-    position: relative;
+.converter button {
     display: inline-block;
     padding: 15px 30px;
     border: 2px solid #fefefe;
@@ -104,50 +48,22 @@ body {
     background-color: #212121;
     text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.calculator button::before {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% - 12px);
-    background-color: #212121;
-    transition: 0.3s ease-in-out;
-    transform: scaleY(1);
-}
-
-.calculator button:hover::before {
-    transform: scaleY(0);
-}
-
-.calculator button::after {
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: -2px;
-    height: calc(100% + 4px);
-    width: calc(100% - 12px);
-    background-color: #212121;
-    transition: 0.3s ease-in-out;
-    transform: scaleX(1);
-    transition-delay: 0.5s;
-}
-
-.calculator button:hover::after {
-    transform: scaleX(0);
-}
-
-.calculator button span {
-    position: relative;
-    z-index: 3;
+.converter button:hover {
+    background-color: #5264AE;
+    transform: translateY(-2px);
 }
 
 #result {
     margin-top: 20px;
     font-size: 1.2em;
+    color: #333;
+    white-space: pre-wrap;
+    text-align: left;
 }
