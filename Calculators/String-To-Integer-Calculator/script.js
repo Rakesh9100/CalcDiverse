@@ -1,18 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const calculateButton = document.getElementById('calculate-button');
-    const resultDiv = document.getElementById('result');
+function convertString() {
+    // Get the input string from the textarea
+    var inputString = document.getElementById('inputString').value;
+    
+    // Convert each character to its ASCII value and join with spaces
+    var asciiValues = Array.from(inputString).map(char => char.charCodeAt(0)).join(' ');
 
-    calculateButton.addEventListener('click', () => {
-        const expression = document.getElementById('expression').value;
-
-        try {
-            // Evaluate the expression
-            const result = eval(expression);
-            // Display the result
-            resultDiv.textContent = `Result: ${Math.floor(result)}`;
-        } catch (error) {
-            // Display an error message if the expression is invalid
-            resultDiv.textContent = 'Result: Error';
-        }
-    });
-});
+    // Display the result in the result div
+    document.getElementById('result').textContent = asciiValues;
+}
