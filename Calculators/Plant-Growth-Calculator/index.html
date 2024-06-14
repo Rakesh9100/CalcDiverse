@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Plant Growth Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Plant Growth Predictor</h1>
+        <form id="plant-form">
+            <div id="plantSpecies">
+                <label>Plant Species:</label>
+                <select id="plantType">
+                    <option value="succulents">Succulents</option>
+                    <option value="ferns">Ferns</option>
+                    <option value="flowering">Flowering Plants</option>
+                    <option value="vegetables">Vegetables</option>
+                </select>
+            </div>
+            <div id="lightConditions">
+                <label>Light Conditions:</label>
+                <select id="lightType">
+                    <option value="full_sunlight">Full Sunlight</option>
+                    <option value="partial_shade">Partial Shade</option>
+                    <option value="indirect_light">Indirect Light</option>
+                </select>
+            </div>
+            <div id="watering">
+                <label>Plant Watering (%):</label>
+                <input type="number" id="wateringInput" min="0" max="100" required>
+            </div>
+            <div id="soilConditions">
+                <label>Soil Conditions:</label>
+                <select id="soilType">
+                    <option value="sandy">Sandy</option>
+                    <option value="loamy">Loamy</option>
+                    <option value="clay">Clay</option>
+                </select>
+            </div>
+            <div id="temperature">
+                <label>Temperature(°C)::</label>
+                <input type="number" id="temperatureInput" min="-50" max="50" required>
+            </div>
+            <button type="button" onclick="calculatePrediction()">Calculate Prediction</button>
+        </form>
+        <div id="predictionResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
