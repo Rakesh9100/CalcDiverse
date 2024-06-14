@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prayer Time Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Know Your Prayer Timings</h1>
+        <div id="prayerTimes"></div>
+        <div class="input-container">
+            <div class="input-box">
+                <label for="cityInput"></label>
+                <input type="text" name= "country" id="cityInput" placeholder="City" required="">
+            </div>
+        </div>
+        <div class="input-container">
+            <div class="input-box">
+                <label for="countryInput"></label>
+                
+                <input type="text" name= "country" id="countryInput" placeholder="Country" required="">
+            </div>
+        </div>
+        <button id="getPrayerTimes">Get Prayer Time</button>
+        
+    </div>
+    <audio id="notificationSound" src="assets/notification.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
