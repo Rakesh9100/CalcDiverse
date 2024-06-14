@@ -50,11 +50,14 @@ async function fetchContributors(pageNumber) {
     }
 
     const contributorsData = await response.json();
+
     return contributorsData;
 }
 
 // Function to fetch all contributors
 async function fetchAllContributors() {
+    // const loading = document.getElementById("grid");
+    // if (loading) loading.remove(loading.firstChild);
     let allContributors = [];
     let pageNumber = 1;
 
@@ -68,6 +71,8 @@ async function fetchAllContributors() {
             pageNumber++;
         }
         allContributors.forEach((contributor) => {
+            const loading = document.getElementById("grid");
+            if (loading) loading.remove(loading.firstChild);
             if (contributor.login === owner) {
                 return;
             }
