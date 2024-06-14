@@ -17,9 +17,9 @@ html, body {
     height: max-content;
     color: white;
     position: absolute;
-    top: 50%; /* Move the top of the element to the middle of the screen */
-    left: 50%; /* Move the left of the element to the middle of the screen */
-    transform: translate(-50%, -50%); /* Adjust for the element's own dimensions */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 2rem;
 
     /* Glassmorphic theme */
