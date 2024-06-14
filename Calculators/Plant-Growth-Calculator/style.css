@@ -1,8 +1,9 @@
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('assets/bg.jpg');
+    background-image: url('assets/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -24,7 +25,7 @@ form {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 400px;
 }
@@ -34,7 +35,8 @@ label {
     margin-top: 10px;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -59,11 +61,11 @@ button:hover {
     background-color: #45a049;
 }
 
-div{
+div {
     margin-bottom: 1rem;
 }
 
-div label{
+div label {
     font-size: large;
 }
 
