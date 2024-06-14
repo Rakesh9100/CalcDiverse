@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculates Overall Budget
+Calculates the overall budget for a rental payment.
 
 ## Tech Stacks :-
 
@@ -11,6 +11,5 @@ Calculates Overall Budget
 - JavaScript
 
 ## Screenshots :-
-![alt text](image.png)
 
-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c4ad3e8c-cdbc-4e94-beb1-cd4719d47857)
