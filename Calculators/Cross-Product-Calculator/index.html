@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cross Product Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cross Product Calculator</h1>
+        <div id="explanation">
+            <h2>How the Cross Product Works:</h2>
+            <p>The cross product of two vectors results in a vector that is perpendicular to both input vectors. Its direction is determined by the right-hand rule.</p>
+            <h2>Cross Product Formula:</h2>
+            <h3><span class="formula">A × B = |A| |B| sin θ n</span></h3>
+        </div>
+        <div class="input-block">
+            <label for="vector1">Vector A:</label>
+            <input type="text" id="vector1i" placeholder="i">
+            <input type="text" id="vector1j" placeholder="j">
+            <input type="text" id="vector1k" placeholder="k">
+        </div>
+        <div class="input-block">
+            <label for="vector2">Vector B:</label>
+            <input type="text" id="vector2i" placeholder="i">
+            <input type="text" id="vector2j" placeholder="j">
+            <input type="text" id="vector2k" placeholder="k">
+        </div>
+        <button onclick="calculateCrossProduct()">Calculate</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

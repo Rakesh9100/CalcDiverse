@@ -2,11 +2,10 @@
 
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: radial-gradient(#24DB25, #2524DB);
-    font-size: 1.4rem;
+    background-image: url('assets/background.jpg');
+    font-size: 16px;
 }
 
 html {
@@ -26,18 +25,19 @@ html {
     justify-content: center;
     align-items: center;
     height: 60rem;
-    width: 35rem;
-    border: 2px solid rgba(255, 255, 255, 0.35);
+    width: 40rem;
+    margin-left: 160px;
+    border: 2px solid rgba(59, 31, 31, 0.35);
     border-radius: 2rem;
     flex-wrap: wrap;
 }
 
 #heading {
-    color: white;
+    color: rgb(107, 44, 44);
 }
 
 .inputsection {
-    color: white;
+    color: rgb(107, 65, 43);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -60,20 +60,29 @@ html {
 #result {
     height: 5rem;
     width: 29rem;
-    color: white;
+    color: rgb(107, 65, 43);
     display: flex;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 5rem;
 }
 
 .submitbtn button {
-    background-color: #2524DB;
+    background-color: #743f0a;
     color: white;
-    height: 30px;
-    width: 100px;
+    font-size: 16px;
+    height: 40px;
+    width: 160px;
     border-radius: 20px;
+    margin-left: 11px;
+    justify-self: center;
+}
+
+.submitbtn button:hover{
+    cursor: pointer;
+    box-shadow:rgb(107, 65, 43);
+    background-color: #532d07;
 }
 
 #interest,
@@ -81,8 +90,16 @@ html {
 #return_amount,
 #date,
 #type {
-    background-color: #f6a7a7;
-    color: black;
+    background-color: #eab09b;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    padding: 3px;
     font-weight: 500;
+}
+
+::placeholder{
+    color: black;
+    padding: 3px;
 }

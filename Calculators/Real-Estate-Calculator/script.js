@@ -18,8 +18,14 @@ function calculateMortgage() {
 
     var monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -numberOfPayments));
 
+    var currency = document.getElementById("currency").value;
+    var currencySymbol = currency === "USD" ? "$" : "₹";
+
     // Display the result
     document.getElementById("result").innerHTML =
-        "Loan Amount: $" + loanAmount.toFixed(2) + "<br>" +
-        "Monthly Payment: $" + monthlyPayment.toFixed(2);
+        "Loan Amount("+currencySymbol+"): " + loanAmount.toFixed(2) + "<br>" +
+        "Monthly Payment("+currencySymbol+"): " + monthlyPayment.toFixed(2);
 }
+
+// Added an event listener to update results when currency is changed
+document.getElementById("currency").addEventListener("change", calculateMortgage);
