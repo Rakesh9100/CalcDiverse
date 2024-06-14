@@ -1,63 +1,56 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-align: center;
 }
 
-body{
+body {
     background-color: #0077b6;
 }
 
-h1{
+h1 {
     margin-top: 10px;
     color: #fff;
 }
 
-
-.container{
+.container {
     max-width: 500px;
     margin: 20px auto;
-    background-color:#90e0ef ;
-    padding: 20px 20px ;
+    background-color: #90e0ef;
+    padding: 20px 20px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
 }
 
-.container p{
+.container p {
     font-size: 20px;
     font-weight: bold;
 }
 
-.input-box{
+.input-box {
     width: 100%;
-    /* border: 1px solid white; */
-
     display: flex;
-
-    justify-content: space-between; 
-
+    justify-content: space-between;
     margin: 10px 0;
-
 }
 
-.input-box .input-unit{
+.input-box .input-unit {
     width: 60%;
     display: flex;
-    /* justify-content: space-between; */
 }
 
-.input-box input{
+.input-box input {
     background: rgb(241, 233, 233);
     padding: 5px;
-    border-radius: 5px ;
+    border-radius: 5px;
     border: 1.5px solid #01204E;
-    margin-right:5px;
+    margin-right: 5px;
     outline: none;
 }
 
-button{
+button {
     width: 30%;
     margin: 20px auto 10px;
     padding: 8px;
@@ -68,24 +61,25 @@ button{
     color: #fff;
 }
 
-.active{
+.active {
     cursor: not-allowed;
     opacity: 0.5;
 }
+
 a:link {
     color: #90e0ef;
     background-color: transparent;
     text-decoration: none;
-  }
-  
-  a:visited {
+}
+
+a:visited {
     color: white;
     background-color: transparent;
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: blue;
     background-color: transparent;
     text-decoration: underline;
-  }
+}
