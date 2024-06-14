@@ -11,6 +11,44 @@ function openPage(calcName, element) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
+function addSubjectField() {
+    var subjectFields = document.getElementById('subjectFields');
+    var subjectNumber = subjectFields.children.length / 2 + 1;
+
+    var label = document.createElement('label');
+    label.setAttribute('for', 'subject' + subjectNumber);
+    label.textContent = 'Enter marks for Subject ' + subjectNumber + ':';
+
+    var container = document.createElement('div');
+    container.setAttribute('class', 'subject-container');
+    container.setAttribute('id', 'subject-container-' + subjectNumber);
+
+    var input = document.createElement('input');
+    input.setAttribute('type', 'text');
+    input.setAttribute('id', 'subject' + subjectNumber);
+    input.setAttribute('class', 'marks');
+    input.setAttribute('placeholder', 'Enter marks (e.g., 85/100)');
+
+    var removeButton = document.createElement('button');
+    removeButton.setAttribute('type', 'button');
+    removeButton.setAttribute('class', 'remove-subject');
+    removeButton.textContent = 'X';
+    removeButton.onclick = function() {
+        removeSubjectField(subjectNumber);
+    };
+
+    container.appendChild(input);
+    container.appendChild(removeButton);
+
+    subjectFields.appendChild(label);
+    subjectFields.appendChild(container);
+}
+function removeSubjectField(subjectNumber) {
+    var container = document.getElementById('subject-container-' + subjectNumber);
+    var label = container.previousElementSibling;
+    container.remove();
+    label.remove();
+}
 function calculateRelGrade() {
     // Get marks, mean and std for each subject
     let marksInputs = document.querySelectorAll('#relative .marks');
@@ -23,7 +61,7 @@ function calculateRelGrade() {
         return;
     }
 
-    let marks = marksInputs[0].value.split(',').map(function (item) {
+    let marks = marksInputs[0].value.split('/').map(function (item) {
         return parseFloat(item);
     });
 
@@ -72,7 +110,7 @@ function calculateAbsGrade() {
 
     // Calculate total points and total obtained points
     for (var i = 0; i < marksInputs.length; i++) {
-        var marks = marksInputs[i].value.split(',').map(function (item) {
+        var marks = marksInputs[i].value.split('/').map(function (item) {
             return parseFloat(item);
         });
 
