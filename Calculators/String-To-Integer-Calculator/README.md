@@ -1,26 +1,15 @@
-# String to Integer Calculator
+# <p align="center">String To Integer Calculator</p>
 
-This project is a simple web-based calculator that converts a string representation of a mathematical expression into its integer result. The application is built with HTML, CSS, and JavaScript.
+## Description :-
 
-## Features
+This project is a simple web-based calculator that converts strings to integers or decimal numbers.
 
-- Input field for entering mathematical expressions.
-- Button to calculate the integer result of the expression.
-- Stylish and interactive UI with hover effects on the button.
+## Tech Stacks :-
 
-## Project Structure
+- HTML
+- CSS
+- JavaScript
 
-- `index.html` - The main HTML file that contains the structure of the calculator.
-- `styles.css` - The CSS file that styles the calculator.
-- `script.js` - The JavaScript file that handles the calculation logic.
+## Screenshots :-
 
-## How to Use
-
-1. Open `index.html` in a web browser.
-2. Enter a mathematical expression (e.g., `5+3*2`) in the input field.
-3. Click the "Calculate" button.
-4. The result will be displayed below the button.
-
-## Screenshots
-
-![String to integer](String-To-Integer-Calculator.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/1fa44041-31b9-419d-9653-756b7e7d83ea)
