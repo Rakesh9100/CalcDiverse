@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("Script loaded correctly.");
-
     const hoursInput = document.querySelector('input[name="hours"]');
     const minutesInput = document.querySelector('input[name="minutes"]');
     const secondsInput = document.querySelector('input[name="seconds"]');
