@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Determinant Calculator",
+    "version": "1.0",
+    "description": "A simple determinant calculator extension.",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "icons/icon.png",
+        "48": "icons/icon2.png",
+        "128": "icons/icon3.png"
+      }
+    },
+    "icons": {
+      "16": "icons/icon.png",
+      "48": "icons/icon2.png",
+      "128": "icons/icon3.png"
+    },
+    "browser_action": {
+      "default_popup": "index.html"
+    }
+  }
+  

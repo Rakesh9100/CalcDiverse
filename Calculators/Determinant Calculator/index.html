@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinant Calculator</title>
+</head>
+<style>
+    .container {
+        width: 600px;
+        height: 500px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="number"] {
+        width: 60px;
+        text-align: center;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Determinant Calculator</h1>
+        <label for="sizeInput">Enter matrix size (n x n):</label>
+        <input type="number" id="sizeInput" min="1">
+        <div>
+            <button id="generateMatrixButton">Generate Matrix</button>
+            <button id="calculateDeterminantButton">Calculate Determinant</button>
+        </div>
+        <div id="matrixTable"></div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
