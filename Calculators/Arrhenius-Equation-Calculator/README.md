@@ -1,9 +1,16 @@
-## Description
-In case you are enthusiatic about the kinetics of chemical reactions, this calculator will make your life easier....
-as this calculator will help you calculate important parameters of chemical kinetics like activation energy and rate constant at one place, thereby reducing your work.
+# <p align="center">Arrhenius Equation Calculator</p>
 
-## Tech-Stack 
-The tech stack I used is JavaScript, HTML and CSS
+## Description :-
 
-## Screenshot
-![pic1](https://github.com/Sara1428/CalcDiverse/assets/146193518/bc384b4c-4613-42f4-a10f-6721468d7c76)
+In case you are enthusiastic about the kinetics of chemical reactions, this calculator will make your life easier.<br>
+This calculator will help you calculate important parameters of chemical kinetics like activation energy and rate constant at one place, thereby reducing your work.
+
+## Tech Stacks :-
+
+- HTML
+- CSS
+- JavaScript
+
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/b3f38481-e90c-4355-90fd-7ecca8a1e721)
