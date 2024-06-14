@@ -3,113 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Percentage Calculator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f0f8ff;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .navbar {
-            background-color: #007bff;
-        }
-
-        .navbar-brand, .nav-link, .btn-outline-success {
-            color: #ffffff !important;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .nav-link:hover {
-            color: #d4d4d4 !important;
-        }
-
-        .title {
-            color: #007bff;
-            font-size: 2.5rem;
-            font-weight: bold;
-            background: linear-gradient(90deg, #007bff, #0056b3);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            animation: glow 1.5s infinite;
-        }
-
-        @keyframes glow {
-            0% {
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            }
-            50% {
-                text-shadow: 2px 2px 20px rgba(0, 91, 234, 0.7);
-            }
-            100% {
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            }
-        }
-
-        .btn-primary, .btn-success {
-            background-color: #007bff;
-            border: none;
-            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-        }
-
-        .btn-primary:hover, .btn-success:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-        }
-
-        .btn-primary:active, .btn-success:active {
-            transform: scale(1);
-        }
-
-        .card {
-            border: 1px solid #007bff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease-in-out;
-        }
-
-        .card:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .form-control {
-            border: 1px solid #007bff;
-            transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-
-        .form-control:focus {
-            border-color: #0056b3;
-            box-shadow: 0 0 8px rgba(0, 91, 234, 0.5);
-        }
-
-        .no-spinners {
-            -moz-appearance: textfield;
-        }
-
-        .no-spinners::-webkit-outer-spin-button,
-        .no-spinners::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        .card-title {
-            font-size: 1.25rem;
-            color: #0056b3;
-        }
-
-        .input-group .form-control {
-            border-radius: 0.25rem 0 0 0.25rem;
-        }
-
-        .input-group .btn {
-            border-radius: 0 0.25rem 0.25rem 0;
-        }
-
-        #result {
-            font-size: 1.5rem;
-            color: #007bff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Marks Percentage Calculator</title>
 </head>
 <body>
     <div class="container mt-5">
@@ -146,45 +42,7 @@
         </div>
     </div>
 
-    <script>
-        function generateMarksInputs() {
-            const numSubjects = document.getElementById('numSubjects').value;
-            const marksForm = document.getElementById('marksInputs');
-            marksForm.innerHTML = ''; // Clear previous inputs
-
-            if (numSubjects > 0) {
-                for (let i = 1; i <= numSubjects; i++) {
-                    const formGroup = document.createElement('div');
-                    formGroup.className = 'mb-3';
-                    formGroup.innerHTML = `
-                        <label for="subject${i}" class="form-label">Marks for Subject ${i}</label>
-                        <input type="number" class="form-control no-spinners" id="subject${i}" placeholder="Enter marks">
-                    `;
-                    marksForm.appendChild(formGroup);
-                }
-                document.getElementById('marksForm').style.display = 'block';
-            } else {
-                document.getElementById('marksForm').style.display = 'none';
-            }
-        }
-
-        function calculatePercentage() {
-            const numSubjects = document.getElementById('numSubjects').value;
-            let totalMarks = 0;
-
-            for (let i = 1; i <= numSubjects; i++) {
-                const marks = parseFloat(document.getElementById(`subject${i}`).value);
-                if (!isNaN(marks)) {
-                    totalMarks += marks;
-                }
-            }
-
-            const percentage = totalMarks / numSubjects;
-            document.getElementById('result').innerText = `Your percentage is ${percentage.toFixed(2)}%`;
-            document.getElementById('resultCard').style.display = 'block';
-        }
-    </script>
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
