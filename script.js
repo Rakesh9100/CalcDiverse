@@ -130,7 +130,6 @@ input.addEventListener('input',(e)=>{
         const elementText = ele.toLowerCase();
         return elementText.includes(searchTerm);
     });
-    console.log(result)
     if(filtered && e.target.value.length>0){
         filtered.map((item,index)=>{
             let p=document.createElement('p')
