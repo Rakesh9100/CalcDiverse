@@ -117,10 +117,20 @@ calculators.forEach(calculator => {
 let search_input_container=document.querySelector('.search-input-container'),
     calculatorSearch=document.getElementById('calculatorSearch')
 input.addEventListener('input',(e)=>{
+    let search_input_container=document.querySelector('.search-input-container')
+    let result=document.getElementById('searchResults_Container')?document.getElementById('searchResults_Container'):false
+    if(result){
+      search_input_container.removeChild(result)
+    }
     let searchResults_Container=document.createElement('div')
     let div=document.createElement('div')
     searchResults_Container.setAttribute('id','searchResults_Container')
-    let filtered=h2TextContents.filter(ele=>ele.toLowerCase().includes(e.target.value.toLowerCase()))
+    let filtered = h2TextContents.filter(ele => {
+        const searchTerm = e.target.value.toLowerCase();
+        const elementText = ele.toLowerCase();
+        return elementText.includes(searchTerm);
+    });
+    console.log(result)
     if(filtered && e.target.value.length>0){
         filtered.map((item,index)=>{
             let p=document.createElement('p')
