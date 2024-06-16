@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integer to String Calculator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: lightsalmon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .calculator-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Integer to String Calculator</h1>
+        <form id="calculator-form">
+            <div class="form-group">
+                <label for="integer-input">Enter an Integer:</label>
+                <input type="number" class="form-control" id="integer-input" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Convert</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('calculator-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get the integer input value
+            var integerInput = document.getElementById('integer-input').value;
+            var integerNumber = parseInt(integerInput);
+
+            // Convert the integer to a string
+            var resultString = integerToString(integerNumber);
+
+            // Display the result
+            document.getElementById('result').textContent = 'Result: ' + resultString;
+        });
+
+        function integerToString(number) {
+            const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            let result = '';
+
+            while (number > 0) {
+                number--; // Adjust for 0-based index
+                result = alphabet[number % 26] + result;
+                number = Math.floor(number / 26);
+            }
+
+            return result;
+        }
+    </script>
+</body>
+</html>
