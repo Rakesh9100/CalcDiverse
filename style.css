@@ -76,7 +76,8 @@
     z-index: 99999;
 }
 
-#loader:before {
+#loader:before,
+#loader:after {
     content: "";
     position: absolute;
     top: 5px;
@@ -85,24 +86,17 @@
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #e74c3c;
-    -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
 
-#loader:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #f9c922;
-    -webkit-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
+#loader:before {
+    border-top-color: #e74c3c;
 }
+
+#loader:after {
+    border-top-color: #f9c922;
+}
+
 
 .loaded #loader-wrapper {
     visibility: hidden;
