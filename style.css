@@ -1535,7 +1535,8 @@ section {
     display: inline;
     position: relative;
 }
-#searchResults_Container{
+
+#searchResults_Container {
     position: absolute;
     max-height: 40rem;
     background-color: white;
@@ -1549,7 +1550,15 @@ section {
     overflow-x: hidden;
     max-width: 60rem;
 }
-#searchResults_Container p{text-align: left;padding: 1rem;border-bottom: 0.1rem solid;font-size: 1.3rem;font-weight: 600;}
+
+#searchResults_Container p {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 0.1rem solid;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
 #searchBar button {
     font-size: 2rem;
     background: transparent;
