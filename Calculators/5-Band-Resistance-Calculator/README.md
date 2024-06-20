@@ -2,23 +2,21 @@
 
 # Description :-
 
-As the name suggest this is a Calculator which will help you calculate the resistance value by input the 5 colour bands present on the resistor and it will return the resistance value for it with including the tolerance value. The calculator is responsive also and can be viewed on any device.
+This is a calculator that will help you calculate the resistance value by inputting the 5 color bands present on the resistor and it will return the resistance value for it including the tolerance value.
 
 ## Tech Stacks :-
 
 - HTML 
 - CSS 
-- Javascript
+- JavaScript
 
 ## Features :-
 
-- Gives the theoritical reistance value of a given resistor.
+- Gives the theoretical resistance value of a given resistor.
+- The calculator is responsive also and can be viewed on any device.
 
 ## Screenshots :-
 
 ![Project demo 1](./assets/demo.png)
----
+
 ![Project demo 2](./assets/demo1.png)
----
-
-
