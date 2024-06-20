@@ -1,4 +1,4 @@
-# <p align="center">Fibonacci Calculator</p>
+# <p align="center">Freelance Rate Calculator</p>
 
 ## Description :-
 
@@ -12,4 +12,4 @@ The Freelance Rate Calculator is a tool that helps freelancers determine their o
 
 ## Screenshots :-
 
-![Screenshot 2024-06-17 180054](https://github.com/mahek0620/CalcDiverse/assets/136893675/0178596c-3964-4255-89b8-a173e0cd362a)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/3064e1c5-5c81-4b82-ba1e-cdc880fe609a)
