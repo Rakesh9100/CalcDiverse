@@ -85,7 +85,6 @@ select {
     border: 5px solid brown;
 }
 
-
 @media only screen and (max-width: 786px) {
     body {
         font-size: 14px;
