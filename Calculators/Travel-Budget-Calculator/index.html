@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Budget Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Budget Calculator</h1>
+        <form id="budgetForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="transport">Transport ($):</label>
+                <input type="number" id="transport" name="transport" min="0" value="0">
+                <span class="error" id="transportError"></span>
+            </div>
+            <div class="form-group">
+                <label for="accommodation">Accommodation ($):</label>
+                <input type="number" id="accommodation" name="accommodation" min="0" value="0">
+                <span class="error" id="accommodationError"></span>
+            </div>
+            <div class="form-group">
+                <label for="food">Food ($):</label>
+                <input type="number" id="food" name="food" min="0" value="0">
+                <span class="error" id="foodError"></span>
+            </div>
+            <div class="form-group">
+                <label for="activities">Activities ($):</label>
+                <input type="number" id="activities" name="activities" min="0" value="0">
+                <span class="error" id="activitiesError"></span>
+            </div>
+            <div class="form-group">
+                <label for="misc">Miscellaneous ($):</label>
+                <input type="number" id="misc" name="misc" min="0" value="0">
+                <span class="error" id="miscError"></span>
+            </div>
+            <button type="button" onclick="calculateTotal()">Calculate Total</button>
+        </form>
+        <h2>Total Cost: $<span id="totalCost">0</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
