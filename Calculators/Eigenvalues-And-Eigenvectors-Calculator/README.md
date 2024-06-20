@@ -1,4 +1,4 @@
-# <p align="center">Eigenvalues and Eigenvectors Calculator</p>
+# <p align="center">Eigenvalues And Eigenvectors Calculator</p>
 
 ## Description :-
 
