@@ -11,3 +11,6 @@ It is a simple calculator that calculates the total travel expenses based on var
 - JavaScript
 
 
+## Screenshots
+
+![Screenshot 2024-06-20 114948](https://github.com/Rakesh9100/CalcDiverse/assets/136893675/c2301fc8-ede3-4762-830c-e833ef90616f)
