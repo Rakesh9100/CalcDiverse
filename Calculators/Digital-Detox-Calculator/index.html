@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Detox Calculator</title>
+</head>
+<body>
+    <div class="main-container">
+        <img src="assets/left-image.jpg" alt="Left Image" class="side-image">
+        <div class="container">
+            <h1>Digital Detox Calculator</h1>
+            <form id="detoxForm">
+                <div class="form-group">
+                    <label for="hoursSpent">Hours spent on devices daily:</label>
+                    <input type="number" id="hoursSpent" required>
+                </div>
+                <div class="form-group">
+                    <label for="daysPerWeek">Days per week:</label>
+                    <input type="number" id="daysPerWeek" required>
+                </div>
+                <button type="button" onclick="calculateDetox()">Calculate</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        <img src="assets/right-image.jpg" alt="Right Image" class="side-image">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

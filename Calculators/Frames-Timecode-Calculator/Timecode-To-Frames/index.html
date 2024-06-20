@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+    <title>Frames Timecode Calculator</title>
+</head>
+
+<body style="margin: 0;padding: 0;">
+    <div class="calculator_container">
+        <div style="color: black;">
+            <h1 id="timecode_head">Timecode</h1>
+            <div class="calc_container">
+                <div class="hours_container">
+                    <h1>Time in hours</h1>
+                    <input type="number" name="hours" required placeholder="Enter the hours"/>
+                </div>
+                <div class="min_container">
+                    <h1>Time in minutes</h1>
+                    <input type="number" name="minutes" required placeholder="Enter the minutes"/>
+                </div>
+            </div>
+            <div class="calc_container">
+                <div class="sec_container">
+                    <h1>Time in seconds</h1>
+                    <input type="number" name="seconds" required placeholder="Enter the seconds"/>
+                </div>
+                <div class="x_frame_container">
+                    <h1>Excess frames</h1>
+                    <input type="number" name="excess_frames" required placeholder="Enter the frames"/>
+                </div>
+            </div>
+            <div class="calc_container">
+                <div class="x_frame_container">
+                    <h1>Frame rate</h1>
+                    <input type="number" required placeholder="Enter the Frame Rate" name="frame_rate"/>
+                </div>
+            </div>
+        </div>
+        <div style="color: black;margin-top: 2rem;" class="input_container">
+            <div class="frames_container">
+                <h1>Frames</h1>
+                <input type="number" readonly name="frames"/>
+            </div>
+        </div>
+        <div style="margin-top: 2rem;">
+            <a href="../index.html" style="text-decoration: none; color: white; font-family: Nunito; font-weight: 700;">Click here to convert Frames to Timecode ↗️</a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
