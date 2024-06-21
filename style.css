@@ -1450,6 +1450,7 @@ section {
     justify-content: center;
     gap: 2rem;
 }
+
 .social a i {
     transition: transform 0.3s ease-in-out;
 }
@@ -1460,7 +1461,6 @@ section {
     transform: translateY(-8px);
 }
 
-
 .social a {
     color: var(--secondary);
 }
@@ -1468,15 +1468,19 @@ section {
 .social a.user:hover {
     color: #4af3b5;
 }
+
 .social a.message:hover {
     color: #73408f;
 }
+
 .social a.github:hover {
     color: #21d061;
 }
+
 .social a.twitter:hover {
     color: #00fff7;
 }
+
 .social a.facebook:hover {
     color: #0026ff;
 }
@@ -1496,7 +1500,6 @@ section {
     bottom: 0;
     right: 0;
     margin: 0 2rem 2rem 0;
-
     height: fit-content;
     width: fit-content;
     z-index: 100000;
@@ -1507,7 +1510,6 @@ section {
     height: 42px;
     width: 42px;
     background-color: rgba(255, 255, 255, 0.9);
-
     border: 0;
     cursor: pointer;
     box-shadow: 0px 0px 10px 1px palevioletred;
