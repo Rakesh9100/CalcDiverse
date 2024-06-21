@@ -174,3 +174,41 @@
 #close-alert:hover {
     background-color: #f8d7da;
 }
+
+@media (max-width: 768px) {
+    #heading h1 {
+        font-size: 1.5em;
+    }
+
+    #onetwo button {
+        margin: 0 0 4px;
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    #ip1,
+    #ip2 {
+        font-size: 1em;
+        height: 2.2vmax;
+        padding-left: 1.2vmax;
+        padding-right: 1.2vmax;
+    }
+}
+
+@media (max-width: 576px) {
+    #main {
+        padding: 20px;
+    }
+
+    #heading h1 {
+        font-size: 1.2em;
+    }
+
+    #twotwo h2 {
+        font-size: 1.5vmax;
+    }
+
+    #twoone img {
+        height: 25vmax;
+    }
+}
