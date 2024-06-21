@@ -5,7 +5,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(45deg, #3498db, #2c3e50);
+    background-image: url('assets/background.jpeg');
     color: #ecf0f1;
 }
 
@@ -37,7 +37,7 @@ input {
     width: 60px;
     margin: 0 5px;
     padding: 10px;
-    border: none;
+    /* border: none; */
     border-radius: 5px;
     background-color: #ecf0f1;
     color: #333;

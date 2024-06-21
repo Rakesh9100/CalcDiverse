@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Running Pace Calculator</title>
+</head>
+
+<body>
+    <h1>Running Pace Calculator</h1>
+    
+    <div id="calculator">
+        <!-- Section to calculate running pace -->
+        <h2>Calculate Pace</h2>
+        <label for="timePace">Enter Time (HH:MM:SS):</label>
+        <input type="text" id="timePace" placeholder="Enter time">
+
+        <label for="distancePace">Enter Distance:</label>
+        <input type="text" id="distancePace" placeholder="Enter distance">
+
+        <!-- Flex container for distance unit selection and calculate button -->
+        <div class="flex-container">
+            <label for="distanceUnitPace">Distance Unit:</label>
+            <select id="distanceUnitPace" onchange="setPredefinedDistance('distancePace', this.value)">
+                <option value="" selected disabled>Select an option</option>
+                <option value="km">Kilometers</option>
+                <option value="miles">Miles</option>
+                <option value="meters">Meters</option>
+                <option value="yards">Yards</option>
+                <option value="marathon">Marathon</option>
+                <option value="half_marathon">Half-Marathon</option>
+                <option value="1k">1K</option>
+                <option value="5k">5K</option>
+                <option value="10k">10K</option>
+                <option value="1mile">1 mile</option>
+                <option value="5miles">5 miles</option>
+                <option value="10miles">10 miles</option>
+                <option value="800meters">800 meters</option>
+                <option value="1500meters">1500 meters</option>
+            </select>
+            <button onclick="calculatePace()">Calculate Pace</button>
+        </div>
+        <div id="resultPace"></div>
+
+        <!-- Section to calculate time required to run a distance -->
+        <h2>Calculate Time</h2>
+        <label for="paceTime">Enter Pace (HH:MM:SS):</label>
+        <input type="text" id="paceTime" placeholder="Enter pace">
+
+        <!-- Flex container for pace unit selection -->
+        <div class="flex-container">
+            <label for="paceUnitTime">Pace Unit:</label>
+            <select id="paceUnitTime">
+                <option value="min/km">min/km</option>
+                <option value="min/mile">min/mile</option>
+                <option value="mph">miles per hour</option>
+                <option value="kph">kilometers per hour</option>
+                <option value="m/min">meters per minute</option>
+                <option value="m/sec">meters per second</option>
+                <option value="yards/min">yards per minute</option>
+                <option value="yards/sec">yards per second</option>
+            </select>
+        </div>
+        <label for="distanceTime">Enter Distance:</label>
+        <input type="text" id="distanceTime" placeholder="Enter distance">
+
+        <!-- Flex container for distance unit selection and calculate button -->
+        <div class="flex-container">
+            <label for="distanceUnitTime">Distance Unit:</label>
+            <select id="distanceUnitTime" onchange="setPredefinedDistance('distanceTime', this.value)">
+                <option value="" selected disabled>Select an option</option>
+                <option value="km">Kilometers</option>
+                <option value="miles">Miles</option>
+                <option value="meters">Meters</option>
+                <option value="yards">Yards</option>
+                <option value="marathon">Marathon</option>
+                <option value="half_marathon">Half-Marathon</option>
+                <option value="1k">1K</option>
+                <option value="5k">5K</option>
+                <option value="10k">10K</option>
+                <option value="1mile">1 mile</option>
+                <option value="5miles">5 miles</option>
+                <option value="10miles">10 miles</option>
+                <option value="800meters">800 meters</option>
+                <option value="1500meters">1500 meters</option>
+            </select>
+            <button onclick="calculateTime()">Calculate Time</button>
+        </div>
+
+        <div id="resultTime"></div>
+
+        <!-- Section to calculate distance that can be covered in a given time and pace -->
+        <h2>Calculate Distance</h2>
+        <label for="timeDistance">Enter Time (HH:MM:SS):</label>
+        <input type="text" id="timeDistance" placeholder="Enter time">
+
+        <label for="paceDistance">Enter Pace (HH:MM:SS):</label>
+        <input type="text" id="paceDistance" placeholder="Enter pace">
+
+        <!-- Flex container for pace unit selection and calculate button -->
+        <div class="flex-container">
+            <label for="paceUnitDistance">Pace Unit:</label>
+            <select id="paceUnitDistance">
+                <option value="min/km">min/km</option>
+                <option value="min/mile">min/mile</option>
+                <option value="mph">miles per hour</option>
+                <option value="kph">kilometers per hour</option>
+                <option value="m/min">meters per minute</option>
+                <option value="m/sec">meters per second</option>
+                <option value="yards/min">yards per minute</option>
+                <option value="yards/sec">yards per second</option>
+            </select>
+            <button onclick="calculateDistance()">Calculate Distance</button>
+        </div>
+
+        <div id="resultDistance"></div>
+
+        <!-- Button to clear all inputs and results -->
+        <button onclick="clear_fun()">Clear</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

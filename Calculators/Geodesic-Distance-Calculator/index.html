@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Geodesic Distance Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Geodesic Distance Calculator</h1>
+        <label for="lat1">Latitude 1:</label>
+        <input type="number" id="lat1" step="0.01" value="0">
+        <label for="lon1">Longitude 1:</label>
+        <input type="number" id="lon1" step="0.01" value="0">
+        <label for="lat2">Latitude 2:</label>
+        <input type="number" id="lat2" step="0.01" value="0">
+        <label for="lon2">Longitude 2:</label>
+        <input type="number" id="lon2" step="0.01" value="0">
+        <button onclick="calculateGeodesicDistance()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

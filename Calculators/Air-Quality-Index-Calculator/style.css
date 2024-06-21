@@ -28,15 +28,16 @@ body {
     color: rgb(10, 10, 10);
     text-align: center;
     width: 40%;
-    height: 40%;
+    height: fit-content;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding-top: 50px;
 }
 
 #input-label {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 500;
     color: #000000;
+    margin-bottom: 20px;
 }
 
 #input-id {
@@ -71,4 +72,38 @@ button:hover {
     text-align: center;
     justify-content: center;
     font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 60%;
+    }
+
+    #input-id {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 70%;
+        padding: 20px;
+        height: fit-content;
+    }
+
+    #input-id {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    #input-label {
+        font-size: 15px;
+    }
 }

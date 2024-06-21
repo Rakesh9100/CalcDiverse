@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 hamburger.addEventListener("click", mobileMenu);
+
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
@@ -104,6 +105,51 @@ window.addEventListener('scroll', function () {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+const input = document.getElementById('calculatorSearch');
+let calculators = document.querySelectorAll('.container .box');
+let h2TextContents = [];
+
+calculators.forEach(calculator => {
+    let h2Element = calculator.querySelector('h2');
+    if (h2Element) {
+        h2TextContents.push(h2Element.textContent);
+    }
+});
+
+let search_input_container = document.querySelector('.search-input-container'),
+    calculatorSearch = document.getElementById('calculatorSearch')
+input.addEventListener('input', (e) => {
+    let search_input_container = document.querySelector('.search-input-container')
+    let result = document.getElementById('searchResults_Container') ? document.getElementById('searchResults_Container') : false
+    if (result) {
+        search_input_container.removeChild(result)
+    }
+    let searchResults_Container = document.createElement('div')
+    let div = document.createElement('div')
+    searchResults_Container.setAttribute('id', 'searchResults_Container')
+    let filtered = h2TextContents.filter(ele => {
+        const searchTerm = e.target.value.toLowerCase();
+        const elementText = ele.toLowerCase();
+        return elementText.includes(searchTerm);
+    });
+    if (filtered && e.target.value.length > 0) {
+        filtered.map((item, index) => {
+            let p = document.createElement('p')
+            p.textContent = item
+            p.setAttribute('key', index)
+            div.appendChild(p)
+            p.addEventListener('click', () => {
+                calculatorSearch.value = item
+                searchResults_Container.removeChild(div)
+            })
+        })
+        searchResults_Container.appendChild(div)
+        search_input_container.appendChild(searchResults_Container)
+    }
+    if (e.target.value.length === 0) {
+        searchResults_Container.removeChild(div)
+    }
+})
 
 // Function to filter calculators
 function filterCalculators() {
@@ -113,13 +159,14 @@ function filterCalculators() {
     calculators = document.querySelectorAll('.container .box');
     var noResults = document.getElementById('noResults');
     var hasResults = false;
-
     for (i = 0; i < calculators.length; i++) {
         var calculator = calculators[i];
         var h2 = calculator.querySelector('h2');
+        var h3 = calculator.querySelector('h3');
         var calculatorName = h2.textContent || h2.innerText;
+        var calculatorDescription = h3.textContent || h3.innerText;
 
-        if (calculatorName.toUpperCase().indexOf(filter) > -1) {
+        if ((calculatorName.toUpperCase().indexOf(filter) > -1) || (calculatorDescription.toUpperCase().indexOf(filter) > -1)) {
             calculator.style.display = "flex";
             hasResults = true;
         } else {
@@ -134,7 +181,7 @@ function filterCalculators() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('noResults').style.display = 'none';
 });
 
@@ -159,11 +206,11 @@ if (SpeechRecognition) {
     const micIcon = micBtn.firstElementChild;
 
     micBtn.addEventListener("click", micBtnClick);
+
     function micBtnClick() {
         if (micIcon.classList.contains("fa-microphone")) { // Start Voice Recognition
             recognition.start(); // First time you have to allow access to mic!
-        }
-        else {
+        } else {
             recognition.stop();
         }
     }
@@ -193,8 +240,7 @@ if (SpeechRecognition) {
         searchBarInput.value = newtranscript;
         filterCalculators();
     }
-}
-else {
+} else {
     console.log("Your Browser does not support speech Recognition");
     info.textContent = "Your Browser does not support Speech Recognition";
 }

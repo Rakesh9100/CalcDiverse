@@ -17,6 +17,26 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../../assets/images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.4rem;
+}
+
+body,
+html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
 h1 {
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -41,28 +61,45 @@ h1:hover {
     align-items: center;
 }
 
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    width: 90%;
+}
+
+.placeholder {
+    width: 95px;
+    height: 95px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.placeholder::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+    animation: loading 0.7s infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
 div {
     display: block;
-}
-
-body,
-html {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 1.4;
-    scroll-behavior: smooth;
-}
-
-body {
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url(../../assets/images/background.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 1.4rem;
 }
 
 .contributor-card:nth-child(4n+1),
