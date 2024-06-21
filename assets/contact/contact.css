@@ -80,7 +80,7 @@ textarea {
 
 textarea {
     border: 1px solid #ccc;
-    resize: vertical; 
+    resize: vertical;
 }
 
 input:hover,
@@ -177,6 +177,7 @@ button:hover {
     color: rgb(255, 255, 255);
     margin-bottom: 0;
 }
+
 .footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
@@ -197,11 +198,13 @@ button:hover {
     justify-content: center;
     gap: 2rem;
 }
+
 .social a i {
     transition: transform 0.3s ease-in-out;
 }
 
 /* Pop up effect */
+
 .social a:hover i {
     transform: translateY(-8px);
 }
@@ -213,15 +216,19 @@ button:hover {
 .social a.user:hover {
     color: #4af3b5;
 }
+
 .social a.message:hover {
     color: #73408f;
 }
+
 .social a.github:hover {
     color: #21d061;
 }
+
 .social a.twitter:hover {
     color: #00fff7;
 }
+
 .social a.facebook:hover {
     color: #0026ff;
 }
