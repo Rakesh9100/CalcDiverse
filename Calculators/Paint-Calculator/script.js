@@ -22,9 +22,8 @@ function calculatePaint() {
     var totalPaintNeeded = wallArea / coveragePerLiter * coats;
 
     // Display the result
-    var resultText = "Total surface area to be painted: " + (wallArea+ doorArea + windowArea).toFixed(2) + " square meters<br>";
+    var resultText = "Total surface area to be painted: " + (wallArea + doorArea + windowArea).toFixed(2) + " square meters<br>";
     resultText += "Total surface area to be painted after deducting doors and windows: " + (wallArea).toFixed(2) + " square meters<br>";
     resultText += "Total paint required for " + coats + " coats: " + totalPaintNeeded.toFixed(2) + " liters";
     document.getElementById("result").innerHTML = resultText;
 }
-
