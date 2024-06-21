@@ -75,23 +75,6 @@
     text-decoration: underline;
 }
 
-/* Responsive Media Query */
-@media screen and (max-width: 768px) {
-    .faqs_container {
-        grid-template-columns: 1fr;
-    }
-
-    .faqs {
-        flex-flow: column;
-    }
-
-    .faqHeading {
-        margin-top: 2rem;
-        padding: 0 0.5rem;
-        text-align: center;
-    }
-}
-
 .footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
@@ -112,16 +95,16 @@
     justify-content: center;
     gap: 2rem;
 }
+
 .social a i {
     transition: transform 0.3s ease-in-out;
 }
 
 /* Pop up effect */
 
-.social a:hover i{
+.social a:hover i {
     transform: translateY(-8px);
 }
-
 
 .social a {
     color: var(--secondary);
@@ -130,15 +113,37 @@
 .social a.user:hover {
     color: #4af3b5;
 }
+
 .social a.message:hover {
     color: #73408f;
 }
+
 .social a.github:hover {
     color: #21d061;
 }
+
 .social a.twitter:hover {
     color: #00fff7;
 }
+
 .social a.facebook:hover {
     color: #0026ff;
+}
+
+/* Responsive Media Query */
+
+@media screen and (max-width: 768px) {
+    .faqs_container {
+        grid-template-columns: 1fr;
+    }
+
+    .faqs {
+        flex-flow: column;
+    }
+
+    .faqHeading {
+        margin-top: 2rem;
+        padding: 0 0.5rem;
+        text-align: center;
+    }
 }
