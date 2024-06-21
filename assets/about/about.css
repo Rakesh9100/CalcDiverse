@@ -53,13 +53,14 @@
     justify-content: center;
     gap: 2rem;
 }
+
 .social a i {
     transition: transform 0.3s ease-in-out;
 }
 
 /* Pop up effect */
 
-.social a:hover I {
+.social a:hover i {
     transform: translateY(-8px);
 }
 
