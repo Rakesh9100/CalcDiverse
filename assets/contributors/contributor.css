@@ -6,6 +6,12 @@
     --dark: #f50414;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -33,12 +39,6 @@ h1:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 div {
@@ -80,14 +80,12 @@ body {
 
 .contributor-card:hover {
     box-shadow: 0 0 10px rgba(253, 251, 251, 0.5);
-    /* Adjust the color and size of the glow as needed */
 }
 
 .contributor-card:active {
     transform: scale(1.1);
     opacity: 0.8;
     box-shadow: 0 0 20px rgb(188, 240, 210);
-    /* Adjust the color and size of the glow as needed */
 }
 
 /* Footer Styling */
@@ -149,12 +147,14 @@ body {
     justify-content: center;
     gap: 2rem;
 }
+
 .social a i {
     transition: transform 0.3s ease-in-out;
 }
+
 /* Pop up effect */
 
-.social a:hover i{
+.social a:hover i {
     transform: translateY(-8px);
 }
 
@@ -166,15 +166,19 @@ body {
 .social a.user:hover {
     color: #4af3b5;
 }
+
 .social a.message:hover {
     color: #73408f;
 }
+
 .social a.github:hover {
     color: #21d061;
 }
+
 .social a.twitter:hover {
     color: #00fff7;
 }
+
 .social a.facebook:hover {
     color: #0026ff;
 }
@@ -202,7 +206,6 @@ body {
     cursor: pointer;
 }
 
-
 #progress-value {
     display: block;
     height: calc(100% - 15px);
@@ -221,7 +224,6 @@ body {
     bottom: 0;
     right: 0;
     margin: 0 2rem 2rem 0;
-
     height: fit-content;
     width: fit-content;
     z-index: 100000;
@@ -232,7 +234,6 @@ body {
     height: 42px;
     width: 42px;
     background-color: rgba(255, 255, 255, 0.9);
-
     border: 0;
     cursor: pointer;
     box-shadow: 0px 0px 10px 1px palevioletred;
