@@ -225,9 +225,6 @@ span:hover {
         body.light .calculator .clear, .calculator .clear{
             width: 95%;
         }
-        body.light .calculator .clear-one, .calculator .clear-one {
-    
-        }
         .calculator .value{
             height:70px;
             width:95%;
