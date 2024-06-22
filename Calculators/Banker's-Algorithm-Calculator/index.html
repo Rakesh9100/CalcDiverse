@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Banker's Algorithm Calculator</title>
+</head>
+
+<body class="bg-gray-100">
+    <nav class="navbar navbar-expand-lg navbar-body bg-body">
+        <div class="container">
+            <a class="navbar-brand" href="#">CalcDiverse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/"  target="_blank">Banker's Algorithm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/"  target="_blank">Safety Algorithm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/"  target="_blank">Resource-Request Algorithm</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto py-5">
+        <h3 class="text-center text-3xl font-semibold mb-5">Banker's Algorithm</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Total Instance Form -->
+            <div class="p-4 bg-white rounded-md shadow-md">
+                <h4 class="text-lg font-semibold mb-3">No of Instances of Resources</h4>
+                <div class="flex flex-col space-y-3">
+                    <div class="flex items-center">
+                        <span class="mr-3">Resource A:</span>
+                        <input type="text" class="form-control border px-3 py-2 w-32" id="resourceA" required>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-3">Resource B:</span>
+                        <input type="text" class="form-control border px-3 py-2 w-32" id="resourceB" required>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-3">Resource C:</span>
+                        <input type="text" class="form-control border px-3 py-2 w-32" id="resourceC" required>
+                    </div>
+                </div>
+            </div>
+            <!-- Allocation, Maximum, Need, Available Forms -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Allocation Form -->
+                <div class="p-4 bg-white rounded-md shadow-md">
+                    <h4 class="text-lg font-semibold mb-3">Allocation</h4>
+                    <table class="table-auto w-full">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Add rows for P1 to P5 allocation -->
+                            <tr>
+                                <td>P1</td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a11"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a12"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a13"></td>
+                            </tr>
+                            <tr>
+                                <td>P2</td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a21"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a22"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a23"></td>
+                            </tr>
+                            <tr>
+                                <td>P3</td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a31"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a32"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a33"></td>
+                            </tr>
+                            <tr>
+                                <td>P4</td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a41"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a42"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a43"></td>
+                            </tr>
+                            <tr>
+                                <td>P5</td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a51"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a52"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="a53"></td>
+                            </tr>
+                            <!-- Repeat similar rows for other processes -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Maximum Form -->
+                <div class="p-4 bg-white rounded-md shadow-md">
+                    <h4 class="text-lg font-semibold mb-3">Maximum</h4>
+                    <table class="table-auto w-full">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Add rows for P1 to P5 maximum -->
+                            <tr>
+                                <td>P1</td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m11"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m12"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m13"></td>
+                            </tr>
+                            <tr>
+                                <td>P2</td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m21"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m22"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m23"></td>
+                            </tr>
+                            <tr>
+                                <td>P3</td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m31"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m32"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m33"></td>
+                            </tr>
+                            <tr>
+                                <td>P4</td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m41"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m42"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m43"></td>
+                            </tr>
+                            <tr>
+                                <td>P5</td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m51"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m52"></td>
+                                <td><input type="text" class="form-control border px-3 py-2 w-16" id="m53"></td>
+                            </tr>
+                            <!-- Repeat similar rows for other processes -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Need Form -->
+            <div class="p-4 bg-white rounded-md shadow-md">
+                <h4 class="text-lg font-semibold mb-3">Need</h4>
+                <table class="table-auto w-full">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Add rows for P1 to P5 need -->
+                        <tr>
+                            <td>P1</td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n11"></td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n12"></td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n13"></td>
+                        </tr>
+                        <tr>
+                            <td>P2</td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n21"></td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n22"></td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n23"></td>
+                        </tr>
+                        <tr>
+                            <td>P3</td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n31"></td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n32"></td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n33"></td>
+                        </tr>
+                        <tr>
+                            <td>P4</td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n41"></td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n42"></td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n43"></td>
+                        </tr>
+                        <tr>
+                            <td>P5</td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n51"></td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n52"></td>
+                            <td><input type="text" class="form-control border px-3 py-2 w-16" id="n53"></td>
+                        </tr>
+                        <!-- Repeat similar rows for other processes -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- Available Form -->
+            <div class="p-4 bg-white rounded-md shadow-md">
+                <h4 class="text-lg font-semibold mb-3">Available</h4>
+                <div class="flex items-center">
+                    <span class="mr-3">A:</span>
+                    <input type="text" class="form-control border px-3 py-2 w-16" id="av11">
+                </div>
+                <div class="flex items-center mt-3">
+                    <span class="mr-3">B:</span>
+                    <input type="text" class="form-control border px-3 py-2 w-16" id="av12">
+                </div>
+                <div class="flex items-center mt-3">
+                    <span class="mr-3">C:</span>
+                    <input type="text" class="form-control border px-3 py-2 w-16" id="av13">
+                </div>
+            </div>
+        </div>
+        <!-- Algorithm Buttons -->
+        <div class="grid grid-cols-2 gap-4 mt-5">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="example()">Example</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="run_algo()">Run Algorithm</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="reset()">Reset Values</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="req_res()">Request</button>
+        </div>
+        <!-- Process Sequence -->
+        <div class="flex justify-center mt-5 items-center sm:mt-3">
+            <!-- Adjusted classes for vertical centering -->
+            <h4 class="mr-3 lg:text-xl mt-1 mb-[0.5px] sm:text-sm font-semibold">Process Sequence :</h4>
+            <input id="p1" class="form-control border px-3 py-2 mx-1 w-16 sm:w-14 md:w-20 lg:w-24 h-10 sm:h-8 lg:h-12" maxlength="2">
+            <input id="p2" class="form-control border px-3 py-2 mx-1 w-16 sm:w-14 md:w-20 lg:w-24 h-10 sm:h-8 lg:h-12" maxlength="2">
+            <input id="p3" class="form-control border px-3 py-2 mx-1 w-16 sm:w-14 md:w-20 lg:w-24 h-10 sm:h-8 lg:h-12" maxlength="2">
+            <input id="p4" class="form-control border px-3 py-2 mx-1 w-16 sm:w-14 md:w-20 lg:w-24 h-10 sm:h-8 lg:h-12" maxlength="2">
+            <input id="p5" class="form-control border px-3 py-2 mx-1 w-16 sm:w-14 md:w-20 lg:w-24 h-10 sm:h-8 lg:h-12" maxlength="2">
+        </div>
+    </div>
+    <footer class="text-center mt-4 mb-4 bg-body py-4">
+        <div class="container mx-auto">
+            <p class="text-lg">Made by CalcDiverse<span class="text-red-500">&hearts;</span></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
