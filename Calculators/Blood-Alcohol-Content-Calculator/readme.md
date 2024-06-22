@@ -12,3 +12,4 @@ Blood Alcohol Content Calculator calculate the blood alcohol content based on th
 
 ## Screenshot 
 
+![Img](https://raw.githubusercontent.com/AmrutaJayanti/CalcDiverse/BAC/Calculators/Blood-Alcohol-Content-Calculator/screenshot.png)
