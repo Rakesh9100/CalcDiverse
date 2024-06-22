@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paint Calculator</title>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <h1>Paint Calculator</h1>
+            <form id="paintForm">
+                <div class="input-container">
+                    <div class="input-group">
+                        <label for="roomWidth">Room Width (meters):</label>
+                        <input type="number" id="roomWidth" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="roomLength">Room Length (meters):</label>
+                        <input type="number" id="roomLength" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="roomHeight">Room Height (meters):</label>
+                        <input type="number" id="roomHeight" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="numDoors">Number of Doors:</label>
+                        <input type="number" id="numDoors" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="numWindows">Number of Windows:</label>
+                        <input type="number" id="numWindows" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="coats">Number of Coats:</label>
+                        <input type="number" id="coats" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="coveragePerLiter">Paint Coverage (sqm per liter):</label>
+                        <input type="number" id="coveragePerLiter" required>
+                    </div>
+                </div>
+                <button type="button" onclick="calculatePaint()">Calculate</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        <script src="script.js"></script>
+    </center>
+</body>
+
+</html>

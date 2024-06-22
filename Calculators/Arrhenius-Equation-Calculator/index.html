@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arrhenius Equation Calculator</title>
+</head>
+
+<body>
+    <div id="box">
+        <h1 class="head">Arrhenius Equation</h1>
+        <img src="assets/formula.png" alt="image">
+        <br>
+        k	=	rate constant <br>
+        A	=	pre-exponential factor <br>
+        E<sub>a</sub>	=	activation energy (in the same units as R*T) <br>
+        R	=	universal gas constant <br>
+        T	=	absolute temperature (in Kelvin) <br>
+    </div>
+    <br>
+    <div id="box1">
+        <h1 class="head">Calculation of Rate Constant</h1>
+        <h1 class="head">(in SI units)</h1><br>
+        Enter the value of A: <input type="number" id="inp1"> <br>
+        Enter the value of E<sub>a</sub> (in Joule): <input type="number" id="inp2"> <br>
+        Enter the value of T (in Kelvin): <input type="number" id="inp3"> <br>
+        <p id="res1">Rate Constant: </p> 
+        <button id="btn1">Calculate</button>
+        <button id="btnn1">Clear</button>
+    </div>
+    <div id="box2">
+        <h1 class="head">Calculation of Activation Energy</h1>
+        <h1 class="head">(in SI units)</h1> <br>
+        Enter the value of k: <input type="number" id="inp4"> <br>
+        Enter the value of A: <input type="number" id="inp5"> <br>
+        Enter the value of T (in Kelvin): <input type="number" id="inp6"> <br>
+        <p id="res2">Activation Energy: </p> 
+        <button id="btn2">Calculate</button>
+        <button id="btnn2">Clear</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

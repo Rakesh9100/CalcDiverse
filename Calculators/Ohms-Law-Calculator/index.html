@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ohms Law Calculator</title>
+</head>
+
+<body>
+    <h1>Ohm's Law Calculator<br></h1><br>
+    <img src="assets/image.png" alt="Ohms law image" width="250" height="130"><br><br>
+    <a href="https://en.wikipedia.org/wiki/Ohm%27s_law" >Click here to find more about Ohm's Law</a><br>
+    <div class="container">
+        <p>Enter any two values and hit "Calculate".The other two values will be calculated by the program!</p>
+        <p><br><b><u>FORMULAE</u>:</b><br><br></p>
+        <p>Voltage=Current * Resistance</p>
+        <p>Power= Voltage * Current<br><br></p>
+        <div class="input-box">
+            <label for="volt">Voltage (V) :</label>
+            <div class="input-unit"><input type="number" id="volt" name="fname"> Volt (V)</div>
+        </div>
+        <div class="input-box">
+            <label for="current">Current (I) :</label>
+            <div class="input-unit"><input type="text" id="current" name="fname"> Ampere (A)</div>
+        </div>
+        <div class="input-box">
+            <label for="resistance">Resistance (R) :</label>
+            <div class="input-unit"><input type="text" id="resistance" name="fname"> Ohm (Ω)</div>
+        </div>
+        <div class="input-box">
+            <label for="power">Power (P) :</label>
+            <div class="input-unit"><input type="number" id="power" name="fname"> Watts (W)</div>
+
+        </div>
+        <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
