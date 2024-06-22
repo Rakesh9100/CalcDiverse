@@ -211,6 +211,9 @@ div {
 .social a.github:hover {
     color: #21d061;
 }
+.social a.linkedin:hover{
+    color:#1990cb;
+}
 
 .social a.twitter:hover {
     color: #00fff7;
