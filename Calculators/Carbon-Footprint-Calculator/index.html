@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Carbon Footprint Calculator</title>
 </head>
-
 <body>
-    <div class="calculator-container">
-        <h1>Carbon Footprint Calculator</h1>
-        <label for="milesDrivenYear">Enter Miles Driven per Year:</label>
-        <input type="number" id="milesDrivenYear" placeholder="Enter miles driven per year">
-
-        <label for="milesDrivenMonth">Enter Miles Driven per Month:</label>
-        <input type="number" id="milesDrivenMonth" placeholder="Enter miles driven per month">
-
-        <label for="milesDrivenWeek">Enter Miles Driven per Week:</label>
-        <input type="number" id="milesDrivenWeek" placeholder="Enter miles driven per week">
-
-        <button onclick="calculateCarbonFootprint()">Calculate</button>
-
-        <div id="result" class="result-container"></div>
+    <h1 class="waviy"><span style="--i:1">C</span><span style="--i:2">a</span><span style="--i:3">r</span><span style="--i:4">b</span><span style="--i:5">o</span><span style="--i:6">n</span> <span style="--i:7">F</span><span style="--i:8">o</span><span style="--i:9">o</span><span style="--i:10">t</span><span style="--i:11">p</span><span style="--i:12">r</span><span style="--i:13">i</span><span style="--i:14">n</span><span style="--i:15">t</span> <span style="--i:16">C</span><span style="--i:17">a</span><span style="--i:18">l</span><span style="--i:19">c</span><span style="--i:20">u</span><span style="--i:21">l</span><span style="--i:22">a</span><span style="--i:23">t</span><span style="--i:24">o</span><span style="--i:25">r</span></h1>
+    <div class="card">
+        <div class="input">
+            <label for="electricity">Electricity Usage (kWh per month):</label>
+            <input type="number" id="electricity" name="electricity">
+        </div>
+        <div class="input">
+            <label for="gas">Gas Usage (kg per month):</label>
+            <input type="number" id="gas" name="gas">
+        </div>
+        <div class="input">
+            <label for="kilometers">Kilometers Driven (per month):</label>
+            <input type="number" id="kilometers" name="kilometers">
+        </div>
+        <div class="input">
+            <label for="flights">Flights Taken (per year):</label>
+            <input type="number" id="flights" name="flights">
+        </div>
+        <div class="button">
+            <button id="convert" onclick="calculateCarbonFootprint()">Calculate</button>
+        </div>
+        <div class="result">
+            <input type="text" id="result" readonly>
+        </div>
+        <div class="button">
+            <button id="reset" onclick="resetForm()">Reset</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
+

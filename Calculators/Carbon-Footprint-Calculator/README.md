@@ -2,7 +2,7 @@
 
 ## Description :-
 
-The Carbon Footprint Calculator is a web application that estimates an individual's carbon footprint based on the miles driven per year, per month, and per week. Users can input the miles driven for each period, and the calculator provides an estimate of the carbon footprint in kilograms of CO2.
+The Carbon Footprint Calculator is a web application that helps users estimate their monthly carbon footprint based on their electricity usage, gas usage, kilometers driven, and flights taken per year. 
 
 ## Tech Stacks :-
 
@@ -12,21 +12,23 @@ The Carbon Footprint Calculator is a web application that estimates an individua
 
 ## Features :-
 
-- Estimate carbon footprint based on miles driven per year, month, and week.
-- Responsive design for various screen sizes.
-- User-friendly interface with modern styling.
+- Calculate the carbon footprint based on:
+  - Electricity usage (kWh per month)
+  - Gas usage (kg per month)
+  - Kilometers driven (per month)
+  - Flights taken (per year)
+- Clear and intuitive UI
+- Responsive design for various screen sizes
 
-## How It Works :-
+## Usage :-
 
-1. **Enter Miles Driven:**
-   - Input the number of miles driven for the desired time period (year, month, or week).
-
-2. **Calculate Carbon Footprint:**
-   - Click the "Calculate" button to obtain estimates for the carbon footprint.
-
-3. **View Results:**
-   - The application displays the estimated carbon footprint in kilograms of CO2 for each time period.
+1. Enter your monthly electricity usage in kWh.
+2. Enter your monthly gas usage in kg.
+3. Enter the kilometers you drive per month.
+4. Enter the number of flights you take per year.
+5. Click the "Calculate" button to see your estimated carbon footprint in kg CO2e per month.
+6. Click the "Reset" button to clear all inputs.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/142514166/1dcf17fc-fe45-4264-866f-9fb42d0454b6)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/333f5a99-935d-422c-a57f-c33e89fcdb3e)

@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>2D Distance Calculator</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>2D Distance Calculator</h1>
+        <h1 id="animated-text"></h1>
         <label for="x1">Point 1 (x, y): </label>
         <input type="number" id="x1" placeholder="Enter x">
         <input type="number" id="y1" placeholder="Enter y">
@@ -22,10 +23,10 @@
         <button onclick="calculateDistance()">Calculate Distance</button>
 
         <div id="result"></div>
+        <button type="button" id="resetButton">Reset</button>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>

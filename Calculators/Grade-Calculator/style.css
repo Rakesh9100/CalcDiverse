@@ -8,21 +8,48 @@ body {
     background: radial-gradient(circle, rgb(222, 195, 255), rgb(183, 129, 250));
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 90vh;
+    width: 70%;
+    text-align: center;
+    margin: auto;
 }
 
-#calculator-container {
-    position: absolute;
+.tablink {
+    background-color: rgba(142, 74, 220, 0.753);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    margin: 10px;
+}
+
+.tablink:hover {
+    background-color: rgba(172, 100, 255, 0.753);
+}
+
+span {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator-container {
     background-color: rgb(243, 235, 253);
     color: rgb(44, 44, 44);
     border-radius: 8%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     width: 30vw;
     height: auto;
     box-shadow: rgba(172, 100, 255, 0.753) 15px 20px 40px,
         rgba(142, 56, 248, 0.774) 5px 5px 10px;
     text-align: center;
+    margin: 100px auto 50px;
+}
+
+#relative {
+    margin-top: 30px;
 }
 
 label,
@@ -45,6 +72,8 @@ input {
     padding: 8px;
     box-sizing: border-box;
     width: 100%;
+    margin-top:0rem;
+    margin-left: 2rem;
 }
 
 button {
@@ -80,8 +109,28 @@ p {
     border-color: rgb(45, 43, 43);
 }
 
+.subject-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remove-subject {
+    background-color: rgb(142, 131, 131);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 0rem;
+    margin-right:2rem;
+}
+
+.remove-subject:hover {
+    background-color: rgb(221, 138, 138);
+}
+
 @media only screen and (max-width: 1030px) {
-    #calculator-container {
+    .calculator-container {
         width: 45%;
     }
 
@@ -95,7 +144,7 @@ p {
 
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 430px) {
-    #calculator-container {
+    .calculator-container {
         width: 80%;
     }
 
@@ -108,7 +157,7 @@ p {
 }
 
 @media only screen and (max-width: 350) {
-    #calculator-container {
+    .calculator-container {
         width: 60%;
     }
 

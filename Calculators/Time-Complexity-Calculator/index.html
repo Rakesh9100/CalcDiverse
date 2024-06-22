@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Time Complexity Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Time Complexity Calculator</h1>
+        <form id="complexityForm">
+            <label for="algorithm">Algorithm:</label>
+            <textarea id="algorithm" name="algorithm" rows="10" cols="50" placeholder="Enter your algorithm here..."></textarea>
+            <button type="button" onclick="calculateComplexity()">Calculate Complexity</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

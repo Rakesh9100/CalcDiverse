@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Salary Estimation Calculator</title>
+</head>
+<body>
+    <h1>Salary Estimation Calculator</h1>
+    <form id="salaryForm">
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" min="0"><br><br>
+
+        <label for="education">Education Level:</label>
+        <select id="education" name="education">
+            <option value="0">Choose</option>
+            <option value="1">High School</option>
+            <option value="5000">Bachelor's Degree</option>
+            <option value="10000">Master's Degree</option>
+            <option value="15000">PhD</option>
+        </select><br><br>
+
+        <label for="location">Enter Location suiting your job:</label>
+        <select id="location" name="location">
+            <option value="2">Choose</option>
+            <option value="5000">Metropolitan</option>
+            <option value="7000">Suburban</option>
+            <option value="3000">rural</option>
+            <option value="1500">remote</option>
+        </select><br><br>
+
+        <label for="industry">Industry:</label>
+        <select id="industry" name="industry">
+            <option value="3">Choose</option>
+            <option value="10000">Technical</option>
+            <option value="8000">Finance</option>
+            <option value="6000">Healthcare</option>
+        </select><br><br>
+
+        <label for="skills">Number of Skills:</label>
+        <input type="number" id="skills" name="skills" min="0"><br><br>
+
+        <button type="submit">Estimate Salary</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -10,19 +10,46 @@
 </head>
 
 <body>
+    <span>
+    <button class="tablink" onclick="openPage('absolute', this)">Absolute Grade</button>
+    <button class="tablink" onclick="openPage('relative', this)" id="defaultOpen">Relative Grade</button>
+    </span>
 
-    <div id="calculator-container">
-        <h2>Subject Grade Calculator</h2>
+    <div id="absolute" class="calculator-container">
+        <h2>Absolute Grade Calculator</h2>
 
-        <div id="subjectFields">
+        <div class="subjectFields" id="subjectFields">
             <label for="subject1">Enter marks for Subject 1:</label>
-            <input type="text" id="subject1" class="marks" placeholder="Enter marks (e.g., 85,100)">
+            <div class="subject-container" id="subject-container-1">
+                <input type="text" id="subject1" class="marks" placeholder="Enter marks (e.g., 85/100)">
+                <button type="button" class="remove-subject" onclick="removeSubjectField(1)">X</button>
+            </div>
+            
         </div>
 
         <button onclick="addSubjectField()">Add Another Subject</button>
-        <button onclick="calculateGrade()">Calculate Grade</button>
+        <button onclick="calculateAbsGrade()">Calculate Grade</button>
 
-        <p id="result"></p>
+        <p class="result"></p>
+    </div>
+
+    <div id="relative" class="calculator-container">
+        <h2>Relative Grade Calculator</h2>
+
+        <div class="subjectFieldsrelative">
+            <label for="subject1relative">Enter marks for Subject 1:</label>
+            <input type="text" id="subject1relative" class="marks" placeholder="Enter marks (e.g., 85/100)">
+
+            <label for="subject1relative">Enter mean for Subject 1:</label>
+            <input type="text" id="mean1" class="marks" placeholder="Enter mean">
+
+            <label for="subject1relative">Enter standard deviation for Subject 1:</label>
+            <input type="text" id="std1" class="marks" placeholder="Enter standard deviation">
+        </div>
+        
+        <button onclick="calculateRelGrade()">Calculate Grade</button>
+
+        <p class="result"></p>
     </div>
 
     <script src="script.js"></script>
