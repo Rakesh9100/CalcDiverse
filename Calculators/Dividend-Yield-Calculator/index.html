@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Dividend Yield Calculator</title>
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <h1>Dividend Yield Calculator</h1>
+        <form id="dividendForm" class="animate__animated animate__zoomIn">
+            <div class="input-group">
+                <label for="annualDividend">Annual Dividend (INR):</label>
+                <input type="number" id="annualDividend" step="0.01" required>
+            </div>
+            <div class="input-group">
+                <label for="marketPrice">Current Market Price (INR):</label>
+                <input type="number" id="marketPrice" step="0.01" required>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result" class="result animate__animated animate__fadeInUp"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

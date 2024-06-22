@@ -13,8 +13,14 @@
     <div class="calculator-container">
         <h1>Real Estate Calculator</h1>
         <div>
-            <label for="propertyValue">Property Value ($):</label>
+            <label for="propertyValue">Property Value:</label>
+            <!-- adding the option to select currency -->
+            <select id="currency">
+                <option value="USD">USD ($)</option>
+                <option value="INR">INR (₹)</option>
+            </select>
             <input type="number" id="propertyValue" placeholder="Enter property value">
+            
         </div>
         <div>
             <label for="downPayment">Down Payment (%):</label>

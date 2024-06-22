@@ -1,0 +1,171 @@
+@media only screen and (min-width: 600px) {
+    body {
+        background-image: url("assets/background.jpg");
+        background-attachment: fixed;
+    }
+
+    .head {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 15, 10);
+        font-size: 1.5em;
+        font-weight: 200;
+        margin: 0px;
+    }
+
+    #box {
+        background-color: white;
+        width: 550px;
+        height: 280px;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 9px 9px 20px rgb(131, 252, 216);
+        border: 0.5px solid rgb(1, 102, 63);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 15, 10);
+        font-size: 1.4em;
+    }
+
+    #box1 {
+        background-color: white;
+        width: 550px;
+        height: 280px;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 9px 9px 20px rgb(131, 252, 216);
+        border: 0.5px solid rgb(1, 102, 63);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 15, 10);
+        font-size: 1.4em;
+        float: left;
+    }
+
+    #box2 {
+        background-color: white;
+        width: 550px;
+        height: 280px;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 9px 9px 20px rgb(131, 252, 216);
+        border: 0.5px solid rgb(1, 102, 63);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 15, 10);
+        font-size: 1.4em;
+        float: right;
+    }
+
+    input {
+        border: 2px solid rgb(1, 73, 33);
+        text-align: center;
+    }
+
+    input:hover {
+        box-shadow: 2px 3px 6px rgb(168, 238, 165);
+    }
+
+    button {
+        border: 2px solid rgb(1, 73, 33);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+
+    button:hover {
+        background-color: rgb(2, 119, 55);
+        color: white;
+    }
+
+    button :active {
+        box-shadow: 2px 3px 6px rgb(168, 238, 165);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("assets/background.jpg");
+        background-attachment: fixed;
+    }
+
+    .head {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 15, 10);
+        font-size: 1.5em;
+        font-weight: 200;
+        margin: 0px;
+    }
+
+    #box {
+        background-color: white;
+        width: 300px;
+        height: 280px;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 9px 9px 20px rgb(131, 252, 216);
+        border: 0.5px solid rgb(1, 102, 63);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 15, 10);
+        font-size: 1.2em;
+        padding: 5px;
+    }
+
+    #box1 {
+        background-color: white;
+        width: 300px;
+        height: 280px;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 9px 9px 20px rgb(131, 252, 216);
+        border: 0.5px solid rgb(1, 102, 63);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 15, 10);
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    #box2 {
+        background-color: white;
+        width: 300px;
+        height: 280px;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 9px 9px 20px rgb(131, 252, 216);
+        border: 0.5px solid rgb(1, 102, 63);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 15, 10);
+        font-size: 1.2em;
+        padding: 5px;
+    }
+
+    input {
+        border: 2px solid blue;
+        text-align: center;
+    }
+
+    input:hover {
+        box-shadow: 2px 3px 6px rgb(168, 238, 165);
+    }
+
+    button {
+        border: 2px solid rgb(1, 73, 33);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+
+    button:hover {
+        background-color: rgb(2, 119, 55);
+        color: white;
+    }
+
+    button :active {
+        box-shadow: 2px 3px 6px rgb(168, 238, 165);
+    }
+}

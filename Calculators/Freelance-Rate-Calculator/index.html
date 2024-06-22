@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Freelance Rate Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Freelance Rate Calculator</h1>
+        <form id="rateCalculator">
+            <label for="annual-salary">Desired Annual Salary ($):</label>
+            <input type="number" id="annual-salary" required>
+            
+            <label for="billable-hours">Billable Hours per Week:</label>
+            <input type="number" id="billable-hours" required>
+            
+            <label for="vacation-weeks">Vacation Weeks per Year:</label>
+            <input type="number" id="vacation-weeks" required>
+            
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result">
+            <h2>Your Hourly Rate: $<span id="hourly-rate">0</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -18,12 +18,16 @@
     <div id="absolute" class="calculator-container">
         <h2>Absolute Grade Calculator</h2>
 
-        <div class="subjectFields">
+        <div class="subjectFields" id="subjectFields">
             <label for="subject1">Enter marks for Subject 1:</label>
-            <input type="text" id="subject1" class="marks" placeholder="Enter marks (e.g., 85,100)">
+            <div class="subject-container" id="subject-container-1">
+                <input type="text" id="subject1" class="marks" placeholder="Enter marks (e.g., 85/100)">
+                <button type="button" class="remove-subject" onclick="removeSubjectField(1)">X</button>
+            </div>
+            
         </div>
 
-        <button onclick="addSubjectField('abs')">Add Another Subject</button>
+        <button onclick="addSubjectField()">Add Another Subject</button>
         <button onclick="calculateAbsGrade()">Calculate Grade</button>
 
         <p class="result"></p>
@@ -32,14 +36,14 @@
     <div id="relative" class="calculator-container">
         <h2>Relative Grade Calculator</h2>
 
-        <div class="subjectFields">
-            <label for="subject1">Enter marks for Subject 1:</label>
-            <input type="text" id="subject1" class="marks" placeholder="Enter marks (e.g., 85,100)">
+        <div class="subjectFieldsrelative">
+            <label for="subject1relative">Enter marks for Subject 1:</label>
+            <input type="text" id="subject1relative" class="marks" placeholder="Enter marks (e.g., 85/100)">
 
-            <label for="subject1">Enter mean for Subject 1:</label>
+            <label for="subject1relative">Enter mean for Subject 1:</label>
             <input type="text" id="mean1" class="marks" placeholder="Enter mean">
 
-            <label for="subject1">Enter standard deviation for Subject 1:</label>
+            <label for="subject1relative">Enter standard deviation for Subject 1:</label>
             <input type="text" id="std1" class="marks" placeholder="Enter standard deviation">
         </div>
         

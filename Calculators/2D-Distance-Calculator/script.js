@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var typed = new Typed("#animated-text", {
+        strings: [
+            "2D Distance Calculator",
+            "Calculate distances with ease"
+        ],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true
+    });
+});
+
 // Function to calculate the distance
 function calculateDistance() {
     // Get input values
