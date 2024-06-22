@@ -11,13 +11,18 @@
 <body>
     <div class="container">
         <h1>Palindrome Checker</h1>
-        <label for="input">Enter a string or number:</label>
-        <input type="text" id="input">
-        <button onclick="checkPalindrome()">Check</button>
-        <p id="result"></p>
-    </div>
-
-    <script src="script.js"></script>
+        <form id="calculatorForm">
+            <div class="form-group">
+                 <center><label for="input">Enter a string or number:</label></center>
+                 <input type="text" id="input">
+            </div>
+            <button type="button" class="btn btn-dark form-control"onclick="checkPalindrome()">Check</button>
+            <div class="result-container">
+                <center><span id="result"></span></center>
+            </div>
+        </div>
+        </form>
+   <script src="script.js"></script>
 </body>
 
 </html>

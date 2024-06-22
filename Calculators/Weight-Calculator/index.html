@@ -13,17 +13,33 @@
 
 <body>
     <div id="converter">
+        <h1 class="heading">Weight Converter</h1>
         <label for="conversionType">Select Conversion:</label>
         <select id="conversionType" onchange="updateInputs()">
             <option value="" disabled selected>Select Conversion</option>
             <option value="kgToLb">Kilograms to Pounds</option>
             <option value="lbToKg">Pounds to Kilograms</option>
+            <option value="gToOz">Grams to Ounces</option>
+            <option value="ozToG">Ounces to Grams</option>
+            <option value="kgToG">Kilograms to Grams</option>
+            <option value="lbToOz">Pounds to Ounces</option>
+            <option value="gToLb">Grams to Pounds</option>
+            <option value="lbToG">Pounds to Grams</option>
+            <option value="ozToKg">Ounces to Kilograms</option>
+            <option value="kgToOz">Kilograms to Ounces</option>
         </select>
+
         <label for="kgInput">Enter Weight (kg):</label>
         <input type="number" id="kgInput" placeholder="Enter weight in kilograms" disabled>
 
         <label for="lbInput">Enter Weight (pounds):</label>
         <input type="number" id="lbInput" placeholder="Enter weight in pounds" disabled>
+
+        <label for="gInput">Enter Weight (grams):</label>
+        <input type="number" id="gInput" placeholder="Enter weight in grams" disabled>
+
+        <label for="ozInput">Enter Weight (ounces):</label>
+        <input type="number" id="ozInput" placeholder="Enter weight in ounces" disabled>
 
         <button onclick="convert()">Convert</button>
 
