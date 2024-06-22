@@ -15,4 +15,4 @@ Cos C=(a^2+b^2-c^2)/2ac.
 
 ## Screenshots :-
 
-![image]()
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/61ff1da7-6d5b-4c08-b9ce-96c387cc8514)
