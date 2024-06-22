@@ -52,6 +52,20 @@
     transform: translateX(0);
 }
 
+#dark-mode-button {
+	border: none; /* Remove any default border */
+	background: none; /* Remove any default background */
+	padding: 0; /* Remove any default padding */
+	cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+#dark-mode-icon {
+	width: 30px; /* Set the width of the image */
+	height: 30px; /* Set the height of the image */
+	border-radius: 50%; /* Make the image round */
+}
+
+
 #loader-wrapper .loader-section.section-left {
     left: 0;
 }
@@ -192,7 +206,7 @@ header {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(9, 5, 40);
     margin: 0 auto;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(46, 151, 192, 0.8));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(163, 93, 232, 0.8));
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -1249,6 +1263,26 @@ section {
     width: 100px;
     height: 100px;
     opacity: 1;
+}
+
+/* Add styling for the dark mode toggle button */
+.dark-mode-toggle {
+	margin-left: auto;
+	padding-right: 20px;
+}
+
+#dark-mode-button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	color: #000; /* Adjust color as needed */
+}
+
+/* Style for dark mode */
+.dark-mode {
+	background-color: #222; /* Change background color to dark */
+	color: #fff; /* Change text color to light */
 }
 
 @keyframes animate {

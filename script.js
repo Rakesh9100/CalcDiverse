@@ -38,6 +38,8 @@ async function fetchContributors(pageNumber) {
     return contributorsData;
 }
 
+
+
 // Function to fetch all contributors
 async function fetchAllContributors() {
     let allContributors = [];
@@ -197,4 +199,30 @@ if (SpeechRecognition) {
 else {
     console.log("Your Browser does not support speech Recognition");
     info.textContent = "Your Browser does not support Speech Recognition";
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+	// Add event listener to the dark mode button
+	document.getElementById('dark-mode-button').addEventListener('click', toggleDarkMode);
+});
+
+function toggleDarkMode() {
+	// Toggle dark mode class on the body
+	document.body.classList.toggle('dark-mode');
+	
+	// Toggle background image based on dark mode status
+	const backgroundImage = document.body.style.backgroundImage;
+	if (backgroundImage.includes('background.jpg')) {
+			document.body.style.backgroundImage = 'url(./assets/images/ima.jpg)';
+	} else {
+			document.body.style.backgroundImage = 'url(./assets/images/background.jpg)';
+	}
+	
+	// Change the icon based on the current mode
+	const darkModeIcon = document.getElementById('dark-mode-icon');
+	if (document.body.classList.contains('dark-mode')) {
+			darkModeIcon.src = 'moon.png';
+	} else {
+			darkModeIcon.src = 'sun.png';
+	}
 }
