@@ -21,6 +21,5 @@ function calculateBAC() {
 
     const bac = (alcoholConsumed * 5.14 / bodyWeight * r) - (0.015 * hours);
 
-
     document.getElementById('result').textContent = `Your BAC is ${bac.toFixed(4)}`;
 }
