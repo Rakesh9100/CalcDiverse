@@ -1,4 +1,4 @@
-# <p align="center">Hooke's Law Calculator</p>
+# <p align="center">Hookes Law Calculator</p>
 
 ## Description :-
 
@@ -16,3 +16,7 @@ The Hooke's Law Calculator (spring force calculator) helps to determine the forc
 - Calculate spring constant (k) given force (F) and spring displacement (Δx).
 - Calculate spring displacement (Δx) given force (F) and spring constant (k).
 - Displays a message prompting the user to enter only two values if all three fields are filled.
+
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/400a5680-19b8-414b-a4b5-2780f92dcd2e)
