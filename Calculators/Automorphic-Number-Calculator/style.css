@@ -1,0 +1,115 @@
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background: #1e272e;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input[type="number"] {
+    padding: 12px 20px;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background: #34495e;
+    color: #fff;
+}
+
+input[type="number"]:focus {
+    border-color: #2980b9;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1 1 45%;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button#reset-button {
+    background-color: #e74c3c;
+}
+
+button#reset-button:hover {
+    background-color: #c0392b;
+}
+
+button#reload-button {
+    background-color: #f39c12;
+}
+
+button#reload-button:hover {
+    background-color: #e67e22;
+}
+
+button#clear-button {
+    background-color: #2ecc71;
+}
+
+button#clear-button:hover {
+    background-color: #27ae60;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    background: #34495e;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
