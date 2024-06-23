@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bda94d7539.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Electronegativity Calculator</title>
+</head>
+<body>
+    <div class="icon-container">
+        <!-- Icon (example using Font Awesome) -->
+        <i class="fa-solid fa-atom"></i>
+    </div>
+
+    <div class="container">
+        <h1 class="main-heading">Electronegativity Calculator</h1>
+        <form id="calculator-form">
+            <label for="element1">Element 1:</label>
+            <select id="element1" required></select>
+            
+            <label for="element2">Element 2:</label>
+            <select id="element2" required></select>
+    
+            <button type="submit">Calculate</button>
+        </form>
+        <div class="result-container">
+            <div class="result-item">
+                <label for="electronegativity1">Electronegativity of Element 1:</label>
+                <input type="text" id="electronegativity1" readonly>
+            </div>
+            <div class="result-item">
+                <label for="electronegativity2">Electronegativity of Element 2:</label>
+                <input type="text" id="electronegativity2" readonly>
+            </div>
+            <div class="result-item">
+                <label for="difference">Electronegativity Difference:</label>
+                <input type="text" id="difference" readonly>
+            </div>
+            <div class="result-item">
+                <label for="polarity" style="margin-top: 25px;">Chemical Bond Polarity:</label>
+                <input type="text" id="polarity" readonly >
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
