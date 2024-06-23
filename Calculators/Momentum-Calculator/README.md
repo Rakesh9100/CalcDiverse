@@ -32,6 +32,4 @@ The Momentum Calculator is a web application designed to calculate the momentum 
 
 ## Screenshots :-
 
-
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/3a3e40f9-e6ec-4982-b08a-1c9fa11181dc)
-
