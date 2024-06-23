@@ -12,4 +12,4 @@ The Mobility of Electric Charge Calculator estimates the movement efficiency of 
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/9b85612f-632a-4e52-b693-5ff2521294c7)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/144541888/eedfc763-43ff-4230-88e0-d4cecb63a905)
