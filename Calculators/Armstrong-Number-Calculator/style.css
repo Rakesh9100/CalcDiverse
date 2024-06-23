@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(6, 0, 67);
+    background-color: rgb(255, 177, 255);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -9,14 +9,14 @@ body {
 }
 
 h1 {
-    color: #c7c3c3;
+    color: #8C1C1C;
     margin-bottom: 40px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    color: rgb(5, 12, 43);
+    color: rgb(78, 2, 78);
     font-size: large;
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@ input {
 
 button {
     padding: 10px;
-    background-color: #4e45d5;
+    background-color: rgb(78, 2, 78);
     color: white;
     width: fit-content;
     box-shadow: 5px 5px 7px 0px #0000003f;
