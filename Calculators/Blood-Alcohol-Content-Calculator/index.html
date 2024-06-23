@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Blood Alcohol Content Calculator</title>
+</head>
+<body>
+    <div class="bg d-flex justify-content-center align-items-center">
+        <div class="container mt-5">
+            <h1>Blood Alcohol Content (BAC) Calculator</h1>
+            <form id="bacForm" class="mt-4">
+                <div class="form-group">
+                    <label for="alcoholConsumed">Alcohol Consumed (oz):</label>
+                    <input type="number" class="form-control" id="alcoholConsumed" required>
+                </div>
+                <div class="form-group">
+                    <label for="bodyWeight">Body Weight (lbs):</label>
+                    <input type="number" class="form-control" id="bodyWeight" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select class="form-control" id="gender" required>
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hours">Hours Since Drinking Began:</label>
+                    <input type="number" class="form-control" id="hours" required>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="calculateBAC()">Calculate BAC</button>
+            </form>
+            <h2 class="text-center mt-4" id="result"></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
