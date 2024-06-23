@@ -1,113 +1,107 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom right, #3494e6, #ec6ead);
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+    padding: 0;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.calculator-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    animation: fadeInUp 0.8s ease-out;
-    max-width: 400px;
-    width: 100%;
-}
-
-button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 12px 20px;
-    /* Smaller button padding */
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    /* Slightly smaller font size */
-    margin-top: 15px;
-    transition: background-color 0.3s ease, transform 0.2s ease-out;
-}
-
-button:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-}
-
-input {
-    padding: 10px;
-    /* Smaller input padding */
-    margin: 10px 0;
-    /* Reduced margin */
-    width: 90%;
-    /* Adjusted width for responsiveness */
     box-sizing: border-box;
-    font-size: 14px;
-    /* Slightly smaller font size */
+}
+
+.waviy {
+    position: relative;
+    font-size: 2.2rem;
+}
+
+.waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waviy {
+    0%, 40%, 100% {
+        transform: translateY(0)
+    }
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right bottom, #7ed0e7, #77c1ee, #87afee, #a399e1, #bf80c6);
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    max-width: 550px;
+    width: 90%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+    margin-bottom: 15px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    border-radius: 6px;
-    transition: border-color 0.3s ease, transform 0.2s ease-out;
 }
 
-input:focus {
-    outline: none;
-    border-color: #4caf50;
-    transform: scale(1.02);
+.button {
+    margin-top: 20px;
 }
 
-.result-container {
-    font-size: 18px;
-    /* Slightly larger font size for result */
-    font-weight: bold;
-    color: #333;
-    margin-top: 15px;
-    animation: fadeIn 1s ease-out;
+.button button {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 600px) {
-    .calculator-container {
-        padding: 15px;
-    }
-
-    button {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-
-    input {
-        padding: 8px;
-        font-size: 12px;
-    }
-
-    .result-container {
-        font-size: 16px;
-    }
+.button button:hover {
+    background-color: #4682b4;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+.result input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
 }

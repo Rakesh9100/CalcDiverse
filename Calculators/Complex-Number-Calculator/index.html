@@ -10,17 +10,20 @@
 
 <body>
     <div class="container">
-        <h2 style="color: #4CAF50; text-align: center;">Complex Number Calculator</h2>
+        <h2 class="name">Complex Number Calculator</h2>
         <input type="number" id="real1" placeholder="Enter Real Part of First Number">
         <input type="number" id="imaginary1" placeholder="Enter Imaginary Part of First Number">
         <input type="number" id="real2" placeholder="Enter Real Part of Second Number">
         <input type="number" id="imaginary2" placeholder="Enter Imaginary Part of Second Number">
-        <button onclick="add()">Add</button>
-        <button onclick="subtract()">Subtract</button>
-        <button onclick="multiply()">Multiply</button>
-        <button onclick="divide()">Divide</button>
-        <button onclick="reset()">Reset</button>
-        <div id="result" style="text-align: center;"></div>
+        <div class="button-container" >
+                 <button id="showbutton"  onclick="add()">Add</button>
+                 <button id="showbutton"  onclick="subtract()">Subtract</button>
+                 <button id="showbutton"  onclick="multiply()">Multiply</button>
+                 <button id="showbutton"  onclick="divide()">Divide</button>
+                 <button id="showbutton"  onclick="reset()">Reset</button>
+       </div>
+        
+        <div id="result"  ></div>
     </div>
 
 </body>

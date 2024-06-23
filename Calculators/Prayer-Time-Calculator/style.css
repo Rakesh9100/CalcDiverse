@@ -1,0 +1,112 @@
+body {
+    background-image: url('assets/background.png');
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    max-width: 400px;
+    align-self: center;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #3e4754;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #569b96;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #215370;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#prayerTimes {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        margin-top: 150px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    input {
+        padding: 6px;
+    }
+
+    #prayerTimes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+        margin-top: 100px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 6px 12px;
+    }
+
+    input {
+        padding: 5px;
+    }
+
+    #prayerTimes {
+        grid-template-columns: 1fr;
+    }
+}
