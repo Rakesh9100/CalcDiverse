@@ -43,9 +43,8 @@ function isArmstrongOptimized(num, power) {
         temp = Math.floor(temp / 10);
     }
     const additionalContent = document.getElementById('additionalContent');
-    additionalContent.innerText = 'Explaination: A number that is equal to the sum of cubes of its digits';
+    additionalContent.innerText = 'Explanation: A number that is equal to the sum of cubes of its digits.';
    
     // Check whether sum of powers equals the original number or not
     return sumOfPowers === num;
-    
 }
