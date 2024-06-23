@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(100deg,rgb(53, 0, 87) ,rgb(83, 69, 69));
@@ -16,7 +14,6 @@ body {
     left: 20px; 
     z-index: 1000; 
 }
-
 
 .icon-container i {
     font-size: 50px; 
@@ -47,7 +44,6 @@ label {
     margin: 10px 0 5px;
     font-size: larger;
     font-weight: bold;
-
 }
 
 select {
@@ -93,16 +89,14 @@ button:hover {
     max-width: 500px;
     position: relative;
     left: 2rem;
-    
-    
-    
 }
+
 .result-container label{
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 10px;
-
 }
+
 .result-container input{
     padding: 5px;
     border: 1px solid #ccc;
