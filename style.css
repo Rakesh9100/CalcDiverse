@@ -1525,12 +1525,12 @@ section {
     color: #21d061;
 }
 
-.social a.twitter:hover {
-    color: #00fff7;
-}
-
 .social a.facebook:hover {
     color: #0026ff;
+}
+
+.social a.twitter:hover {
+    color: #00fff7;
 }
 
 .footer-basic .copyright {
