@@ -14,4 +14,4 @@ This calculator is useful for understanding and predicting the nature of chemica
 
 ## Screenshots :-
 
-![image](./assets/screenshot.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/9812141b-8b68-4ca1-9655-a74d752bb3c4)
