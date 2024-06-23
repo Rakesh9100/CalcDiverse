@@ -129,7 +129,15 @@
 .social a.facebook:hover {
     color: #0026ff;
 }
-
+.social a.instagram:hover{
+    color: #d62976
+}
+.social a.discord{
+    font-size: 30px;
+}
+.social a.discord:hover{
+    color:#5865F2
+}
 /* Responsive Media Query */
 
 @media screen and (max-width: 768px) {
