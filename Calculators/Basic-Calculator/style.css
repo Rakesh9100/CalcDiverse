@@ -26,7 +26,7 @@ body.light {
     border-radius: 20px;
     box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
         10px 10px 75px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.5),
-        inset 5px 5px 15px rgba(0, 0, 0, 0.5);    
+        inset 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 body.light .container {
@@ -219,28 +219,33 @@ span:hover {
 }
 
 @media (max-width: 800px) {
-    .calculator span{
-        width:85%;
-        height: 50px; }
-        body.light .calculator .clear, .calculator .clear{
-            width: 95%;
-        }
-        .calculator .value{
-            height:70px;
-            width:95%;
-        }
-        .calculator .equal{
-            height:90%;
-        }
-        .btn{
-            height:40px;
-            width:40px;
-        }  
+    .calculator span {
+        width: 85%;
+        height: 50px;
+    }
 
+    body.light .calculator .clear,
+    .calculator .clear {
+        width: 95%;
+    }
+
+    .calculator .value {
+        height: 70px;
+        width: 95%;
+    }
+
+    .calculator .equal {
+        height: 90%;
+    }
+
+    .btn {
+        height: 40px;
+        width: 40px;
+    }
 }
- 
+
 @media (max-width: 400px) {
     .container {
-        padding:30px 20px;
- }
+        padding: 30px 20px;
+    }
 }
