@@ -8,8 +8,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 </head>
 <body>
-    <div class="container">
+     <div class="container">
         <h1>CO2 Emissions Calculator</h1>
+        <label class="switch">
+            <input type="checkbox" id="toggle-dark-mode">
+            <span class="slider round"></span>
+            <p>Dark Mode</p>
+        </label>
         <form id="calculator-form">
             <label for="transport-mode">Select Mode of Transport:</label>
             <select id="transport-mode" name="transport-mode" onchange="updateForm()">
