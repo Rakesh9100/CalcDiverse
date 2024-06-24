@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>CAGR Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="page calculator_page">
+            <section class="section cagrCalc_section">
+                <h1 style="text-align: center; color: #e66e19;">CAGR Calculator (Compound Annual Growth Rate)</h1>
+                <article>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-md-12 col-12">
+                            <div class="calc_wrapper">
+                                <div class="row align-items-start flex-lg-row flex-column" style="display: flex;">
+                                    <div class="col-lg-6 col-md-12 col-12" style="width: 100%;padding-right: 2rem;">
+                                        <div class="form-group mt-3">
+                                            <h4 class="label_heading">Initial Value</h4>
+                                            <input type="text" class="form-control numberonly" id="initialValue" autocomplete="off" value="100000">
+                                            <span class="rupee_symbol">₹</span>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <h4 class="label_heading">Final Value Costs</h4>
+                                            <input type="text" class="form-control numberonly" id="finalValue" autocomplete="off" value="1000000">
+                                            <span class="rupee_symbol">₹</span>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <h4 class="label_heading">Duration of Investment</h4>
+                                            <input type="text" class="form-control numberonly" id="durationOfInvest" autocomplete="off" value="5">
+                                            <span class="rupee_symbol">Yrs</span>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <h4 class="label_heading">CAGR</h4>
+                                            <input type="text" class="form-control cagr" id="calCagr" readonly="" autocomplete="off">
+                                        </div>
+                                        <button id="calculateBtn">Calculate</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-12" style="width: 100%;">
+                                        <div class="highchart_container">
+                                            <figure class="highcharts-figure">
+                                                <div id="cagrChart"></div>
+                                            </figure>
+                                            <div class="proxy-container">
+                                                <ul class="d-flex charts-legend">
+                                                    <li class="legend-item">
+                                                        <span class="chart-thumbnail" style="background-color: #db620a;"></span>
+                                                        <a class="elementname">Initial Value</a>
+                                                    </li>
+                                                    <li class="legend-item">
+                                                        <span class="chart-thumbnail" style="background-color:#053c6d;"></span>
+                                                        <a class="elementname">Final Value</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
