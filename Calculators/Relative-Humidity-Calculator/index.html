@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Relative Humidity Calculator</title>
+</head>
+<body>
+    <div class="bg d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="container">
+            <h1>Relative Humidity Calculator</h1>
+            <form id="inputform" class="mt-4">
+                <div class="form-group">
+                    <label for="temperature">Temperature (°C): </label>
+                    <input type="number" id="temperature" step="0.1" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="dewPoint">Dew Point (°C): </label>
+                    <input type="number" id="dewPoint" step="0.1" class="form-control">
+                </div>
+                <button type="button" onclick="calculateHumidity()" class="btn btn-outline-info">Calculate Relative Humidity</button>
+            </form>
+            <h2 id="result" class="mt-4"></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
