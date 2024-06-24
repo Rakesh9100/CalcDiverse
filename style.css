@@ -1525,12 +1525,20 @@ section {
     color: #21d061;
 }
 
+.social a.instagram:hover {
+    color: #d62976;
+}
+
 .social a.facebook:hover {
     color: #0026ff;
 }
 
 .social a.twitter:hover {
     color: #00fff7;
+}
+
+.social a.discord:hover {
+    color: #5865F2;
 }
 
 .footer-basic .copyright {
