@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, #FDFCFB 0%, #04399e 100%);
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #04399e;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+h1 {
+    margin-bottom: 16px;
+    color: white;
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+.controls select {
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.matrix-container {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 8px;
+    justify-items: center;
+    align-items: center;
+}
+
+.matrix-cell {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.matrix-cell::-webkit-outer-spin-button,
+.matrix-cell::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    background-color: #23e6a2;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #25cb91;
+}
+
+.output-container {
+    background: #2a4881;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.output-container h2 {
+    margin-bottom: 10px;
+}
+
+.output-container pre {
+    font-size: 16px;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+.output-container pre::before {
+    content: "Output will be displayed here";
+    display: block;
+    color: #ddd;
+    font-style: italic;
+}
+
+.output-container pre.has-content::before {
+    content: "";
+}
+
+@media only screen and (max-width: 600px) {
+    .controls select {
+        width: 60px;
+    }
+
+    .matrix-cell {
+        width: 12px;
+        height: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+}

@@ -167,13 +167,17 @@ div {
 .footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .social {
     font-size: 3.5rem;
     text-decoration: none;
     margin: 0 1rem;
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -181,12 +185,51 @@ div {
     gap: 2rem;
 }
 
+.social a i {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Pop up effect */
+
+.social a:hover i {
+    transform: translateY(-8px);
+}
+
+
 .social a {
     color: var(--secondary);
 }
 
-.social a:hover {
-    color: var(--primary);
+.social a.user:hover {
+    color: #4af3b5;
+}
+
+.social a.message:hover {
+    color: #73408f;
+}
+
+.social a.linkedin:hover {
+    color: #1990cb;
+}
+
+.social a.github:hover {
+    color: #21d061;
+}
+
+.social a.instagram:hover {
+    color: #d62976;
+}
+
+.social a.facebook:hover {
+    color: #0026ff;
+}
+
+.social a.twitter:hover {
+    color: #00fff7;
+}
+
+.social a.discord:hover {
+    color: #5865F2;
 }
 
 .footer-basic .copyright {
@@ -211,7 +254,6 @@ div {
     box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3), -4px -4px 6px 0 rgba(116, 125, 136, .2), inset -4px -4px 6px 0 rgba(255, 255, 255, .2), inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
     cursor: pointer;
 }
-
 
 #progress-value {
     display: block;
