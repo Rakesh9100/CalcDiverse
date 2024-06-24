@@ -1,8 +1,8 @@
-# <p align="center">NPV Calculator</p>
+# <p align="center">Debt Payoff Calculator</p>
 
 ## Description :-
 
-Given an initial investment, the discount rate (per year), and the yearly cash flows, this calculator calculates the NPV (Net Present Value) of the investment. NPV is a financial metric used to evaluate the profitability of an investment or project.
+The Debt Payoff Calculator helps you determine how long it will take to pay off your debt and how much interest you'll accrue over time. By inputting your current debt amount, the number of months you plan to take to pay it off, and the interest rate, the calculator provides a clear repayment plan.
 
 ## Tech Stacks :-
 
@@ -10,18 +10,7 @@ Given an initial investment, the discount rate (per year), and the yearly cash f
 - CSS
 - JavaScript
 
-## Formula Used :-
-
-The formula for calculating NPV is:
-
-\[ NPV = \sum \left( \frac{CF_t}{(1 + r)^t} \right) - C_0 \]
-
-Where:
-- \( CF_t \) is the cash flow at time \( t \)
-- \( r \) is the discount rate
-- \( C_0 \) is the initial investment
-- \( t \) is the time period (year)
-
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/2fdc1931-466b-4b4d-89e7-d3592d3c9769)
+![image](https://github.com/Manav173/CalcDiverse/assets/117214680/a0adc620-298f-48d9-8357-e208b1aee34e)
+
