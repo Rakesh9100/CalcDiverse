@@ -1,72 +1,88 @@
-function calculateTotal() {
-    if (!validateForm()) {
-        return;
-    }
+document.addEventListener('DOMContentLoaded', function () {
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('change', function () {
+        document.body.classList.toggle('dark-theme', themeToggle.checked);
+    });
 
-    const transport = parseFloat(document.getElementById('transport').value) || 0;
-    const accommodation = parseFloat(document.getElementById('accommodation').value) || 0;
-    const food = parseFloat(document.getElementById('food').value) || 0;
-    const activities = parseFloat(document.getElementById('activities').value) || 0;
-    const misc = parseFloat(document.getElementById('misc').value) || 0;
+    // Initialize chart.js
+    const ctx = document.getElementById('expenses-chart').getContext('2d');
+    const chart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Accommodation', 'Food', 'Transportation', 'Activities'],
+            datasets: [{
+                data: [0, 0, 0, 0],
+                backgroundColor: ['#007bff', '#28a745', '#ffc107', '#dc3545'],
+            }],
+        },
+    });
 
-    const total = transport + accommodation + food + activities + misc;
+    const nightsInput = document.getElementById('nights');
+    const accommodationInput = document.getElementById('accommodation');
+    const foodInput = document.getElementById('food');
+    const transportationInput = document.getElementById('transportation');
+    const activitiesInput = document.getElementById('activities');
+    const currencySelect = document.getElementById('currency');
+    const errorMessage = document.getElementById('error-message');
 
-    document.getElementById('totalCost').textContent = isNaN(total) ? '0.00' : total.toFixed(2);
-}
+    const updateChart = () => {
+        const accommodationCost = parseFloat(accommodationInput.value) || 0;
+        const foodCost = parseFloat(foodInput.value) || 0;
+        const transportationCost = parseFloat(transportationInput.value) || 0;
+        const activitiesCost = parseFloat(activitiesInput.value) || 0;
 
-function validateForm() {
-    let isValid = true;
+        chart.data.datasets[0].data = [accommodationCost, foodCost, transportationCost, activitiesCost];
+        chart.update();
+    };
 
-    const transport = document.getElementById('transport').value;
-    const accommodation = document.getElementById('accommodation').value;
-    const food = document.getElementById('food').value;
-    const activities = document.getElementById('activities').value;
-    const misc = document.getElementById('misc').value;
+    const calculateBudget = () => {
+        const nights = parseFloat(nightsInput.value) || 0;
+        const accommodation = parseFloat(accommodationInput.value) || 0;
+        const food = parseFloat(foodInput.value) || 0;
+        const transportation = parseFloat(transportationInput.value) || 0;
+        const activities = parseFloat(activitiesInput.value) || 0;
 
-    if (!validateNumber(transport)) {
-        document.getElementById('transportError').textContent = 'Please enter a valid number.';
-        document.getElementById('transportError').style.display = 'block';
-        isValid = false;
-    } else {
-        document.getElementById('transportError').style.display = 'none';
-    }
+        if (nights <= 0 || accommodation <= 0 || food <= 0 || transportation <= 0 || activities <= 0) {
+            showError('Please enter positive numbers.');
+            return;
+        }
 
-    if (!validateNumber(accommodation)) {
-        document.getElementById('accommodationError').textContent = 'Please enter a valid number.';
-        document.getElementById('accommodationError').style.display = 'block';
-        isValid = false;
-    } else {
-        document.getElementById('accommodationError').style.display = 'none';
-    }
+        const totalAccommodation = nights * accommodation;
+        const totalFood = nights * food;
+        const totalCost = totalAccommodation + totalFood + transportation + activities;
 
-    if (!validateNumber(food)) {
-        document.getElementById('foodError').textContent = 'Please enter a valid number.';
-        document.getElementById('foodError').style.display = 'block';
-        isValid = false;
-    } else {
-        document.getElementById('foodError').style.display = 'none';
-    }
+        const currencySymbol = currencySelect.value;
+        const formattedTotalCost = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: currencySymbol,
+        }).format(totalCost);
 
-    if (!validateNumber(activities)) {
-        document.getElementById('activitiesError').textContent = 'Please enter a valid number.';
-        document.getElementById('activitiesError').style.display = 'block';
-        isValid = false;
-    } else {
-        document.getElementById('activitiesError').style.display = 'none';
-    }
+        document.getElementById('total-cost').textContent = `Estimated Total Cost: ${formattedTotalCost}`;
+        document.getElementById('error-message').textContent = '';
 
-    if (!validateNumber(misc)) {
-        document.getElementById('miscError').textContent = 'Please enter a valid number.';
-        document.getElementById('miscError').style.display = 'block';
-        isValid = false;
-    } else {
-        document.getElementById('miscError').style.display = 'none';
-    }
+        updateChart();
+    };
 
-    return isValid;
-}
+    // const showError = (message) => {
+    //     document.getElementById('error-message').textContent = message;
+    //     document.getElementById('total-cost').textContent = 'Estimated Total Cost: $0.00';
+    // };
 
-function validateNumber(value) {
-    const number = parseFloat(value);
-    return !isNaN(number) && number >= 0;
-}
+    // Function to show the error message for 3 seconds
+    const showError = (message) => {
+        errorMessage.textContent = message; // Set the message content
+        errorMessage.classList.add('show'); // Add the 'show' class to trigger animation
+
+        // After 3 seconds, remove the 'show' class to hide the message
+        setTimeout(() => {
+            errorMessage.classList.remove('show');
+        }, 3000); // 3000 milliseconds = 3 seconds
+    };
+
+    nightsInput.addEventListener('input', calculateBudget);
+    accommodationInput.addEventListener('input', calculateBudget);
+    foodInput.addEventListener('input', calculateBudget);
+    transportationInput.addEventListener('input', calculateBudget);
+    activitiesInput.addEventListener('input', calculateBudget);
+    currencySelect.addEventListener('change', calculateBudget);
+});
