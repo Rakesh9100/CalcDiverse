@@ -12,5 +12,4 @@ The Debt Payoff Calculator helps you determine how long it will take to pay off 
 
 ## Screenshots :-
 
-![image](https://github.com/Manav173/CalcDiverse/assets/117214680/a0adc620-298f-48d9-8357-e208b1aee34e)
-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/3fdc696e-2878-41a4-ae38-2dc7a1ccc6dc)
