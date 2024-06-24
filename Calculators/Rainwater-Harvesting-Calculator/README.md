@@ -2,7 +2,7 @@
 
 ## Description :-
 
-The Rainwater Harvesting Calculator is a web based application that calculates the average annual rainwater that the harvesting tank can store (in litres) based on inputs fields such as:-
+The Rainwater Harvesting Calculator is a web-based application that calculates the average annual rainwater that the harvesting tank can store (in liters) based on inputs fields such as:-
  - height of the roof (in metres)
  - width of the roof (in metres)
  - Average annual rainfall (in mm) in the region
@@ -23,4 +23,4 @@ The Rainwater Harvesting Calculator is a web based application that calculates t
 
 ## Screenshots :-
 
-![image](assets/output.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/14010ac5-5c23-44c8-bdbb-45281df4bd73)
