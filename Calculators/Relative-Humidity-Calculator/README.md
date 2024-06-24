@@ -13,4 +13,4 @@ This calculator calculates the relative humidity based on entered dew point and 
 
 ## Screenshots :-
 
-![Screenshot 2024-06-24 110641](https://github.com/AmrutaJayanti/CalcDiverse/assets/142327526/74eddb54-e649-410e-b0ba-89ba552b018f)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/de6a4f1f-754b-4c69-9577-4a937145b1d2)
