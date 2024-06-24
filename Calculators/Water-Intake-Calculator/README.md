@@ -2,7 +2,7 @@
 
 ## Description :-
 
-A daily water intake calculator that helps users determine their daily water intake based on body weight, activity level, and climate.
+A daily water intake calculator that helps users determine their daily intake based on body weight, activity level and duration, climate, temperature and suggests daily water intake in litres and determines dehydration risk level.
 
 ## Tech Stacks :-
 
