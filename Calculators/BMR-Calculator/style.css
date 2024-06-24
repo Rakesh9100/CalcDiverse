@@ -45,9 +45,7 @@ select{
     margin-bottom: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-
 }
-
 
 button {
     width: 100%;
@@ -69,4 +67,3 @@ button:hover {
     font-size: 18px;
     color: #333;
 }
-
