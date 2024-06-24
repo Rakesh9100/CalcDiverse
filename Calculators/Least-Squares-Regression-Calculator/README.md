@@ -1,15 +1,18 @@
-# Least Squares Regression Calculator
+# <p align="center">Least Squares Regression Calculator</p>
 
-## Description
+## Description :-
+
 The Least Squares Regression Calculator is designed to fit data to a linear model using the least squares method. It calculates the best-fit line for a given set of data points and provides important regression statistics, such as the slope, intercept, R-squared value, and standard error. This tool is useful for anyone needing to analyze the relationship between two variables and make predictions based on the linear trend.
 
-## Tech Stacks
-- **HTML**: Provides the structure of the web page.
-- **CSS**: Adds styling to the web page, including a dark mode theme for improved readability.
-- **JavaScript**: Handles the core functionality of calculating the regression line and updating the chart.
-- **Chart.js**: Used for data visualization, specifically for plotting the data points and regression line.
+## Tech Stacks :-
 
-## Features
+- HTML
+- CSS
+- JavaScript
+- Chart.js
+
+## Features :-
+
 - **Data Input**: Allows users to input data points manually.
 - **Best-Fit Line Calculation**: Computes the slope and intercept of the best-fit line using the least squares method.
 - **Regression Statistics**: Provides additional statistics including:
@@ -18,23 +21,14 @@ The Least Squares Regression Calculator is designed to fit data to a linear mode
 - **Data Visualization**: Plots the data points along with the best-fit line on a graph for visual analysis.
 - **Dark Mode**: Implements a dark theme for the entire interface to reduce eye strain and improve aesthetics.
 
-## Screenshots
+## How to Use :-
 
-### Main Interface
-![Main Interface](image-1.png)
-
-### Input Data and Results
-![Input Data and Results](image.png)
-
-## How to Use
 1. **Input Data**: Enter your data points in the format `x1,y1;x2,y2;...` into the input box.
 2. **Calculate**: Click the "Calculate" button to compute the regression line and display the results.
 3. **View Results**: The calculated regression equation, R-squared value, and standard error will be displayed. The data points and regression line will be plotted on the chart.
 
-## File Structure
-- **index.html**: The main HTML file that contains the structure of the web page.
-- **styles.css**: The CSS file that adds styling to the web page, including the dark mode theme.
-- **script.js**: The JavaScript file that contains the logic for calculating the regression line and updating the chart.
-- **README.md**: This file, providing an overview of the project.
+## Screenshots :-
 
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/2f170469-757d-43c1-b3ff-7f2d02b4e846)
 
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/f466b0ef-4f56-4c1f-9181-0e81c2567eb4)
