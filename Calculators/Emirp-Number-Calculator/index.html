@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Emirp Number Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Emirp Number Calculator</h1>
+        <div class="option-section">
+            <label for="option-select">Choose an option:</label>
+            <select id="option-select" onchange="handleOptionChange()">
+                <option value="none">Select an option</option>
+                <option value="single">Check if a number is an Emirp number</option>
+                <option value="range">Calculate Emirp numbers in a given range</option>
+            </select>
+        </div>
+        <div class="response-section">
+            <div class="input-section" id="single-number-section" style="display: none;">
+                <label for="number">Enter a number:</label>
+                <input type="number" id="number" placeholder="Enter number">
+                <button onclick="checkEmirpNumber()">Check</button>
+                <div id="result"></div>
+                <div id="reason"></div>
+            </div>
+            <div class="range-section" id="range-section" style="display: none;">
+                <label for="start">Start of range:</label>
+                <input type="number" id="start" placeholder="Start">
+                <br>
+                <label for="end">End of range:</label>
+                <input type="number" id="end" placeholder="End">
+                <button onclick="findEmirpNumbersInRange()">Find Emirp Numbers</button>
+                <div id="range-result"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

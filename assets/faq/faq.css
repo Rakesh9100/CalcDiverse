@@ -118,26 +118,30 @@
     color: #73408f;
 }
 
+.social a.linkedin:hover {
+    color: #1990cb;
+}
+
 .social a.github:hover {
     color: #21d061;
+}
+
+.social a.instagram:hover {
+    color: #d62976;
+}
+
+.social a.facebook:hover {
+    color: #0026ff;
 }
 
 .social a.twitter:hover {
     color: #00fff7;
 }
 
-.social a.facebook:hover {
-    color: #0026ff;
+.social a.discord:hover {
+    color: #5865F2;
 }
-.social a.instagram:hover{
-    color: #d62976
-}
-.social a.discord{
-    font-size: 30px;
-}
-.social a.discord:hover{
-    color:#5865F2
-}
+
 /* Responsive Media Query */
 
 @media screen and (max-width: 768px) {
