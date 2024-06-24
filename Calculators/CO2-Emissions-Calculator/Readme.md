@@ -1,4 +1,4 @@
-# <p align="center">Color Code Calculator</p>
+# <p align="center">CO2 Emissions Calculator</p>
 
 ## Description :-
 
