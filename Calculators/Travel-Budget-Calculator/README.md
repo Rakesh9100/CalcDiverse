@@ -1,8 +1,8 @@
-<p align="center">Travel Budget Calculator</p>
+# <p align="center">Travel Budget Calculator</p>
 
 ## Description :-
 
-It is a simple calculator that calculates the total travel expenses based on various categories such as transport, accommodation, food, activities, and miscellaneous costs entered by the user.
+Calculator that calculates the total travel expenses based on various categories such as transport, accommodation, food, activities, and miscellaneous costs entered by the user.
 
 ## Tech Stacks :-
 
@@ -10,7 +10,6 @@ It is a simple calculator that calculates the total travel expenses based on var
 - CSS
 - JavaScript
 
+## Screenshots :-
 
-## Screenshots
-
-![Screenshot 2024-06-20 114948](https://github.com/Rakesh9100/CalcDiverse/assets/136893675/c2301fc8-ede3-4762-830c-e833ef90616f)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/136893675/c2301fc8-ede3-4762-830c-e833ef90616f)
