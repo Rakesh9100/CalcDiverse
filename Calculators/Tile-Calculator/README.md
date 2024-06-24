@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Tile Calculator is a simple  calculator that calculates the no.of tiles required for a given area.
+Tile Calculator is a simple calculator that calculates the number of tiles required for a given area.
 
 ## Tech Stacks :-
 
@@ -12,6 +12,4 @@ Tile Calculator is a simple  calculator that calculates the no.of tiles required
 
 ## Screenshots :-
 
-![Screenshot 2024-06-24 182403](https://github.com/Nayanika1402/CalcDiverse/assets/132455412/24f80c6b-9622-4f32-a292-aed08169f162)
-
-![Screenshot 2024-06-24 182403](https://github.com/Nayanika1402/CalcDiverse/assets/132455412/7c78dc17-0d80-4a07-aea0-daf63d566885)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/0a9a36a2-86f6-4f82-96a8-40f638a0451f)
