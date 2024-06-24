@@ -2,7 +2,7 @@
 
 ## Description :-
 
-A web application, can calculate and display the binomial expansion of given coefficients a, b and power n.
+Calculator that can calculate and display the binomial expansion of given coefficients a, b, and power n.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ A web application, can calculate and display the binomial expansion of given coe
 
 ## Screenshots :-
 
-<img src="./Screenshot.png" />
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/9126d65e-76e6-4157-a055-f1e161ade92a)
