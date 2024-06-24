@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <title>CO2 Emissions Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CO2 Emissions Calculator</h1>
+        <label class="switch">
+            <input type="checkbox" id="toggle-dark-mode">
+            <span class="slider round"></span>
+            <p>Dark Mode</p>
+        </label>
+        <form id="calculator-form">
+            <label for="transport-mode">Select Mode of Transport:</label>
+            <select id="transport-mode" name="transport-mode" onchange="updateForm()">
+                <option value="car">Car</option>
+                <option value="flight">Flight</option>
+                <option value="bus">Bus</option>
+                <option value="train">Train</option>
+            </select>
+            <div id="car-fields" class="transport-fields">
+                <label for="car-distance">Distance Traveled (km):</label>
+                <input type="number" id="car-distance" name="car-distance" required>
+                <label for="efficiency">Fuel Efficiency (L/100km):</label>
+                <input type="number" id="efficiency" name="efficiency" required>
+            </div>
+            <div id="flight-fields" class="transport-fields" style="display: none;">
+                <label for="flight-distance">Flight Distance (km):</label>
+                <input type="number" id="flight-distance" name="flight-distance" required>
+            </div>
+            <div id="bus-fields" class="transport-fields" style="display: none;">
+                <label for="bus-distance">Distance Traveled (km):</label>
+                <input type="number" id="bus-distance" name="bus-distance" required>
+            </div>
+            <div id="train-fields" class="transport-fields" style="display: none;">
+                <label for="train-distance">Distance Traveled (km):</label>
+                <input type="number" id="train-distance" name="train-distance" required>
+            </div>
+            <button type="button" onclick="calculateEmissions()">Calculate</button>
+            <button type="button" onclick="generatePDF()">Generate PDF</button><br><br>
+            <a href = "../../index.html" class = "home">Back to Home</a>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

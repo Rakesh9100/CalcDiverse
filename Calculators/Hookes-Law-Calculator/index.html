@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hookes Law Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Hooke's Law Calculator</h1>
+        <div class="input-group">
+            <label for="displacement">Spring Displacement (Δx):</label>
+            <input type="number" id="displacement" placeholder="Enter displacement">
+        </div>
+        <div class="input-group">
+            <label for="constant">Spring Constant (k):</label>
+            <input type="number" id="constant" placeholder="Enter spring constant">
+        </div>
+        <div class="input-group">
+            <label for="force">Force (F):</label>
+            <input type="number" id="force" placeholder="Enter force">
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
