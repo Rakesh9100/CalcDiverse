@@ -52,7 +52,8 @@ body.dark-mode label {
     color: #ddd;
 }
 
-input, select {
+input,
+select {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 20px;
@@ -64,7 +65,8 @@ input, select {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-body.dark-mode input, body.dark-mode select {
+body.dark-mode input,
+body.dark-mode select {
     background: #666;
     color: #f4f4f4;
     border-color: #888;
@@ -169,11 +171,11 @@ body.dark-mode .home {
     border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     transform: translateX(26px);
 }
 
@@ -181,6 +183,6 @@ body.dark-mode .slider {
     background-color: #555;
 }
 
-body.dark-mode input:checked + .slider {
+body.dark-mode input:checked+.slider {
     background-color: #1e90ff;
 }
