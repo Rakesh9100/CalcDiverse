@@ -5,21 +5,34 @@ document.getElementById('calculate').addEventListener('click', function(event) {
     const b = parseFloat(document.getElementById('b').value);
     const n = parseInt(document.getElementById('n').value);
 
-    if (!a || !b || !n) {
+    if (isNaN(a) || isNaN(b) || isNaN(n)) {
         alert("Please fill all the fields a, b and n!")
         return
     }
-    
-    let result = `(${a} + ${b}x)<sup>${n}</sup> = `;
-    for (let k = 0; k <= n; k++) {
-        const coeff = binomialCoefficient(n, k);
-        const item = coeff * Math.pow(a, n-k) * Math.pow(b, k);
-        const full_item = k===0 ? item : k===1 ? item + `x` : item + `x<sup>${k}</sup>`;
-
-        result = k == 0 && item > 0 ? result + `${full_item}` : item > 0 ? result + ` +${full_item}` : result + ` ${full_item}`
+    if (n < 0) {
+        alert("Enter a positive value for n!")
+        return
     }
     
-    document.getElementById('result').innerHTML = result;
+    let answer = ""
+    for (let k = 0; k <= n; k++) {
+        
+        const coeff = binomialCoefficient(n, k);
+
+        let item = coeff * Math.pow(a, n-k) * Math.pow(b, k);
+
+        if (!Number.isInteger(item)) item = item.toFixed(2)
+        if (item === 0) continue
+        else if (item < 0) item = ` - ${-1 * item}`;
+        else item = ` + ${item}`;
+
+        const full_item = k===0 ? item : k===1 ? item + `x` : item + `x<sup>${k}</sup>`;
+
+        answer = answer +  full_item
+    }
+
+    if (answer === "") answer = "0"
+    document.getElementById('result').innerHTML = `(${a} + ${b}x)<sup>${n}</sup> = ` + answer;
 });
 
 function binomialCoefficient(n, k) {
