@@ -53,22 +53,22 @@ header {
     margin-bottom: 28px;
 }
 
-form {
+.contact-container form{
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-label {
+.contact-container label {
     color: #000000;
     font-size: 20px;
     font-weight: 600;
     text-shadow: 2px 2px 10px var(--light);
 }
 
-input,
-textarea {
+.contact-container input,
+.contact-container textarea {
     width: 100%;
     padding: 10px;
     border-radius: 6px;
@@ -78,7 +78,7 @@ textarea {
     transition: all linear .2s;
 }
 
-textarea {
+.contact-container textarea{
     border: 1px solid #ccc;
     resize: vertical;
 }
@@ -88,7 +88,7 @@ textarea:hover {
     box-shadow: 5px 5px 10px black;
 }
 
-button {
+.contact-container button {
     font-size: 20px;
     font-weight: 700;
     margin-top: 21px;
@@ -145,7 +145,7 @@ button:hover {
     border-bottom-color: var(--primary);
 }
 
-.footer-basic .social {
+/* .footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
 }
@@ -168,7 +168,7 @@ button:hover {
 
 .social a:hover {
     color: var(--primary);
-}
+} */
 
 .footer-basic .copyright {
     margin-top: 15px;
@@ -178,7 +178,7 @@ button:hover {
     margin-bottom: 0;
 }
 
-.footer-basic .social {
+/* .footer-basic .social {
     text-align: center;
     padding-bottom: 25px;
     display: flex;
@@ -201,10 +201,10 @@ button:hover {
 
 .social a i {
     transition: transform 0.3s ease-in-out;
-}
+} */
 
 /* Pop up effect */
-
+/* 
 .social a:hover i {
     transform: translateY(-8px);
 }
@@ -243,4 +243,4 @@ button:hover {
 
 .social a.discord:hover {
     color: #5865F2;
-}
+} */
