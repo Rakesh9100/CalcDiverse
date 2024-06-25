@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rainwater Harvesting Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Rainwater Harvesting Calculator</h1>
+        <form id="rainwater-form">
+            <label for="length">Length of the roof (in meters):</label>
+            <input type="number" id="length" required>
+            
+            <label for="width">Width of the roof (in meters):</label>
+            <input type="number" id="width" required>
+            
+            <label for="rainfall">Average annual rainfall (in mm):</label>
+            <input type="number" id="rainfall" required>
+            
+            <label for="efficiency">Harvesting system efficiency:</label>
+            <select id="efficiency" required>
+                <option value="0.75">Low</option>
+                <option value="0.83">Medium</option>
+                <option value="0.90">High</option>
+            </select>
+            
+            <label for="capacity">Storage capacity of tank (in litres):</label>
+            <input type="number" id="capacity" required>
+            
+            <button type="button" onclick="calculateRainwater()">Calculate</button>
+        </form>
+        <div id="result" style="display: none;">
+            <h2>Total Rainwater Collected Annually:</h2>
+            <p id="total-water"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
