@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="header">
+        <h1>Spy Number Calculator</h1>
+    </header>
     <div class="container">
         <div class="section">
-            <h1>Spy Number Checker</h1>
+            <h2>Spy Number Checker</h2>
             <form id="spyNumberForm">
                 <input type="text" id="numberInput" placeholder="Enter a number" required>
                 <button type="submit">Check</button>
@@ -19,9 +22,9 @@
         </div>
 
         <div class="section">
-            <h1>Spy Number Finder</h1>
+            <h2>Spy Number Finder</h2>
             <form id="digitForm">
-                <input type="number" id="digitInput" placeholder="Enter digit count (1-9)" min="1" max="9" required>
+                <input type="number" id="digitInput" placeholder="Enter digit count (1-5)" min="1" max="5" required>
                 <button type="submit">Find</button>
             </form>
             <div id="spyNumbersResult"></div>
