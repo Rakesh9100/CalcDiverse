@@ -23,7 +23,7 @@ The Root Mean Square Calculator is a web-based application that allows users to 
 2. **Result**: `2.74`
 
 ## Screenshots
-![image](https://github.com/Rakesh9100/CalcDiverse\Calculators\Root-Mean-Square-Calculator\assets\rms-calc.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/Calculators/Root-Mean-Square-Calculator/assets/rms-calc.png)
 
 ## Installation
 
