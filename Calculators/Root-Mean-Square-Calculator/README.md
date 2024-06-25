@@ -52,7 +52,3 @@ To set up the RMS Calculator on your local machine, follow these steps:
 2. Enter the numbers separated by commas (e.g., `1, 2, 3, 4`).
 3. Click the "Calculate RMS" button.
 4. The RMS value will be displayed below the input field.
-
-### Example
-
-For input:
