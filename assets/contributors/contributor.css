@@ -29,15 +29,14 @@ body {
     font-size: 1.4rem;
 }
 
-body,
-html {
+#contributor{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     line-height: 1.4;
     scroll-behavior: smooth;
 }
 
-h1 {
+.heroes {
     font-family: Arial, sans-serif;
     font-weight: bold;
     margin-top: 25px;

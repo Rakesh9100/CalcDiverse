@@ -1436,6 +1436,7 @@ section {
 /* Footer Section Css */
 
 footer {
+    font-family: 'Montserrat', sans-serif;
     background-color: rgb(9, 5, 40, 0.9);
     color:#ccc;
     padding: 30px 0;
