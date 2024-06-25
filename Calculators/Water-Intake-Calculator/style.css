@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    background: linear-gradient(to bottom, #ccf3fc, #2193b0);
     color: #333;
     line-height: 1.6;
     display: flex;
@@ -16,37 +16,38 @@ body {
     padding: 20px;
 }
 
-#calculator {
-    background: #ffffff;
+.container {
+    background: linear-gradient(to right, #85174e, #eb5077);
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
 }
 
-#calculator h1 {
-    font-size: 24px;
-    color: #0d47a1;
+h1 {
+    color: #ebeff5;
     text-align: center;
     margin-bottom: 20px;
 }
 
 label {
     display: block;
-    font-weight: 600;
-    margin-top: 15px;
-    color: #333;
+    font-weight: 700;
+    margin-top: 5px;
+    color: #f8f5f5;
 }
 
 input[type="number"],
 select {
     width: 100%;
-    padding: 10px;
-    margin-top: 8px;
+    padding: 7px;
+    margin-top: 3px;
     border: 2px solid #0d47a1;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     transition: border-color 0.3s;
 }
 
@@ -56,41 +57,41 @@ select:focus {
     outline: none;
 }
 
-/* Button styling */
 button {
     display: block;
     width: 100%;
     padding: 10px;
     margin-top: 20px;
-    background-color: #0d47a1;
+    background-color: #184d9c;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     font-size: 18px;
+    font-weight: bolder;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #1565c0;
+    background-color: #bef754;
+    color:black;
+    border-radius: 40px;
 }
 
-/* Result paragraph styling */
 #result {
     margin-top: 20px;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    color: #1565c0;
+    color: #f4f6f8;
 }
 
-/* Responsive design */
 @media (max-width: 400px) {
     body {
         padding: 10px;
     }
 
-    #calculator {
+    .container {
         padding: 20px;
     }
 }
