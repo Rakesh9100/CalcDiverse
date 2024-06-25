@@ -1,0 +1,215 @@
+.container {
+    display: flex;
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #007bff;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Chart Styling */
+#expenses-chart {
+    margin-top: 20px;
+}
+
+/* Dark Theme Styling */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .input-group label,
+body.dark-theme .form-group label {
+    color: #ffffff;
+}
+
+body.dark-theme .input-group input,
+body.dark-theme .form-group select {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+}
+
+body.dark-theme .results {
+    background-color: #1e1e1e;
+}
+
+body.dark-theme .error-message {
+    color: #ff6b6b;
+}
+
+body.dark-theme #total-cost {
+    color: #76c7c0;
+}
+
+#results {
+    margin: 10px auto;
+    height: 400px;
+    width: 400px;
+}
+
+/* Add styles for the form within #budget-form */
+
+#budget-form {
+    max-width: 400px;
+    /* Limit form width */
+    margin: 0 auto;
+    /* Center the form horizontally */
+    padding: 20px;
+    /* Add some padding around the form */
+    background-color: #f8f9fa;
+    /* Light background color */
+    border-radius: 8px;
+    /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+#budget-form .input-group {
+    margin-bottom: 15px;
+    /* Add space between input groups */
+}
+
+#budget-form label {
+    display: block;
+    /* Make labels block-level for better spacing */
+    font-weight: bold;
+    /* Bold labels */
+}
+
+#budget-form input[type="number"],
+#budget-form select {
+    width: 100%;
+    /* Make inputs and selects full width */
+    padding: 8px;
+    /* Add padding inside inputs */
+    border: 1px solid #ccc;
+    /* Add a border */
+    border-radius: 4px;
+    /* Add rounded corners to inputs */
+}
+
+#budget-form select {
+    cursor: pointer;
+    /* Show pointer cursor on selects */
+}
+
+#budget-form .form-group {
+    margin-bottom: 15px;
+    /* Add space between form groups */
+}
+
+/* Optional: Dark theme for the form */
+body.dark-theme #budget-form {
+    background-color: #333333;
+    /* Dark background color */
+    color: #ffffff;
+    /* Light text color */
+}
+
+body.dark-theme #budget-form label {
+    color: #ffffff;
+    /* Light labels in dark theme */
+}
+
+body.dark-theme #budget-form input[type="number"],
+body.dark-theme #budget-form select {
+    background-color: #444444;
+    /* Dark input background color */
+    color: #ffffff;
+    /* Light text color */
+    border-color: #555555;
+    /* Dark border color */
+}
+
+body.dark-theme #budget-form .form-group select {
+    background-color: #444444;
+    /* Dark select background color */
+    border-color: #555555;
+    /* Dark border color */
+}
+
+/* Optional: Dark theme for the form results */
+body.dark-theme #results {
+    background-color: #1e1e1e;
+    /* Dark background color */
+}
+
+.error-message {
+    color: red;
+    opacity: 0;
+    /* Start with zero opacity */
+    transition: opacity 0.3s ease-in-out;
+    /* Smooth transition for opacity */
+}
+
+.error-message.show {
+    opacity: 1;
+    /* Show message with full opacity */
+    animation: fadeOut 3s linear forwards;
+    /* Start fade-out animation after 3 seconds */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    /* Start with full opacity */
+    100% {
+        opacity: 0;
+    }
+
+    /* Fade out to zero opacity */
+}

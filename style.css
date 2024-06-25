@@ -1488,7 +1488,6 @@ section {
     font-size: 3.5rem;
     text-decoration: none;
     margin: 0 1rem;
-    transition: 0.3s ease-in-out;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -1496,12 +1495,50 @@ section {
     gap: 2rem;
 }
 
+.social a i {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Pop up effect */
+
+.social a:hover i{
+    transform: translateY(-8px);
+}
+
 .social a {
     color: var(--secondary);
 }
 
-.social a:hover {
-    color: var(--primary);
+.social a.user:hover {
+    color: #4af3b5;
+}
+
+.social a.message:hover {
+    color: #73408f;
+}
+
+.social a.linkedin:hover {
+    color: #1990cb;
+}
+
+.social a.github:hover {
+    color: #21d061;
+}
+
+.social a.instagram:hover {
+    color: #d62976;
+}
+
+.social a.facebook:hover {
+    color: #0026ff;
+}
+
+.social a.twitter:hover {
+    color: #00fff7;
+}
+
+.social a.discord:hover {
+    color: #5865F2;
 }
 
 .footer-basic .copyright {
@@ -1519,7 +1556,6 @@ section {
     bottom: 0;
     right: 0;
     margin: 0 2rem 2rem 0;
-
     height: fit-content;
     width: fit-content;
     z-index: 100000;
@@ -1530,7 +1566,6 @@ section {
     height: 42px;
     width: 42px;
     background-color: rgba(255, 255, 255, 0.9);
-
     border: 0;
     cursor: pointer;
     box-shadow: 0px 0px 10px 1px palevioletred;
@@ -1577,6 +1612,30 @@ section {
     margin-left: 8rem;
     align-items: center;
     display: inline;
+    position: relative;
+}
+
+#searchResults_Container {
+    position: absolute;
+    max-height: 40rem;
+    background-color: white;
+    border-radius: 12px;
+    z-index: 2;
+    right: 0;
+    margin-top: 1rem;
+    left: 0;
+    color: black;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-width: 60rem;
+}
+
+#searchResults_Container p {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 0.1rem solid;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 #searchBar button {

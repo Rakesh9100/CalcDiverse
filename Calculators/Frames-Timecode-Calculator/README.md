@@ -1,8 +1,8 @@
-# <p align="center">Frames to Timecode Calculator</p>
+# <p align="center">Frames Timecode Calculator</p>
 
 ## Description :-
 
-This frames to timecode calculator helps you convert frames to timecode in a recorded video. Thanks to this tool, you will be able to quickly identify the correct frame or check how long your video will be.
+This calculator helps you convert frames to timecode and vice versa in a recorded video.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,8 @@ This frames to timecode calculator helps you convert frames to timecode in a rec
 
 ## Screenshots :-
 
-![image](/Calculators/Frames-to-Timecode-Calculator/assets/image.png)
+### Frames to Timecode
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/5230a080-2712-4449-9589-080127a5725a)
+
+### Timecode to Frames
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/df88c122-1820-42fb-b71d-abf20dabf0c6)
