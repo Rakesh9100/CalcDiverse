@@ -7,11 +7,10 @@ function calculateTrisectionpoint(event) {
     const x2 = parseFloat(document.getElementById('x2').value);
     const y2 = parseFloat(document.getElementById('y2').value);
 
-    // Calculate the midpoint
-    // const m1 = (x1 + x2) / 2;
-    // const m2 = (y1 + y2) / 2;
-   const m1=1;
-   const m2=2;
+    //Calculate the midpoint
+    const m1 = (x1 + x2) / 2;
+    const m2 = (y1 + y2) / 2;
+
     const d=m1+m2;
     const px=(((m1*x2)+(m2*x1))/d).toFixed(2);  
     const py=(((m1*y2)+(m2*y1))/d).toFixed(2); 
@@ -20,7 +19,7 @@ function calculateTrisectionpoint(event) {
     
     
     // Display the result
-    document.getElementById('result').textContent = `Trisection Point: (${px}, ${py}), (${qx}, ${qy})`;
+    document.getElementById('result').textContent = `Trisection Points: (${px}, ${py}), (${qx}, ${qy})`;
 }
 
 // Clear the input fields and result when the page is loaded or refreshed
