@@ -1,9 +1,9 @@
-# <p align="center">Midpoint Calculator</p>
+# <p align="center">Trisection point Calculator</p>
 
 ## Description :-
 
-A web-based midpoint calculator where there are 4 input fields consisting of x1, x2, y1, y2.
-Users have to fill in this value to get mid point.
+A web-based Trisection point calculator where there are 4 input fields consisting of x1, x2, y1, y2.
+Users have to fill these fields to get Trisection points.
 
 ## Tech Stacks :-
 
