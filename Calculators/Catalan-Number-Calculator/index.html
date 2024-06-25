@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catalan Number Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Nth Catalan Number Calculator</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form name="myform">
+                <label for="no">Enter the term you want to find:</label>
+                        <input type="number" name="term" id="no">
+                        <button type="button" onclick="findCatalanNumber()">Find Catalan Number</button>
+            </form>
+            <div id="catalanNumbers"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
