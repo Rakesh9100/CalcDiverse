@@ -12,4 +12,4 @@ Calculates the hash for your message from one of the widely used hashing algorit
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/632b2a23-0b9a-4a32-95be-ee5064e8c235)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/94289402/8c923714-5bba-4ea8-991c-039fb3edeaca)
