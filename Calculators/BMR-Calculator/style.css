@@ -8,7 +8,8 @@ body {
 
 .calculator {
     background-color: #fff;
-    width: 400px;
+    width: calc(100vw - 40px);
+    max-width: 400px;
     margin: 50px auto;
     padding: 20px;
     border-radius: 8px;
@@ -30,8 +31,15 @@ label {
     color: #555;
 }
 
-input[type="number"],
-select {
+input[type="number"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select{
     width: 100%;
     padding: 8px;
     margin-bottom: 12px;

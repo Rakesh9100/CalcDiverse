@@ -19,8 +19,8 @@ body.light {
 
 .container {
     position: relative;
-    min-width: 300px;
-    min-height: 400px;
+    width: fit-content;
+    height: fit-content;
     background: #333;
     padding: 40px 30px 30px;
     border-radius: 20px;
@@ -216,4 +216,36 @@ span:hover {
 .result-give:hover,
 .clear-one:hover {
     border: none;
+}
+
+@media (max-width: 800px) {
+    .calculator span {
+        width: 85%;
+        height: 50px;
+    }
+
+    body.light .calculator .clear,
+    .calculator .clear {
+        width: 95%;
+    }
+
+    .calculator .value {
+        height: 70px;
+        width: 95%;
+    }
+
+    .calculator .equal {
+        height: 90%;
+    }
+
+    .btn {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 30px 20px;
+    }
 }
