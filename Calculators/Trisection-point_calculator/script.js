@@ -7,7 +7,7 @@ function calculateTrisectionpoint(event) {
     const x2 = parseFloat(document.getElementById('x2').value);
     const y2 = parseFloat(document.getElementById('y2').value);
 
-    //Calculate the midpoint
+    //Calculate the Trisection point
     const m1 = (x1 + x2) / 2;
     const m2 = (y1 + y2) / 2;
 
