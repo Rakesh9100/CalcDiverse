@@ -6,16 +6,20 @@ function calculate() {
 
     // Check if inputs are valid
     if (isNaN(resistance) || isNaN(length) || isNaN(area)) {
-        document.getElementById("result").innerText = "Please enter valid numbers.";
+        document.getElementById("conductivityresult").value = `Invalid Input`;
+        document.getElementById("resistivityresult").value = `Invalid Input`;
         return;
     }
 
     // Calculate conductivity using the formula: conductivity = 1 / resistance
-    const conductivity = 1 / resistance;
+    const number1 = 1 / resistance
+    const conductivity = number1.toFixed(12);
 
     // Calculate resistivity using the formula: resistivity = resistance * (area / length)
-    const resistivity = resistance * (area / length);
+    const number2=resistance * (area / length);
+    const resistivity = number2.toFixed(12);
 
     // Display the result
-    document.getElementById("result").innerText = `Conductivity: ${conductivity} S/m\nResistivity: ${resistivity} ohm*m`;
+    document.getElementById("conductivityresult").value = `Conductivity: ${conductivity} S/m`;
+    document.getElementById("resistivityresult").value = `Resistivity: ${resistivity} ohm-m`;
 }
