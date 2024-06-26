@@ -1659,6 +1659,7 @@ section {
     font-family: 'Poppins', sans-serif;
     border: 0;
     padding: 1rem;
+    margin-left: -7rem;
     height: 4rem;
     font-size: 2rem;
     text-align: center;
