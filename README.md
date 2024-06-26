@@ -59,15 +59,6 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 
 <h2>Live Project -- (https://calcdiverse.netlify.app/)</h2>
 
-Certainly! Here's the updated Markdown format with the list of calculators in the table format you requested:
-
-```markdown
-# My Awesome Calculator Collection
-
-## Overview
-
-This repository contains a collection of various calculators that perform different calculations. Each calculator is designed to solve specific problems or provide useful functionalities.
-
 ## Calculators
 
 | Calculator Name                          | Description                                                                                       |
