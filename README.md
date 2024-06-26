@@ -140,8 +140,6 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 | Date Time Calculator | Calculates Date & Time of the specific period. | 
 | Day From The Date Calculator | Calculates the day for the specified date. | 
 | Days Until Deadline Calculator | Calculates the number of days remaining until a selected date. | 
-
-
 | Decagon Calculator | Calculates the properties of a decagon based on the given input. | 
 | Decimal Binary Octal Hexadecimal Calculator | Converts numbers between decimal, binary, octal, and hexadecimal. | 
 | Deductive Reasoning Calculator | Calculates the deductive reasoning of the given inputs. | 
@@ -223,9 +221,7 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 | Market Share Calculator | Calculates the market share of a company based on its sales and the total market sales. | 
 | Mean Median Mode Calculator | Calculates the mean, median, and mode of a given data set. | 
 | Mechanical Advantage Calculator | Calculates the mechanical advantage of a simple machine. | 
-| Modulo Calculator | Calculates the remainder of a division operation. | [Source Code](#)
-
- |
+| Modulo Calculator | Calculates the remainder of a division operation. | 
 | Mortgage Calculator | Calculates the monthly payment, total payment, and total interest for a mortgage. | 
 | Multiplication Calculator | Performs multiplication of two numbers. | 
 | Mutual Fund Calculator | Calculates the future value of a mutual fund investment. | 
