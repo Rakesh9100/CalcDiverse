@@ -1,4 +1,13 @@
-function calculateNeeds() {
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('caloricForm');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        calculateNeeds(event);
+    });
+});
+
+function calculateNeeds() {   
+
     const age = parseInt(document.getElementById('age').value);
     const sex = document.getElementById('sex').value;
     const weight = parseFloat(document.getElementById('weight').value);
