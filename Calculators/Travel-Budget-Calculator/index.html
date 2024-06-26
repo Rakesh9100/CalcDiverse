@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Budget Calculator</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+
+        <form id="budget-form">
+            <h2 class="mb-4">Travel Budget Calculator</h2>
+            <h4 id="error-message" class="error-message"></h4>
+            <div class="input-group">
+                <label for="nights">Number of Nights:</label>
+                <input type="number" id="nights" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="accommodation">Accommodation per Night :</label>
+                <input type="number" id="accommodation" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="food">Food per Day :</label>
+                <input type="number" id="food" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="transportation">Transportation :</label>
+                <input type="number" id="transportation" min="0" required>
+            </div>
+            <div class="input-group">
+                <label for="activities">Activities :</label>
+                <input type="number" id="activities" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="currency">Select Currency:</label>
+                <select id="currency" class="form-control">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                </select>
+            </div>
+
+            <h3 id="total-cost">Estimated Total Cost: $0.00</h3>
+        </form>
+        <div id="results" class="results mt-3">
+            <canvas id="expenses-chart" width="300" height="150"></canvas>
+        </div>
+        <div class="theme-toggle mt-3">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
