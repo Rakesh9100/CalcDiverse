@@ -48,7 +48,7 @@ const faq = [
     {
         question: "Has CalcDiverse been part of any Open Source Programs?",
         answer:
-            "Yes, CalcDiverse has been part of Open Source Programs, including IWOC2024, JWOC2024, and SWOC2024.",
+            "Yes, CalcDiverse has been part of Open Source Programs, including IWOC2024, JWOC2024, SWOC2024 and GSSOC2024.",
     },
     {
         question: "Who is the Project Admin for CalcDiverse?",
