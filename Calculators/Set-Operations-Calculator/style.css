@@ -1,0 +1,54 @@
+html{
+    margin: 0;
+}
+body{
+    background-image: url("assets/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#calc-body{
+    max-width:800px;
+    width: 100%;
+    background-color:#252525e0;
+    border-radius: 20px;
+    margin:auto;
+    text-align:center;
+    box-shadow: 5px 5px yellow;
+}
+#sets{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.set{
+    display:inline-flex;
+    background-color: yellow;
+    font-size: 1.3em;
+}
+.set input{
+    font-size: 1em;
+}
+#options{
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.opt{
+    background-color: yellow;
+    width:100px;
+    padding: 20px;
+    border-radius:10px ;
+}
+#ans{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.clicked{
+    background-color: goldenrod;
+}
