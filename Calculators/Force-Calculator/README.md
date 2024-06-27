@@ -1,4 +1,4 @@
-# Newton's Force Calculator
+# Force Calculator
 
 A simple web application to calculate Newton's force using the formula F = ma (Force = Mass x Acceleration). This project allows users to input the mass and acceleration values to calculate the force.
 

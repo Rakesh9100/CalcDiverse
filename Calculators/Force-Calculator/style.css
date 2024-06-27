@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(bg.jpg);
+    background-image: url(assets/background.jpg);
     background-size: 1500px;
     background-position: 1500px;
 }
