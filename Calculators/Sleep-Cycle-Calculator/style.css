@@ -1,5 +1,5 @@
 body, html {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -29,7 +29,7 @@ h1 {
 
 #ampm {
     text-align: center;
-    font-size: 10px;
+    font-size: 1em;
 }
 
 .input-box {
@@ -56,12 +56,10 @@ button {
     color: #0c1d39;
     border-radius: 5px;
     cursor: pointer;
-    
 }
 
 button:hover {
-    background-color: #ffe5c0;;
-    
+    background-color: #ffe5c0;
 }
 
 #result {
@@ -85,16 +83,17 @@ button:hover {
 .modal-content {
     background-color: #5764b3;
     box-shadow: 5px 5px 5px rgb(250, 214, 114);
-    color:  rgb(255, 249, 221);
-    text-shadow: 30px 10px 20px solid #000000;
-    margin: 15% auto; 
+    color: rgb(255, 249, 221);
+    margin: 0 auto; 
     padding: 20px;
     border-radius: 10px;
-    width: 30%; 
+    width: 100%;
 }
+
 .resultDiv {
     margin-left: 50%;
 }
+
 .close {
     color: #ffffff;
     float: right;
@@ -107,4 +106,41 @@ button:hover {
     color: rgb(255, 234, 0);
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Responsiveness */
+
+@media (max-width: 320px) {
+    .modal-content {
+        width: 100%;
+        margin-top: 600px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 600px) {
+    .modal-content {
+        width: 85%;
+        margin-top: 250px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .modal-content {
+        width: 70%;
+        margin-top: 200px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .modal-content {
+        width: 50%;
+        margin-top: 200px;
+    }
+}
+
+@media (min-width: 993px) {
+    .modal-content {
+        width: 30%;
+        margin-top: 150px;
+    }
 }
