@@ -75,6 +75,36 @@
     animation: spin 2s linear infinite;
     z-index: 99999;
 }
+#dark-mode-button {
+	border: none; /* Remove any default border */
+	background: none; /* Remove any default background */
+	padding: 0; /* Remove any default padding */
+	cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+#dark-mode-icon {
+	width: 30px; /* Set the width of the image */
+	height: 30px; /* Set the height of the image */
+	border-radius: 50%; /* Make the image round */
+}
+/* Add styling for the dark mode toggle button */
+.dark-mode-toggle {
+	margin-left: auto;
+	padding-right: 20px;
+}
+
+#dark-mode-button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	color: #000; /* Adjust color as needed */
+}
+
+.dark-mode {
+	/* background-color: #222; Change background color to dark */
+	color: #fff; /* Change text color to light */
+}
 
 #loader:before {
     content: "";
