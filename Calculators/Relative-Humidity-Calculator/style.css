@@ -1,0 +1,16 @@
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bg {
+    background-color: aliceblue;
+}
+
+#result {
+    font: bolder;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif ;
+}

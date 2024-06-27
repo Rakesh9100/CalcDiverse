@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(100deg,rgb(53, 0, 87) ,rgb(83, 69, 69));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.icon-container {
+    position: fixed; 
+    top: 20px; 
+    left: 20px; 
+    z-index: 1000; 
+}
+
+.icon-container i {
+    font-size: 50px; 
+    color: #d6d6d6; 
+}
+
+.container {
+    background-color: #ffffff9d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    height: 580px;
+}
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    position: relative;
+    bottom: 0.5rem;
+    font-weight: bold;
+    color: #28026f;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="gray" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    cursor: pointer;
+}
+
+div button {
+    padding: 10px 20px;
+    background-color: #0068d7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-gap: 10px; /* Gap between grid items */
+    justify-content: center; /* Center items horizontally */
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    left: 2rem;
+}
+
+.result-container label{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result-container input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90%;
+}
+
+.result-item {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e8e8e8ea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.867);
+    color: #030340;
+}

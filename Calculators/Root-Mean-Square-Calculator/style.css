@@ -1,0 +1,67 @@
+body {
+    background-color: #e0e5ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;    
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    background-color: #e0e5ec;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+h1 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+input[type="text"], button {
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #e0e5ec;
+    box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+input[type="text"]:focus {
+    box-shadow: inset 6px 6px 12px #c1c1c1, inset -6px -6px 12px #ffffff;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    background-color: #e0e5ec;
+    box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #d1d9e6;
+    box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+}
+
+button:active {
+    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
