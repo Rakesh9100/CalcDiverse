@@ -31,6 +31,10 @@ The Macronutrient Calculator is a simple and effective tool designed to help use
 - Responsive design for use on various devices.
 - Clear input fields and results display.
 
+### Screenshots
+![Image](https://github.com/Antiquely3059/CalcDiverse/assets/112797055/f2e6311c-4f3b-467c-a347-066faa713211)
+
+
 ### Additional Functions
 - **Calculate Button**: Computes and displays the macronutrient needs based on the inputs.
 - **Reset Button**: Clears all inputs and results, allowing for a new calculation.
