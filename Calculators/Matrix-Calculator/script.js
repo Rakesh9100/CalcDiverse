@@ -154,7 +154,7 @@ function calculateRank(matrix) {
     return rank;
 }
 
-// power calculation function
+// Power calculation function
 
 function calculatePower(matrix, power) {
     if (power < 1) throw new Error("Power must be a positive integer.");
