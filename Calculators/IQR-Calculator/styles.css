@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    width: 400px;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    color: #333;
+    margin: 12% auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial Black', sans-serif; 
+}
+  
+label {
+    font-size: 1.2em; 
+}
+  
+textarea {
+    width: 95%;
+    margin: 10px 0;
+    padding: 10px;
+    resize: vertical;
+    font-family: 'Courier New', Courier, monospace; 
+    display: block;
+    min-height: 80px;
+}
+  
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #14ca5a; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.15em;
+}
+  
+button:hover {
+    background-color: #279451;
+}
+  
+#results {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+.ans {
+    font-size: 1.15em;
+    font-weight: 700;
+    color: #279451;
+}
