@@ -1,16 +1,20 @@
 # <p align="center">EBITDA Calculator</p>
 
-## Description
+## Description :-
 
-EBITDA = Net Sales – Raw Material Costs – Employee Costs – Other Operating Expenses
+EBITDA stands for Earnings Before Interest, Taxes, Depreciation, and Amortization.<br>
+
+EBITDA = Net Sales – Raw Material Costs – Employee Costs – Other Operating Expenses<br>
 
 This calculator helps businesses and financial analysts quickly compute the EBITDA and visualize the cost components using a doughnut chart. The calculator is designed to be responsive, displaying the form and chart side by side on larger screens and stacked vertically on smaller screens.
 
-## Tech Stacks
+## Tech Stacks :-
 
-- **HTML5**: Structure of the web page
-- **CSS3**: Styling and layout
-- **JavaScript**: Interactivity and logic for calculations
-- **Highcharts**: Library for creating the doughnut chart
+- HTML
+- CSS
+- JavaScript
+- Highcharts
 
-## Screenshots
+## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/a868a901-3f3d-4980-a43b-4c2304fc8e6d)
