@@ -2,7 +2,8 @@
 
 ## Description :-
 
-Calculates the resultant vector, dot product and angle between 2 vectors.
+Calculates the resultant vector, cross product, dot product and angle between 2 vectors.
+
 
 ## Tech Stacks :-
 

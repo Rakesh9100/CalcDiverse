@@ -23,7 +23,8 @@ button:active {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
+    color: beige;
 }
 
 input {
@@ -54,7 +55,8 @@ input {
     display: block;
     font-size: 24px;
     color: #C5EBFE;
-    margin: 10px;
+    margin: 15px;
+
 }
 
 .vect>p {
