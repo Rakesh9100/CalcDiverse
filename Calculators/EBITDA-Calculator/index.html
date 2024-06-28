@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>EBITDA Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="page calculator_page">
+            <section class="section ebitdaCalc_section">
+                <h1 style="text-align: center; color: #e66e19;">EBITDA Calculator</h1>
+                <article>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-md-12 col-12">
+                            <div class="calc_wrapper">
+                                <div class="row align-items-start flex-lg-row flex-column" style="display: flex;">
+                                    <div class="col-lg-6 col-md-12 col-12" style="width: 100%;padding-right: 2rem;">
+                                        <div class="form-group mt-3">
+                                            <h4 class="label_heading">Net Sales</h4>
+                                            <input type="number" class="form-control numberonly" id="netSales" autocomplete="off">
+                                            <span class="currency_symbol">₹</span>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <h4 class="label_heading">Raw Material Costs</h4>
+                                            <input type="number" class="form-control numberonly" id="rawMaterialCosts" autocomplete="off">
+                                            <span class="currency_symbol">₹</span>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <h4 class="label_heading">Employee Costs</h4>
+                                            <input type="number" class="form-control numberonly" id="employeeCosts" autocomplete="off">
+                                            <span class="currency_symbol">₹</span>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <h4 class="label_heading">Other Operating Expenses</h4>
+                                            <input type="number" class="form-control numberonly" id="otherExpenses" autocomplete="off">
+                                            <span class="currency_symbol">₹</span>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <h4 class="label_heading">EBITDA</h4>
+                                            <input type="text" class="form-control ebitda" id="calEBITDA" readonly="" autocomplete="off">
+                                        </div>
+                                        <button id="calculateBtn">Calculate</button>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-12" style="width: 100%;">
+                                        <div class="highchart_container">
+                                            <figure class="highcharts-figure">
+                                                <div id="ebitdaChart"></div>
+                                            </figure>
+                                            <div class="proxy-container">
+                                                <ul class="d-flex charts-legend">
+                                                    <li class="legend-item">
+                                                        <span class="chart-thumbnail" style="background-color: #db620a;"></span>
+                                                        <a class="elementname">Raw Material Costs</a>
+                                                    </li>
+                                                    <li class="legend-item">
+                                                        <span class="chart-thumbnail" style="background-color: #053c6d;"></span>
+                                                        <a class="elementname">Employee Costs</a>
+                                                    </li>
+                                                    <li class="legend-item">
+                                                        <span class="chart-thumbnail" style="background-color: #82c91e;"></span>
+                                                        <a class="elementname">Other Expenses</a>
+                                                    </li>
+                                                    <li class="legend-item">
+                                                        <span class="chart-thumbnail" style="background-color: #2b8a3e;"></span>
+                                                        <a class="elementname">EBITDA</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

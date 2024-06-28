@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Trisection Point Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Trisection Point Calculator</h2>
+        <form onsubmit="calculateTrisectionpoint(event)">
+            <div class="input-group">
+                <label class="input-label" for="x1">X1:</label>
+                <input type="text" id="x1" class="input-field" required />
+            </div>
+            <div class="input-group">
+                <label class="input-label" for="y1">Y1:</label>
+                <input type="text" id="y1" class="input-field" required />
+            </div>
+            <div class="input-group">
+                <label class="input-label" for="x2">X2:</label>
+                <input type="text" id="x2" class="input-field" required />
+            </div>
+            <div class="input-group">
+                <label class="input-label" for="y2">Y2:</label>
+                <input type="text" id="y2" class="input-field" required />
+            </div>
+            <button type="submit" class="button">Calculate Trisection point</button>
+            <div class="result" id="result"></div>
+        </form>
+    </div>
+
+    <script src="script.js" ></script>
+</body>
+</html>
