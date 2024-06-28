@@ -27,5 +27,6 @@ The Exponential Decay Calculator is a web-based tool designed to compute the rem
 - JavaScript
 
 ## Screenshots:
-![image](https://github.com/user/ExponentialDecayCalculator/blob/main/screenshots/exponential_decay.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/97523900/53b07196-26cb-4955-9257-8188cb6081d0)
+
 
