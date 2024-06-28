@@ -62,11 +62,11 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 
 ## Calculators
 
-| Calculator Name | Description | Link |
-|-----------------|-------------|-------|
-| 2D Distance Calculator | Calculates the distance between two points on a 2D plane. | https://calcdiverse.netlify.app/calculators/2d-distance-calculator/ |
-| 2D Shapes Calculator | Calculates the area and perimeter of different useful 2D shapes. | https://calcdiverse.netlify.app/calculators/2d-shapes-calculator/ |
-| 3D Distance Calculator | Calculates the distance between 2 points in a 3D space. | https://calcdiverse.netlify.app/calculators/3d-distance-calculator/ |
+| S.No | Calculator Name | Description | Link |
+|------|-----------------|-------------|-------|
+| 1. | 2D Distance Calculator | Calculates the distance between two points on a 2D plane. | https://calcdiverse.netlify.app/calculators/2d-distance-calculator/ |
+| 2. | 2D Shapes Calculator | Calculates the area and perimeter of different useful 2D shapes. | https://calcdiverse.netlify.app/calculators/2d-shapes-calculator/ |
+| 3. | 3D Distance Calculator | Calculates the distance between 2 points in a 3D space. | https://calcdiverse.netlify.app/calculators/3d-distance-calculator/ |
 | 3D Shapes Calculator | Calculates the volume and surface area of different important and useful 3D shapes. | https://calcdiverse.netlify.app/calculators/3d-shapes-calculator/ |
 | 4 Band Resistance Calculator | Calculate the theoretical resistance of a 4-band resistor. | https://calcdiverse.netlify.app/calculators/4-band-resistance-calculator/ |
 | 5 Band Resistance Calculator | Calculate the theoretical resistance of a 5-band resistor. | https://calcdiverse.netlify.app/calculators/5-band-resistance-calculator/ |
