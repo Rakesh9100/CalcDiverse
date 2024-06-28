@@ -1,110 +1,128 @@
-@media only screen and (max-width: 700px){
-    #head{
-        background-color: blue;
-        color: aliceblue;
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        height: 35px;
-        font-size: 1.5em;
-    }
-    #box{
-        margin: auto;
-        background-color: whitesmoke;
-        border: solid 2px black;
-        width: 300px;
-        text-align: center;
-        /* height: 400px; */
-    }
-    #info{
-        margin: auto;
-        background-color: whitesmoke;
-        border: solid 2px black;
-        width: 300px;
-        padding: 10px;
-    }
-    .text{
-        font-size: 1.25em;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    #explanation{
-        font-size: 1.25em;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .button{
-        cursor: pointer;
-        margin-left: 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 100px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        border-radius: 0px;
-        background-color:rgb(208, 207, 207);
-        font-weight: bold;
-    }
-    #heading{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    #calculate{
-        margin-left: 0px;
-    }
-    .button:hover{
-        color: black;
-        font-weight: bold;
-        background-color: rgb(251, 250, 250);
-    }
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgba(0, 49, 53, 0.5), rgba(0, 49, 53, 0.5)), url('assets/image.jpg');
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
-@media only screen and (min-width: 700px){
-    #head{
-        background-color: blue;
-        color: aliceblue;
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        height: 35px;
-        font-size: 1.5em;
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin: 0 auto 20px auto;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    background: #002325;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+.vl {
+    border-right: 2px solid white;
+}
+
+#head {
+    margin-top: 70px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#info {
+    border: 2px solid #0FA4AF;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    background-color: #024950;
+    box-shadow: 10px 10px 5px #070000;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+
+.eqn {
+    color: #4eff02;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#box {
+    font-size: 1.3rem;
+    border-radius: 10px;
+    background-color: #024950;
+    font-weight: 900;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.96);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.input {
+    height: 30px;
+    width: calc(100% - 40px);
+    margin: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #AFDDEF;
+    padding: 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: monospace;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #86c7e1;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 22px;
     }
-    #box{
-        margin: auto;
-        background-color: whitesmoke;
-        border: solid 2px black;
-        width: 600px;
-        /* text-align: center; */
-        /* height: 400px; */
+
+    #info {
+        font-size: 1rem;
     }
-    #info{
-        margin: auto;
-        background-color: whitesmoke;
-        border: solid 2px black;
-        width: 1200px;
-        padding: 10px;
+
+    .input {
+        width: calc(100% - 20px);
+        margin: 5px 10px;
     }
-    .text{
-        font-size: 1.25em;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .buttons {
+        flex-direction: column;
     }
-    #explanation{
-        font-size: 1.25em;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .button{
-        cursor: pointer;
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 100px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        border-radius: 0px;
-        background-color:rgb(208, 207, 207);
-        font-weight: bold;
-    }
-    #heading{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    #calculate{
-        margin-left: 360px;
-    }
-    .button:hover{
-        color: black;
-        font-weight: bold;
-        background-color: rgb(251, 250, 250);
+
+    .button {
+        width: calc(100% - 40px);
     }
 }

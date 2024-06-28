@@ -28,6 +28,9 @@
             <!-- Matrix B -->
             <h3>Matrix B</h3>
             <div id="matrixB"></div>
+            
+            <label for="matrixPower">Power:</label>
+            <input type="number" id="matrixPower" min="1" value="1" />
         </div>
 
         <button onclick="calculate('add')">Add</button>
@@ -36,6 +39,8 @@
         <button onclick="calculate('determinant')">Determinant</button>
         <button onclick="calculate('inverse')">Inverse</button>
         <button onclick="calculate('transpose')">Transpose</button>
+        <button onclick="calculate('rank')">Rank</button>
+        <button onclick="calculate('power')">Power</button>
 
         <h3>Result</h3>
         <div id="result"></div>

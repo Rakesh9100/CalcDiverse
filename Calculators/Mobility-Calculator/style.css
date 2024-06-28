@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background: rgb(19, 19, 125);
+    background: linear-gradient(90deg, rgb(233, 27, 106) 12%, rgb(236, 37, 40) 44%, rgb(203, 80, 3) 75%);
+}
+
+.calculator-container {
+    background-color: #00E0BE;
+    padding: 24px 63px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: rgb(255, 181, 74);
+    background: linear-gradient(318deg, rgba(255, 181, 74, 1) 20%, rgb(211, 45, 103) 78%);
+}
+
+h1 {
+    color: #6714d3;
+    font-size: 3em;
+}
+
+label {
+    display: block;
+    color: #3a2397;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #134E5E 0%, #71B280 51%, #134E5E 100%);
+    margin: 19px 79px;
+    padding: 9px 65px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    align-items: center;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+   
+    color: #fff;
+    text-decoration: none;
+}
+
+
+button:hover {
+    background-color: #158a1b;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #333;
+}

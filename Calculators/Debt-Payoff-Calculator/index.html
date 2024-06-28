@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Debt Payoff Calculator</title>
+</head>
+
+<body>
+    <div class="calculator-container">
+        <h1>Debt Payoff Calculator</h1>
+        <div class="input-container">
+            <label for="debt">Current Debt</label>
+            <input type="number" id="debt" placeholder="Enter your debt" required>
+        </div>
+        <div class="input-container">
+            <label for="months">Pay Debt in (Months)</label>
+            <input type="number" id="months" placeholder="Enter months" required>
+        </div>
+        <div class="input-container">
+            <label for="interest">Interest Rate (%)</label>
+            <input type="number" id="interest" placeholder="Enter interest rate" required>
+        </div>
+        <button type="button" id="calculate">Calculate</button>
+        <div class="result-container">
+            <div id="result">Total Payment: <span id="output" class="red">Rs. 0.00</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

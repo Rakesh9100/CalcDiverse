@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Rent Calculator</title>
+</head>
+
+<body>
+    <h1>How Much Rent Can I Afford?</h1>
+    <div class="main-container">
+        <div class="left-side"></div>
+        <div class="right-side">
+            <section class="signup">
+                <div class="container_SU">
+                    <div class="signup-content">
+                        <div class="signup-form">
+                            <h2 class="form-title">Rent Calculator</h2>
+                            <form id="rent-form">
+                                <div class="form-group">
+                                    <label for="income">Your pre-tax income:</label>
+                                    <input type="number" name="income" id="income" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="debt">Your monthly debt payback:</label>
+                                    <input type="number" id="debt" required>
+                                </div>
+                                <select id="incomePeriod">
+                                    <option value="month">per month</option>
+                                    <option value="year">per year</option>
+                                </select>
+                                <div class="form-group form-button">
+                                    <button type="button" onclick="calculateRent()">Calculate</button>
+                                    <button type="reset">Clear</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="resultMessage" class="result">
+                <p>You can afford up to <span id="maximum">$0</span> per month on a rental payment.</p>
+                <p>It is recommended to keep your rental payment below <span id="recommended">$0</span> per month.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Health Risk Assessment Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>HEALTH RISK ASSESSMENT CALCULATOR</h2>
+    <form id="healthForm">
+        <div class="form-section">
+            <h3>Personal Information</h3>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        
+        <div class="form-section">
+            <h3>Lifestyle Habits</h3>
+            <label for="smoking">Do you smoke?</label>
+            <select id="smoking" name="smoking" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            
+            <label for="exercise">How often do you exercise per week?</label>
+            <select id="exercise" name="exercise" required>
+                <option value="0">0 times</option>
+                <option value="1-2">1-2 times</option>
+                <option value="3-4">3-4 times</option>
+                <option value="5+">5 or more times</option>
+            </select>
+            
+            <label for="diet">How would you describe your diet?</label>
+            <select id="diet" name="diet" required>
+                <option value="healthy">Healthy</option>
+                <option value="average">Average</option>
+                <option value="unhealthy">Unhealthy</option>
+            </select>
+        </div>
+        
+        <div class="form-section">
+            <h3>Family History</h3>
+            <label for="familyHeartDisease">Family history of heart disease?</label>
+            <select id="familyHeartDisease" name="familyHeartDisease" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            
+            <label for="familyDiabetes">Family history of diabetes?</label>
+            <select id="familyDiabetes" name="familyDiabetes" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        
+        <button type="button" onclick="assessRisk()">Assess Risk</button>
+    </form>
+    
+    <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
