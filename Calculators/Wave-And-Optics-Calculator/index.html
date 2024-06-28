@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wave And Optics Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Wave and Optics Calculator</h1>
+        <div class="calculator-options">
+            <button class="wave" onclick="showCalculator('wave')">Wave Calculator</button>
+            <button class="optics" onclick="showCalculator('optics')">Optics Calculator</button>
+        </div>
+        <div id="wave-calculator" class="calculator" style="display: none;">
+            <h2>Wave Calculator</h2>
+            <label for="frequency">Frequency (Hz):</label>
+            <input type="number" id="frequency" name="frequency" step="any">
+
+            <label for="wavelength">Wavelength (m):</label>
+            <input type="number" id="wavelength" name="wavelength" step="any">
+
+            <button onclick="calculateWave()">Calculate</button>
+            <div class="result">
+                <h2>Results:</h2>
+                <p id="wave-speed">Wave Speed: </p>
+            </div>
+            <canvas id="waveGraph"></canvas>
+        </div>
+        <div id="optics-calculator" class="calculator" style="display: none;">
+            <h2>Optics Calculator</h2>
+            <label for="object-distance">Object Distance (cm):</label>
+            <input type="number" id="object-distance" name="object-distance" step="any">
+
+            <label for="focal-length">Focal Length (cm):</label>
+            <input type="number" id="focal-length" name="focal-length" step="any">
+
+            <button onclick="calculateOptics()">Calculate</button>
+            <div class="result">
+                <h2>Results:</h2>
+                <p id="image-distance">Image Distance: </p>
+            </div>
+            <canvas id="opticsGraph"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
