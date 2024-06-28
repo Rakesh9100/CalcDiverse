@@ -12,4 +12,4 @@ Calculates the area and perimeter of 2D shapes.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/9ac08132-a71c-45c9-b4ba-a8bc70c6e502)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/118552563/f38259c8-f72b-458f-bdbd-6ef327ffa10e)
