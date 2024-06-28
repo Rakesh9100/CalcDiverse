@@ -1,4 +1,14 @@
 // Function to calculate Speed
+
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navItems = document.querySelector('.nav-items');
+
+    burgerMenu.addEventListener('click', function() {
+        navItems.classList.toggle('active');
+    });
+});
+
 document.querySelector('.btn-speed').addEventListener('click', () => {
     const distance = parseFloat(document.querySelector('.distance-for-speed').value);
     const time = parseFloat(document.querySelector('.speed-time').value);

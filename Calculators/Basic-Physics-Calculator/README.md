@@ -18,6 +18,6 @@ This calculator allows users to easily calculate basic physics quantities such a
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/163159351/3da520fd-6857-423a-b810-9805757ee106)
 
 ### Before Calculation.
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/163159351/d5b7a268-7091-4ae1-bb40-8df7c7b5340e)
-### After Clicking Calculate,
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/163159351/41655f4d-2e29-47eb-82da-63cb3bd2ab1b)
+### After Clicking Calculate,
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/163159351/d5b7a268-7091-4ae1-bb40-8df7c7b5340e)

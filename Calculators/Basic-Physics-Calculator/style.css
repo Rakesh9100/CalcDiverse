@@ -11,7 +11,7 @@ h1, h2, p, button {
 }
 
 h1 {
-    font-size: 3em; 
+    font-size: 2.5em; 
     color: #477;
 }
 
@@ -21,7 +21,7 @@ h2 {
 }
 
 p {
-    font-size: 20px; 
+    font-size: 18px; 
 }
 
 button {
@@ -68,7 +68,7 @@ button:hover {
 .nav-item {
     color: #818181;
     text-decoration: none;
-    font-size: 20px; 
+    font-size: 18px; 
     transition: color 0.3s;
 }
 
@@ -76,6 +76,18 @@ button:hover {
     color: #f1f1f1;
 }
 
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
 
 .main-content {
     margin-top: 80px; 
@@ -97,7 +109,7 @@ button:hover {
     margin-bottom: 60px; 
 }
 
-/* Input*/
+/* Input */
 input, select {
     font-family: 'Quicksand', sans-serif;
     font-weight: 800;
@@ -126,4 +138,63 @@ input:focus, select:focus {
     color: white;
     font-size: 20px; 
     margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+
+    .nav-item {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; 
+    }
+
+    h2 {
+        font-size: 1.5em; 
+    }
+
+    p {
+        font-size: 16px; 
+    }
+
+    button {
+        font-size: 18px; 
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    input, select {
+        font-size: 16px; 
+    }
+
+    .results {
+        font-size: 18px; 
+    }
 }
