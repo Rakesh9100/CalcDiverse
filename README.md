@@ -65,45 +65,45 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 | Calculator Name | Description | Link |
 |-----------------|-------------|-------|
 | 2D Distance Calculator | Calculates the distance between two points on a 2D plane. | https://calcdiverse.netlify.app/calculators/2d-distance-calculator/ |
-| 2D Shapes Calculator | Calculates the area and perimeter of different useful 2D shapes. | 
-| 3D Distance Calculator | Calculates the distance between 2 points in a 3D space. | 
-| 3D Shapes Calculator | Calculates the volume and surface area of different important and useful 3D shapes. | 
-| 4 Band Resistance Calculator | Calculate the theoretical resistance of a 4-band resistor. | 
-| 5 Band Resistance Calculator | Calculate the theoretical resistance of a 5-band resistor. | 
-| ASCII Value Calculator | Calculates the ASCII value of any character. | 
-| Abundant Number Calculator | Checks for a number to be abundant or not. | 
-| Age Calculator | Calculates the person's age by taking in the date of birth as input. | 
-| Air Quality Index Calculator | Calculates the level of the air quality using AQI index as input. | 
-| Amortization Calculator | Calculates the monthly payments and generates an Amortization schedule for loans. | 
-| Anagram Calculator | Calculator which checks whether the two words are Anagram or not. | 
-| Antilog Calculator | Calculates the antilog of the any given number taken over any base. | 
-| Arithmetic Geometric Progression Calculator | Calculates nth Term and sum of n Terms of the Arithmetic Geometric Sequence. | 
-| Arithmetic Progression Calculator | Calculates nth Term and sum of n Terms present in an Arithmetic Sequence. | 
-| Armstrong Number Calculator | Computes all the Armstrong Numbers for the specified Number of digits. | 
-| Arrhenius Equation Calculator | Calculates important parameters of chemical kinetics. | 
-| Aspect Ratio Calculator | Calculates the aspect ratio of the specified height and width. | 
-| Astrological Age Calculator | Calculates the age on different planets as selected by the user. | 
-| Automorphic Number Calculator | Checks if a number is an automorphic number or not. | 
-| Averages Calculator | Calculates the arithmetic, geometric, and harmonic means. | 
-| BMI Calculator | Calculates the Body Mass Index of a person using Height & Weight. | 
-| BMR Calculator | Calculates the Basal Metabolic Rate of a person using height, weight & age. | 
-| Banker's Algorithm Calculator | Calculate the safety sequence for resource allocation. | 
-| Base Change Calculator | Converts a number between different bases. | 
-| Basic Calculator | Basic old school calculator for simple calculations | 
-| Battery Life Calculator | Estimates battery life based on capacity and average load current. | 
-| Bayes Theorem Calculator | Calculates the probability of an event A given that event B has occurred. | 
-| Bill Split Calculator | Effortlessly split bills with our calculator. Simplify expense sharing now! | 
-| Binary Calculator | Calculates results of different binary operations based on inputs. | 
-| Binomial Distribution Calculator | Calculates the value of the probability mass function and probability distribution function. | 
-| Binomial Expansion Calculator | Calculates and display the binomial expansion of given coefficients a, b, and power n. | 
-| Bitwise Calculator | Calculates results of different bitwise operations based on inputs. | 
-| Black Hole Number Calculator | Given any number, it reaches to Four. | 
-| Blood Alcohol Content Calculator | Calculates the BAC based on the entered input values. | 
-| Blood Pressure Calculator | Calculates the blood pressure based on the systolic and diastolic values. | 
-| Body Fat Percentage Calculator | Calculates the body fat percentage of a person using neck, waist, weight & height. | 
-| Book Reading Time Calculator | Calculates the time required to finish reading a book. | 
-| Bouncy Number Calculator | Check the number is bouncy or not and finds bouncy numbers in a range. | 
-| Buzz Number Calculator | Checks for a number to be a buzz number or not. | 
+| 2D Shapes Calculator | Calculates the area and perimeter of different useful 2D shapes. | https://calcdiverse.netlify.app/calculators/2d-shapes-calculator/ |
+| 3D Distance Calculator | Calculates the distance between 2 points in a 3D space. | https://calcdiverse.netlify.app/calculators/3d-distance-calculator/ |
+| 3D Shapes Calculator | Calculates the volume and surface area of different important and useful 3D shapes. | https://calcdiverse.netlify.app/calculators/3d-shapes-calculator/ |
+| 4 Band Resistance Calculator | Calculate the theoretical resistance of a 4-band resistor. | https://calcdiverse.netlify.app/calculators/4-band-resistance-calculator/ |
+| 5 Band Resistance Calculator | Calculate the theoretical resistance of a 5-band resistor. | https://calcdiverse.netlify.app/calculators/5-band-resistance-calculator/ |
+| ASCII Value Calculator | Calculates the ASCII value of any character. | https://calcdiverse.netlify.app/calculators/ascii-value-calculator/ |
+| Abundant Number Calculator | Checks for a number to be abundant or not. | https://calcdiverse.netlify.app/calculators/abundant-number-calculator/ |
+| Age Calculator | Calculates the person's age by taking in the date of birth as input. | https://calcdiverse.netlify.app/calculators/age-calculator/ |
+| Air Quality Index Calculator | Calculates the level of the air quality using AQI index as input. | https://calcdiverse.netlify.app/calculators/air-quality-index-calculator/ |
+| Amortization Calculator | Calculates the monthly payments and generates an Amortization schedule for loans. | https://calcdiverse.netlify.app/calculators/amortization-calculator/ |
+| Anagram Calculator | Calculator which checks whether the two words are Anagram or not. | https://calcdiverse.netlify.app/calculators/anagram-calculator/ |
+| Antilog Calculator | Calculates the antilog of the any given number taken over any base. | https://calcdiverse.netlify.app/calculators/antilog-calculator/ |
+| Arithmetic Geometric Progression Calculator | Calculates nth Term and sum of n Terms of the Arithmetic Geometric Sequence. | https://calcdiverse.netlify.app/calculators/arithmetic-geometric-progression-calculator/ |
+| Arithmetic Progression Calculator | Calculates nth Term and sum of n Terms present in an Arithmetic Sequence. | https://calcdiverse.netlify.app/calculators/arithmetic-progression-calculator/ |
+| Armstrong Number Calculator | Computes all the Armstrong Numbers for the specified Number of digits. | https://calcdiverse.netlify.app/calculators/armstrong-number-calculator/ |
+| Arrhenius Equation Calculator | Calculates important parameters of chemical kinetics. | https://calcdiverse.netlify.app/calculators/arrhenius-equation-calculator/ |
+| Aspect Ratio Calculator | Calculates the aspect ratio of the specified height and width. | https://calcdiverse.netlify.app/calculators/aspect-ratio-calculator/ |
+| Astrological Age Calculator | Calculates the age on different planets as selected by the user. | https://calcdiverse.netlify.app/calculators/astrological-age-calculator/ |
+| Automorphic Number Calculator | Checks if a number is an automorphic number or not. | https://calcdiverse.netlify.app/calculators/automorphic-number-calculator/ |
+| Averages Calculator | Calculates the arithmetic, geometric, and harmonic means. | https://calcdiverse.netlify.app/calculators/averages-calculator/ |
+| BMI Calculator | Calculates the Body Mass Index of a person using Height & Weight. | https://calcdiverse.netlify.app/calculators/bmi-calculator/ |
+| BMR Calculator | Calculates the Basal Metabolic Rate of a person using height, weight & age. | https://calcdiverse.netlify.app/calculators/bmr-calculator/ |
+| Banker's Algorithm Calculator | Calculate the safety sequence for resource allocation. | https://calcdiverse.netlify.app/calculators/banker's-algorithm-calculator/ |
+| Base Change Calculator | Converts a number between different bases. | https://calcdiverse.netlify.app/calculators/base-change-calculator/ |
+| Basic Calculator | Basic old school calculator for simple calculations | https://calcdiverse.netlify.app/calculators/basic-calculator/ |
+| Battery Life Calculator | Estimates battery life based on capacity and average load current. | https://calcdiverse.netlify.app/calculators/battery-life-calculator/ |
+| Bayes Theorem Calculator | Calculates the probability of an event A given that event B has occurred. | https://calcdiverse.netlify.app/calculators/bayes-theorem-calculator/ |
+| Bill Split Calculator | Effortlessly split bills with our calculator. Simplify expense sharing now! | https://calcdiverse.netlify.app/calculators/bill-split-calculator/ |
+| Binary Calculator | Calculates results of different binary operations based on inputs. | https://calcdiverse.netlify.app/calculators/binary-calculator/ |
+| Binomial Distribution Calculator | Calculates the value of the probability mass function and probability distribution function. | https://calcdiverse.netlify.app/calculators/binomial-distribution-calculator/ |
+| Binomial Expansion Calculator | Calculates and display the binomial expansion of given coefficients a, b, and power n. | https://calcdiverse.netlify.app/calculators/binomial-expansion-calculator/ |
+| Bitwise Calculator | Calculates results of different bitwise operations based on inputs. | https://calcdiverse.netlify.app/calculators/bitwise-calculator/ |
+| Black Hole Number Calculator | Given any number, it reaches to Four. | https://calcdiverse.netlify.app/calculators/black-hole-number-calculator/ |
+| Blood Alcohol Content Calculator | Calculates the BAC based on the entered input values. | https://calcdiverse.netlify.app/calculators/blood-alcohol-content-calculator/ |
+| Blood Pressure Calculator | Calculates the blood pressure based on the systolic and diastolic values. | https://calcdiverse.netlify.app/calculators/blood-pressure-calculator/ |
+| Body Fat Percentage Calculator | Calculates the body fat percentage of a person using neck, waist, weight & height. | https://calcdiverse.netlify.app/calculators/body-fat-percentage-calculator/ |
+| Book Reading Time Calculator | Calculates the time required to finish reading a book. | https://calcdiverse.netlify.app/calculators/book-reading-time-calculator/ |
+| Bouncy Number Calculator | Check the number is bouncy or not and finds bouncy numbers in a range. | https://calcdiverse.netlify.app/calculators/bouncy-number-calculator/ |
+| Buzz Number Calculator | Checks for a number to be a buzz number or not. | https://calcdiverse.netlify.app/calculators/buzz-number-calculator/ |
 | CAGR Calculator | Calculates the Compound Annual Growth Rate of an investment over a specified period. | 
 | CGPA Percentage Calculator | Converts CGPA to percentage and vice-versa. | 
 | CGS FPS MKS Calculator | Calculator that converts inputs between CGS, FPS, and MKS unit systems for various physical quantities. | 
