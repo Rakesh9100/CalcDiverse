@@ -1,9 +1,11 @@
-
 document.getElementById('spyNumberForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const number = document.getElementById('numberInput').value;
     const result = checkSpyNumber(number);
-    document.getElementById('result').textContent = result ? `${number} is a Spy Number.` : `${number} is not a Spy Number.`;
+    const resultText = result.isSpyNumber 
+        ? `${number} is a Spy Number. A Spy Number is defined as a number whose sum and product of its digits are equal. For ${number}, the sum of its digits is ${result.sum} and the product of its digits is ${result.product}.`
+        : `${number} is not a Spy Number. A Spy Number is defined as a number whose sum and product of its digits are equal. For ${number}, the sum of its digits is ${result.sum} and the product of its digits is ${result.product}.`;
+    document.getElementById('result').textContent = resultText;
 });
 
 document.getElementById('clearResultBtn').addEventListener('click', function() {
@@ -27,7 +29,7 @@ function checkSpyNumber(number) {
     const digits = number.split('').map(Number);
     const sum = digits.reduce((a, b) => a + b, 0);
     const product = digits.reduce((a, b) => a * b, 1);
-    return sum === product;
+    return { isSpyNumber: sum === product, sum, product };
 }
 
 function findSpyNumbers(digitCount) {
@@ -35,7 +37,7 @@ function findSpyNumbers(digitCount) {
     const start = Math.pow(10, digitCount - 1);
     const end = Math.pow(10, digitCount);
     for (let i = start; i < end; i++) {
-        if (checkSpyNumber(i.toString())) {
+        if (checkSpyNumber(i.toString()).isSpyNumber) {
             spyNumbers.push(i);
         }
     }
