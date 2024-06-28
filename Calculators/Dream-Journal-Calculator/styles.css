@@ -2,11 +2,14 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,6 +32,7 @@ label {
 input, textarea, button {
     padding: 10px;
     margin-top: 5px;
+    font-size: 1em;
 }
 
 button {
@@ -45,6 +49,8 @@ button:hover {
 
 #wordCloud {
     margin: 0 auto;
+    width: 100%;
+    height: 400px;
 }
 
 .dream {
@@ -80,4 +86,21 @@ button:hover {
     text-align: center;
     color: white;
     line-height: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input, textarea, button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    #wordCloud {
+        height: 300px;
+    }
 }
