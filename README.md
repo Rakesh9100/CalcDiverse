@@ -247,156 +247,107 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 | 180 | Ohms Law Calculator | Calculates voltage, current, resistance, and power in watts for an electrical circuit. | https://calcdiverse.netlify.app/calculators/ohms-law-calculator/ |
 | 181 | PPM Calculator | Determines the concentration of substances in various solutions measured in parts per million. | https://calcdiverse.netlify.app/calculators/ppm-calculator/ |
 | 182 | Paint Calculator | Calculates how much paint is required to paint given area. | https://calcdiverse.netlify.app/calculators/paint-calculator/ |
-| 183 | Palindrome Calculator | Checks
+| 183 | Palindrome Calculator | Checks if an entered number or string is Palindrome or not. | https://calcdiverse.netlify.app/calculators/palindrome-calculator/ |
+| 184 | Password Strength Calculator | Calculates the strength of the Password. | https://calcdiverse.netlify.app/calculators/password-strength-calculator/ |
+| 185 | Percentage Calculator | Calculates the value percentage of any given number. | https://calcdiverse.netlify.app/calculators/percentage-calculator/ |
+| 186 | Percentage Fraction Calculator | Converts given Percentage to Fraction and vice-versa with detailed solution. | https://calcdiverse.netlify.app/calculators/percentage-fraction-calculator/ |
+| 187 | Perfect Number Calculator | Check for a number to be perfect or not. | https://calcdiverse.netlify.app/calculators/perfect-number-calculator/ |
+| 188 | Periodic Table Calculator | Provides detailed information about elements in the periodic table. | https://calcdiverse.netlify.app/calculators/periodic-table-calculator/ |
+| 189 | Permutation Combination Calculator | Calculates nPr and nCr after taking inputs as n and r. | https://calcdiverse.netlify.app/calculators/permutation-combination-calculator/ |
+| 190 | Pet Age Calculator | Calculates a pet's age in human years. | https://calcdiverse.netlify.app/calculators/pet-age-calculator/ |
+| 191 | Pipe Flow Calculator | Calculates the flow rate through the pipe. | https://calcdiverse.netlify.app/calculators/pipe-flow-calculator/ |
+| 192 | Planetary Motion Calculator | Calculates various parameters of planetary motion using Kepler's laws. | https://calcdiverse.netlify.app/calculators/planetary-motion-calculator/ |
+| 193 | Plant Growth Calculator | Calculates the average growth rate for your plants based on various parameters. | https://calcdiverse.netlify.app/calculators/plant-growth-calculator/ |
+| 194 | Plant Watering Calculator | Calculates the amount of water needed for your plants based on the plant type, size, soil type, and sunlight exposure. | https://calcdiverse.netlify.app/calculators/plant-watering-calculator/ |
+| 195 | Polynomial Roots Calculator | Calculates the real and imaginary roots of a given polynomial up to degree 2-4. | https://calcdiverse.netlify.app/calculators/polynomial-roots-calculator/ |
+| 196 | Population Density Calculator | Calculates the density of the population in a specific area. | https://calcdiverse.netlify.app/calculators/population-density-calculator/ |
+| 197 | Power Calculator | Calculates power between different units. | https://calcdiverse.netlify.app/calculators/power-calculator/ |
+| 198 | Prayer Time Calculator | Calculates the prayer time based on the location. | https://calcdiverse.netlify.app/calculators/prayer-time-calculator/ |
+| 199 | Pregnancy Due Date Calculator | Designed to estimate the due date for a pregnant woman based on the first day of her last menstrual period. | https://calcdiverse.netlify.app/calculators/pregnancy-due-date-calculator/ |
+| 200 | Pressure Calculator | Calculates the Pressure conversion between two specified units. | https://calcdiverse.netlify.app/calculators/pressure-calculator/ |
+| 201 | Prime Factorization Calculator | Calculates the prime factors of the given number. | https://calcdiverse.netlify.app/calculators/prime-factorization-calculator/ |
+| 202 | Probability Calculator | Calculates the Probability of different events. | https://calcdiverse.netlify.app/calculators/probability-calculator/ |
+| 203 | Profit Loss Calculator | Calculates the profit or loss in a click. | https://calcdiverse.netlify.app/calculators/profit-loss-calculator/ |
+| 204 | Projectile Motion Calculator | Calculates Max Height, Range, Time Of Flight of Projectile. | https://calcdiverse.netlify.app/calculators/projectile-motion-calculator/ |
+| 205 | Pronic Number Calculator | Checks if a number is pronic and finds pronic numbers in a range. | https://calcdiverse.netlify.app/calculators/pronic-number-calculator/ |
+| 206 | Proportionality Calculator | Input three values to compute the fourth, showcasing proportionality. | https://calcdiverse.netlify.app/calculators/proportionality-calculator/ |
+| 207 | Pythagorean Theorem Calculator | Which takes two sides of right-angled triangle and gives third side. | https://calcdiverse.netlify.app/calculators/pythagorean-theorem-calculator/ |
+| 208 | QR Code Generator Calculator | Generates the QR Code according to the given input. | https://calcdiverse.netlify.app/calculators/qr-code-generator-calculator/ |
+| 209 | Quadratic Equation Calculator | Calculates the roots of a quadratic equation. | https://calcdiverse.netlify.app/calculators/quadratic-equation-calculator/ |
+| 210 | Quotient And Remainder Calculator | Calculates the Quotient and Remainder. | https://calcdiverse.netlify.app/calculators/quotient-and-remainder-calculator/ |
+| 211 | ROI Calculator | Calculates the return on investment for your invested amount. | https://calcdiverse.netlify.app/calculators/roi-calculator/ |
+| 212 | RPN Calculator | Reverse Polish Notation calculator which represents expressions by placeing the operator after the operands. | https://calcdiverse.netlify.app/calculators/rpn-calculator/ |
+| 213 | Rainwater Harvesting Calculator | Calculates the annual rainwater that can be harvested by the storage tank in liters. | https://calcdiverse.netlify.app/calculators/rainwater-harvesting-calculator/ |
+| 214 | Random Letter Calculator | Generates randomized English alphabets used in brain teaser activities. | https://calcdiverse.netlify.app/calculators/random-letter-calculator/ |
+| 215 | Random Number Calculator | Generates a random number between 1 and 100. | https://calcdiverse.netlify.app/calculators/random-number-calculator/ |
+| 216 | Random Word Calculator | Generates random words based on a specified starting letter and the desired number of words. | https://calcdiverse.netlify.app/calculators/random-word-calculator/ |
+| 217 | Ratio Calculator | Which takes two numbers X and Y and then calculate X / Y. | https://calcdiverse.netlify.app/calculators/ratio-calculator/ |
+| 218 | Real Estate Calculator | This tool allows users to input property details and obtain essential information for financial planning. | https://calcdiverse.netlify.app/calculators/real-estate-calculator/ |
+| 219 | Recipe Cost Calculator | This tool enables users to input ingredients and quantities to calculate the total cost of a recipe. | https://calcdiverse.netlify.app/calculators/recipe-cost-calculator/ |
+| 220 | Rectangular Polar Calculator | Converts Rectangular form into Polar form and vice versa. | https://calcdiverse.netlify.app/calculators/rectangular-polar-calculator/ |
+| 221 | Relative Humidity Calculator | Calculates the humidity value using entered dewpoint and air temperature. | https://calcdiverse.netlify.app/calculators/relative-humidity-calculator/ |
+| 222 | Rent Calculator | Calculates the overall budget for a rental payment. | https://calcdiverse.netlify.app/calculators/rent-calculator/ |
+| 223 | Retirement Calculator | Predicts the user retirement savings growth. | https://calcdiverse.netlify.app/calculators/retirement-calculator/ |
+| 224 | Roman Numeral Calculator | Converts Roman Numeral form into Decimal form. | https://calcdiverse.netlify.app/calculators/roman-numeral-calculator/ |
+| 225 | Root Mean Square Calculator | Calculates the RMS value of a given set of numbers. | https://calcdiverse.netlify.app/calculators/root-mean-square-calculator/ |
+| 226 | Running Pace Calculator | Calculate the running Pace/Time/Distance in your desired units. | https://calcdiverse.netlify.app/calculators/running-pace-calculator/ |
+| 227 | Salary Estimation Calculator | Estimates the expected salary based on some parameters. | https://calcdiverse.netlify.app/calculators/salary-estimation-calculator/ |
+| 228 | Salary To Hourly Calculator | Calculates salary across various timeframes simultaneously. | https://calcdiverse.netlify.app/calculators/salary-to-hourly-calculator/ |
+| 229 | Savings Calculator | Calculates the total amount we can save over a specified period by making monthly deposits at a fixed interest rate. | https://calcdiverse.netlify.app/calculators/savings-calculator/ |
+| 230 | Sentence Counter Calculator | Counts the number of sentences in a given text. | https://calcdiverse.netlify.app/calculators/sentence-counter-calculator/ |
+| 231 | Shoe Size Calculator | Calculator that helps to find the perfect shoe size. | https://calcdiverse.netlify.app/calculators/shoe-size-calculator/ |
+| 232 | Short URL Calculator | Calculates the Short URL from Long URL. | https://calcdiverse.netlify.app/calculators/short-url-calculator/ |
+| 233 | Shortest Path Calculator | Calculates the shortest path between the two nodes. | https://calcdiverse.netlify.app/calculators/shortest-path-calculator/ |
+| 234 | Simple Interest Calculator | Calculates the simple interest. | https://calcdiverse.netlify.app/calculators/simple-interest-calculator/ |
+| 235 | Sleep Calculator | Calculates the amount of sleep required based on age and activity level. | https://calcdiverse.netlify.app/calculators/sleep-calculator/ |
+| 236 | Sleep Cycle Calculator | Calculates optimal bedtimes based on desired wake-up time and the scientific 90-min sleep cycles. | https://calcdiverse.netlify.app/calculators/sleep-cycle-calculator/ |
+| 237 | Slope Calculator | Calculates the slope of the line. | https://calcdiverse.netlify.app/calculators/slope-calculator/ |
+| 238 | Smith Number Calculator | Calculator that determines whether a given number is a Smith number or not. | https://calcdiverse.netlify.app/calculators/smith-number-calculator/ |
+| 239 | Solar Power Saving Calculator | Calculates the amount one can save on electricity by installing solar panels. | https://calcdiverse.netlify.app/calculators/solar-power-saving-calculator/ |
+| 240 | Speed Calculator | This tool allows users to convert speeds between different units. | https://calcdiverse.netlify.app/calculators/speed-calculator/ |
+| 241 | Square And Cube Calculator | Calculates square and cube of a number. | https://calcdiverse.netlify.app/calculators/square-and-cube-calculator/ |
+| 242 | Square Root Calculator | Calculates the square root of a number instantly. | https://calcdiverse.netlify.app/calculators/square-root-calculator/ |
+| 243 | Statistics Calculator | Calculates Maximum, minimum, mean, median, mode, etc. | https://calcdiverse.netlify.app/calculators/statistics-calculator/ |
+| 244 | Stock Profit Calculator | Calculates the profits in stocks by entering some parameters. | https://calcdiverse.netlify.app/calculators/stock-profit-calculator/ |
+| 245 | Stress Strain Calculator | Computes stress and strain using force, area, and length inputs. | https://calcdiverse.netlify.app/calculators/stress-strain-calculator/ |
+| 246 | String To Integer Calculator | Converts the provided string to integer or decimal value. | https://calcdiverse.netlify.app/calculators/string-to-integer-calculator/ |
+| 247 | Sunrise Sunset Calculator | Calculates approximate about when the sun will rise and set at that particular point on the Earth's surface. | https://calcdiverse.netlify.app/calculators/sunrise-sunset-calculator/ |
+| 248 | Systematic Investment Plan Calculator | Calculator that gives an idea of the returns on their mutual fund investments made through SIP. | https://calcdiverse.netlify.app/calculators/systematic-investment-plan-calculator/ |
+| 249 | Taxi Fare Calculator | Calculates the cost of taxi ride based on distance, base fare and time. | https://calcdiverse.netlify.app/calculators/taxi-fare-calculator/ |
+| 250 | Taylor Series Calculator | Calculates the Taylor Series expansion of a mathematical function. | https://calcdiverse.netlify.app/calculators/taylor-series-calculator/ |
+| 251 | Temperature Calculator | Calculates the Temperature conversion between two specified units. | https://calcdiverse.netlify.app/calculators/temperature-calculator/ |
+| 252 | Thala For A Reason Calculator | Whatever number you give it will return 7. | https://calcdiverse.netlify.app/calculators/thala-for-a-reason-calculator/ |
+| 253 | Tile Calculator | Calculates the number of tiles for the given area. | https://calcdiverse.netlify.app/calculators/tile-calculator/ |
+| 254 | Time Calculator | Calculates Hours, Minutes, Seconds for any entered time. | https://calcdiverse.netlify.app/calculators/time-calculator/ |
+| 255 | Time Complexity Calculator | Calculates the time complexity of given programs by the user. | https://calcdiverse.netlify.app/calculators/time-complexity-calculator/ |
+| 256 | Time Zone Calculator | Instantly find the time difference anywhere in the world. | https://calcdiverse.netlify.app/calculators/time-zone-calculator/ |
+| 257 | Tip Calculator | Calculates the tip amount and final amount based on tip percentage and amount. | https://calcdiverse.netlify.app/calculators/tip-calculator/ |
+| 258 | Torque Calculator | Calculates the torque based on force, distance, and angle entered. | https://calcdiverse.netlify.app/calculators/torque-calculator/ |
+| 259 | Travel Budget Calculator | Calculates the budget of any trip based on various inputs. | https://calcdiverse.netlify.app/calculators/travel-budget-calculator/ |
+| 260 | Triangle Calculator | Calculates the different results of a triangle based on input sides. | https://calcdiverse.netlify.app/calculators/triangle-calculator/ |
+| 261 | Trigonometric Calculator | Calculates trigonometric functions and inverses. | https://calcdiverse.netlify.app/calculators/trigonometric-calculator/ |
+| 262 | Trigonometric Function Graphing Calculator | Provides the graph as per the given function like sin, cos, tan, etc. | https://calcdiverse.netlify.app/calculators/trigonometric-function-graphing-calculator/ |
+| 263 | Trisection Point Calculator | Calculates the trisection points of a given two points(Line). | https://calcdiverse.netlify.app/calculators/trisection-point-calculator/ |
+| 264 | Twin Prime Number Calculator | Calculates the pair of prime numbers that have a difference of 2. | https://calcdiverse.netlify.app/calculators/twin-prime-number-calculator/ |
+| 265 | Typing Speed Calculator | Calculates the typing speed in two different units. | https://calcdiverse.netlify.app/calculators/typing-speed-calculator/ |
+| 266 | Ugly Number Calculator | Checks if a number is ugly number or not. | https://calcdiverse.netlify.app/calculators/ugly-number-calculator/ |
+| 267 | Unit Calculator | Converts values between different units of measurement. | https://calcdiverse.netlify.app/calculators/unit-calculator/ |
+| 268 | Vector Calculator | Calculates the resultant vector, dot product and angle between 2 vectors. | https://calcdiverse.netlify.app/calculators/vector-calculator/ |
+| 269 | Velocity Acceleration Calculator | Calculates the velocity and acceleration by taking distance and time. | https://calcdiverse.netlify.app/calculators/velocity-acceleration-calculator/ |
+| 270 | Vowel Consonant Calculator | Calculates number of vowels and consonants in a given paragraph. | https://calcdiverse.netlify.app/calculators/vowel-consonant-calculator/ |
+| 271 | Water Intake Calculator | Calculate daily water intake based on weight, activity, and weather. | https://calcdiverse.netlify.app/calculators/water-intake-calculator/ |
+| 272 | Water TDS Calculator | Calculates the TDS of the given water sample. | https://calcdiverse.netlify.app/calculators/water-tds-calculator/ |
+| 273 | Wave And Optics Calculator | Calculates wave speed and determines image distance using the lens formula. | https://calcdiverse.netlify.app/calculators/wave-and-optics-calculator/ |
+| 274 | Weather Calculator | Calculates wind chill factor, dew point, heat index, reports human thermal comfort and converts temperature. | https://calcdiverse.netlify.app/calculators/weather-calculator/ |
+| 275 | Website Bandwidth Calculator | Calculates the bandwidth of a website based on some factors. | https://calcdiverse.netlify.app/calculators/website-bandwidth-calculator/ |
+| 276 | Weight Calculator | Calculates the weight between different units. | https://calcdiverse.netlify.app/calculators/weight-calculator/ |
+| 277 | Weight On The Moon Calculator | Calculates the weight of the object/person on the moon. | https://calcdiverse.netlify.app/calculators/weight-on-the-moon-calculator/ |
+| 278 | Word Count Calculator | Counts the Total Words, Unique words, Average word length and Exports the data in JSON. | https://calcdiverse.netlify.app/calculators/word-count-calculator/ |
+| 279 | Yarn Density Calculator | Calculates the linear density of the yarn from unit system to another. | https://calcdiverse.netlify.app/calculators/yarn-density-calculator/ |
 
 
 
 
-
-
-| Factorial Calculator | Calculates the factorial of any given number. | 
-| Factors Calculator | Calculates all the factors of a given number. | 
-| Falling Object Calculator | Calculates the speed and time of falling objects under gravity. | 
-| Fermi Paradox Calculator | Calculates the probability of the existence of extraterrestrial civilizations. | 
-| Fibonacci Calculator | Generates the Fibonacci sequence up to a specified number of terms. | 
-| Figure Skating Scores Calculator | Calculates the scores for figure skating based on the given inputs. | 
-| Final Velocity Calculator | Calculates the final velocity of an object in motion. | 
-| Force Calculator | Calculates the force applied based on mass and acceleration. | 
-| Friction Calculator | Calculates the frictional force based on the coefficient of friction and normal force. | 
-| Functional Point Calculator | Estimates the size of a software project in functional points. | 
-| GCD LCM Calculator | Calculates the greatest common divisor and least common multiple of two numbers. | 
-| GP Calculator | Calculates the nth term and sum of n terms of a geometric sequence. | 
-| Gaussian Elimination Calculator | Solves systems of linear equations using the Gaussian elimination method. | 
-| Geometry Calculator | Calculates the area, perimeter, volume, and other properties of various geometric shapes. | 
-| Gold Price Calculator | Calculates the value of gold based on weight and current market price. | 
-| Greatest of Four Numbers Calculator | Determines the greatest number among four given numbers. | 
-| Group Work Calculator | Calculates the time required to complete a task by a group of people. | 
-| HCF and LCM Calculator | Calculates the highest common factor and lowest common multiple of given numbers. | 
-| Hashcode Calculator | Generates the hash code for a given input string. | 
-| Heart Rate Calculator | Calculates the heart rate based on the number of beats per minute. | 
-| Hexadecimal Calculator | Performs mathematical operations on hexadecimal numbers. | 
-| Hexadecimal Decimal Binary Octal Calculator | Converts numbers between hexadecimal, decimal, binary, and octal. | 
-| Histogram Generator | Generates a histogram for a given data set. | 
-| Holiday Pay Calculator | Calculates the holiday pay based on the number of hours worked. | 
-| Horsepower Calculator | Calculates the horsepower of an engine based on torque and RPM. | 
-| House Rent Allowance Calculator | Calculates the house rent allowance based on the salary and other inputs. | 
-| Hubble Law Calculator | Calculates the velocity of a galaxy based on its distance and the Hubble constant. | 
-| Hyperbolic Cosine Calculator | Calculates the hyperbolic cosine of a given angle. | 
-| Hyperbolic Sine Calculator | Calculates the hyperbolic sine of a given angle. | 
-| Hyperbolic Tangent Calculator | Calculates the hyperbolic tangent of a given angle. | 
-| Hypotenuse Calculator | Calculates the hypotenuse of a right triangle. | 
-| IC50 Calculator | Calculates the half-maximal inhibitory concentration (IC50) for a given set of data. | 
-| IP Calculator | Calculates the subnet mask, network address, and other IP-related information. | 
-| IRR Calculator | Calculates the internal rate of return for a series of cash flows. | 
-| Ideal Gas Law Calculator | Calculates the properties of an ideal gas based on the ideal gas law. | 
-| Indefinite Integral Calculator | Calculates the indefinite integral of a given function. | 
-| Induction Motor Calculator | Calculates the parameters of an induction motor based on given inputs. | 
-| Inflation Calculator | Calculates the inflation rate based on the given inputs. | 
-| Insurance Premium Calculator | Calculates the insurance premium based on the given inputs. | 
-| Interest Rate Calculator | Calculates the interest rate based on the principal, time, and interest. | 
-| International Size Conversion Calculator | Converts clothing sizes between different international standards. | 
-| Internet Speed Calculator | Calculates the download and upload speeds based on the given inputs. | 
-| Investment Calculator | Calculates the future value of an investment based on the given inputs. | 
-| Joules to Calories Calculator | Converts energy values from joules to calories and vice versa. | 
-| Kinetic Energy Calculator | Calculates the kinetic energy of an object based on its mass and velocity. | 
-| LC Circuit Calculator | Calculates the resonant frequency of an LC circuit. | 
-| Laplace Transform Calculator | Calculates the Laplace transform of a given function. | 
-| Laplace's Equation Calculator | Solves Laplace's equation for a given set of boundary conditions. | 
-| Leap Year Calculator | Determines if a given year is a leap year or not. | 
-| LED Resistor Calculator | Calculates the required resistor value for an LED circuit. | 
-| Loan Calculator | Calculates the monthly payment, total payment, and total interest for a loan. | 
-| Logarithm Calculator | Calculates the logarithm of a given number to any base. | 
-| Lorentz Force Calculator | Calculates the force on a charged particle moving through a magnetic field. | 
-| Love Calculator | Calculates the compatibility between two people based on their names. | 
-| Luhn Algorithm Calculator | Verifies credit card numbers using the Luhn algorithm. | 
-| MCDM Calculator | Solves multi-criteria decision-making problems using various methods. | 
-| MLE Calculator | Calculates the maximum likelihood estimate for a given set of data. | 
-| Magic Number Calculator | Determines if a given number is a magic number or not. | 
-| Magnitude Calculator | Calculates the magnitude of a vector. | 
-| Magnetic Flux Calculator | Calculates the magnetic flux through a given area. | 
-| Malignant Growth Calculator | Calculates the growth rate of a malignant tumor. | 
-| Market Share Calculator | Calculates the market share of a company based on its sales and the total market sales. | 
-| Mean Median Mode Calculator | Calculates the mean, median, and mode of a given data set. | 
-| Mechanical Advantage Calculator | Calculates the mechanical advantage of a simple machine. | 
-| Modulo Calculator | Calculates the remainder of a division operation. | 
-| Mortgage Calculator | Calculates the monthly payment, total payment, and total interest for a mortgage. | 
-| Multiplication Calculator | Performs multiplication of two numbers. | 
-| Mutual Fund Calculator | Calculates the future value of a mutual fund investment. | 
-| NPV Calculator | Calculates the net present value of a series of cash flows. | 
-| Navier Stokes Equation Calculator | Solves the Navier Stokes equation for fluid dynamics problems. | 
-| Net Income Calculator | Calculates the net income based on the gross income and deductions. | 
-| Neutralization Calculator | Calculates the amount of acid or base required to neutralize a solution. | 
-| Newton's Law Calculator | Solves problems based on Newton's laws of motion. | 
-| Normal Force Calculator | Calculates the normal force acting on an object. | 
-| Nuclear Decay Calculator | Calculates the decay rate of a radioactive substance. | 
-| Ohm's Law Calculator | Calculates the voltage, current, or resistance using Ohm's law. | 
-| Orbital Velocity Calculator | Calculates the orbital velocity of a satellite based on its altitude. | 
-| P-Value Calculator | Calculates the p-value for a given set of statistical data. | 
-| Percentage Calculator | Calculates the percentage of a number. | 
-| Perimeter Calculator | Calculates the perimeter of various geometric shapes. | 
-| Permutation Calculator | Calculates the number of permutations of a given set of items. | 
-| Phasor Calculator | Calculates the phasor representation of a sinusoidal function. | 
-| Piston Displacement Calculator | Calculates the displacement of an engine piston based on its dimensions. | 
-| Population Growth Calculator | Calculates the future population based on current population and growth rate. | 
-| Potential Energy Calculator | Calculates the potential energy of an object based on its height and mass. | 
-| Power Calculator | Calculates the power consumed or produced by a device. | 
-| Pressure Calculator | Calculates the pressure exerted by a force on a surface. | 
-| Probability Calculator | Calculates the probability of an event occurring. | 
-| Profit Calculator | Calculates the profit based on revenue and cost. | 
-| Quadratic Equation Calculator | Solves quadratic equations and finds their roots. | 
-| Radiation Dose Calculator | Calculates the radiation dose received based on exposure time and intensity. | 
-| Radiator Efficiency Calculator | Calculates the efficiency of a radiator based on its parameters. | 
-| Rectangular Prism Calculator | Calculates the volume and surface area of a rectangular prism. | 
-| Relative Velocity Calculator | Calculates the relative velocity between two objects. | 
-| Resistor Color Code Calculator | Decodes the color bands on resistors to determine their resistance value. | 
-| Retirement Calculator | Calculates the amount needed for retirement based on current savings and future goals. | 
-| Return on Investment Calculator | Calculates the return on investment based on the initial investment and final value. | 
-| Rheology Calculator | Calculates the rheological properties of fluids based on viscosity and shear rate. | 
-| Right Triangle Calculator | Calculates the properties of a right triangle based on the given inputs. | 
-| ROI Calculator | Calculates the return on investment based on the given inputs. | 
-| Roman Numeral Calculator | Converts numbers between Roman and Arabic numerals. | 
-| Root Mean Square Calculator | Calculates the root mean square value of a given data set. | 
-| Salary Calculator | Calculates the net salary based on the gross salary and deductions. | 
-| Savings Calculator | Calculates the future value of savings based on the initial amount, interest rate, and time. | 
-| Scale Conversion Calculator | Converts measurements between different scales. | 
-| Scientific Notation Calculator | Converts numbers to and from scientific notation. | 
-| Second Derivative Calculator | Calculates the second derivative of a given function. | 
-| Series Circuit Calculator | Calculates the total resistance, voltage, and current in a series circuit. | 
-| Simple Interest Calculator | Calculates the simple interest based on principal, rate, and time. | 
-| Simpson's Rule Calculator | Calculates the definite integral of a function using Simpson's rule. | 
-| Sine Calculator | Calculates the sine of a given angle. | 
-| Sine Rule Calculator | Solves triangles using the sine rule. | 
-| Sinusoidal Wave Calculator | Calculates the properties of a sinusoidal wave based on its parameters. | 
-| Slope Calculator | Calculates the slope of a line based on two points. | 
-| Speed Calculator | Calculates the speed of an object based on distance and time. | 
-| Sphere Calculator | Calculates the volume and surface area of a sphere. | 
-| Square Calculator | Calculates the area and perimeter of a square. | 
-| Standard Deviation Calculator | Calculates the standard deviation of a given data set. | 
-| Statistics Calculator | Calculates various statistical measures for a given data set. | 
-| Stoichiometry Calculator | Solves stoichiometry problems for chemical reactions. | 
-| Subnet Calculator | Calculates subnet masks, IP ranges, and other network parameters. | 
-| Subtraction Calculator | Performs subtraction of two numbers. | 
-| Surface Area Calculator | Calculates the surface area of various geometric shapes. | 
-| TVM Calculator | Calculates the time value of money based on the given inputs. | 
-| Tangent Calculator | Calculates the tangent of a given angle. | 
-| Temperature Conversion Calculator | Converts temperatures between Celsius, Fahrenheit, and Kelvin. | 
-| Tension Calculator | Calculates the tension in a rope or cable based on the given inputs. | 
-| Time Calculator | Performs calculations involving time, such as addition, subtraction, and conversion. | 
-| Torque Calculator | Calculates the torque applied based on force and distance. | 
-| Triangle Area Calculator | Calculates the area of a triangle based on its base and height. | 
-| Trigonometry Calculator | Solves trigonometric problems involving sine, cosine, and tangent. | 
-| Uniform Circular Motion Calculator | Calculates the properties of an object in uniform circular motion. | 
-| Universal Gravitational Force Calculator | Calculates the gravitational force between two objects based on their masses and distance. | 
-| Volume Calculator | Calculates the volume of various geometric shapes. | 
-| Wage Calculator | Calculates the wage based on hourly rate and hours worked. | 
-| Weight Loss Calculator | Calculates the weight loss based on calorie intake and expenditure. | 
-| Work Calculator | Calculates the work done based on force and distance. | 
-| Wavelength Calculator | Calculates the wavelength of a wave based on its frequency and speed. | 
-| Weighted Average Calculator | Calculates the weighted average of a given data set. | 
-| Wind Chill Calculator | Calculates the wind chill based on temperature and wind speed. | 
-| Yield to Maturity Calculator | Calculates the yield to maturity for a bond based on its price and coupon rate. | 
-| Z-Score Calculator | Calculates the z-score for a given data point in a normal distribution. | 
-| Zeeman Effect Calculator | Calculates the splitting of spectral lines in a magnetic field. | 
 
 <h3>Home/Main Page :-</h3>
 
