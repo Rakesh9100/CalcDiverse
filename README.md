@@ -104,37 +104,38 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 | Book Reading Time Calculator | Calculates the time required to finish reading a book. | https://calcdiverse.netlify.app/calculators/book-reading-time-calculator/ |
 | Bouncy Number Calculator | Check the number is bouncy or not and finds bouncy numbers in a range. | https://calcdiverse.netlify.app/calculators/bouncy-number-calculator/ |
 | Buzz Number Calculator | Checks for a number to be a buzz number or not. | https://calcdiverse.netlify.app/calculators/buzz-number-calculator/ |
-| CAGR Calculator | Calculates the Compound Annual Growth Rate of an investment over a specified period. | 
-| CGPA Percentage Calculator | Converts CGPA to percentage and vice-versa. | 
-| CGS FPS MKS Calculator | Calculator that converts inputs between CGS, FPS, and MKS unit systems for various physical quantities. | 
-| CO2 Emissions Calculator | Calculates the carbon footprint from various modes of transport. | 
-| CPU Scheduling Calculator | Calculates the wait time and turnaround time for various CPU scheduling algorithms. | 
-| CSS Unit Calculator | Converts various css units. | 
-| Calorie Burnt Calculator | Calculates the amount of calories burnt from particular exercise. | 
-| Calorie Consumed Calculator | Calculates daily calorie consumed based on given inputs. | 
-| Calorie Intake Calculator | Calculates daily calorie intake based on given inputs. | 
-| Capacitor Conversion Calculator | Converts capacitor values between different units. | 
-| Carbon Footprint Calculator | Calculates an individual's carbon footprint based on some input parameters. | 
-| Catalan Number Calculator | Calculates the nth Catalan Number with the value of n entered by the user. | 
-| Centripetal Force Calculator | Calculates Centripetal force and acceleration. | 
-| Circular Prime Calculator | Checks if a number is circular prime and finds circular prime numbers in a range. | 
-| Clock Hands Angle Calculator | Calculates the angle between the hour and minute hands for a specified time. | 
-| Clothing Size Calculator | Inter-converts clothing sizes from one country to another, the international size, and the exact measurements for each size. | 
-| Color Code Calculator | Interconverts color codes among RGB, RGBA, HEX (Hexadecimal), HSL, HSV and CMYK | 
-| Complement Calculator | Calculates the nth complement of a given number in a specified base. | 
-| Complex Number Calculator | Performs mathematical operations on complex numbers. | 
-| Compound Interest Calculator | Takes Principal amount, time in years, interest rate and Gives compound interest | 
-| Conductivity And Resistivity Calculator | Calculates the Conductivity & Resistivity. | 
-| Cosine Formula Calculator | Calculates the angle of the triangle using cosine formula. | 
-| Credit Card Payoff Calculator | Calculates the time in which you can payoff your Credits. | 
-| Cricket Calculator | Calculates various cricket related terms. | 
-| Cross Product Calculator | Calculates the cross-product of two 3D vectors and finds the angle between them. | 
-| Cuban Prime Calculator | Checks if a number is cuban prime or not and finds cuban prime numbers in a range. | 
-| Cube Root Calculator | Calculates cube root of any number. | 
-| Cubic Equation Calculator | solves cubic equations, providing real or complex solutions | 
-| Currency Calculator | Converts the value of one Currency unit into another Currency unit. | 
-| Curve Fitting Calculator | Plots the curve fitting for linear, quadratic, cubic, and exponential curves. | 
-| Cut Off Calculator | Calculates the Engineering / Medical cutoff for students. | 
+| CAGR Calculator | Calculates the Compound Annual Growth Rate of an investment over a specified period. | https://calcdiverse.netlify.app/calculators/cagr-calculator/ |
+| CGPA Percentage Calculator | Converts CGPA to percentage and vice-versa. | https://calcdiverse.netlify.app/calculators/cgpa-percentage-calculator/ |
+| CGS FPS MKS Calculator | Calculator that converts inputs between CGS, FPS, and MKS unit systems for various physical quantities. | https://calcdiverse.netlify.app/calculators/cgs-fps-mks-calculator/ |
+| CO2 Emissions Calculator | Calculates the carbon footprint from various modes of transport. | https://calcdiverse.netlify.app/calculators/co2-emissions-calculator/ |
+| CPU Scheduling Calculator | Calculates the wait time and turnaround time for various CPU scheduling algorithms. | https://calcdiverse.netlify.app/calculators/cpu-scheduling-calculator/ |
+| CSS Unit Calculator | Converts various css units. | https://calcdiverse.netlify.app/calculators/css-unit-calculator/ |
+| Caesar Cipher Encryption Calculator | Encrypts the given plaintext into cipher text using a technique called Caesar Cipher. | https://calcdiverse.netlify.app/calculators/caesar-cipher-encryption-calculator/ |
+| Calorie Burnt Calculator | Calculates the amount of calories burnt from particular exercise. | https://calcdiverse.netlify.app/calculators/calorie-burnt-calculator/ |
+| Calorie Consumed Calculator | Calculates daily calorie consumed based on given inputs. | https://calcdiverse.netlify.app/calculators/calorie-consumed-calculator/ |
+| Calorie Intake Calculator | Calculates daily calorie intake based on given inputs. | https://calcdiverse.netlify.app/calculators/calorie-intake-calculator/ | 
+| Capacitor Conversion Calculator | Converts capacitor values between different units. | https://calcdiverse.netlify.app/calculators/capacitor-conversion-calculator/ |
+| Carbon Footprint Calculator | Calculates an individual's carbon footprint based on some input parameters. | https://calcdiverse.netlify.app/calculators/carbon-footprint-calculator/ |
+| Catalan Number Calculator | Calculates the nth Catalan Number with the value of n entered by the user. | https://calcdiverse.netlify.app/calculators/catalan-number-calculator/ |
+| Centripetal Force Calculator | Calculates Centripetal force and acceleration. | https://calcdiverse.netlify.app/calculators/centripetal-force-calculator/ |
+| Circular Prime Calculator | Checks if a number is circular prime and finds circular prime numbers in a range. | https://calcdiverse.netlify.app/calculators/circular-prime-calculator/ |
+| Clock Hands Angle Calculator | Calculates the angle between the hour and minute hands for a specified time. | https://calcdiverse.netlify.app/calculators/clock-hands-angle-calculator/ |
+| Clothing Size Calculator | Inter-converts clothing sizes from one country to another, the international size, and the exact measurements for each size. | https://calcdiverse.netlify.app/calculators/clothing-size-calculator/ |
+| Color Code Calculator | Interconverts color codes among RGB, RGBA, HEX (Hexadecimal), HSL, HSV and CMYK | https://calcdiverse.netlify.app/calculators/color-code-calculator/ |
+| Complement Calculator | Calculates the nth complement of a given number in a specified base. | https://calcdiverse.netlify.app/calculators/complement-calculator/ |
+| Complex Number Calculator | Performs mathematical operations on complex numbers. | https://calcdiverse.netlify.app/calculators/complex-number-calculator/ |
+| Compound Interest Calculator | Takes Principal amount, time in years, interest rate and Gives compound interest | https://calcdiverse.netlify.app/calculators/compound-interest-calculator/ |
+| Conductivity And Resistivity Calculator | Calculates the Conductivity & Resistivity. |  https://calcdiverse.netlify.app/calculators/conductivity-and-resistivity-calculator/ |
+| Cosine Formula Calculator | Calculates the angle of the triangle using cosine formula. | https://calcdiverse.netlify.app/calculators/cosine-formula-calculator/ |
+| Credit Card Payoff Calculator | Calculates the time in which you can payoff your Credits. | https://calcdiverse.netlify.app/calculators/credit-card-payoff-calculator/ |
+| Cricket Calculator | Calculates various cricket related terms. | https://calcdiverse.netlify.app/calculators/cricket-calculator/ |
+| Cross Product Calculator | Calculates the cross-product of two 3D vectors and finds the angle between them. | https://calcdiverse.netlify.app/calculators/cross-product-calculator/ |
+| Cuban Prime Calculator | Checks if a number is cuban prime or not and finds cuban prime numbers in a range. | https://calcdiverse.netlify.app/calculators/cuban-prime-calculator/ |
+| Cube Root Calculator | Calculates cube root of any number. | https://calcdiverse.netlify.app/calculators/cube-root-calculator/ |
+| Cubic Equation Calculator | solves cubic equations, providing real or complex solutions | https://calcdiverse.netlify.app/calculators/cubic-equation-calculator/ |
+| Currency Calculator | Converts the value of one Currency unit into another Currency unit. | https://calcdiverse.netlify.app/calculators/currency-calculator/ |
+| Curve Fitting Calculator | Plots the curve fitting for linear, quadratic, cubic, and exponential curves. | https://calcdiverse.netlify.app/calculators/curve-fitting-calculator/ |
+| Cut Off Calculator | Calculates the Engineering / Medical cutoff for students. | https://calcdiverse.netlify.app/calculators/cut-off-calculator/ |
 | DTI Ratio Calculator | Calculates your debt-to-income ratio, to help in managing your financial health. | 
 | Data Size Calculator | Converts input data size to other data sizes instantly. | 
 | Date Time Calculator | Calculates Date & Time of the specific period. | 
