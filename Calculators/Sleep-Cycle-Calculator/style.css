@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -43,7 +44,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-input[type="number"], select {
+input[type="number"],
+select {
     width: 50px;
     padding: 5px;
     margin: 0 5px;
@@ -71,20 +73,20 @@ button:hover {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1; 
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     overflow: auto;
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 .modal-content {
     background-color: #5764b3;
     box-shadow: 5px 5px 5px rgb(250, 214, 114);
     color: rgb(255, 249, 221);
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
     width: 100%;
