@@ -1,10 +1,16 @@
-# Force Calculator
+# <p align="center">Force Calculator</p>
+
+## Description :-
 
 A simple web application to calculate Newton's force using the formula F = ma (Force = Mass x Acceleration). This project allows users to input the mass and acceleration values to calculate the force.
 
+## Tech Stacks :-
 
+- HTML
+- CSS
+- JavaScript
 
-## Features
+## Features :-
 
 - Input fields for mass and acceleration
 - Calculate button to compute the force
@@ -12,9 +18,7 @@ A simple web application to calculate Newton's force using the formula F = ma (F
 - Responsive design
 - Gradient background 
 
-
-
-## Usage
+## Usage :-
 
 1. Open the application.
 2. Enter the mass in kilograms (kg) in the "Mass" input field.
@@ -22,17 +26,6 @@ A simple web application to calculate Newton's force using the formula F = ma (F
 4. Click the "Calculate Force" button to compute the force.
 5. The calculated force will be displayed below the button.
 
-## Technologies
+## Screenshots :-
 
-- HTML
-- CSS
-- JavaScript
-
-
-## Acknowledgements
-
-- Inspired by the principles of Newton's laws of motion.
-
----
-
-Feel free to update the links and information as per your project's specifics.
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/061c4be9-eec1-4cf2-b0ad-04dc3bc927d3)
