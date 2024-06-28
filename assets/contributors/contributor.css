@@ -37,7 +37,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.h1 {
+h1 {
     font-family: Arial, sans-serif;
     font-weight: bold;
     margin-top: 25px;
