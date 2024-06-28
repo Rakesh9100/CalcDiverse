@@ -43,7 +43,6 @@ function union(obj){
     let funcArr=[];
     let testArr=[];
     let setA=checkSets()[0];let setB=checkSets()[1];
-    obj.classList.add("clicked")       
     funcArr=funcArr.concat(setA);
     testArr=JSON.stringify(funcArr);
     setB.forEach(val => {
@@ -59,6 +58,7 @@ function union(obj){
     });
     funcArr=printSets(funcArr);
     ans.innerHTML=`A U B is {${funcArr}}`;
+    extraOpt.style.display='none';
 }
 
 
@@ -67,7 +67,6 @@ function inter(obj){
     let testArr=[];
     let setA=checkSets()[0];
     let setB=checkSets()[1];
-    obj.classList.add("clicked");
     testArr=testArr.concat(setA);
     testArr=JSON.stringify(testArr);
     setB.forEach(val => {
@@ -82,7 +81,8 @@ function inter(obj){
         }
         });
     funcArr=printSets(funcArr);
-    ans.innerHTML=`A n B is {${funcArr}}`;
+    ans.innerHTML=`A ∩ B is {${funcArr}}`;
+    extraOpt.style.display='none';
 }
 
 function diff(obj){
@@ -99,10 +99,10 @@ function diff(obj){
     extraOpts[1].addEventListener("click",function(){
         difference(setB,setA,this)
     });
+    obj.classList.remove("clicked");
 }
 
 function difference(a,b,obj){
-    obj.classList.add("clicked");
     let funcArr=[];
     let testArr=[];
     let bStr;
@@ -125,7 +125,6 @@ function difference(a,b,obj){
 }
 
 function card(obj){
-    obj.classList.add("clicked");
     let setA=checkSets()[0];
     let setB=checkSets()[1];
     extraOpt.style.display='flex';

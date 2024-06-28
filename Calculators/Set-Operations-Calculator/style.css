@@ -28,6 +28,7 @@ h1{
 #sets{
     display:flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     
 }
@@ -45,12 +46,14 @@ h1{
     padding: 7px;
     background-color: #895fe6;
     text-align: center;
+    border: solid 2px white;
 }
 #options{
-    margin: 5rem auto;
+    margin: 3rem auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
     row-gap: 20px;
 }
 .opt{
@@ -58,7 +61,9 @@ h1{
     width:100px;
     padding: 20px;
     border-radius:10px ;
+    border: solid 1px white;
     font-size: 1.2rem;
+    box-shadow: 4px 4px white;
 }
 #ans{
     background-color: white;
@@ -68,8 +73,12 @@ h1{
     font-size: 1.2rem;
 }
 
-.clicked{
-    background-color:  #4b3380;
+
+.opt:hover{
+    box-shadow: none;
+    background-color: #523987;
+    transform: translate(3px,3px);
+
 }
 
 #ext-opt{
