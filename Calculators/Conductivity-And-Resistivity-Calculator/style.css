@@ -24,6 +24,14 @@ body {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+.heading {
+    font-size: 17px;    
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #0d757a;
+}
+
 input {
     margin-bottom: 10px;
     padding: 8px;
@@ -70,8 +78,7 @@ button:hover {
     align-items: center;
     width: 100%;
     font-size: 15px;
-    
-
+    font-weight: bold;
 }
 
 @media (max-width: 600px) {
@@ -86,11 +93,4 @@ button:hover {
     button {
         width: 100%;
     }
-}
-.heading {
-    font-size: 17px;    
-    margin-bottom: 10px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: #0d757a;
 }
