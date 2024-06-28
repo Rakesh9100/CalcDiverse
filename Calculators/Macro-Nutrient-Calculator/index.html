@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Macro Nutrient Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Macronutrient Calculator</h1>
+        <div class="card">
+            <div class="input">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="Enter your weight">
+            </div>
+            <div class="input">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" placeholder="Enter your height">
+            </div>
+            <div class="input">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your age">
+            </div>
+            <div class="input">
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="activity">Activity Level:</label>
+                <select id="activity">
+                    <option value="sedentary">Sedentary</option>
+                    <option value="light">Lightly active</option>
+                    <option value="moderate">Moderately active</option>
+                    <option value="active">Active</option>
+                    <option value="very_active">Very active</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="goal">Fitness Goal:</label>
+                <select id="goal">
+                    <option value="maintenance">Maintenance</option>
+                    <option value="weight_loss">Weight Loss</option>
+                    <option value="muscle_gain">Muscle Gain</option>
+                </select>
+            </div>
+            <button id="calculate">Calculate</button>
+            <button id="reset">Reset</button>
+            <div class="result">
+                <label for="calories">Calories (kcal/day):</label>
+                <input type="text" id="calories" readonly>
+            </div>
+            <div class="result">
+                <label for="protein">Protein (g/day):</label>
+                <input type="text" id="protein" readonly>
+            </div>
+            <div class="result">
+                <label for="carbs">Carbs (g/day):</label>
+                <input type="text" id="carbs" readonly>
+            </div>
+            <div class="result">
+                <label for="fat">Fat (g/day):</label>
+                <input type="text" id="fat" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
