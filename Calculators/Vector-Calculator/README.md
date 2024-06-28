@@ -13,4 +13,4 @@ Calculates the resultant vector, cross product, dot product and angle between 2 
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c57fff7e-c8d8-42a3-ba05-2b38755f6d92)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/118552563/f38259c8-f72b-458f-bdbd-6ef327ffa10e)
