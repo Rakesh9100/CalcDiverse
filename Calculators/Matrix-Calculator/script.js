@@ -68,6 +68,8 @@ function calculate(operation) {
             case "determinant":
             case "inverse":
             case "transpose":
+            case "rank":
+            case "power":
                 document.getElementById("matrixB").innerHTML = "";  // Disable Matrix B input
                 break;
             default:
@@ -96,6 +98,16 @@ function calculate(operation) {
             case "transpose":
                 result = math.transpose(matrixA);
                 break;
+            case "rank":
+                result = calculateRank(matrixA);
+                break;
+            case "power":
+                const power = parseInt(document.getElementById("matrixPower").value, 10);
+                if (matrixSize !== matrixA[0].length) {
+                    throw new Error("Matrix must be square to raise to a power.");
+                }
+                result = calculatePower(matrixA, power);
+                break;
             default:
                 throw new Error("Invalid operation");
         }
@@ -104,6 +116,54 @@ function calculate(operation) {
     } catch (error) {
         setResult("Error: " + error.message);
     }
+}
+
+function calculateRank(matrix) {
+    const rowCount = matrix.length;
+    const colCount = matrix[0].length;
+    let rank = colCount;
+
+    for (let row = 0; row < rank; row++) {
+        if (matrix[row][row] !== 0) {
+            for (let col = 0; col < rowCount; col++) {
+                if (col !== row) {
+                    const multiplier = matrix[col][row] / matrix[row][row];
+                    for (let i = 0; i < rank; i++) {
+                        matrix[col][i] -= multiplier * matrix[row][i];
+                    }
+                }
+            }
+        } else {
+            let reduce = true;
+            for (let i = row + 1; i < rowCount; i++) {
+                if (matrix[i][row] !== 0) {
+                    [matrix[row], matrix[i]] = [matrix[i], matrix[row]];
+                    reduce = false;
+                    break;
+                }
+            }
+            if (reduce) {
+                rank--;
+                for (let i = 0; i < rowCount; i++) {
+                    matrix[i][row] = matrix[i][rank];
+                }
+            }
+            row--;
+        }
+    }
+    return rank;
+}
+
+// Power calculation function
+
+function calculatePower(matrix, power) {
+    if (power < 1) throw new Error("Power must be a positive integer.");
+    let result = matrix;
+
+    for (let i = 1; i < power; i++) {
+        result = math.multiply(result, matrix);
+    }
+    return result;
 }
 
 function resetForm() {

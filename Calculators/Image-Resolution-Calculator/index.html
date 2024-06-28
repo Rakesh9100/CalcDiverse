@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Resolution Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Resolution Calculator</h1>
+        <form id="resolutionForm">
+            <div class="form-group">
+                <label for="width">Width (px):</label>
+                <input type="number" id="width" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Height (px):</label>
+                <input type="number" id="height" required>
+            </div>
+            <div class="form-group">
+                <label for="dpi">DPI:</label>
+                <input type="number" id="dpi" required>
+            </div>
+            <button type="button" onclick="calculateResolution()">Calculate</button>
+        </form>
+        <div class="result">
+            <h2>Resolution:</h2>
+            <p id="resolutionOutput"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
