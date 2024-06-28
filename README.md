@@ -62,8 +62,8 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 
 ## Calculators
 
-| Calculator Name | Description |
-|-----------------|-------------|
+| Calculator Name | Description | Link |
+|-----------------|-------------|-------|
 | 2D Distance Calculator | Calculates the distance between two points on a 2D plane. | 
 | 2D Shapes Calculator | Calculates the area and perimeter of different useful 2D shapes. | 
 | 3D Distance Calculator | Calculates the distance between 2 points in a 3D space. | 
