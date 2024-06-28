@@ -29,14 +29,15 @@ body {
     font-size: 1.4rem;
 }
 
-#contributor{
+body,
+html {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     line-height: 1.4;
     scroll-behavior: smooth;
 }
 
-.heroes {
+.h1 {
     font-family: Arial, sans-serif;
     font-weight: bold;
     margin-top: 25px;
@@ -123,60 +124,6 @@ div {
     opacity: 0.8;
     box-shadow: 0 0 20px rgb(188, 240, 210);
 }
-
-/* Footer Styling */
-
-
-/* Pop up effect */
-
-/* .social a:hover i {
-    transform: translateY(-8px);
-}
-
-
-.social a {
-    color: var(--secondary);
-}
-
-.social a.user:hover {
-    color: #4af3b5;
-}
-
-.social a.message:hover {
-    color: #73408f;
-}
-
-.social a.linkedin:hover {
-    color: #1990cb;
-}
-
-.social a.github:hover {
-    color: #21d061;
-}
-
-.social a.instagram:hover {
-    color: #d62976;
-}
-
-.social a.facebook:hover {
-    color: #0026ff;
-}
-
-.social a.twitter:hover {
-    color: #00fff7;
-}
-
-.social a.discord:hover {
-    color: #5865F2;
-}
-
-.footer-basic .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 0;
-} */
 
 #progress {
     position: fixed;
