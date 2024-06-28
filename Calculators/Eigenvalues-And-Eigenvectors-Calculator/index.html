@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eigenvalues And Eigenvectors Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Eigenvalue and Eigenvector Calculator</h1>
+            <div class="controls">
+                <label for="matrix-size"><font color="white">Matrix Size:</font></label>
+                <select id="matrix-size" onchange="initializeMatrix()">
+                    <option value="2">2x2</option>
+                    <option value="3">3x3</option>
+                    <option value="4">4x4</option>
+                    <option value="5">5x5</option>
+                    <option value="6">6x6</option>
+                    <option value="7">7x7</option>
+                    <option value="8">8x8</option>
+                    <option value="9">9x9</option>
+                </select>
+            </div>
+            <div id="matrix-container" class="matrix-container"></div>
+            <button onclick="calculate()"><font family="Open Sans" size="3"> Calculate Eigenvalues and Eigenvectors </font></button>
+        </div>
+
+        <div class="output-container">
+            <h2>Output</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

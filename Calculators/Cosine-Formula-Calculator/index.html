@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cosine Formula Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cosine Formula Calculator</h1>
+    </header>
+
+    <section id="calculator">
+        <label for="firstSide">First Side (a):</label>
+        <input type="number" id="firstSide" required placeholder="Enter (a)">
+
+        <label for="secondSide">Second Side (b):</label>
+        <input type="number" id="secondSide" required placeholder="Enter (b)">
+
+        <label for="thirdSide">Third Side (c):</label>
+        <input type="number" id="thirdSide" required placeholder="Enter (c)">
+
+
+        <label for=" calculationType">Choose Angle:</label>
+        <select id="calculationType">
+            <option value="CosA">CosA</option>
+            <option value="CosB">CosB</option>
+            <option value="CosC">CosC</option>
+        </select>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <p id="result"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
