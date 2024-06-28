@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Intake Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sugar Intake Calculator</h1>
+        <div class="sugar-type">
+            <button id="brown-sugar" class="button" onclick="selectSugarType('brown')">Brown Sugar</button>
+            <button id="white-sugar" class="button" onclick="selectSugarType('white')">White Sugar</button>
+            <button id="jaggery" class="button" onclick="selectSugarType('jaggery')">Jaggery</button>
+        </div>
+        <div class="input-section">
+            <label for="quantity">Enter quantity in grams:</label>
+            <input type="number" id="quantity" min="0">
+        </div>
+        <button class="button" onclick="calculateIntake()">Calculate Intake</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
