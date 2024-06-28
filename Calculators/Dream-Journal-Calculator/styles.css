@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#wordCloud {
+    margin: 0 auto;
+}
+
+.dream {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.dream h3 {
+    margin: 0;
+}
+
+.dream p {
+    margin: 5px 0;
+}
+
+.sentiment-bar {
+    display: flex;
+    height: 20px;
+    margin-top: 10px;
+    position: relative;
+    background-color: #e0e0e0;
+}
+
+.sentiment-positive {
+    background-color: green;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+}
+
+.sentiment-negative {
+    background-color: red;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+}
