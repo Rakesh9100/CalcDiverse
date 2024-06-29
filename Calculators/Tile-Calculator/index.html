@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tile Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tile Calculator</h1>
+        <form id="tileForm">
+            <div class="form-group">
+                <label for="areaWidth">Area Width (in meters):</label>
+                <input type="number" id="areaWidth" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="areaHeight">Area Height (in meters):</label>
+                <input type="number" id="areaHeight" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="tileWidth">Tile Width (in meters):</label>
+                <input type="number" id="tileWidth" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="tileHeight">Tile Height (in meters):</label>
+                <input type="number" id="tileHeight" step="0.01" required>
+            </div>
+            <button type="submit">Calculate Tiles Needed</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

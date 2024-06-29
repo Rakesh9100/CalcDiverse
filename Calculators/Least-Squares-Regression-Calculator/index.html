@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Least Squares Regression Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Least Squares Regression Calculator</h1>
+        <div id="input-section">
+            <textarea id="data-input" placeholder="Enter data points in the format 'x1,y1;x2,y2;...'" rows="5"></textarea>
+            <button onclick="calculateRegression()">Calculate</button>
+        </div>
+        <div id="output-section" style="display: none;">
+            <div id="regression-results">
+                <p><strong>Regression Equation:</strong> <span id="equation"></span></p>
+                <p><strong>R-squared:</strong> <span id="r-squared"></span></p>
+                <p><strong>Standard Error:</strong> <span id="standard-error"></span></p>
+            </div>
+            <div id="chart-container">
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
