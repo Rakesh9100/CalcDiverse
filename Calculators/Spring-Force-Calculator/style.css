@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+.screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+
+.calculator {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+}
+
+.values {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.answer {
+    width: 50%;
+    height: 100%;
+}
+
+.top {
+    width: 100%;
+    height: 30%;
+    gap: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom {
+    width: 100%;
+    height: 70%;
+    gap: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pageTitle {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.value {
+    width: 100%;
+    height: 70%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subtitle {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top .subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.top .value {
+    font-size: 4rem;
+}
+
+.bottom .subtitle {
+    font-size: 2rem;
+
+}
+
+.bottom .value {
+    font-size: 10rem;
+
+}
