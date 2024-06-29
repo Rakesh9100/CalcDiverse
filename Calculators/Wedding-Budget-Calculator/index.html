@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Budget Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wedding Budget Calculator</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="venue">Venue Cost:</label>
+                <input type="number" id="venue" placeholder="Enter venue cost">
+            </div>
+            <div class="input-group">
+                <label for="catering">Catering Cost:</label>
+                <input type="number" id="catering" placeholder="Enter catering cost">
+            </div>
+            <div class="input-group">
+                <label for="decor">Decor Cost:</label>
+                <input type="number" id="decor" placeholder="Enter decor cost">
+            </div>
+            <div class="input-group">
+                <label for="photography">Photography Cost:</label>
+                <input type="number" id="photography" placeholder="Enter photography cost">
+            </div>
+            <div class="input-group">
+                <label for="entertainment">Entertainment Cost:</label>
+                <input type="number" id="entertainment" placeholder="Enter entertainment cost">
+            </div>
+            <div class="input-group">
+                <label for="attire">Attire Cost:</label>
+                <input type="number" id="attire" placeholder="Enter attire cost">
+            </div>
+            <div class="input-group">
+                <label for="others">Other Costs:</label>
+                <input type="number" id="others" placeholder="Enter other costs">
+            </div>
+            <button onclick="calculateBudget()">Calculate Total</button>
+            <button onclick="resetCalculator()">Reset</button>
+            <p id="error" class="error"></p>
+            <h2>Total Budget: $<span id="total">0.00</span></h2>
+            <h3>Breakdown:</h3>
+            <ul id="breakdown"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
