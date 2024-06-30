@@ -1,8 +1,8 @@
-# <p align="center">Engineering Cut - Off Calculator</p>
+# <p align="center">TNEA Cut - Off Calculator</p>
 
 # Description :-
 
-Engineering Cut - Off is calculated with respect to the maths, physics and chemistry marks obtained by the user.
+TNEA (Tamilnadu Engineering Admissions) Cut - Off is calculated with respect to the maths, physics and chemistry marks obtained by the user.
 
 ## Tech Stacks :-
 
@@ -15,4 +15,4 @@ Engineering Cut - Off is calculated with respect to the maths, physics and chemi
 ![Formula]https://i.ytimg.com/vi/w_mXr1WMG2g/maxresdefault.jpg
 ## Screenshots :-
 
-![image](image.png)
+![image]![Output](image-1.png)
