@@ -30,10 +30,56 @@ hr {
 label {
     font-size: 20px;
 }
+.from,.to{
+    width: 350px;
+}
+#selectField,#selectField2{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+#selectField img,#selectField2 img{
+    width: 12px;
+    margin-bottom: 12px;
+}
+#list,#list2{
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.7);
+    color: black;
+    overflow: scroll;
+    position: relative;
+    bottom: 378px;
+    height: 340px;
+}
+.options,.options2{
+    width: 100%;
+    padding: 15px 0 15px 70px;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+.options img,.options2 img{
+    position: absolute;
+    left: -8px;
+    top: -3px;
+}
+.options:hover,.options2:hover{
+    background-color: white;
 
+}
+.hide{
+    visibility: hidden;
+}
 .btn {
     width: 200px;
     background-color: darkorange;
+    position: relative;
+    bottom: 360px;
+
 }
 
 #finalAmount {

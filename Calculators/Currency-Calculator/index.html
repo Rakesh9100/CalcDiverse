@@ -36,7 +36,13 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">From</span>
                         </div>
-                        <select class="form-control from" id="sel1">
+                        <div class="form-control from" id="sell">
+                            <div id="selectField">
+                                <p id="selectText">Select One...</p>
+                                <img src="./arrow.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <!-- <select class="form-control from" id="sel1">
                             <option value="">Select One …</option>
                             <option value="USD">USD</option>
                             <option value="AED">AED</option>
@@ -90,7 +96,217 @@
                             <option value="UAH">UAH</option>
                             <option value="UYU">UYU</option>
                             <option value="ZAR">ZAR</option>
-                        </select>
+                        </select> -->
+                        <ul id="list" class="hide" type="none">
+                            <li class="options">
+                                <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                                <p>USD</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/AE/flat/64.png" alt="">
+                                <p>AED</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/AR/flat/64.png" alt="">
+                                <p>ARS</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/AU/flat/64.png" alt="">
+                                <p>AUD</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/BG/flat/64.png" alt="">
+                                <p>BGN</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/BR/flat/64.png" alt="">
+                                <p>BRL</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/BS/flat/64.png" alt="">
+                                <p>BSD</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/CA/flat/64.png" alt="">
+                                <p>CAD</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/CH/flat/64.png" alt="">
+                                <p>CHF</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/CL/flat/64.png" alt="">
+                                <p>CLP</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/CN/flat/64.png" alt="">
+                                <p>CNY</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/CO/flat/64.png" alt="">
+                                <p>COP</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/CZ/flat/64.png" alt="">
+                                <p>CZK</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/DK/flat/64.png" alt="">
+                                <p>DKK</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/DO/flat/64.png" alt="">
+                                <p>DOP</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/EG/flat/64.png" alt="">
+                                <p>EGP</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/EU/flat/64.png" alt="">
+                                <p>EUR</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/FJ/flat/64.png" alt="">
+                                <p>FJD</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/GB/flat/64.png" alt="">
+                                <p>GBP</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/GT/flat/64.png" alt="">
+                                <p>GTQ</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/HK/flat/64.png" alt="">
+                                <p>HKD</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/HR/flat/64.png" alt="">
+                                <p>HRK</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/HU/flat/64.png" alt="">
+                                <p>HUF</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/ID/flat/64.png" alt="">
+                                <p>IDR</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/IL/flat/64.png" alt="">
+                                <p>ILS</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                                <p>INR</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/IS/flat/64.png" alt="">
+                                <p>ISK</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/JP/flat/64.png" alt="">
+                                <p>JPY</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/KR/flat/64.png" alt="">
+                                <p>KRW</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/KZ/flat/64.png" alt="">
+                                <p>KZT</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/MV/flat/64.png" alt="">
+                                <p>MVR</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/MX/flat/64.png" alt="">
+                                <p>MXN</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/MY/flat/64.png" alt="">
+                                <p>MYR</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/NO/flat/64.png" alt="">
+                                <p>NOK</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/NZ/flat/64.png" alt="">
+                                <p>NZD</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/PA/flat/64.png" alt="">
+                                <p>PAB</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/PE/flat/64.png" alt="">
+                                <p>PEN</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/PH/flat/64.png" alt="">
+                                <p>PHP</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/PK/flat/64.png" alt="">
+                                <p>PKR</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/PL/flat/64.png" alt="">
+                                <p>PLN</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/PY/flat/64.png" alt="">
+                                <p>PYG</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/RO/flat/64.png" alt="">
+                                <p>RON</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/RU/flat/64.png" alt="">
+                                <p>RUB</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/SA/flat/64.png" alt="">
+                                <p>SAR</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/SE/flat/64.png" alt="">
+                                <p>SEK</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/SG/flat/64.png" alt="">
+                                <p>SGD</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/TH/flat/64.png" alt="">
+                                <p>THB</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/TR/flat/64.png" alt="">
+                                <p>TRY</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/TW/flat/64.png" alt="">
+                                <p>TWD</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/UA/flat/64.png" alt="">
+                                <p>UAH</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/UY/flat/64.png" alt="">
+                                <p>UYU</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/ZA/flat/64.png" alt="">
+                                <p>ZAR</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -99,7 +315,13 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">To</span>
                         </div>
-                        <select class="form-control to" id="sel2">
+                        <div class="form-control to" id="sel2">
+                            <div id="selectField2">
+                                <p id="selectText2">Select One...</p>
+                                <img src="./arrow.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <!-- <select class="form-control to" id="sel2">
                             <option value="">Select One …</option>
                             <option value="USD">USD</option>
                             <option value="AED">AED</option>
@@ -152,7 +374,217 @@
                             <option value="TWD">TWD</option>
                             <option value="UAH">UAH</option>
                             <option value="UYU">UYU</option>
-                        </select>
+                        </select> -->
+                        <ul id="list2" class="hide" type="none">
+                            <li class="options2">
+                                <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                                <p>USD</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/AE/flat/64.png" alt="">
+                                <p>AED</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/AR/flat/64.png" alt="">
+                                <p>ARS</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/AU/flat/64.png" alt="">
+                                <p>AUD</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/BG/flat/64.png" alt="">
+                                <p>BGN</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/BR/flat/64.png" alt="">
+                                <p>BRL</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/BS/flat/64.png" alt="">
+                                <p>BSD</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/CA/flat/64.png" alt="">
+                                <p>CAD</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/CH/flat/64.png" alt="">
+                                <p>CHF</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/CL/flat/64.png" alt="">
+                                <p>CLP</p>
+                            </li>
+                            <li class="options">
+                                <img src="https://flagsapi.com/CN/flat/64.png" alt="">
+                                <p>CNY</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/CO/flat/64.png" alt="">
+                                <p>COP</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/CZ/flat/64.png" alt="">
+                                <p>CZK</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/DK/flat/64.png" alt="">
+                                <p>DKK</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/DO/flat/64.png" alt="">
+                                <p>DOP</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/EG/flat/64.png" alt="">
+                                <p>EGP</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/EU/flat/64.png" alt="">
+                                <p>EUR</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/FJ/flat/64.png" alt="">
+                                <p>FJD</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/GB/flat/64.png" alt="">
+                                <p>GBP</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/GT/flat/64.png" alt="">
+                                <p>GTQ</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/HK/flat/64.png" alt="">
+                                <p>HKD</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/HR/flat/64.png" alt="">
+                                <p>HRK</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/HU/flat/64.png" alt="">
+                                <p>HUF</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/ID/flat/64.png" alt="">
+                                <p>IDR</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/IL/flat/64.png" alt="">
+                                <p>ILS</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                                <p>INR</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/IS/flat/64.png" alt="">
+                                <p>ISK</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/JP/flat/64.png" alt="">
+                                <p>JPY</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/KR/flat/64.png" alt="">
+                                <p>KRW</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/KZ/flat/64.png" alt="">
+                                <p>KZT</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/MV/flat/64.png" alt="">
+                                <p>MVR</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/MX/flat/64.png" alt="">
+                                <p>MXN</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/MY/flat/64.png" alt="">
+                                <p>MYR</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/NO/flat/64.png" alt="">
+                                <p>NOK</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/NZ/flat/64.png" alt="">
+                                <p>NZD</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/PA/flat/64.png" alt="">
+                                <p>PAB</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/PE/flat/64.png" alt="">
+                                <p>PEN</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/PH/flat/64.png" alt="">
+                                <p>PHP</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/PK/flat/64.png" alt="">
+                                <p>PKR</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/PL/flat/64.png" alt="">
+                                <p>PLN</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/PY/flat/64.png" alt="">
+                                <p>PYG</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/RO/flat/64.png" alt="">
+                                <p>RON</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/RU/flat/64.png" alt="">
+                                <p>RUB</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/SA/flat/64.png" alt="">
+                                <p>SAR</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/SE/flat/64.png" alt="">
+                                <p>SEK</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/SG/flat/64.png" alt="">
+                                <p>SGD</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/TH/flat/64.png" alt="">
+                                <p>THB</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/TR/flat/64.png" alt="">
+                                <p>TRY</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/TW/flat/64.png" alt="">
+                                <p>TWD</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/UA/flat/64.png" alt="">
+                                <p>UAH</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/UY/flat/64.png" alt="">
+                                <p>UYU</p>
+                            </li>
+                            <li class="options2">
+                                <img src="https://flagsapi.com/ZA/flat/64.png" alt="">
+                                <p>ZAR</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

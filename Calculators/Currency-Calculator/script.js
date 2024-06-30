@@ -9,6 +9,30 @@ var fromCurrency = document.querySelector(".from");
 var toCurrency = document.querySelector(".to");
 var finalValue = document.querySelector(".finalValue");
 var finalAmount = document.getElementById("finalAmount");
+var selectField = document.getElementById("selectField");
+var selectText = document.getElementById("selectText");
+var selectField2 = document.getElementById("selectField2");
+var selectText2 = document.getElementById("selectText2");
+var options = document.getElementsByClassName("options");
+var options2 = document.getElementsByClassName("options2");
+var list = document.getElementById("list");
+var list2 = document.getElementById("list2");
+selectField.onclick = function(){
+    list.classList.toggle("hide");
+}
+selectField2.onclick = function(){
+    list2.classList.toggle("hide");
+}
+for(option of options){
+    option.onclick=function(){
+        selectText.innerHTML=this.textContent;
+    }
+}
+for(option of options2){
+    option.onclick=function(){
+        selectText2.innerHTML=this.textContent;
+    }
+}
 var resultFrom;
 var resultTo;
 var searchValue;
