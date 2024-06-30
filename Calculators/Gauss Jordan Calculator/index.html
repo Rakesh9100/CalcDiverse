@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.0.0/math.min.js"></script>
+    <title>Gauss-Jordan Elimination Calculator</title>
+</head>
+
+<body>
+    <div id="matrixCalculator">
+        <h2>Gauss-Jordan Elimination Calculator</h2>
+
+        <label for="matrixRows">Rows:</label>
+        <input type="number" id="matrixRows" value="2" min="2" max="10" onchange="createMatrixInputs()" />
+
+        <label for="matrixCols">Columns:</label>
+        <input type="number" id="matrixCols" value="3" min="2" max="10" onchange="createMatrixInputs()" />
+
+        <div id="matrixInputs">
+            <!-- Matrix input table will be generated here -->
+        </div>
+
+        <div class="buttons">
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="resetForm()">Reset</button>
+        </div>
+        
+        <h3>Result</h3>
+        <div id="result"></div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
