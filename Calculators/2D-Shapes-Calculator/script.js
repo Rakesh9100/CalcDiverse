@@ -10,7 +10,6 @@ function calculate(event) {
     var resultContainer = document.getElementById("result");
     var metric = document.getElementById("metric").value
 
-
     if (shape === "") {
         resultContainer.textContent = "Please select a shape.";
         return;
@@ -107,7 +106,6 @@ function showDimensions() {
             document.getElementById("length-row").style.display = "block";
             document.getElementById("width-row").style.display = "block";
             document.getElementById("metric-row").style.display = "block";
-
             break;
         case "square":
             document.getElementById("length-row").style.display = "block";
