@@ -16,6 +16,7 @@ button {
     padding: 10px;
     width: 120px;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 button:active {
@@ -23,7 +24,9 @@ button:active {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
+    color: beige;
+    margin-top: 20px;
 }
 
 input {
@@ -32,15 +35,6 @@ input {
     font-size: 16px;
     margin: 10px;
     padding: 10px;
-}
-
-.calc {
-    background: #1d0a4c;
-    color: #c474a8;
-    border: #011c28;
-    text-shadow: 0 7px 0 #011c28;
-    padding: 10px;
-    position: relative;
 }
 
 #results {
@@ -54,7 +48,7 @@ input {
     display: block;
     font-size: 24px;
     color: #C5EBFE;
-    margin: 10px;
+    margin: 15px;
 }
 
 .vect>p {
@@ -76,4 +70,66 @@ input {
     font-size: 16px;
     padding: 10px;
     margin: 10px;
+}
+
+.vector-group {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.input-group label {
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .vect {
+        font-size: 18px;
+    }
+
+    .operation label {
+        font-size: 18px;
+    }
+
+    .operation select {
+        font-size: 14px;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px;
+        width: 100px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    #results {
+        font-size: 20px;
+    }
+
+    .vector-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group {
+        margin: 10px 0;
+    }
 }
