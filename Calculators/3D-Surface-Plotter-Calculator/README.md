@@ -1,8 +1,8 @@
-# <p align="center">3D-Surface-Plotter-Calculator</p>
+# <p align="center">3D Surface Plotter Calculator</p>
 
 ## Description :-
 
-Plot 3D surfaces for given functions.
+Plots the 3D surfaces for the given functions.
 
 ## Tech Stacks :-
 
