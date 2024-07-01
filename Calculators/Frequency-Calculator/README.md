@@ -12,5 +12,4 @@ A Frequency Calculator is designed to compute the frequency of a periodic event 
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/142833275/827fce39-51f5-46d9-a686-c8dc3c9afd00)
-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/aec94b7d-0046-4df7-bfb3-beb23c6a37a0)
