@@ -10,28 +10,50 @@
 </head>
 
 <body>
-    <div class="calc">
-        <p>
-        <h1>Vector Calculator</h1>
-        </p>
-    </div>
+    <h1>Vector Calculator</h1>
+    
     <div class="vect">
         <p>Vector A</p>
-        X:<input type="text" id="ax">
-        Y:<input type="text" id="ay">
+        <div class="vector-group">
+            <div class="input-group">
+                <label for="ax">X:</label>
+                <input type="text" id="ax">
+            </div>
+            <div class="input-group">
+                <label for="ay">Y:</label>
+                <input type="text" id="ay">
+            </div>
+            <div class="input-group">
+                <label for="az">Z:</label>
+                <input type="text" id="az">
+            </div>
+        </div>
         <p>Vector B</p>
-        X:<input type="text" id="bx">
-        Y:<input type="text" id="by">
+        <div class="vector-group">
+            <div class="input-group">
+                <label for="bx">X:</label>
+                <input type="text" id="bx">
+            </div>
+            <div class="input-group">
+                <label for="by">Y:</label>
+                <input type="text" id="by">
+            </div>
+            <div class="input-group">
+                <label for="bz">Z:</label>
+                <input type="text" id="bz">
+            </div>
+        </div>
     </div>
     <div class="operation">
-        <!-- Added dropdown for selecting operation -->
         <label for="operation">Operation:</label>
         <select id="operation">
             <option value="add">Add</option>
             <option value="subtract">Subtract</option>
-            <option value="dot">Dot Product</option> 
+            <option value="dot">Dot Product</option>
+            <option value="cross">Cross Product</option>
         </select>
     </div>
+    
     <button id="calc" onmouseup="calc();">Calculate</button>
     <div id="results"></div>
 
