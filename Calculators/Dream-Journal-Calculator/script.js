@@ -9,9 +9,6 @@ document.getElementById('dreamForm').addEventListener('submit', function(event) 
     const words = extractKeywords(entry);
     displayWordCloud(words);
     displayAnalysis(words, emotions, entry);
-
-    storeDream({ title, date, entry, emotions });
-    displayPastDreams();
 });
 
 document.getElementById('resetButton').addEventListener('click', function() {
@@ -118,41 +115,3 @@ function categorizeDream(text) {
 
     return "Uncategorized";
 }
-
-function storeDream(dream) {
-    const dreams = JSON.parse(localStorage.getItem('dreams')) || [];
-    dreams.push(dream);
-    localStorage.setItem('dreams', JSON.stringify(dreams));
-}
-
-function displayPastDreams() {
-    const dreams = JSON.parse(localStorage.getItem('dreams')) || [];
-    const pastDreamsDiv = document.getElementById('pastDreams');
-    pastDreamsDiv.innerHTML = '';
-
-    dreams.forEach(dream => {
-        const dreamElement = document.createElement('div');
-        dreamElement.classList.add('dream');
-
-        const titleElement = document.createElement('h3');
-        titleElement.textContent = dream.title;
-        dreamElement.appendChild(titleElement);
-
-        const dateElement = document.createElement('p');
-        dateElement.textContent = `Date: ${dream.date}`;
-        dreamElement.appendChild(dateElement);
-
-        const entryElement = document.createElement('p');
-        entryElement.textContent = dream.entry;
-        dreamElement.appendChild(entryElement);
-
-        const emotionsElement = document.createElement('p');
-        emotionsElement.textContent = `Emotions: ${dream.emotions.join(', ')}`;
-        dreamElement.appendChild(emotionsElement);
-
-        pastDreamsDiv.appendChild(dreamElement);
-    });
-}
-
-// Load past dreams on page load
-document.addEventListener('DOMContentLoaded', displayPastDreams);
