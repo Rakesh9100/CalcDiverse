@@ -1,8 +1,17 @@
-# Dream Journal Calculator
+# <p align="center">Dream Journal Calculator</p>
+
+## Description :-
 
 The Dream Journal Calculator is a web application that allows users to record their dreams, analyze the content, and visualize the emotions associated with the dream. It also provides a sentiment analysis to determine whether the dream was positive or negative.
 
-## Features
+## Tech Stacks :-
+
+- HTML
+- CSS
+- JavaScript
+- WordCloud2.js
+
+## Features :-
 
 - Record dream entries with title, date, description, and emotions.
 - Generate a word cloud from the dream description.
@@ -11,14 +20,14 @@ The Dream Journal Calculator is a web application that allows users to record th
 - Categorize the dream based on specific keywords.
 - Reset button to clear the form and results.
 
-## Input Fields
+## Input Fields :-
 
 1. **Dream Title**: A short title for the dream.
 2. **Date**: The date when the dream occurred.
 3. **Dream Entry**: A detailed description of the dream.
 4. **Emotions**: Comma-separated list of emotions felt during the dream.
 
-## Output
+## Output :-
 
 1. **Word Cloud**: Visual representation of the most frequently occurring words in the dream description.
 2. **Recurring Words**: List of words that appear multiple times in the dream description.
@@ -27,7 +36,7 @@ The Dream Journal Calculator is a web application that allows users to record th
 5. **Sentiment Bar**: Visual bar showing the percentage of positive and negative words in the dream.
 6. **Category**: Categorization of the dream based on specific keywords.
 
-## How to Use
+## How to Use :-
 
 1. Fill in the form with your dream details:
    - **Dream Title**: Enter a title for your dream.
@@ -46,10 +55,6 @@ The Dream Journal Calculator is a web application that allows users to record th
      
 4. Click the "Reset" button to clear the form and results.
 
-## Technologies Used
+## Screenshots :-
 
-- HTML
-- CSS
-- JavaScript
-- WordCloud2.js (for generating word clouds)
-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/741f72e9-649b-4f93-811e-2f830e503db7)
