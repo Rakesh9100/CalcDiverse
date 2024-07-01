@@ -6,7 +6,7 @@ function selectSugarType(type) {
         button.classList.remove('active');
     });
     document.getElementById(`${type}-sugar`).classList.add('active');
-    document.getElementById('selected-sugar').innerText = `Selected sugar type: ${selectedSugarType.charAt(0).toUpperCase() + selectedSugarType.slice(1)}`;
+    document.getElementById('selected-sugar').innerText = `Selected sugar type: ${type.charAt(0).toUpperCase() + type.slice(1)}`;
 }
 
 function calculateIntake() {
