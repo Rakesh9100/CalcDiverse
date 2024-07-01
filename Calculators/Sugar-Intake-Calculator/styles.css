@@ -32,6 +32,12 @@ body {
     color: #333;
 }
 
+.selected-sugar {
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #666;
+}
+
 .button {
   display: inline-block;
   padding: 12px 24px;
