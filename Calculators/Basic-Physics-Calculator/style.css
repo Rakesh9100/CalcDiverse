@@ -6,29 +6,32 @@ body {
     color: #333;
 }
 
-h1, h2, p, button {
+h1,
+h2,
+p,
+button {
     font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
-    font-size: 2.5em; 
+    font-size: 2.5em;
     color: #477;
 }
 
 h2 {
-    font-size: 2em; 
+    font-size: 2em;
     color: #824;
 }
 
 p {
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 button {
     background-color: #477;
     color: #fff;
     padding: 10px 20px;
-    font-size: 20px; 
+    font-size: 20px;
     border-radius: 10px;
     border: none;
     margin: 20px 0;
@@ -55,7 +58,7 @@ button:hover {
 }
 
 .navbar .menu-title {
-    font-size: 25px; 
+    font-size: 25px;
     color: white;
     margin: 0;
 }
@@ -68,7 +71,7 @@ button:hover {
 .nav-item {
     color: #818181;
     text-decoration: none;
-    font-size: 18px; 
+    font-size: 18px;
     transition: color 0.3s;
 }
 
@@ -90,7 +93,7 @@ button:hover {
 }
 
 .main-content {
-    margin-top: 80px; 
+    margin-top: 80px;
     padding: 20px;
 }
 
@@ -102,15 +105,16 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
     max-width: 500px;
-    margin: 0 auto 40px auto; 
+    margin: 0 auto 40px auto;
 }
 
 .calc-section {
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
 }
 
 /* Input */
-input, select {
+input,
+select {
     font-family: 'Quicksand', sans-serif;
     font-weight: 800;
     display: inline-block;
@@ -120,11 +124,12 @@ input, select {
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 10px;
-    font-size: 18px; 
-    width: calc(100% - 22px); 
+    font-size: 18px;
+    width: calc(100% - 22px);
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     outline: none;
     box-shadow: 0 0 2pt 1pt #555;
 }
@@ -136,7 +141,7 @@ input:focus, select:focus {
     border-radius: 10px;
     background-color: #477;
     color: white;
-    font-size: 20px; 
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -171,30 +176,31 @@ input:focus, select:focus {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 2em; 
+        font-size: 2em;
     }
 
     h2 {
-        font-size: 1.5em; 
+        font-size: 1.5em;
     }
 
     p {
-        font-size: 16px; 
+        font-size: 16px;
     }
 
     button {
-        font-size: 18px; 
+        font-size: 18px;
     }
 
     .card {
         padding: 15px;
     }
 
-    input, select {
-        font-size: 16px; 
+    input,
+    select {
+        font-size: 16px;
     }
 
     .results {
-        font-size: 18px; 
+        font-size: 18px;
     }
 }
