@@ -64,11 +64,12 @@ button[type="submit"] {
 }
 
 @media (max-width: 600px) {
-.header{
-    padding:10px;
-    width:70%;
-}
-.square{
-    width:70%;
-}
+    .header {
+        padding:10px;
+        width:70%;
+    }
+
+    .square {
+        width:70%;
+    }
 }
