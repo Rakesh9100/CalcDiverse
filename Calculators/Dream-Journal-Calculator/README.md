@@ -9,7 +9,6 @@ The Dream Journal Calculator is a web application that allows users to record th
 - Analyze and display recurring words and emotions.
 - Sentiment analysis to determine the positivity or negativity of the dream.
 - Categorize the dream based on specific keywords.
-- Store and display past dreams.
 - Reset button to clear the form and results.
 
 ## Input Fields
@@ -27,7 +26,6 @@ The Dream Journal Calculator is a web application that allows users to record th
 4. **Sentiment Analysis**: Displays whether the dream is positive, negative, or neutral.
 5. **Sentiment Bar**: Visual bar showing the percentage of positive and negative words in the dream.
 6. **Category**: Categorization of the dream based on specific keywords.
-7. **Past Dreams**: List of previously recorded dreams with details.
 
 ## How to Use
 
@@ -45,8 +43,7 @@ The Dream Journal Calculator is a web application that allows users to record th
    - Sentiment analysis will show whether the dream is positive, negative, or neutral.
    - A sentiment bar will visually represent the percentage of positive and negative words.
    - The category of the dream will be displayed based on specific keywords.
-   - Past dreams will be listed below the analysis.
-
+     
 4. Click the "Reset" button to clear the form and results.
 
 ## Technologies Used
