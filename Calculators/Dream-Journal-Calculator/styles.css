@@ -53,19 +53,6 @@ button:hover {
     height: 400px;
 }
 
-.dream {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-}
-
-.dream h3 {
-    margin: 0;
-}
-
-.dream p {
-    margin: 5px 0;
-}
-
 .sentiment-bar {
     display: flex;
     height: 20px;
