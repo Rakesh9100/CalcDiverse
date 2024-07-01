@@ -4,8 +4,10 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 20px; 
+    overflow-y: auto; 
 }
 
 .calculator-container {
@@ -15,6 +17,7 @@ body {
     padding: 20px;
     width: 500px;
     text-align: center;
+    margin-top: 20px;
 }
 
 h1 {

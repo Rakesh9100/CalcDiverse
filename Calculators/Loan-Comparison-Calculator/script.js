@@ -13,6 +13,16 @@ function compareLoans() {
     let loan2Interest = parseFloat(document.getElementById('loan2-interest').value);
     let loan2Term = parseFloat(document.getElementById('loan2-term').value);
 
+    if (isNaN(loan1Amount) || isNaN(loan1Interest) || isNaN(loan1Term)) {
+        alert("Please enter valid numbers for Loan 1.");
+        return;
+    }
+
+    if (isNaN(loan2Amount) || isNaN(loan2Interest) || isNaN(loan2Term)) {
+        alert("Please enter valid numbers for Loan 2.");
+        return;
+    }
+
     let loan1MonthlyPayment = calculateMonthlyPayment(loan1Amount, loan1Interest, loan1Term).toFixed(2);
     let loan2MonthlyPayment = calculateMonthlyPayment(loan2Amount, loan2Interest, loan2Term).toFixed(2);
 
