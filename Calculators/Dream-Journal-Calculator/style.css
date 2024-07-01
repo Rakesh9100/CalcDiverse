@@ -15,7 +15,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
 }
 
@@ -29,7 +30,9 @@ label {
     margin-top: 10px;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
     padding: 10px;
     margin-top: 5px;
     font-size: 1em;
@@ -82,7 +85,9 @@ button:hover {
         padding: 10px;
     }
 
-    input, textarea, button {
+    input,
+    textarea,
+    button {
         font-size: 0.9em;
         padding: 8px;
     }
