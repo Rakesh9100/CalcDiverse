@@ -37,6 +37,7 @@ var num1,txt;
 	num1=document.getElementById("num1").value;
 	txt="Determinant = "+num1;
 	document.getElementById("here").innerHTML=txt;
+	document.getElementById('end').style.top = "350px";
 	document.getElementById('end').style.visibility = "visible";
 }
 
@@ -52,7 +53,7 @@ sum=(b11*b22)-(b12*b21);
 	
 	txt="Determinant = "+sum;
 	document.getElementById("here").innerHTML=txt;
-	document.getElementById('end').style.top = "300px";
+	document.getElementById('end').style.top = "400px";
 	document.getElementById('end').style.visibility = "visible";
 }
 
@@ -71,7 +72,7 @@ var sum,txt;
 sum=(a11 * a22 * a33)+(a21 * a32 * a13)+(a31 * a12 * a23)-(a13 * a22 * a31)-(a23 * a32 * a11)-(a33 * a12 * a21);
 	txt="Determinant = "+sum;
 	document.getElementById("here").innerHTML=txt;
-	document.getElementById('end').style.top = "350px";
+	document.getElementById('end').style.top = "460px";
 	document.getElementById('end').style.visibility = "visible";
 }
 
@@ -100,7 +101,7 @@ sum=-a41*((a12 * a23 * a34)+(a22 * a33 * a14)+(a32 * a13 * a24)-(a14 * a23 * a32
 	+a44*((a11 * a22 * a33)+(a21 * a32 * a13)+(a31 * a12 * a23)-(a13 * a22 * a31)-(a23 * a32 * a11)-(a33 * a12 * a21));
 	txt="Determinant = "+sum;
 	document.getElementById("here").innerHTML=txt;
-	document.getElementById('end').style.top = "400px";
+	document.getElementById('end').style.top = "550px";
 	document.getElementById('end').style.visibility = "visible";
 }
 		
