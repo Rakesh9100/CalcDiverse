@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sunlight Hours Calculator</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -20,40 +20,7 @@
         <button onclick="calculateSunlightHours()">Calculate Sunlight Hours</button>
         <p id="result"></p>
     </div>
-    <script>
-        function calculateSunlightHours() {
-            var latitude = parseFloat(document.getElementById('latitude').value);
-            var date = new Date(document.getElementById('date').value);
 
-            if (isNaN(latitude)) {
-                alert('Please enter a valid latitude.');
-                return;
-            }
-
-            if (isNaN(date.getTime())) {
-                alert('Please enter a valid date.');
-                return;
-            }
-
-            var daylightHours = calculateDaylightHours(latitude, date);
-            displayResult(daylightHours);
-        }
-
-        function calculateDaylightHours(latitude, date) {
-            // Calculation logic to determine daylight hours based on latitude and date
-            // For simplicity, let's assume a basic calculation
-            // Replace this with a more accurate algorithm for your needs
-
-            // Example: Calculate daylight hours as 12 hours for demonstration
-            var daylightHours = 12;
-
-            return daylightHours;
-        }
-
-        function displayResult(daylightHours) {
-            var resultElement = document.getElementById('result');
-            resultElement.textContent = 'Daylight hours: ' + daylightHours.toFixed(2);
-        }
-    </script>
+    <script src="script.js"></script
 </body>
 </html>
