@@ -1,54 +1,62 @@
-html{
+html {
     margin: 0;
 }
-body{
+
+body {
     background-image: url("assets/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: white;
-    font-family: Ubuntu,sans-serif;
+    font-family: Ubuntu, sans-serif;
 }
-h1{
-    text-decoration:underline solid white 2px;
+
+h1 {
+    text-decoration: underline solid white 2px;
 }
-#calc-body{
-    max-width:800px;
+
+#calc-body {
+    max-width: 800px;
     width: 90%;
-    background-color:#252525ca;
+    background-color: #252525ca;
     border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    text-align:center;
+    transform: translate(-50%, -50%);
+    text-align: center;
     box-shadow: 8px 8px 5px #895fe6;
 }
-#sets{
-    display:flex;
+
+#sets {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    
+
 }
-.set{
-    display:inline-flex;
-    align-items:center;
+
+.set {
+    display: inline-flex;
+    align-items: center;
     padding: 10px;
     font-size: 1.3em;
 }
-.set input{
+
+.set input {
     padding: 5px;
     font-size: 1em;
 }
-.set div{
+
+.set div {
     padding: 7px;
     background-color: #895fe6;
     text-align: center;
     border: solid 2px white;
 }
-#options{
+
+#options {
     margin: 3rem auto;
     display: flex;
     justify-content: space-around;
@@ -56,16 +64,18 @@ h1{
     gap: 20px;
     row-gap: 20px;
 }
-.opt{
+
+.opt {
     background-color: #895fe6;
-    width:100px;
+    width: 100px;
     padding: 20px;
-    border-radius:10px ;
+    border-radius: 10px;
     border: solid 1px white;
     font-size: 1.2rem;
     box-shadow: 4px 4px white;
 }
-#ans{
+
+#ans {
     background-color: white;
     margin-bottom: 20px;
     padding: 20px;
@@ -73,15 +83,14 @@ h1{
     font-size: 1.2rem;
 }
 
-
-.opt:hover{
+.opt:hover {
     box-shadow: none;
     background-color: #523987;
-    transform: translate(3px,3px);
+    transform: translate(3px, 3px);
 
 }
 
-#ext-opt{
+#ext-opt {
     display: none;
     justify-content: space-around;
     margin: 20px;
