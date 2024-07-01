@@ -57,10 +57,9 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 
 <h2>Overview⭐</h2>
 
-<h2>Live Project -- (https://calcdiverse.netlify.app/)</h2>
+<h3>Live Project -- (https://calcdiverse.netlify.app/)</h3><br>
 
-
-## Calculators
+<h2>Calculators📟</h2>
 
 | S.No | Calculator Name | Description | Link |
 |------|-----------------|-------------|-------|
@@ -344,10 +343,8 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 | 277 | Weight On The Moon Calculator | Calculates the weight of the object/person on the moon. | https://calcdiverse.netlify.app/calculators/weight-on-the-moon-calculator/ |
 | 278 | Word Count Calculator | Counts the Total Words, Unique words, Average word length and Exports the data in JSON. | https://calcdiverse.netlify.app/calculators/word-count-calculator/ |
 | 279 | Yarn Density Calculator | Calculates the linear density of the yarn from unit system to another. | https://calcdiverse.netlify.app/calculators/yarn-density-calculator/ |
-
-
-
-
+<br>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <h3>Home/Main Page :-</h3>
 
@@ -369,7 +366,6 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c97c96ff-4468-44bf-b01a-f8f944d07b1e)
 <br><br>
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
