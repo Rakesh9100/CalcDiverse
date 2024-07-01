@@ -1,5 +1,5 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,4 +60,68 @@ button:hover {
     background-color: rgb(154, 82, 222);
     box-shadow: rgba(162, 64, 197, 0.913) 2px 2px 3px,
         rgba(150, 49, 175, 0.788) 1px 1px 1px;
+}
+
+@media (max-width: 1200px) {
+    #calculator {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    #calculator {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 800px) {
+    #calculator {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    b {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        font-size: 12px;
+        width: 45%;
+    }
+}
+
+@media (max-width: 400px) {
+    #calculator {
+        width: 75vw;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    b {
+        font-size: 0.8rem;
+    }
+
+    button {
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        font-size: 10px;
+        width: 40%;
+    }
 }
