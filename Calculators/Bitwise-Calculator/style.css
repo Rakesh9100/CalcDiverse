@@ -1,116 +1,127 @@
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background: radial-gradient(circle, rgb(222, 195, 255), rgb(250, 129, 232));
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, rgb(222, 195, 255), rgb(250, 129, 232));
 }
 
 h2 {
-  font-size: 35px;
+    font-size: 35px;
 }
 
 #calculator {
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 2em;
-  position: absolute;
-  background-color: rgb(243, 235, 253);
-  color: rgb(44, 44, 44);
-  border-radius: 8%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 30vw;
-  height: auto;
-  box-shadow: rgba(255, 100, 221, 0.913) 15px 20px 40px,
-    rgba(248, 56, 229, 0.788) 5px 5px 10px;
-  text-align: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2em;
+    position: absolute;
+    background-color: rgb(243, 235, 253);
+    color: rgb(44, 44, 44);
+    border-radius: 8%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: auto;
+    box-shadow: rgba(255, 100, 221, 0.913) 15px 20px 40px,
+        rgba(248, 56, 229, 0.788) 5px 5px 10px;
+    text-align: center;
 }
 
 input {
-  width: 50%;
-  padding: 10px 0px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 3px;
-  border-radius: 0.3em;
-  font-size: 15px;
+    width: 50%;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 3px;
+    border-radius: 0.3em;
+    font-size: 15px;
 }
 
 label {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 button {
-  padding: 10px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-left: 5px;
-  margin-top: 20px;
-  border-radius: 10px;
-  font-family: serif;
-  background-color: rgba(158, 125, 199, 0.916);
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: serif;
+    background-color: rgba(158, 125, 199, 0.916);
 }
 
 button:hover {
-  background-color: rgb(154, 82, 222);
-  box-shadow: rgba(162, 64, 197, 0.913) 2px 2px 3px,
-    rgba(150, 49, 175, 0.788) 1px 1px 1px;
+    background-color: rgb(154, 82, 222);
+    box-shadow: rgba(162, 64, 197, 0.913) 2px 2px 3px,
+        rgba(150, 49, 175, 0.788) 1px 1px 1px;
 }
 
 @media (max-width: 1200px) {
-  #calculator {
-    width: 50vw;
-  }
+    #calculator {
+        width: 50vw;
+    }
 }
+
 @media (max-width: 1000px) {
-  #calculator {
-    width: 60vw;
-  }
+    #calculator {
+        width: 60vw;
+    }
 }
+
 @media (max-width: 800px) {
-  #calculator {
-    width: 70vw;
-  }
+    #calculator {
+        width: 70vw;
+    }
 }
+
 @media (max-width: 600px) {
-  h2 {
-    font-size: 1.5rem;
-  }
-  b {
-    font-size: 1rem;
-  }
-  button {
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  input {
-    font-size: 12px;
-    width: 45%;
-  }
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    b {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        font-size: 12px;
+        width: 45%;
+    }
 }
+
 @media (max-width: 400px) {
-  #calculator {
-    width: 75vw;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-  b {
-    font-size: 0.8rem;
-  }
-  button {
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  input {
-    font-size: 10px;
-    width: 40%;
-  }
+    #calculator {
+        width: 75vw;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    b {
+        font-size: 0.8rem;
+    }
+
+    button {
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        font-size: 10px;
+        width: 40%;
+    }
 }
