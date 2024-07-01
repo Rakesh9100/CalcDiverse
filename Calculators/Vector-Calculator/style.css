@@ -1,4 +1,3 @@
-/* style.css */
 body {
     background: #011c28;
     text-align: center;
@@ -52,7 +51,7 @@ input {
     margin: 15px;
 }
 
-.vect > p {
+.vect>p {
     font-weight: bold;
 }
 
