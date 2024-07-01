@@ -1,7 +1,4 @@
-
-
 function calculateGST() {
-    
     var amount = parseFloat(document.getElementById("amount").value);
     var quantity = parseInt(document.getElementById("quantity").value);
     var taxRate = parseFloat(document.getElementById("taxRate").value);
@@ -24,14 +21,11 @@ function calculateGST() {
         finalPriceInr = totalAmount - gstAmountInr;
     }
 
- 
     var inrToUsdRate = 0.014; // 1 INR to USD
     var gstToUsdRate = 0.74; // 1 GST unit (currency) to USD
 
-
     var gstAmountUsd = gstAmountInr * gstToUsdRate;
     var finalPriceUsd = finalPriceInr * inrToUsdRate;
-
 
     var resultElement = document.getElementById("result");
     resultElement.innerHTML = `
