@@ -1,18 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Load saved input values and results if available
-    if (localStorage.getItem('weight')) {
-        document.getElementById('weight').value = localStorage.getItem('weight');
-    }
-    if (localStorage.getItem('height')) {
-        document.getElementById('height').value = localStorage.getItem('height');
-    }
-    if (localStorage.getItem('bsaResult')) {
-        document.getElementById('result').innerText = localStorage.getItem('bsaResult');
-    }
-    if (localStorage.getItem('tip')) {
-        document.getElementById('tip').innerText = localStorage.getItem('tip');
-    }
-});
+localStorage.clear();
 
 function calculateBSA() {
     const weight = parseFloat(document.getElementById('weight').value);
