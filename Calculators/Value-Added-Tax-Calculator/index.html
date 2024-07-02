@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Value Added Tax Calculator</title>
+</head>
+<body>
+    <div class="vat-calc">
+        <h2>VAT Calculator</h2>
+        <div class="main-wrapper">
+            <form>
+                <div>
+                    <label for="net-price">Net Price</label><br/>
+                    <input type="number" id="net-price" min="0.00" placeholder="0.00" />
+                </div>
+                <div>
+                    <label for="vat-rate">VAT Rate (%)</label><br/>
+                    <input type="number" id="vat-rate" min="0.00" placeholder="0.00" />
+                </div>
+                <div>
+                    <label for="vat-added">VAT Added</label><br/>
+                    <input type="number" id="vat-added" placeholder="0.00" disabled />
+                </div>
+                <div>
+                    <label for="inc-amount">VAT Inclusive Price</label><br/>
+                    <input type="number" id="inc-amount" placeholder="0.00" disabled />
+                </div>
+            </form>
+        </div>
+        <div class="button_group">
+            <button type="button" class="main-btn" id="calc-btn">Calculate</button>
+            <button type="button" class="main-btn" id="reset-btn">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
