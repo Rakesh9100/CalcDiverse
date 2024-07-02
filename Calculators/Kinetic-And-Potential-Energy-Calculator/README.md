@@ -12,4 +12,4 @@ Kinetic And Potential Energy Calculator is a web application that calculates the
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/120f843b-3ce2-4555-a24c-9d4bfeb5989f)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/18396265-a8ac-4d09-8a07-db875481bb22)
