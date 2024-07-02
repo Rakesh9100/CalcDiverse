@@ -14,7 +14,7 @@
     </header>
     <div class="calculator">
         <label for="mirrorType">Select Mirror Type:</label>
-        <select id="mirrorType">
+        <select id="mirrorType" onchange="clearAndReset()">
             <option value="concave">Concave Mirror</option>
             <option value="convex">Convex Mirror</option>
         </select>
@@ -30,7 +30,7 @@
             <button onclick="resetCalculator()">Reset</button>
             <button onclick="clearResult()">Clear</button>
         </div>
-        <div id="result"></div>
+        <div id="result" class="result-container"></div>
     </div>
     <script src="script.js"></script>
 </body>

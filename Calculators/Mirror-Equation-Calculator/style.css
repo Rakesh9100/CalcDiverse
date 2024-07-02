@@ -40,6 +40,7 @@ label {
     box-shadow: 0 4px 6px rgba(64, 84, 110, 0.1);
     transition: box-shadow 0.3s ease-in-out;
     width: 400px;
+    text-align: center;
 }
 
 .calculator:hover {
@@ -88,7 +89,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-#result {
+.result-container {
     margin-top: 10px;
     font-weight: bold;
     color: #000000;

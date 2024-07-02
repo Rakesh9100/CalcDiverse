@@ -20,16 +20,16 @@ function calculateFocalLength() {
 }
 
 function resetCalculator() {
-    document.getElementById('mirrorType').value = 'concave';
-    clearInputs();
-    clearResult();
-}
-
-function clearInputs() {
     document.getElementById('objectDistanceInput').value = '';
     document.getElementById('imageDistanceInput').value = '';
+    document.getElementById('result').innerHTML = '';
 }
 
 function clearResult() {
     document.getElementById('result').innerHTML = '';
+}
+
+function clearAndReset() {
+    resetCalculator();
+    clearResult();
 }
