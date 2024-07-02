@@ -252,26 +252,26 @@ if (SpeechRecognition) {
   const circles = document.querySelectorAll(".circle");
 
   const colors = [
-    "#800080",
-    "#800080",
-    "#800080",
-    "#6A006A",
-    "#6A006A",
-    "#6A006A",
-    "#550055",
-    "#550055",
-    "#550055",
-    "#400040",
-    "#400040",
-    "#2B002B",
-    "#2B002B",
-    "#150015",
-    "#150015",
-    "#000000",
-    "#000000",
-    "#000000" ,
-    "#000000"
-  ];
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF",
+    "#FFFFFF"
+];
 
   circles.forEach(function (circle, index) {
     circle.x = 0;
@@ -291,8 +291,8 @@ if (SpeechRecognition) {
     let y = coords.y;
 
     circles.forEach(function (circle, index) {
-      circle.style.left = x - 12 + "px";
-      circle.style.top = y - 12 + "px";
+      circle.style.left = x - 2 + "px";
+      circle.style.top = y - 2 + "px";
 
       circle.style.scale = (circles.length - index) / circles.length;
 
@@ -308,67 +308,3 @@ if (SpeechRecognition) {
   }
 
   animateCircles();
-
-
-  // Function to toggle dark mode
-  function toggleDarkMode() {
-    const isDarkMode = isDarkModePreferred();
-    setDarkModePreference(!isDarkMode);
-    applyDarkModePreference();
-  }
-
-  // Function to apply dark mode preference
-  function applyDarkModePreference() {
-    const isDarkMode = isDarkModePreferred();
-    if (isDarkMode) {
-      document.body.classList.add('dark-mode');
-      document.getElementById('theme-icon').src = 'assets/images/icons8-sun.svg';
-    } else {
-      document.body.classList.remove('dark-mode');
-      document.getElementById('theme-icon').src = 'assets/images/moon_solid.svg';
-    }
-  }
-
-  // Function to set dark mode preference
-  document.addEventListener('DOMContentLoaded', () => {
-    const currentTheme = localStorage.getItem('theme');
-    const switchCheckbox = document.getElementById('switch'); // Define switchCheckbox here
-    const starRating = document.querySelector('.star_rating');
-    const thankYouMessage = document.querySelector(".thank_you_message");
-    if (switchCheckbox) { // Check if switchCheckbox is not null
-      function applyDarkModeStyles() {
-        document.body.classList.remove('light-mode');
-        document.body.classList.add('dark-mode');
-        starRating.style.backgroundColor = '#2d2828';
-        thankYouMessage.style.backgroundColor = '#2d2828';
-      }
-
-      function applyLightModeStyles() {
-        document.body.classList.remove('dark-mode');
-        document.body.classList.add('light-mode');
-        starRating.style.backgroundColor = 'white';
-        thankYouMessage.style.backgroundColor = 'white';
-      }
-
-      if (currentTheme) {
-        if (currentTheme === 'dark-mode') {
-          applyDarkModeStyles();
-          switchCheckbox.checked = true;
-        } else {
-          applyLightModeStyles();
-        }
-      }
-
-      switchCheckbox.addEventListener('change', () => {
-        if (switchCheckbox.checked) {
-          applyDarkModeStyles();
-          localStorage.setItem('theme', 'dark-mode');
-        } else {
-          applyLightModeStyles();
-          localStorage.setItem('theme', 'light-mode');
-        }
-      });
-    } else {
-      console.error("Switch checkbox not found!"); // Log an error if switchCheckbox is null
-    }
-  });
