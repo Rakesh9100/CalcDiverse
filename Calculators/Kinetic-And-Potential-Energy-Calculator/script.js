@@ -34,3 +34,22 @@ function calculateEnergy() {
         }
     }
 }
+
+function resetCalculator() {
+    document.getElementById('energyType').value = 'kinetic';
+    document.getElementById('kineticEnergyInputs').style.display = 'block';
+    document.getElementById('potentialEnergyInputs').style.display = 'none';
+    clearInputs();
+    clearResult();
+}
+
+function clearInputs() {
+    document.getElementById('massKEInput').value = '';
+    document.getElementById('velocityInput').value = '';
+    document.getElementById('massPEInput').value = '';
+    document.getElementById('heightInput').value = '';
+}
+
+function clearResult() {
+    document.getElementById('result').innerHTML = '';
+}

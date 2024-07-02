@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('assets/background.jpeg');
+    background-image: url('assets/background.webp');
     background-size: cover;
     background-position: center;
 }
@@ -21,7 +21,7 @@ label {
 }
 
 .calculator {
-    background-color: rgba(61, 132, 232, 0.9);
+    background-color: rgba(32, 104, 205, 0.9);
     border-radius: 10px;
     padding: 20px;
     animation: fadeIn 1s ease-in-out;
@@ -55,7 +55,7 @@ button {
     padding: 12px;
     cursor: pointer;
     text-align: center;
-    background: linear-gradient(90deg, #2fd1c1, #2e4fb3);
+    background: linear-gradient(90deg, #5b80ec, #ff4dd2);
     color: rgb(0, 0, 0);
     font-weight: bolder;
     border: none;
@@ -63,17 +63,17 @@ button {
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     width: 100%;
+    margin-bottom: 10px;
 }
 
 button:hover {
-    background: linear-gradient(90deg, #4429bc, #5e3eb7);
+    background: linear-gradient(90deg, #4ef15c, #906fea);
     transform: scale(1.05);
 }
 
 #result {
     margin-top: 20px;
     font-weight: bolder;
-    ;
     color: #ffffff;
     animation: fadeIn 1s ease-in-out;
     align-items: center;

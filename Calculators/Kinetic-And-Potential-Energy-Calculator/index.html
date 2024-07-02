@@ -11,7 +11,7 @@
 <body>
     <div class="calculator">
         <label for="energyType">Select Energy Type:</label>
-        <select id="energyType">
+        <select id="energyType" onchange="toggleEnergyInputs()">
             <option value="kinetic">Kinetic Energy</option>
             <option value="potential">Potential Energy</option>
         </select>
@@ -32,6 +32,8 @@
         </div>
         </br>
         <button onclick="calculateEnergy()">Calculate</button>
+        <button onclick="resetCalculator()">Reset</button>
+        <button onclick="clearResult()">Clear</button>
         <div id="result"></div>
     </div>
     <script src="script.js"></script>
