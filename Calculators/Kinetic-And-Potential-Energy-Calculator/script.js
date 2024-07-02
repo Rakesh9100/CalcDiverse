@@ -1,4 +1,4 @@
-document.getElementById('energyType').addEventListener('change', function () {
+function toggleEnergyInputs() {
     let energyType = document.getElementById('energyType').value;
     if (energyType === 'kinetic') {
         document.getElementById('kineticEnergyInputs').style.display = 'block';
@@ -7,7 +7,8 @@ document.getElementById('energyType').addEventListener('change', function () {
         document.getElementById('kineticEnergyInputs').style.display = 'none';
         document.getElementById('potentialEnergyInputs').style.display = 'block';
     }
-});
+    clearResult();
+}
 
 function calculateEnergy() {
     let energyType = document.getElementById('energyType').value;
