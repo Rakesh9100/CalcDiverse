@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f06, #f90, #0f0, rgb(229, 255, 0), #90f);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.no-arrows {
+    -moz-appearance: textfield;
+}
+
+.no-arrows::-webkit-outer-spin-button,
+.no-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@keyframes scaleUpDown {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+.animated-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    animation: scaleUpDown 1s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    .animated-title {
+        font-size: 2rem;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+}
+
+.form-group {
+    margin-bottom: 8px;
+}
