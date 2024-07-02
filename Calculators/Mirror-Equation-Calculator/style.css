@@ -63,6 +63,12 @@ select:focus {
     outline: none;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 button {
     padding: 12px;
     cursor: pointer;

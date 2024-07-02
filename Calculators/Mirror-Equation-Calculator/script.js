@@ -18,3 +18,18 @@ function calculateFocalLength() {
         result.innerHTML = `Focal Length: ${focalLength.toFixed(2)} cm`;
     }
 }
+
+function resetCalculator() {
+    document.getElementById('mirrorType').value = 'concave';
+    clearInputs();
+    clearResult();
+}
+
+function clearInputs() {
+    document.getElementById('objectDistanceInput').value = '';
+    document.getElementById('imageDistanceInput').value = '';
+}
+
+function clearResult() {
+    document.getElementById('result').innerHTML = '';
+}
