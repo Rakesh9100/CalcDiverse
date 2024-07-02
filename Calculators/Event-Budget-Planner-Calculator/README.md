@@ -13,5 +13,3 @@ The Event Budget Planner is a streamlined tool for managing event expenses. User
 ## Screenshots :-
 
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/126322584/c8994d9d-d2e9-4f00-83ac-2ddfbfb9e0b1)
-
-
