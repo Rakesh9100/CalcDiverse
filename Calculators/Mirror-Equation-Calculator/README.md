@@ -12,4 +12,4 @@ Mirror Equation Calculator is a web application that calculates the focal length
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/0287d84c-5216-4733-b901-6fa929ad8338)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/ebd9b8cb-db43-44c2-98a5-34c471f3c3ec)
