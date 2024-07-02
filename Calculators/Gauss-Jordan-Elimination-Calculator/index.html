@@ -13,24 +13,27 @@
     <div id="matrixCalculator">
         <h2>Gauss-Jordan Elimination Calculator</h2>
 
-        <label for="matrixRows">Rows:</label>
-        <input type="number" id="matrixRows" value="2" min="2" max="10" onchange="createMatrixInputs()" />
+        <div class="input-group">
+            <label for="matrixRows">Rows:</label>
+            <input type="number" id="matrixRows" value="2" min="2" max="10" onchange="createMatrixInputs()" />
+        </div>
 
-        <label for="matrixCols">Columns:</label>
-        <input type="number" id="matrixCols" value="3" min="2" max="10" onchange="createMatrixInputs()" />
+        <div class="input-group">
+            <label for="matrixCols">Columns:</label>
+            <input type="number" id="matrixCols" value="3" min="2" max="10" onchange="createMatrixInputs()" />
+        </div>
 
         <div id="matrixInputs">
             <!-- Matrix input table will be generated here -->
         </div>
 
         <div class="buttons">
-            <button onclick="calculate()">Calculate</button>
-            <button onclick="resetForm()">Reset</button>
+            <button class="btn" onclick="calculate()">Calculate</button>
+            <button class="btn btn-reset" onclick="resetForm()">Reset</button>
         </div>
-        
+
         <h3>Result</h3>
         <div id="result"></div>
-        
     </div>
 
     <script src="script.js"></script>

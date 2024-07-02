@@ -109,19 +109,3 @@ function gaussJordanElimination(matrix) {
 
     return matrix;
 }
-
-// function displayResult(matrix) {
-//     const resultContainer = document.getElementById("result");
-//     const rows = matrix.length;
-//     const cols = matrix[0].length;
-//     let solutionSet = "Solution set:<br>";
-
-//     for (let i = 0; i < rows; i++) {
-//         if (i < cols - 1) {
-//             solutionSet += `x${i + 1} = ${matrix[i][cols - 1]}<br>`;
-//         }
-//     }
-
-//     resultContainer.innerHTML = solutionSet;
-// }
-
