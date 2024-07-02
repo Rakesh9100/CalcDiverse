@@ -40,3 +40,20 @@ function calculateBSA() {
         });
     }
 }
+
+function clearFields() {
+    document.getElementById('weight').value = '';
+    document.getElementById('height').value = '';
+}
+
+function resetForm() {
+    clearFields();
+    document.getElementById('result').innerText = '';
+    document.getElementById('tip').innerText = '';
+    localStorage.clear();
+    Swal.fire({
+        title: 'Form Reset',
+        text: 'The form has been reset.',
+        icon: 'success'
+    });
+}
