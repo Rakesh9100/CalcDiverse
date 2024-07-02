@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff6f61, #de5295);
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Heading Styles */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: -webkit-linear-gradient(#ff6f61, #de5295);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Input Styles */
+input {
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #de5295;
+}
+
+/* Button Styles */
+button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #de5295;
+}
+
+/* Result Paragraph Styles */
+p {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+    background: #ff6f61;
+    background: -webkit-linear-gradient(#ff6f61, #de5295);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
