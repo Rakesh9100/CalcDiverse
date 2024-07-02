@@ -1,0 +1,154 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#matrixCalculator {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    animation: slideUp 1s ease-in-out;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    animation: colorChange 3s infinite;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555555;
+    text-align: left;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button.btn {
+    width: 40%;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button.btn-reset {
+    background-color: #dc3545;
+}
+
+button.btn-reset:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.matrixRow {
+    display: flex;
+    justify-content: center;
+}
+
+.matrixCell {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+}
+
+.matrixCell input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 20px;
+    color: #333333;
+    margin-top: 30px;
+}
+
+#result {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    min-height: 50px;
+    text-align: left;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #333333;
+    }
+    50% {
+        color: #007bff;
+    }
+    100% {
+        color: #333333;
+    }
+}
