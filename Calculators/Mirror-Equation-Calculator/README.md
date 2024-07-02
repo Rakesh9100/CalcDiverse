@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Mirror Equation Calculator is a web application that calculates the focal length if type of mirror and image and object distance is given.
+Mirror Equation Calculator is a web application that calculates the focal length if the type of mirror and image and object distance are given.
 
 ## Tech Stacks :-
 
