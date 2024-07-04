@@ -18,3 +18,4 @@ The Work Calculator calculates the work W which is equal to the force f times th
 
 ## Screenshots :-
 
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/145500535/120fc5af-5734-436f-9ecd-b8f3796a42fa)
