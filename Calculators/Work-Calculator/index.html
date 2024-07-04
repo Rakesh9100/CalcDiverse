@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Work Calculator</h1>
+        <form id="workForm">
+            <label for="force">Force (N):</label>
+            <input type="number" id="force" name="force" required>
+            
+            <label for="distance">Distance (m):</label>
+            <input type="number" id="distance" name="distance" required>
+            
+            <button type="submit">Calculate Work</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
