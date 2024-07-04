@@ -2,7 +2,7 @@
 
 ## Description :-
 
-The Operational Fraction Calculator is a web-based tool that enables users to perform basic arithmetic operations (addition, subtraction, multiplication, and division) on fractions.
+The Operational Fraction Calculator is a web-based tool that enable users to perform basic arithmetic operations (addition, subtraction, multiplication, and division) on fractions.
 
 ## Tech Stacks :-
 
