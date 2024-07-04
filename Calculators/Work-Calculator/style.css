@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #00c6ff, #eff1f3);
+    background: linear-gradient(to right, #00c6ff, #eeeeee);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,16 +56,16 @@ button {
 }
 
 button:hover {
-    background-color: #05305b;
+    background-color: #05305a;
 }
 
 #result {
     display: flex;
-    border: solid;
-    border-radius: 10px;
-    height: 4vh;
     justify-content: center;
     align-items: center;
+    border:solid;
+    border-radius: 10px;
+    height:4vh;
     margin-top: 20px;
     font-size: 1.2em;
     color: red;
@@ -76,8 +76,7 @@ button:hover {
         padding: 20px;
     }
 
-    input,
-    button {
+    input, button {
         font-size: 14px;
         padding: 8px;
     }
