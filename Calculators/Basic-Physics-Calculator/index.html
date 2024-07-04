@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Physics Calculator</title>
+</head>
+<body>
+    <div class="navbar">
+        <h2 class="menu-title">Basic Physics Calculators</h2>
+        <div class="nav-items">
+            <a href="#calc-speed" class="nav-item">Speed</a>
+            <a href="#calc-acceleration" class="nav-item">Acceleration</a>
+            <a href="#calc-force" class="nav-item">Force</a>
+            <a href="#calc-pressure" class="nav-item">Pressure</a>
+            <a href="#calc-work" class="nav-item">Work</a>
+            <a href="#calc-power" class="nav-item">Power</a>
+            <a href="#calc-kinetic-energy" class="nav-item">Kinetic Energy</a>
+        </div>
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="main-content" id="main-content">
+        <!-- Calculates Speed -->
+        <div class="calc-section" id="calc-speed">
+            <h2>Calculate Speed</h2>
+            <div class="card">
+                <p>Select a System of Measurement:</p>
+                <div class="custom-select">
+                    <select name="speed-measurement" id="speed-measurement">
+                        <option value="mi-min" class="styled-option">mi/min</option>
+                        <option value="mi-hr" class="styled-option">mi/hr</option>
+                        <option value="cm-sec" class="styled-option">cm/sec</option>
+                        <option value="m-sec" class="styled-option">m/sec</option>
+                        <option value="m-min" class="styled-option">m/min</option>
+                        <option value="km-min" class="styled-option">km/min</option>
+                        <option value="km-hr" class="styled-option">km/hr</option>
+                    </select>
+                </div>
+                <p>Distance:</p>
+                <input type="text" class="distance-for-speed">
+                <p>Time:</p>
+                <input type="text" class="speed-time"><br>
+                <button class="btn-speed">Calculate Speed</button>
+            </div>
+            <p class="speed-result results">Speed:</p>
+        </div>
+
+        <!-- Calculates Acceleration -->
+        <div class="calc-section" id="calc-acceleration">
+            <h2>Calculate Acceleration</h2>
+            <div class="card">
+                <p>Select a System of Measurement:</p>
+                <div class="custom-select">
+                    <select name="acceleration-measurement" id="acceleration-measurement">
+                        <option value="mi-min2" class="styled-option">mi/min&sup2;</option>
+                        <option value="mi-hr2" class="styled-option">mi/hr&sup2;</option>
+                        <option value="cm-sec2" class="styled-option">cm/sec&sup2;</option>
+                        <option value="m-sec2" class="styled-option">m/sec&sup2;</option>
+                        <option value="m-min2" class="styled-option">m/min&sup2;</option>
+                        <option value="km-min2" class="styled-option">km/min&sup2;</option>
+                        <option value="km-hr2" class="styled-option">km/hr&sup2;</option>
+                    </select>
+                </div>
+                <p>Initial Velocity (in m/min):</p>
+                <input type="text" class="initial-v">
+                <p>Final Velocity (in m/min):</p>
+                <input type="text" class="final-v">
+                <p>Time (in minutes):</p>
+                <input type="text" class="acceleration-time"><br>
+                <button class="btn-acceleration">Calculate Acceleration</button>
+            </div>
+            <p class="acceleration-result results">Acceleration:</p>
+        </div>
+
+        <!-- Calculates Force -->
+        <div class="calc-section" id="calc-force">
+            <h2>Calculate Force</h2>
+            <div class="card">
+                <p>Mass (in kilograms):</p>
+                <input type="text" class="mass">
+                <p>Acceleration (in miles per second):</p>
+                <input type="text" class="acceleration-for-force"><br>
+                <button class="btn-force">Calculate Force</button>
+            </div>
+            <p class="force-result results">Force:</p>
+        </div>
+
+        <!-- Calculates Pressure -->
+        <div class="calc-section" id="calc-pressure">
+            <h2>Calculate Pressure</h2>
+            <div class="card">
+                <p>Area (in meters<sup>2</sup>):</p>
+                <input type="text" class="area">
+                <p>Force (in Newtons):</p>
+                <input type="text" class="force-for-pressure"><br>
+                <button class="btn-pressure">Calculate Pressure</button>
+            </div>
+            <p class="pressure-result results">Pressure:</p>
+        </div>
+
+        <!-- Calculates Work -->
+        <div class="calc-section" id="calc-work">
+            <h2>Calculate Work</h2>
+            <div class="card">
+                <p>Force (in Newtons):</p>
+                <input type="text" class="force-for-work">
+                <p>Distance (in Meters):</p>
+                <input type="text" class="distance-for-work"><br>
+                <button class="btn-work">Calculate Work</button>
+            </div>
+            <p class="work-result results">Work:</p>
+        </div>
+
+        <!-- Calculates Power -->
+        <div class="calc-section" id="calc-power">
+            <h2>Calculate Power</h2>
+            <div class="card">
+                <p>Select a System of Measurement:</p>
+                <div class="custom-select">
+                    <select name="power-measurement" id="power-measurement">
+                        <option value="watts" class="styled-option">Watts</option>
+                        <option value="horsepower" class="styled-option">Horsepower</option>
+                    </select>
+                </div>
+                <p>Energy (in joules):</p>
+                <input type="text" class="energy-for-power">
+                <p>Time (in seconds):</p>
+                <input type="text" class="time-for-power"><br>
+                <button class="btn-power">Calculate Power</button>
+            </div>
+            <p class="power-result results">Power:</p>
+        </div>
+
+        <!-- Calculates Kinetic Energy -->
+        <div class="calc-section" id="calc-kinetic-energy">
+            <h2>Calculate Kinetic Energy</h2>
+            <div class="card">
+                <p>Mass (in kilograms):</p>
+                <input type="text" class="mass-for-kinetic-energy">
+                <p>Velocity (in meters per second):</p>
+                <input type="text" class="velocity-for-kinetic-energy">
+                <br>
+                <button class="btn-kinetic-energy">Calculate Kinetic Energy</button>
+            </div>
+            <p class="kinetic-energy-result results">Kinetic Energy:</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

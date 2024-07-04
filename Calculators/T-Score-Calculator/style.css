@@ -1,0 +1,79 @@
+body {
+    background-image: url("https://media.istockphoto.com/id/1407983911/photo/forex-diagrams-and-stock-market-rising-lines-with-numbers.jpg?s=612x612&w=0&k=20&c=zas1h6LR6v2iCvE7SWnVoZ_s7ZSiboN45UK0d5oMWac=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    background: rgba(195, 241, 251, 0.6);
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    color: rgb(250, 251, 255);
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 30px;
+}
+
+label {
+    text-align: center;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #131616;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 25px;
+    border: 1px solid #4c8080;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+input:hover {
+    border: 3px solid #070a0a;
+}
+
+button {
+    width: 70%;
+    padding: 10px;
+    background: #4e9ff6;
+    color: #090808;
+    border: 2px solid #070a0a;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: linear-gradient(rgb(91, 91, 147), rgb(86, 86, 245));
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 24px;
+    text-align: center;
+}
