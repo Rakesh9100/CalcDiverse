@@ -1,0 +1,46 @@
+body {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 50px;
+    background-image: url('bg.png');
+}
+
+input[type=text] {
+    margin: 10px;
+    width: 50px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+p {
+    visibility: hidden;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    position: fixed;
+}
+
+table,
+td,
+tr {
+    align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#end {
+    top: 250px;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: transparent;
+}
