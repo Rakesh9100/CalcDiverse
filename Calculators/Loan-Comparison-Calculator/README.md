@@ -12,5 +12,4 @@ Given the loan amount, interest rate (per year), and loan term (in years), this 
 
 ## Screenshots :-
 
-![alt text](image.png)
-![alt text](image-1.png)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c31f0728-99ed-4edf-858d-ea807060cef1)
