@@ -1,0 +1,206 @@
+body {
+    font-family: 'Quicksand Light', sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1,
+h2,
+p,
+button {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #477;
+}
+
+h2 {
+    font-size: 2em;
+    color: #824;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    background-color: #477;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 1px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menu-title {
+    font-size: 25px;
+    color: white;
+    margin: 0;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    color: #818181;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #f1f1f1;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+
+.main-content {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+}
+
+.calc-section {
+    margin-bottom: 60px;
+}
+
+/* Input */
+input,
+select {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #555;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    width: calc(100% - 22px);
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 2pt 1pt #555;
+}
+
+/* Result */
+.results {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #477;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+
+    .nav-item {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    input,
+    select {
+        font-size: 16px;
+    }
+
+    .results {
+        font-size: 18px;
+    }
+}

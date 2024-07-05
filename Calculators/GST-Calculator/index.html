@@ -14,6 +14,9 @@
         <label for="amount">Enter Amount:</label>
         <input type="number" id="amount" placeholder="Enter amount">
 
+        <label for="quantity">Enter Quantity:</label>
+        <input type="number" id="quantity" placeholder="Enter quantity" value="1">
+
         <label for="taxRate">Select Tax Rate:</label>
         <select id="taxRate">
             <option value="5">5%</option>
@@ -22,7 +25,13 @@
             <option value="28">28%</option>
         </select>
 
-        <button onclick="calculateGST()">Calculate</button>
+        <label for="operation">Operation:</label>
+        <select id="operation">
+            <option value="add">Add GST</option>
+            <option value="remove">Remove GST</option>
+        </select>
+
+        <button onclick="calculateGST()" id="buttonca">Calculate</button>
 
         <div id="result" class="result-container"></div>
     </div>
