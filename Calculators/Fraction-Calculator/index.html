@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Fraction Calculator</title>
+</head>
+<body>
+    <div id="calculator-container">
+        <div class="calculator-card">
+            <h2>Fraction Calculator</h2>
+            <p>Perform basic arithmetic operations on fractions.</p>
+            <form name="calc">
+                <div class="fraction-inputs">
+                    <div class="fraction">
+                        <input type="text" name="n1" id="n1" placeholder="Numerator" tabindex="1">
+                        <input type="text" name="d1" id="d1" placeholder="Denominator" tabindex="2">
+                    </div>
+                    <center>
+                        <select name="Op" tabindex="3" class="operator">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">×</option>
+                            <option value="/">÷</option>
+                        </select>
+                    </center>
+                    <div class="fraction">
+                        <input type="text" name="n2" id="n2" placeholder="Numerator" tabindex="4">
+                        <input type="text" name="d2" id="d2" placeholder="Denominator" tabindex="5">
+                    </div>
+                    <button type="button" onClick="solve();" tabindex="6">=</button>
+                    <div class="fraction">
+                        <input type="text" name="An" id="An" readonly placeholder="Result Numerator">
+                        <input type="text" name="Ad" id="Ad" readonly placeholder="Result Denominator">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
