@@ -4,11 +4,11 @@
 
 Welcome to the Travel Packing Calculator! This tool helps you generate a personalized packing list based on your travel destination, dates, and planned activities. It also provides current weather information and top tourist places for your destination. 
 
-## Tech Stack :-
+## Tech Stacks :-
 
-- **HTML**: For the structure of the web page.
-- **CSS**: For styling the web page.
-- **JavaScript**: For the functionality of the web page.
+- HTML
+- CSS
+- JavaScript
 - **OpenWeatherMap API**: To fetch current weather information.
 - **Foursquare API**: To fetch top tourist places.
 
@@ -22,5 +22,4 @@ Welcome to the Travel Packing Calculator! This tool helps you generate a persona
 
 ## Screenshots :-
 
-![image]()
-
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/673608b6-137a-4506-8f2c-f0fcdb383528)
