@@ -14,20 +14,12 @@ input[type=text] {
     text-align: center;
 }
 
-p {
-    visibility: hidden;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
+.matrix {
+    display: none;
     text-align: center;
-    position: fixed;
 }
 
-table,
-td,
-tr {
-    align: center;
+table, td, tr {
     margin-left: auto;
     margin-right: auto;
     text-align: center;

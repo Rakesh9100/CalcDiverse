@@ -1,33 +1,13 @@
-function one() {
-    document.getElementById('two').style.visibility = "hidden";
-    document.getElementById('three').style.visibility = "hidden";
-    document.getElementById('four').style.visibility = "hidden";
+function showMatrix(matrixId) {
+    // Hide all matrix sections
+    document.getElementById('one').style.display = "none";
+    document.getElementById('two').style.display = "none";
+    document.getElementById('three').style.display = "none";
+    document.getElementById('four').style.display = "none";
     document.getElementById('end').style.visibility = "hidden";
-    document.getElementById('one').style.visibility = "visible";
-}
 
-function two() {
-    document.getElementById('one').style.visibility = "hidden";
-    document.getElementById('three').style.visibility = "hidden";
-    document.getElementById('four').style.visibility = "hidden";
-    document.getElementById('end').style.visibility = "hidden";
-    document.getElementById('two').style.visibility = "visible";
-}
-
-function three() {
-    document.getElementById('one').style.visibility = "hidden";
-    document.getElementById('two').style.visibility = "hidden";
-    document.getElementById('four').style.visibility = "hidden";
-    document.getElementById('end').style.visibility = "hidden";
-    document.getElementById('three').style.visibility = "visible";
-}
-
-function four() {
-    document.getElementById('one').style.visibility = "hidden";
-    document.getElementById('two').style.visibility = "hidden";
-    document.getElementById('three').style.visibility = "hidden";
-    document.getElementById('end').style.visibility = "hidden";
-    document.getElementById('four').style.visibility = "visible";
+    // Show the selected matrix section
+    document.getElementById(matrixId).style.display = "block";
 }
 
 function solve1() {
@@ -35,7 +15,6 @@ function solve1() {
     num1 = document.getElementById("num1").value;
     txt = "Determinant = " + num1;
     document.getElementById("here").innerHTML = txt;
-    document.getElementById('end').style.top = "350px";
     document.getElementById('end').style.visibility = "visible";
 }
 
@@ -50,7 +29,6 @@ function solve2() {
 
     txt = "Determinant = " + sum;
     document.getElementById("here").innerHTML = txt;
-    document.getElementById('end').style.top = "400px";
     document.getElementById('end').style.visibility = "visible";
 }
 
@@ -68,7 +46,6 @@ function solve3() {
     sum = (a11 * a22 * a33) + (a21 * a32 * a13) + (a31 * a12 * a23) - (a13 * a22 * a31) - (a23 * a32 * a11) - (a33 * a12 * a21);
     txt = "Determinant = " + sum;
     document.getElementById("here").innerHTML = txt;
-    document.getElementById('end').style.top = "460px";
     document.getElementById('end').style.visibility = "visible";
 }
 
@@ -96,6 +73,5 @@ function solve4() {
         a44 * ((a11 * a22 * a33) + (a21 * a32 * a13) + (a31 * a12 * a23) - (a13 * a22 * a31) - (a23 * a32 * a11) - (a33 * a12 * a21));
     txt = "Determinant = " + sum;
     document.getElementById("here").innerHTML = txt;
-    document.getElementById('end').style.top = "550px";
     document.getElementById('end').style.visibility = "visible";
 }
