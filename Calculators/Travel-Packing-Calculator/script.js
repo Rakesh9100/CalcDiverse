@@ -1,7 +1,5 @@
-
 const apiKey = 'c6d3faa0d18372a71559041316a8e04a'; // Replace with your OpenWeatherMap API key
 const foursquareApiKey = 'fsq3JUPw4gjy9XdB8cwis2lU5Uta5VCPU+yL3WtLUhdtsXk='; // Foursquare API key
-
 
 const packingList = {
     swimming: ['Swimsuit', 'Towel', 'Body Lotion', 'Swimming Goggles', 'Swimming Cap', 'Waterproof Bag', 'Flip Flops', 'Beach Hat', 'Water Bottle', 'Swim Earplugs'],
