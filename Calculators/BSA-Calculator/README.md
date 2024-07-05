@@ -21,4 +21,4 @@ The BSA (Body Surface Area) Calculator is a web application designed to calculat
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/544bd7a5-9a5c-4807-8876-56db50087ea1)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c8637474-62f4-4eea-a9bc-699c92b1d31b)
