@@ -76,6 +76,7 @@
 }
 
 /* Responsive Media Query */
+
 @media screen and (max-width: 768px) {
     .faqs_container {
         grid-template-columns: 1fr;

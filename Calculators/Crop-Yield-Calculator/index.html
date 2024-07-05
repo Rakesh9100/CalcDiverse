@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crop Yield Calculator</title>
+</head>
+<body>
+    <section class="calculator" id="crop-yield-calculator">
+        <h2 class="heading">Crop&nbspYield&nbsp<span>Calculator</span></h2>
+        <div class="calculator-container">
+            <div class="container">
+                <form id="yield-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="crop">Crop Type</label>
+                            <select id="crop">
+                                <option value="Corn">Corn</option>
+                                <option value="Wheat">Wheat</option>
+                                <option value="Rice">Rice</option>
+                                <option value="Maize">Maize</option>
+                                <option value="Sugarcane">Sugarcane</option>
+                                <option value="Cotton">Cotton</option>
+                                <option value="Rubber">Rubber</option>
+                                <option value="Pulses">Pulses</option>
+                                <option value="Millets">Millets</option>
+                                <option value="Coffee">Coffee</option>
+                                <option value="Tea">Tea</option>
+                                <option value="Oil Seeds">Oil Seeds</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="weather">Weather Conditions</label>
+                            <select id="weather">
+                                <option value="1">Optimal</option>
+                                <option value="0.8">Favorable</option>
+                                <option value="0.6">Average</option>
+                                <option value="0.4">Unfavorable</option>
+                                <option value="0.2">Severe</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="soil">Soil Type</label>
+                            <select id="soil">
+                                <option value="1">Clay</option>
+                                <option value="0.9">Sandy</option>
+                                <option value="0.8">Loamy</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="crop-rotation">Crop Rotation</label>
+                            <select id="crop-rotation">
+                                <option value="1">Previous crop: Corn</option>
+                                <option value="0.9">Previous crop: Soybeans</option>
+                                <option value="0.8">Previous crop: Wheat</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="area">Area (in acres)</label>
+                            <input type="text" id="area" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="yield">Expected Yield (per acre)</label>
+                            <input type="text" id="yield" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="button" onclick="calculateYield()">Calculate</button>
+                    </div>
+                </form>
+                <div id="result" ></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

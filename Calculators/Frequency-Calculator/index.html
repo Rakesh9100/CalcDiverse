@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Frequency Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequency Calculator</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="period">Period (T) in seconds:</label>
+                <input type="number" id="period" placeholder="Enter period">
+                <button onclick="calculateFrequencyByPeriod()">Calculate</button>
+            </div>
+            <div class="input-group">
+                <label for="wavelength">Wavelength (λ) in meters:</label>
+                <input type="number" id="wavelength" placeholder="Enter wavelength">
+            </div>
+            <div class="input-group">
+                <label for="waveSpeed">Wave Speed (v) in m/s:</label>
+                <input type="number" id="waveSpeed" placeholder="Enter wave speed">
+                <button onclick="calculateFrequencyByWavelength()">Calculate</button>
+            </div>
+            <div class="input-group">
+                <label for="angularFrequency">Angular Frequency (ω) in rad/s:</label>
+                <input type="number" id="angularFrequency" placeholder="Enter angular frequency">
+                <button onclick="calculateFrequencyByAngularFrequency()">Calculate</button>
+            </div>
+            <div class="output-group">
+                <h2>Frequency (f): <span id="frequencyOutput">--</span> Hz</h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

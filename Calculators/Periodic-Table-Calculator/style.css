@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #69a1b7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.h1 {
+    text-align: center;
+}
+
+#periodic-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.element {
+    background-color: #09567a;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.element:hover {
+    background-color: #45a049;
+}
+
+#element-info {
+    background-color: rgb(55, 206, 204);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#element-info p {
+    margin: 5px 0;
+}
+
+input,
+button {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

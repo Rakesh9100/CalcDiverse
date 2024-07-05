@@ -16,10 +16,11 @@ sup {
 }
 
 .calculator {
-    width: 60%;
+    width: 80%;
     display: flex;
+    flex-direction: row;
     gap: 20px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -29,11 +30,8 @@ sup {
 .column {
     text-align: center;
     flex: 1;
-}
-
-#vertical-bar {
-    width: 2px;
-    background-color: #CCCCCC;
+    min-width: 300px;
+    border-radius: 5px;
 }
 
 .input {
@@ -45,6 +43,7 @@ sup {
 
 input {
     padding: 5px;
+    width: 100px;
 }
 
 .buttons {
@@ -94,4 +93,32 @@ h2 {
     background-color: #D4F4D4;
     color: #228B22;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .column {
+        min-width: auto;
+        margin-bottom: 20px;
+    }
+
+    .input {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
