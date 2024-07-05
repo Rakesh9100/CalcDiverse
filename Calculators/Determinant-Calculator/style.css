@@ -2,7 +2,7 @@ body {
     font-size: 35px;
     font-weight: bold;
     margin: 50px;
-    background-image: url('bg.png');
+    background-image: url('assets/background.png');
 }
 
 input[type=text] {
