@@ -1,8 +1,8 @@
-# Cat Life Quality Calculator
+# Cat Quality Of Life Calculator
 
 ## Overview
 
-The **Cat Life Quality Calculator** is a simple web application that helps cat owners assess the quality of life of their pets based on several criteria. This tool can aid in making informed decisions regarding the care and well-being of your feline friends.
+The **Cat Quality Of Life Calculator** is a simple web application that helps cat owners assess the quality of life of their pets based on several criteria. This tool can aid in making informed decisions regarding the care and well-being of your feline friends.
 
 ## Features
 
