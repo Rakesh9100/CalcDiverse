@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kinetic And Potential Energy Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <label for="energyType">Select Energy Type:</label>
+        <select id="energyType" onchange="toggleEnergyInputs()">
+            <option value="kinetic">Kinetic Energy</option>
+            <option value="potential">Potential Energy</option>
+        </select>
+        <div id="kineticEnergyInputs">
+            <label for="mass">Mass (m) in kg:</label>
+            <input type="number" id="massKEInput" placeholder="Enter mass">
+            <label for="velocity">Velocity (v) in m/s:</label>
+            <input type="number" id="velocityInput" placeholder="Enter velocity">
+        </div>
+        <div id="potentialEnergyInputs" style="display:none;">
+            <label for="mass">Mass (m) in kg:</label>
+            <input type="number" id="massPEInput" placeholder="Enter mass">
+            <label for="height">Height (h) in m:</label>
+            <input type="number" id="heightInput" placeholder="Enter height">
+        </div>
+        <div class="button-container">
+            <button onclick="calculateEnergy()">Calculate</button>
+            <button onclick="resetCalculator()">Reset</button>
+            <button onclick="clearResult()">Clear</button>
+        </div>
+        <div id="result" class="result-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

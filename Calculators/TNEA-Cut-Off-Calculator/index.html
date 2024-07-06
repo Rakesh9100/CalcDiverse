@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>TNEA Cut Off Calculator</title>
+</head>
+<body>
+    <div class="Heading">
+        <img src="https://st2.depositphotos.com/3915717/6017/v/450/depositphotos_60178231-stock-illustration-setting-icon.jpg" alt="logo"/>
+        <div class="Heading-content">
+            TNEA Cut-Off Calculator
+        </div>
+    </div>
+    <div class="Input_Div">
+        <label>Maths:</label>
+        <input type="number" placeholder="Enter your mathematics marks out of 100" id="maths" min="0" max="100" required>
+        <label>Physics:</label>
+        <input type="number" placeholder="Enter your Physics marks out of 100" id="physics" min="0" max="100" required>
+        <label>Chemistry:</label>
+        <input type="number" placeholder="Enter your Chemistry marks out of 100" id="chemistry" min="0" max="100" required>
+    </div>
+    <button onclick="calculateCutoff()">Calculate</button>
+    <div class="Result" id="result-div" style="display: none;">
+        <label id="result-label">Your Engineering Cut-off: (physics + chemistry + maths) / 3</label>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

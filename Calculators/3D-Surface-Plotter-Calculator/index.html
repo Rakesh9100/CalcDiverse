@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>3D Surface Plotter Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>3D Surface Plotter</h1>
+        <label for="function">Function:</label>
+        <input type="text" id="function" value="x*x + y*y">
+        <button onclick="plotSurface()">Plot</button>
+        <div id="plot"></div>
+    </div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

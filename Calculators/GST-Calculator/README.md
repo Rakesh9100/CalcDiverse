@@ -32,4 +32,4 @@ The GST (Goods and Services Tax) Calculator is a web application designed to cal
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/08cbb0b4-e840-4849-afef-7b6bdad7ba59)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/028cb82f-6b9b-43a0-9057-46f6c25c92da)
