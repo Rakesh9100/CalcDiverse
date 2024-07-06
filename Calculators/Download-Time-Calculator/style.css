@@ -18,10 +18,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     border: 5px solid white;
-    border-collapse: collapse; 
+    border-collapse: collapse;
 }
 
-.styled-table th, .styled-table td {
+.styled-table th,
+.styled-table td {
     border: 2px solid white; /* Adjust as necessary */
     padding: 0.5rem;
 }
@@ -73,23 +74,27 @@ input[type="text" i] {
         max-width: 90vw;
     }
 }
+
 @media (max-width: 768px) {
     .styled-table {
         max-width: 90vw;
-
         font-size: 16px;
     }
+
     .selectbar {
         width: 70%;
     }
+
     input[type=BUTTON] {
         width: 40px;
-        padding:0.4rem;
+        padding: 0.4rem;
     }
-    input[type="text" i]{
-        width:50px;
-        padding:0.4rem 0;
+
+    input[type="text" i] {
+        width: 50px;
+        padding: 0.4rem 0;
     }
+
     .styled-table td {
         margin: 2px;
     }
@@ -100,25 +105,27 @@ input[type="text" i] {
     .styled-table {
         width: 90vw;
         font-size: 12px;
-        
     }
+
     .selectbar {
         width: 80%;
     }
+
     input[type=BUTTON] {
         width: 30px;
-        padding:0.3rem;
-        
+        padding: 0.3rem;
     }
+
     .styled-table td {
         padding: 0.3rem;
-        
     }
-    .styled-table .m-td{
+
+    .styled-table .m-td {
         padding: 0.2rem;
     }
-    input[type="text" i]{
-        width:50px;
-        padding:0.3rem 0;
+
+    input[type="text" i] {
+        width: 50px;
+        padding: 0.3rem 0;
     }
 }
