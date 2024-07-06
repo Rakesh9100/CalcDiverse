@@ -8,7 +8,7 @@ The **Cat Life Quality Calculator** is a simple web application that helps cat o
 
 - Input fields for various life quality criteria including Hurt, Hunger, Hydration, Hygiene, Happiness, Mobility, and More Good Days than Bad.
 - Calculation of total score based on user input.
-- Display of the cat's life quality rating (Excellent, Good, Fair, Poor) based on the total score.
+- Display  the cat's life quality rating (Excellent, Good, Fair, Poor) based on the total score.
 - Responsive and visually appealing interface with background images of cats.
 
 ## Technologies Used
