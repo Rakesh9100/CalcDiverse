@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Circular Motion Calculator is a web application that calculates the centripetal acceleration and angualr frequency.
+Circular Motion Calculator is a web application that calculates the centripetal acceleration, angualar frequency, period and frequency.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ Circular Motion Calculator is a web application that calculates the centripetal 
 
 ## Screenshots :-
 
-![image]()
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/168436423/6eb2c305-19c2-44da-bad9-bfbd9d6846c7)
