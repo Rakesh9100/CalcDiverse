@@ -1,0 +1,38 @@
+body {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 50px;
+    background-image: url('assets/background.png');
+}
+
+input[type=text] {
+    margin: 10px;
+    width: 50px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.matrix {
+    display: none;
+    text-align: center;
+}
+
+table, td, tr {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#end {
+    top: 250px;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: transparent;
+}
