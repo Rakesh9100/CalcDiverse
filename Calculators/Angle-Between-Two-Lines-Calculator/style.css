@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -29,12 +30,12 @@ body {
     padding: 2rem;
 
     /* Glassmorphic theme */
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 h1 {
@@ -49,7 +50,7 @@ h1 {
 }
 
 .line1_container input,
-.line2_container input{
+.line2_container input {
     font-size: 1.5rem;
     color: black;
     padding: 0.4rem;
@@ -58,7 +59,8 @@ h1 {
     border: 2px solid wheat;
 }
 
-.line1_wrapper,.line2_wrapper {
+.line1_wrapper,
+.line2_wrapper {
     display: flex;
     justify-content: space-between;
     gap: 0.5rem;
@@ -100,9 +102,10 @@ h1 {
     padding-bottom: 2rem;
 }
 
-
 @media screen and (max-width: 1025px) {
-    .line1_wrapper, .line2_wrapper{
+
+    .line1_wrapper,
+    .line2_wrapper {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
