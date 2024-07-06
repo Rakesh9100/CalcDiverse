@@ -4,16 +4,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg") no-repeat;
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg") no-repeat center center fixed;
     background-size: cover;
     color: white;
+    height: fit-content;
+    margin-top: 15vh;
+    padding: 1rem; /* Added padding to avoid content touching the edges */
 }
 
-table {
-    width: 60vw;
+.styled-table {
+    max-width: 60vw;
+    width: 100%; /* Ensures the table takes full width within the container */
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     border: 5px solid white;
+    border-collapse: collapse;
+}
+
+.styled-table th,
+.styled-table td {
+    border: 2px solid white; /* Adjust as necessary */
+    padding: 0.5rem;
 }
 
 .selectbar {
@@ -29,10 +40,6 @@ table {
 
 .m-td {
     text-align: center;
-}
-
-td {
-    padding: 0.5rem;
 }
 
 input[type=BUTTON] {
@@ -59,4 +66,66 @@ div {
 input[type="text" i] {
     font-weight: 700;
     text-align: center;
+}
+
+/* Media Queries */
+@media (max-width:1082px) {
+    .styled-table {
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .styled-table {
+        max-width: 90vw;
+        font-size: 16px;
+    }
+
+    .selectbar {
+        width: 70%;
+    }
+
+    input[type=BUTTON] {
+        width: 40px;
+        padding: 0.4rem;
+    }
+
+    input[type="text" i] {
+        width: 50px;
+        padding: 0.4rem 0;
+    }
+
+    .styled-table td {
+        margin: 2px;
+    }
+}
+
+/* For small phones */
+@media (max-width: 480px) {
+    .styled-table {
+        width: 90vw;
+        font-size: 12px;
+    }
+
+    .selectbar {
+        width: 80%;
+    }
+
+    input[type=BUTTON] {
+        width: 30px;
+        padding: 0.3rem;
+    }
+
+    .styled-table td {
+        padding: 0.3rem;
+    }
+
+    .styled-table .m-td {
+        padding: 0.2rem;
+    }
+
+    input[type="text" i] {
+        width: 50px;
+        padding: 0.3rem 0;
+    }
 }
