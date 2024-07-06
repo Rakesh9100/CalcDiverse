@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Set Operations Calculator</title>
+</head>
+<body>
+    <div id="calc-body">
+        <h1>Set Operations Calculator</h1>    
+        <div id="sets">
+            <div class="set">
+                <div>A</div>
+                <input type="text" placeholder="{1,2,3}">
+            </div>
+            <div class="set">
+                <div>B</div>
+                <input type="text" placeholder="{ 'a', 'b', 'c' }">
+            </div>
+        </div>    
+        <div id="options">
+            <div class="opt" onclick="union(this)">Union</div>
+            <div class="opt" onclick="inter(this)">Intersection</div>
+            <div class="opt" onclick="prod(this)">Cartesian Product</div>
+            <div class="opt" onclick="diff(this)">Difference</div>
+            <div class="opt" onclick="pow(this)">Power set</div>
+            <div class="opt" onclick="card(this)">Cardinality</div>
+        </div>
+        <div id="ext-opt">
+            <div class="opt">A</div>
+            <div class="opt">B</div>
+        </div>
+        <div id="ans">Choose one option</div>
+    </div>
+    <script src="script.js"></script>
+</html>

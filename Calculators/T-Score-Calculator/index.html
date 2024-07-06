@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>T-Score Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>T-score Calculator</h1>
+        <form id="tscoreForm">
+            <label for="sampleMean">Sample Mean (X̄):</label>
+            <input type="number" id="sampleMean" step="any" required />
+            <label for="populationMean">Population Mean (μ):</label>
+            <input type="number" id="populationMean" step="any" required />
+            <label for="sampleSD">Standard Deviation (s):</label>
+            <input type="number" id="sampleSD" step="any" required />
+            <label for="sampleSize">Sample Size (n):</label>
+            <input type="number" id="sampleSize" step="1" required />
+            <button type="button" onclick="calculateTScore()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Peralta&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Mate+SC&family=Peralta&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Vast+Shadow&display=swap');
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 8s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h2,
+label,
+option,
+input {
+    font-family: "Mate SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li,
+h3,
+p {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    border: 0.6px solid;
+}
+
+header {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    font-variation-settings:
+        "MORF" 15,
+        "SHLN" 50;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form select {
+    width: 98%;
+    margin: 5px 0;
+    padding: 6px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 6px;
+    ;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ddd;
+    border-radius: 3px;
+}
+
+#weather-info {
+    font-size: 1.2em;
+}
+
+#tips p {
+    border-radius: 5px;
+    margin: 5px 0;
+}
