@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const eqn1_a = document.querySelector('input[name="eqn1_a"]');
     const eqn1_b = document.querySelector('input[name="eqn1_b"]');
     const eqn1_c = document.querySelector('input[name="eqn1_c"]');
