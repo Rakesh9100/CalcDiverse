@@ -12,3 +12,4 @@ Users have to fill these fields to get Triangle centroid point.
 - JavaScript
 
 ## Screenshots :-
+(https://github.com/Rakesh9100/CalcDiverse/assets/108344062/a6e63866-d8e1-4406-9ca2-88e0794a26cb)
