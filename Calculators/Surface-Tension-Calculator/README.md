@@ -19,4 +19,4 @@ To calculate surface tension:
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/3bc9dfaa-3b3d-44a2-ac8e-58515c6863af)
+![image](https://github.com/kauxp/CalcDiverse/assets/145500535/b34126d3-c3d8-4c6a-b078-33270be88d31)
