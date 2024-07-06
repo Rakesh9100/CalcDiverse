@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('./images/catlife.jpg');
+    background-image: url('assets/image.jpg');
     background-size: fit;
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
