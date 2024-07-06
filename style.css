@@ -1581,52 +1581,109 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    position: relative;
 }
 
-.social a i {
-    transition: transform 0.3s ease-in-out;
+.social ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-/* Pop up effect */
-
-.social a:hover i {
-    transform: translateY(-8px);
+.social ul li
+{
+    list-style: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-right: 20px;
 }
 
-.social a {
+.social ul li .fa::before
+{
     color: var(--secondary);
 }
 
-.social a.user:hover {
+.social ul li:last-of-type
+{
+    margin: 0;
+}
+
+.social ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.7s;
+    font-size: 3.5rem;
+    font-family: fontAwesome;
+}
+ 
+.social ul li:nth-child(1):before{
+    border-bottom: 4px solid;
     color: #4af3b5;
+    content:'\f007' ;
 }
 
-.social a.message:hover {
-    color: #73408f;
+.social ul li:nth-child(2):before{
+    border-bottom: 4px solid;
+    color: #73408f;  
+    content:'\f0e0' ;
 }
 
-.social a.linkedin:hover {
+.social ul li:nth-child(3):before{
+    border-bottom: 4px solid;
     color: #1990cb;
+    content:'\f08c' ;
 }
 
-.social a.github:hover {
+.social ul li:nth-child(4):before{
+    border-bottom: 4px solid;
     color: #21d061;
+    content:'\f092' ;
 }
 
-.social a.instagram:hover {
-    color: #d62976;
+.social ul li:nth-child(5):before{
+    border-bottom: 4px solid;
+    color: #E91E63;
+    content:'\f16d ' ;
 }
 
-.social a.facebook:hover {
-    color: #0026ff;
+.social ul li:nth-child(6):before{
+    border-bottom: 4px solid;
+    color: #4970c2  ;
+    content:'\f082' ;
 }
 
-.social a.twitter:hover {
-    color: #00fff7;
+.social ul li:nth-child(7):before{
+    border-bottom: 4px solid;
+    color: #00acee ;
+    background: black;
+    margin-left: -1px;
+    content:'\e61b' ;
 }
 
-.social a.discord:hover {
+.social ul li:nth-child(8):before{
+    border-bottom: 4px solid;
     color: #5865F2;
+    content:'\f392' ;
+}
+
+
+.social ul li:hover:before{
+    height: 100%;
+}
+
+.social ul li:hover
+{
+    color: black;
+    transform: translateY(-5px);
+}
+
+
+.social a {
+    color: var(--secondary);
 }
 
 /* Sticky ScrollToTop Button */
