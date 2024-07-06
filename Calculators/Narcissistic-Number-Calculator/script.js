@@ -5,6 +5,11 @@ function checkNarcissisticNumber() {
     const sum = digits.reduce((acc, digit) => acc + Math.pow(digit, power), 0);
 
     const result = document.getElementById('result');
+    if (number === "") {
+        result.textContent = "Please enter a number.";
+        return;
+    }
+    
     if (sum == number) {
         result.textContent = `${number} is a Narcissistic number.`;
     } else {
