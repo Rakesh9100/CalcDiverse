@@ -7,7 +7,15 @@ function calculate() {
     var c=1;
     var add=1;
 
-
+    if (num1==isNaN){
+        alert('Please do not leave any field blank');
+    }
+    else if (num2==isNaN){
+        alert('Please do not leave any field blank');
+    }
+    else if (num1==isNaN && num2==isNaN){
+        alert('Please do not leave any field blank');
+    }
 
 
     a=math.gamma(num1);
@@ -17,14 +25,24 @@ function calculate() {
 
 
     let result=(a*b)/c;
-    document.getElementById('res').value=result;
+    
 
-    if (result==Infinity || result==NaN){
-        alert("Neither of the numbers can be negative integers or zero.Please try again.");
+    if (result==Infinity){
+        alert("Neither of the numbers can be zero.Please try again.");
         // Code to make all fields blank after alert message
         document.getElementById('res').value = '';
         document.getElementById('num1').value = '';
         document.getElementById('num2').value = '';
         }
+    if(result==NaN){
+        
+        alert("Neither of the fields can be blank..Please try again.");
+        // Code to make all fields blank after alert message
+        document.getElementById('res').value = '';
+        document.getElementById('num1').value = '';
+        document.getElementById('num2').value = '';
+    }
+        document.getElementById('res').value=result;
+    
 
     }
