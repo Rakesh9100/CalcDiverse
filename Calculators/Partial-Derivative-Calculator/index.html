@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/mathjs/lib/browser/math.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Partial Derivative Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Partial Derivative Calculator</h1>
+        <input type="text" id="functionInput" placeholder="Enter function, e.g., x^2 * y + sin(x * y)">
+        <input type="text" id="variableInput" placeholder="Enter variable, e.g., x or y">
+        <button onclick="calculatePartialDerivative()">Calculate Partial Derivative</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

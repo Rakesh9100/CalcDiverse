@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Force Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Newton's Force Calculator</h1>
+        <form id="forceForm">
+            <div class="input-group">
+                <label for="mass">Mass (kg):</label>
+                <input type="number" id="mass" name="mass" required>
+            </div>
+            <div class="input-group">
+                <label for="acceleration">Acceleration (m/s<sup>2</sup>):</label>
+                <input type="number" id="acceleration" name="acceleration" required>
+            </div>
+            <button type="button" onclick="calculateForce()">Calculate Force</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
