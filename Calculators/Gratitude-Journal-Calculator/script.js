@@ -1,4 +1,13 @@
-const negativeWords = ['bad', 'terrible', 'awful', 'horrible', 'poor', 'negative']; // List of negative words
+const positiveWords = {
+    'thank you': 1,
+    'well done': 2,
+    'great job': 1,
+    'good': 2,
+    'excellent': 2,
+    'awesome': 2
+};
+
+const negativeWords = ['bad', 'terrible', 'awful', 'horrible', 'poor', 'negative'];
 
 document.getElementById('add-btn').addEventListener('click', () => {
     const input = document.getElementById('gratitude-input');
@@ -13,7 +22,7 @@ document.getElementById('add-btn').addEventListener('click', () => {
             errorMessage.classList.remove('hidden');
             setTimeout(() => {
                 errorMessage.classList.add('hidden');
-            }, 2000);
+            }, 5000);
         } else {
             const listItem = document.createElement('li');
             listItem.textContent = value;
@@ -29,12 +38,17 @@ document.getElementById('calculate-btn').addEventListener('click', () => {
     const gratitudeList = document.querySelectorAll('#gratitude-list li');
     const gratitudeArray = Array.from(gratitudeList).map(item => item.textContent);
 
-    const totalPoints = gratitudeArray.length;
-    const positivePoints = gratitudeArray.filter(point => 
-        point.toLowerCase().includes('thank') || 
-        point.toLowerCase().includes('well done') || 
-        point.toLowerCase().includes('great job')
-    ).length;
+    let totalPoints = 0;
+    let positivePoints = 0;
+
+    gratitudeArray.forEach(point => {
+        Object.keys(positiveWords).forEach(word => {
+            if (point.toLowerCase().includes(word)) {
+                totalPoints += positiveWords[word];
+                positivePoints += positiveWords[word];
+            }
+        });
+    });
 
     const positivePercentage = totalPoints > 0 ? ((positivePoints / totalPoints) * 100).toFixed(2) : 0;
     const formattedGratitude = gratitudeArray.join(', ');
