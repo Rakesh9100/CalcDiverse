@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Work Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Work Calculator</h1>
+        <form id="workForm">
+            <label for="force">Force (N):</label>
+            <input type="number" id="force" name="force" required>
+            
+            <label for="displacement">Displacement (m):</label>
+            <input type="number" id="displacement" name="displacement" required>
+            
+            <label for="angle">Angle (θ in degrees):</label>
+            <input type="number" id="angle" name="angle" required>
+            
+            <button type="submit">Calculate Work</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -62,3 +62,14 @@ button[type="submit"] {
     display: inline-block; /* Ensure the red box only takes up the necessary space */
     font-family:Georgia, 'Times New Roman', Times, serif; 
 }
+
+@media (max-width: 600px) {
+    .header {
+        padding:10px;
+        width:70%;
+    }
+
+    .square {
+        width:70%;
+    }
+}

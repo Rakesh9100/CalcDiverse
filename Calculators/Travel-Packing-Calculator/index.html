@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Packing Calculator</title>
+</head>
+<body>
+    <section id="title" class="gradient-background">
+        <header>
+            <h1 data-aos="fade-down">Travel Packing Calculator</h1>
+        </header>
+        <main>
+            <section id="trip-details" data-aos="fade-right">
+                <h2>Trip Details</h2>
+                <form id="trip-form">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date" required>
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" name="end-date" required>
+                    <label for="activities">Planned Activities:</label>
+                    <select id="activities" name="activities" multiple>
+                        <option value="swimming">Swimming</option>
+                        <option value="hiking">Hiking</option>
+                        <option value="business">Business Meetings</option>
+                        <option value="dinners">Formal Dinners</option>
+                        <option value="beach">Beach</option>
+                        <option value="camping">Camping</option>
+                        <option value="skiing">Skiing</option>
+                        <option value="city_tour">City Tour</option>
+                        <option value="photography">Photography</option>
+                    </select>
+                    <button type="button" onclick="generatePackingList()">Generate</button>
+                </form>
+            </section>
+            <section id="weather">
+                <h2>Current Weather</h2>
+                <p id="weather-info"></p>
+            </section>
+            <section id="tourist-places" data-aos="fade-right">
+                <h2>Top Tourist Places</h2>
+                <div id="result"></div>
+            </section>
+            <section id="packing-list" data-aos="fade-left">
+                <h2>Packing List</h2>
+                <ul id="list"></ul>
+            </section>
+            <section id="tips" data-aos="fade-up">
+                <h2>Smart Packing Tips</h2>
+                <p id="packing-tips"></p>
+            </section>
+        </main>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
