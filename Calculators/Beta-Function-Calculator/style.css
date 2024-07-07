@@ -108,4 +108,11 @@ a:link {
     background-color: transparent;
     text-decoration: underline;
   }
-  
+  @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    h1{
+        font-size: 36px;
+    }
+  }
