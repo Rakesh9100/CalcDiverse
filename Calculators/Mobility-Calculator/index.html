@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mobility Calculator</title>
+</head>
+
+<body>
+    <div class="mobility-container">
+        <h1>Mobility Calculator</h1>
+        <label for="velocity">Drift Velocity: </label>
+        <input type="number" id="velocity" placeholder="Enter in meter square per second" required>
+
+        <label for="electricField">Electric Field</label>
+        <input type="number" id="electricField" placeholder="Enter in volts per meter" required>
+
+        <button class="btn-grad" onclick="calculateMobility()">Calculate Mobility</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

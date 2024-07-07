@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Comparison Calculator</title>
+</head>
+
+<body>
+    <div class="calculator-container">
+        <h1>Loan Comparison Calculator</h1>
+        <div class="loan-input-container">
+            <h2>Loan 1</h2>
+            <div class="input-container">
+                <label for="loan1-amount">Loan Amount (INR)</label>
+                <input type="number" id="loan1-amount" placeholder="Enter amount">
+            </div>
+            <div class="input-container">
+                <label for="loan1-interest">Interest Rate (%)</label>
+                <input type="number" id="loan1-interest" placeholder="Enter interest rate">
+            </div>
+            <div class="input-container">
+                <label for="loan1-term">Loan Term (years)</label>
+                <input type="number" id="loan1-term" placeholder="Enter term in years">
+            </div>
+        </div>
+        <div class="loan-input-container">
+            <h2>Loan 2</h2>
+            <div class="input-container">
+                <label for="loan2-amount">Loan Amount (INR)</label>
+                <input type="number" id="loan2-amount" placeholder="Enter amount">
+            </div>
+            <div class="input-container">
+                <label for="loan2-interest">Interest Rate (%)</label>
+                <input type="number" id="loan2-interest" placeholder="Enter interest rate">
+            </div>
+            <div class="input-container">
+                <label for="loan2-term">Loan Term (years)</label>
+                <input type="number" id="loan2-term" placeholder="Enter term in years">
+            </div>
+        </div>
+        <button type="button" onclick="compareLoans()">Compare Loans</button>
+        <div class="result-container">
+            <h2>Comparison Results</h2>
+            <div id="results">
+                <div id="loan1-result">Loan 1: <span id="loan1-emi" class="red">Rs. 0.00</span> per month</div>
+                <div id="loan2-result">Loan 2: <span id="loan2-emi" class="red">Rs. 0.00</span> per month</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

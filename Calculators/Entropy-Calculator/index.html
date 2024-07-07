@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Entropy Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Entropy Calculator</h1>
+        <div class="input-group">
+            <label for="numInputs">Number of Probabilities:</label>
+            <input type="number" id="numInputs" min="1" value="1">
+        </div>
+        <div id="probabilityInputs"></div>
+        <button onclick="calculateEntropy()">Calculate Entropy</button>
+        <div id="result"></div>
+        <div class="explanation">
+            <p>Entropy is a fundamental concept in information theory and probability. It quantifies the uncertainty or randomness inherent in a set of events. A higher entropy value indicates greater unpredictability.</p>
+            <p>This calculator allows you to explore the concept of entropy by providing probabilities for various events. The output is expressed in bits, representing the average amount of information gained by observing an event.</p>
+            <p>Try adjusting the number of probabilities and the values themselves to see how the entropy changes. It's a fascinating journey into the world of randomness!</p>
+        </div>
+        <div class="animation-container">
+            <div class="animation-circle"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

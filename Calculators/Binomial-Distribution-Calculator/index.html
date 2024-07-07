@@ -6,35 +6,43 @@
     <link rel="stylesheet" href="style.css">
     <title>Binomial Distribution Calculator</title>
 </head>
-<body style="background-color: rgb(208, 207, 207);">
+<body>
+    <h1>Binomial Distribution Calculator</h1>
     <div id="head">
-        Binomial Distribution Calculator
-    </div>
-    <br><br>
-    <div id="box">
-        <p class="text">&nbsp Enter the value for p :
-        &nbsp<input type="number" id="p" class="input"><br>
-        <p class="text">&nbsp Enter the value for n :
-        &nbsp<input type="number" id="n" class="input"><br>
-        <p class="text">&nbsp Enter the value for i &nbsp:
-        &nbsp<input type="number" id="i" class="input">
-        <p class="text" id="p1">&nbsp Probability (Number of Successes = i) :- </p>
-        <p class="text" id="p2">&nbsp Probability (Number of Successes &lt= i) :- </p>
-        <button class="button" id="calculate">Calculate</button>
-        <button class="button" id="clear">Clear</button>
-        <br>
-    </div>
-    <br>
     <div id="info">
         <h2 id="heading">About Binomial Distribution</h2>
-        <p id="explanation">If <em>n</em> independent trials, each of which results in a “success” with probability <em>p</em> and in a “failure” with probability<em>1-p</em>, are to be performed and if <em>X</em> representsthe number of successes that occur in the <em>n</em> trials, then <em>X</em> is said to be a binomial random variable with parameters <em>(n, p)</em>.The probability mass function of a binomial random variable with parameters n and p is given by :- &nbsp &nbsp
-        <em>
-        P{X = i} = <sup>n</sup>C<sub>i</sub>&nbsp p<sup>i</sup>(1-p)<sup>(n-i)</sup></em>
-        <br>
-        Therefore, the binomial distribution function can be obtained by just summing the mass function from<em> k = 0 to k = i :-</em>  <br>
-        <em>P{X &lt= i} = &sum;<sup>i</sup><sub>(k=0)</sub>&nbsp <sup>n</sup>C<sub>i</sub>&nbsp p<sup>k</sup>(1-p)<sup>(n-k)</sup></em>
+        <p id="explanation">
+            If <em>n</em> independent trials, each of which results in a “success” with probability <em>p</em> and in a “failure” with probability <em>1-p</em>, are to be performed and if <em>X</em> represents the number of successes that occur in the <em>n</em> trials, then <em>X</em> is said to be a binomial random variable with parameters <em>(n, p)</em>. The probability mass function of a binomial random variable with parameters n and p is given by:  
+            <em>P{X = i} = <sup>n</sup>C<sub>i</sub>&nbsp; p<sup>i</sup>(1-p)<sup>(n-i)</sup></em>
+            <br>
+            Therefore, the binomial distribution function can be obtained by just summing the mass function from <em>k = 0 to k = i:</em>  
+            <br>
+        <div class="eqn">
+            <em>P{X &lt;= i} = &sum;<sup>i</sup><sub>(k=0)</sub>&nbsp; <sup>n</sup>C<sub>i</sub>&nbsp; p<sup>k</sup>(1-p)<sup>(n-k)</sup></em>
+        </div>
         </p>
     </div>
+    <div class="vl"></div>
+    <div class="container">
+        <div id="box">
+            <div class="content">
+                <p class="text">&nbsp Enter the value for p :
+                    &nbsp<input type="number" id="p" class="input"><br>
+                <p class="text">&nbsp Enter the value for n :
+                    &nbsp<input type="number" id="n" class="input"><br>
+                <p class="text">&nbsp Enter the value for i &nbsp:
+                    &nbsp<input type="number" id="i" class="input">
+                <p class="text" id="p1">&nbsp Probability (Number of Successes = i) :- </p>
+                <p class="text" id="p2">&nbsp Probability (Number of Successes &lt= i) :- </p>
+            </div>
+            <div class="buttons">
+                &nbsp<button class="button" id="calculate">Calculate</button>
+                &nbsp<button class="button" id="clear">Clear</button>
+            </div>
+            <br>
+        </div>
+    </div>
+    <br>
     <script src="script.js"></script>
 </body>
 </html>

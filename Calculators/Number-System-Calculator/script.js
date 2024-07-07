@@ -9,7 +9,7 @@ function convert() {
     document.getElementById('result').innerHTML = `Converted Value: ${convertedValue}`;
 }
 
-// claer function 
+// clear function 
 function clear_fun() {
     document.getElementById('number').value = ''; // clearing input field value
     document.getElementById('fromBase').value = ''; // setting option "Select an option" in as initial value 

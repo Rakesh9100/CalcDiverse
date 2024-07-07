@@ -8,6 +8,14 @@ body {
     height: 100vh;
 }
 
+#currency {
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 65px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .calculator-container {
     background-color: #fff;
     padding: 20px;

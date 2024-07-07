@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Solar Power Saving Calculator</title>
+</head>
+<body>
+    <h1>Solar Power Saving Calculator</h1>
+    <form id="solarForm">
+        <div class="form-group">
+            <label for="state">State:</label>
+            <select id="state" onchange="updateStateData()" required>
+                <option value="">Select a state</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="tamilnadu">Tamil Nadu</option>
+                <option value="gujarat">Gujarat</option>
+                <!-- Add more states as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="roofArea">Roof Area (sq ft):</label>
+            <input type="number" id="roofArea" required>
+        </div>
+        <div class="form-group">
+            <label for="roofOrientation">Roof Orientation:</label>
+            <input type="text" id="roofOrientation" placeholder="e.g., south-facing, 30-degree tilt" required>
+        </div>
+        <div class="form-group">
+            <label for="electricityConsumption">Electricity Consumption (kWh per month):</label>
+            <input type="number" id="electricityConsumption" required>
+        </div>
+        <div class="form-group">
+            <label for="systemSize">Solar System Size (kW):</label>
+            <input type="number" id="systemSize" required>
+        </div>
+        <div class="form-group">
+            <label for="installationCost">Installation Cost (₹):</label>
+            <input type="number" id="installationCost" required>
+        </div>
+        <div class="form-group">
+            <label for="incentives">Incentives and Rebates (₹):</label>
+            <input type="number" id="incentives" required>
+        </div>
+        <div class="form-group">
+            <label for="financingOptions">Financing Options:</label>
+            <input type="text" id="financingOptions" placeholder="e.g., Loan with 5% interest rate" required>
+        </div>
+        <button type="button" onclick="calculateSavings()">Calculate</button>
+    </form>
+
+    <div class="results" id="results">
+        <h2>Results</h2>
+        <p id="annualEnergyProduction"></p>
+        <p id="annualSavings"></p>
+        <p id="paybackPeriod"></p>
+        <p id="lifetimeSavings"></p>
+        <p id="environmentalImpact"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

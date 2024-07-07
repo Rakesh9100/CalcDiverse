@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Battery Life Calculator</title>
+</head>
+
+<body>
+    
+    <div class="main">
+
+        <div class="calculator-container">
+            <h2 class="text-center">Battery Life Calculator</h2>
+
+            <form id="calculatorForm">
+                <div class="form-group">
+                    <label for="battery">Battery Capacity (mAh) :</label>
+                    <input type="number" class="form-control" id="battery">
+                </div>
+                <div class="form-group">
+                    <label for="current">Load Current (mA) : </label>
+                    <input type="number" class="form-control" id="current">
+                </div>
+
+
+                <button type="button" class="btn btn-dark form-control" onclick="calculateBlf()">Calculate Battery Life</button>
+            </form>
+
+            <div class="result" style="display: none;">
+                <div class="alert alert-dark text-center" id="result" role="alert" style="font-size: 20px;color: rgb(27, 21, 21);">
+                </div>
+                <button class="btn btn-dark form-control" onclick="location.reload()">Calculate Again</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
