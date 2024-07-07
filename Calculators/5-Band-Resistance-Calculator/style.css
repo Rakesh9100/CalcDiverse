@@ -7,11 +7,11 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 120vh;
 }
 
 .title {
-    color: rgb(107, 30, 2);
+    color: #6b1e02;
+    margin-top: 0;
 }
 
 .container {
@@ -19,9 +19,10 @@ body {
 }
 
 .value_inp {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     width: 30%;
+    height:60vh;
     margin: auto;
     padding: 3%;
     background-color: aliceblue;
@@ -48,9 +49,17 @@ select {
 .btn {
     font-size: 1.3rem;
     width: 40%;
-    border: 5px solid brown;
-    border-radius: 5px;
+    height: 10%;
+    border: 2px solid black;
+    border-radius: 8px;
     font-weight: 600;
+    background-color: #edc2b0;
+}
+.btn:hover
+{
+    cursor: pointer;
+    background-color: #ed8e65;
+
 }
 
 
@@ -80,9 +89,17 @@ select {
 }
 
 #closebtn {
-    margin-top: 10px;
-    width: 40%;
-    border: 5px solid brown;
+    width:30%;
+    height:10%;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: #edc2b0;
+}
+#closebtn:hover
+{
+    cursor: pointer;
+    background-color: #ed8e65;
 }
 
 @media only screen and (max-width: 786px) {
