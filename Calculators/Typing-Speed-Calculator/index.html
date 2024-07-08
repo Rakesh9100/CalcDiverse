@@ -10,12 +10,30 @@
 
 <body onload="getRandomSentence()">
     <h1>Typing Speed Test</h1>
+    <div id="controls">
+        <div class="button-group">
+            <p>Select Difficulty-</p>
+            <button onclick="setDifficulty('easy')" data-type="difficulty" data-value="easy">Easy</button>
+            <button onclick="setDifficulty('medium')" data-type="difficulty" data-value="medium">Medium</button>
+            <button onclick="setDifficulty('hard')" data-type="difficulty" data-value="hard">Hard</button>
+        </div>
+        <div class="button-group">
+            <p>Select Duration-</p>
+            <button onclick="setDuration(1)" data-type="duration" data-value="1">1 Minute</button>
+            <button onclick="setDuration(3)" data-type="duration" data-value="3">3 Minutes</button>
+            <button onclick="setDuration(5)" data-type="duration" data-value="5">5 Minutes</button>
+        </div>
+    </div>
     <div id="typing-box">
-        <p>Type the following text:</p>
+        <p>Choose a level. Click 'Start Test' to begin!</p>
         <p id="text-to-type"></p>
         <div class="form-wrapper">
-            <input type="text" id="user-input" oninput="checkInput()" onpaste="return false;">
-            <button onclick="resetInput()">Reset</button>
+            <input type="text" id="user-input" oninput="checkInput()" onpaste="return false;" disabled>
+            <button id="reset-button" onclick="resetInput()">Reset</button>
+        </div>
+        <div class="button-wrapper">
+            <button onclick="startTest()">Start Test</button>
+            <button onclick="retakeTest()">Retake Test</button>
         </div>
         <p id="speed-result"></p>
     </div>

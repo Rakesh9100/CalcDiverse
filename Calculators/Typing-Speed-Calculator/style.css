@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 
 body {
     font-family: 'ABeeZee', sans-serif;
@@ -72,4 +72,139 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+} */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./assets/background.jpg');
+    background-position: 30% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    margin-bottom: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.button-group {
+    display: flex;
+    
+    align-items: center;
+    gap: 10px;
+}
+
+.button-group p {
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.button-group button {
+    background-color: #19238d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.button-group button.selected {
+    border: 2px solid white;
+}
+
+.button-group button:hover {
+    background-color: #151c7d;
+}
+
+#typing-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+#text-to-type {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#text-to-type span {
+    color: black;
+}
+
+#text-to-type span.red {
+    color: red;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#user-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    width: 80%;
+}
+
+button {
+    background-color: #19238d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #151c7d;
+}
+
+#speed-result {
+    font-size: 16px;
+    margin-top: 20px;
+}
+#reset-button {
+    margin-top: 20px; /* Space above Reset button */
+}
+.button-wrapper {
+    display: flex; /* Flexbox for buttons */
+    justify-content: center;
+    gap: 20px; /* Space between Start Test and Retake Test buttons */
+    margin-top: 20px; /* Space above button wrapper */
 }
