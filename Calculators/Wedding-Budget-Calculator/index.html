@@ -8,42 +8,46 @@
 </head>
 <body>
     <div class="container">
-        <h1>Wedding Budget Calculator</h1> 
-        <div class="calculator">
-            <div class="input-group">
-                <label for="venue">Venue Cost:</label>
-                <input type="number" id="venue" placeholder="Enter venue cost">
+        <h1>Wedding Budget Calculator</h1>
+        <form id="budget-form">
+            <div class="form-group">
+                <label for="total-budget">Total Budget:</label>
+                <input type="number" id="total-budget" name="total-budget" required>
             </div>
-            <div class="input-group">
-                <label for="catering">Catering Cost:</label>
-                <input type="number" id="catering" placeholder="Enter catering cost">
+            <div class="form-group">
+                <label for="venue">Venue:</label>
+                <input type="number" id="venue" name="venue" required>
             </div>
-            <div class="input-group">
-                <label for="decor">Decor Cost:</label>
-                <input type="number" id="decor" placeholder="Enter decor cost">
+            <div class="form-group">
+                <label for="catering">Catering:</label>
+                <input type="number" id="catering" name="catering" required>
             </div>
-            <div class="input-group">
-                <label for="photography">Photography Cost:</label>
-                <input type="number" id="photography" placeholder="Enter photography cost">
+            <div class="form-group">
+                <label for="photography">Photography:</label>
+                <input type="number" id="photography" name="photography" required>
             </div>
-            <div class="input-group">
-                <label for="entertainment">Entertainment Cost:</label>
-                <input type="number" id="entertainment" placeholder="Enter entertainment cost">
+            <div class="form-group">
+                <label for="decor">Decor:</label>
+                <input type="number" id="decor" name="decor" required>
             </div>
-            <div class="input-group">
-                <label for="attire">Attire Cost:</label>
-                <input type="number" id="attire" placeholder="Enter attire cost">
+            <div class="form-group">
+                <label for="music">Music:</label>
+                <input type="number" id="music" name="music" required>
             </div>
-            <div class="input-group">
-                <label for="others">Other Costs:</label>
-                <input type="number" id="others" placeholder="Enter other costs">
+            <div class="form-group">
+                <label for="attire">Attire:</label>
+                <input type="number" id="attire" name="attire" required>
             </div>
-            <button onclick="calculateBudget()">Calculate Total</button>
-            <button onclick="resetCalculator()">Reset</button>
-            <p id="error" class="error"></p>
-            <h2>Total Budget: $<span id="total">0.00</span></h2>
-            <h3>Breakdown:</h3>
-            <ul id="breakdown"></ul>
+            <div class="form-group">
+                <label for="other">Other Expenses:</label>
+                <input type="number" id="other" name="other" required>
+            </div>
+            <button type="button" onclick="calculateBudget()">Calculate</button>
+        </form>
+        <div id="result" class="result">
+            <h2>Result</h2>
+            <p>Total Expenses: <span id="total-expenses"></span></p>
+            <p>Remaining Budget: <span id="remaining-budget"></span></p>
         </div>
     </div>
     <script src="script.js"></script>
