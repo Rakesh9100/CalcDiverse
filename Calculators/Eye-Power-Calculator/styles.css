@@ -1,59 +1,80 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, rgb(216, 9, 92), #1568c6);
+  background: url("bg1.jpg") no-repeat center center fixed;
+  background-size: 120%; /* Increase size to zoom out */
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+  transform: scale(0.95); /* Scale down to zoom out */
 }
 
 .container {
-  background: linear-gradient(135deg, #4a90e2, rgb(106, 28, 59));
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: #6be7f3;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
   text-align: center;
-  color: #fff;
 }
 
 h1 {
   margin-bottom: 20px;
+  font-size: 2em;
+  color: #333333;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .input-group {
-  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 label {
-  display: block;
-  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555555;
+  font-size: 1.1em;
 }
 
-input {
-  width: 100%;
+input[type="number"] {
   padding: 10px;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 200px;
 }
 
 button {
-  background-color: #d000ff;
-  color: #fff;
   padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #d40842;
+  background-color: #0056b3;
 }
 
-#result {
-  margin-top: 20px;
-  font-size: 18px;
+p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
 }
