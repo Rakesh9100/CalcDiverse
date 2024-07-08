@@ -7,13 +7,20 @@ function sumOfDigits(num) {
 }
 
 function checkSpecialNumber() {
-    const number = document.getElementById('numberInput').value;
-    const sumDigits = sumOfDigits(number);
-    const reversedSum = reverseString(sumDigits.toString());
-    const product = sumDigits * parseInt(reversedSum);
+    const number = document.getElementById('numberInput').value.trim();
 
     const resultElement = document.getElementById('result');
     const detailsElement = document.getElementById('details');
+
+    if (number === '') {
+        resultElement.textContent = 'Please enter a number.';
+        detailsElement.textContent = '';
+        return;
+    }
+
+    const sumDigits = sumOfDigits(number);
+    const reversedSum = reverseString(sumDigits.toString());
+    const product = sumDigits * parseInt(reversedSum);
 
     if (product === parseInt(number)) {
         resultElement.textContent = `${number} is a special number!`;
