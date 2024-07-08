@@ -18,6 +18,12 @@ function checkSpecialNumber() {
         return;
     }
 
+    if (parseInt(number) < 0) {
+        resultElement.textContent = 'Please enter a positive number.';
+        detailsElement.textContent = '';
+        return;
+    }
+
     const sumDigits = sumOfDigits(number);
     const reversedSum = reverseString(sumDigits.toString());
     const product = sumDigits * parseInt(reversedSum);
