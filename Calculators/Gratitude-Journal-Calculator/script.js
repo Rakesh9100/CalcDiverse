@@ -4,10 +4,34 @@ const positiveWords = {
     'great job': 1,
     'good': 2,
     'excellent': 2,
-    'awesome': 2
+    'awesome': 2,
+    'fantastic': 2,
+    'brilliant': 2,
+    'amazing': 2,
+    'outstanding': 2,
+    'superb': 2,
+    'marvelous': 2,
+    'terrific': 2,
+    'wonderful': 2,
+    'impressive': 2,
+    'nice': 1,
+    'perfect': 2,
+    'lovely': 1,
+    'splendid': 2,
+    'cool': 1,
+    'positive': 1,
+    'happy': 1,
+    'grateful': 1
 };
 
-const negativeWords = ['bad', 'terrible', 'awful', 'horrible', 'poor', 'negative'];
+const negativeWords = [
+    'bad', 'terrible', 'awful', 'horrible', 'poor', 'negative', 'sad', 'angry', 
+    'disappointed', 'hate', 'unhappy', 'miserable', 'unfortunate', 'dreadful', 
+    'atrocious', 'abysmal', 'appalling', 'deplorable', 'disgusting', 'horrid', 
+    'nasty', 'vile', 'revolting', 'abhorrent', 'detestable', 'loathsome', 'repugnant', 
+    'repulsive', 'offensive', 'gross', 'nauseating', 'sickening', 'distressing', 
+    'disturbing', 'pathetic', 'wretched', 'grim', 'dire', 'crummy', 'lousy', 'rotten'
+];
 
 document.getElementById('add-btn').addEventListener('click', () => {
     const input = document.getElementById('gratitude-input');
@@ -42,12 +66,18 @@ document.getElementById('calculate-btn').addEventListener('click', () => {
     let positivePoints = 0;
 
     gratitudeArray.forEach(point => {
+        let wordFound = false;
         Object.keys(positiveWords).forEach(word => {
             if (point.toLowerCase().includes(word)) {
                 totalPoints += positiveWords[word];
                 positivePoints += positiveWords[word];
+                wordFound = true;
             }
         });
+        if (!wordFound) {
+            totalPoints += 1;  // default point if no positive word is found
+            positivePoints += 1;
+        }
     });
 
     const positivePercentage = totalPoints > 0 ? ((positivePoints / totalPoints) * 100).toFixed(2) : 0;
