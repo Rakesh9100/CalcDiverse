@@ -22,8 +22,18 @@ function calculate() {
     b=math.gamma(num2);
     add=num1+num2;
     c=math.gamma(add);
+    
+    if(a==isNaN){
+        alert('Please do not leave any field blank');
+    }
+    else if(b==isNaN){
+        alert('Please do not leave any field blank');
+    }
+    else if(a==isNaN && b==isNaN){
+        alert('Please do not leave any field blank');
+    }
 
-
+    else{
     let result=(a*b)/c;
     
 
@@ -44,5 +54,5 @@ function calculate() {
     }
         document.getElementById('res').value=result;
     
-
+}
     }
