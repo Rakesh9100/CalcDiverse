@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("Wallpaper.jpeg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 54%;
+    height: 53%;
+    border: 2px solid rgb(6, 3, 18);
+    border-radius: 15px;
+    border-width: 3px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#heading {
+    color: rgb(6, 3, 18);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5vmax;
+    margin-bottom: 0.5vmax;
+}
+#ip{
+    color: rgb(6, 3, 18);
+    font-size: 1.75vmax;
+    text-align: center;
+    border-radius: 0.5vmax;
+    height: 2.5vmax;
+    padding: 0.5vmax;
+
+    
+    
+}
+/*Button*/
+#input2{
+    padding: 1vmax;
+    text-align: center;
+}
+#input2 button{
+    font-family: poppins;
+    height: 3vmax;
+    width: 5.vmax;
+    padding: 0.5vmax;
+    font-size: 1.15vmax;
+    text-align: center;
+    border-radius: 0.5vmax;
+    border: none;
+    background-color:rgb(6, 3, 18);
+    color:white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#input2 button:hover {
+    background-color:rgb(49,43,75);
+}
+/*oUTPUT*/
+#output{
+   text-align: center;
+    margin-bottom: 3vmax;
+    display: flex;
+   padding: 1vmax;
+    justify-content: space-evenly;
+}
+#output1{
+    font-size: 1.5vmax;
+    text-align: center;
+    height: 3vmax;
+    color: rgb(6, 3, 18);
+    padding-left: 5vmax;
+  
+}
+#picture img{
+    height: 10vmax;
+    max-width: 1000%;
+    margin-bottom: 30vmax;
+    padding-left: 0.5vmax;
+}
+@media (max-width: 576px) {
+    #main {
+        padding: 20px;
+    }
+
+    #heading h1 {
+        font-size: 1.2em;
+    }
+
+    #output{
+        font-size: 1.5vmax;
+    }
+
+    #picture img{
+        height: 25vmax;
+    }
+}
+
+
