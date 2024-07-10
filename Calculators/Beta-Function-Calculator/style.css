@@ -121,9 +121,14 @@ a:link {
     }
     .container {
           flex-wrap: wrap;
+          width: 700px;
     }
     .hidden-mobile {
       display: none;
-  }
+    }
+    .cont_text {
+      font-size: 1em;
+    }
+   
     
   }
