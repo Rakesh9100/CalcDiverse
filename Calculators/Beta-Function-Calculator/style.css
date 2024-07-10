@@ -45,6 +45,10 @@ h1{
     font-size: 20px;
     font-weight: bold;
 }
+h1 {
+  font-size: 4em;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .input-box{
     width: 100%;
@@ -108,11 +112,13 @@ a:link {
     background-color: transparent;
     text-decoration: underline;
   }
-  @media screen and (max-width: 800px) {
+  @media only screen and (max-width: 786px) {
     .left, .main, .right {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
     h1{
-        font-size: 36px;
+        font-size: 1.17em;
+        color: red;
     }
+    
   }
