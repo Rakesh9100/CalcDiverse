@@ -10,7 +10,8 @@ The Cooking Measurement Calculator is a simple web-based tool that helps you con
 
 ## Screenshots :-
 ### Home Page
-![Home Page](screenshots/homepage.png)
+![Screenshot 2024-07-10 233740](https://github.com/codercake/CalcDiverse/assets/117517206/c1bddf87-b66d-494e-8bf6-5381d1207ec9)
 
 ### Conversion Example
-![Conversion Example](screenshots/conversion.png)
+![Screenshot 2024-07-10 233636](https://github.com/codercake/CalcDiverse/assets/117517206/3f6229fe-4784-4ad1-aac0-47fbbca457bc)
+
