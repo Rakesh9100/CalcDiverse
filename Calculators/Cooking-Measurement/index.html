@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Measurement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>COOKING MEASUREMENT</h1>
+        <h2>CALCULATOR</h2>
+        <div class="converter">
+            <label for="inputValue">Enter the Value</label>
+            <input type="number" id="inputValue" placeholder="Enter value">
+            <select id="inputUnit">
+                <option value="oz">Ounces</option>
+                <option value="lb">Pounds</option>
+            </select>
+            <button onclick="convert()">Convert</button>
+        </div>
+        <div class="result">
+            <p id="outputValue"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
