@@ -116,9 +116,14 @@ a:link {
     .left, .main, .right {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
-    h1{
-        font-size: 1.17em;
-        color: red;
+    h1 {
+        font-size: 1.6em;
     }
+    .container {
+          flex-wrap: wrap;
+    }
+    .hidden-mobile {
+      display: none;
+  }
     
   }
