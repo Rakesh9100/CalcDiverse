@@ -41,9 +41,3 @@ function validateEmail(emailFieldId) {
         emailField.setCustomValidity("");
     }
 }
-
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-    alert('Thank you for contacting us!');
-    // You can add additional code here to handle the form submission, e.g., send the form data to a server
-});
