@@ -1,0 +1,206 @@
+body {
+    background: #E0EAFC;
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    background: -webkit-linear-gradient(left, #CFDEF3, #E0EAFC);
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100vh;
+}
+
+.red {
+    color: #e74c3c !important;
+}
+
+.red-focus:focus {
+    border: 1px solid #e74c3c !important;
+}
+
+.budget__title h1,
+.budget__value {
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.budget__title h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.budget__value {
+    font-size: 2.875em;
+    letter-spacing: 2px;
+}
+
+.budget__income,
+.budget__expenses {
+    border-radius: 2em;
+    box-shadow: 0 10px 6px -6px #777;
+    color: #fff;
+    font-size: .9em;
+    margin: 0 auto;
+    padding: .75em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.budget__income {
+    background-color: #2ecc71;
+}
+
+.budget__expenses {
+    background-color: #e74c3c;
+}
+
+.budget__income-value,
+.budget__expenses-value {
+    letter-spacing: 1px;
+}
+
+.budget__income-percentage,
+.budget__expenses-percentage {
+    padding: 0;
+}
+
+.budget__expenses-percentage {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 2em;
+}
+
+.add {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e7e7e7;
+    border-radius: 2em;
+    box-shadow: 0 10px 6px -6px #777;
+    padding: 0.875em;
+}
+
+select,
+input[type="text"],
+input[type="number"],
+button {
+    box-shadow: none !important;
+    outline: none;
+}
+
+.add__type,
+.add__description,
+.add__value {
+    -webkit-transition: border .3s;
+    transition: border .3s;
+}
+
+.add__type:focus,
+.add__description:focus,
+.add__value:focus {
+    border: 1px solid #2ecc71;
+}
+
+.add__btn {
+    color: #2ecc71;
+    background-color: none;
+    border-color: #ced4da;
+}
+
+.add__btn:active {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+h2 {
+    font-size: 1.125em;
+    font-weight: 700;
+    margin-bottom: 0.938em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+}
+
+.item {
+    border-bottom: 1px solid #fff;
+    padding: 0.813em;
+}
+
+.item:first-child {
+    border-top: 1px solid #fff;
+}
+
+.item:nth-child(even) {
+    background-color: #fff;
+}
+
+.item__value {
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+}
+
+.item__percentage {
+    border-radius: 2em;
+    color: #e74c3c;
+    font-size: .8em;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+}
+
+.income__title,
+.income .item__value,
+.income .item__delete-btn {
+    color: #2ecc71;
+}
+
+.expenses__title,
+.expenses .item__value,
+.expenses .item__delete-btn {
+    color: #e74c3c;
+}
+
+.item__delete {
+    margin-right: .5em;
+}
+
+.item__delete-btn {
+    background: none;
+    border: none;
+    display: none;
+    font-size: .8em;
+    line-height: 1;
+}
+
+.item__delete-btn:focus {
+    outline: none;
+}
+
+.item__delete-btn:active {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.item:hover .item__delete-btn {
+    display: block;
+}
+
+.item:hover .item__value {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.item:hover .item__percentage {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+}

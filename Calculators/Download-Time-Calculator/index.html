@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
@@ -9,106 +9,66 @@
 </head>
 
 <body>
-
     <form>
-
-        <table border="4">
-
+        <table border="4" class="styled-table">
             <tr class="filesizetr">
-
-                <td style="display: flex;
-    align-items: center;
-    gap: 1rem;">File Size?
-
+                <td class="filesize">File Size?
                     <input name="size" class="selectbar" size="10" type="TEXT" />
                     <input onclick="compute(this.form, 1)" type="BUTTON" value="KB" />
                     <input onclick="compute(this.form, 1024)" type="BUTTON" value="MB" />
-
                 </td>
-
                 <td colspan="3">
                     <center><b>It will take you ....</b></center>
-
                 </td>
-
             </tr>
-
-            <tr>
-
+            <tr class="heading">
                 <th>If your modem is a ....</th>
-
                 <th>Hours </th>
-
                 <th>Minutes </th>
-
                 <th>Seconds</th>
-
             </tr>
-
             <tr>
-
                 <td>9.6 Kb</td>
                 <td class="m-td"><input name="1hour" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="1minute" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="1second" size="6" type="TEXT" /></td>
-
             </tr>
-
             <tr>
-
                 <td>14.4 Kb</td>
                 <td class="m-td"><input name="2hour" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="2minute" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="2second" size="6" type="TEXT" /></td>
-
             </tr>
-
             <tr>
-
                 <td>28.8 Kb</td>
                 <td class="m-td"><input name="3hour" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="3minute" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="3second" size="6" type="TEXT" /></td>
-
             </tr>
-
             <tr>
-
                 <td>56 Kb</td>
                 <td class="m-td"><input name="4hour" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="4minute" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="4second" size="6" type="TEXT" /></td>
-
             </tr>
-
             <tr>
-
                 <td>ISDN (64 Kb)</td>
                 <td class="m-td"><input name="5hour" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="5minute" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="5second" size="6" type="TEXT" /></td>
-
             </tr>
-
             <tr>
-
                 <td>ISDN (128 Kb)</td>
                 <td class="m-td"><input name="6hour" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="6minute" size="6" type="TEXT" /> </td>
                 <td class="m-td"><input name="6second" size="6" type="TEXT" /></td>
-
             </tr>
-
             <tr>
-
                 <td></td>
-
                 <td><input name="7hour" size="6" type="HIDDEN" /> </td>
                 <td><input name="7minute" size="6" type="HIDDEN" /> </td>
                 <td><input name="7second" size="6" type="HIDDEN" /></td>
-
             </tr>
-
             <input name="8hour" size="6" type="HIDDEN" />
             <input name="8minute" size="6" type="HIDDEN" />
             <input name="8second" size="6" type="HIDDEN" />
@@ -121,13 +81,10 @@
             <input name="11hour" size="6" type="HIDDEN" />
             <input name="11minute" size="6" type="HIDDEN" />
             <input name="11second" size="6" type="HIDDEN" />
-
         </table>
-
     </form>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>

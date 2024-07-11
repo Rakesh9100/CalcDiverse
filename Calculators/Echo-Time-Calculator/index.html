@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Echo Time Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Echo Time Calculator</h1>
+        <form id="echoForm">
+            <label for="distance">Distance (meters):</label>
+            <input type="number" id="distance" name="distance" required />
+            <label for="medium">Medium:</label>
+            <select id="medium" name="medium" required>
+                <option value="air">Air (20°C)</option>
+                <option value="water">Water (25°C)</option>
+                <option value="steel">Solid</option>
+            </select>
+            <button type="submit">Calculate Echo Time</button>
+        </form>
+        <div id="result"></div>
+        <div id="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
