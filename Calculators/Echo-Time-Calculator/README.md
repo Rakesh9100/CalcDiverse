@@ -1,4 +1,4 @@
-# <p align="center">ECHO Time Calculator</p>
+# <p align="center">Echo Time Calculator</p>
 
 ## Description :-
 
@@ -15,3 +15,5 @@ This Echo-Time Calculator helps users determine the time it takes for a sound wa
 - JavaScript
 
 ## Screenshots :-
+
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c977bc73-88f7-46d5-8e16-e0c5b2707a08)
