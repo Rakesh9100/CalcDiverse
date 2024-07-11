@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg {
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.fZRU5fmg6UCTdpJdb9BXkQAAAA&pid=Api&P=0&h=180');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

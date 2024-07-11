@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hailstone Series Calculator</title>
+</head>
+<body>
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <p>
+            A Hailstone series is defined as follows: start with any integer value greater than 0, say x. If x is even, then the next value in the series is x/2; if x is odd, then the next value in the series is 3x + 1. Now apply the same rules to create the next value in the series, and so on.
+        </p>
+    </div>
+    <div class="container">
+        <h1>Hailstone Series Generator</h1>
+        <div class="form-group">
+            <label for="startValue">Starting Number:</label>
+            <input type="number" id="startValue" min="1">
+        </div>
+        <div class="form-group">
+            <label for="numTerms">Number of Terms:</label>
+            <input type="number" id="numTerms" min="1">
+        </div>
+        <button onclick="generateSeries()">Generate</button>
+        <div class="output" id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Energy Consumption Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Energy Consumption Calculator</h1>
+        <form id="energyForm">
+            <div id="applianceContainer">
+                <div class="appliance-row">
+                    <label for="appliance1">Appliance 1:</label>
+                    <input type="text" id="appliance1" placeholder="e.g. Refrigerator">
+                    <label for="power1">Power (W):</label>
+                    <input type="number" id="power1" placeholder="e.g. 100">
+                    <label for="hours1">Hours/day:</label>
+                    <input type="number" id="hours1" placeholder="e.g. 24">
+                </div>
+                <div class="appliance-row">
+                    <label for="appliance2">Appliance 2:</label>
+                    <input type="text" id="appliance2" placeholder="e.g. TV">
+                    <label for="power2">Power (W):</label>
+                    <input type="number" id="power2" placeholder="e.g. 150">
+                    <label for="hours2">Hours/day:</label>
+                    <input type="number" id="hours2" placeholder="e.g. 4">
+                </div>
+            </div>
+            <button type="button" class="add-button">Add Another Appliance</button>
+            <button type="button" class="calculate-button">Calculate</button>
+            <br>
+            <button type="button" class="reset-button">Reset</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

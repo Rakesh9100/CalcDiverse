@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sound Level Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sound Level Calculator</h1>
+        <form id="soundForm">
+            <div class="input-group">
+                <label for="sound1">Sound Level 1 (dB):</label>
+                <input type="number" id="sound1" name="sound1" required>
+            </div>
+            <div class="input-group">
+                <label for="sound2">Sound Level 2 (dB):</label>
+                <input type="number" id="sound2" name="sound2" required>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div class="result">
+            <h2>Combined Sound Level: <span id="result">0</span> dB</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -10,11 +10,20 @@
 
 <body>
     <div class="calculator">
-        <input type="number" id="resistanceInput" placeholder="Enter Resistance">
-        <input type="number" id="lengthInput" placeholder="Enter Length">
-        <input type="number" id="areaInput" placeholder="Enter Cross-sectional Area">
+        <div class="heading">
+            <h1>Conductivity and Resistivity Calculator</h1>
+        </div>
+        <div class="inputcontainer">
+            <input type="number" id="resistanceInput" placeholder="Enter Resistance">
+            <input type="number" id="lengthInput" placeholder="Enter Length">
+            <input type="number" id="areaInput" placeholder="Enter Cross-sectional Area">
+        </div>
+        
         <button onclick="calculate()">Calculate</button>
-        <div id="result"></div>
+        <div id="result">
+            <input type="text" id="resistivityresult" placeholder="Resistivity" disabled>
+            <input type="text" id="conductivityresult" placeholder="Conductivity" disabled>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
