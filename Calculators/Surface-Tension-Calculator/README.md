@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Surface Tension Calculator calculates surface tension for different shapes like flat object, doplets, hollow bubbles.
+Calculates surface tension for different shapes like a flat object, droplets, and hollow bubbles.
 
 To calculate surface tension:
 
@@ -19,4 +19,4 @@ To calculate surface tension:
 
 ## Screenshots :-
 
-![image](https://github.com/kauxp/CalcDiverse/assets/145500535/b34126d3-c3d8-4c6a-b078-33270be88d31)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/645caf3e-6352-4681-911e-9954d663ed76)
