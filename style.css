@@ -1755,12 +1755,29 @@ footer {
 
 /* Media Queries */
 
+@media (max-width: 1060px) {
+    .navbar .nav-link {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 1030px) {
     .hero-section {
         flex-direction: column;
         text-align: center;
         width: auto;
         height: 80vh;
+    }
+
+    .navbar .nav-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar .nav-link {
+        padding-right: 2px;
+        padding-left: 2px;
     }
 }
 
@@ -1776,9 +1793,21 @@ footer {
         border: 1px transparent;
         padding-bottom: 10px;
     }
+
+    .navbar .nav-link {
+        font-size: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
-@media (max-width: 786px) {
+@media (max-width: 800px) {
+    .navbar .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
         text-align: center;
