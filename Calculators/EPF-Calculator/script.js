@@ -13,23 +13,23 @@ function calculateEPF() {
     let rate = parseFloat(rateInput);
 
     if (isNaN(salary) || isNaN(age) || isNaN(contribution) || isNaN(increase) || isNaN(rate) ||
-         salary <= 0 || age <= 0 || contribution <= 0 || increase <= 0 || rate <= 0 ) {
-            alert('Please enter valid positive numbers');
-            return;
-        }
+        salary <= 0 || age <= 0 || contribution <= 0 || increase <= 0 || rate <= 0) {
+        alert('Please enter valid positive numbers');
+        return;
+    }
 
-        let totalContribution = 0;
-        let currentSalary = salary;
-        let yearToRetirement = 60 - age;
+    let totalContribution = 0;
+    let currentSalary = salary;
+    let yearToRetirement = 60 - age;
 
-        for (let year = 1; year <= yearToRetirement; year++) {
-            let annualContribution = currentSalary * (contribution / 100) * 12;
-            totalContribution += annualContribution;
-            totalContribution += totalContribution * (rate / 100);
-            currentSalary += currentSalary * (increase / 100);
-        }
+    for (let year = 1; year <= yearToRetirement; year++) {
+        let annualContribution = currentSalary * (contribution / 100) * 12;
+        totalContribution += annualContribution;
+        totalContribution += totalContribution * (rate / 100);
+        currentSalary += currentSalary * (increase / 100);
+    }
 
-        const resultElement = document.getElementById('result')
-        resultElement.textContent = 'Total EPF at retirement: ₹' + totalContribution.toFixed(2);
-        resultElement.classList.add('has-content');
+    const resultElement = document.getElementById('result')
+    resultElement.textContent = 'Total EPF at retirement: ₹' + totalContribution.toFixed(2);
+    resultElement.classList.add('has-content');
 }
