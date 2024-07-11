@@ -1,83 +1,75 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-align: center;
 }
 
-body{
+body {
     background-color: #FEFFD2;
 }
 
-
-
-h1{
+h1 {
     margin-top: 10px;
     color: black;
 }
 
-
-.container{
+.container {
     max-width: 500px;
     margin: 20px auto;
-    background-color:#5bb450;
-    padding: 20px 20px ;
+    background-color: #5bb450;
+    padding: 20px 20px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     float: top;
 }
+
 .column {
     float: left;
     width: 33.33%;
     padding: 5px;
-    
-  }
-  
- 
-  .row::after {
+
+}
+
+.row::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
-.container p{
+.container p {
     font-size: 20px;
     font-weight: bold;
 }
+
 h1 {
-  font-size: 4em;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-.input-box{
+.input-box {
     width: 100%;
-   
-
     display: flex;
-
-    justify-content: space-between; 
-
+    justify-content: space-between;
     margin: 10px 0;
-
 }
 
-.input-box .input-unit{
+.input-box .input-unit {
     width: 60%;
     display: flex;
 }
 
-.input-box input{
+.input-box input {
     background: #FEFFD2;
     padding: 5px;
-    border-radius: 5px ;
-    
-    margin-right:5px;
+    border-radius: 5px;
+    margin-right: 5px;
     outline: none;
 }
 
-button{
+button {
     width: 30%;
     margin: 20px auto 10px;
     padding: 8px;
@@ -87,51 +79,58 @@ button{
     background-color: #FEFFD2;
     color: black;
 }
+
 button:hover {
-    background-color:#14452F;
+    background-color: #14452F;
     transition: 0.7s;
 }
 
-.active{
+.active {
     cursor: not-allowed;
     opacity: 0.5;
 }
+
 a:link {
     color: #90e0ef;
     background-color: transparent;
     text-decoration: none;
     text-align: center;
-  }
-  
-  a:visited {
+}
+
+a:visited {
     color: black;
     background-color: transparent;
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: blue;
     background-color: transparent;
     text-decoration: underline;
-  }
-  @media only screen and (max-width: 786px) {
-    .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+}
+
+@media only screen and (max-width: 786px) {
+    .left,
+    .main,
+    .right {
+        width: 100%;
     }
+
     h1 {
         font-size: 1.6em;
         text-align: center;
     }
+
     .container {
-          flex-wrap: wrap;
-          width: 700px;
+        flex-wrap: wrap;
+        width: 700px;
     }
+
     .hidden-mobile {
-      display: none;
+        display: none;
     }
+
     .cont_text {
-      font-size: 1em;
+        font-size: 1em;
     }
-   
-    
-  }
+}
