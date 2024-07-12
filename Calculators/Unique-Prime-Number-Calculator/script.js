@@ -28,9 +28,11 @@ function checkUniquePrime() {
     }
 
     if (isUniquePrime(number)) {
-        result.textContent = `${number} is a unique prime number.`;
+        result.textContent = `${number} is a unique prime number. 
+        ${number} remains prime even after removing any single digit.`;
     } else {
-        result.textContent = `${number} is not a unique prime number.`;
+        result.textContent = `${number} is not a unique prime number. 
+        ${number} is either not prime or does not remain prime after removing any single digit.`;
     }
 }
 

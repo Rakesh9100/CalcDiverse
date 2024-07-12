@@ -2,12 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(to right, #74ebd5, #acb6e5);
-    height: 100vh;
-    margin: 0;
 }
 
 .container {
@@ -19,7 +14,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     color: #333;
-    margin: 12% auto;
+    margin: 7% auto;
     text-align: center;
 }
 
@@ -42,14 +37,6 @@ button {
 button:hover {
     background-color: #279451;
 }
-  
-#results {
-    display: none;
-    margin-top: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
 
 .calculator, .range-calculator {
     margin-bottom: 20px;
@@ -66,4 +53,6 @@ input {
 #result, #rangeResult {
     margin-top: 20px;
     font-size: 18px;
+    text-align: left;
+    padding: 0 11px;
 }
