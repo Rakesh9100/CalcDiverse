@@ -233,6 +233,12 @@ nav ul {
     list-style: none;
 }
 
+#active1 {
+    color: #ff1b82;
+    border-top-color: #ff1b82;
+    border-bottom-color: #ff1b82;
+}
+
 .logo {
     font-size: 2.3rem;
     font-weight: 700;
@@ -1977,16 +1983,4 @@ footer {
         text-align: center;
         flex-basis: 100%;
     }
-}
-
-.active1 {
-    color: #ff1b82;
-    border-top-color: #ff1b82;
-    border-bottom-color: #ff1b82;
-}
-
-#active1 {
-    color: #ff1b82;
-    border-top-color: #ff1b82;
-    border-bottom-color: #ff1b82;
 }
