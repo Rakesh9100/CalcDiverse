@@ -24,6 +24,27 @@
             <p id="outputValue"></p>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function convert() {
+            const inputValue = document.getElementById('inputValue').value;
+            const inputUnit = document.getElementById('inputUnit').value;
+            const outputValue = document.getElementById('outputValue');
+            
+            if (!inputValue) {
+                outputValue.textContent = 'Please enter a value.';
+                return;
+            }
+
+            if (inputUnit === 'oz') {
+                const pounds = (inputValue / 16).toFixed(2);
+                outputValue.textContent = `${inputValue} oz is equal to ${pounds} lb`;
+            } else if (inputUnit === 'lb') {
+                const ounces = (inputValue * 16).toFixed(2);
+                outputValue.textContent = `${inputValue} lb is equal to ${ounces} oz`;
+            } else {
+                outputValue.textContent = 'Invalid unit';
+            }
+        }
+    </script>
 </body>
 </html>
