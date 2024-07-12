@@ -10,10 +10,6 @@ The Lorentz Force Calculator computes the force exerted on a charged particle mo
 - CSS
 - JavaScript
 
-## How It Works :-
-
-The Lorentz force calculator gives Force on a Moving charge particle.
-
 ## ScreenShots :-
 
-![image]
+![image](https://github.com/user-attachments/assets/416dd070-1e27-487b-828b-cef77e207b00)
