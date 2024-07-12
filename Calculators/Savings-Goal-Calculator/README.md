@@ -24,4 +24,4 @@ Time Period is the number of months you plan to save.
 
 ## Screenshots :-
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/658fdabe-f5d0-4b6d-8ad2-c7bcd23fcf04)
