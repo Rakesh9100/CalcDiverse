@@ -10,14 +10,14 @@ This Cryptocurrency Calculator helps users convert the price of various cryptocu
 - CSS
 - JavaScripts
 
-## How It Works
+## How It Works :-
 
 1. **User Input**: Enter the amount of cryptocurrency you wish to convert.
 2. **Select Currency**: Choose the cryptocurrency and the fiat currency you want to convert to.
 3. **Fetch Real-Time Data**: The calculator fetches the latest price data from a reliable API.
 4. **Calculate and Display**: The calculator computes the converted amount and displays the result in an easy-to-read format with attractive fonts and colors.
 
-## Features
+## Features :-
 
 - **Real-Time Data**: Always get the latest prices with API integration.
 - **Responsive Design**: Works seamlessly on mobile, tablet, and laptop screens.
@@ -28,4 +28,4 @@ Use this calculator to stay updated with the current cryptocurrency market and m
 
 ## Screenshots :-
 
-![Crypto calci img](assets/cyptocalci-1.jpg)
+![image](https://github.com/user-attachments/assets/2a8b1c37-f43b-49ca-98c3-e4e2b3ab16d1)
