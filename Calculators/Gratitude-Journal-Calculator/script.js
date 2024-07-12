@@ -35,11 +35,11 @@ const negativeWords = [
 
 document.getElementById('add-btn').addEventListener('click', () => {
     const input = document.getElementById('gratitude-input');
-    const value = input.value.trim();
+    const value = input.value.trim().toLowerCase();
     const errorMessage = document.getElementById('error-message');
 
     if (value) {
-        const containsNegativeWord = negativeWords.some(negativeWord => value.toLowerCase().includes(negativeWord));
+        const containsNegativeWord = negativeWords.some(negativeWord => value.includes(negativeWord));
 
         if (containsNegativeWord) {
             errorMessage.textContent = 'Negative words are not allowed.';
@@ -47,11 +47,17 @@ document.getElementById('add-btn').addEventListener('click', () => {
             setTimeout(() => {
                 errorMessage.classList.add('hidden');
             }, 5000);
-        } else {
+        } else if (Object.keys(positiveWords).includes(value)) {
             const listItem = document.createElement('li');
             listItem.textContent = value;
             document.getElementById('gratitude-list').appendChild(listItem);
             errorMessage.classList.add('hidden');
+        } else {
+            errorMessage.textContent = 'Please enter a valid gratitude word.';
+            errorMessage.classList.remove('hidden');
+            setTimeout(() => {
+                errorMessage.classList.add('hidden');
+            }, 5000);
         }
 
         input.value = '';
@@ -82,15 +88,10 @@ document.getElementById('calculate-btn').addEventListener('click', () => {
     let positivePoints = 0;
 
     gratitudeArray.forEach(point => {
-        let wordFound = false;
-        Object.keys(positiveWords).forEach(word => {
-            if (point.toLowerCase().includes(word)) {
-                totalPoints += positiveWords[word];
-                positivePoints += positiveWords[word];
-                wordFound = true;
-            }
-        });
-        if (!wordFound) {
+        if (positiveWords[point]) {
+            totalPoints += positiveWords[point];
+            positivePoints += positiveWords[point];
+        } else {
             totalPoints += 1;  // default point if no positive word is found
             positivePoints += 1;
         }
