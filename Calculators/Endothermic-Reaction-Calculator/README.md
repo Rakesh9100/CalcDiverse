@@ -1,4 +1,4 @@
-# <p align="center">Endothermic Calculator</p>
+# <p align="center">Endothermic Reaction Calculator</p>
 
 ## Description :-
 
