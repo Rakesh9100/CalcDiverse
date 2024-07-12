@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #5a88ca, #8a4db2); /* Example gradient background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.instructions {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px; /* Same width as .container */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-bottom: 20px;
+    margin-top: 20px; /* Small gap from top */
+}
+
+.instructions h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.instructions p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.instructions ul {
+    text-align: left; /* Ensure left alignment of list items */
+    margin-top: 10px; /* Adjust top margin for spacing */
+}
+
+.instructions li {
+    font-size: 14px; /* Adjust font size for consistency */
+    margin-bottom: 8px; /* Adjust bottom margin for spacing */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 350px; /* Adjusted width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.output {
+    margin-top: 20px;
+    font-size: 18px;
+    white-space: pre-wrap; /* Preserve line breaks */
+}
+
+#details {
+    white-space: pre-wrap; /* Preserve whitespace for new lines */
+}
