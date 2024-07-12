@@ -21,6 +21,12 @@ function isUniquePrime(n) {
 function checkUniquePrime() {
     let number = parseInt(document.getElementById("numberInput").value);
     let result = document.getElementById("result");
+
+    if(isNaN(number)) {
+        result.textContent = `Please enter a number`;
+        return;
+    }
+
     if (isUniquePrime(number)) {
         result.textContent = `${number} is a unique prime number.`;
     } else {
@@ -33,6 +39,17 @@ function findUniquePrimesInRange() {
     let end = parseInt(document.getElementById("rangeEnd").value);
     let rangeResult = document.getElementById("rangeResult");
     let uniquePrimes = [];
+
+    if(isNaN(start) || isNaN(end)) {
+        rangeResult.textContent = `Please enter a valid range`;
+        return;
+    }
+
+    if(start > end) {
+        rangeResult.textContent = `The starting number should be smaller than the ending number`;
+        return;
+    }
+
     for (let num = start; num <= end; num++) {
         if (isUniquePrime(num)) {
             uniquePrimes.push(num);
