@@ -55,12 +55,28 @@ document.getElementById('add-btn').addEventListener('click', () => {
         }
 
         input.value = '';
+    } else {
+        errorMessage.textContent = 'Input cannot be empty.';
+        errorMessage.classList.remove('hidden');
+        setTimeout(() => {
+            errorMessage.classList.add('hidden');
+        }, 5000);
     }
 });
 
 document.getElementById('calculate-btn').addEventListener('click', () => {
     const gratitudeList = document.querySelectorAll('#gratitude-list li');
     const gratitudeArray = Array.from(gratitudeList).map(item => item.textContent);
+    const errorMessage = document.getElementById('error-message');
+
+    if (gratitudeArray.length === 0) {
+        errorMessage.textContent = 'No gratitude statements to calculate.';
+        errorMessage.classList.remove('hidden');
+        setTimeout(() => {
+            errorMessage.classList.add('hidden');
+        }, 5000);
+        return;
+    }
 
     let totalPoints = 0;
     let positivePoints = 0;
