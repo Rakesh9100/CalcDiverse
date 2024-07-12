@@ -1,3 +1,25 @@
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.containers');
+    const navLinks = document.querySelectorAll('.nav-links');
+
+    let currentSection = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= sectionTop - 50) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.setAttribute('id', '');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+            link.setAttribute('id', 'active1')
+            console.log(currentSection);
+        }
+    });
+});
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
