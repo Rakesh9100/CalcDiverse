@@ -1978,3 +1978,15 @@ footer {
         flex-basis: 100%;
     }
 }
+
+.active1 {
+    color: #ff1b82;
+    border-top-color: #ff1b82;
+    border-bottom-color: #ff1b82;
+}
+
+#active1 {
+    color: #ff1b82;
+    border-top-color: #ff1b82;
+    border-bottom-color: #ff1b82;
+}
