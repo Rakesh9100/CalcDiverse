@@ -9,10 +9,38 @@ function convert() {
     document.getElementById('result').innerHTML = `Converted Value: ${convertedValue}`;
 }
 
-// clear function 
 function clear_fun() {
-    document.getElementById('number').value = ''; // clearing input field value
-    document.getElementById('fromBase').value = ''; // setting option "Select an option" in as initial value 
-    document.getElementById('toBase').value = '';  // setting option "Select an option" in as initial value 
-    document.getElementById('result').innerHTML = ''; // Clearing the result
+    document.getElementById('number').value = '';
+    document.getElementById('fromBase').value = '';
+    document.getElementById('toBase').value = '';
+    document.getElementById('result').innerHTML = '';
+    updateToBaseOptions();
 }
+
+function updateToBaseOptions() {
+    const fromBase = document.getElementById('fromBase').value;
+    const toBase = document.getElementById('toBase');
+    const bases = [
+        { value: '2', text: 'Binary' },
+        { value: '7', text: 'Septenary' },
+        { value: '8', text: 'Octal' },
+        { value: '10', text: 'Decimal' },
+        { value: '16', text: 'Hexadecimal' }
+    ];
+
+    toBase.innerHTML = '<option value="" selected disabled>Select an option</option>';
+    bases.forEach(base => {
+        if (base.value !== fromBase) {
+            const option = document.createElement('option');
+            option.value = base.value;
+            option.text = base.text;
+            toBase.appendChild(option);
+        }
+    });
+}
+
+// Update the toBase options when the page loads
+document.addEventListener('DOMContentLoaded', updateToBaseOptions);
+
+// Add event listener to update toBase options when fromBase changes
+document.getElementById('fromBase').addEventListener('change', updateToBaseOptions);
