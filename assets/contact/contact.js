@@ -31,3 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+function validateEmail(emailFieldId) {
+    const emailField = document.getElementById(emailFieldId);
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+    if (!emailPattern.test(emailField.value)) {
+        emailField.setCustomValidity("Please enter a valid email address!");
+    } else {
+        emailField.setCustomValidity("");
+    }
+}

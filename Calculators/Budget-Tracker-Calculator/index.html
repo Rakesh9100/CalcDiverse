@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Budget Tracker Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron-fluid text-center">
+            <div class="container">
+                <div class="top">
+                    <div class="budget">
+                        <div class="budget__title">
+                            <h1 class="display-4 pt-3">
+                                Available Budget in <span class="budget__title-month">%Month%</span>:
+                            </h1>
+                            <div class="mt-3 mb-5 budget__value">+ 2,345.66</div>
+                            <div class="row">
+                                <div class="col-12 col-sm-10 col-md-8 col-lg-6 my-2 budget__income">
+                                    <div class="row">
+                                        <div class="col-4 budget__income-text">Income</div>
+                                        <div class="col-5 budget__income-value">+ 4,300.00</div>
+                                        <div class="col-3 budget__income-percentage">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-10 col-md-8 col-lg-6 my-1 budget__expenses">
+                                    <div class="row">
+                                        <div class="col-4 budget__expenses-text">Expenses</div>
+                                        <div class="col-5 budget__expenses-value">- 1,500.00</div>
+                                        <div class="col-2 budget__expenses-percentage">45%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom mt-3">
+            <div class="add">
+                <div class="container">
+                    <div class="row text-center add__container">
+                        <div class="col-12 col-sm-6 input-group my-3">
+                            <select class="col-2 col-sm-3 col-md-2 custom-select add__type">
+                                <option value="inc" selected>+</option>
+                                <option value="exp">-</option>
+                            </select>
+                            <input type="text" class="col-10 col-sm-9 col-md-10 form-control add__description" placeholder="Add description">
+                        </div>
+                        <div class="col-12 col-sm-6 input-group my-3">
+                            <input type="number" class="form-control add__value" placeholder="Value">
+                            <div class="input-group-append">
+                                <button class="btn add__btn" type="button">
+                                <i class="fas fa-check-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 list">
+                <div class="col-12 col-lg-6 my-5 income">
+                    <h2 class="income__title">Income</h2>
+                    <div class="container income__list">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 my-5 expenses">
+                    <h2 class="expenses__title">Expenses</h2>
+                    <div class="container expenses__list">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
