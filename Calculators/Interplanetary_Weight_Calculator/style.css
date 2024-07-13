@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+    flex-direction: column;
+}
+
+.calculator-container {
+    width: 90%;
+    background-color: skyblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.calculator {
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#print {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    background-color: skyblue;
+    color: black;
+    font-size: 30px;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 30px;
+    color: black;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: blue;
+    font-size: 30px;
+    color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#results p {
+    font-size: 30px;
+    color: black;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/bgimage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.info a {
+    display: inline-block;
+    font-size: 18px;
+    color: white; /* Make the link text white */
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calculator-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    input, select {
+        font-size: 16px;
+    }
+    button {
+        font-size: 16px;
+    }
+    .info a {
+        font-size: 16px;
+    }
+}
