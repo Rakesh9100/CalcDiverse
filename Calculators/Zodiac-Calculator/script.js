@@ -29,51 +29,51 @@ function image(sign)
 {
     if (sign === "Aries") 
     {
-        document.getElementById("photo").src = 'Aries.jpeg';
+        document.getElementById("photo").src = 'assets/Aries.jpeg';
     }
     if (sign === "Taurus") 
     {
-        document.getElementById("photo").src = 'Taurus.jpeg';
+        document.getElementById("photo").src = 'assets/Taurus.jpeg';
     }
     if (sign === "Gemini") 
     {
-     document.getElementById("photo").src = 'Gemini.jpeg';
+     document.getElementById("photo").src = 'assets/Gemini.jpeg';
     }
     if (sign === "Cancer") 
     {
-    document.getElementById("photo").src = 'Cancer.jpeg';
+    document.getElementById("photo").src = 'assets/Cancer.jpeg';
     }
     if (sign === "Leo") 
     {
-        document.getElementById("photo").src = 'Leo.jpeg';
+        document.getElementById("photo").src = 'assets/Leo.jpeg';
     }
     if (sign === "Virgo") 
     {
-    document.getElementById("photo").src = 'Virgo.jpeg';
+    document.getElementById("photo").src = 'assets/Virgo.jpeg';
     }
     if (sign === "Libra") 
     {
-    document.getElementById("photo").src = 'Libra.jpeg';
+    document.getElementById("photo").src = 'assets/Libra.jpeg';
     }
     if (sign === "Scorpio") 
     {
-    document.getElementById("photo").src = 'Scorpio.jpeg';
+    document.getElementById("photo").src = 'assets/Scorpio.jpeg';
     } 
     if (sign === "Sagittarius") 
     {
-    document.getElementById("photo").src = 'Sagittarius.jpeg';
+    document.getElementById("photo").src = 'assets/Sagittarius.jpeg';
     } 
     if (sign === "Capricorn") 
     {
-    document.getElementById("photo").src = 'Capricorn.jpeg';
+    document.getElementById("photo").src = 'assets/Capricorn.jpeg';
     }      
     if (sign === "Aquarius") 
     {
-    document.getElementById("photo").src = 'Aquarius.jpeg';
+    document.getElementById("photo").src = 'assets/Aquarius.jpeg';
     }
     if (sign === "Pisces") 
     {
-    document.getElementById("photo").src = 'Pisces.jpeg';
+    document.getElementById("photo").src = 'assets/Pisces.jpeg';
     }
 }
    
