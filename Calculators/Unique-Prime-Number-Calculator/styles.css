@@ -10,7 +10,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    width: 400px;
+    max-width: 400px;
     font-family: 'Open Sans', sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     color: #333;
@@ -43,7 +43,7 @@ button:hover {
 }
 
 input {
-    margin: 5px;
+    margin: 5px 0;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
