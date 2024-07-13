@@ -1,6 +1,7 @@
 // include API for currency change
 const api = "https://api.exchangerate-api.com/v4/latest/USD";
 const currencyDetailsApi = "https://restcountries.com/v2/currency/";
+const flagBaseUrl = "https://flagsapi.com/";
 
 // for selecting different controls
 var search = document.querySelector(".searchBox");
@@ -9,6 +10,8 @@ var fromCurrency = document.querySelector(".from");
 var toCurrency = document.querySelector(".to");
 var finalValue = document.querySelector(".finalValue");
 var finalAmount = document.getElementById("finalAmount");
+var fromFlag = document.getElementById("fromFlag");
+var toFlag = document.getElementById("toFlag");
 var resultFrom;
 var resultTo;
 var searchValue;
@@ -17,12 +20,14 @@ var searchValue;
 fromCurrency.addEventListener('change', (event) => {
     resultFrom = `${event.target.value}`;
     fetchCurrencyDetails(resultFrom, 'from');
+    displayFlag(resultFrom, fromFlag);
 });
 
 // Event when currency is changed
 toCurrency.addEventListener('change', (event) => {
     resultTo = `${event.target.value}`;
     fetchCurrencyDetails(resultTo, 'to');
+    displayFlag(resultTo, toFlag);
 });
 
 search.addEventListener('input', updateValue);
@@ -83,6 +88,84 @@ function displayCurrencyDetails(data, target) {
     } else if (target === 'to') {
         // Display the country for the 'To' currency
         document.getElementById('toCountryDetails').innerHTML = `Countries using ${resultTo}: ${countryList}`;
+    }
+}
+
+// Map of currencies to country codes
+const currencyToCountryCode = {
+    USD: "us",
+    AED: "ae",
+    ARS: "ar",
+    AUD: "au",
+    BGN: "bg",
+    BRL: "br",
+    BSD: "bs",
+    CAD: "ca",
+    CHF: "ch",
+    CLP: "cl",
+    CNY: "cn",
+    COP: "co",
+    CZK: "cz",
+    DKK: "dk",
+    DOP: "do",
+    EGP: "eg",
+    EUR: "eu",
+    FJD: "fj",
+    GBP: "gb",
+    GTQ: "gt",
+    HKD: "hk",
+    HRK: "hr",
+    HUF: "hu",
+    IDR: "id",
+    ILS: "il",
+    INR: "in",
+    ISK: "is",
+    JPY: "jp",
+    KRW: "kr",
+    KZT: "kz",
+    MVR: "mv",
+    MXN: "mx",
+    MYR: "my",
+    NOK: "no",
+    NZD: "nz",
+    PAB: "pa",
+    PEN: "pe",
+    PHP: "ph",
+    PKR: "pk",
+    PLN: "pl",
+    PYG: "py",
+    RON: "ro",
+    RUB: "ru",
+    SAR: "sa",
+    SEK: "se",
+    SGD: "sg",
+    THB: "th",
+    TRY: "tr",
+    TWD: "tw",
+    UAH: "ua",
+    UYU: "uy",
+    ZAR: "za"
+};
+
+// Function to get the country code from currency code
+function getCountryCodeFromCurrency(currencyCode) {
+    const countryCode = currencyToCountryCode[currencyCode];
+    if (!countryCode) {
+        console.error("No country code found for currency", currencyCode);
+    }
+    return countryCode;
+}
+
+
+// Function to display currency flags
+function displayFlag(currencyCode, flagElement) {
+    const countryCode = getCountryCodeFromCurrency(currencyCode);
+    const capcountryCode = countryCode.toUpperCase()
+    if (countryCode) {
+        flagElement.src = `${flagBaseUrl}${capcountryCode}/flat/64.png`;
+        flagElement.style.display = "inline";
+    } else {
+        flagElement.style.display = "none";
     }
 }
 

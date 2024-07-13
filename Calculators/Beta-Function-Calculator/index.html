@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Beta Function Calculator</title>
+</head>
+<body>
+    <br>
+    <h1 >Beta Function Calculator<br></h1><br><br>
+
+   <div class="row" >
+        <div class="hidden-mobile">
+        <div class="column"><img src="assets/image1.png" alt="Beta function Image"  width="320" height="240"></div></div>
+
+        <div class="column"><div class="container">
+        <p class="cont_text">Enter 2 values that can be integers or decimals.</p><p class="cont_text">Neither of the numbers can be negative integers or 0. </p> 
+        <p class="cont_text"> ß(num1,num2) will be calculated by the program.</p><br><hr>
+        <br>
+
+
+        <div class="input-box">
+            <label for="num1" class="cont_text"><b>First Number (m):</b></label>
+            <input type="number" id="num1" name="fname"  > 
+        </div>
+        <br>
+        <div class="input-box">
+            <label for="num2" class="cont_text"><b>Second Number (n):</b></label>
+            <input type="number" id="num2" name="fname" >
+        </div>
+        <button onclick="calculate(event)" class="cont_text"><b>Calculate</b></button><br>
+
+        <label><b>Value of Beta function is:</b></label>
+        <input type="text" id="res" name="" readonly size="10"></div></div>
+        <div class="hidden-mobile">
+        <div class="column"><img src="assets/image2.png" alt="Beta function Image"  width="320" height="240"></div></div><br><br>
+    </div>
+
+    <a href="https://en.wikipedia.org/wiki/Beta_function" target="_blank">Click here to find more about Beta function</a><br>
+    <script src="script.js"></script>
+</body>
+</html>

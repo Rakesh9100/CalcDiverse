@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #FDFCFB 10%, #04399e 100%);
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 60%;
+    max-width: 900px;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #04399e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    color: #ffffff;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; 
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    margin: 20px 0 20px 0;
+    padding: 10px 20px;
+    background-color: #23e6a2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+button:hover {
+    background-color: #25cb91;
+}
+
+.output-container {
+    background-color: #2a4881;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.output-container h2 {
+    margin-bottom: 10px;
+}
+
+.output-container pre {
+    font-size: 16px;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+.output-container pre::before {
+    content: "Output will be displayed here";
+    display: flex;
+    color: #ddd;
+    font-style: italic;
+}
+
+.output-container pre.has-content::before {
+    content: "";
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 628px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

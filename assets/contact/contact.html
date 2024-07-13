@@ -49,7 +49,7 @@
                     <a href="../faq/faq.html" class="nav-link"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
+                    <a href="#" class="nav-link" id="active1"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -69,7 +69,7 @@
                 <input type="text" id="name" name="name" placeholder="Enter Your Name" required oninput="validateName('name')">
 
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required oninput="validateEmail('email')">
 
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
