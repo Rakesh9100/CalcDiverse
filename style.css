@@ -196,11 +196,15 @@ header {
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
 }
 
 .navbar a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem; /* Reduced font size for better alignment */
     font-weight: 700;
     padding: 0.5rem 1rem;
     border: 1px solid transparent;
@@ -209,9 +213,8 @@ header {
 }
 
 .image-logo {
-    float: left;
-    align-items: center;
     display: flex;
+    align-items: center;
 }
 
 .nav-link:hover {
@@ -220,23 +223,19 @@ header {
     border-bottom-color: #ff1b82;
 }
 
-nav {
+.nav-menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-}
-
-nav ul {
-    display: flex;
-    gap: 2rem;
+    gap: 1.5rem; /* Adjusted gap for better spacing */
     list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 .logo {
     font-size: 2.3rem;
     font-weight: 700;
-    margin-left: -10px;
+    margin-left: 10px; /* Adjusted margin */
     font-family: Ubuntu;
     color: #ffffff;
     transition: color 0.3s ease-in-out;
