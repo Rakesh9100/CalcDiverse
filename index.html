@@ -4597,7 +4597,41 @@
     <div id="progress">
         <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
-
+    <div id="pagination-controls" style="justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;">
+        <button id="prev" onclick="changePage(-1)" style="color: black;
+        font-weight: bold;margin-right:50px;padding:10px;cursor: pointer;
+        font-size:medium">Previous</button>
+        <span id="page-info" style="color:white;font-size: medium;"></span>
+        <button id="next" onclick="changePage(1)" style="color: black;
+        font-weight: bold;margin-left:50px;padding:10px;
+        font-size: medium;cursor: pointer;">Next</button>
+    </div>
+    <script>
+        const itemsPerPage = 10;
+        let currentPage = 1;
+    
+        function showPage(page) {
+            const boxes = document.querySelectorAll('.container .box');
+            const totalPages = Math.ceil(boxes.length / itemsPerPage);
+            currentPage = Math.max(1, Math.min(page, totalPages));
+    
+            boxes.forEach((box, index) => {
+                box.style.display = (index >= (currentPage - 1) * itemsPerPage && index < currentPage * itemsPerPage) ? 'block' : 'none';
+            });
+    
+            document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages}`;
+        }
+    
+        function changePage(direction) {
+            showPage(currentPage + direction);
+        }
+    
+    
+        // Initialize
+        showPage(currentPage);
+    </script>
     <!-- Scroll to Top Button Ends Here -->
 
     <!-- -----------------------------------Footer Code Starts ------------------------------------------- -->

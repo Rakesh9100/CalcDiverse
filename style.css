@@ -1323,12 +1323,14 @@ section {
     backdrop-filter: blur(10px);
     z-index: 1;
     transition: 0.5s;
+    top:10%;
     color: #fff;
 }
 
 .container .box:hover .content {
     left: -25px;
     padding: 60px 40px;
+    top:10px;
 }
 
 .container .box .content h2 {
