@@ -18,4 +18,4 @@ A simple web-based Population Prediction Calculator that allows users to predict
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c130627a-378e-4036-aabf-516f967f14cb)
+![image](https://github.com/user-attachments/assets/70641a51-9218-41d6-9442-2bdbd8a13016)
