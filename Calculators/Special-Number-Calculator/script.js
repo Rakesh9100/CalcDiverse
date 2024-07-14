@@ -4,7 +4,18 @@ function factorial(n) {
 }
 
 function checkSpecialNumber() {
-  const number = document.getElementById("number").value;
+  const numberInput = document.getElementById("number");
+  const number = numberInput.value;
+  const resultElement = document.getElementById("result");
+  const resultMessage = document.getElementById("resultMessage");
+
+  if (number === "") {
+    resultMessage.textContent = "Please enter a number";
+    resultMessage.style.color = "orange";
+    resultElement.style.display = "block";
+    return;
+  }
+
   const digits = number.split("");
   let sum = 0;
 
@@ -12,15 +23,12 @@ function checkSpecialNumber() {
     sum += factorial(parseInt(digit));
   }
 
-  const resultElement = document.getElementById("result");
-  const resultMessage = document.getElementById("resultMessage");
-
   if (sum == number) {
     resultMessage.textContent = `${number} is a special number!`;
-    resultMessage.style.color = "white";
+    resultMessage.style.color = "green";
   } else {
     resultMessage.textContent = `${number} is not a special number.`;
-    resultMessage.style.color = "white";
+    resultMessage.style.color = "red";
   }
 
   resultElement.style.display = "block";
