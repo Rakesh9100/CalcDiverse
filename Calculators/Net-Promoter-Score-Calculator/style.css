@@ -1,137 +1,136 @@
 body {
-  background: url("data:image/jpeg;base64,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")
-    no-repeat center top;
-  background-size: cover;
-  background-color: rgb(214, 227, 252);
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+    background: url("assets/background.jpeg") no-repeat center top;
+    background-size: cover;
+    background-color: rgb(214, 227, 252);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .overlay {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .overlay img {
-  margin-bottom: 350px;
-  width: 85%;
+    margin-bottom: 350px;
+    width: 85%;
 }
 
 .container {
-  background-color: rgba(246, 225, 244, 0.4);
-  padding: 2rem;
-  margin-top: 250px;
-  border-radius: 0.25rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
-  width: 100%;
-  max-width: 24rem;
-  position: relative;
-  z-index: 1; /* Ensure the container is above the overlay image */
+    background-color: rgba(246, 225, 244, 0.4);
+    padding: 2rem;
+    margin-top: 250px;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+    width: 100%;
+    max-width: 24rem;
+    position: relative;
+    z-index: 1; /* Ensure the container is above the overlay image */
 }
 
 h1 {
-  font-size: 1.5rem;
-  margin-bottom: 1.8rem;
-  text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
 }
 
 label {
-  display: block;
-  margin-bottom: 0.5rem;
-  margin-bottom: 20px;
-  font-size: 17px;
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-bottom: 20px;
+    font-size: 17px;
 }
 
 input[type="text"] {
-  width: 100%;
-  padding: 0.5rem;
-  border: 2px solid #030303;
-  border-radius: 0.25rem;
-  margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #030303;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
 }
 
 button {
-  display: block;
-  width: 60%;
-  margin: 20px auto 0; /* Ensures the button is centered */
-  background-color: #87b4fd;
-  color: rgb(7, 7, 7);
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-  border: 2px solid #3b82f6; /* Adds a border */
-  cursor: pointer;
-  text-align: center; /* Centers the text inside the button */
+    display: block;
+    width: 60%;
+    margin: 20px auto 0; /* Ensures the button is centered */
+    background-color: #87b4fd;
+    color: rgb(7, 7, 7);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 2px solid #3b82f6; /* Adds a border */
+    cursor: pointer;
+    text-align: center; /* Centers the text inside the button */
 }
 
 button:hover {
-  background: linear-gradient(to top left, crimson, rgb(159, 249, 159));
-  border: 2px solid #0d0e0f;
+    background: linear-gradient(to top left, crimson, rgb(159, 249, 159));
+    border: 2px solid #0d0e0f;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 #errorMessage {
-  color: #ff0606;
-  margin-top: 1rem;
-  text-align: center;
+    color: #ff0606;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 #result {
-  text-align: center;
+    text-align: center;
 }
 
 #result h2 {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 .mb-4 {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
-  .container {
-    margin-top: 300px; /* Adjust margin for smaller screens */
-    padding: 1.5rem; /* Reduce padding */
-    max-width: 90%; /* Increase max-width for better fit on smaller screens */
-  }
+    .container {
+        margin-top: 300px; /* Adjust margin for smaller screens */
+        padding: 1.5rem; /* Reduce padding */
+        max-width: 90%; /* Increase max-width for better fit on smaller screens */
+    }
 
-  h1 {
-    font-size: 1.25rem; /* Reduce font size */
-  }
+    h1 {
+        font-size: 1.25rem; /* Reduce font size */
+    }
 
-  label {
-    font-size: 15px;
-  }
+    label {
+        font-size: 15px;
+    }
 
-  button {
-    width: 70%; /* Increase button width */
-  }
+    button {
+        width: 70%; /* Increase button width */
+    }
 }
 
 @media (max-width: 480px) {
-  .container {
-    margin-top: 50px;
-    padding: 1rem;
-    max-width: 75%;
-  }
+    .container {
+        margin-top: 50px;
+        padding: 1rem;
+        max-width: 75%;
+    }
 
-  h1 {
-    font-size: 1rem;
-  }
+    h1 {
+        font-size: 1rem;
+    }
 
-  label {
-    font-size: 14px;
-  }
+    label {
+        font-size: 14px;
+    }
 
-  button {
-    width: 80%;
-  }
+    button {
+        width: 80%;
+    }
 }
