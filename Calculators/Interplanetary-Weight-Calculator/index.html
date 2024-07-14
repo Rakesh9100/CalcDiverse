@@ -1,32 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interplanetary Weight Calculator</title>
     <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-    <div class="calculator-container">
+    <div class="calculator">
         <h1>Interplanetary Weight Calculator</h1>
         <div class="background-image"></div>
-        <div class="calculator">
-            <label id="print" for="weight">Weight on Earth (kg):</label>
-            <input type="number" id="weight" placeholder="Enter weight in kilograms">
-            <label id="print" for="planet">Select a planet:</label>
-            <select id="planet">
-                <option value="mercury">Mercury</option>
-                <option value="venus">Venus</option>
-                <option value="earth" selected>Earth</option>
-                <option value="mars">Mars</option>
-                <option value="jupiter">Jupiter</option>
-                <option value="saturn">Saturn</option>
-                <option value="uranus">Uranus</option>
-                <option value="neptune">Neptune</option>
-            </select>
-            <button onclick="calculateWeight()">Calculate Weight</button>
-            <button onclick="clearForm()">Clear</button>
-        </div>
+        <label id="print" for="weight">Weight on Earth (kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight in kilograms">
+        <label id="print" for="planet">Select a planet:</label>
+        <select id="planet">
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="earth" selected>Earth</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+        </select>
+        <button onclick="calculateWeight()">Calculate Weight</button>
+        <button onclick="clearForm()">Clear</button>
         <div id="results">
             <p id="resultText"></p>
         </div>

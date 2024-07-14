@@ -1,49 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     min-height: 100vh;
     position: relative;
     flex-direction: column;
-}
+    
 
-.calculator-container {
-    width: 90%;
-    background-color: skyblue;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    text-align: center;
-    max-width: 600px;
-    overflow: hidden;
 }
 
 .calculator {
-    margin-bottom: 20px;
-    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    background-color: skyblue;
+    margin: 20px;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
+   
 }
 
 #print {
+    margin:10px;
     display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    text-align: center;
-    background-color: skyblue;
     color: black;
     font-size: 30px;
+    padding:10px;
 }
 
 input, select {
@@ -61,7 +49,7 @@ input, select {
 button {
     display: block;
     width: 100%;
-    margin: 10px 0;
+    margin-top: 20px ;
     padding: 10px;
     border: 1px solid white;
     border-radius: 5px;
@@ -69,7 +57,6 @@ button {
     font-size: 30px;
     color: #f0f0f0;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 button:hover {
@@ -77,14 +64,23 @@ button:hover {
 }
 
 #results {
-    margin-top: 20px;
-}
-
-#results p {
+    margin-top: 15px;
     font-size: 30px;
     color: black;
 }
 
+.info a {
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    color: white; 
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
 .background-image {
     position: fixed;
     top: 0;
@@ -98,37 +94,15 @@ button:hover {
     z-index: -1;
 }
 
-.info {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.info a {
-    display: inline-block;
-    font-size: 18px;
-    color: white; 
-    text-decoration: none;
-}
-
-.info a:hover {
-    text-decoration: underline;
-}
-
-
 @media (max-width: 768px) {
-    .calculator-container {
-        width: 90%;
+    .calculator {
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    input, select {
-        font-size: 16px;
-    }
-    button {
-        font-size: 16px;
-    }
-    .info a {
-        font-size: 16px;
+    #print, input, select, button, #results, .info a {
+        font-size: 20px;
+        padding: 5px;
     }
 }
