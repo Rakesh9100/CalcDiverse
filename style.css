@@ -1825,7 +1825,6 @@ footer {
 @media (max-width: 825px){
     .navbar a{
         font-size: 12px;
-        /* padding:0.1rem 0.5rem; */
      }
      nav ul{
         gap:0rem;
