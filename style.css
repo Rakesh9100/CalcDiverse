@@ -196,11 +196,13 @@ header {
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.37);
+    width: 100%;
+    min-width:fit-content;
 }
 
 .navbar a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     padding: 0.5rem 1rem;
     border: 1px solid transparent;
@@ -229,7 +231,8 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 1.5rem;
     list-style: none;
 }
 
@@ -1752,7 +1755,23 @@ footer {
     transform: scale(1.02);
     box-shadow: -5px -5px 10px #682572;
 }
+/* Google Translator*/
 
+.skiptranslate{
+    padding:0px;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+    padding:0 !important;
+    width:20px !important;
+ }
+ .goog-te-gadget{
+    padding-bottom: 0;
+ }
+ .goog-te-gadget .goog-te-combo{
+    background-color: #daf0f6;
+    border:1px solid #000;
+    border-radius: 10px;
+ }
 /* Media Queries */
 
 @media (max-width: 1030px) {
@@ -1761,6 +1780,15 @@ footer {
         text-align: center;
         width: auto;
         height: 80vh;
+    }
+    .navbar a{
+       font-size: 14px;
+    }
+    nav ul{
+        gap:0.2rem;
+    }
+    .logo{
+        font-size: 1.8rem;
     }
 }
 
@@ -1777,7 +1805,40 @@ footer {
         padding-bottom: 10px;
     }
 }
-
+@media (max-width: 915px){
+    .navbar a{
+        font-size: 12px;
+     }
+     .goog-te-gadget .goog-te-combo{
+        width:80%;
+        font-size: 12px;
+     }
+     .VIpgJd-ZVi9od-l4eHX-hSRGPd{
+        font-size: 8px !important;
+     }
+     .goog-te-gadget img {
+        width:15%;
+        height:auto;
+     }
+     
+}
+@media (max-width: 825px){
+    .navbar a{
+        font-size: 12px;
+        /* padding:0.1rem 0.5rem; */
+     }
+     nav ul{
+        gap:0rem;
+        padding:3px;
+     }
+     .nav-item{
+        min-width:fit-content;
+     }
+     .goog-te-gadget .goog-te-combo{
+        width:80%;
+        height:auto;
+     }
+}
 @media (max-width: 786px) {
     .hero-section {
         flex-direction: column;

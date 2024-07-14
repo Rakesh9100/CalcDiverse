@@ -51,6 +51,9 @@
                 <li class="nav-item">
                     <a href="./assets/contact/contact.html" class="nav-link"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
                 </li>
+                <li class="nav-item">
+                    <div id="google_translate_element" class="nav-link"></div>
+                </li>
 
             </ul>
             <div class="hamburger">
@@ -4454,6 +4457,15 @@
     </script>
 
     <script src="./script.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement(
+                {pageLanguage:'en'},
+                'google_translate_element'
+        );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
