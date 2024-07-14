@@ -80,7 +80,8 @@ button {
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s;
-    align-self: flex-start;
+    align-self: center;
+
 }
 
 button:hover {
@@ -92,27 +93,5 @@ button:hover {
     font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
-}
-
-#back {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    text-decoration: none;
-}
-
-#back button {
-    background-color: #4c4646;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s;
-}
-
-#back button:hover {
-    background-color: #141414;
-    transform: translateY(-2px);
+    text-align: center;
 }
