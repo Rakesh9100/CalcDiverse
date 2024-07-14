@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Unique Prime Number Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Unique Prime Number Calculator</h1>
+        <div class="calculator">
+            <input type="number" id="numberInput" placeholder="Enter a number"/>
+            <button onclick="checkUniquePrime()">Check Unique Prime</button>
+            <div id="result"></div>
+        </div>
+        <div class="range-calculator">
+            <h2>Find Unique Primes in Range</h2>
+            <input type="number" id="rangeStart" placeholder="Start" />
+            <input type="number" id="rangeEnd" placeholder="End" />
+            <button onclick="findUniquePrimesInRange()">
+            Find Unique Primes
+            </button>
+            <div id="rangeResult"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
