@@ -22,7 +22,7 @@ function calculateWeight() {
     document.getElementById('resultText').textContent = `Weight on ${planet.charAt(0).toUpperCase() + planet.slice(1)}: ${weightFormatted} N`;
 
    
-    displayFlashCard(planet);
+    
 }
 
 
@@ -30,5 +30,5 @@ function clearForm() {
     document.getElementById('weight').value = '';
     document.getElementById('planet').value = 'earth';
     document.getElementById('resultText').textContent = '';
-    hideFlashCard();
+   
 }
