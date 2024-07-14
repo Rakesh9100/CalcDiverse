@@ -2,6 +2,10 @@
 function calculateWeight() {
     const weightEarth = parseFloat(document.getElementById('weight').value);
     const planet = document.getElementById('planet').value;
+    if (isNaN(weightEarth) ) {
+        document.getElementById('resultText').innerText = "Please enter a value!!";
+        return;
+    }
 
     // Gravitational accelerations relative to Earth (m/s^2)
     const gravitationalAcc = {
