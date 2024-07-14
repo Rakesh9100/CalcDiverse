@@ -2,7 +2,7 @@
 
 ## Description :-
 
-A simple web-based Population Prediction Calculator that allows users to predict the population after taking inputs as starting population, births per year, deaths per year and total number of years for which to predict.
+A simple web-based Population Prediction Calculator that allows users to predict the population after taking inputs such as starting population, births per year, deaths per year, and total number of years for which to predict.
 
 ## Tech Stacks :-
 
@@ -18,4 +18,4 @@ A simple web-based Population Prediction Calculator that allows users to predict
 
 ## Screenshots :-
 
-![image](https://github.com/user-attachments/assets/70641a51-9218-41d6-9442-2bdbd8a13016)
+![image](https://github.com/user-attachments/assets/6a4c780b-4b90-42bc-bef7-3591d47a67d5)
