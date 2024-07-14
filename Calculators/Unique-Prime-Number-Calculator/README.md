@@ -6,9 +6,9 @@ The Unique Prime Number Calculator is a web-based tool designed to identify and 
 
 ## Tech Stacks :-
 
--   HTML
--   CSS
--   JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ## Features :-
 
@@ -17,3 +17,5 @@ Prime Check: Enter a number to determine if it is a unique prime. The calculator
 Range Finder: Input a range of numbers to find all unique prime numbers within that range. The tool will display all unique prime numbers that satisfy the conditions within the specified range.
 
 ## Screenshots :-
+
+![image](https://github.com/user-attachments/assets/c9b7b3c6-11b9-4be1-bb94-213d099da413)
