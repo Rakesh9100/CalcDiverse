@@ -343,6 +343,8 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 | 277 | Weight On The Moon Calculator | Calculates the weight of the object/person on the moon. | https://calcdiverse.netlify.app/calculators/weight-on-the-moon-calculator/ |
 | 278 | Word Count Calculator | Counts the Total Words, Unique words, Average word length and Exports the data in JSON. | https://calcdiverse.netlify.app/calculators/word-count-calculator/ |
 | 279 | Yarn Density Calculator | Calculates the linear density of the yarn from unit system to another. | https://calcdiverse.netlify.app/calculators/yarn-density-calculator/ |
+| 281 | Annulus Calculator | Calculates the area of circle with inner and outer radius. | https://calcdiverse.netlify.app/calculators/Annulus-Calculator/ |
+
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
