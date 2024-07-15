@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Annulus Calculator</title>
+    <style>
+      /* Add some basic styling for the diagram */
+     .diagram {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin: 20px ;
+      }
+     .outer-circle {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        border-radius: 50%;
+        position: relative;
+      }
+     .inner-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -21,13 +47,37 @@
             <button type="submit">Calculate</button>
         </form>
         <div id="result"></div>
-        <div id="example">
-            <h2>Example</h2>
-            <p>Consider an annulus with an outer radius of 5 units and an inner radius of 3 units.</p>
-            <p>Enter the outer radius as: <strong>5</strong></p>
-            <p>Enter the inner radius as: <strong>3</strong></p>
+     <br><br><br><br><br>
+        <div class="diagram">
+          <div class="outer-circle" id="outer-circle"></div>
+          <div class="inner-circle" id="inner-circle"></div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+      const form = document.getElementById('annulusForm');
+      const outerRadiusInput = document.getElementById('outerRadius');
+      const innerRadiusInput = document.getElementById('innerRadius');
+      const resultDiv = document.getElementById('result');
+      const outerCircle = document.getElementById('outer-circle');
+      const innerCircle = document.getElementById('inner-circle');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const outerRadius = parseFloat(outerRadiusInput.value);
+        const innerRadius = parseFloat(innerRadiusInput.value);
+        const area = calculateAnnulusArea(outerRadius, innerRadius);
+        resultDiv.innerText = `The area of the annulus is: ${area.toFixed(2)}`;
+
+        // Update the diagram
+        outerCircle.style.width = `${outerRadius * 2}px`;
+        outerCircle.style.height = `${outerRadius * 2}px`;
+        innerCircle.style.width = `${innerRadius * 2}px`;
+        innerCircle.style.height = `${innerRadius * 2}px`;
+      });
+
+      function calculateAnnulusArea(outerRadius, innerRadius) {
+        return Math.PI * (outerRadius ** 2 - innerRadius ** 2);
+      }
+    </script>
 </body>
 </html>
