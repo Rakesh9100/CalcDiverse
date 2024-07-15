@@ -17,4 +17,4 @@ Handles queries for large numbers too
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/a3c1bb69-ebf0-4167-b44d-dcc2a2d76570)
+![image](https://github.com/user-attachments/assets/eb0d76f5-925d-4b05-b521-e739fd55aefb)
