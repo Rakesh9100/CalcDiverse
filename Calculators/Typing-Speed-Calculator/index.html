@@ -1,3 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Typing Speed Calculator</title>
+</head>
+
+<body onload="getRandomSentence()">
+    <h1>Typing Speed Test</h1>
+    <div id="controls">
+        <div class="dropdown-group">
+            <p>Difficulty</p>
+            <select id="difficulty-dropdown" onchange="setDifficulty(this.value)">
+                <option value="" selected disabled>Select </option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div class="dropdown-group">
+            <p> Duration </p>
+            <select id="duration-dropdown" onchange="setDuration(this.value)">
+                <option value="" selected disabled> Select</option>
+                <option value="1">1 Minute</option>
+                <option value="3">3 Minutes</option>
+                <option value="5">5 Minutes</option>
+            </select>
+        </div>
+    </div>
+    <div id="typing-box">
+        <p>Choose a level. Click 'Start Test' to begin!</p>
+        <p id="text-to-type"></p>
+        <div class="form-wrapper">
+            <input type="text" id="user-input" oninput="checkInput()" onpaste="return false;" disabled>
+            <button id="reset-button" onclick="resetInput()">Reset</button>
+        </div>
+        <div class="button-wrapper">
+            <button onclick="startTest()">Start Test</button>
+            <button onclick="retakeTest()">Retake Test</button>
+        </div>
+        <p id="speed-result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,17 +62,23 @@
 <body onload="getRandomSentence()">
     <h1>Typing Speed Test</h1>
     <div id="controls">
-        <div class="button-group">
-            <p>Select Difficulty-</p>
-            <button onclick="setDifficulty('easy')" data-type="difficulty" data-value="easy">Easy</button>
-            <button onclick="setDifficulty('medium')" data-type="difficulty" data-value="medium">Medium</button>
-            <button onclick="setDifficulty('hard')" data-type="difficulty" data-value="hard">Hard</button>
+        <div class="dropdown-group">
+            <p>Difficulty</p>
+            <select id="difficulty-dropdown" onchange="setDifficulty(this.value)">
+                <option value="" selected disabled>Select</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
         </div>
-        <div class="button-group">
-            <p>Select Duration-</p>
-            <button onclick="setDuration(1)" data-type="duration" data-value="1">1 Minute</button>
-            <button onclick="setDuration(3)" data-type="duration" data-value="3">3 Minutes</button>
-            <button onclick="setDuration(5)" data-type="duration" data-value="5">5 Minutes</button>
+        <div class="dropdown-group">
+            <p>Duration</p>
+            <select id="duration-dropdown" onchange="setDuration(this.value)">
+                <option value="" selected disabled>Select</option>
+                <option value="1">1 Minute</option>
+                <option value="3">3 Minutes</option>
+                <option value="5">5 Minutes</option>
+            </select>
         </div>
     </div>
     <div id="typing-box">
