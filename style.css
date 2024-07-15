@@ -236,6 +236,12 @@ nav ul {
     list-style: none;
 }
 
+#active1 {
+    color: #ff1b82;
+    border-top-color: #ff1b82;
+    border-bottom-color: #ff1b82;
+}
+
 .logo {
     font-size: 2.3rem;
     font-weight: 700;
@@ -1774,6 +1780,12 @@ footer {
  }
 /* Media Queries */
 
+@media (max-width: 1060px) {
+    .navbar .nav-link {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 1030px) {
     .hero-section {
         flex-direction: column;
@@ -1782,13 +1794,24 @@ footer {
         height: 80vh;
     }
     .navbar a{
-       font-size: 14px;
+        font-size: 14px;
+     }
+     nav ul{
+         gap:0.2rem;
+     }
+     .logo{
+         font-size: 1.8rem;
+     }
+
+    .navbar .nav-link {
+        font-size: 16px;
     }
-    nav ul{
-        gap:0.2rem;
-    }
-    .logo{
-        font-size: 1.8rem;
+}
+
+@media (max-width: 1000px) {
+    .navbar .nav-link {
+        padding-right: 6px;
+        padding-left: 6px;
     }
 }
 
@@ -1804,10 +1827,20 @@ footer {
         border: 1px transparent;
         padding-bottom: 10px;
     }
+
+    .navbar .nav-link {
+        font-size: 15px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
 }
 @media (max-width: 915px){
     .navbar a{
         font-size: 12px;
+     }
+     nav ul{
+        gap:0.1rem;
+        padding:3px;
      }
      .goog-te-gadget .goog-te-combo{
         width:80%;
@@ -1838,7 +1871,14 @@ footer {
         height:auto;
      }
 }
-@media (max-width: 786px) {
+
+@media (max-width: 800px) {
+    .navbar .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
         text-align: center;

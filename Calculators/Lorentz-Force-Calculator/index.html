@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lorentz Force Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorentz Force Calculator</h1>
+        <div class="form-group">
+            <label for="magneticField">Magnetic Field</label>
+            <input type="number" id="magneticField" placeholder="Value">
+            <select id="magneticFieldUnit">
+                <option value="1">T</option>
+                <option value="0.001">mT</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="charge">Charge</label>
+            <input type="number" id="charge" placeholder="Value">
+            <select id="chargeUnit">
+                <option value="1">C</option>
+                <option value="1e-6">µC</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="velocity">Velocity</label>
+            <input type="number" id="velocity" placeholder="Value">
+            <select id="velocityUnit">
+                <option value="1">m/s</option>
+                <option value="0.001">km/s</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="angle">Angle</label>
+            <input type="number" id="angle" value="90" placeholder="Degrees">
+            <select id="angleUnit">
+                <option value="deg">deg</option>
+                <option value="rad">rad</option>
+            </select>
+        </div>
+        <button class="btn" onclick="calculateForce()">Calculate Force</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

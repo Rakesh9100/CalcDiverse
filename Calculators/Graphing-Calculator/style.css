@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ea1818;
+    background-color: #18a8ea;
     margin: 0;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@ input {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #18a8ea;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -38,5 +38,5 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: blue;
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cat Quality Of Life Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cat Quality Of Life Calculator</h1>
+        <form id="cat-life-form">
+            <label for="hurt">Hurt (1-10):</label>
+            <input type="number" id="hurt" name="hurt" min="1" max="10" required>
+
+            <label for="hunger">Hunger (1-10):</label>
+            <input type="number" id="hunger" name="hunger" min="1" max="10" required>
+
+            <label for="hydration">Hydration (1-10):</label>
+            <input type="number" id="hydration" name="hydration" min="1" max="10" required>
+
+            <label for="hygiene">Hygiene (1-10):</label>
+            <input type="number" id="hygiene" name="hygiene" min="1" max="10" required>
+
+            <label for="happiness">Happiness (1-10):</label>
+            <input type="number" id="happiness" name="happiness" min="1" max="10" required>
+
+            <label for="mobility">Mobility (1-10):</label>
+            <input type="number" id="mobility" name="mobility" min="1" max="10" required>
+
+            <label for="goodDays">More Good Days than Bad (1-10):</label>
+            <input type="number" id="goodDays" name="goodDays" min="1" max="10" required>
+
+            <button type="submit">Calculate Life Quality</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

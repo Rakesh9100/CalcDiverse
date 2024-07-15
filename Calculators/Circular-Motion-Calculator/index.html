@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Circular Motion Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <label for="calculationType">Select Calculation Type:</label>
+        <select id="calculationType" onchange="toggleCalculationInputs()">
+            <option value="centripetalAcceleration">Centripetal Acceleration</option>
+            <option value="angularFrequency">Angular Frequency</option>
+            <option value="period">Period</option>
+            <option value="frequency">Frequency</option>
+        </select>
+        <div id="centripetalAccelerationInputs">
+            <label for="velocity">Velocity (v) in m/s:</label>
+            <input type="number" id="velocityInput" placeholder="Enter velocity">
+            <label for="radius">Radius (r) in m:</label>
+            <input type="number" id="radiusInput" placeholder="Enter radius">
+        </div>
+        <div id="angularFrequencyInputs" style="display:none;">
+            <label for="velocityAngular">Velocity (v) in m/s:</label>
+            <input type="number" id="velocityAngularInput" placeholder="Enter velocity">
+            <label for="radiusAngular">Radius (r) in m:</label>
+            <input type="number" id="radiusAngularInput" placeholder="Enter radius">
+        </div>
+        <div id="periodInputs" style="display:none;">
+            <label for="velocityPeriod">Velocity (v) in m/s:</label>
+            <input type="number" id="velocityPeriodInput" placeholder="Enter velocity">
+            <label for="radiusPeriod">Radius (r) in m:</label>
+            <input type="number" id="radiusPeriodInput" placeholder="Enter radius">
+        </div>
+        <div id="frequencyInputs" style="display:none;">
+            <label for="velocityFrequency">Velocity (v) in m/s:</label>
+            <input type="number" id="velocityFrequencyInput" placeholder="Enter velocity">
+            <label for="radiusFrequency">Radius (r) in m:</label>
+            <input type="number" id="radiusFrequencyInput" placeholder="Enter radius">
+        </div>
+        <div class="button-container">
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="resetCalculator()">Reset</button>
+            <button onclick="clearResult()">Clear</button>
+        </div>
+        <div id="result" class="result-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
