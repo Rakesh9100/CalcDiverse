@@ -6,16 +6,20 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: url(https://www.shutterstock.com/image-photo/math-cost-tax-investment-calculation-600nw-1096664663.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .container {
-    background-color: white;
+    background-color: rgb(172, 170, 170);
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
+    width: 50%;
 }
 
 .form-group {
