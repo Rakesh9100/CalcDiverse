@@ -1,0 +1,69 @@
+body {
+  background-image: "assets/background.jpg";
+  background-size: cover !important;
+  background-position: center !important;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#blood-sugar-calculator {
+  margin-top: 20px;
+}
+#result {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.result {
+  font-size: 40px;
+  font-weight: 700;
+}
+#result {
+  display: flex;
+  flex-direction: column;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+#blood-sugar-calculator {
+    margin-top: 20px;
+}
+
+#result {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#blood-sugar-status {
+    font-size: 18px;
+    font-weight: bold;
+}
+#result{
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 10px;
+}
+
+.Normal {
+    background-color: #C6F7D0; /* light green */
+}
+
+.Pre-diabetes {
+    background-color: #F7DC6F; /* light yellow */
+}
+
+.Diabetes {
+    background-color: #FFC080; /* light orange */
+}
+
+.Low-blood-sugar {
+    background-color: #FF69B4; /* light pink */
+}
