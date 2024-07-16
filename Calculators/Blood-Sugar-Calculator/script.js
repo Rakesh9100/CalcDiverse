@@ -6,7 +6,8 @@ $(document).ready(function () {
     var bloodSugarLevel = parseInt($("#blood-sugar-level").val());
 
     var normalRange, preDiabetesRange, diabetesRange, lowBloodSugarRange;
-
+    /*if-else loop for test results*/
+    /*Fasting */
     if (testType === "fasting") {
       if (age <= 5) {
         normalRange = [70, 99];
@@ -34,6 +35,8 @@ $(document).ready(function () {
         diabetesRange = [126, Infinity];
         lowBloodSugarRange = [0, 69];
       }
+      /*if-else loop for test results*/
+      /*Random */
     } else {
       if (age <= 5) {
         normalRange = [70, 140];
@@ -62,6 +65,7 @@ $(document).ready(function () {
         lowBloodSugarRange = [0, 69];
       }
     }
+    /*giving results and changing color with changing results*/
 
     if (bloodSugarLevel < lowBloodSugarRange[1]) {
       $("#blood-sugar-status").text("Low Blood Sugar");
@@ -84,3 +88,4 @@ $(document).ready(function () {
     }
   });
 });
+/*Document-ends*/
