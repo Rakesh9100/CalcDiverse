@@ -128,6 +128,7 @@ window.addEventListener('scroll', function () {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 const input = document.getElementById('calculatorSearch');
+const paginationControls = document.getElementById('pagination-controls');
 let calculators = document.querySelectorAll('.container .box');
 let h2TextContents = [];
 
@@ -137,7 +138,27 @@ calculators.forEach(calculator => {
         h2TextContents.push(h2Element.textContent);
     }
 });
+input.addEventListener('input', (e) => {
+    const searchTerm = e.target.value.toLowerCase();
+    let filtered = h2TextContents.filter(ele => ele.toLowerCase().includes(searchTerm));
 
+    calculators.forEach(calculator => {
+        const h2 = calculator.querySelector('h2');
+        if (h2 && h2.textContent.toLowerCase().includes(searchTerm)) {
+            calculator.style.display = 'flex';
+        } else {
+            calculator.style.display = 'none';
+        }
+    });
+
+    // Hide pagination controls if search input has any value
+    if (searchTerm.length > 0) {
+        paginationControls.style.display = 'none';
+    } else {
+        paginationControls.style.display = 'flex'; // Show pagination controls when search input is cleared
+        showPage(currentPage); // Reset pagination
+    }
+});
 let search_input_container = document.querySelector('.search-input-container'),
     calculatorSearch = document.getElementById('calculatorSearch')
 input.addEventListener('input', (e) => {
@@ -153,6 +174,7 @@ input.addEventListener('input', (e) => {
         const searchTerm = e.target.value.toLowerCase();
         const elementText = ele.toLowerCase();
         return elementText.includes(searchTerm);
+        
     });
     if (filtered && e.target.value.length > 0) {
         filtered.map((item, index) => {
@@ -207,9 +229,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('noResults').style.display = 'none';
 });
 
+
 // Voice command in search bar feature
 const searchBar = document.querySelector("#searchBar");
 const searchBarInput = searchBar.querySelector("input");
+const pagination = document.getElementById("pagination-controls")
 
 // The speech recognition interface lives on the browser’s window object
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; // if none exists -> undefined
@@ -219,10 +243,8 @@ if (SpeechRecognition) {
 
     const recognition = new SpeechRecognition();
     recognition.continuous = true;
-    // recognition.lang = "en-US";
 
     searchBar.insertAdjacentHTML("beforeend", '<button type="button"><i class="fas fa-microphone"></i></button>');
-    // searchBarInput.style.paddingRight = "50px";
 
     const micBtn = searchBar.querySelector("button");
     const micIcon = micBtn.firstElementChild;
@@ -237,15 +259,16 @@ if (SpeechRecognition) {
         }
     }
 
-    recognition.addEventListener("start", startSpeechRecognition); // <=> recognition.onstart = function() {...}
+
+    recognition.addEventListener("start", startSpeechRecognition);
     function startSpeechRecognition() {
         micIcon.classList.remove("fa-microphone");
         micIcon.classList.add("fa-microphone-slash");
-        searchFormInput.focus();
+        searchBarInput.focus();
         console.log("Voice activated, SPEAK");
     }
 
-    recognition.addEventListener("end", endSpeechRecognition); // <=> recognition.onend = function() {...}
+    recognition.addEventListener("end", endSpeechRecognition);
     function endSpeechRecognition() {
         micIcon.classList.remove("fa-microphone-slash");
         micIcon.classList.add("fa-microphone");
@@ -253,7 +276,7 @@ if (SpeechRecognition) {
         console.log("Speech recognition service disconnected");
     }
 
-    recognition.addEventListener("result", resultOfSpeechRecognition); // <=> recognition.onresult = function(event) {...} - Fires when you stop talking
+    recognition.addEventListener("result", resultOfSpeechRecognition);
     function resultOfSpeechRecognition(event) {
         const current = event.resultIndex;
         const transcript = event.results[current][0].transcript;
@@ -264,9 +287,7 @@ if (SpeechRecognition) {
     }
 } else {
     console.log("Your Browser does not support speech Recognition");
-    info.textContent = "Your Browser does not support Speech Recognition";
 }
-
 function validateName(inputId) {
     let input = document.getElementById(inputId);
     let value = input.value;
