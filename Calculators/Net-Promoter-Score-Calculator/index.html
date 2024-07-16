@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Net Promoter Score Calculator</title>
+</head>
+<body>
+    <div class="overlay">
+        <img src="assets/image.png" alt="Centered Image" />
+    </div>
+    <div class="container">
+        <h1>NPS Calculator</h1>
+        <form id="npsForm">
+            <label for="scores">Enter scores (comma separated):</label>
+            <input type="text" id="scores" placeholder="e.g., 9,10,7,8,6" />
+            <button type="submit">Calculate NPS</button>
+        </form>
+        <div id="errorMessage" class="hidden"></div>
+        <div id="result" class="hidden">
+            <h2>NPS Score: <span id="npsScore"></span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
