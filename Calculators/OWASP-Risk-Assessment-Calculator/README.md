@@ -12,4 +12,4 @@ An online calculator to assess the risk of web vulnerabilities based on OWASP Ri
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/142833275/802bc596-b90d-469b-bb6b-fbecb6ac52df)
+![image](https://github.com/user-attachments/assets/a2d75686-f372-4c8e-b7ab-11c2ade02cf2)
