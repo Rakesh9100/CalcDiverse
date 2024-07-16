@@ -9,24 +9,22 @@ function calculateTriangleCentroidpoint(event) {
     const cx = parseFloat(document.getElementById('x3').value);
     const cy = parseFloat(document.getElementById('y3').value);
 
-     // Calculate midpoints
-     let midpointABx = (ax + bx) / 2;
-     let midpointABy = (ay + by) / 2;
-     let midpointBCx = (bx + cx) / 2;
-     let midpointBCy = (by + cy) / 2;
-     let midpointCAx = (cx + ax) / 2;
-     let midpointCAy = (cy + ay) / 2;
+    // Calculate midpoints
+    let midpointABx = (ax + bx) / 2;
+    let midpointABy = (ay + by) / 2;
+    let midpointBCx = (bx + cx) / 2;
+    let midpointBCy = (by + cy) / 2;
+    let midpointCAx = (cx + ax) / 2;
+    let midpointCAy = (cy + ay) / 2;
 
-    
-    //Calculate the Trisection point
+    // Calculate the Trisection point
     const m1 = ((ax + bx + cx) / 3).toFixed(2);
     const m2 = ((ay + by + cy) / 3).toFixed(2);
 
-    let centroidtext=Math.sqrt((m2-cy)*(m2-cy)/(m1-cx)*(m1-cx));
+    let centroidtext = Math.sqrt((m2 - cy) * (m2 - cy) / (m1 - cx) * (m1 - cx));
 
     // Display the result
     document.getElementById('result').textContent = `Centroid Points: (${m1}, ${m2})`;
-
 
     // Draw the triangle and lines on canvas
     let canvas = document.getElementById("triangleCanvas");
@@ -36,8 +34,8 @@ function calculateTriangleCentroidpoint(event) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // Set styles
-    ctx.strokeStyle = '#ffffff'; 
-    ctx.fillStyle =  '#ffffff'; 
+    ctx.strokeStyle = '#ffffff';
+    ctx.fillStyle = '#ffffff';
     ctx.font = '14px Arial';
 
     // Draw triangle
@@ -48,7 +46,7 @@ function calculateTriangleCentroidpoint(event) {
     ctx.closePath();
     ctx.stroke();
 
-    //change style
+    // Change style
     ctx.strokeStyle = '#FFA500'; // Orange
     ctx.fillStyle = '#FFA500'; // Orange
 
@@ -62,18 +60,17 @@ function calculateTriangleCentroidpoint(event) {
     ctx.lineTo(midpointABx, midpointABy);
     ctx.stroke();
 
-     // Set styles
-     ctx.strokeStyle = '#ffffff'; 
-     ctx.fillStyle =  '#ffffff'; 
+    // Set styles
+    ctx.strokeStyle = '#ffffff';
+    ctx.fillStyle = '#ffffff';
     // Draw points A, B, C and their coordinates
     ctx.fillText(`A (${ax}, ${ay})`, ax - 30, ay - 10);
     ctx.fillText(`B (${bx}, ${by})`, bx - 30, by + 15);
     ctx.fillText(`C (${cx}, ${cy})`, cx + 5, cy + 15);
 
-
-     //change style
-     ctx.strokeStyle = '#FFA500'; // Orange
-     ctx.fillStyle = '#FFA500'; // Orange
+    // Change style
+    ctx.strokeStyle = '#FFA500'; // Orange
+    ctx.fillStyle = '#FFA500'; // Orange
 
     // Draw midpoints and label them
     ctx.beginPath();
@@ -95,25 +92,15 @@ function calculateTriangleCentroidpoint(event) {
     ctx.arc(m1, m2, 5, 0, 2 * Math.PI);
     ctx.fill();
 
-    // Label centroid
-    //  ctx.fillStyle = 'red';
-    //ctx.fillText(`Centroid (${m1}, ${m2})`, m1, m2+100 );
-
-
     var canvas1 = document.getElementById("triangleCanvas");
     var x = event.clientX - canvas.offsetLeft;
     var y = event.clientY - canvas.offsetTop;
     var width = x + canvas1.width;
     var height = y + canvas1.height;
-    if (x > 0 && y > 0) 
-        {
-    canvas1.width = Math.max(50, width);
-    canvas1.height = Math.max(30, height);
-    }           
-  
-  
-   // document.getElementById('centroidtext').textContent = `Centroid Points: (${m1}, ${m2})`
-
+    if (x > 0 && y > 0) {
+        canvas1.width = Math.max(50, width);
+        canvas1.height = Math.max(30, height);
+    }
 }
 
 // Clear the input fields and result when the page is loaded or refreshed
@@ -124,6 +111,3 @@ window.onload = function () {
     document.getElementById('y2').value = '';
     document.getElementById('result').textContent = '';
 }
-
-
-
