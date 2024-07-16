@@ -4,13 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
 }
 
 body {
     color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 177, 226, 1) 35%, rgba(117, 210, 230, 1) 100%);
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(224, 177, 226, 1) 35%,
+            rgba(117, 210, 230, 1) 100%);
+    text-align: center;
 }
 
 header {
@@ -22,7 +26,10 @@ header {
     font-weight: 600;
     color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 177, 226, 1) 35%, rgba(117, 210, 230, 1) 100%);
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(224, 177, 226, 1) 35%,
+            rgba(117, 210, 230, 1) 100%);
 }
 
 .container {
@@ -33,7 +40,6 @@ header {
     border-radius: 1em;
     padding: 10px 10px;
     width: 75%;
-
 }
 
 .container-main {
@@ -42,7 +48,6 @@ header {
 
 .inline-block {
     display: inline-block;
-
 }
 
 fieldset {
@@ -52,7 +57,6 @@ fieldset {
     padding: 0;
     border: 0;
 }
-
 
 label,
 span,
@@ -151,7 +155,7 @@ input {
 .result-trap,
 .result {
     padding: 5px 5px;
-    margin: 5px 5px 10px 5px;
+    margin: 10px 5px 10px 5px;
 }
 
 .result-rect,
@@ -168,4 +172,66 @@ input {
 .result {
     text-align: center;
     font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    .input-cb {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 95%;
+    }
+
+    .input-cb {
+        width: 30%;
+    }
+
+    .label-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .label-text {
+        font-size: 15px;
+    }
+
+    .input-step {
+        width: 100px;
+    }
+
+    .input-range-from,
+    .input-range-to {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .input-cb {
+        width: 25%;
+    }
+
+    .input-range-from,
+    .input-range-to {
+        width: 50px;
+    }
 }

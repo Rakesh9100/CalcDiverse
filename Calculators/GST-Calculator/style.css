@@ -6,6 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .calculator-container {
@@ -15,6 +16,18 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     animation: fadeInUp 0.8s ease-out;
+    width: 600px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.calculator-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.calculator-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ec6ead;
 }
 
 button {

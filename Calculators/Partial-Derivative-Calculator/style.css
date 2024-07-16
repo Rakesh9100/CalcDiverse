@@ -1,0 +1,75 @@
+body {
+    background-color: #e0e5ec;
+    /* Light background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="text"],
+button {
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #e0e5ec;
+    box-shadow: inset 8px 8px 8px #bebebe,
+        inset -8px -8px 8px #ffffff;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    box-shadow: 8px 8px 8px #bebebe,
+        -8px -8px 8px #ffffff;
+}
+
+input[type="text"]:focus {
+    box-shadow: inset 8px 8px 8px #bebebe,
+        inset -8px -8px 8px #ffffff;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    box-shadow: 8px 8px 15px #bebebe,
+        -8px -8px 15px #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d1d9e6;
+}
+
+button:active {
+    transform: translate(4px, 4px);
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}

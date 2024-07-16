@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pipe Flow Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pipe Flow Calculator</h1>
+        <h4>Solve For:</h4>
+        <form id="pipeFlowForm">
+            <div class="radio-group">
+                <label><input type="radio" name="solveFor" value="flowRate" onclick="updateForm()"> Flow Rate (Q)</label>
+                <label><input type="radio" name="solveFor" value="velocity" onclick="updateForm()"> Velocity (V)</label>
+                <label><input type="radio" name="solveFor" value="diameter" onclick="updateForm()"> Diameter (D)</label>
+            </div>
+            <div id="inputFields"></div>
+            <button type="button" onclick="calculatePipeFlow()">Calculate</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
