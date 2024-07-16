@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Thermal Expansion Calculator</title>
+</head>
+<body>
+    <h1>Thermal Expansion Calculator</h1>
+    <div class="calculator-container">
+        <div class="input-container">
+            <label for="initialLength">Initial Length (metres):</label>
+            <input type="number" id="initialLength" placeholder="Enter initial length">
+        </div>
+        <div class="input-container">
+            <label for="expansionCoefficient">Thermal Expansion Coefficient (α):</label>
+            <input type="number" id="expansionCoefficient" placeholder="Enter coefficient" step="any">
+        </div>
+        <div class="input-container">
+            <label for="temperatureChange">Temperature Change (Kelvin):</label>
+            <input type="number" id="temperatureChange" placeholder="Enter temperature change">
+        </div>
+        <button onclick="calculateExpansion()">Calculate ΔL</button>
+        <div class="result-container">
+            <p id="result">Result will appear here.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
