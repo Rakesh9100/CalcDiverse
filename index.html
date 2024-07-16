@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/pagination/pagination.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <title>CalcDiverse</title>
+   
 </head>
 
 <body class="containers" id="home">
@@ -4660,7 +4662,14 @@
         </div>
 
     </div>
-
+    <div class="pagination">
+        <button class="pagination-button" onclick="firstPage()">««</button>
+        <button class="pagination-button" onclick="previousPage()">‹</button>
+        <span class="page-numbers"></span>
+        <button class="pagination-button" onclick="nextPage()">›</button>
+        <button class="pagination-button" onclick="lastPage()">»»</button>
+        <input type="number" id="page-input" min="1" max="1" oninput="goToPageInput()" placeholder="1"> of <span id="total-pages">1</span> items
+    </div>
     <!-- Calculator Section Ends Here  -->
 
     <!-- Scroll to Top Button Starts Here -->
@@ -4733,6 +4742,9 @@
     </script>
 
     <script src="./script.js"></script>
+    <script src="./assets/pagination/pagination.js">
+
+    </script>
 </body>
 
 </html>
