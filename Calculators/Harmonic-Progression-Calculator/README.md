@@ -2,7 +2,7 @@
 
 ## Description :-
 
-A simple web-based calculator to find the nth term of a Harmonic Progression (HP).
+A simple web-based calculator to find the nth term, sum of terms and harmonic mean of a Harmonic Progression (HP).
 
 ## Tech Stacks :-
 
