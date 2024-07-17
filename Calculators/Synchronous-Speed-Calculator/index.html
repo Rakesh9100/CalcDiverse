@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synchronous Speed Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="Calc-card">
+            <h1 id = "title">Synchronous Speed Calculator</h1>
+            <form class = "calc-form">
+                <div id="pole-div" class="input-container">
+                    <label for="poles">Number of Poles:</label>
+                    <input class = "input-box" type="number" id="poles" placeholder="Enter Number of Poles" autocomplete="off">
+                </div>
+                <div id="freq-div" class="input-container">
+                    <label for="frequency">Frequency (in Hz):</label>
+                    <input class = "input-box" type="number" id="frequency" placeholder="Enter Frequency" autocomplete="off">
+                </div>
+                <div id="sync-div" class="input-container" style="display: none;">
+                    <label for="speed">Synchronous Speed (in RPM):</label>
+                    <input class = "input-box"
+                    type="number" id="speed" placeholder="Enter Synchronous Speed" autocomplete="off">
+                </div>
+                <button id="calc-button">Calculate</button>
+            </form>
+            <div id="output"></div>
+            <form class="switch-form"></form>
+                <div class="switch-input-container">
+                    <label for="switch-select">Switch Calculator:</label>
+                    <select id="switch-select" name="switch-select" autocomplete="off">
+                        <option value="frequency">Frequency Calculator</option>
+                        <option value="poles">Number of Poles Calculator</option>
+                        <option value="sync" selected>Synchronous Speed Calculator</option>
+                    </select>
+                </div>
+            </form>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
