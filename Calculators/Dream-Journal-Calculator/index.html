@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dream Journal Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Dream Journal Calculator</h1>
+        <form id="dreamForm">
+            <label for="dreamTitle">Dream Title:</label>
+            <input type="text" id="dreamTitle" name="dreamTitle" required>
+            <label for="dreamDate">Date:</label>
+            <input type="date" id="dreamDate" name="dreamDate" required>
+            <label for="dreamEntry">Dream Entry:</label>
+            <textarea id="dreamEntry" name="dreamEntry" rows="4" required></textarea>
+            <label for="dreamEmotions">Emotions (comma-separated):</label>
+            <input type="text" id="dreamEmotions" name="dreamEmotions" required>
+            <button type="submit">Analyze Dream</button>
+            <button type="button" id="resetButton">Reset</button>
+        </form>
+        <h2>Word Cloud</h2>
+        <div id="wordCloud" style="width: 100%; height: 400px;"></div>
+        <h2>Analysis</h2>
+        <div id="analysis"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.0/wordcloud2.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
