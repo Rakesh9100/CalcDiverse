@@ -11,5 +11,6 @@ The synchronous speed calculator is a simple calculator that allows users to cal
 - JavaScript
 
 ## Screenshots :-
+![image](https://github.com/user-attachments/assets/ead19f0b-1033-4657-bfb3-576b0b4d623c)
 
 
