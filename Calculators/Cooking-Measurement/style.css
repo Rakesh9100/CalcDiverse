@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #00bcd4;
-    background-image: url('https://www.tasteofhome.com/wp-content/uploads/2022/04/GettyImages-1249201938.jpg');
+    background-image: url('./assets/bg-img.jpg');
     background-size: cover;
     background-position: center;
 }
