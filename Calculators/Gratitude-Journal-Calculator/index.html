@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gratitude Journal Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gratitude Journal Calculator</h1>
+        <div class="journal-input">
+            <label for="gratitude-input">Enter your gratitude points for today:</label>
+            <div class="input-group">
+                <input type="text" id="gratitude-input" placeholder="E.g., Thank you, Well done, Great job">
+                <button id="add-btn">Add</button>
+            </div>
+            <p id="error-message" class="hidden">Negative words are not allowed.</p>
+        </div>
+        <div class="added-gratitudes">
+            <h3>Gratitudes</h3>
+            <ul id="gratitude-list"></ul>
+        </div>
+        <button id="calculate-btn">Calculate Gratitude Points</button>
+        <div id="results" class="hidden">
+            <h2>Results</h2>
+            <p>Logged Gratitude Points: <span id="gratitude-output"></span></p>
+            <p>Total Gratitude Points: <span id="total-points"></span></p>
+            <p>Percentage of Positive Gratitude Points: <span id="positive-percentage"></span>%</p>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
