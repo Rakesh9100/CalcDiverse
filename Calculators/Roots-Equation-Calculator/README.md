@@ -1,4 +1,4 @@
-# <p align="center">Roots-Equation-Calculator</p>
+# <p align="center">Roots Equation Calculator</p>
 
 ## Description :-
 
