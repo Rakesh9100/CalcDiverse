@@ -1,7 +1,5 @@
 body {
-  background-image: "assets/background.jpg";
-  background-size: cover !important;
-  background-position: center !important;
+  background: #4fade4;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
