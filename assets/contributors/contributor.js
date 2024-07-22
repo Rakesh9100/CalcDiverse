@@ -147,25 +147,26 @@ function validateName(inputId) {
   const circles = document.querySelectorAll(".circle");
 
   const colors = [
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF",
-    "#FFFFFF"
+    "#240b36",
+    "#220c3e",
+    "#200d46",
+    "#1e0e4e",
+    "#1c0f56",
+    "#1a105e",
+    "#181166",
+    "#16126e",
+    "#141376",
+    "#12147e",
+    "#101586",
+    "#0e168e",
+    "#0c1796",
+    "#0a189e",
+    "#0819a6",
+    "#061aae",
+    "#041bb6",
+    "#021cbe",
+    "#001dc6",
+    "#000080"
 ];
 
   circles.forEach(function (circle, index) {
