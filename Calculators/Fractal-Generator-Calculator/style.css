@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #282c34;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 20px 0;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    background: #333;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+#generate-btn,
+#reset-btn {
+    background-color: #61dafb;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#generate-btn:hover,
+#reset-btn:hover {
+    background-color: #21a1f1;
+}
+
+.output {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#fractal-canvas {
+    border: 1px solid #61dafb;
+    max-width: 100%;
+    display: none;
+}
+
+footer {
+    margin-top: 20px;
+}

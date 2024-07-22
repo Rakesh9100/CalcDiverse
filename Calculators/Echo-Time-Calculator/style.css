@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/966/625/small/abstract-blue-digital-equalizer-of-sound-wave-pattern-element-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(211, 234, 244, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    background-color: #d1f7ff;
+    padding: 8px;
+    border: 2px solid #020202;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #02c7ee;
+    color: rgb(12, 12, 12);
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 60%;
+    margin: 0 auto; /* Center the button */
+    display: block; /* Ensures the button is centered */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+}
+
+button:hover {
+    color: white;
+    background-color: #295682;
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+}
+
+#result,
+#error {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: aliceblue;
+}
+
+#error {
+    color: rgb(248, 36, 36);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 60%;
+        height: 350px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    input,
+    select {
+        font-size: 1em;
+        padding: 6px;
+    }
+
+    button {
+        padding: 8px;
+        width: 80%;
+        font-size: 1em;
+    }
+
+    #result,
+    #error {
+        font-size: 1em;
+    }
+}
