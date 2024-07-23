@@ -166,11 +166,15 @@ input[type=number] {
     .output-container {
         align-items: center;
         justify-content: center;
-        margin: 15px;
+        margin: 20px;
     }
     
     .result {
         height: 40%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
     }
 }
 
