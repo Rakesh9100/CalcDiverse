@@ -18,4 +18,9 @@ The Energy of Motion Calculator is a web application that helps users calculate 
 - Clear error messages for invalid or missing input values.
 
 
+## Screenshots :-
+
+
+![image](https://github.com/user-attachments/assets/8477340d-3acc-4437-b6e5-c8e68e5c8b89)
+
 
