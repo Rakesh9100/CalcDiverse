@@ -2,7 +2,7 @@
 
 ## Description :-
 
-The The FD(Fixed Deposit) Calculator helps compute the maturity amount and interest earned on fixed deposits based on the principal, interest rate, and duration.
+The FD(Fixed Deposit) Calculator helps compute the maturity amount and interest earned on fixed deposits based on the principal, interest rate, and duration.
 
 ## Tech Stacks :-
 
