@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://wallpapers.com/images/high/physics-pendulum-blue-k4l8oyjr8twm25a5.webp") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(142, 193, 255, 0.7); 
+    padding: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 300px;
+    text-align: center; 
+}
+
+h1 {
+    text-align: center;
+    color: #010101; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #0d0d0d; 
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #c7dff7;
+    border: 1.5px solid #030404;
+    border-radius: 4px;
+    width: 100%; 
+}
+
+button {
+    padding: 10px 22px; 
+    background-color: #0e90e1; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid blue;
+    width: auto; 
+    transition: background-color 0.3s, transform 0.3s; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #004494; 
+    transform: scale(1.05); 
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #101010; 
+    text-align: center; 
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    label,
+    input,
+    button {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    label,
+    input,
+    button {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 6px 12px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Energy Calculator</h1>
+        <div class="calculator">
+            <label for="mass">Mass (kg):</label>
+            <input type="number" id="mass" placeholder="Enter mass of object" step="any">
+            <h2>Potential Energy (PE)</h2>
+            <label for="height">Height (m):</label>
+            <input type="number" id="height" placeholder="Enter height from reference point" step="any">
+            <button onclick="calculatePE()">Calculate PE</button>
+            <p id="peResult"></p>
+
+            <h2>Kinetic Energy (KE)</h2>
+            <label for="velocity">Velocity (m/s):</label>
+            <input type="number" id="velocity" placeholder="Enter velocity of object" step="any">
+            <button onclick="calculateKE()">Calculate KE</button>
+            <p id="keResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
