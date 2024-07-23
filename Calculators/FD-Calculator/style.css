@@ -48,7 +48,7 @@ h1 {
 
 .container, .output-container {
     width: 50%;
-    margin: 20px;
+    margin: 18px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ h1 {
 
 canvas {
     display: block;
-    width: 100%;
+    width: 90%;
     max-width: 400px;
 }
 
