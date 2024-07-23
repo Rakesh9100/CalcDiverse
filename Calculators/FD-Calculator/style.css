@@ -62,8 +62,8 @@ canvas {
 }
 
 #fdChart {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
 .result {
@@ -71,7 +71,7 @@ canvas {
     display: none;
     background-color: #0b92fc;
     color: white;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 40px 0;
     width: 90%;
     height: 90%;
     text-align: center;
