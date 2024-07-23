@@ -79,7 +79,7 @@ function image(sign)
    
 
 const zodiacSigns = [
-    { sign: "Capricorn", desc: "You are the ambitious go-getter with a plan for everything, driven by success and discipline. Hardworking and reliable, you climb the ladder steadily and inspire others with your perseverance.", startDate: { month: 0, day: 1 }, endDate: { month: 0, day: 19 } },
+    { sign: "Capricorn", desc: "You are the ambitious go-getter with a plan for everything, driven by success and discipline. Hardworking and reliable, you climb the ladder steadily and inspire others with your perseverance.", startDate: { month: 11, day: 22 }, endDate: { month: 0, day: 19 } },
     { sign: "Aquarius", desc: "You are the quirky innovator who marches to the beat of your own drum, with a love for unconventional ideas. Independent and progressive, you’re always ahead of the curve and fiercely individualistic.", startDate: { month: 0, day: 20 }, endDate: { month: 1, day: 18 } },
     { sign: "Pisces", desc: "You are the dreamy artist with a compassionate and intuitive soul, attuned to the emotions of others. Imaginative and gentle, you bring creativity and empathy to every interaction, making you a cherished friend.", startDate: { month: 1, day: 19 }, endDate: { month: 2, day: 20 } },
     { sign: "Aries", desc: "You are the energetic trailblazer who’s always up for an adventure and loves to take the lead. With your boundless enthusiasm and fiery spirit, you’re the life of any party and a fearless pioneer.", startDate: { month: 2, day: 21 }, endDate: { month: 3, day: 19 } },
