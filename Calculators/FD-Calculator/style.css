@@ -71,7 +71,7 @@ canvas {
     display: none;
     background-color: #0b92fc;
     color: white;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     width: 90%;
     height: 90%;
     text-align: center;
