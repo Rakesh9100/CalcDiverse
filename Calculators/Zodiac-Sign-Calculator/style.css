@@ -1,14 +1,22 @@
+/* Reset some basic styles */
 * {
     margin: 0;
     padding: 0;
-   
-    
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 #container {
-    width: 100%;
-    height: 100vh;
     background-image: url("assets/Wallpaper.jpeg");
+    background-size: cover; /* Ensure background covers the container */
+    background-position: center; /* Center background image */
+    height: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,94 +24,76 @@
 
 #main {
     background-color: rgba(255, 255, 255, 0.9);
-    width: 54%;
-    height: 53%;
-    border: 2px solid rgb(6, 3, 18);
-    border-radius: 15px;
-    border-width: 3px;
+    border: 3px solid rgb(6, 3, 18);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 55%; /* Adjust width for laptop screens */
+    max-width: 500px; /* Smaller maximum width for laptops */
+    padding: 1.5rem; /* Padding inside the box */
+    border-radius: 15px;
 }
+
 #heading {
     color: rgb(6, 3, 18);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5vmax;
-    margin-bottom: 0.5vmax;
+    margin-bottom: 1rem;
 }
-#ip{
-    color: rgb(6, 3, 18);
-    font-size: 1.75vmax;
-    text-align: center;
-    border-radius: 0.5vmax;
-    height: 2.5vmax;
-    padding: 0.5vmax;
 
-    
-    
-}
-/*Button*/
-#input2{
-    padding: 1vmax;
+#ip {
+    color: rgb(6, 3, 18);
+    font-size: 1.25rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
-#input2 button{
-    font-family: poppins;
-    height: 3vmax;
-    width: 5.vmax;
-    padding: 0.5vmax;
-    font-size: 1.15vmax;
-    text-align: center;
-    border-radius: 0.5vmax;
+
+#input2 button {
+    font-family: Poppins, sans-serif;
+    background-color: rgb(6, 3, 18);
+    color: white;
     border: none;
-    background-color:rgb(6, 3, 18);
-    color:white;
-    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
     transition: background-color 0.3s;
 }
-#input2 button:hover {
-    background-color:rgb(49,43,75);
-}
-/*oUTPUT*/
-#output{
-   text-align: center;
-    margin-bottom: 3vmax;
-    display: flex;
-   padding: 1vmax;
-    justify-content: space-evenly;
-}
-#output1{
-    font-size: 1.5vmax;
-    text-align: center;
-    height: 3vmax;
-    color: rgb(6, 3, 18);
-    padding-left: 5vmax;
-  
-}
-#picture img{
-    height: 10vmax;
-    max-width: 1000%;
-    margin-bottom: 30vmax;
-    padding-left: 0.5vmax;
-}
-@media (max-width: 576px) {
-    #main {
-        padding: 20px;
-    }
 
+#input2 button:hover {
+    background-color: rgb(49, 43, 75);
+}
+
+#output {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#output1 {
+    font-size: 1rem;
+    color: rgb(6, 3, 18);
+    text-align: center;
+    margin-bottom: 0.20rem;
+}
+
+#picture {
+    width: 100%; /* Ensure the picture container is full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#picture img {
+    max-width: 80%; /* Image scales with its container */
+    height: auto;    /* Maintain aspect ratio */
+    max-height: 140px; /* Maximum height for the image */
+}
+
+@media (max-width: 576px) {
     #heading h1 {
         font-size: 1.2em;
     }
-
-    #output{
-        font-size: 1.5vmax;
+    #output {
+        font-size: 1rem;
     }
-
-    #picture img{
-        height: 25vmax;
+    #picture img {
+        max-height: 150px;
     }
 }
-
-
