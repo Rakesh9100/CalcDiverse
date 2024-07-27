@@ -146,3 +146,14 @@ textarea:hover {
     color: rgb(255, 255, 255);
     margin-bottom: 0;
 }
+
+.char-count {
+    text-align: right;
+    font-size: 10px;
+    color: #999;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+
+

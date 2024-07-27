@@ -1,3 +1,27 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    const messageInput = document.getElementById('message');
+    const charCount = document.getElementById('charCount');
+    const minLength = 50; // Minimum length for the message
+
+    messageInput.addEventListener('input', function() {
+        const currentLength = messageInput.value.length;
+        charCount.textContent = `Message Count: ${currentLength}/${minLength}`;
+        if (currentLength < minLength) {
+            charCount.style.color = 'red';
+        } else {
+            charCount.style.color = 'green';
+        }
+    });
+
+    contactForm.addEventListener('submit', function(event) {
+        if (messageInput.value.length < minLength) {
+            event.preventDefault();
+            alert('Your message must be at least 50 characters long.');
+        }
+    });
+});
+
 function validateName(inputId) {
     let input = document.getElementById(inputId);
     let value = input.value;
@@ -9,29 +33,6 @@ function validateName(inputId) {
     }
 }
 
-const ham = document.querySelector(".hamburger");
-const navMe = document.querySelector(".nav-menu");
-
-// Hamburger menu 
-ham.addEventListener("click", mobileMenu);
-function mobileMenu() {
-    ham.classList.toggle("active");
-    navMe.classList.toggle("active");
-}
-
-// text message length not less than 50 chars
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contact-form');
-    const messageInput = document.getElementById('message');
-
-    contactForm.addEventListener('submit', function(event) {
-        if (messageInput.value.length < 50) {
-            event.preventDefault();
-            alert('Your message must be at least 50 characters long.');
-        }
-    });
-});
-
 function validateEmail(emailFieldId) {
     const emailField = document.getElementById(emailFieldId);
     const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
@@ -40,4 +41,14 @@ function validateEmail(emailFieldId) {
     } else {
         emailField.setCustomValidity("");
     }
+}
+
+const ham = document.querySelector(".hamburger");
+const navMe = document.querySelector(".nav-menu");
+
+// Hamburger menu 
+ham.addEventListener("click", mobileMenu);
+function mobileMenu() {
+    ham.classList.toggle("active");
+    navMe.classList.toggle("active");
 }
