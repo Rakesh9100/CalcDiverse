@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <title>Astrological Compatibility Calculator</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="waviy">
+            <span style="--i:1">A</span>
+            <span style="--i:2">S</span>
+            <span style="--i:3">T</span>
+            <span style="--i:4">R</span>
+            <span style="--i:5">O</span>
+            <span style="--i:6">L</span>
+            <span style="--i:7">O</span>
+            <span style="--i:8">G</span>
+            <span style="--i:9">I</span>
+            <span style="--i:10">C</span>
+            <span style="--i:11">A</span>
+            <span style="--i:12">L</span>
+            <span style="--i:13">&nbsp;</span>
+            <span style="--i:14">C</span>
+            <span style="--i:15">O</span>
+            <span style="--i:16">M</span>
+            <span style="--i:17">P</span>
+            <span style="--i:18">A</span>
+            <span style="--i:19">T</span>
+            <span style="--i:20">I</span>
+            <span style="--i:21">B</span>
+            <span style="--i:22">I</span>
+            <span style="--i:23">L</span>
+            <span style="--i:24">I</span>
+            <span style="--i:25">T</span>
+            <span style="--i:26">Y</span>
+        </div>
+        <br><br>
+        <div class="row">
+            <label for="sign1">Select First Sign:</label>
+            <select id="sign1" name="sign1" required>
+                <option value="" disabled selected hidden>Select a sign</option>
+                <option value="aries">Aries</option>
+                <option value="taurus">Taurus</option>
+                <option value="gemini">Gemini</option>
+                <option value="cancer">Cancer</option>
+                <option value="leo">Leo</option>
+                <option value="virgo">Virgo</option>
+                <option value="libra">Libra</option>
+                <option value="scorpio">Scorpio</option>
+                <option value="sagittarius">Sagittarius</option>
+                <option value="capricorn">Capricorn</option>
+                <option value="aquarius">Aquarius</option>
+                <option value="pisces">Pisces</option>
+            </select>
+        </div>
+        <br>
+        <div class="row">
+            <label for="sign2">Select Second Sign:</label>
+            <select id="sign2" name="sign2" required>
+                <option value="" disabled selected hidden>Select a sign</option>
+                <option value="aries">Aries</option>
+                <option value="taurus">Taurus</option>
+                <option value="gemini">Gemini</option>
+                <option value="cancer">Cancer</option>
+                <option value="leo">Leo</option>
+                <option value="virgo">Virgo</option>
+                <option value="libra">Libra</option>
+                <option value="scorpio">Scorpio</option>
+                <option value="sagittarius">Sagittarius</option>
+                <option value="capricorn">Capricorn</option>
+                <option value="aquarius">Aquarius</option>
+                <option value="pisces">Pisces</option>
+            </select>
+        </div>
+        <br>
+        <div class="row">
+            <label for="aspect">Select Aspect:</label>
+            <select id="aspect" name="aspect" required>
+                <option value="" disabled selected hidden>Select an aspect</option>
+                <option value="love">Love</option>
+                <option value="friendship">Friendship</option>
+                <option value="work">Work</option>
+            </select>
+        </div>
+        <div class="rule"></div>
+        <div class="form-footer">
+            <button class="button" onclick="calculateCompatibility(event)">Calculate Compatibility</button>
+        </div>
+        <div id="result-container">
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
