@@ -12,3 +12,4 @@ Pace Calculator is designed to help athletes and fitness enthusiasts accurately 
 
 ## Screenshots :-
 
+![image](https://github.com/user-attachments/assets/a3d45ad9-53f2-42ed-b20a-c63c6664c3c3)
