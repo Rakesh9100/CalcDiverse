@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pace Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Pace Calculator</h1>        
+        <div id="tab1" class="tab-content">
+            <form id="totalTimeForm">
+                <div class="mb-4">
+                    <h3 class="text-lg font-bold mb-2">Swimming</h3>
+                    <div class="grid lg:grid-cols-3 grid-cols-1 gap-4">
+                        <div>
+                            <label for="swimmingDistance" class="block text-gray-700">Distance (m)</label>
+                            <input type="number" id="swimmingDistance" class="w-full p-2 border border-gray-300 rounded">
+                        </div>
+                        <div>
+                            <label for="swimmingTime" class="block text-gray-700">Time (hh:mm:ss)</label>
+                            <div class="flex">
+                                <select id="swimmingHours" class="w-1/3 p-2 border border-gray-300 rounded"></select>
+                                <select id="swimmingMinutes" class="w-1/3 p-2 border border-gray-300 rounded"></select>
+                                <select id="swimmingSeconds" class="w-1/3 p-2 border border-gray-300 rounded"></select>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="swimmingPaceOption" class="block text-gray-700">Pace Option</label>
+                            <select id="swimmingPaceOption" class="w-full p-2 border border-gray-300 rounded">
+                                <option value="25">Pace/25m</option>
+                                <option value="33">Pace/33m</option>
+                                <option value="50">Pace/50m</option>
+                                <option value="100">Pace/100m</option>
+                                <option value="200">Pace/200m</option>
+                                <option value="400" selected>Pace/400m</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="swimmingResult" class="mt-2 p-2 bg-blue-100 text-blue-700 rounded"></div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-lg font-bold mb-2">Cycling</h3>
+                    <div class="grid lg:grid-cols-3 grid-cols-1 gap-4">
+                        <div>
+                            <label for="cyclingDistance" class="block text-gray-700">Distance (km)</label>
+                            <input type="number" id="cyclingDistance" class="w-full p-2 border border-gray-300 rounded">
+                        </div>
+                        <div>
+                            <label for="cyclingTime" class="block text-gray-700">Time (hh:mm:ss)</label>
+                            <div class="flex">
+                                <select id="cyclingHours" class="w-1/3 p-2 border border-gray-300 rounded"></select>
+                                <select id="cyclingMinutes" class="w-1/3 p-2 border border-gray-300 rounded"></select>
+                                <select id="cyclingSeconds" class="w-1/3 p-2 border border-gray-300 rounded"></select>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="cyclingPaceOption" class="block text-gray-700">Pace Option</label>
+                            <select id="cyclingPaceOption" class="w-full p-2 border border-gray-300 rounded">
+                                <option value="kmh">Pace (km/h)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="cyclingResult" class="mt-2 p-2 bg-green-100 text-green-700 rounded"></div>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-lg font-bold mb-2">Running</h3>
+                    <div class="grid lg:grid-cols-3 grid-cols-1 gap-4">
+                        <div>
+                            <label for="runningDistance" class="block text-gray-700">Distance (km)</label>
+                            <input type="number" id="runningDistance" class="w-full p-2 border border-gray-300 rounded">
+                        </div>
+                        <div>
+                            <label for="runningTime" class="block text-gray-700">Time (hh:mm:ss)</label>
+                            <div class="flex">
+                                <select id="runningHours" class="w-1/3 p-2 border border-gray-300 rounded"></select>
+                                <select id="runningMinutes" class="w-1/3 p-2 border border-gray-300 rounded"></select>
+                                <select id="runningSeconds" class="w-1/3 p-2 border border-gray-300 rounded"></select>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="runningPaceOption" class="block text-gray-700">Pace Option</label>
+                            <select id="runningPaceOption" class="w-full p-2 border border-gray-300 rounded">
+                                <option value="200">Pace/200m</option>
+                                <option value="400">Pace/400m</option>
+                                <option value="800">Pace/800m</option>
+                                <option value="1km" selected>Pace/1km</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="runningResult" class="mt-2 p-2 bg-yellow-100 text-yellow-700 rounded"></div>
+                </div>
+                <div id="totalTimeResult" class="mt-4 p-2 bg-red-100 text-red-700 rounded"></div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-gray-200 p-4 mt-6 rounded-lg shadow-md">
+        <h2 class="text-lg font-bold mb-2">About This Tool</h2>
+        <p class="text-gray-700 mb-2">
+            This Pace Calculator is designed to help athletes and fitness enthusiasts accurately calculate their pace and total time for swimming, cycling, and running activities. It can be used to plan training sessions, races, or track progress over time.
+        </p>
+        <h3 class="text-md font-semibold mb-1">Pace vs. Speed</h3>
+        <p class="text-gray-700 mb-2">
+            Pace is the time it takes to cover a specific distance, usually expressed in minutes per kilometer or mile. Speed, on the other hand, is the distance covered in a specific time, usually expressed in kilometers per hour (km/h) or miles per hour (mph).
+        </p>
+        <h3 class="text-md font-semibold mb-1">How the Pace Calculator Works</h3>
+        <p class="text-gray-700">
+            The Pace Calculator allows you to input the distance and time for each sport (swimming, cycling, running) and select a pace option. It then calculates the average pace based on the input values. For swimming and running, the pace is shown as the time per selected unit of distance. For cycling, the pace is shown as speed in km/h. The total time for all activities combined is also calculated and displayed.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
