@@ -22,11 +22,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 city2Select.appendChild(option2);
             });
 
+            // Ensure two different cities are shown initially
+            if (cities.length > 1) {
+                city2Select.value = cities[1].city;
+            }
+
             // Event listener for the calculate button
             document.getElementById('calculate').addEventListener('click', function() {
                 const city1 = city1Select.value;
                 const city2 = city2Select.value;
                 const salary = parseFloat(document.getElementById('salary').value);
+
+                // Validation
+                if (city1 === city2) {
+                    document.getElementById('result').textContent = "Please select two different cities.";
+                    return;
+                }
+
+                if (isNaN(salary) || salary <= 0) {
+                    document.getElementById('result').textContent = "Please enter a valid salary.";
+                    return;
+                }
 
                 const city1Data = cities.find(c => c.city === city1);
                 const city2Data = cities.find(c => c.city === city2);
