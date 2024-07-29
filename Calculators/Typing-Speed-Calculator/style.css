@@ -32,37 +32,9 @@ h1 {
     flex-wrap: wrap;
 }
 
-.button-group {
-    display: flex;
-    
-    align-items: center;
-    gap: 10px;
-}
-
-.button-group p {
-    margin: 0;
+.dropdown-group p {
     font-weight: bold;
     color: #fff;
-}
-
-.button-group button {
-    background-color: #19238d;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 5px 0;
-    transition: background-color 0.3s ease, border 0.3s ease;
-}
-
-.button-group button.selected {
-    border: 2px solid white;
-}
-
-.button-group button:hover {
-    background-color: #151c7d;
 }
 
 #typing-box {
