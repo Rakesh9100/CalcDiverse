@@ -25,10 +25,8 @@ function checkSpecialNumber() {
 
     if (sum == number) {
         resultMessage.textContent = `${number} is a special number because the sum of the factorial of digits is equal to the number itself!`;
-        resultMessage.style.color = "green";
     } else {
         resultMessage.textContent = `${number} is not a special number because the sum of the factorial of digits is not equal to the number itself!`;
-        resultMessage.style.color = "red";
     }
 
     resultElement.style.display = "block";
