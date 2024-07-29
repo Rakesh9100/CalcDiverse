@@ -1,15 +1,16 @@
-# <p align="center">Centroid-Of-A-Triangle-Calculator</p>
+# <p align="center">Centroid Of A Triangle Calculator</p>
 
 ## Description :-
 
 A web-based Centroid-Of-A-Triangle-Calculator where there are 6 input fields consisting of x1, x2, y1, y2, x3, y3 since a triangle has 3 vertices.
-Users have to fill these fields to get Triangle centroid point. 
+Users have to fill these fields to get a Triangle centroid point. 
 
-## Tech Stacks Used :-
+## Tech Stacks :-
 
 - HTML
 - CSS
 - JavaScript
 
 ## Screenshots :-
-(https://github.com/Rakesh9100/CalcDiverse/assets/108344062/a6e63866-d8e1-4406-9ca2-88e0794a26cb)
+
+![image](https://github.com/user-attachments/assets/bb8139bd-0245-411f-be14-6ffdda3b880e)
