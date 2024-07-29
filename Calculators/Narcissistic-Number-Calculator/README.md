@@ -2,7 +2,7 @@
 
 ## Description :-
 
-This is a simple web-based calculator that helps users determine whether a given number is a Narcissistic number. A Narcissistic number is a number that is the sum of its own digits each raised to the power of the number of digits.
+This is a simple web-based calculator that helps users determine whether a given number is a Narcissistic number. A Narcissistic number is a number that is the sum of its digits each raised to the power of the number of digits.
 
 ## Tech Stacks :-
 
@@ -25,5 +25,4 @@ This is a simple web-based calculator that helps users determine whether a given
 
 ## ScreenShots :-
 
-![image](https://github.com/SuhainaFathimaM/CalcDiverse/assets/153417476/6804404c-edda-4ca1-b5d3-5f26dc4723ab)
-
+![image](https://github.com/user-attachments/assets/2555ae21-3751-4ba0-a1f3-a5d73eb340e0)
