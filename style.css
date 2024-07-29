@@ -15,26 +15,6 @@
     box-sizing: border-box;
 }
 
-.circle{
-    z-index: 999999;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: colors 5s infinite;
-    position: fixed;
-    transform: translate(-50%,-50%);
-    }
-    .circle::before {
-    content: "";
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    opacity: 0.2;
-    transform: translate(-30%,-30%);
-    border-radius: 50%;
-    }
-
 /* Scrollbar Css */
 
 ::-webkit-scrollbar {
@@ -48,6 +28,29 @@
 ::-webkit-scrollbar-thumb {
     background: var(--light);
     border-radius: 25px;
+}
+
+/* Custom Cursor Css */
+
+.circle {
+    z-index: 999999;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: colors 5s infinite;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+.circle::before {
+    content: "";
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
 }
 
 /* Preloader Css */
