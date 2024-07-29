@@ -11,22 +11,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>CalcDiverse | Contact Us</title>
-    <style>
-        #custom-cursor {
-            position: fixed;
-            pointer-events: none;
-            z-index: 9999;
-        }
-        .circle {
-            position: absolute;
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
 </head>
 
 <body>
-    <div id="custom-cursor"></div>
+    <div class="circle-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
     
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -114,7 +123,7 @@
                 <h1 class="heading">Keep In Touch</h1>
                 <form name="CalcDiverse Contact" autocomplete="off" netlify>
                     <div class="form-group group1">
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required oninput="validateName('name')">
+                        <input type="text" id="footer-name" name="name" placeholder="Enter your name" required oninput="validateName('footer-name')">
                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     </div>
                     <div class="form-group group1">
@@ -141,61 +150,10 @@
             </script>: All Rights Reserved
         </p>
     </footer>
+    
+    <script src="./contact.js"></script>
     <script src="../../script.js"></script>
-<script>
-    // Custom Cursor
-    const cursorEl = document.getElementById('custom-cursor');
-    const coords = { x: 0, y: 0 };
-    const circles = [];
-
-    const colors = [
-        "#240b36", "#220c3e", "#200d46", "#1e0e4e", "#1c0f56",
-        "#1a105e", "#181166", "#16126e", "#141376", "#12147e",
-        "#101586", "#0e168e", "#0c1796", "#0a189e", "#0819a6",
-        "#061aae", "#041bb6", "#021cbe", "#001dc6", "#000080"
-    ];
-
-    // Create circles
-    for (let i = 0; i < 20; i++) {
-        const circle = document.createElement('div');
-        circle.classList.add('circle');
-        cursorEl.appendChild(circle);
-        circles.push(circle);
-    }
-
-    circles.forEach((circle, index) => {
-        circle.x = 0;
-        circle.y = 0;
-        circle.style.backgroundColor = colors[index % colors.length];
-        circle.style.width = circle.style.height = `${(circles.length - index) * 2}px`;
-    });
-
-    window.addEventListener("mousemove", (e) => {
-        coords.x = e.clientX;
-        coords.y = e.clientY;
-    });
-
-    function animateCircles() {
-        let x = coords.x;
-        let y = coords.y;
-
-        circles.forEach((circle, index) => {
-            circle.style.left = `${x}px`;
-            circle.style.top = `${y}px`;
-            circle.style.scale = (circles.length - index) / circles.length;
-            circle.x = x;
-            circle.y = y;
-
-            const nextCircle = circles[index + 1] || circles[0];
-            x += (nextCircle.x - x) * 0.3;
-            y += (nextCircle.y - y) * 0.3;
-        });
-
-        requestAnimationFrame(animateCircles);
-    }
-
-    animateCircles();
-</script>
+    <script src="../customcursor.js"></script>
 </body>
 
 </html>
