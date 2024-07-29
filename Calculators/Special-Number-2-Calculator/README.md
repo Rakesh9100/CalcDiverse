@@ -1,4 +1,4 @@
-# <p align="center">Special Number Calculator</p>
+# <p align="center">Special Number-2 Calculator</p>
 
 ## Description :-
 
@@ -14,16 +14,8 @@ For example, 145 is a special number because 1! + 4! + 5! = 145
 
 ## Screenshots :-
 
-### On search
+![image](https://github.com/user-attachments/assets/9bae1820-aef2-43cc-aabf-9e3365364e80)
 
-![ss-1](https://github.com/Rakesh9100/CalcDiverse/assets/135226069/438728f7-04b0-40f0-9d36-af4caaa6dc86)
+![image](https://github.com/user-attachments/assets/31481136-3ded-4f4a-81ce-e4be06b25965)
 
-### These are the UI for the page, The added background-size and animation properties to create a smooth, animated gradient background that transitions between four different colors.
-
-![ss-2](https://github.com/Rakesh9100/CalcDiverse/assets/135226069/c1545344-30b8-458a-8339-e02605c3dc7b)
-![ss-3](https://github.com/Rakesh9100/CalcDiverse/assets/135226069/80b76b33-4c4d-40f7-910e-72bf6ef35633)
-![ss-4](https://github.com/Rakesh9100/CalcDiverse/assets/135226069/90c362ea-d7fa-422f-9fa3-b9055e3bb5db)
-
-### Sample Output,
-
-![ss-5](https://github.com/Rakesh9100/CalcDiverse/assets/135226069/17e9cd55-5c3d-4b55-a9e2-73abd022519d)
+![image](https://github.com/user-attachments/assets/46e34f91-05a2-4070-a44c-97c191ea45a0)
