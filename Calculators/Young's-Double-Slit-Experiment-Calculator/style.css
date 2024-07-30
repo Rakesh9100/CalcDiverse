@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    background-image: url(./assets/image.png);
+    background-image: url('assets/image.png');
     display: flex;
     justify-content: center;
     background-size: cover; /* Ensures the image covers the whole container */
