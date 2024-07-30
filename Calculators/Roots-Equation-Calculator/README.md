@@ -4,7 +4,7 @@
 
 This is a simple web application that allows users to generate polynomial equations based on given roots.
 
-Users can input the number of roots, provide the roots themselves, and the application will generate the corresponding polynomial equation. For example, if the user inputs two roots, 2 and 2, the application will generate the equation (x-2)(x-2)=x^2-4x+4=0
+Users can input the number of roots, and provide the roots themselves, and the application will generate the corresponding polynomial equation. For example, if the user inputs two roots, 2 and 2, the application will generate the equation (x-2)(x-2)=x^2-4x+4=0
 
 This tool is useful for anyone needing to quickly derive polynomial equations from specified roots.
 
@@ -25,8 +25,4 @@ This tool is useful for anyone needing to quickly derive polynomial equations fr
 
 ## Screenshots :-
 
-![image]()
-
-![image]()
-
-![image]()
+![image](https://github.com/user-attachments/assets/7827e05a-09ae-45a3-99aa-2a2345b4f59a)
