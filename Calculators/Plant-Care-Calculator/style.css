@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(rgb(183, 222, 183),rgb(103, 133, 103));
+    background: radial-gradient(rgb(183, 222, 183), rgb(103, 133, 103));
     margin: 0;
     padding: 0;
     display: flex;
@@ -31,6 +31,7 @@ h1 {
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
@@ -67,12 +68,12 @@ select {
     border: 1px solid #bdc3c7;
     border-radius: 4px;
     font-size: 16px;
-    background-image: none; 
+    background-image: none;
     z-index: 1;
 }
 
 .select-container::after {
-    content: '\f078'; 
+    content: '\f078';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     position: absolute;
@@ -119,7 +120,7 @@ button:hover {
     margin: 10 0px;
     color: #3f3f3f;
     animation: fadeInFromBottom 0.5s ease forwards;
-    opacity: 0; 
+    opacity: 0;
 }
 
 @keyframes fadeInFromBottom {
@@ -127,30 +128,34 @@ button:hover {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-
 .schedule p:nth-of-type(1) {
-    animation-delay: 0.5s; /*for line 1 */
+    animation-delay: 0.5s;
+    /*for line 1 */
 }
 
 .schedule p:nth-of-type(2) {
-    animation-delay: 1s; /*for line 2 */
+    animation-delay: 1s;
+    /*for line 2 */
 }
 
 .schedule p:nth-of-type(3) {
-    animation-delay: 1.5s; /*for line 3 */
+    animation-delay: 1.5s;
+    /*for line 3 */
 }
 
 .schedule p:nth-of-type(4) {
-    animation-delay: 2.0s; /*for line 4 */
+    animation-delay: 2.0s;
+    /*for line 4 */
 }
 
 .schedule p:nth-of-type(5) {
-    animation-delay: 2.5s; /*for line 5 */
+    animation-delay: 2.5s;
+    /*for line 5 */
 }
-
