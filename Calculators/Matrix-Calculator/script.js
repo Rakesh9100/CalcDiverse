@@ -53,53 +53,10 @@ function setResult(resultMatrix) {
         } else {
             resultContainer.innerHTML = resultMatrix.map(row => row.join(" ")).join("<br>");
         }
-    // } else if (isNaN(resultMatrix)) {
-    //     resultContainer.innerHTML = "Error: Result is NaN.";
     } else {
         resultContainer.innerHTML = resultMatrix;
     }
 }
-
-
-function calculateRank(matrix) {
-    const rowCount = matrix.length;
-    const colCount = matrix[0].length;
-    let rank = colCount;
-
-    const matrixClone = matrix.map(row => [...row]); // Clone the matrix to avoid modifying the original
-
-    for (let row = 0; row < rank; row++) {
-        if (matrixClone[row][row] !== 0) {
-            for (let col = 0; col < rowCount; col++) {
-                if (col !== row) {
-                    const multiplier = matrixClone[col][row] / matrixClone[row][row];
-                    for (let i = 0; i < rank; i++) {
-                        matrixClone[col][i] -= multiplier * matrixClone[row][i];
-                    }
-                }
-            }
-        } else {
-            let reduce = true;
-            for (let i = row + 1; i < rowCount; i++) {
-                if (matrixClone[i][row] !== 0) {
-                    [matrixClone[row], matrixClone[i]] = [matrixClone[i], matrixClone[row]];
-                    reduce = false;
-                    break;
-                }
-            }
-            if (reduce) {
-                rank--;
-                for (let i = 0; i < rowCount; i++) {
-                    matrixClone[i][row] = matrixClone[i][rank];
-                }
-            }
-            row--;
-        }
-    }
-    return rank;
-}
-
-
 
 function calculate(operation) {
     const matrixARows = parseInt(document.getElementById("matrixARows").value, 10);
@@ -167,6 +124,44 @@ function calculate(operation) {
     } catch (error) {
         setResult("Error: " + error.message);
     }
+}
+
+function calculateRank(matrix) {
+    const rowCount = matrix.length;
+    const colCount = matrix[0].length;
+    let rank = colCount;
+
+    const matrixClone = matrix.map(row => [...row]); // Clone the matrix to avoid modifying the original
+
+    for (let row = 0; row < rank; row++) {
+        if (matrixClone[row][row] !== 0) {
+            for (let col = 0; col < rowCount; col++) {
+                if (col !== row) {
+                    const multiplier = matrixClone[col][row] / matrixClone[row][row];
+                    for (let i = 0; i < rank; i++) {
+                        matrixClone[col][i] -= multiplier * matrixClone[row][i];
+                    }
+                }
+            }
+        } else {
+            let reduce = true;
+            for (let i = row + 1; i < rowCount; i++) {
+                if (matrixClone[i][row] !== 0) {
+                    [matrixClone[row], matrixClone[i]] = [matrixClone[i], matrixClone[row]];
+                    reduce = false;
+                    break;
+                }
+            }
+            if (reduce) {
+                rank--;
+                for (let i = 0; i < rowCount; i++) {
+                    matrixClone[i][row] = matrixClone[i][rank];
+                }
+            }
+            row--;
+        }
+    }
+    return rank;
 }
 
 function resetForm() {
