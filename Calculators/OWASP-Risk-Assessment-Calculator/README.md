@@ -1,4 +1,4 @@
-# <p align="center"> OWASP Risk Assessment Calculator</p>
+# <p align="center">OWASP Risk Assessment Calculator</p>
 
 ## Description :-
 
@@ -12,4 +12,4 @@ An online calculator to assess the risk of web vulnerabilities based on OWASP Ri
 
 ## Screenshots :-
 
-![image](https://github.com/user-attachments/assets/a2d75686-f372-4c8e-b7ab-11c2ade02cf2)
+![image](https://github.com/user-attachments/assets/3433a692-b00f-4355-bd6f-e515204fb3dd)
