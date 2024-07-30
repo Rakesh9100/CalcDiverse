@@ -1,9 +1,7 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -13,10 +11,10 @@ body {
 }
 
 #container {
-    background-image: url("assets/Wallpaper.jpeg");
-    background-size: cover; 
-    background-position: center; 
-    height: 50%; 
+    background-image: url("assets/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 50%;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -28,10 +26,10 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
     border: 3px solid rgb(6, 3, 18);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-    width: 55%; 
-    max-width: 500px; 
+    width: 55%;
+    max-width: 500px;
     overflow: hidden;
-    padding: 1.5rem; /* Padding inside the box */
+    padding: 1.5rem;
     border-radius: 15px;
 }
 
@@ -77,7 +75,7 @@ body {
 
 #picture {
     width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,8 +83,8 @@ body {
 }
 
 #picture img {
-    max-width: 100%; 
-    height: auto;    
+    max-width: 100%;
+    height: auto;
     max-height: 140px;
     overflow: hidden;
 }
@@ -95,11 +93,12 @@ body {
     #heading h1 {
         font-size: 1.2em;
     }
+
     #output {
         font-size: 1rem;
     }
+
     #picture img {
         max-height: 150px;
     }
-    
 }
