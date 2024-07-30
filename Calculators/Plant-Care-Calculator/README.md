@@ -2,7 +2,7 @@
 
 ## Description :-
 
-This calculator calculates schedule for aspects like watering, fertilizing and repotting plants based upon the plant size, season, location and water frequency.
+This calculator calculates the schedule for aspects like watering, fertilizing, and repotting plants based on the plant size, season, location, and water frequency.
 
 ## Tech Stacks :-
 
@@ -11,4 +11,5 @@ This calculator calculates schedule for aspects like watering, fertilizing and r
 - JavaScript
 
 ## Screenshots :-
+
 ![plant1](https://github.com/user-attachments/assets/eee6b484-95e5-4807-afeb-9ce656e5be93)
