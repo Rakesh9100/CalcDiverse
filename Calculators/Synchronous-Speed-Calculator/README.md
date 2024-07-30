@@ -2,7 +2,7 @@
 
 ## Description :-
 
-The synchronous speed calculator is a simple calculator that allows users to calculate the synchronous speed of a synchronous motor based on its number of poles and frequency. It is built using HTML, CSS, and JavaScript, providing a user-friendly interface for easy calculations. The user can also switch to calculating frequency or number of poles.
+This is a simple calculator that allows users to calculate the synchronous speed of a synchronous motor based on its number of poles and frequency. The user can switch to calculate the frequency or number of poles.
 
 ## Tech Stacks :-
 
@@ -11,6 +11,5 @@ The synchronous speed calculator is a simple calculator that allows users to cal
 - JavaScript
 
 ## Screenshots :-
-![image](https://github.com/user-attachments/assets/ead19f0b-1033-4657-bfb3-576b0b4d623c)
 
-
+![image](https://github.com/user-attachments/assets/8ac5b1c0-ec13-4f92-825f-2279ced41cc9)
