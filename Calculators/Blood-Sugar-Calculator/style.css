@@ -1,0 +1,48 @@
+body {
+    background: url('assets/background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#box {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#blood-sugar-calculator {
+    margin-top: 20px;
+}
+
+#result {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.result {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.Normal {
+    background-color: #c6f7d0;
+}
+
+.Pre-diabetes {
+    background-color: #f7dc6f;
+}
+
+.Diabetes {
+    background-color: #ffc080;
+}
+
+.Low-blood-sugar {
+    background-color: #ff69b4;
+}
