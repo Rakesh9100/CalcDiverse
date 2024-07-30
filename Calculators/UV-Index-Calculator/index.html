@@ -1,29 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UV Index Calculator</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <title>UV Index Calculator</title>
+</head>
+<body>
     <div class="container">
-      <img src="UV-index.png" alt="Header Image" class="header-image" />
-      <h1>UV Index Calculator</h1>
-      <input
-        type="number"
-        id="uvIndex"
-        placeholder="Enter UV Index"
-        min="0"
-        max="11"
-      />
-      <button onclick="calculateProtection()">Calculate Protection</button>
-      <div class="result" id="result"></div>
+        <img src="UV-index.png" alt="Header Image" class="header-image" />
+        <h1>UV Index Calculator</h1>
+        <input type="number" id="uvIndex" placeholder="Enter UV Index" min="0" max="11" />
+        <button onclick="calculateProtection()">Calculate Protection</button>
+        <div class="result" id="result"></div>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
