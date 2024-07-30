@@ -1,4 +1,4 @@
-# <p align="center">SWP Calculator</p>
+# <p align="center">FD Calculator</p>
 
 ## Description :-
 
@@ -12,4 +12,4 @@ The FD(Fixed Deposit) Calculator helps compute the maturity amount and interest 
 
 ## Screenshots :-
 
-![image](https://github.com/user-attachments/assets/7e44db0b-df77-4def-a07a-4e86fc16daa4)
+![image](https://github.com/user-attachments/assets/0e9c6b3f-b74a-4d74-93c7-fdfa6d61a1fe)
