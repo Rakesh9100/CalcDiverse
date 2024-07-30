@@ -72,8 +72,8 @@ canvas {
     background-color: #0b92fc;
     color: white;
     margin: 20px 0 40px 0;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     text-align: center;
 }
 
@@ -146,7 +146,11 @@ input[type=number] {
     }
 
     .main-container {
+        width: 80%;
+        height: 100%;
+        margin-bottom: 15px;
         flex-direction: column;
+        padding-bottom: 20px;
     }
 
     .container, .output-container {
@@ -181,6 +185,7 @@ input[type=number] {
     }
 
     .result {
+        font-size: 16px;
         height: 40%;
         width: 100%;
         align-items: center;
@@ -190,6 +195,32 @@ input[type=number] {
 }
 
 @media (max-width: 480px) {
+    body {
+        margin: 30px 0 40px;
+    }
+
+    .main {
+        margin: 60px 0 90px 0;
+        height: 100%;
+    }
+
+    .main, .main-container {
+        width: 80%;
+        padding: 8px;
+    }
+
+    .main-container {
+        width: 80%;
+        height: 90%;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .container, .output-container {
+        width: 80%;
+        margin: 10px 0;
+    }
+
     h1 {
         font-size: 24px;
     }
@@ -209,6 +240,26 @@ input[type=number] {
     button {
         font-size: 14px;
         width: 100%;
+    }
+
+    #fdChart {
+        width: 100%;
+        height: auto;
+    }
+    
+    .result {
+        font-size: 14px;
+        height: 40%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .output-container {
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
     }
 
     .result p {
