@@ -7,8 +7,6 @@ body {
     min-height: 100vh;
     position: relative;
     flex-direction: column;
-    
-
 }
 
 .calculator {
@@ -16,25 +14,25 @@ body {
     max-width: 600px;
     background-color: skyblue;
     margin: 20px;
-    padding:20px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 }
 
 #print {
-    margin:10px;
+    margin: 10px;
     display: block;
     color: black;
     font-size: 30px;
-    padding:10px;
+    padding: 10px;
 }
 
-input, select {
+input,
+select {
     display: block;
     width: 100%;
     margin: 10px 0;
@@ -49,7 +47,7 @@ input, select {
 button {
     display: block;
     width: 100%;
-    margin-top: 20px ;
+    margin-top: 20px;
     padding: 10px;
     border: 1px solid white;
     border-radius: 5px;
@@ -74,20 +72,21 @@ button:hover {
     text-align: center;
     display: inline-block;
     font-size: 18px;
-    color: white; 
+    color: white;
     text-decoration: none;
 }
 
 .info a:hover {
     text-decoration: underline;
 }
+
 .background-image {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/bgimage.jpg');
+    background-image: url('assets/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +100,12 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-    #print, input, select, button, #results, .info a {
+    #print,
+    input,
+    select,
+    button,
+    #results,
+    .info a {
         font-size: 20px;
         padding: 5px;
     }
