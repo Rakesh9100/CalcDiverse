@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background:url(background.jpg);
+    background: url('assets/background.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,4 +77,3 @@ canvas {
     max-width: 100%;
     height: auto;
 }
-
