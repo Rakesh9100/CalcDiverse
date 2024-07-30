@@ -20,12 +20,26 @@ function clear_fun() {
 function updateToBaseOptions() {
     const fromBase = document.getElementById('fromBase').value;
     const toBase = document.getElementById('toBase');
-    const bases = [
-        { value: '2', text: 'Binary' },
-        { value: '7', text: 'Septenary' },
-        { value: '8', text: 'Octal' },
-        { value: '10', text: 'Decimal' },
-        { value: '16', text: 'Hexadecimal' }
+    const bases = [{
+            value: '2',
+            text: 'Binary'
+        },
+        {
+            value: '7',
+            text: 'Septenary'
+        },
+        {
+            value: '8',
+            text: 'Octal'
+        },
+        {
+            value: '10',
+            text: 'Decimal'
+        },
+        {
+            value: '16',
+            text: 'Hexadecimal'
+        }
     ];
 
     toBase.innerHTML = '<option value="" selected disabled>Select an option</option>';
