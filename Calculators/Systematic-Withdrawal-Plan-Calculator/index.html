@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Systematic Withdrawal Plan Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Systematic Withdrawal Plan Calculator</h1>
+        
+        <label for="totalInvestment">Total Investment:</label>
+        <input type="number" id="totalInvestment" placeholder="Enter total investment amount" required>
+
+        <label for="withdrawalPerMonth">Withdrawal Per Month:</label>
+        <input type="number" id="withdrawalPerMonth" placeholder="Enter withdrawal per month" required>
+
+        <label for="expectedReturnRate">Expected Return Rate (p.a):</label>
+        <input type="number" id="expectedReturnRate" placeholder="Enter Expected Return Rate" required>
+
+        <label for="totalPeriod">Total Period (in years):</label>
+        <input type="number" id="totalPeriod" placeholder="Enter time period in years" required>
+    </div>
+
+    <button onclick="calculateSWP()">Calculate</button>
+    <div class="output-container">
+        <pre id="result"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
