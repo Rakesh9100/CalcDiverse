@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const calculateBtn = document.getElementById('calculate-btn');
+    const resetBtn = document.getElementById('reset-btn');
     const outputContainer = document.getElementById('output-container');
     const canvas = document.getElementById('fdChart');
     const ctx = canvas.getContext('2d');
     const resultDiv = document.querySelector('.result');
 
-    if (!calculateBtn || !outputContainer || !ctx || !resultDiv) {
+    if (!calculateBtn || !resetBtn || !outputContainer || !ctx || !resultDiv) {
         console.error('Required elements are missing.');
         return;
     }
@@ -70,7 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    calculateBtn.addEventListener('click', function() {
+    calculateBtn.addEventListener('click', function(event) {
+        event.preventDefault();  // Prevent form submission
         const principal = parseFloat(document.getElementById('principal').value);
         const annualRate = parseFloat(document.getElementById('rate').value);
         const years = parseInt(document.getElementById('years').value);
@@ -94,6 +96,20 @@ document.addEventListener('DOMContentLoaded', function() {
         outputContainer.style.display = 'block';
         createChart(principal, interestEarned);
         updateResult(principal, interestEarned, maturityAmount);
+    });
+
+    resetBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('principal').value = '';
+        document.getElementById('rate').value = '';
+        document.getElementById('years').value = '';
+
+        if (chartInstance) {
+            chartInstance.destroy();
+            chartInstance = null;
+        }
+        resultDiv.innerHTML = '';
+        outputContainer.style.display = 'none';
     });
 
     loadChartData();
