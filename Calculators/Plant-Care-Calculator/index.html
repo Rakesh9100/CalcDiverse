@@ -1,5 +1,5 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -13,7 +13,6 @@
         <form id="plantForm">
             <label for="plantType">Plant Type:</label>
             <input type="text" id="plantType" name="plantType" required>
-
             <label for="plantSize">Plant Size:</label>
             <div class="select-container">
                 <select id="plantSize" name="plantSize" required>
@@ -22,7 +21,6 @@
                     <option value="large">Large</option>
                 </select>
             </div>
-
             <label for="location">Location:</label>
             <div class="select-container">
                 <select id="location" name="location" required>
@@ -30,7 +28,6 @@
                     <option value="outdoor">Outdoor</option>
                 </select>
             </div>
-
             <label for="season">Season:</label>
             <div class="select-container">
                 <select id="season" name="season" required>
@@ -41,13 +38,10 @@
                     <option value="monsoon">Monsoon</option>
                 </select>
             </div>
-
             <label for="wateringFrequency">Watering Frequency (days):</label>
             <input type="number" id="wateringFrequency" name="wateringFrequency" required>
-
             <button type="submit">Get Schedule</button>
         </form>
-
         <div id="schedule" class="schedule"></div>
     </div>
     <script src="script.js"></script>
