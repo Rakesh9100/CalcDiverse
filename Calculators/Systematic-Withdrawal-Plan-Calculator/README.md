@@ -1,4 +1,4 @@
-# <p align="center">SWP Calculator</p>
+# <p align="center">Systematic Withdrawal Plan Calculator</p>
 
 ## Description :-
 
