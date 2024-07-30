@@ -1,5 +1,3 @@
-
-
 function calculateTemperature() {
     // Get input values
     var a = parseFloat(document.getElementById('a').value);
