@@ -2,7 +2,7 @@
 
 ## Description :-
 
-A web-based Chi-Square calculator where there are observed and expected data which helps to calculate the chi-square value.
+A web-based Chi-Square calculator where there are observed and expected data that helps to calculate the chi-square value.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ A web-based Chi-Square calculator where there are observed and expected data whi
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/99cef613-9c20-4a18-b92b-dcd769b43e96)
+![image](https://github.com/user-attachments/assets/0cd82e13-3f9d-45b4-a8b2-4ed4564cad92)
