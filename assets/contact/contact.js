@@ -1,27 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contact-form');
-    const messageInput = document.getElementById('message');
-    const charCount = document.getElementById('charCount');
-    const minLength = 50; // Minimum length for the message
-
-    messageInput.addEventListener('input', function() {
-        const currentLength = messageInput.value.length;
-        charCount.textContent = `Message Count: ${currentLength}/${minLength}`;
-        if (currentLength < minLength) {
-            charCount.style.color = 'red';
-        } else {
-            charCount.style.color = 'green';
-        }
-    });
-
-    contactForm.addEventListener('submit', function(event) {
-        if (messageInput.value.length < minLength) {
-            event.preventDefault();
-            alert('Your message must be at least 50 characters long.');
-        }
-    });
-});
-
 function validateName(inputId) {
     let input = document.getElementById(inputId);
     let value = input.value;
@@ -52,3 +28,28 @@ function mobileMenu() {
     ham.classList.toggle("active");
     navMe.classList.toggle("active");
 }
+
+// Text message length not less than 50 chars
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    const messageInput = document.getElementById('message');
+    const charCount = document.getElementById('charCount');
+    const minLength = 50; // Minimum length for the message
+
+    messageInput.addEventListener('input', function() {
+        const currentLength = messageInput.value.length;
+        charCount.textContent = `Message Count: ${currentLength}/${minLength}`;
+        if (currentLength < minLength) {
+            charCount.style.color = 'red';
+        } else {
+            charCount.style.color = 'green';
+        }
+    });
+
+    contactForm.addEventListener('submit', function(event) {
+        if (messageInput.value.length < minLength) {
+            event.preventDefault();
+            alert('Your message must be at least 50 characters long.');
+        }
+    });
+});
