@@ -25,4 +25,4 @@ This tool is useful for anyone needing to quickly derive polynomial equations fr
 
 ## Screenshots :-
 
-![image](https://github.com/user-attachments/assets/7827e05a-09ae-45a3-99aa-2a2345b4f59a)
+![image](https://github.com/user-attachments/assets/e8feb01b-9c5d-4d0a-8ac3-eff8722f518e)
