@@ -105,77 +105,76 @@ const foodDatabase = {
     "Whole Milk": 61,
     "Yellow Peppers": 27,
     // Extend this list to have at least 500 items...
-  };
-  
-   
-  const foodSelect = document.getElementById('food-select');
-  const customFoodDiv = document.getElementById('custom-food');
-  const customFoodInput = document.getElementById('custom-food-input');
-  const customFoodCaloriesInput = document.getElementById('custom-food-calories');
-  const portionSizeInput = document.getElementById('portion-size');
-  const addFoodButton = document.getElementById('add-food');
-  const resetButton = document.getElementById('reset');
-  const mealSummary = document.getElementById('meal-summary');
-  const totalCaloriesElement = document.getElementById('total-calories');
-  
-  // Add default option for custom food entry
-  const defaultOption = document.createElement('option');
-  defaultOption.value = '';
-  defaultOption.textContent = 'Select Food';
-  foodSelect.appendChild(defaultOption);
-  
-  Object.keys(foodDatabase).forEach(food => {
+};
+
+const foodSelect = document.getElementById('food-select');
+const customFoodDiv = document.getElementById('custom-food');
+const customFoodInput = document.getElementById('custom-food-input');
+const customFoodCaloriesInput = document.getElementById('custom-food-calories');
+const portionSizeInput = document.getElementById('portion-size');
+const addFoodButton = document.getElementById('add-food');
+const resetButton = document.getElementById('reset');
+const mealSummary = document.getElementById('meal-summary');
+const totalCaloriesElement = document.getElementById('total-calories');
+
+// Add default option for custom food entry
+const defaultOption = document.createElement('option');
+defaultOption.value = '';
+defaultOption.textContent = 'Select Food';
+foodSelect.appendChild(defaultOption);
+
+Object.keys(foodDatabase).forEach(food => {
     const option = document.createElement('option');
     option.value = food;
     option.textContent = `${food} (${foodDatabase[food]} kcal/100g)`;
     foodSelect.appendChild(option);
-  });
-  
-  // Add option for custom food entry
-  const customOption = document.createElement('option');
-  customOption.value = 'custom';
-  customOption.textContent = 'Item not listed';
-  foodSelect.appendChild(customOption);
-  
-  foodSelect.addEventListener('change', () => {
+});
+
+// Add option for custom food entry
+const customOption = document.createElement('option');
+customOption.value = 'custom';
+customOption.textContent = 'Item not listed';
+foodSelect.appendChild(customOption);
+
+foodSelect.addEventListener('change', () => {
     if (foodSelect.value === 'custom') {
-      customFoodDiv.style.display = 'block';
+        customFoodDiv.style.display = 'block';
     } else {
-      customFoodDiv.style.display = 'none';
+        customFoodDiv.style.display = 'none';
     }
-  });
-  
-  addFoodButton.addEventListener('click', () => {
+});
+
+addFoodButton.addEventListener('click', () => {
     const selectedFood = foodSelect.value;
     const portionSize = parseInt(portionSizeInput.value);
     let foodCalories;
-  
+
     if (selectedFood === 'custom' && customFoodInput.value && customFoodCaloriesInput.value) {
-      const customFood = customFoodInput.value;
-      foodCalories = parseFloat(customFoodCaloriesInput.value);
-      addFoodToSummary(customFood, foodCalories, portionSize);
+        const customFood = customFoodInput.value;
+        foodCalories = parseFloat(customFoodCaloriesInput.value);
+        addFoodToSummary(customFood, foodCalories, portionSize);
     } else if (selectedFood && portionSize > 0) {
-      foodCalories = foodDatabase[selectedFood];
-      addFoodToSummary(selectedFood, foodCalories, portionSize);
+        foodCalories = foodDatabase[selectedFood];
+        addFoodToSummary(selectedFood, foodCalories, portionSize);
     }
-  });
-  
-  function addFoodToSummary(food, calories, portionSize) {
+});
+
+function addFoodToSummary(food, calories, portionSize) {
     const totalFoodCalories = (calories * portionSize) / 100;
-  
+
     const listItem = document.createElement('li');
     listItem.textContent = `${food} (${portionSize}g): ${totalFoodCalories.toFixed(2)} calories`;
     mealSummary.appendChild(listItem);
-  
+
     const currentTotalCalories = parseFloat(totalCaloriesElement.textContent);
     totalCaloriesElement.textContent = (currentTotalCalories + totalFoodCalories).toFixed(2);
-  
+
     portionSizeInput.value = '';
     customFoodInput.value = '';
     customFoodCaloriesInput.value = '';
-  }
-  
-  resetButton.addEventListener('click', () => {
+}
+
+resetButton.addEventListener('click', () => {
     mealSummary.innerHTML = '';
     totalCaloriesElement.textContent = '0';
     portionSizeInput.value = '';
@@ -183,5 +182,4 @@ const foodDatabase = {
     customFoodCaloriesInput.value = '';
     foodSelect.value = '';
     customFoodDiv.style.display = 'none';
-  });
-  
+});
