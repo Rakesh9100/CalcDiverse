@@ -12,5 +12,5 @@ A simple web-based calculator to find whether the string is Isogram or not.<br>
 - JavaScript
 
 ## Screenshots :-
-![image](https://github.com/user-attachments/assets/0323fc2e-1698-4103-b16c-ac62900ef7fa)
 
+![image](https://github.com/user-attachments/assets/af9d8224-c48e-416f-932b-828e03e02561)
