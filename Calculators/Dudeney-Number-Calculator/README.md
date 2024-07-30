@@ -1,8 +1,8 @@
-# <p align="center">Dudeney Calculator</p>
+# <p align="center">Dudeney Number Calculator</p>
 
 ## Description :-
 
-This is a simple website that checks whether a entered number or string is a Dudeney number or not.
+This is a simple website that checks whether an entered number is a Dudeney number or not.
 
 ## Tech Stacks :-
 
@@ -17,4 +17,4 @@ Handles queries for large numbers too
 
 ## Screenshots :-
 
-![image](https://github.com/user-attachments/assets/eb0d76f5-925d-4b05-b521-e739fd55aefb)
+![image](https://github.com/user-attachments/assets/df5b21e9-16d2-48f4-b3f3-c4dfa9919d0f)
