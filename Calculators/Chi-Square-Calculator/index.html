@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chi-Square Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Chi-Square Calculator</h1>
+        <p>Enter the observed and expected frequencies to calculate the Chi-Square statistic.</p>
+        <form id="chiSquareForm">
+            <div class="form-group">
+                <label for="observedValues">Observed Values (comma separated):</label>
+                <input type="text" id="observedValues" required placeholder="e.g., 10, 20, 30">
+            </div>
+            <div class="form-group">
+                <label for="expectedValues">Expected Values (comma separated):</label>
+                <input type="text" id="expectedValues" required placeholder="e.g., 15, 18, 27">
+            </div>
+            <div class="form-group">
+                <label for="significanceLevel">Significance Level (alpha):</label>
+                <input type="text" id="significanceLevel" required placeholder="e.g., 0.05">
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+        <div id="example">
+            <h2>Example</h2>
+            <p>Consider you have observed values [10, 20, 30] and expected values [15, 18, 27].</p>
+            <p>Enter the observed values as: <strong>10,20,30</strong></p>
+            <p>Enter the expected values as: <strong>15,18,27</strong></p>
+            <p>Enter the significance level as: <strong>0.05</strong></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,33,112,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.Calc-card {
+    min-width: 400px;
+    min-width: 400px;
+    width: calc(120px + 30vw);
+    height: calc(100px + 40vh);
+    background-color: snow;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+#title {
+    font-size: calc(12px + 1vw);
+    margin-top: calc(20px + 2vh);
+    text-align: center;
+}
+
+.calc-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    gap: calc(10px + 1vh);
+    padding: 0 25%;
+}
+
+#output {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 2vh;
+    padding: 0 25%;
+    margin-top: 2vh;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#calc-button {
+    align-self: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-box {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.switch-input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: calc(20px + 2vh);
+}
+
+#reset-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2vh;
+}
+
+#switch-select {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

@@ -12,6 +12,14 @@ The UV Index Calculator is a tool designed to estimate the level of ultraviolet 
 
 ## Features :-
 
+<<<<<<< HEAD
 It allows the UV Index Calculator to provide real-time UV Index values tailored to a user's specific location. By using GPS technology or allowing users to manually input their location, the tool can deliver precise UV radiation levels for the area where the user is currently located. This feature is essential for accurate UV exposure assessment because UV radiation levels can vary significantly based on geographic location, altitude, and other local factors.
 
 ## Screenshots :-
+=======
+Provides real-time UV Index values tailored to a user's specific location. By using GPS technology or allowing users to manually input their location, the tool can deliver precise UV radiation levels for the area where the user is currently located. This feature is essential for accurate UV exposure assessment because UV radiation levels can vary significantly based on geographic location, altitude, and other local factors.
+
+## Screenshots :-
+
+![image](https://github.com/user-attachments/assets/b30d62e6-8da6-46e0-9cee-59ddf1180b69)
+>>>>>>> c0bfef2ec841d1cc556f4ca24c210c418000e46c

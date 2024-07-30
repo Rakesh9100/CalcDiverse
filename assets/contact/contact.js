@@ -9,6 +9,16 @@ function validateName(inputId) {
     }
 }
 
+function validateEmail(emailFieldId) {
+    const emailField = document.getElementById(emailFieldId);
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+    if (!emailPattern.test(emailField.value)) {
+        emailField.setCustomValidity("Please enter a valid email address!");
+    } else {
+        emailField.setCustomValidity("");
+    }
+}
+
 const ham = document.querySelector(".hamburger");
 const navMe = document.querySelector(".nav-menu");
 
@@ -19,7 +29,7 @@ function mobileMenu() {
     navMe.classList.toggle("active");
 }
 
-// text message length not less than 50 chars
+// Text message length not less than 50 chars
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contact-form');
     const messageInput = document.getElementById('message');
@@ -31,13 +41,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-function validateEmail(emailFieldId) {
-    const emailField = document.getElementById(emailFieldId);
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-    if (!emailPattern.test(emailField.value)) {
-        emailField.setCustomValidity("Please enter a valid email address!");
-    } else {
-        emailField.setCustomValidity("");
-    }
-}
