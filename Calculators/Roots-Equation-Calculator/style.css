@@ -3,12 +3,12 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start; /* Changed from center to start to allow scrolling */
     margin: 0;
     background: linear-gradient(to right, #fc5c7d, #6a82fb);
     font-family: 'Roboto', sans-serif;
     color: #fff;
+    overflow: auto; /* Ensure the body can scroll if content exceeds viewport */
 }
 
 .head {
@@ -28,6 +28,7 @@ body {
     width: 90%;
     max-width: 600px;
     transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px auto; /* Center container with margin */
 }
 
 .container:hover {
