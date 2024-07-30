@@ -1,6 +1,10 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
-    const hoursOptions = Array.from({ length: 24 }, (_, i) => `<option value="${i}">${(i < 10 ? '0' + i : i)}</option>`).join('');
-    const minutesSecondsOptions = Array.from({ length: 60 }, (_, i) => `<option value="${i}">${(i < 10 ? '0' + i : i) }</option>`).join('');
+document.addEventListener('DOMContentLoaded', () => {
+    const hoursOptions = Array.from({
+        length: 24
+    }, (_, i) => `<option value="${i}">${(i < 10 ? '0' + i : i)}</option>`).join('');
+    const minutesSecondsOptions = Array.from({
+        length: 60
+    }, (_, i) => `<option value="${i}">${(i < 10 ? '0' + i : i) }</option>`).join('');
 
     document.getElementById('swimmingHours').innerHTML = hoursOptions;
     document.getElementById('swimmingMinutes').innerHTML = minutesSecondsOptions;
