@@ -12,7 +12,7 @@ An interactive web-based calculator that helps users determine their weight on d
 
 ## Features :-
 
-- Calculate Weight on different planets
+- Calculate the weight on different planets
 - Display gravitational differences across planets
 
 ## Usage :-
@@ -22,3 +22,6 @@ An interactive web-based calculator that helps users determine their weight on d
 
 The calculator will show your weight on various planets instantly, considering their unique gravitational pulls.
 
+## Screenshots :-
+
+![image](https://github.com/user-attachments/assets/977ed376-bd9c-4f42-bb40-d440fa518716)
