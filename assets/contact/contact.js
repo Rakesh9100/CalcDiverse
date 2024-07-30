@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentLength < minLength) {
             charCount.style.color = 'red';
         } else {
-            charCount.style.color = 'green';
+            charCount.style.color = '#00F260';
         }
     });
 
