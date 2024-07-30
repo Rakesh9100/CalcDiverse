@@ -1,7 +1,8 @@
 # <p align="center">Isomorphic String Calculator</p>
 
 ## Description :-
-Isomorphic string calculator is used to calculate whether the two entered strings are isomorphic or not .
+
+This is used to check whether the two entered strings are isomorphic or not.
 
 ## Tech Stacks :-
 
@@ -11,4 +12,4 @@ Isomorphic string calculator is used to calculate whether the two entered string
 
 ## Screenshots :-
 
-![image1](https://github.com/user-attachments/assets/b41c08d9-8db4-4308-9851-ec5a57ceb7ea)
+![image](https://github.com/user-attachments/assets/431ecfbe-43f2-40ca-b6fc-3cb6079386e9)
