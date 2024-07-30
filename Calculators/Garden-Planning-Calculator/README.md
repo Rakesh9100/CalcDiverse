@@ -16,4 +16,4 @@ This Garden Planning Calculator helps users efficiently plan their garden by cal
 
 ## Screenshots :-
 
-![image](https://github.com/user-attachments/assets/900e7f33-2d0f-494e-860d-46c6596ab78b)
+![image](https://github.com/user-attachments/assets/9808a3ab-ea3f-4310-a359-e3fba0b9163e)
