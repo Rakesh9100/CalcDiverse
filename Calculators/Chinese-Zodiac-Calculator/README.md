@@ -16,13 +16,6 @@ The **Chinese Zodiac Calculator** is a web application that calculates the Chine
 - User-Friendly Interface: Simple and intuitive design.
 - Responsive and visually appealing interface with images of Chinese Zodiac animals.
 
-## Usage :-
-
-1. Open `index.html` in your preferred web browser.
-2. Fill in each input field with your birth year.
-3. Click on the button.
-4. View the result of your birth year!
-
 ## Screenshots :-
 
-
+![image](https://github.com/user-attachments/assets/9e4da760-a775-4f00-991c-2ecbb8b175e3)
