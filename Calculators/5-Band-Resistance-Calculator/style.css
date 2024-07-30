@@ -53,6 +53,10 @@ select {
     font-weight: 600;
 }
 
+.btn:hover {
+    cursor: pointer;
+    background-color: #ed8e65;
+}
 
 .popup {
     display: none;
@@ -83,6 +87,11 @@ select {
     margin-top: 10px;
     width: 40%;
     border: 5px solid brown;
+}
+
+#closebtn:hover {
+    cursor: pointer;
+    background-color: #ed8e65;
 }
 
 @media only screen and (max-width: 786px) {
