@@ -65,12 +65,12 @@ button:hover {
     box-shadow: 0 0 0 1px rgba(41, 8, 63, 0.712), 0 3px 5px 0 rgba(41, 8, 63, 0.712);
 }
 
-.input-box{
+.input-box {
     display: flex;
     flex-direction: column;
 }
 
-.input-box>div{
+.input-box>div {
     display: flex;
     justify-content: space-between;
 }
