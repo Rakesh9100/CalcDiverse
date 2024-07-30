@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculates the range of blood sugar level in body based on age and medical test results.
+Calculates the range of blood sugar levels in the body based on age and medical test results.
 
 ## Tech Stacks :-
 
@@ -11,7 +11,5 @@ Calculates the range of blood sugar level in body based on age and medical test 
 - JavaScript
 
 ## Screenshots :-
-![image](https://github.com/user-attachments/assets/6bd429eb-4f0c-4367-aa83-6fa05bbb2cb9)
 
-
-
+![image](https://github.com/user-attachments/assets/795b1a22-00b4-4b3f-943e-bbe1d7ca824f)
