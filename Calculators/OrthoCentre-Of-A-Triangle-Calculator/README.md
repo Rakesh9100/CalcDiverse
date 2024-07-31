@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Cosine Formula Calculator is a web application that calculates the coordinates of orthocentre of the triangle whose all three coordinates are input by the user
+OrthoCentre Of A Triangle Calculator is a web application that calculates the coordinates of orthocentre of the triangle whose all three coordinates are input by the user
 
 ## Tech Stacks :-
 
