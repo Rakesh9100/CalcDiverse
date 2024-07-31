@@ -32,5 +32,5 @@ The Momentum With Time Calculator is a web application designed to calculate the
 
 ## Screenshots :-
 
-![image](![Screenshot 2024-07-31 120129](https://github.com/user-attachments/assets/0f578db5-c877-487b-92c1-51a088ce3e02)
-)
+![Screenshot 2024-07-31 120129](https://github.com/user-attachments/assets/0f578db5-c877-487b-92c1-51a088ce3e02)
+
