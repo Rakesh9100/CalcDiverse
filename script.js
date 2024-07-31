@@ -138,6 +138,70 @@ calculators.forEach(calculator => {
         h2TextContents.push(h2Element.textContent);
     }
 });
+const itemsPerPage = 10;
+let currentPage = 1;
+
+function showPage(page) {
+    const boxes = document.querySelectorAll('.container .box');
+    const totalPages = Math.ceil(boxes.length / itemsPerPage);
+    currentPage = Math.max(1, Math.min(page, totalPages));
+
+    boxes.forEach((box, index) => {
+        box.style.display = (index >= (currentPage - 1) * itemsPerPage && index < currentPage * itemsPerPage) ? 'block' : 'none';
+    });
+
+    document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages}`;
+
+    document.getElementById('prev').style.display = totalPages > 1 ? 'inline' : 'none';
+    document.getElementById('next').style.display = totalPages > 1 ? 'inline' : 'none';
+}
+
+function changePage(direction) {
+    showPage(currentPage + direction);
+}
+
+function filterCalculators() {
+    var input, filter, calculators, i;
+    input = document.getElementById('calculatorSearch');
+    filter = input.value.toUpperCase();
+    calculators = document.querySelectorAll('.container .box');
+    var noResults = document.getElementById('noResults');
+    var paginationControls = document.getElementById('pagination-controls');
+    var hasResults = false;
+
+    for (i = 0; i < calculators.length; i++) {
+        var calculator = calculators[i];
+        var h2 = calculator.querySelector('h2');
+        var h3 = calculator.querySelector('h3');
+        var calculatorName = h2.textContent || h2.innerText;
+        var calculatorDescription = h3.textContent || h3.innerText;
+
+        if ((calculatorName.toUpperCase().indexOf(filter) > -1) || (calculatorDescription.toUpperCase().indexOf(filter) > -1)) {
+            calculator.style.display = "flex";
+            hasResults = true;
+        } else {
+            calculator.style.display = "none";
+        }
+    }
+
+    if (hasResults) {
+        noResults.style.display = 'none';
+        paginationControls.style.display = 'none'; // Hide pagination controls during search
+    } else {
+        noResults.style.display = 'block';
+        paginationControls.style.display = 'none'; // Hide pagination controls if no results
+    }
+
+    if (filter === "") {
+        paginationControls.style.display = 'flex'; // Show pagination controls when search input is cleared
+        showPage(currentPage); // Reset pagination
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('noResults').style.display = 'none';
+    showPage(currentPage);
+});
 input.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
     let filtered = h2TextContents.filter(ele => ele.toLowerCase().includes(searchTerm));
