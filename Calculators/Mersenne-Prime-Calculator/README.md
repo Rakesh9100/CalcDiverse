@@ -1,4 +1,4 @@
-# <p align="center">Emirp Number Calculator</p>
+# <p align="center">Mersenne Prime Number Calculator</p>
 
 ## Description :-
 
