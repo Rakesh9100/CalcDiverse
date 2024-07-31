@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Discriminant Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>DISCRIMINANT CALCULATOR</h1>
+
+        <p>Please enter the coefficients <strong>a</strong>, <strong>b</strong> and <strong>c</strong> of a quadratic
+            equation of the form:<br><strong id="equation">ax&#x00B2; + bx + c = 0</strong></p>
+
+        <form name="input_form" action="javascript:validate();">
+            <span>a = <input type="text" name="aterm" size="5" required></span>
+            <span> b = <input type="text" name="bterm" size="5" required></span>
+            <span> c = <input type="text" name="cterm" size="5" required></span>
+            <div><button type="submit" value="Calculate"> Calculate Discriminant </button></div>
+        </form>
+
+        <p id="output_text" />
+        <p id="outputValue" />
+
+        <script src="./script.js"></script>
+    </div>
+</body>
+
+</html>
