@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Young's Double Slit Experiment Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Young's Double Slit Experiment Calculator</h1>
+        <form id="calculator-form">
+            <label for="d">Distance between slits (d) in meters:</label>
+            <input type="number" id="d" step="0.000001" required>
+            <label for="lambda">Wavelength (λ) in meters:</label>
+            <input type="number" id="lambda" step="0.000000001" required>
+            <label for="L">Distance to the screen (L) in meters:</label>
+            <input type="number" id="L" step="0.01" required>
+            <label for="m">Order of the fringe (m):</label>
+            <input type="number" id="m" required>
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        <div id="results">
+            <h2>Results</h2>
+            <p id="bright-fringe">Position of Bright Fringe (y<sub>m</sub>): </p>
+            <p id="dark-fringe">Position of Dark Fringe (y<sub>m</sub>): </p>
+            <p id="fringe-spacing">Fringe Spacing (Δy): </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

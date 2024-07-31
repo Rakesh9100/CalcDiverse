@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Chinese Zodiac Calculator</title>
+</head>
+<body>
+    <div id="container" class="d-flex justify-content-center align-items-center vh-100">
+        <div id="main" class="container p-4 rounded shadow">
+            <div id="heading" class="text-center">
+                <h1>Chinese Zodiac Calculator</h1>
+            </div>    
+            <div class="input mt-3">
+                <form id="zodiacForm" class="text-center">
+                    <div class="form-group">
+                        <label for="birthYear">Enter your birth year:</label>
+                        <input type="number" id="birthYear" name="birthYear" class="form-control" required>
+                    </div>
+                    <button id="button" type="submit" class="btn btn-dark" >Find My Zodiac Animal</button>
+                </form>
+            </div>    
+            <div id="output" class="text-center mt-4">
+                <div id="picture" class="mb-3">
+                    <img id="photo" class="img-fluid" alt="Zodiac Animal Image" style="display: none;">
+                </div>
+                <b><p id="result"></p></b>
+                <p id="description"></p>
+            </div>    
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
