@@ -12,4 +12,4 @@ A simple web-based Pythagorean Calculator that allows users to input the lengths
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/bb067f93-fe26-4201-b54d-73edbbcfeb9a)
+![Screenshot 2024-07-10 131510](https://github.com/user-attachments/assets/672f63c9-28c8-4835-9b66-1f05293921c1)
