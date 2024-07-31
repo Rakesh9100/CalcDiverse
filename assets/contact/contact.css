@@ -146,3 +146,39 @@ textarea:hover {
     color: rgb(255, 255, 255);
     margin-bottom: 0;
 }
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: linear-gradient(
+  to bottom,
+  #240b36,
+  #220c3e,
+  #200d46,
+  #1e0e4e,
+  #1c0f56,
+  #1a105e,
+  #181166,
+  #16126e,
+  #141376,
+  #12147e,
+  #101586,
+  #0e168e,
+  #0c1796,
+  #0a189e,
+  #0819a6,
+  #061aae,
+  #041bb6,
+  #021cbe,
+  #001dc6,
+  #000080
+);
+    width: 0%;
+  }

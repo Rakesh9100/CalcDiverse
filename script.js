@@ -386,7 +386,7 @@ function validateName(inputId) {
   animateCircles();
 
 
-  // Add this to your existing JavaScript
+  // Progress JS
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
