@@ -1,4 +1,49 @@
-document.getElementById("submitButton").onclick = function () {
+const fromUnitElements = document.querySelectorAll('input[name="fromUnit"]');
+const toUnitElements = document.querySelectorAll('input[name="toUnit"]');
+const submitButton = document.getElementById("submitButton");
+
+fromUnitElements.forEach(element => {
+    element.addEventListener('change', handleUnitChange);
+    element.addEventListener('change', () => {
+        if (isSubmitted) {
+            debounce(updateResult, 600)();
+        }
+    });
+});
+
+toUnitElements.forEach(element => {
+    element.addEventListener('change', () => {
+        if (isSubmitted) {
+            debounce(updateResult, 600)();
+        }
+    });
+});
+
+function handleUnitChange() {
+    const selectedFromUnit = document.querySelector('input[name="fromUnit"]:checked').value;
+
+    toUnitElements.forEach(element => {
+        if (element.value === selectedFromUnit) {
+            element.disabled = true;
+        } else {
+            element.disabled = false;
+        }
+    });
+}
+
+let debounceTimeout;
+let isSubmitted = false;
+let callCount = 0;
+
+submitButton.onclick = function () {
+    updateResult();
+    isSubmitted = true;
+}
+
+function updateResult() {
+    callCount++;
+    console.log(`updateResult called ${callCount} times`); // Log the call count
+
     let temp = Number(document.getElementById("textBox").value);
 
     const sourceUnitElement = document.querySelector(
@@ -56,4 +101,11 @@ document.getElementById("submitButton").onclick = function () {
 
 function displayMessage(string) {
     document.getElementById("result").innerHTML = string;
+}
+
+function debounce(func, delay) {
+    return function(...args) {
+        clearTimeout(debounceTimeout);
+        debounceTimeout = setTimeout(() => func.apply(this, args), delay);
+    };
 }
