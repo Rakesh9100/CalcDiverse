@@ -33,9 +33,21 @@ function mobileMenu() {
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contact-form');
     const messageInput = document.getElementById('message');
+    const charCount = document.getElementById('charCount');
+    const minLength = 50; // Minimum length for the message
+
+    messageInput.addEventListener('input', function() {
+        const currentLength = messageInput.value.length;
+        charCount.textContent = `Message Count: ${currentLength}/${minLength}`;
+        if (currentLength < minLength) {
+            charCount.style.color = 'red';
+        } else {
+            charCount.style.color = '#00F260';
+        }
+    });
 
     contactForm.addEventListener('submit', function(event) {
-        if (messageInput.value.length < 50) {
+        if (messageInput.value.length < minLength) {
             event.preventDefault();
             alert('Your message must be at least 50 characters long.');
         }
