@@ -11,6 +11,10 @@ function calculate() {
         document.getElementById("result").innerText = "Please enter the valid numbers for all fields.";
         return;
     }
+    if ((x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2))==0){
+      document.getElementById("result").innerText = "The given coordinates do not form a triangle";
+        return;
+    }
 
     // Display the result
     const orthocenter = calculateOrthocenter(x1, y1, x2, y2, x3, y3);
