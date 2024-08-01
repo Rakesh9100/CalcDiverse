@@ -109,6 +109,12 @@ textarea:hover {
     box-shadow: 5px 5px 10px black;
 }
 
+.contact-container #charCount {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 .contact-container button {
     font-size: 20px;
     font-weight: 700;
