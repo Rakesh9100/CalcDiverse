@@ -20,6 +20,47 @@ window.addEventListener('scroll', () => {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const stars = document.querySelectorAll('.star');
+    const submitButton = document.getElementById('submit-rating');
+    let selectedRating = 0;
+
+    stars.forEach(star => {
+        star.addEventListener('mouseover', () => {
+            resetStars();
+            highlightStars(star.dataset.value);
+        });
+
+        star.addEventListener('click', () => {
+            selectedRating = star.dataset.value;
+            resetStars();
+            highlightStars(selectedRating);
+        });
+    });
+
+    function resetStars() {
+        stars.forEach(star => {
+            star.classList.remove('selected');
+        });
+    }
+
+    function highlightStars(count) {
+        for (let i = 0; i < count; i++) {
+            stars[i].classList.add('selected');
+        }
+    }
+
+    submitButton.addEventListener('click', () => {
+        if (selectedRating > 0) {
+            alert(`Thank you for rating us ${selectedRating} stars!`);
+        } else {
+            alert('Please select a rating.');
+        }
+    });
+});
+
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
