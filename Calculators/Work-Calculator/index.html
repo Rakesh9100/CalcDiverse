@@ -18,12 +18,8 @@
             
             <label for="angle">Angle (θ in degrees):</label>
             <input type="number" id="angle" name="angle" required>
-            
-            <button type="submit">Calculate Work</button>
-        </form>
-        <form id="conversionForm">  <!-- Added dropdown slection for unit conversion-->
             <label for="unit">Convert to:</label>
-            <select id="unit" name="unit" style="font-size: 18px; text-align: center; padding: 10px;">
+            <select id="unit" name="unit" style="font-size: 18px; text-align: center; padding: 10px;"> <!-- adjusted inside the form -->
                 <option value="Joule">Joule</option>
                 <option value="ElectronVolt">ElectronVolt</option>
                 <option value="Calorie">Calorie</option>
@@ -31,6 +27,8 @@
                 <option value="Foot-pound">Foot-pound</option>
                 <option value="KiloWatt-Hour">KiloWatt-Hour</option>
               </select>
+            <button type="submit">Calculate Work</button>
+            
         </form>
         <div id="result"></div>
     </div>

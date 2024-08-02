@@ -65,7 +65,7 @@ button:hover {
     align-items: center;
     border:solid;
     border-radius: 10px;
-    height:4vh;
+    height:auto;   /*changed to auto to adjust accordingly*/
     margin-top: 20px;
     font-size: 1.2em;
     color: red;
