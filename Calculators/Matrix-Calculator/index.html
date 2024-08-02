@@ -13,21 +13,63 @@
     <div id="matrixCalculator">
         <h2>Matrix Calculator</h2>
 
-        <label for="matrixSize">Matrix Size:</label>
-        <select id="matrixSize" onchange="createMatrixInputs()">
-            <option value="2" class="size">2 x 2</option>
-            <option value="3" class="size">3 x 3</option>
-            <option value="4" class="size">4 x 4</option>
-        </select>
+        <div class="input-box">
+            <h2>MatrixA</h2>
+            <div>
+                <label for="matrixRows">Rows:</label>
+                <select id="matrixARows" onchange="createMatrixInputs()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <label for="matrixCols">Columns:</label>
+                <select id="matrixACols" onchange="createMatrixInputs()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
 
+             <h2>MatrixB</h2>
+
+             <div>
+                <label for="matrixBRows">Rows:</label>
+                <select id="matrixBRows" onchange="createMatrixInputs()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <label for="matrixBCols">Columns:</label>
+                <select id="matrixBCols" onchange="createMatrixInputs()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+             </div>
+        </div>
+
+        <br>
         <div id="matrixInputs">
-            <!-- Matrix A -->
             <h3>Matrix A</h3>
             <div id="matrixA"></div>
 
-            <!-- Matrix B -->
             <h3>Matrix B</h3>
             <div id="matrixB"></div>
+            
+            <label for="matrixPower">Power:</label>
+            <input type="number" id="matrixPower" min="1" value="1" />
         </div>
 
         <button onclick="calculate('add')">Add</button>
@@ -36,16 +78,15 @@
         <button onclick="calculate('determinant')">Determinant</button>
         <button onclick="calculate('inverse')">Inverse</button>
         <button onclick="calculate('transpose')">Transpose</button>
+        <button onclick="calculate('rank')">Rank</button>
+        <button onclick="calculate('power')">Power</button>
 
         <h3>Result</h3>
         <div id="result"></div>
         <button onclick="resetForm()">Reset</button>
-
     </div>
 
     <script src="script.js"></script>
-
-    </div>
 </body>
 
 </html>

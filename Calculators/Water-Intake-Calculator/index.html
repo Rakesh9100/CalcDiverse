@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Water Intake Calculator</title>
 </head>
 
 <body>
-    <div id="calculator">
-        <h1>Water Intake Calculator</h1>
+    <div class="container">
+        <div id="calculator">
+            <h1>Water Intake Calculator</h1>
 
-        <label for="weight">Weight (in kg):</label>
-        <input type="number" id="weight" name="weight">
+            <label for="weight">Weight (in kg):</label>
+            <input type="number" id="weight" name="weight" required>
 
-        <label for="activity">Activity Level:</label>
+            <label for="activity">Activity Level:</label>
+            <select id="activity" name="activity">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
 
-        <select id="activity" name="activity">
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-        </select>
+            <label for="climate">Climate:</label>
+            <select id="climate" name="climate">
+                <option value="cold">Cold</option>
+                <option value="hot">Hot</option>
+            </select>
 
-        <label for="climate">Climate:</label>
+            <label for="activityDuration">Activity Duration (hours/day):</label>
+            <input type="number" id="activityDuration" required>
 
-        <select id="climate" name="climate">
-            <option value="cold">Cold</option>
-            <option value="hot">Hot</option>
-        </select>
+            <label for="temperature">Temperature (°C):</label>
+            <input type="number" id="temperature" required>
 
-        <button onclick="calculateIntake()">Calculate</button>
+            <button onclick="calculateHealthMetrics()">Calculate</button>
 
-        <p id="result"></p>
+            <p id="result"></p>
+        </div>
     </div>
 
     <script src="script.js"></script>

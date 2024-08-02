@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PH Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>pH Calculator</h1>
+        <form id="phForm">
+            <label for="calculationType">I want to calculate the pH from the concentration of an acid</label>
+            <label for="acidType">Acid</label>
+            <select id="acidType" required>
+                <option value="HCl">Hydrochloric acid - HCl</option>
+                <option value="HCN">Hydrocyanic acid - HCN</option>
+                <option value="H₂CO₃">Carbonic acid - H₂CO₃</option>
+                <option value="CH₃COOH">Acetic acid - CH₃COOH</option>
+                <option value="H₂SO₄">Sulfuric acid - H₂SO₄</option>
+            </select>
+            <div id="concentrationInput">
+                <label for="concentration">Concentration (M)</label>
+                <input type="number" id="concentration" step="any" required>
+            </div>
+            <button type="submit">Calculate pH</button>
+        </form>
+        <div id="result" class="result">
+            <h2>Result</h2>
+            <label for="phValue">pH</label>
+            <input type="text" id="phValue" readonly>
+            <label for="hIonConcentration">[H<sup>+</sup>] (M)</label>
+            <input type="text" id="hIonConcentration" readonly>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

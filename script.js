@@ -1,3 +1,25 @@
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.containers');
+    const navLinks = document.querySelectorAll('.nav-links');
+
+    let currentSection = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= sectionTop - 50) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.setAttribute('id', '');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+            link.setAttribute('id', 'active1')
+            console.log(currentSection);
+        }
+    });
+});
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -243,4 +265,15 @@ if (SpeechRecognition) {
 } else {
     console.log("Your Browser does not support speech Recognition");
     info.textContent = "Your Browser does not support Speech Recognition";
+}
+
+function validateName(inputId) {
+    let input = document.getElementById(inputId);
+    let value = input.value;
+    let regex = /^[A-Za-z ]+$/;
+
+    if (!regex.test(value)) {
+        alert("Please enter only characters in the name field.");
+        input.value = value.replace(/[^A-Za-z ]/g, ''); // Remove any non-alphabetic characters
+    }
 }

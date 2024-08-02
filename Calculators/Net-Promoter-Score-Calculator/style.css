@@ -1,0 +1,136 @@
+body {
+    background: url("assets/background.jpeg") no-repeat center top;
+    background-size: cover;
+    background-color: rgb(214, 227, 252);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay img {
+    margin-bottom: 350px;
+    width: 85%;
+}
+
+.container {
+    background-color: rgba(246, 225, 244, 0.4);
+    padding: 2rem;
+    margin-top: 250px;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+    width: 100%;
+    max-width: 24rem;
+    position: relative;
+    z-index: 1; /* Ensure the container is above the overlay image */
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #030303;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    display: block;
+    width: 60%;
+    margin: 20px auto 0; /* Ensures the button is centered */
+    background-color: #87b4fd;
+    color: rgb(7, 7, 7);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 2px solid #3b82f6; /* Adds a border */
+    cursor: pointer;
+    text-align: center; /* Centers the text inside the button */
+}
+
+button:hover {
+    background: linear-gradient(to top left, crimson, rgb(159, 249, 159));
+    border: 2px solid #0d0e0f;
+}
+
+.hidden {
+    display: none;
+}
+
+#errorMessage {
+    color: #ff0606;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#result {
+    text-align: center;
+}
+
+#result h2 {
+    font-size: 1.25rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 300px; /* Adjust margin for smaller screens */
+        padding: 1.5rem; /* Reduce padding */
+        max-width: 90%; /* Increase max-width for better fit on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.25rem; /* Reduce font size */
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    button {
+        width: 70%; /* Increase button width */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 50px;
+        padding: 1rem;
+        max-width: 75%;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button {
+        width: 80%;
+    }
+}

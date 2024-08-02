@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('assets/waves.svg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+
+    /* Glassmorphic theme */
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+    color: white;
+    font-family: "Nunito";
+    font-size: 1.2rem;
+}
+
+#result_head {
+    font-size: 1.5rem;
+    border-bottom: 2px solid yellow;
+}
+
+.line1_container input,
+.line2_container input {
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.4rem;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid wheat;
+}
+
+.line1_wrapper,
+.line2_wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.eqn {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.eqn_comp {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "Nunito";
+    font-size: 2.2rem;
+}
+
+.eqn input:active {
+    border: 2px solid blue;
+    caret-color: blue;
+}
+
+.result_container input {
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.4rem;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+
+.input_container {
+    background: rgba(173, 216, 230, 0.503);
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 1025px) {
+
+    .line1_wrapper,
+    .line2_wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+    }
+
+    .calculator_container {
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .calculator_container {
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+        width: 15rem;
+        height: 58rem;
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .calculator_container {
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+        width: 15rem;
+        height: 58rem;
+        padding: 5rem;
+        left: 54%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .calculator_container {
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+        width: 15rem;
+        height: 58rem;
+        padding: 5rem;
+        left: 64%;
+    }
+}

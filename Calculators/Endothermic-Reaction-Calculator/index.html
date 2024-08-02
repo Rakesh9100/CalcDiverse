@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Endothermic Reaction Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Endothermic Reaction Calculator</h1>
+        <form id="reaction-form">
+            <label for="initialTemp">Initial Temperature (°C):</label>
+            <input type="number" id="initialTemp" required />
+            <label for="finalTemp">Final Temperature (°C):</label>
+            <input type="number" id="finalTemp" required />
+            <label for="mass">Mass (g):</label>
+            <input type="number" id="mass" required />
+            <label for="specificHeat">Specific Heat Capacity (J/g°C):</label>
+            <input type="number" id="specificHeat" required />
+            <button type="button" onclick="calculateEnergy()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

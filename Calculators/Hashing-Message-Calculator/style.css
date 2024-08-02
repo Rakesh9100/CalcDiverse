@@ -1,0 +1,94 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('assets/background.jpg');
+    color: #ecf0f1;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(39, 39, 39, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    height: 58%;
+    width: 85%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #3498db;
+}
+
+h3 {
+    color: #67addb;
+}
+
+label {
+    margin-right: 5px;
+    color: #ecf0f1;
+}
+
+/* Adjusted styling for horizontal input boxes */
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 0 5px;
+    padding: 7px;
+    width: 200px;
+    /* border: none; */
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+button {
+    margin-top: 15px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #3498db;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#info {
+    margin-top: 20px;
+    display: flex;
+    font-weight: bold;
+    color: #67addb;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#fact {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #b4defa;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}

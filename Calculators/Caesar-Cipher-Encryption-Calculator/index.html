@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Caesar Cipher Encryption Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Caesar Cipher Encryption</h1>
+        <div class="form-group">
+            <label for="plaintext">Plain Text:</label>
+            <textarea id="plaintext" rows="4" cols="50"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="key">Key:</label>
+            <input type="number" id="key" min="0" max="25">
+        </div>
+        <button onclick="encrypt()">Encrypt</button>
+        <div class="form-group">
+            <label for="ciphertext">Cipher Text:</label>
+            <textarea id="ciphertext" rows="4" cols="50" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Graphing Calculator</title>
 </head>
-
 <body>
-
     <div class="calculator-container">
         <h1>Graphing Calculator</h1>
         <canvas id="graphCanvas" width="400" height="400"></canvas>
         <div>
             <label for="equation">Enter Equation:</label>
-            <input type="text" id="equation" placeholder="e.g., y = x^2">
+            <input
+                type="text"
+                id="equation"
+                placeholder="e.g., y = x^2 or 2x + 7y + 9 = 0" />
         </div>
         <button onclick="graphEquation()">Graph</button>
     </div>
-
     <script src="script.js"></script>
 </body>
-
 </html>
