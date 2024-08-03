@@ -13,14 +13,17 @@ body {
 .container {
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 300px;
+    width: 350px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 h1 {
     margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
 }
 
 form {
@@ -36,21 +39,25 @@ form {
 
 .form-group label {
     margin-bottom: 5px;
+    color: #555;
 }
 
 input, select {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
 button {
-    padding: 10px;
+    padding: 12px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -59,4 +66,36 @@ button:hover {
 
 #result {
     margin-top: 20px;
+}
+
+button {
+    margin-bottom: 10px;
+    background-color: #28a745;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#selection-page button:first-child {
+    background-color: #ffc107;
+}
+
+#selection-page button:first-child:hover {
+    background-color: #e0a800;
+}
+
+.result h2 {
+    color: #ff5722;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
