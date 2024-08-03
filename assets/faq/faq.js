@@ -124,12 +124,3 @@ faq.forEach(function (item, index) {
     faqItem.addEventListener(`click`, toggleContent);
     document.querySelectorAll(`.faqs_container`)[index % 2].appendChild(faqItem);
 });
-  // Progress JS
-function updateProgressBar() {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    document.getElementById("myProgressBar").style.width = scrolled + "%";
-  }
-  
-  window.addEventListener('scroll', updateProgressBar);

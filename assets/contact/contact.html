@@ -42,7 +42,9 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
-    <div class="progress-bar"></div>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
     <header>
         <nav class="navbar">
             <div class="image-logo">
@@ -151,7 +153,16 @@
             </script>: All Rights Reserved
         </p>
     </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
 
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
     <script src="./contact.js"></script>
     <script src="../../script.js"></script>
     <script src="../customcursor.js"></script>

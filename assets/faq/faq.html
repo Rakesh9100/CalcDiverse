@@ -152,7 +152,17 @@
     </footer>
 
     <!-- ----------------------------------------- Footer Code Ends--------------------------------- -->
-
+    <script>
+  // Progress JS
+  function updateProgressBar() {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.getElementById("myProgressBar").style.width = scrolled + "%";
+  }
+  
+  window.addEventListener('scroll', updateProgressBar);
+    </script>
     <script src="faq.js"></script>
     <script src="../../script.js"></script>
     <script src="../customcursor.js"></script>
