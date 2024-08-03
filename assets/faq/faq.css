@@ -113,13 +113,10 @@
         text-align: center;
     }
 }
-.progress-container {
+  .progress-container {
     width: 100%;
     height: 8px;
     background: transparent;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
   }
   
   .progress-bar {
