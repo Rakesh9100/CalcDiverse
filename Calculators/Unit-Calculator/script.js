@@ -13,6 +13,7 @@ function updateUnitsDropdown(type) {
             "square foot",
         ],
         weight: ["kilogram", "gram", "ounce", "pound", "ton"],
+        work: ["Joule", "electron Volt", "calorie", "kcal", "kWh"],
         volume: [
             "cubic meter",
             "cubic kilometer",
@@ -163,6 +164,39 @@ function convert() {
                 ounce: (value) => value * 35274,
                 pound: (value) => value * 2205,
             },
+        },
+        work: {
+            //conversion units for work
+            Joule: {
+                "electron-Volt": (value) => value / 1.60218e-19,
+                calorie: (value) => value / 4.184,
+                kcal: (value) => value / 4184,
+                kWh: (value) => value / 3.6e6
+            },
+            "electron Volt": {
+                Joule: (value) => value * 1.60218e-19,
+                calorie: (value) => value * 1.60218e-19 / 4.184,
+                kcal: (value) => value * 1.60218e-19 / 4184,
+                kWh: (value) => value * 1.60218e-19 / 3.6e6
+            },
+            calorie: {
+                Joule: (value) => value * 4.184,
+                "electron Volt": (value) => value * 4.184 / 1.60218e-19,
+                kcal: (value) => value / 1000,
+                kWh: (value) => value * 4.184 / 3.6e6
+            },
+            kcal: {
+                Joule: (value) => value * 4184,
+                "electron Volt": (value) => value * 4184 / 1.60218e-19,
+                calorie: (value) => value * 1000,
+                kWh: (value) => value * 4184 / 3.6e6
+            },
+            kWh: {
+                Joule: (value) => value * 3.6e6,
+                "electron-Volt": (value) => value * 3.6e6 / 1.60218e-19,
+                calorie: (value) => value * 3.6e6 / 4.184,
+                kcal: (value) => value * 3.6e6 / 4184
+            }
         },
         volume: {
             // Conversion factors for volume units
