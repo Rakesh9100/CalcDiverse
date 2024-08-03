@@ -1,8 +1,8 @@
-# <p align="center">Pythagorean Theorem Calculator</p>
+# <p align="center">Pythagorean Triples Calculator</p>
 
 ## Description :-
 
-A simple web-based Pythagorean Calculator that allows users to input the lengths of two sides of a right-angled triangle and calculates the length of the third side using the Pythagorean theorem (a² + b² = c²).
+A simple calculator that checks whether the user inputs side lengths form a Pythagorean triplet or not.
 
 ## Tech Stacks :-
 
