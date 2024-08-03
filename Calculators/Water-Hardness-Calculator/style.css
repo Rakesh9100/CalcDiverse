@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.container {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input,
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff7b54;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff5722;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+#error-message.visible {
+    display: block;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.error {
+    border: 2px solid red;
+}
