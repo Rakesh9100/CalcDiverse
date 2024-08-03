@@ -12,41 +12,6 @@
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <title>CalcDiverse | FAQ</title>
-    <style>
-  .progress-container {
-    width: 100%;
-    height: 8px;
-    background: transparent;
-  }
-  
-  .progress-bar {
-    height: 8px;
-    background: linear-gradient(
-  to bottom,
-  #240b36,
-  #220c3e,
-  #200d46,
-  #1e0e4e,
-  #1c0f56,
-  #1a105e,
-  #181166,
-  #16126e,
-  #141376,
-  #12147e,
-  #101586,
-  #0e168e,
-  #0c1796,
-  #0a189e,
-  #0819a6,
-  #061aae,
-  #041bb6,
-  #021cbe,
-  #001dc6,
-  #000080
-);
-    width: 0%;
-  }
-    </style>
 </head>
 
 <body>
@@ -77,9 +42,6 @@
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-    </div>
-    <div class="progress-container">
-        <div class="progress-bar" id="myProgressBar"></div>
     </div>
     <!-- Navigation bar section start  -->
     <header style="position: fixed;font-family: 'Montserrat', sans-serif; width: 100%;">
@@ -187,17 +149,6 @@
     </footer>
 
     <!-- ----------------------------------------- Footer Code Ends--------------------------------- -->
-    <script>
-  // Progress JS
-  function updateProgressBar() {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    document.getElementById("myProgressBar").style.width = scrolled + "%";
-  }
-  
-  window.addEventListener('scroll', updateProgressBar);
-    </script>
     <script src="faq.js"></script>
     <script src="../../script.js"></script>
     <script src="../customcursor.js"></script>
