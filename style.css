@@ -1600,6 +1600,10 @@ footer {
     text-align: center;
 }
 
+.footer-ul li a:hover {
+    color: #00d0ff;
+}
+
 .social {
     font-size: 3.5rem;
     text-decoration: none;
