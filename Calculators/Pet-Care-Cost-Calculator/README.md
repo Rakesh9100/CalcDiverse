@@ -17,3 +17,5 @@ The **Pet Care Cost Calculator** is a simple web application that helps users es
 - **Calculate Lifetime Cost**: The application computes the total estimated lifetime cost based on the provided data.
 
 ## Screenshots :-
+
+![image](https://github.com/user-attachments/assets/d8b33f46-0ba1-4c30-b3e6-689e8a0bb0b7)
