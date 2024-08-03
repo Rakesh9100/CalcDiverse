@@ -1,3 +1,9 @@
+const updateProgress = () =>{
+    const {scrollTop,scrollHeight} = document.documentElement;
+    const scrollPercent = `${(scrollTop/(scrollHeight-window.innerHeight)) * 100}%`;
+    document.querySelector('#progress-bar').style.setProperty('--progress',scrollPercent);
+}
+document.addEventListener('scroll',updateProgress);
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('.containers');
     const navLinks = document.querySelectorAll('.nav-links');
