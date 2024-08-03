@@ -68,8 +68,6 @@ input:focus, .custom-select select:focus {
 
 .custom-select select {
     cursor: pointer;
-    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBkPSJNNC4yOTMgNi41OTNsMy42NzEgMy42NzFhMS4wMDEgMS4wMDEgMCAwIDAgMS40MTQgMEwxMy42MjEgNi41OTNhLjI1LjI1IDAgMCAwLS4xNzctLjQyNUg0LjQ3M0EuMjUuMjUgMCAwIDAgNC4yOTMgNi41OTN6IiBmaWxsPSIjMDAwIi8+PC9zdmc+') no-repeat right 10px center;
-    background-size: 12px;
     appearance: none;
 }
 
