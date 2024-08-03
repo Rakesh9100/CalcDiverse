@@ -1,12 +1,18 @@
 function calculateCost() {
-    const foodCost = parseFloat(document.getElementById('foodCost').value) || 0;
-    const healthCost = parseFloat(document.getElementById('healthCost').value) || 0;
-    const groomingCost = parseFloat(document.getElementById('groomingCost').value) || 0;
-    const insuranceCost = parseFloat(document.getElementById('insuranceCost').value) || 0;
-    const otherCost = parseFloat(document.getElementById('otherCost').value) || 0;
-    const years = parseFloat(document.getElementById('years').value) || 0;
+    const petType = document.getElementById('petType').value;
+    const foodCost = document.getElementById('foodCost').value;
+    const healthCost = document.getElementById('healthCost').value;
+    const groomingCost = document.getElementById('groomingCost').value;
+    const insuranceCost = document.getElementById('insuranceCost').value;
+    const otherCost = document.getElementById('otherCost').value;
+    const years = document.getElementById('years').value;
 
-    const totalCost = (foodCost + healthCost + groomingCost + insuranceCost + otherCost) * years;
+    if (!foodCost || !healthCost || !groomingCost || !insuranceCost || !otherCost || !years) {
+        alert('Please fill out all fields.');
+        return;
+    }
+
+    const totalCost = (parseFloat(foodCost) + parseFloat(healthCost) + parseFloat(groomingCost) + parseFloat(insuranceCost) + parseFloat(otherCost)) * parseFloat(years);
 
     document.getElementById('totalCost').innerText = totalCost.toFixed(2);
 }
