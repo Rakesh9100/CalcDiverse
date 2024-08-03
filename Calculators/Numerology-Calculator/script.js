@@ -143,7 +143,9 @@ ${soulUrgeNumber}
 ${personalityNumber}
 `;
 
-    const blob = new Blob([reportContent], { type: 'text/plain' });
+    const blob = new Blob([reportContent], {
+        type: 'text/plain'
+    });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
