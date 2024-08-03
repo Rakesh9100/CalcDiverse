@@ -19,10 +19,10 @@ The AC/DC Power Converter Calculator is a web-based tool designed to help users 
 ## Screenshots :-
 
 ### Home Page
-![Home-page](https://github.com/user-attachments/assets/f2a9b38a-eedd-4b41-8a60-3fdab6fab978)
+![image](https://github.com/user-attachments/assets/bec7aa25-9c03-4376-874d-a72748a4e597)
 
 ### AC to DC
-![ac-to-dc](https://github.com/user-attachments/assets/2b8d8533-32e9-4ac6-82f2-d2e18f7d2d5a)
+![image](https://github.com/user-attachments/assets/57a0a7ca-e63e-4787-95f2-02c8fc804508)
 
 ### DC to AC
-![dc-to-ac](https://github.com/user-attachments/assets/6eb8bc36-edb4-4631-8e68-35b77ac77801)
+![image](https://github.com/user-attachments/assets/385acec9-4942-419d-b89d-aba0a3888158)
