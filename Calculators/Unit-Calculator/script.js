@@ -13,7 +13,7 @@ function updateUnitsDropdown(type) {
             "square foot",
         ],
         weight: ["kilogram", "gram", "ounce", "pound", "ton"],
-        work: ["Joule", "electron Volt", "calorie", "kcal", "kWh"],
+        work: ["Joule", "electron Volt", "calorie", "kcal", "kWh"], //work units
         volume: [
             "cubic meter",
             "cubic kilometer",
