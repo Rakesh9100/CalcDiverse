@@ -1,4 +1,4 @@
-# <p align="center">Momentum Calculator</p>
+# <p align="center">Momentum With Time Calculator</p>
 
 ## Description :-
 
@@ -12,7 +12,7 @@ The Momentum With Time Calculator is a web application designed to calculate the
 
 ## Features :-
 
-- Calculate momentum of a body based on the user input.
+- Calculate the momentum of a body based on the user input.
 - Applicable to all types of units. 
 - User-friendly interface with modern styling and animations.
 
@@ -33,4 +33,3 @@ The Momentum With Time Calculator is a web application designed to calculate the
 ## Screenshots :-
 
 ![Screenshot 2024-07-31 120129](https://github.com/user-attachments/assets/0f578db5-c877-487b-92c1-51a088ce3e02)
-
