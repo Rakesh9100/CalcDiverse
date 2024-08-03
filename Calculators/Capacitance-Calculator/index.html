@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capacitance Calculator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Capacitance Calculator</h1>
+    <label for="dielectric">Dielectric Constant (k):</label>
+    <input type="number" id="dielectric" placeholder="Enter Dielectric Constant">
+
+    <label for="area">Area of Plates (A in m²):</label>
+    <input type="number" id="area" placeholder="Enter Area in m²">
+
+    <label for="distance">Distance between Plates (d in m):</label>
+    <input type="number" id="distance" placeholder="Enter Distance in m">
+
+    <button onclick="calculateCapacitance()">Calculate</button>
+    <div id="result"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
