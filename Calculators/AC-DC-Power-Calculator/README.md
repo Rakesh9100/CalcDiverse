@@ -1,6 +1,6 @@
 # <p align="center">AC/DC Power Calculator</p>
 
-# Description :-
+## Description :-
 
 The AC/DC Power Converter Calculator is a web-based tool designed to help users convert power values between alternating current (AC) and direct current (DC). It allows users to convert AC to DC and DC to AC, providing the output voltages for both conversions. It also draws graphs depicting the input and output power waveforms for clear visualization.
 
