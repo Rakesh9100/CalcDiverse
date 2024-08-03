@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Atomic Composition Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Atomic Composition Calculator</h1>
+        <form id="calcForm">
+            <label for="atomicNumber">Atomic Number (Z):</label>
+            <input type="number" id="atomicNumber" name="atomicNumber" required />
+            <label for="atomicMass">Atomic Mass (A):</label>
+            <input type="number" id="atomicMass" name="atomicMass" required />
+            <label for="charge">Charge (optional, for ions):</label>
+            <input type="number" id="charge" name="charge" />
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="results" class="results">
+            <h2>Results</h2>
+            <p id="protonsResult"></p>
+            <p id="neutronsResult"></p>
+            <p id="electronsResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

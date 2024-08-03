@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exponential Decay Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Exponential Decay Calculator</h1>
+        <form id="decayForm">
+            <div class="form-group">
+                <label for="initialAmount">Initial Amount (N₀):</label>
+                <input type="number" id="initialAmount" required>
+            </div>
+            <div class="form-group">
+                <label for="decayConstant">Decay Constant (λ):</label>
+                <input type="number" id="decayConstant" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time (t):</label>
+                <input type="number" id="time" required>
+            </div>
+            <button type="button" id="calculateButton">Calculate</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

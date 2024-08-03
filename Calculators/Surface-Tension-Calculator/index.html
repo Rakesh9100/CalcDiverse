@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Surface Tension Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Surface Tension Calculator</h1>
+        <form id="calculatorForm">
+            <label for="type">Select Type:</label>
+            <select id="type" name="type" onchange="updateForm()">
+                <option value="flat">Flat Object</option>
+                <option value="droplet">Droplet</option>
+                <option value="bubble">Hollow Bubble</option>
+            </select>
+
+            <div id="flatInputs">
+                <label for="force">Force (N):</label>
+                <input type="number" id="force" name="force" step="any" required>
+                
+                <label for="length">Length (m):</label>
+                <input type="number" id="length" name="length" step="any" required>
+            </div>
+
+            <div id="dropletBubbleInputs" style="display: none;">
+                <label for="pressure">Pressure (Pa):</label>
+                <input type="number" id="pressure" name="pressure" step="any">
+                
+                <label for="diameter">Diameter (m):</label>
+                <input type="number" id="diameter" name="diameter" step="any">
+            </div>
+
+            <button type="button" onclick="calculateSurfaceTension()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

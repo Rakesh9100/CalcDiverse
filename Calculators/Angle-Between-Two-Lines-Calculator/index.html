@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Angle Between Two Lines Calculator</title>
+</head>
+
+<body>
+    <div class="calculator_container">
+        <div class="input_container">
+            <div class="line1_container">
+                <h1>Equation of 1st line</h1>
+                <div class="line1_wrapper">
+                    <div class="eqn">
+                        <div>
+                            <input type="number" required name="eqn1_a" placeholder="a">
+                        </div>
+                        <div class="eqn_comp">x</div>
+                    </div>
+                    <div class="eqn_comp">+</div>
+                    <div class="eqn">
+                        <div>
+                            <input type="number" required name="eqn1_b" placeholder="b">
+                        </div>
+                        <div class="eqn_comp">y</div>
+                    </div>
+                    <div class="eqn_comp">=</div>
+                    <div class="eqn">
+                        <div>
+                            <input type="number" required name="eqn1_c" placeholder="c">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line2_container">
+                <h1>Equation of 2nd line</h1>
+                <div class="line2_wrapper">
+                    <div class="eqn">
+                        <div>
+                            <input type="number" required name="eqn2_a" placeholder="a">
+                        </div>
+                        <div class="eqn_comp">x</div>
+                    </div>
+                    <div class="eqn_comp">+</div>
+                    <div class="eqn">
+                        <div>
+                            <input type="number" required name="eqn2_b" placeholder="b">
+                        </div>
+                        <div class="eqn_comp">y</div>
+                    </div>
+                    <div class="eqn_comp">=</div>
+                    <div class="eqn">
+                        <div>
+                            <input type="number" required name="eqn2_c" placeholder="c">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="result_container">
+            <h1 id="result_head">Inner angle between the two lines in degrees</h1>
+            <input type="number" readonly name="angle">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

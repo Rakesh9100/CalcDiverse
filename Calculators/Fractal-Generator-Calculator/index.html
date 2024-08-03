@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fractal Generator Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fractal Generator Calculator</h1>
+        </header>
+        <div class="controls">
+            <div class="input-group">
+                <label for="fractal-type">Fractal Type:</label>
+                <select id="fractal-type">
+                    <option value="mandelbrot">Mandelbrot Set</option>
+                    <option value="julia">Julia Set</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="parameter1">Parameter 1:</label>
+                <input type="number" id="parameter1" step="0.01" value="0.355">
+            </div>
+            <div class="input-group">
+                <label for="parameter2">Parameter 2:</label>
+                <input type="number" id="parameter2" step="0.01" value="0.355">
+            </div>
+            <div class="input-group">
+                <label for="resolution">Resolution:</label>
+                <input type="number" id="resolution" value="500">
+            </div>
+            <div class="input-group">
+                <label for="color-palette">Color Palette:</label>
+                <select id="color-palette">
+                    <option value="default">Default</option>
+                    <option value="rainbow">Rainbow</option>
+                    <option value="grayscale">Grayscale</option>
+                </select>
+            </div>
+            <button id="generate-btn">Show Output</button>
+            <button id="reset-btn" style="display:none;">Reset</button>
+        </div>
+        <div class="output">
+            <canvas id="fractal-canvas"></canvas>
+        </div>
+        <footer>
+            <p>Interactive Fractal Explorer</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

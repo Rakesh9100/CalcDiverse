@@ -8,6 +8,7 @@ function calculate(event) {
     var diagonal1 = parseFloat(document.getElementById("diagonal1").value);
     var diagonal2 = parseFloat(document.getElementById("diagonal2").value);
     var resultContainer = document.getElementById("result");
+    var metric = document.getElementById("metric").value
 
     if (shape === "") {
         resultContainer.textContent = "Please select a shape.";
@@ -84,8 +85,7 @@ function calculate(event) {
         default:
             break;
     }
-
-    resultContainer.textContent = "Perimeter: " + perimeter.toFixed(2) + ", Area: " + area.toFixed(2);
+    resultContainer.textContent = `Perimeter: ${perimeter.toFixed(2)} ${metric}, Area: ${(area).toFixed(2)} ${metric}²`;
 }
 
 
@@ -105,35 +105,44 @@ function showDimensions() {
         case "rectangle":
             document.getElementById("length-row").style.display = "block";
             document.getElementById("width-row").style.display = "block";
+            document.getElementById("metric-row").style.display = "block";
             break;
         case "square":
             document.getElementById("length-row").style.display = "block";
+            document.getElementById("metric-row").style.display = "block";
             break;
         case "circle":
             document.getElementById("radius-row").style.display = "block";
+            document.getElementById("metric-row").style.display = "block";
             break;
         case "triangle":
             document.getElementById("length-row").style.display = "block";
             document.getElementById("width-row").style.display = "block";
+            document.getElementById("metric-row").style.display = "block";
             break;
         case "parallelogram":
             document.getElementById("length-row").style.display = "block";
             document.getElementById("width-row").style.display = "block";
+            document.getElementById("metric-row").style.display = "block";
             break;
         case "rhombus":
             document.getElementById("diagonal1-row").style.display = "block";
             document.getElementById("diagonal2-row").style.display = "block";
+            document.getElementById("metric-row").style.display = "block";
             break;
         case "trapezoid":
             document.getElementById("length-row").style.display = "block";
             document.getElementById("width-row").style.display = "block";
+            document.getElementById("metric-row").style.display = "block";
             break;
         case "hexagon":
             document.getElementById("length-row").style.display = "block";
+            document.getElementById("metric-row").style.display = "block";
             break;
         case "nsides":
             document.getElementById("nsides-row").style.display = "block";
             document.getElementById("length-row").style.display = "block";
+            document.getElementById("metric-row").style.display = "block";
             break;
         // Add cases for more shapes as needed
         default:
