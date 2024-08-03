@@ -7,7 +7,9 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .title {
@@ -18,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 45px;
 }
 
 .value_inp {
