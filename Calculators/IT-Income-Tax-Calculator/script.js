@@ -15,8 +15,23 @@ function calculateTax() {
         return;
     }
 
+    // Validate deductions
+    if (deductions < 0) {
+        document.getElementById('result').innerText = 'Deductions cannot be negative.';
+        return;
+    }
+
+    // Validate tax rebate
+    if (taxRebate < 0) {
+        document.getElementById('result').innerText = 'Tax Rebate cannot be negative.';
+        return;
+    }
+
     // Calculate taxable income
-    const taxableIncome = grossSalary - deductions;
+    let taxableIncome = grossSalary - deductions;
+    if (taxableIncome < 0) {
+        taxableIncome = 0; // Ensure taxable income does not go negative
+    }
 
     // Calculate tax based on slabs
     let tax;
@@ -31,7 +46,10 @@ function calculateTax() {
     }
 
     // Calculate total tax after applying rebate
-    const totalTax = tax - taxRebate;
+    let totalTax = tax - taxRebate;
+    if (totalTax < 0) {
+        totalTax = 0; // Ensure total tax does not go negative
+    }
 
     // Display the result
     document.getElementById('result').innerText = `Total Tax: ₹${totalTax.toFixed(2)}`;
