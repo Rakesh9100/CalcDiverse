@@ -1,4 +1,3 @@
-
 'use strict'
 
 function validate() {
@@ -19,7 +18,7 @@ function validate() {
         var discriminant = Math.pow(b, 2) - 4 * a * c;
 
         outputText = "For the equation <strong>" + (a === 1 ? "" : a) + "x\u00B2 + " + (b === 1 ? "" : b) + "x + " + c + " = 0</strong>,";
-        
+
         if (discriminant > 0) {
             outputValue = "The discriminant (D) is <strong>" + discriminant + "</strong>. There are two distinct real roots.";
         } else if (discriminant === 0) {
