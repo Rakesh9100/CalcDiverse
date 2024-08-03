@@ -19,3 +19,4 @@ This is a simple web-based octal calculator that performs basic arithmetic opera
 
 ## Screenshots :-
 
+![image](https://github.com/user-attachments/assets/57b1d230-197f-46f8-aff8-160198a67dfd)
