@@ -16,8 +16,10 @@ body {
     color: rgb(107, 30, 2);
 }
 
-.container {
+#container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 45px;
 }
 
@@ -56,11 +58,6 @@ select {
     font-weight: 600;
 }
 
-.btn:hover {
-    cursor: pointer;
-    background-color: #ed8e65;
-}
-
 .popup {
     display: none;
     position: fixed;
@@ -92,15 +89,9 @@ select {
     border: 5px solid brown;
 }
 
-#closebtn:hover {
-    cursor: pointer;
-    background-color: #ed8e65;
-}
-
 @media only screen and (max-width: 786px) {
     body {
         font-size: 14px;
-        /* height: auto; */
         overflow-y: hidden;
         margin-top: 10%;
     }
@@ -109,7 +100,7 @@ select {
         padding-bottom: 11%;
     }
 
-    .container {
+    #container {
         flex-wrap: wrap;
     }
 
