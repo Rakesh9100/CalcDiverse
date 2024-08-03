@@ -14,11 +14,11 @@ function clearInputs() {
     document.getElementById('acVoltage').value = '';
     document.getElementById('transformerRatio').value = '1';
     document.getElementById('rectifierType').value = 'full';
-    document.getElementById('dcVoltage').innerText = '-';
+    document.getElementById('dcResult').style.display = 'none';
 
     document.getElementById('dcVoltageInput').value = '';
     document.getElementById('frequency').value = '50';
-    document.getElementById('acVoltageOutput').innerText = '-';
+    document.getElementById('acResult').style.display = 'none';
 
     const canvas = document.getElementById('graphCanvas');
     const ctx = canvas.getContext('2d');
@@ -32,6 +32,11 @@ function convertACtoDC(event) {
     const transformerRatio = parseFloat(document.getElementById('transformerRatio').value);
     const rectifierType = document.getElementById('rectifierType').value;
 
+    if (isNaN(acVoltage) || isNaN(transformerRatio)) {
+        alert("Please enter valid numbers for AC Voltage and Transformer Ratio.");
+        return;
+    }
+
     const transformedAcVoltage = acVoltage * transformerRatio;
     const peakAcVoltage = transformedAcVoltage * Math.sqrt(2);
 
@@ -43,6 +48,7 @@ function convertACtoDC(event) {
     }
 
     document.getElementById('dcVoltage').innerText = dcVoltage.toFixed(2);
+    document.getElementById('dcResult').style.display = 'block';
     drawGraph(acVoltage, dcVoltage, 'AC', 'DC');
 }
 
@@ -52,10 +58,16 @@ function convertDCtoAC(event) {
     const dcVoltage = parseFloat(document.getElementById('dcVoltageInput').value);
     const frequency = parseFloat(document.getElementById('frequency').value);
 
+    if (isNaN(dcVoltage) || isNaN(frequency)) {
+        alert("Please enter valid numbers for DC Voltage and Frequency.");
+        return;
+    }
+
     // Assuming the RMS value for output AC voltage calculation
     const acVoltageRMS = dcVoltage / Math.sqrt(2);
 
     document.getElementById('acVoltageOutput').innerText = acVoltageRMS.toFixed(2);
+    document.getElementById('acResult').style.display = 'block';
     drawGraph(dcVoltage, acVoltageRMS, 'DC', 'AC');
 }
 
