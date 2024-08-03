@@ -12,4 +12,4 @@ A simple web application to calculate the total budget of a wedding, including a
 
 ## Screenshots :-
 
-![Wedding Budget Calculator](<Screenshot 2024-07-31 160358.png>)
+![image](https://github.com/user-attachments/assets/a57d16c8-fc73-4791-bf3c-9c8252483f5b)
