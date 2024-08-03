@@ -1,8 +1,9 @@
-# <p align="center">Friction Force Calculator</p>
+# <p align="center">Friction Calculator</p>
 
 ## Description :-
 
-Friction calculator to calculate the friction force between an object and the ground. It is based on a simple principle: friction is proportional to the normal force acting between the object and the ground.
+This calculator calculates the friction force between an object and the ground.<br>
+It is based on a simple principle: Friction is proportional to the normal force acting between the object and the ground.
 
 ## Tech Stacks :-
 
@@ -12,4 +13,4 @@ Friction calculator to calculate the friction force between an object and the gr
 
 ## Screenshots :-
 
-![image](./assests/image.png)
+![image](https://github.com/user-attachments/assets/a4967faf-d3ce-4f10-8662-342f4e54c712)
