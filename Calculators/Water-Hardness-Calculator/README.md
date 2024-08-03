@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculator helps users determine the hardness of their water supply. Water hardness is typically measured in parts per million (ppm) or grains per gallon (gpg), indicating the concentration of calcium and magnesium ions. 
+A calculator that helps users determine the hardness of their water supply. Water hardness is typically measured in parts per million (ppm) or grains per gallon (gpg), indicating the concentration of calcium and magnesium ions. 
 
 ## Tech Stacks :-
 
@@ -12,4 +12,4 @@ Calculator helps users determine the hardness of their water supply. Water hardn
 
 ## Screenshots :-
 
-![image](https://github.com/user-attachments/assets/a55c07cf-42ac-44fa-9385-09a4cab8aad0)
+![image](https://github.com/user-attachments/assets/b4e9cf5a-e2e0-4672-a1b6-a71c566990fb)
