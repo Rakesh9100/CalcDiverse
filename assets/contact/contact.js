@@ -63,11 +63,9 @@ function validateEmail(emailFieldId) {
     }
 }
   // Progress JS
-  function updateProgressBar() {
+  window.addEventListener('scroll', () => {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrolled = (winScroll / height) * 100;
-    document.getElementById("myProgressBar").style.width = scrolled + "%";
-  }
-  
-  window.addEventListener('scroll', updateProgressBar);
+    document.querySelector('.progress-bar').style.width = scrolled + '%';
+  });
