@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/cache.gettyimages.com/f4bf8521f3b147c4a741f36eca6a900c.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(142, 193, 255, 0.6); /* Blue color with transparency */
+    padding: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 300px; /* Added width to make it consistent */
+    text-align: center; /* Center the text inside the container */
+}
+
+h1 {
+    text-align: center;
+    color: #010101; /* Change text color to white for better readability */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form elements horizontally */
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #0d0d0d; /* Change text color to white for better readability */
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #c7dff7;
+    border: 1.5px solid #030404;
+    border-radius: 4px;
+    width: 100%; /* Make input fields take the full width */
+}
+
+button {
+    padding: 10px 22px; /* Decreased button size */
+    background-color: #0e90e1; /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid blue;
+    width: auto; /* Adjust width to fit the button content */
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for smooth effects */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #004494; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #101010; /* Change text color to white for better readability */
+    text-align: center; /* Center the result text */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    label,
+    input,
+    button {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    label,
+    input,
+    button {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 6px 12px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+}

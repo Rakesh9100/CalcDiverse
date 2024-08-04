@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Zodiac Calculator</title>
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center vh-100" id="container">
+        <div class="card shadow-sm border-primary rounded" id="main">
+            <div class="card-header text-center" id="heading">
+                <h1>Zodiac Sign Calculator</h1>
+            </div>
+            <div class="card-body" id="input-section">
+                <div class="form-group text-center">
+                    <label for="input1" id="ip">Date Of Birth</label>
+                    <input type="date" class="form-control mx-auto" id="input1">
+                </div>
+                <div class="text-center mb-3" id="input2">
+                    <button class="btn btn-primary" id="calcbutton">Calculate</button>
+                </div>
+                <div id="output" class="text-center">
+                    <div id="picture">
+                        <img id="photo" src="" >
+                    </div>
+                    <div id="output1">
+                        <h2><span id="zodiacSign"></span></h2>
+                        <p><span id="zodiacDesc"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

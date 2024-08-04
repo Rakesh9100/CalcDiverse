@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Z-Score Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Z-Score Calculator</h1>
+        <form id="zScoreForm">
+            <label for="experimentalResult">Experimental result (X)</label>
+            <input type="number" id="experimentalResult" name="experimentalResult" required>
+
+            <label for="meanValue">Mean value (μ)</label>
+            <input type="number" id="meanValue" name="meanValue" required>
+
+            <label for="standardDeviation">Standard deviation (σ)</label>
+            <input type="number" id="standardDeviation" name="standardDeviation" required>
+
+            <label for="zScore">Z-score (z)</label>
+            <input type="text" id="zScore" name="zScore" readonly>
+
+            <button type="button" onclick="calculateZScore()">Calculate</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
