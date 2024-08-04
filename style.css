@@ -1323,14 +1323,14 @@ section {
     backdrop-filter: blur(10px);
     z-index: 1;
     transition: 0.5s;
-    top:10%;
+    top: 10%;
     color: #fff;
 }
 
 .container .box:hover .content {
     left: -25px;
     padding: 60px 40px;
-    top:10px;
+    top: 5px;
 }
 
 .container .box .content h2 {
@@ -1427,7 +1427,6 @@ section {
     cursor: pointer;
 }
 
-
 #progress-value {
     display: block;
     height: calc(100% - 15px);
@@ -1439,6 +1438,36 @@ section {
     place-items: center;
     font-size: 26px;
     color: black;
+}
+
+/* Pagination Section Css */
+
+#pagination-controls {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#pagination-controls button {
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+#pagination-controls #prev {
+    margin-right: 50px;
+}
+
+#pagination-controls #next {
+    margin-left: 50px;
+}
+
+#pagination-controls #page-info {
+    color: white;
+    font-size: medium;
 }
 
 /* Footer Section Css */
