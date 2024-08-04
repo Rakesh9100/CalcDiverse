@@ -1,7 +1,7 @@
+// Highlight active section in navigation on scroll
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('.containers');
     const navLinks = document.querySelectorAll('.nav-links');
-
     let currentSection = '';
 
     sections.forEach(section => {
@@ -14,19 +14,20 @@ window.addEventListener('scroll', () => {
     navLinks.forEach(link => {
         link.setAttribute('id', '');
         if (link.getAttribute('href') === `#${currentSection}`) {
-            link.setAttribute('id', 'active1')
+            link.setAttribute('id', 'active1');
             console.log(currentSection);
         }
     });
 });
 
+// Toggle mobile menu visibility
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.querySelector("body").classList.add("loaded");
-    }, 500)
+    }, 500);
 });
 
 hamburger.addEventListener("click", mobileMenu);
@@ -44,75 +45,23 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-const cont = document.getElementById('contributor');
-const owner = 'Rakesh9100';
-const repoName = 'CalcDiverse';
-
-async function fetchContributors(pageNumber) {
-    const perPage = 100;
-    const url = `https://api.github.com/repos/${owner}/${repoName}/contributors?page=${pageNumber}&per_page=${perPage}`;
-
-    const response = await fetch(url);
-    if (!response.ok) {
-        throw new Error(`Failed to fetch contributors data. Status code: ${response.status}`);
-    }
-
-    const contributorsData = await response.json();
-    return contributorsData;
-}
-
-// Function to fetch all contributors
-async function fetchAllContributors() {
-    let allContributors = [];
-    let pageNumber = 1;
-
-    try {
-        while (true) {
-            const contributorsData = await fetchContributors(pageNumber);
-            if (contributorsData.length === 0) {
-                break;
-            }
-            allContributors = allContributors.concat(contributorsData);
-            pageNumber++;
-        }
-        allContributors.forEach((contributor) => {
-            const contributorCard = document.createElement('div');
-            contributorCard.classList.add('contributor-card');
-
-            const avatarImg = document.createElement('img');
-            avatarImg.src = contributor.avatar_url;
-            avatarImg.alt = `${contributor.login}'s Picture`;
-
-            const loginLink = document.createElement('a');
-            loginLink.href = contributor.html_url;
-            loginLink.appendChild(avatarImg);
-
-            contributorCard.appendChild(loginLink);
-
-            cont.appendChild(contributorCard);
-        });
-    } catch (error) {
-        console.error(error);
-    }
-}
-
-fetchAllContributors();
-
+// Hide or show scroll progress indicator
 let calcScrollValue = () => {
     let scrollProg = document.getElementById("progress");
     let pos = document.documentElement.scrollTop;
-    let calcHeight =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrollValue = Math.round((pos * 100) / calcHeight);
+
     if (pos > 100) {
         scrollProg.style.display = "grid";
     } else {
         scrollProg.style.display = "none";
     }
+
     scrollProg.addEventListener("click", () => {
         document.documentElement.scrollTop = 0;
     });
+
     scrollProg.style.background = `conic-gradient(#0063ba ${scrollValue}%, #d499de ${scrollValue}%)`;
 };
 
@@ -127,6 +76,8 @@ window.addEventListener('scroll', function () {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+// Pagination functionality for calculators
 const input = document.getElementById('calculatorSearch');
 const paginationControls = document.getElementById('pagination-controls');
 let calculators = document.querySelectorAll('.container .box');
@@ -138,6 +89,8 @@ calculators.forEach(calculator => {
         h2TextContents.push(h2Element.textContent);
     }
 });
+
+// Show page based on current page number
 const itemsPerPage = 10;
 let currentPage = 1;
 
@@ -160,6 +113,7 @@ function changePage(direction) {
     showPage(currentPage + direction);
 }
 
+// Filter calculators based on search input
 function filterCalculators() {
     var input, filter, calculators, i;
     input = document.getElementById('calculatorSearch');
@@ -202,105 +156,88 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('noResults').style.display = 'none';
     showPage(currentPage);
 });
-input.addEventListener('input', (e) => {
+
+var input1 = document.getElementById('calculatorSearch');
+input1.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
-    let filtered = h2TextContents.filter(ele => ele.toLowerCase().includes(searchTerm));
+    let hasResults = false;
 
     calculators.forEach(calculator => {
         const h2 = calculator.querySelector('h2');
-        if (h2 && h2.textContent.toLowerCase().includes(searchTerm)) {
+        const h3 = calculator.querySelector('h3');
+        const h2Text = h2 ? h2.textContent.toLowerCase() : '';
+        const h3Text = h3 ? h3.textContent.toLowerCase() : '';
+
+        if (h2Text.includes(searchTerm) || h3Text.includes(searchTerm)) {
             calculator.style.display = 'flex';
+            hasResults = true;
         } else {
             calculator.style.display = 'none';
         }
     });
 
-    // Hide pagination controls if search input has any value
-    if (searchTerm.length > 0) {
-        paginationControls.style.display = 'none';
+    // Show or hide pagination controls based on search input
+    if (hasResults) {
+        noResults.style.display = 'none';
+        paginationControls.style.display = 'none'; // Hide pagination controls during search
     } else {
+        noResults.style.display = 'block';
+        paginationControls.style.display = 'none'; // Hide pagination controls if no results
+    }
+
+    if (searchTerm.length === 0) {
         paginationControls.style.display = 'flex'; // Show pagination controls when search input is cleared
         showPage(currentPage); // Reset pagination
     }
 });
-let search_input_container = document.querySelector('.search-input-container'),
-    calculatorSearch = document.getElementById('calculatorSearch')
+
+// Display search results in a dropdown list
+let search_input_container = document.querySelector('.search-input-container');
+let calculatorSearch = document.getElementById('calculatorSearch');
+
 input.addEventListener('input', (e) => {
-    let search_input_container = document.querySelector('.search-input-container')
-    let result = document.getElementById('searchResults_Container') ? document.getElementById('searchResults_Container') : false
-    if (result) {
-        search_input_container.removeChild(result)
+    let searchResultsContainer = document.getElementById('searchResults_Container') || false;
+    if (searchResultsContainer) {
+        search_input_container.removeChild(searchResultsContainer);
     }
-    let searchResults_Container = document.createElement('div')
-    let div = document.createElement('div')
-    searchResults_Container.setAttribute('id', 'searchResults_Container')
+    
+    searchResultsContainer = document.createElement('div');
+    let div = document.createElement('div');
+    searchResultsContainer.setAttribute('id', 'searchResults_Container');
+    
     let filtered = h2TextContents.filter(ele => {
         const searchTerm = e.target.value.toLowerCase();
         const elementText = ele.toLowerCase();
         return elementText.includes(searchTerm);
-        
     });
+    
     if (filtered && e.target.value.length > 0) {
-        filtered.map((item, index) => {
-            let p = document.createElement('p')
-            p.textContent = item
-            p.setAttribute('key', index)
-            div.appendChild(p)
+        filtered.forEach((item, index) => {
+            let p = document.createElement('p');
+            p.textContent = item;
+            p.setAttribute('key', index);
+            div.appendChild(p);
             p.addEventListener('click', () => {
-                calculatorSearch.value = item
-                searchResults_Container.removeChild(div)
-            })
-        })
-        searchResults_Container.appendChild(div)
-        search_input_container.appendChild(searchResults_Container)
+                calculatorSearch.value = item;
+                searchResultsContainer.removeChild(div);
+            });
+        });
+        searchResultsContainer.appendChild(div);
+        search_input_container.appendChild(searchResultsContainer);
     }
+    
     if (e.target.value.length === 0) {
-        searchResults_Container.removeChild(div)
+        searchResultsContainer.removeChild(div);
     }
-})
-
-// Function to filter calculators
-function filterCalculators() {
-    var input, filter, calculators, i;
-    input = document.getElementById('calculatorSearch');
-    filter = input.value.toUpperCase();
-    calculators = document.querySelectorAll('.container .box');
-    var noResults = document.getElementById('noResults');
-    var hasResults = false;
-    for (i = 0; i < calculators.length; i++) {
-        var calculator = calculators[i];
-        var h2 = calculator.querySelector('h2');
-        var h3 = calculator.querySelector('h3');
-        var calculatorName = h2.textContent || h2.innerText;
-        var calculatorDescription = h3.textContent || h3.innerText;
-
-        if ((calculatorName.toUpperCase().indexOf(filter) > -1) || (calculatorDescription.toUpperCase().indexOf(filter) > -1)) {
-            calculator.style.display = "flex";
-            hasResults = true;
-        } else {
-            calculator.style.display = "none";
-        }
-    }
-
-    if (hasResults) {
-        noResults.style.display = 'none';
-    } else {
-        noResults.style.display = 'block';
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('noResults').style.display = 'none';
 });
 
-
-// Voice command in search bar feature
+// Voice command feature in search bar
 const searchBar = document.querySelector("#searchBar");
 const searchBarInput = searchBar.querySelector("input");
-const pagination = document.getElementById("pagination-controls")
+const pagination = document.getElementById("pagination-controls");
 
 // The speech recognition interface lives on the browser’s window object
-const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; // if none exists -> undefined
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 if (SpeechRecognition) {
     console.log("Your Browser supports speech Recognition");
@@ -323,7 +260,6 @@ if (SpeechRecognition) {
         }
     }
 
-
     recognition.addEventListener("start", startSpeechRecognition);
     function startSpeechRecognition() {
         micIcon.classList.remove("fa-microphone");
@@ -344,14 +280,16 @@ if (SpeechRecognition) {
     function resultOfSpeechRecognition(event) {
         const current = event.resultIndex;
         const transcript = event.results[current][0].transcript;
-        newtranscript = transcript.endsWith('.') ? transcript.slice(0, -1) : transcript;
-        console.log(newtranscript)
-        searchBarInput.value = newtranscript;
+        const newTranscript = transcript.endsWith('.') ? transcript.slice(0, -1) : transcript;
+        console.log(newTranscript);
+        searchBarInput.value = newTranscript;
         filterCalculators();
     }
 } else {
-    console.log("Your Browser does not support speech Recognition");
+    info.textContent = "Your Browser does not support Speech Recognition";
 }
+
+// Validate input for name fields
 function validateName(inputId) {
     let input = document.getElementById(inputId);
     let value = input.value;
