@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Hashing Message Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Hashing Message Calculator</h1>
+        <h3>Make your message secret!</h3>
+        <label for="message">Your Message: </label>
+        <input type="text" id="message" placeholder="Message">
+
+        <label for="algorithm">Hashing algorithm: </label>
+        <select id="algorithm" name="algorithm" required>
+            <option value="md5">MD5</option>
+            <option value="sha1">SHA1</option>
+            <option value="sha256">SHA256</option>
+            <option value="sha512">SHA512</option>
+            <option value="hmac">HMAC</option>
+        </select>
+
+        <button onclick="calculate()">Calculate Hash</button>
+
+        <div id="result"></div>
+        <div id="info"></div>
+        <div id="fact"></div>
+        <button type="button" id="resetButton">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

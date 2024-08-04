@@ -1,0 +1,110 @@
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand,
+.nav-link,
+.btn-outline-success {
+    color: #ffffff !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #d4d4d4 !important;
+}
+
+.title {
+    color: #007bff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    50% {
+        text-shadow: 2px 2px 20px rgba(0, 91, 234, 0.7);
+    }
+
+    100% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.btn-primary,
+.btn-success {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-primary:active,
+.btn-success:active {
+    transform: scale(1);
+}
+
+.card {
+    border: 1px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+    border: 1px solid #007bff;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 91, 234, 0.5);
+}
+
+.no-spinners {
+    -moz-appearance: textfield;
+}
+
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #0056b3;
+}
+
+.input-group .form-control {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.input-group .btn {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+#result {
+    font-size: 1.5rem;
+    color: #007bff;
+}

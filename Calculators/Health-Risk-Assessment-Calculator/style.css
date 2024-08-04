@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25px;
+    height: 110vh;
+    background-image: url('assets/background.webp');
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 650px;
+    height: 820px;
+    background-color: rgb(151, 208, 208);
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 40%;
+    padding: 8px;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(54, 117, 119);
+    color: #fff;
+    font-size: medium;
+}

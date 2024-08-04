@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Marks Percentage Calculator</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h3 class="text-center mb-4 title">Percentage Calculator</h3>
+        
+        <!-- Number of Subjects Form -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Enter Number of Subjects</h5>
+                <div class="input-group">
+                    <input type="number" class="form-control no-spinners" id="numSubjects" placeholder="Number of Subjects">
+                    <button class="btn btn-primary" type="button" onclick="generateMarksInputs()">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Marks Input Form -->
+        <div class="card mb-4" id="marksForm" style="display: none;">
+            <div class="card-body">
+                <h5 class="card-title">Enter Marks</h5>
+                <form id="marksInputs">
+                    <!-- Marks inputs will be dynamically generated here -->
+                </form>
+                <button class="btn btn-success mt-3" type="button" onclick="calculatePercentage()">Calculate Percentage</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Result -->
+    <div class="card" id="resultCard" style="display: none; margin-bottom: 20px;">
+        <div class="card-body">
+            <h5 class="card-title">Result</h5>
+            <p id="result" class="card-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

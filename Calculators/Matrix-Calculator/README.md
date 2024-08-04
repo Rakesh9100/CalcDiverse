@@ -2,7 +2,7 @@
 
 ## Description :-
 
-A web-based matrix calculator supporting basic operations (addition, subtraction, multiplication), determinant calculation, matrix inversion, and transpose with error handling, designed for square matrices of sizes 2x2, 3x3, and 4x4.
+A web-based matrix calculator supporting basic operations (addition, subtraction, multiplication), determinant calculation, matrix inversion, transpose, Rank, and Power with error handling, designed for square matrices of sizes 2x2, 3x3, and 4x4.
 
 ## Tech Stacks :-
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>GDP Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-section">
+            <h1>GDP Calculator</h1>
+            <p class="definition">
+                Gross domestic product is defined by the Organisation for Economic Co-operation and Development (OECD) as
+                "an aggregate measure of production equal to the sum of the gross values added of all resident and
+                institutional units engaged in production
+                (plus any taxes, and minus any subsidies, on products not included in the value of their outputs.")
+                <br>More simply, it can be defined as a monetary measure of the market value of final goods produced over a period of time,
+                typically quarterly or yearly,
+                that is often used to determine the economic performance of a region or country.
+            </p>
+        </div>
+        <div class="right-section">
+
+            <form id="GDPcalc">
+                
+                <div class="calcfield">
+                    <fieldset>
+                        <legend>Expenditure Approach</legend>
+                        <div class="field">
+                            <label for="personal">Personal Consumption</label>
+                            <input type = "number" id="personal" required>
+                        </div>
+                        <div class="field">
+                            <label for="investment">Gross Investment</label>
+                            <input type = "number" id="investment" required>
+                        </div>
+                        <div class="field">
+                            <label for="consumption">Government consumption</label>
+                            <input type = "number" id="consumption" required>
+                        </div>
+                        <div class="field">
+                            <label for="exports">Exports</label>
+                            <input type = "number" id="exports" required>
+                        </div>
+                        <div class="field">
+                            <label for="imports">Imports</label>
+                            <input type = "number" id="imports" required>
+                        </div>
+                        <div class="buttons">
+                            <button type ="submit" class ="calculate">Calculate</button>
+                            <button type ="reset" class="clear">Clear</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+            <div class="output">
+                <div class="result"></div>
+                <div class="value"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

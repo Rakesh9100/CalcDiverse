@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Determinant Calculator</title>
+</head>
+<body>
+    <center>
+        <h2>Determinant Calculator</h2>
+        <h3>Choose Matrix Size:</h3>
+        <button type="button" onclick="showMatrix('one')">1x1</button>
+        <button type="button" onclick="showMatrix('two')">2x2</button>
+        <button type="button" onclick="showMatrix('three')">3x3</button>
+        <button type="button" onclick="showMatrix('four')">4x4</button>
+        
+        <div id="one" class="matrix">
+            <!-- 1x1 Matrix -->
+            <input type="text" id="num1" value=0>
+            <br>
+            <button type="button" onclick="solve1()">Solve!</button>
+        </div>
+        
+        <div id="two" class="matrix">
+            <!-- 2x2 Matrix -->
+            <table>
+                <tr>
+                    <td><input type="text" id="b1" value=0></td>
+                    <td><input type="text" id="b2" value=0></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="b3" value=0></td>
+                    <td><input type="text" id="b4" value=0></td>
+                </tr>
+            </table>
+            <button type="button" onclick="solve2()">Solve!</button>
+        </div>
+        
+        <div id="three" class="matrix">
+            <!-- 3x3 Matrix -->
+            <table>
+                <tr>
+                    <td><input type="text" id="a1" value=0></td>
+                    <td><input type="text" id="a2" value=0></td>
+                    <td><input type="text" id="a3" value=0></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="a4" value=0></td>
+                    <td><input type="text" id="a5" value=0></td>
+                    <td><input type="text" id="a6" value=0></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="a7" value=0></td>
+                    <td><input type="text" id="a8" value=0></td>
+                    <td><input type="text" id="a9" value=0></td>
+                </tr>
+            </table>
+            <button type="button" onclick="solve3()">Solve!</button>
+        </div>
+        
+        <div id="four" class="matrix">
+            <!-- 4x4 Matrix -->
+            <table>
+                <tr>
+                    <td><input type="text" id="d1" value=0></td>
+                    <td><input type="text" id="d2" value=0></td>
+                    <td><input type="text" id="d3" value=0></td>
+                    <td><input type="text" id="d4" value=0></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="d5" value=0></td>
+                    <td><input type="text" id="d6" value=0></td>
+                    <td><input type="text" id="d7" value=0></td>
+                    <td><input type="text" id="d8" value=0></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="d9" value=0></td>
+                    <td><input type="text" id="d10" value=0></td>
+                    <td><input type="text" id="d11" value=0></td>
+                    <td><input type="text" id="d12" value=0></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="d13" value=0></td>
+                    <td><input type="text" id="d14" value=0></td>
+                    <td><input type="text" id="d15" value=0></td>
+                    <td><input type="text" id="d16" value=0></td>
+                </tr>
+            </table>
+            <button type="button" onclick="solve4()">Solve!</button>
+        </div>
+        
+        <div id="end">
+            <br><br>
+            <span id="here"></span>
+        </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
