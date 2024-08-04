@@ -209,7 +209,7 @@ html {
     position: fixed;
     height: 8px;
     width: var(--progress);
-    background:linear-gradient(45deg,rgb(135, 113, 243),rgb(101, 74, 240));
+    background:linear-gradient(45deg,rgb(68, 49, 161),rgb(36, 15, 141));
     z-index: 1000;
     border-radius: 4px;
 }
