@@ -13,6 +13,9 @@ function calculate() {
     } else if (calculationType === 'sumOfTerms') {
         // Calculate the sum of the first n terms
         result = calculateSumOfTerms(firstTerm, commonRatio, termNumber);
+    } else if (calculationType === 'geoMean') {
+        // Calculate the geometric mean
+        result = calculateGeoMean(firstTerm, commonRatio, termNumber);
     }
 
     // Display the result
@@ -28,4 +31,9 @@ function calculateNthTerm(firstTerm, commonRatio, termNumber) {
 function calculateSumOfTerms(firstTerm, commonRatio, termNumber) {
     // Calculate the sum of the first n terms
     return `The sum of the first ${termNumber} terms is: ${firstTerm * (1 - Math.pow(commonRatio, termNumber)) / (1 - commonRatio)}`;
+}
+
+function calculateGeoMean(firstTerm, commonRatio, termNumber) {
+    // Calculate the sum of the first n terms
+    return `The sum of the first ${termNumber} terms is: ${firstTerm * (Math.pow(commonRatio, (termNumber-1)/2))}`;
 }
