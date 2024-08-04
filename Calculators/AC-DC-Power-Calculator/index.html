@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AC/DC Power Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Power Converter</h1>
+        <div id="selection-page">
+            <button onclick="showAcToDcForm()">Convert AC to DC</button>
+            <button onclick="showDcToAcForm()">Convert DC to AC</button>
+        </div>
+
+        <div id="conversion-form">
+            <form id="ac-to-dc-form" class="form" style="display: none;" onsubmit="convertACtoDC(event)">
+                <div class="form-group">
+                    <label for="acVoltage">Input AC Voltage (RMS):</label>
+                    <input type="number" id="acVoltage" placeholder="Enter AC Voltage" />
+                </div>
+
+                <div class="form-group">
+                    <label for="transformerRatio">Transformer Ratio:</label>
+                    <input type="number" id="transformerRatio" placeholder="Enter Transformer Ratio" value="2" />
+                </div>
+
+                <div class="form-group">
+                    <label for="rectifierType">Rectifier Type:</label>
+                    <select id="rectifierType">
+                        <option value="full">Full-wave</option>
+                        <option value="half">Half-wave</option>
+                    </select>
+                </div>
+
+                <button type="submit">Convert</button>
+                
+                <div class="result" id="dcResult" style="display: none;">
+                    <h2>Output DC Voltage: <span id="dcVoltage"></span> V</h2>
+                </div>
+            </form>
+
+            <form id="dc-to-ac-form" class="form" style="display: none;" onsubmit="convertDCtoAC(event)">
+                <div class="form-group">
+                    <label for="dcVoltageInput">Input DC Voltage:</label>
+                    <input type="number" id="dcVoltageInput" placeholder="Enter DC Voltage" />
+                </div>
+
+                <div class="form-group">
+                    <label for="frequency">Frequency (Hz):</label>
+                    <input type="number" id="frequency" placeholder="Enter Frequency" value="50" />
+                </div>
+
+                <button type="submit">Convert</button>
+                
+                <div class="result" id="acResult" style="display: none;">
+                    <h2>Output AC Voltage (RMS): <span id="acVoltageOutput"></span> V</h2>
+                </div>
+            </form>
+
+            <canvas id="graphCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
