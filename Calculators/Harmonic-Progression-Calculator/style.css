@@ -39,7 +39,7 @@ label {
     color: #333;
 }
 
-input {
+input, select {
     width: calc(100% - 16px);
     padding: 8px;
     margin-bottom: 10px;

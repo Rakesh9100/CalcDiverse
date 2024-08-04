@@ -1,0 +1,109 @@
+body {
+    background: linear-gradient(135deg, #f06, #ffdd00, #00ff99, #00aaff, #a400ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.calculator {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h3 {
+    padding-bottom: 20px;
+    margin: auto;
+    font-weight: 300;
+    color: #333333;
+}
+
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: #007bff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button-85:hover {
+    background-color: #0056b3;
+}
+
+.button-85:active {
+    background-color: #003f7f;
+}
+
+.button-85:before,
+.button-85:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.button-85:before {
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    filter: blur(5px);
+    animation: glowing-button-85 20s linear infinite;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    background: #222222;
+    top: 0;
+    left: 0;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
