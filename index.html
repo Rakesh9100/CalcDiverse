@@ -4597,19 +4597,17 @@
     <div id="progress">
         <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
-    <div id="pagination-controls" style="justify-content: center;
-    text-align: center;
-    margin-bottom: 60px;">
-        <button id="prev" onclick="changePage(-1)" style="color: black;
-        font-weight: bold;margin-right:50px;padding:10px;cursor: pointer;
-        font-size:medium">Previous</button>
-        <span id="page-info" style="color:white;font-size: medium;"></span>
-        <button id="next" onclick="changePage(1)" style="color: black;
-        font-weight: bold;margin-left:50px;padding:10px;
-        font-size: medium;cursor: pointer;">Next</button>
-    </div>
   
     <!-- Scroll to Top Button Ends Here -->
+
+    <!-- Pagination Section Starts Here -->
+    <div id="pagination-controls">
+        <button id="prev" onclick="changePage(-1)">Previous</button>
+        <span id="page-info"></span>
+        <button id="next" onclick="changePage(1)">Next</button>
+    </div>
+
+    <!-- Pagination Section Ends Here -->
 
     <!-- -----------------------------------Footer Code Starts ------------------------------------------- -->
     <footer>
