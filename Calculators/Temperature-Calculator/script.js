@@ -11,6 +11,7 @@ fromUnitElements.forEach(element => {
     });
 });
 
+// debouncing function to minimize function calls
 toUnitElements.forEach(element => {
     element.addEventListener('change', () => {
         if (isSubmitted) {
@@ -19,6 +20,7 @@ toUnitElements.forEach(element => {
     });
 });
 
+// unit change handling function to display cconversions with selected unit
 function handleUnitChange() {
     const selectedFromUnit = document.querySelector('input[name="fromUnit"]:checked').value;
 
@@ -41,8 +43,8 @@ submitButton.onclick = function () {
 }
 
 function updateResult() {
-    callCount++;
-    console.log(`updateResult called ${callCount} times`); // Log the call count
+    // callCount++;
+    // console.log(`updateResult called ${callCount} times`); // Log the call count
 
     let temp = Number(document.getElementById("textBox").value);
 
@@ -60,7 +62,8 @@ function updateResult() {
 
     const sourceUnit = sourceUnitElement.value;
     const targetUnit = targetUnitElement.value;
-    const targetUnitSymbol = targetUnitElement.dataset.symbol;
+
+    const originalTemp = temp;
 
     // we use kelvin as the base temp, this removes the need to account for possible combination of selections
     var converter = {
@@ -96,7 +99,7 @@ function updateResult() {
 
     if (sourceUnit != "kelvin") temp = converter[sourceUnit].toKelvin(temp);
     if (targetUnit != "kelvin") temp = converter[targetUnit].fromKelvin(temp);
-    displayMessage(`${temp}°${targetUnitSymbol}`);
+    displayMessage(`${originalTemp} degrees ${sourceUnit} is ${temp.toFixed(2)} degrees ${targetUnit}`);
 };
 
 function displayMessage(string) {
