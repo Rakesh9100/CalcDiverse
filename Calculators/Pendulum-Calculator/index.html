@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Pendulum Calculator</title>
+</head>
+<body>
+    <header class="main">
+        <h1 class="header">Pendulum Calculator</h1>
+        <div class="calculator-container">
+            <label for="length">Length of Pendulum (l) in meters:</label>
+            <input type="number" id="length" name="length" required>
+            <label for="gravity">Gravitational Acceleration (g) in m/s²:</label>
+            <input type="number" id="gravity" name="gravity" required>
+            <label for="amplitude">Amplitude (A) in meters:</label>
+            <input type="number" id="amplitude" name="amplitude" required>
+            <label for="mass">Mass of the Bob (m) in kg:</label>
+            <input type="number" id="mass" name="mass" required>
+            <button class="submit-button" onclick="calculatePendulum()">Calculate</button>
+            <div class="results" id="results"></div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
