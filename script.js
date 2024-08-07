@@ -300,6 +300,33 @@ if (SpeechRecognition) {
     info.textContent = "Your Browser does not support Speech Recognition";
 }
 
+
+// Wait for the DOM to fully load
+document.addEventListener('DOMContentLoaded', function() {
+    // Select the form element
+    const form = document.getElementById('rate-us-form');
+    
+    // Add event listener for form submission
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Get the values from the form
+        const rating = document.getElementById('rating').value;
+        const suggestions = document.getElementById('suggestions').value;
+
+        // Log the form values to the console (for demonstration purposes)
+        console.log(`Rating: ${rating}`);
+        console.log(`Suggestions: ${suggestions}`);
+
+        // Display the thank-you message
+        document.getElementById('thank-you-message').classList.remove('hidden');
+
+        // Clear the form fields
+        form.reset();
+    });
+});
+
+
 // Validate input for name fields
 function validateName(inputId) {
     let input = document.getElementById(inputId);

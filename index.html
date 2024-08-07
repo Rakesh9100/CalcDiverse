@@ -5377,6 +5377,29 @@
                         <textarea id="message" name="message" placeholder="Leave your message" required></textarea>
                         <button type="submit">SEND</button>
                     </div>
+                    <div class="rate-us-container">
+                        <h2>Rate Us</h2>
+                        <form id="rate-us-form">
+                            <label for="rating">Your Rating:</label>
+                            <select id="rating" name="rating">
+                                <option value="5">5 - Excellent</option>
+                                <option value="4">4 - Good</option>
+                                <option value="3">3 - Average</option>
+                                <option value="2">2 - Poor</option>
+                                <option value="1">1 - Very Poor</option>
+                            </select>
+                
+                            <label for="suggestions">Your Suggestions:</label>
+                            <textarea id="suggestions" name="suggestions" rows="4" placeholder="Your suggestions..."></textarea>
+                
+                            <button type="submit">Submit</button>
+                        </form>
+                        <div id="thank-you-message" class="hidden">
+                            Thank you for your feedback!
+                        </div>
+                    </div>
+
+
                 </form>
                 <div class="social">
                     <a class="user" href="https://rakesh9100.bio.link/" target="_blank"><i class="fa-solid fa-user socials"></i></a>
