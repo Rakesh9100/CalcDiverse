@@ -27,4 +27,3 @@ document.getElementById('workForm').addEventListener('submit', function(e) {
         document.getElementById('result').style.color = 'green';
     }
 });
-
