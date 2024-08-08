@@ -1,4 +1,3 @@
-
 document.getElementById('earthquakeForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
