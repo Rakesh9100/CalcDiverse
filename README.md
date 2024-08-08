@@ -343,6 +343,8 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 | 277 | Weight On The Moon Calculator | Calculates the weight of the object/person on the moon. | https://calcdiverse.netlify.app/calculators/weight-on-the-moon-calculator/ |
 | 278 | Word Count Calculator | Counts the Total Words, Unique words, Average word length and Exports the data in JSON. | https://calcdiverse.netlify.app/calculators/word-count-calculator/ |
 | 279 | Yarn Density Calculator | Calculates the linear density of the yarn from unit system to another. | https://calcdiverse.netlify.app/calculators/yarn-density-calculator/ |
+| 280 | Chi-Square Calculator | Calculates the chi-square value from the observed and expected data. | https://calcdiverse.netlify.app/calculators/Chi-Square-Calculator/ |
+| 281 | Pet Care Cost Calculator | Calculates the cost required to keep the pet throughout lifespan from the entered data. | https://calcdiverse.netlify.app/calculators/Pet-Care-Cost-Calculator/ |
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 

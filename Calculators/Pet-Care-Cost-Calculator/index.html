@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pet Care Cost Calculator</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>Pet Care Cost Calculator</h1>
+            <form id="petCostForm">
+                <label for="petType">Select Pet Type:</label>
+                <select id="petType">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="bird">Bird</option>
+                    <option value="fish">Fish</option>
+                    <option value="reptile">Reptile</option>
+                </select>
+
+                <label for="foodCost">Annual Food Cost ($):</label>
+                <input type="number" id="foodCost" placeholder="Enter annual food cost">
+
+                <label for="healthCost">Annual Health Care Cost ($):</label>
+                <input type="number" id="healthCost" placeholder="Enter annual health care cost">
+
+                <label for="groomingCost">Annual Grooming Cost ($):</label>
+                <input type="number" id="groomingCost" placeholder="Enter annual grooming cost">
+
+                <label for="insuranceCost">Annual Insurance Cost ($):</label>
+                <input type="number" id="insuranceCost" placeholder="Enter annual insurance cost">
+
+                <label for="otherCost">Annual Other Expenses ($):</label>
+                <input type="number" id="otherCost" placeholder="Enter other annual expenses">
+
+                <label for="years">Expected Lifespan (years):</label>
+                <input type="number" id="years" placeholder="Enter expected lifespan">
+
+                <button type="button" onclick="calculateCost()">Calculate</button>
+            </form>
+
+            <div id="result">
+                <h2>Total Estimated Lifetime Cost: $<span id="totalCost">0</span></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

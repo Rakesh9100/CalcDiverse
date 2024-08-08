@@ -30,6 +30,29 @@
     border-radius: 25px;
 }
 
+/* Custom Cursor Css */
+
+.circle {
+    z-index: 999999;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: colors 5s infinite;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+.circle::before {
+    content: "";
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
 /* Preloader Css */
 
 #loader-wrapper {
@@ -180,6 +203,16 @@ html {
     font-weight: 300;
     line-height: 1.4;
     scroll-behavior: smooth;
+}
+
+#progress-bar {
+    --progress: 0;
+    position: fixed;
+    height: 8px;
+    width: var(--progress);
+    background: linear-gradient(45deg, rgb(68, 49, 161), rgb(36, 15, 141));
+    z-index: 1000;
+    border-radius: 4px;
 }
 
 header {
@@ -1322,12 +1355,14 @@ section {
     backdrop-filter: blur(10px);
     z-index: 1;
     transition: 0.5s;
+    top: 10%;
     color: #fff;
 }
 
 .container .box:hover .content {
     left: -25px;
     padding: 60px 40px;
+    top: 5px;
 }
 
 .container .box .content h2 {
@@ -1424,7 +1459,6 @@ section {
     cursor: pointer;
 }
 
-
 #progress-value {
     display: block;
     height: calc(100% - 15px);
@@ -1436,6 +1470,36 @@ section {
     place-items: center;
     font-size: 26px;
     color: black;
+}
+
+/* Pagination Section Css */
+
+#pagination-controls {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#pagination-controls button {
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+#pagination-controls #prev {
+    margin-right: 50px;
+}
+
+#pagination-controls #next {
+    margin-left: 50px;
+}
+
+#pagination-controls #page-info {
+    color: white;
+    font-size: medium;
 }
 
 /* Footer Section Css */
@@ -1574,6 +1638,10 @@ footer {
     justify-items: start;
     align-items: start;
     text-align: center;
+}
+
+.footer-ul li a:hover {
+    color: #00d0ff;
 }
 
 .social {

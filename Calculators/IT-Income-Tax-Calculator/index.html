@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IT Income Tax Calculator</title>
+</head>
+<body>
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <p>
+            Use this calculator to estimate your income tax. Enter your gross salary, deductions, and tax rebate, then click "Calculate Tax".
+        </p>
+        <ul>
+            <li><strong>Gross Salary:</strong> Total income before any deductions.</li>
+            <li><strong>Deductions:</strong> Allowable deductions such as retirement contributions, health insurance premiums, etc.</li>
+            <li><strong>Tax Rebate:</strong> A rebate or reduction in tax liability subtracted from the total tax due.</li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <h1>Income Tax Calculator</h1>
+        <form id="tax-form">
+            <div class="form-group">
+                <label for="gross-salary">Gross Salary:</label>
+                <input type="number" id="gross-salary" name="gross-salary" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="deductions">Deductions:</label>
+                <input type="number" id="deductions" name="deductions" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tax-rebate">Tax Rebate:</label>
+                <input type="number" id="tax-rebate" name="tax-rebate" required>
+            </div>
+            
+            <button type="button" onclick="calculateTax()">Calculate Tax</button>
+        </form>
+        <div id="result" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
