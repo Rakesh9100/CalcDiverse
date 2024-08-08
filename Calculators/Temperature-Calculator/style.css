@@ -1,5 +1,5 @@
 body {
-    background-color: #449f6c;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,16 +8,17 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    color: #fff;
 }
 
 .container {
-    border-radius: 8px;
-    background-color: #fff;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
     padding: 30px;
     width: 100%;
     max-width: 600px;
     margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -25,27 +26,29 @@ body {
 }
 
 .labelId {
-    margin-left: 0;
+    font-weight: bold;
+    color: #f8f8f8;
 }
 
 input[type="radio"] {
     margin-right: 8px;
 }
 
-input[type="text"],
-select {
+input[type="text"] {
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     margin: 8px 0;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 8px;
     box-sizing: border-box;
     font-size: 16px;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 button[type="submit"] {
     width: 100%;
-    background-color: #4caf50;
+    background-color: #f45b69;
     color: white;
     padding: 14px;
     margin: 8px 0;
@@ -57,21 +60,24 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #45a049;
-    transform: scale(1.02);
+    background-color: #e04e5a;
+    transform: scale(1.03);
 }
 
 #resultId {
     background-color: #fff;
+    color: #333;
     width: 100%;
     max-width: 600px;
     padding: 20px;
     margin: 20px auto 0;
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 #result {
     font-weight: bold;
+    margin-top: 10px;
+    color: #333;
 }
