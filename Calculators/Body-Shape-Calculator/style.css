@@ -48,7 +48,6 @@ hr {
     color: #cba8ec;
 }
 
-
 label {
     display: flex;
     margin-bottom: 5px;
@@ -69,7 +68,6 @@ label {
     border: 1px solid rgb(234, 229, 230);
     border-radius: 5px;
     font-size: 16px;
-
 }
 
 .input-group button {
@@ -104,7 +102,6 @@ button:hover {
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
-
 }
 
 .footer {
@@ -112,7 +109,6 @@ button:hover {
     font-size: 1em;
     font-weight: lighter;
     color: #ada8a8;
-
 }
 
 #result.hidden {
