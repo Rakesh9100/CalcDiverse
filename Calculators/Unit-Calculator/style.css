@@ -1,118 +1,132 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
     background: radial-gradient(circle, #00a6ff, #0f1624);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
 }
 
 .converter {
-    width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 9px #fff;
-}
-
-.converter h2 {
-    margin-bottom: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 20px;
-    padding-top: 10px;
+}
+
+.radio-group.left,
+.radio-group.right {
+    width: 48%;
 }
 
 .radio-group label {
-    display: block;
-    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555555;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
 .radio-group input[type="radio"] {
-    margin-right: 10px;
+    margin-right: 8px;
+    accent-color: #ff6347;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 8px;
 }
 
 input[type="number"],
 select {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    background: #fafafa;
+    color: #333333;
+    font-size: 0.95rem;
     box-sizing: border-box;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    padding: 12px;
+    background: #ff6347;
+    color: #ffffff;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
+    font-weight: 600;
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    box-sizing: border-box;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: #ff4500;
 }
 
 #result {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 1rem;
     text-align: center;
-}
-
-h2 {
-    text-align: center;
-    color: #fff;
-    font-size: 2.5rem;
-    text-shadow: 6px 0px 9px #000000;
-}
-
-.radio-group {
-    display: inline-block;
-}
-
-.left {
-    padding-right: 100px;
-    padding-left: 50px;
+    color: #333333;
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
-    .converter {
-        width: 79%;
-        font-size: 10px;
+    .container {
+        width: 90%;
     }
 
     .radio-group {
-        display: flex;
-    }
-
-    .left {
         flex-direction: column;
-        padding-left: 0px;
-        padding-right: 50px;
-    }
-
-    .right {
-        flex-direction: column;
+        width: 100%;
     }
 
     input[type="number"],
     select {
-        font-size: 10px;
+        font-size: 0.85rem;
+    }
+
+    button {
+        font-size: 0.9rem;
     }
 
     #result {
-        font-size: 15px;
+        font-size: 0.9rem;
     }
 }
