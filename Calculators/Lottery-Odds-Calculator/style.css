@@ -20,7 +20,8 @@ header {
     border-radius: 8px;
     background: linear-gradient(to right, #deec76, #15df0e);
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 200);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 label {
@@ -57,11 +58,15 @@ button:hover {
 #result {
     margin-top: 16px;
     font-weight: bold;
-    color: #333;
+    color: red;
+    text-align: center;
+    font-size: 22px;
 }
-#base{
+
+#base {
     font-weight: bold;
 }
-#value{
+
+#value {
     font-weight: bold;
 }
