@@ -2,7 +2,7 @@
 
 ## Description :-
 
-The **Seismographic Impact Calculator** is a web application designed to estimate the impact of an earthquake based on its magnitude, the distance from the epicenter, population density, and building types. This project is built using HTML, CSS, and JavaScript.
+The **Seismographic Impact Calculator** is a web application designed to estimate the impact of an earthquake based on its magnitude, the distance from the epicenter, population density, and building types.
 
 ## Tech Stacks :-
 
