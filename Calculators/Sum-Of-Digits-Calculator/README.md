@@ -1,9 +1,8 @@
-# <p align="center">Sum of digits Calculator</p>
+# <p align="center">Sum Of Digits Calculator</p>
 
 ## Description :-
 
-It calculates the sum of digits in given number
-
+Calculator that is used to find the sum of all digits in a given number.
 
 For example, when 107 is given:<br>
 
