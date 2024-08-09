@@ -63,9 +63,9 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border:solid;
+    border: solid;
     border-radius: 10px;
-    height:4vh;
+    height: 4vh;
     margin-top: 20px;
     font-size: 1.2em;
     color: red;
@@ -76,7 +76,8 @@ button:hover {
         padding: 20px;
     }
 
-    input, button {
+    input,
+    button {
         font-size: 14px;
         padding: 8px;
     }

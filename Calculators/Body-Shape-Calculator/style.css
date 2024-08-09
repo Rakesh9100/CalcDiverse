@@ -1,0 +1,123 @@
+body {
+    font-weight: bold;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    opacity: 1;
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20;
+    color: #111010;
+}
+
+footer {
+    color: #111010;
+    text-align: center;
+    display: block;
+}
+
+img {
+    margin-bottom: 20px;
+    width: 70px;
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-style: oblique;
+    font-size: 1.5em;
+    font-weight: bolder;
+
+}
+
+.container {
+    display: block;
+    background-color: rgba(221, 178, 203, 0.768);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+hr {
+    color: #cba8ec;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgb(234, 229, 230);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #de8dad;
+    color: white;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(222, 197, 210);
+}
+
+.unit-selector {
+    padding: 10px;
+    border-color: #e4b3c7;
+    color: rgb(157, 155, 155);
+    border: #de8dad;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1em;
+    font-weight: lighter;
+    color: #ada8a8;
+}
+
+#result.hidden {
+    display: none;
+}
+
+#suggestion {
+    font-size: 1em;
+    font-weight: lighter;
+    color: #454445;
+    text-align: center;
+}

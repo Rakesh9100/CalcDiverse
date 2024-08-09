@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Unit Calculator</title>
 </head>
+
 <body>
-    <div>
+    <div class="container">
         <h2>Unit Calculator</h2>
         <div class="converter">
             <div class="radio-group">
@@ -15,11 +18,13 @@
                     <label><input type="radio" name="conversionType" value="length" checked=""> <span>Length</span></label>
                     <label><input type="radio" name="conversionType" value="area"> <span>Area</span></label>
                     <label><input type="radio" name="conversionType" value="weight"> <span>Weight</span></label>
+                    <label><input type="radio" name="conversionType" value="work"> <span>Work</span></label>
                 </div>
                 <div class="radio-group right">
+                    <label><input type="radio" name="conversionType" value="time"> <span>Time</span></label>
                     <label><input type="radio" name="conversionType" value="volume"> <span>Volume</span></label>
                     <label><input type="radio" name="conversionType" value="temperature"> <span>Temperature</span></label>
-                    <label><input type="radio" name="conversionType" value="time"> <span>Time</span></label>
+                    
                 </div>
             </div>
             <label for="value">Enter Value:</label>
@@ -30,7 +35,6 @@
                 <option value="kilometer">kilometer</option>
                 <option value="centimeter">centimeter</option>
                 <option value="mile">mile</option>
-                <option value="yard">yard</option>
             </select>
             <label for="unitTo">To:</label>
             <select id="unitTo">
@@ -46,4 +50,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
