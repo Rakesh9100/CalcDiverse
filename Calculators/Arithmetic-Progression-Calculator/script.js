@@ -5,6 +5,11 @@ function calculate() {
     const termNumber = parseInt(document.getElementById('termNumber').value);
     const calculationType = document.getElementById('calculationType').value;
 
+    // For checking empty values    
+    if (isNaN(firstTerm) || isNaN(commonDifference) || isNaN(termNumber)) {
+        document.getElementById("result").innerText = "Please enter the valid numbers for all fields.";
+        return;
+    }
     // Perform the selected calculation
     let result;
     if (calculationType === 'nthTerm') {
