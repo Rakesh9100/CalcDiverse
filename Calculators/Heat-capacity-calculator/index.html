@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specific Heat Capacity Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Specific Heat Capacity Calculator</h1>
+        <form id="specificHeatCapacityForm">
+            <div class="form-group">
+                <label for="heatEnergy">Heat Energy (J):</label>
+                <input type="number" id="heatEnergy" name="heatEnergy" required>
+            </div>
+            <div class="form-group">
+                <label for="mass">Mass (kg):</label>
+                <input type="number" id="mass" name="mass" required>
+            </div>
+            <div class="form-group">
+                <label for="temperatureChange">Change in Temperature (°C):</label>
+                <input type="number" id="temperatureChange" name="temperatureChange" required>
+            </div>
+            <button type="button" onclick="calculateSpecificHeatCapacity()">Calculate Specific Heat Capacity</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function calculateSpecificHeatCapacity() {
+            const heatEnergy = parseFloat(document.getElementById('heatEnergy').value);
+            const mass = parseFloat(document.getElementById('mass').value);
+            const temperatureChange = parseFloat(document.getElementById('temperatureChange').value);
+            const specificHeatCapacity = heatEnergy / (mass * temperatureChange);
+
+            const resultElement = document.getElementById('result');
+            if (isNaN(specificHeatCapacity)) {
+                resultElement.innerText = 'Please enter valid values.';
+            } else {
+                resultElement.innerText = `Specific Heat Capacity: ${specificHeatCapacity.toFixed(2)} J/kg°C`;
+            }
+        }
+    </script>
+</body>
+</html>
