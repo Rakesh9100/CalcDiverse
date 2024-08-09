@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lease Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lease Calculator</h1>
+        <form id="leaseForm">
+            <div class="input-group">
+                <label for="assetValue">Asset Value ($)</label>
+                <input type="number" id="assetValue" required>
+            </div>
+            <div class="input-group">
+                <label for="residualValue">Residual Value ($)</label>
+                <input type="number" id="residualValue" required>
+            </div>
+            <div class="input-group">
+                <label for="leaseTerm">Lease Term (Years)</label>
+                <input type="number" id="leaseTerm" required>
+            </div>
+            <div class="input-group">
+                <label for="interestRate">Interest Rate (%)</label>
+                <input type="number" id="interestRate" required>
+            </div>
+            <button type="button" onclick="calculateLease()">Calculate</button>
+        </form>
+        <div id="results" class="results">
+            <h2>Lease Calculation Results</h2>
+            <p id="monthlyPayment">Monthly Payment: </p>
+            <p id="totalPayment">Total Payment: </p>
+            <p id="totalInterest">Total Interest: </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
