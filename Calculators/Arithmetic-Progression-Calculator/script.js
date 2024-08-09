@@ -13,9 +13,6 @@ function calculate() {
     } else if (calculationType === 'sumOfTerms') {
         // Calculate the sum of the first n terms
         result = calculateSumOfTerms(firstTerm, commonDifference, termNumber);
-    } else if (calculationType === 'arithMean') {
-        // Calculate the arithmetic mean of terms
-        result = calculateArithMean(firstTerm, commonDifference, termNumber);
     }
 
     // Display the result
@@ -31,9 +28,4 @@ function calculateNthTerm(firstTerm, commonDifference, termNumber) {
 function calculateSumOfTerms(firstTerm, commonDifference, termNumber) {
     // Calculate the sum of the first n terms
     return `The sum of the first ${termNumber} terms is: ${(termNumber / 2) * (2 * firstTerm + (termNumber - 1) * commonDifference)}`;
-}
-
-function calculateArithMean(firstTerm, commonDifference, termNumber) {
-    // Calculate the arithmetic mean of terms
-    return `The arithmetic mean of ${termNumber} terms is: ${(1 / 2) * (2 * firstTerm + (termNumber - 1) * commonDifference)}`;
 }
