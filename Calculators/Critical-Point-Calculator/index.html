@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critical Point Calculator for Ideal Gases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Critical Point Calculator for Ideal Gases</h1>
+        <div class="input-group">
+            <label for="a">Parameter a (L<sup>2</sup> atm/mol<sup>2</sup>):</label>
+            <input type="number" id="a" step="any" placeholder="Enter value for a">
+        </div>
+        <div class="input-group">
+            <label for="b">Parameter b (L/mol):</label>
+            <input type="number" id="b" step="any" placeholder="Enter value for b">
+        </div>
+        <button onclick="calculateCriticalPoint()">Calculate</button>
+        <div id="results">
+            <h2>Critical Point:</h2>
+            <p>Critical Temperature (K): <span id="criticalTemperature"></span></p>
+            <p>Critical Pressure (atm): <span id="criticalPressure"></span></p>
+            <p>Critical Volume (L/mol): <span id="criticalVolume"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
