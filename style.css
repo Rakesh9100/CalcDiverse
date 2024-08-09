@@ -1503,6 +1503,16 @@ section {
     font-size: medium;
 }
 
+#prev:hover{
+    box-shadow: 2px 2px 5px 0px #682572;
+    background: linear-gradient(to right, #0575E6, #00F260);
+}
+
+#next:hover{
+    box-shadow: 2px 2px 5px 0px #682572;
+    background: linear-gradient(to right, #0575E6, #00F260);
+}
+
 /* Footer Section Css */
 
 footer {
