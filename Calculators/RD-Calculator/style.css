@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    margin: 60px 0;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container, .output-container {
+    width: 50%;
+    margin: 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+}
+
+#rdChart {
+    width: 250px;
+    height: 250px;
+}
+
+.result {
+    padding: 8px;
+    display: none;
+    background-color: #0b92fc;
+    color: white;
+    margin: 20px 0 40px 0;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+.result p {
+    margin: 10px;
+    font-size: 17px;
+}
+
+form {
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form input {
+    width: 70%;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffb521;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #f7ae1b;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; 
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        margin: 30px 0 40px;
+    }
+
+    .main {
+        margin: 60px 0;
+    }
+
+    .main, .main-container {
+        width: 80%;
+        padding: 8px;
+    }
+
+    .main-container {
+        width: 80%;
+        height: 100%;
+        margin-bottom: 15px;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .container, .output-container {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    .button {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    button {
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    #rdChart {
+        width: 100%;
+        height: auto;
+    }
+
+    .output-container {
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .result {
+        font-size: 16px;
+        height: 40%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 30px 0 40px;
+    }
+
+    .main {
+        margin: 60px 0 90px 0;
+        height: 100%;
+    }
+
+    .main, .main-container {
+        width: 80%;
+        padding: 8px;
+    }
+
+    .main-container {
+        width: 80%;
+        height: 90%;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .container, .output-container {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    form label {
+        font-size: 16px;
+    }
+
+    form input {
+        font-size: 14px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #rdChart {
+        width: 100%;
+        height: auto;
+    }
+
+    .result {
+        font-size: 14px;
+        height: 40%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .output-container {
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .result p {
+        font-size: 14px;
+    }
+}
