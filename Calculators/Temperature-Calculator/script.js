@@ -1,4 +1,51 @@
-document.getElementById("submitButton").onclick = function () {
+const fromUnitElements = document.querySelectorAll('input[name="fromUnit"]');
+const toUnitElements = document.querySelectorAll('input[name="toUnit"]');
+const submitButton = document.getElementById("submitButton");
+
+fromUnitElements.forEach(element => {
+    element.addEventListener('change', handleUnitChange);
+    element.addEventListener('change', () => {
+        if (isSubmitted) {
+            debounce(updateResult, 600)();
+        }
+    });
+});
+
+// debouncing function to minimize function calls
+toUnitElements.forEach(element => {
+    element.addEventListener('change', () => {
+        if (isSubmitted) {
+            debounce(updateResult, 600)();
+        }
+    });
+});
+
+// unit change handling function to display cconversions with selected unit
+function handleUnitChange() {
+    const selectedFromUnit = document.querySelector('input[name="fromUnit"]:checked').value;
+
+    toUnitElements.forEach(element => {
+        if (element.value === selectedFromUnit) {
+            element.disabled = true;
+        } else {
+            element.disabled = false;
+        }
+    });
+}
+
+let debounceTimeout;
+let isSubmitted = false;
+let callCount = 0;
+
+submitButton.onclick = function () {
+    updateResult();
+    isSubmitted = true;
+}
+
+function updateResult() {
+    // callCount++;
+    // console.log(`updateResult called ${callCount} times`); // Log the call count
+
     let temp = Number(document.getElementById("textBox").value);
 
     const sourceUnitElement = document.querySelector(
@@ -15,7 +62,8 @@ document.getElementById("submitButton").onclick = function () {
 
     const sourceUnit = sourceUnitElement.value;
     const targetUnit = targetUnitElement.value;
-    const targetUnitSymbol = targetUnitElement.dataset.symbol;
+
+    const originalTemp = temp;
 
     // we use kelvin as the base temp, this removes the need to account for possible combination of selections
     var converter = {
@@ -51,9 +99,16 @@ document.getElementById("submitButton").onclick = function () {
 
     if (sourceUnit != "kelvin") temp = converter[sourceUnit].toKelvin(temp);
     if (targetUnit != "kelvin") temp = converter[targetUnit].fromKelvin(temp);
-    displayMessage(`${temp}°${targetUnitSymbol}`);
+    displayMessage(`${originalTemp} degrees ${sourceUnit} is ${temp.toFixed(2)} degrees ${targetUnit}`);
 };
 
 function displayMessage(string) {
     document.getElementById("result").innerHTML = string;
+}
+
+function debounce(func, delay) {
+    return function(...args) {
+        clearTimeout(debounceTimeout);
+        debounceTimeout = setTimeout(() => func.apply(this, args), delay);
+    };
 }
