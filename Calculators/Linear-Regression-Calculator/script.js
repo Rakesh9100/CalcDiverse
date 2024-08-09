@@ -1,12 +1,36 @@
 function calculateRegression() {
-    const xValues = document.getElementById('xValues').value.split(',').map(Number);
-    const yValues = document.getElementById('yValues').value.split(',').map(Number);
+    const xValuesInput = document.getElementById('xValues').value;
+    const yValuesInput = document.getElementById('yValues').value;
 
+    // Check if input fields are empty
+    if (!xValuesInput || !yValuesInput) {
+        alert("Both X and Y values are required.");
+        return;
+    }
+
+    // Split the input and convert to numbers
+    const xValues = xValuesInput.split(',').map(Number);
+    const yValues = yValuesInput.split(',').map(Number);
+
+    // Check if all inputs are valid numbers
+    if (xValues.some(isNaN) || yValues.some(isNaN)) {
+        alert("Please enter valid numbers for X and Y values.");
+        return;
+    }
+
+    // Ensure the same number of X and Y values
     if (xValues.length !== yValues.length) {
         alert("X and Y values must have the same length.");
         return;
     }
 
+    // Ensure there are at least two data points
+    if (xValues.length < 2) {
+        alert("Please enter at least two data points.");
+        return;
+    }
+
+    // Calculate the mean of X and Y values
     const n = xValues.length;
     const xMean = xValues.reduce((a, b) => a + b) / n;
     const yMean = yValues.reduce((a, b) => a + b) / n;
@@ -14,6 +38,7 @@ function calculateRegression() {
     let numerator = 0;
     let denominator = 0;
 
+    // Calculate the slope and intercept
     for (let i = 0; i < n; i++) {
         numerator += (xValues[i] - xMean) * (yValues[i] - yMean);
         denominator += (xValues[i] - xMean) ** 2;
