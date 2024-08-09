@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculates nth Term and sum of n Terms present in an Arithematic Sequence.
+Calculates nth Term, arithmetic mean and sum of n Terms present in an Arithematic Sequence.
 
 ## Tech Stacks :-
 
