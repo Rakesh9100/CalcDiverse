@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, black,#013f01, #030364, #37036c, #5e025e);
+    background-size: 400% 400%;
+    animation: disco 10s infinite linear;
+}
+
+@keyframes disco {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.calculator {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); }
+    50% { box-shadow: 0 0 40px rgba(0, 0, 0, 0.6); }
+    100% { box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); }
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    animation: color-change 5s infinite linear;
+}
+
+@keyframes color-change {
+    0% { color: #ff0000; }
+    25% { color: #067006; }
+    50% { color: #0000ff; }
+    75% { color: #710571; }
+    100% { color: #ff0000; }
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    animation: input-glow 2s infinite ease-in-out;
+    outline: none;
+}
+
+@keyframes input-glow {
+    0% { border-color: #000000; box-shadow: 0 0 5px #000000; }
+    25% { border-color: #000000; box-shadow: 0 0 5px #000000; }
+    50% { border-color: #000000; box-shadow: 0 0 5px #000000; }
+    75% { border-color: #000000; box-shadow: 0 0 000000; }
+    100% { border-color: #000000; box-shadow: 0 0 5px #000000; }
+}
+
+button {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: button-glow 2s infinite ease-in-out;
+}
+
+@keyframes button-glow {
+    0% { color: #ff0000; }
+    25% { color: #000000; }
+    50% { color: #0000ff; }
+    75% { color: #ff00ff; }
+    100% { color: #ff0000; }
+}
+
+button:hover {
+    animation: button-hover 0.5s forwards;
+}
+
+@keyframes button-hover {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    animation: text-fade 5s infinite;
+}
+
+@keyframes text-fade {
+    0% { color: #ff0000; }
+    25% { color: #00ff00; }
+    50% { color: #0000ff; }
+    75% { color: #ff00ff; }
+    100% { color: #ff0000; }
+}
+
