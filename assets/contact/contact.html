@@ -9,17 +9,42 @@
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" type="text/css" href="./contact.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <script src="../../script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>CalcDiverse | Contact Us</title>
 </head>
 
 <body>
+    <div class="circle-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    
     <div id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
+
+    <div id="progress-bar"></div>
 
     <header>
         <nav class="navbar">
@@ -49,7 +74,7 @@
                     <a href="../faq/faq.html" class="nav-link"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
+                    <a href="#" class="nav-link" id="active1"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -69,15 +94,23 @@
                 <input type="text" id="name" name="name" placeholder="Enter Your Name" required oninput="validateName('name')">
 
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required oninput="validateEmail('email')">
 
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
+                <div id="charCount">Message Count: 0/50</div>
 
                 <button type="submit">Send Message</button>
             </form>
         </section>
     </div>
+
+    <!-- Scroll to Top Button Starts Here -->
+    <div id="progress">
+        <span id="progress-value" class="bi bi-arrow-up-short"></span>
+    </div>
+
+    <!-- Scroll to Top Button Ends Here -->
 
     <!-------------------------------------Footer Code Starts --------------------------------------------->
     <footer>
@@ -101,7 +134,7 @@
                 <h1 class="heading">Keep In Touch</h1>
                 <form name="CalcDiverse Contact" autocomplete="off" netlify>
                     <div class="form-group group1">
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required oninput="validateName('name')">
+                        <input type="text" id="footer-name" name="name" placeholder="Enter your name" required oninput="validateName('footer-name')">
                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     </div>
                     <div class="form-group group1">
@@ -130,6 +163,8 @@
     </footer>
 
     <script src="./contact.js"></script>
+    <script src="../../script.js"></script>
+    <script src="../customcursor.js"></script>
 </body>
 
 </html>

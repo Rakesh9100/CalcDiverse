@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Boyle Temperatuure Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="animated-text">A Boyle Temperature Calculator</h1>
+        <input type="number" id="a" placeholder="Enter a (Van der Waal's Constant)">
+        <div><input type="number" id="b" placeholder="Enter b (Van der Waal's Constant)"></div>
+
+        <button onclick="calculateTemperature()">Calculate Boyle Temperature</button>
+
+        <div id="result"></div>
+        <button type="button" id="resetButton">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

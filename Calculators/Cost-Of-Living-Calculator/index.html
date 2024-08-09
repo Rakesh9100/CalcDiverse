@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cost Of Living Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cost of Living Calculator</h1>
+        <label for="city1">Select your current city:</label>
+        <select id="city1"></select>
+
+        <label for="salary">Enter your salary in USD:</label>
+        <input type="number" id="salary" min="0" step="100">
+
+        <label for="city2">Select the city to compare:</label>
+        <select id="city2"></select>
+
+        <button id="calculate">Calculate</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

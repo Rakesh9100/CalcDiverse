@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Population Prediction Calculator</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Population Growth Analysis</h1>
+        </header>
+        <p>Enter the following information:</p>
+        <form>
+            <label for="starting-population">Starting Population:</label><br />
+            <input type="text" id="starting-population" /><br />
+            <label for="births-per-year">Births per Year:</label><br />
+            <input type="text" id="births-per-year" /><br />
+            <label for="deaths-per-year">Deaths per Year:</label><br />
+            <input type="text" id="deaths-per-year" /><br />
+            <label for="years">Years:</label><br />
+            <input type="text" id="years" /><br />
+            <button type="button" onclick="calculatePopulation()">Calculate</button>
+        </form>
+        <p id="result"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

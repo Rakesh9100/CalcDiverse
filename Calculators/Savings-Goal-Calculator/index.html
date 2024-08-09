@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Savings Goal Calculator</title>
+</head>
+
+<body>
+    <div class="calculator-container">
+        <h1>Savings Goal Calculator</h1>
+        <div class="input-container">
+            <label for="goalAmount">Savings Goal Amount (INR):</label>
+            <input type="number" id="goalAmount" required>
+        </div>
+        <div class="input-container">
+            <label for="currentSavings">Current Savings (INR):</label>
+            <input type="number" id="currentSavings" required>
+        </div>
+        <div class="input-container">
+            <label for="timePeriod">Time Period (Months):</label>
+            <input type="number" id="timePeriod" required>
+        </div>
+        <button type="button" onclick="calculateSavings()">Calculate</button>
+        <div class="result-container">
+            <div id="result">Monthly Savings Required: <span id="savingsResult" class="red">₹0.00</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

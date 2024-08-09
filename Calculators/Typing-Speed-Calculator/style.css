@@ -4,6 +4,7 @@ body {
     font-family: 'ABeeZee', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
+    font-size: large; 
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -20,8 +21,20 @@ h1 {
     color: #fff;
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 20px; margin-top: -40px; 
+}
 
+#controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.dropdown-group p {
+    font-weight: bold;
+    color: #fff;
 }
 
 #typing-box {
@@ -39,6 +52,21 @@ h1 {
     margin-bottom: 20px;
 }
 
+#text-to-type span {
+    color: black;
+}
+
+#text-to-type span.red {
+    color: red;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
 #user-input {
     padding: 10px;
     margin-bottom: 20px;
@@ -46,6 +74,7 @@ h1 {
     border-radius: 5px;
     font-size: 16px;
     text-align: center;
+    width: 80%;
 }
 
 button {
@@ -60,16 +89,43 @@ button {
 }
 
 button:hover {
-    background-color: #19238d;
+    background-color: #151c7d;
 }
 
 #speed-result {
     font-size: 16px;
     margin-top: 20px;
 }
+#reset-button {
+    margin-top: 20px; /* Space above Reset button */
+}
+.button-wrapper {
+    display: flex; /* Flexbox for buttons */
+    justify-content: center;
+    gap: 20px; /* Space between Start Test and Retake Test buttons */
+    margin-top: 10px; /* Space above button wrapper */
+}
 
-.form-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* Attractive Dropdown Styles */
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+    border-color: #19238d;
+    box-shadow: 0 0 5px rgba(25, 35, 141, 0.5);
+    outline: none;
+}
+
+option {
+    padding: 30px;
+    background-color: #fff;
+    color: #000;
 }
