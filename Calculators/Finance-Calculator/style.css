@@ -14,7 +14,7 @@ body {
     width: 90%;
     max-width: 600px;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background: linear-gradient(45deg, #0d0812, #0a1a37, rgb(43, 5, 94), rgb(79, 3, 79), rgb(4, 4, 134), rgb(86, 86, 248));
@@ -41,7 +41,7 @@ body {
     position:absolute;
     height:100%;
     width: 100%;
-   background-image: conic-gradient(from var(--angle) , transparent 70%, blue);
+    background-image: conic-gradient(from var(--angle) , transparent 70%,purple,rgb(235, 9, 235), blue,red,rgb(254, 13, 202));
     top:50%;
     left:50%;
     translate: -50% -50%;
