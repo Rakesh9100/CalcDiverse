@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #a6a6f0; /* Light background color for contrast */
+    color: #333; /* Darker text color for better readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 40px;
+    border-radius: 12px; /* Rounded corners */
+    width: 400px; /* Slightly wider container */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    border: 1px solid #e0e0e0; /* Light border for better separation */
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px; /* Added space below heading */
+    text-align: center;
+    color: #007bff; /* Bright blue for heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px; /* Spacing between label and input */
+    font-weight: 600; /* Slightly bolder font weight */
+    color: #555; /* Darker color for labels */
+}
+
+input, button {
+    width: 100%; /* Full width for inputs and button */
+    padding: 14px;
+    margin-bottom: 15px; /* Space between elements */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 6px; /* Rounded corners */
+    background-color: #f9f9f9; /* Lighter background for inputs and button */
+    color: #333; /* Darker text color for readability */
+    font-size: 1em; /* Consistent font size */
+}
+
+input:focus, button:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight border color on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Enhanced shadow on focus */
+}
+
+button {
+    background-color: #5959f8;
+    border: none;
+    color: #ffffff; /* White text color for button */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #014ea0;
+}
+
+.result {
+    margin-top: 20px; /* Space above results */
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0; /* Light border for separation */
+}
+
+.result h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #007bff; /* Bright blue for result heading */
+}
+
+.result p {
+    font-size: 1.1em;
+    margin: 5px 0; /* Space between result lines */
+}
