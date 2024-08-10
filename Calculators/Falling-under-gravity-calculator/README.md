@@ -13,3 +13,4 @@ This calculator estimates the time and speed of a free-falling object under grav
 ## Screenshots :-
 
 
+![Screenshot 2024-08-10 180118](https://github.com/user-attachments/assets/8ad73eb9-36dc-44f0-abd1-61d974a7d382)
