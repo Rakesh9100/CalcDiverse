@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Rank Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Matrix Rank Calculator</h1>
+        <form id="matrix-form">
+            <div class="matrix-inputs">
+                <label for="rows">Number of Rows:</label>
+                <input type="number" id="rows" min="1" value="3">
+                <label for="columns">Number of Columns:</label>
+                <input type="number" id="columns" min="1" value="3">
+            </div>
+            <button type="button" onclick="generateMatrixInputs()">Generate Matrix Inputs</button>
+            <br>
+            <div id="matrix-container"></div>
+            <button type="button" onclick="calculateRank()">Calculate Rank</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

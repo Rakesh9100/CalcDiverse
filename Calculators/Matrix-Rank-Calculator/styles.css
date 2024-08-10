@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f0f4f8, #d3e0e9);
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.matrix-inputs {
+    margin-bottom: 20px;
+}
+
+.matrix-inputs label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.matrix-inputs input[type="number"] {
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#matrix-container {
+    margin-bottom: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+#matrix-container div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#matrix-container input {
+    width: 50px;
+    text-align: center;
+    padding: 8px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
