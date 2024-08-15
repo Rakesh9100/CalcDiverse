@@ -15,7 +15,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     width: 500px;
-    height: 400px;
+    height: 450px;
 }
 
 .container:hover {
@@ -79,6 +79,7 @@ button:hover {
 }
 
 #results {
+
     margin-top: 20px;
     text-align: center;
 }
