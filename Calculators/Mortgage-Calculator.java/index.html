@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Mortgage Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Mortgage Calculator</h2>
+        <form onsubmit="calculateMortgage(event)">
+            <div class="input-group">
+                <label class="input-label" for="loanAmount">Loan Amount:</label>
+                <input type="text" id="loanAmount" class="input-field" required />
+            </div>
+            <div class="input-group">
+                <label class="input-label" for="interestRate">Interest Rate (%):</label>
+                <input type="text" id="interestRate" class="input-field" required />
+            </div>
+            <div class="input-group">
+                <label class="input-label" for="loanTerm">Loan Term (years):</label>
+                <input type="text" id="loanTerm" class="input-field" required />
+            </div>
+            <button type="submit" class="button">Calculate Mortgage</button>
+            <div class="result" id="result"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
