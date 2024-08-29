@@ -11,8 +11,21 @@ modalText = document.querySelector("#modalText");
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 
-// Remove the initial setting of the result
-// document.querySelector("#result").innerHTML = "00.00";
+// Event listener for the "Convert to ft" link
+document.getElementById('convertToFt').addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent the link from actually navigating
+
+    let heightCm = height.value;
+
+    if (heightCm) {
+        let heightFt = (heightCm / 30.48).toFixed(2); // Convert cm to feet
+        height.value = heightFt; // Set the value to feet
+        document.querySelector('.inputH label').innerHTML = 'Height (ft)'; // Change label to ft
+        alert(`Your height is ${heightFt} feet`);
+    } else {
+        alert('Please enter your height in cm first.');
+    }
+});
 
 function calculate() {
     if (age.value == '' || height.value == '' || weight.value == '' || (male.checked == false && female.checked == false)) {
@@ -25,9 +38,11 @@ function calculate() {
         countBmi();
     }
 }
+
 function isPositiveNumber(value) {
     return /^\d*\.?\d+$/.test(value) && parseFloat(value) > 0;
 }
+
 function countBmi() {
     var p = [age.value, height.value, weight.value];
     if (male.checked) {
@@ -60,7 +75,6 @@ function countBmi() {
 
     resultArea.style.display = "block";
     document.querySelector(".comment").innerHTML = `You are <span id="comment">${result}</span>`;
-    // Update the result only after the calculation
     document.querySelector("#result").innerHTML = bmi.toFixed(2);
 }
 
