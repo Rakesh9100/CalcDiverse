@@ -23,4 +23,4 @@ The Rainwater Harvesting Calculator is a web-based application that calculates t
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/14010ac5-5c23-44c8-bdbb-45281df4bd73)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/blob/salestaxcalc/results)
