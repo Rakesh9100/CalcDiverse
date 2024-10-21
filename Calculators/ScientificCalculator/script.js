@@ -30,6 +30,7 @@ function calculate() {
     try {
         screen.value = eval(screen.value);
     } catch (error) {
+        console.log(error)
         alert('Invalid input');
         screen.value = '';
     }
