@@ -79,6 +79,15 @@ toggleSwitch.addEventListener('change', (e) => {
     }
 });
 
+// Google Translate
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+            pageLanguage: 'en'
+        },
+        'google_translate_element'
+    );
+}
+
 // Hide or show scroll progress indicator
 let calcScrollValue = () => {
     let scrollProg = document.getElementById("progress");
