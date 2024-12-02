@@ -2,8 +2,7 @@
 
 ## Description :-
 
-A web-based Annulus  calculator where there are 2 inputs of inner and outer radius of circle
-Users have to fill in this value to get area.
+The Annulus Calculator is a simple web-based tool designed to calculate the area of an annulus (a ring-shaped geometric figure) based on the given outer and inner radii.
 
 ## Tech Stacks :-
 
@@ -13,4 +12,4 @@ Users have to fill in this value to get area.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/99cef613-9c20-4a18-b92b-dcd769b43e96)
+![image](https://github.com/user-attachments/assets/d0553dae-67c9-489c-9ba1-fff268b30624)
