@@ -1,0 +1,156 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light background color */
+    background-image: linear-gradient(135deg, rgb(240, 182, 205), #ffdd00, #00ff99, #00aaff, #a400ff);
+    background-size: 400% 400%; /* Ensure the gradient covers the full background */
+    animation: gradient 15s ease infinite; /* Animation for gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header Styles */
+header {
+    padding: 0em;
+    font-weight: bold;
+    font-size: 1.8em; /* Medium size */
+    color: #fff; /* White color for contrast */
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Stronger shadow for visibility */
+    margin-bottom: 30px;
+}
+
+/* Calculator Container */
+#calculator {
+    max-width: 400px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Calculator */
+#calculator:hover {
+    transform: scale(1.02);
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+/* Input and Select Styles */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input Focus Effect */
+input:focus,
+select:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #6c63ff; /* Button background color */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #5a52e0; /* Darker shade on hover */
+    transform: translateY(-2px);
+}
+
+/* Result Styles */
+#result {
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333333;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 0.5s forwards; /* Animation */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.6em; /* Adjust for medium screens */
+    }
+
+    #calculator {
+        max-width: 90%;
+    }
+
+    button {
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.4em; /* Further adjust for small screens */
+    }
+
+    button {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #result {
+        font-size: 1.2em;
+    }
+}
