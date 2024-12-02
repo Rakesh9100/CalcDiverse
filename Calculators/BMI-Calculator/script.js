@@ -15,6 +15,25 @@ var span = document.getElementsByClassName("close")[0];
 // document.querySelector("#result").innerHTML = "00.00";
 
 function calculate() {
+  if (
+    age.value == "" ||
+    height.value == "" ||
+    weight.value == "" ||
+    (male.checked == false && female.checked == false)
+  ) {
+    modal.style.display = "block";
+    modalText.innerHTML = "ALL fields are required!";
+  } else if (
+    !isPositiveNumber(height.value) ||
+    !isPositiveNumber(weight.value) ||
+    !isValidCombination(age.value, height.value)
+  ) {
+    modal.style.display = "block";
+    modalText.innerHTML =
+      "Please enter valid values for age, height, and weight!";
+  } else {
+    countBmi();
+  }
 
     var heightUnit = document.getElementById("heightUnit").value;
     var heightValue;
@@ -39,9 +58,31 @@ function calculate() {
 function isPositiveNumber(value) {
     return /^\d*\.?\d+$/.test(value) && parseFloat(value) > 0;
 }
+
+function isValidCombination(age, height) {
+      age = parseInt(age);
+      height = parseFloat(height);
+
+      if (age < 1 || age > 120) {
+        return false; // Age should be between 1 and 120
+      }
+
+      if (age <= 5) {
+        // Typical height range for age 0-5 years in cm
+        return height >= 60 && height <= 120;
+      } 
+      else if (age <= 10) {
+        // Typical height range for age 6-10 years in cm
+        return height >= 100 && height <= 150;
+      }
+      // For adults, No restriction
+      return height >= 140 && height <= 220;
+}
+
 function convertFeetToCm(feet) {
     return (feet * 30.48) ;
 }
+  
 function toggleHeightInput() {
     var heightUnit = document.getElementById("heightUnit").value;
     var heightLabel = document.querySelector("label[for='height']");
