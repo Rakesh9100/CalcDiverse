@@ -80,13 +80,11 @@ label {
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     min-height: 100%;
-    /* Set min-height instead of height */
     box-sizing: border-box;
-    /* Include padding and border in the height calculation */
 }
 
 .bg {
-    background-image: url('https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background: linear-gradient(315deg, #00ff88, #f200ff);
     background-size: cover;
     height: 100%;
 }
@@ -94,8 +92,6 @@ label {
 .image {
     width: 20%;
 }
-
-
 
 #output {
     margin-top: 20px;
@@ -105,52 +101,34 @@ label {
 button {
     font-family: 'Montserrat', sans-serif;
     background-color: #333;
-    /* Dark gray background */
     color: #fff;
-    /* White text color */
     border: 2px solid black;
-    /* White border */
     padding: 10px 20px;
-    /* Adjust padding as needed */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.2s;
     filter: grayscale(20%);
-    /* Soft grayscale effect by default */
     border-radius: 8px;
-    /* Add border-radius for a curved appearance */
 }
 
-/* Remove grayscale on hover */
 button:hover {
     filter: grayscale(0%);
     background-color: #444;
-    /* Slightly darker background on hover */
     color: #eee;
-    /* Lighter text color on hover */
     border-color: #eee;
-    /* Lighter border color on hover */
     transform: scale(1.05);
-    /* Add a slight scale effect on hover */
 }
 
-/* Active effect */
 button:active {
     background-color: #222;
-    /* Darker background color on active */
     border-color: #555;
-    /* Slightly darker border color on active */
     color: #ccc;
-    /* Lighter text color on active */
     transform: scale(0.95);
-    /* Add a slight scale effect on active */
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-    /* Add an inset shadow on active */
 }
 
 .output {
     display: flex;
     justify-content: center;
-
 }
 
 .h-2 {
@@ -165,20 +143,13 @@ button:active {
     align-items: center;
     height: 100vh;
     background: #e6e6e670;
-    /* Light gray background */
     border: 2px solid #333;
-    /* Dark gray border */
     padding: 20px;
     border-radius: 10px;
-    /* Slightly rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle box shadow */
     color: #333;
-    /* Dark gray text color */
     width: 70%;
-    /* Set the desired width */
     margin: auto;
-    /* Center the div horizontally */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 

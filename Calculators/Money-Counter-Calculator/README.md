@@ -17,3 +17,5 @@ The Money Counter Calculator allows users to input quantities of various banknot
 - Converts the total amount into a selected currency using real-time conversion rates.
 
 ## Screenshots :-
+
+![image](https://github.com/user-attachments/assets/ab98bc0e-fe7f-4403-9df1-e9e2caf783fe)

@@ -56,6 +56,38 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+// Dark and light mode
+const toggleSwitch = document.querySelector('#checkbox');
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+        document.body.classList.add('dark-mode');
+    }
+}
+
+toggleSwitch.addEventListener('change', (e) => {
+    if (e.target.checked) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+    }
+});
+
+// Google Translate
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+            pageLanguage: 'en'
+        },
+        'google_translate_element'
+    );
+}
+
 // Hide or show scroll progress indicator
 let calcScrollValue = () => {
     let scrollProg = document.getElementById("progress");

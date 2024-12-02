@@ -17,13 +17,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 500px;
-    background-image: url('https://img.freepik.com/free-vector/hand-drawn-abc-background_23-2150598241.jpg'); 
+    background-image: url('assets/image.jpg'); 
     border: 5px solid black;
 }
 
 h1 {
     font-family: 'Verdana', sans-serif;
     background: linear-gradient(to right, blue, #a510d1);
+    background-clip: text;    
     -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 20px;

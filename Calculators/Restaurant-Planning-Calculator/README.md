@@ -1,4 +1,4 @@
-<p align="center">Restaurant Planning Calculator</p>
+# <p align="center">Restaurant Planning Calculator</p>
 
 ## Description :-
 
@@ -6,9 +6,9 @@ This Restaurant Planning Calculator helps users efficiently plan their restauran
 
 ## Tech Stacks :-
 
-    HTML
-    CSS
-    JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ## Features :-
 
@@ -16,4 +16,4 @@ This Restaurant Planning Calculator helps users efficiently plan their restauran
 
 ## Screenshots :-
 
-![image](https://github.com/user-attachments/assets/1ac11236-403c-4a98-9fbe-111bd4f15c9c)
+![image](https://github.com/user-attachments/assets/22ec78d2-b73c-4f2b-862e-85820a53d2db)

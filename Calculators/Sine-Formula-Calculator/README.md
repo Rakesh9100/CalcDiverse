@@ -2,19 +2,11 @@
 
 ## Description :-
 
-Cosine Formula Calculator is a web application that calculates the angle of triangle using sine formula given a triangle ABC with sides a , b, c:
-## Use the Law of Cosines to Calculate (sin A)
+Sine Formula Calculator is a web application that calculates the angle of triangle using sine formula given a triangle ABC with sides a, b, c:
 
- Cos A=(b^2+c^2-a^2)/2bc.
- Sin A=sqrt(1-(cosA*cosA))
-## Use the Law of Cosines to Calculate (sin B)
-
- Cos B=(a^2+c^2-b^2)/2ac.
- Sin B=sqrt(1-(cosB*cosB))
- ## Use the Law of Cosines to Calculate (sin C)
-
- Cos A=(b^2+a^2-c^2)/2ba.
- Sin C=sqrt(1-(cosC*cosC))
+- Sin A = sqrt(1-(cosA*cosA))
+- Sin B = sqrt(1-(cosB*cosB))
+- Sin C = sqrt(1-(cosC*cosC))
 
 ## Tech Stacks :-
 
@@ -24,3 +16,4 @@ Cosine Formula Calculator is a web application that calculates the angle of tria
 
 ## Screenshots :-
 
+![image](https://github.com/user-attachments/assets/ef4cda04-ff32-4d8b-b072-59e27013e845)

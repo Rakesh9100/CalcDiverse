@@ -1,4 +1,3 @@
-
 # <p align="center">Titration Calculator</p>
 
 ## Description :-
@@ -14,4 +13,3 @@ A Titration Calculator is a valuable tool in chemistry that helps determine the 
 ## Screenshots :-
 
 ![image](https://github.com/user-attachments/assets/15979c54-c482-4a63-9578-576365ea58d2)
-
