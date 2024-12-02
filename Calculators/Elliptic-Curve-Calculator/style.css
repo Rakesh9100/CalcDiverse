@@ -1,0 +1,66 @@
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle,
+            rgba(238, 174, 202, 1) 0%,
+            rgba(148, 187, 233, 1) 100%);
+}
+
+.title {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    color: #0077ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;
+    animation: colorChange 4s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #0077ff;
+    }
+
+    25% {
+        color: #ff0077;
+    }
+
+    50% {
+        color: #00ff77;
+    }
+
+    75% {
+        color: #ff7700;
+    }
+
+    100% {
+        color: #0077ff;
+    }
+}
+
+.results .alert {
+    font-size: 1.2rem;
+}
+
+button {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.mod {
+    background-color: #6c757d; /* Original button background */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mod:hover {
+    background-color: #5a6268; /* Darken background on hover */
+    color: #fff; /* Keep text white */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
