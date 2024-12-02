@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinematics Calculator</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kinematics Calculator</title>
 </head>
 
 <body>
@@ -14,7 +14,13 @@
     <div class="kinematics-container">
         <h2>Kinematics Calculator</h2>
 
-        <div class="input-section">
+        <select id="dimension-select" onchange="showSelectedDimension()">
+            <option value="1d">1D Kinematics</option>
+            <option value="2d">2D Kinematics</option>
+            <option value="3d">3D Kinematics</option>
+        </select>
+
+        <div id="1d-section" class="input-section">
             <h3>1D Kinematics</h3>
             <label for="v0-1d">Initial Velocity (v0):</label>
             <input type="text" id="v0-1d" placeholder="Enter v0">
@@ -24,10 +30,10 @@
             <input type="text" id="t-1d" placeholder="Enter t">
             <label for="s-1d">Displacement (s):</label>
             <input type="text" id="s-1d" placeholder="Enter s">
-            <button onclick="calculate1D()">Calculate</button>
+            <button onclick="calculate1D()">Calculate 1D</button>
         </div>
 
-        <div class="input-section">
+        <div id="2d-section" class="input-section hidden">
             <h3>2D Kinematics</h3>
             <label for="v0x-2d">Initial Velocity X (v0x):</label>
             <input type="text" id="v0x-2d" placeholder="Enter v0x">
@@ -43,10 +49,10 @@
             <input type="text" id="sx-2d" placeholder="Enter sx">
             <label for="sy-2d">Displacement Y (sy):</label>
             <input type="text" id="sy-2d" placeholder="Enter sy">
-            <button onclick="calculate2D()">Calculate</button>
+            <button onclick="calculate2D()">Calculate 2D</button>
         </div>
 
-        <div class="input-section">
+        <div id="3d-section" class="input-section hidden">
             <h3>3D Kinematics</h3>
             <label for="v0x-3d">Initial Velocity X (v0x):</label>
             <input type="text" id="v0x-3d" placeholder="Enter v0x">
@@ -68,7 +74,7 @@
             <input type="text" id="sy-3d" placeholder="Enter sy">
             <label for="sz-3d">Displacement Z (sz):</label>
             <input type="text" id="sz-3d" placeholder="Enter sz">
-            <button onclick="calculate3D()">Calculate</button>
+            <button onclick="calculate3D()">Calculate 3D</button>
         </div>
 
         <div class="result-section">
@@ -85,7 +91,7 @@
         </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
