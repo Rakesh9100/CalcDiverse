@@ -35,8 +35,7 @@ function calculateMonthlyPayment() {
     const monthlyRate = annualRateValue / 12;
     const numberOfPayments = yearsValue * 12;
     const monthlyPayment = (principalValue * monthlyRate * Math.pow((1 + monthlyRate), numberOfPayments)) /
-                           (Math.pow((1 + monthlyRate), numberOfPayments) - 1);
+        (Math.pow((1 + monthlyRate), numberOfPayments) - 1);
 
     document.getElementById("loan-result").textContent = `Monthly Payment: $${monthlyPayment.toFixed(2)}`;
 }
-

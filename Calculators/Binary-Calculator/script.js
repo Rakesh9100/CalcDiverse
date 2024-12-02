@@ -14,23 +14,44 @@ function calculate() {
     const num1 = parseInt(binary1, 2);
     const num2 = parseInt(binary2, 2);
     let result;
-
+    let decimal;
     // Perform the selected operation
     switch (operation) {
         case "add":
             result = (num1 + num2).toString(2);
+            decimal = (num1 + num2);
             break;
         case "subtract":
             result = (num1 - num2).toString(2);
+            decimal = (num1 - num2);
             break;
         case "multiply":
             result = (num1 * num2).toString(2);
+            decimal = (num1 * num2);
             break;
         case "leftShift":
             result = (num1 << num2).toString(2);
+            decimal = (num1 << num2);
             break;
         case "rightShift":
             result = (num1 >> num2).toString(2);
+            decimal = (num1 >> num2);
+            break;
+        case "division":
+            result = (num1 / num2).toString(2);
+            decimal = (num1 / num2);
+            break;
+        case "and":
+            result = (num1 && num2).toString(2);
+            decimal = (num1 && num2);
+            break;
+        case "or":
+            result = (num1 || num2).toString(2);
+            decimal = (num1 || num2);
+            break;
+        case "xor":
+            result = (num1 ^ num2).toString(2);
+            decimal = (num1 ^ num2);
             break;
         default:
             alert("Invalid operation.");
@@ -39,4 +60,5 @@ function calculate() {
 
     // Display the result
     document.getElementById('result').innerText = `Result: ${result}`;
+    document.getElementById('decimal').innerText = `Decimal Value: ${decimal}`;
 }

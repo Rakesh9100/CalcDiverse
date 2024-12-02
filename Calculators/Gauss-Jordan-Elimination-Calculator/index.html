@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gauss-Jordan Elimination Calculator</title>
+</head>
+<body>
+    <h1>Gauss-Jordan Elimination Calculator</h1>
+    <form id="matrixForm">
+        <label for="rows">Rows:</label>
+        <input type="number" id="rows" name="rows" min="1" required>
+        <label for="columns">Columns:</label>
+        <input type="number" id="columns" name="columns" min="1" required> <br/>
+        <button type="button" onclick="generateMatrix()">Generate Matrix</button>
+        <button type="button" onclick="resetMatrix()">Reset</button>
+    </form>
+    <div id="matrixContainer"></div>
+    <button id="solveButton" onclick="solveMatrix()" style="display:none;">Solve</button>
+    <div id="resultContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,5 +1,3 @@
-/* START General style */
-
 * {
     padding: 0px;
     margin: 0px;
@@ -49,16 +47,12 @@ input {
 
 body {
     background: linear-gradient(to right, rgb(41, 181, 231), rgb(238, 238, 83));
-    /* background: #333; */
     font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
 /* END General style */
 
-
-
 /* START Menu style */
-/* START Menu-style.General Style */
 #nav-bar {
     background-color: #222;
     text-align: center;
@@ -94,8 +88,6 @@ body {
     padding: 10px;
     font-size: 35px;
     width: max-content;
-    /* margin-left: 50%;
-    transform: translateX(-50%); */
 }
 
 #nav-bar h2:hover {
@@ -107,8 +99,6 @@ body {
 
 /* START Menu-Style.Speed Dropdown */
 #nav-bar li:hover {
-    /* background-color: rgb(0, 81, 255); */
-    /* background-color: rgb(201, 124, 9); */
     border-radius: 24px 24px 0 0;
     background-color: white;
     color: #222;
@@ -117,7 +107,6 @@ body {
 
 #nav-bar li:hover .sub-menu {
     display: block;
-    /* transition: all 0.3s linear; */
 }
 
 /* Initial state */
@@ -144,7 +133,6 @@ body {
 }
 
 .sub-menu li.speed-options:hover {
-    /* border-radius: 0 0 16px 16px !important; */
     border-radius: 55% !important;
     opacity: 0.9;
 }
@@ -187,7 +175,6 @@ body {
 }
 
 .algo-sub-menu li.algo-options:hover {
-    /* border-radius: 0 0 16px 16px !important; */
     border-radius: 55% !important;
     opacity: 0.9;
 }
@@ -206,10 +193,8 @@ body {
 
 /* END Menu-Style.Algorithms dropdown */
 
-
 /* START main div style */
 /* START main-div.General Style */
-
 
 #main {
     margin-top: 40px;
@@ -222,7 +207,6 @@ body {
 
 /* START main-div.Table style */
 #grid {
-    /* margin: auto; */
     margin: auto;
     border-collapse: collapse;
     width: 486px;
@@ -239,15 +223,13 @@ table {
 td {
     height: 30px;
     width: 30px;
-    /* border:3px solid rgb(0, 0, 0); */
     text-align: center;
     padding: 0;
-    margin:0px;
+    margin: 0px;
 }
 
 td:first-child {
     border-left: 0px solid rgb(24, 24, 24);
-    /* color: #1728dfdf; */
 }
 
 td:nth-child(3n) {
@@ -275,16 +257,12 @@ tr:nth-child(3n) td {
     opacity: 0.9;
     display: inline-block;
     border-radius: 8px;
-    /* margin: auto; */
     margin: 0px;
     width: 45px;
     height: 45px;
-
     text-align: center;
     font-size: 35px;
     outline: none;
-    /* cursor: default; */
-
     border: 2px solid;
 }
 
@@ -325,13 +303,13 @@ tr:nth-child(3n) td {
 /* END main-div.Table style */
 
 @media screen and (max-width:1320px) {
-    #algo-info{
-      display: none;
+    #algo-info {
+        display: none;
     }
-  }
+}
 
 @media screen and (max-width:767px) {
-    #algo-info{
-      display: none;
+    #algo-info {
+        display: none;
     }
-  }
+}

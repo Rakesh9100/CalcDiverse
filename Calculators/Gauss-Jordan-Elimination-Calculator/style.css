@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgb(247, 131, 151),  rgb(255, 248, 197), rgb(0, 208, 255));
+}
+
+form, #matrixContainer, #resultContainer {
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 7px;
+    margin: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 129, 175);
+}

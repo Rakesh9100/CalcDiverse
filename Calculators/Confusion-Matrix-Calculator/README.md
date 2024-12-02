@@ -28,3 +28,7 @@ An interactive web-based calculator that allows users to compute essential machi
 3. Click the "Calculate" button to view the computed metrics.
 
 The calculator will display accuracy, precision, recall, and F1 score based on the provided confusion matrix values.
+
+## Screenshots :-
+
+![image](https://github.com/user-attachments/assets/9b046aa9-0cc1-4800-9f5d-4594e11ff5f6)

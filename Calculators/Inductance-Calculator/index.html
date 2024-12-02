@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inductance Calculator</title>
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Inductance Calculator</h1>
+        <form id="inductanceForm">
+            <label for="turns">Number of Turns (N):</label>
+            <input type="number" id="turns" required>
+
+            <label for="area">Cross-sectional Area (A) in square meters:</label>
+            <input type="number" id="area" step="0.0001" required>
+
+            <label for="length">Length of Coil (l) in meters:</label>
+            <input type="number" id="length" step="0.01" required>
+
+            <button type="button" onclick="calculateInductance()">Calculate Inductance</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

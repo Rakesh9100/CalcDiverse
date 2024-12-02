@@ -1,6 +1,7 @@
 <p align="center">Critical Point Calculator</p>
 
 ## Description :-
+
 Creating a critical point calculator for ideal gases involves calculating the critical temperature, critical pressure, and critical volume based on the Van der Waals equation of state.
 
 The critical point of an ideal gas is a set of specific thermodynamic conditions where the distinction between the gas and liquid phases disappears. At this point:
@@ -11,9 +12,12 @@ Critical Pressure (Pc): The critical pressure is the pressure required to liquef
 
 Critical Volume (Vc): This is the molar volume of the gas at the critical point, where the densities of the gas and liquid phases become equal.
 
-
 ## Tech Stacks :-
 
 - HTML
 - CSS
 - JavaScript
+
+## Screenshots :-
+
+![image](https://github.com/user-attachments/assets/3e241007-3e90-495b-9eb7-a995a0d6537b)

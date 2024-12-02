@@ -1,8 +1,8 @@
-# <p align="center">Mass-Spring Calculator</p>
+# <p align="center">Mass Spring Calculator</p>
 
 ## Description :-
 
-The Mass-Spring Calculator is a web application that calculates various properties of a mass-spring system. Given the mass of the object (m), the spring constant (k), and the amplitude (A), the calculator computes the following properties:
+The Mass Spring Calculator is a web application that calculates various properties of a mass-spring system. Given the mass of the object (m), the spring constant (k), and the amplitude (A), the calculator computes the following properties:
 
 - Period of Oscillation (T)
 - Frequency of Oscillation (f)
@@ -25,5 +25,6 @@ The Mass-Spring Calculator is a web application that calculates various properti
 - Responsive design with a background image and enhanced styling.
 - Clear and detailed display of calculated results.
 
+## Screenshots :-
 
-
+![image](https://github.com/user-attachments/assets/3760e19d-8d8f-4660-8227-92d1360ab171)

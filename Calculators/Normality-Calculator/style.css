@@ -11,10 +11,17 @@ body {
 }
 
 @keyframes backgroundAnimation {
-    0% { background-color: #b3eaf1; }
-    50%{
-        background-color: #00796b;}
-    100% { background-color: #2fb4c5; }
+    0% {
+        background-color: #b3eaf1;
+    }
+
+    50% {
+        background-color: #00796b;
+    }
+
+    100% {
+        background-color: #2fb4c5;
+    }
 }
 
 .container {
@@ -29,8 +36,13 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 h1 {
@@ -41,8 +53,13 @@ h1 {
 }
 
 @keyframes textPop {
-    0% { transform: scale(0.5); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .form-group {
@@ -56,7 +73,9 @@ label {
     color: #00796b;
 }
 
-input[type="number"], input[type="text"], select {
+input[type="number"],
+input[type="text"],
+select {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -66,7 +85,9 @@ input[type="number"], input[type="text"], select {
     transition: border 0.3s;
 }
 
-input[type="number"]:focus, input[type="text"]:focus, select:focus {
+input[type="number"]:focus,
+input[type="text"]:focus,
+select:focus {
     border-color: #00796b;
     outline: none;
 }
@@ -94,7 +115,11 @@ button:hover {
 }
 
 @keyframes resultFadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-   
