@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kinematics Calculator</title>
+</head>
+
+<body>
+
+    <div class="kinematics-container">
+        <h2>Kinematics Calculator</h2>
+
+        <select id="dimension-select" onchange="showSelectedDimension()">
+            <option value="1d">1D Kinematics</option>
+            <option value="2d">2D Kinematics</option>
+            <option value="3d">3D Kinematics</option>
+        </select>
+
+        <div id="1d-section" class="input-section">
+            <h3>1D Kinematics</h3>
+            <label for="v0-1d">Initial Velocity (v0):</label>
+            <input type="text" id="v0-1d" placeholder="Enter v0">
+            <label for="a-1d">Acceleration (a):</label>
+            <input type="text" id="a-1d" placeholder="Enter a">
+            <label for="t-1d">Time (t):</label>
+            <input type="text" id="t-1d" placeholder="Enter t">
+            <label for="s-1d">Displacement (s):</label>
+            <input type="text" id="s-1d" placeholder="Enter s">
+            <button onclick="calculate1D()">Calculate 1D</button>
+        </div>
+
+        <div id="2d-section" class="input-section hidden">
+            <h3>2D Kinematics</h3>
+            <label for="v0x-2d">Initial Velocity X (v0x):</label>
+            <input type="text" id="v0x-2d" placeholder="Enter v0x">
+            <label for="v0y-2d">Initial Velocity Y (v0y):</label>
+            <input type="text" id="v0y-2d" placeholder="Enter v0y">
+            <label for="ax-2d">Acceleration X (ax):</label>
+            <input type="text" id="ax-2d" placeholder="Enter ax">
+            <label for="ay-2d">Acceleration Y (ay):</label>
+            <input type="text" id="ay-2d" placeholder="Enter ay">
+            <label for="t-2d">Time (t):</label>
+            <input type="text" id="t-2d" placeholder="Enter t">
+            <label for="sx-2d">Displacement X (sx):</label>
+            <input type="text" id="sx-2d" placeholder="Enter sx">
+            <label for="sy-2d">Displacement Y (sy):</label>
+            <input type="text" id="sy-2d" placeholder="Enter sy">
+            <button onclick="calculate2D()">Calculate 2D</button>
+        </div>
+
+        <div id="3d-section" class="input-section hidden">
+            <h3>3D Kinematics</h3>
+            <label for="v0x-3d">Initial Velocity X (v0x):</label>
+            <input type="text" id="v0x-3d" placeholder="Enter v0x">
+            <label for="v0y-3d">Initial Velocity Y (v0y):</label>
+            <input type="text" id="v0y-3d" placeholder="Enter v0y">
+            <label for="v0z-3d">Initial Velocity Z (v0z):</label>
+            <input type="text" id="v0z-3d" placeholder="Enter v0z">
+            <label for="ax-3d">Acceleration X (ax):</label>
+            <input type="text" id="ax-3d" placeholder="Enter ax">
+            <label for="ay-3d">Acceleration Y (ay):</label>
+            <input type="text" id="ay-3d" placeholder="Enter ay">
+            <label for="az-3d">Acceleration Z (az):</label>
+            <input type="text" id="az-3d" placeholder="Enter az">
+            <label for="t-3d">Time (t):</label>
+            <input type="text" id="t-3d" placeholder="Enter t">
+            <label for="sx-3d">Displacement X (sx):</label>
+            <input type="text" id="sx-3d" placeholder="Enter sx">
+            <label for="sy-3d">Displacement Y (sy):</label>
+            <input type="text" id="sy-3d" placeholder="Enter sy">
+            <label for="sz-3d">Displacement Z (sz):</label>
+            <input type="text" id="sz-3d" placeholder="Enter sz">
+            <button onclick="calculate3D()">Calculate 3D</button>
+        </div>
+
+        <div class="result-section">
+            <h3>Results</h3>
+            <label for="final-velocity">Final Velocity:</label>
+            <input type="text" id="final-velocity" readonly>
+            <label for="displacement">Displacement:</label>
+            <input type="text" id="displacement" readonly>
+        </div>
+
+        <div class="graph-section">
+            <h3>Graph</h3>
+            <canvas id="motion-graph"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
