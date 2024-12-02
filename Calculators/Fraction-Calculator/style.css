@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
-    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+    font-family: "Arial", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,6 +139,9 @@ button:hover {
 
 .divider {
     height: 1px;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.15) 50%,
+            rgba(0, 0, 0, 0) 100%);
     margin: 20px 0;
 }

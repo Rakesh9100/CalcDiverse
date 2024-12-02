@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Strong Number Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Strong Number Calculator</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form name="myform">
+                <label for="no">Enter a number to check:</label>
+                <input type="number" name="numOfDigits" id="no" required />
+                <button type="button" onclick="check()">Check</button>
+            </form>
+            <div id="strongNumbers"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculates nth Term and sum of n Terms present in an Geometric Sequence.
+Calculates nth Term, geometric mean and sum of n Terms present in an Geometric Sequence.
 
 ## Tech Stacks :-
 

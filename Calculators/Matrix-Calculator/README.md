@@ -12,4 +12,4 @@ A web-based matrix calculator supporting basic operations (addition, subtraction
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/138357063/25a4c2d2-a0ad-48af-abea-7fd73e74c561)
+![image](https://github.com/user-attachments/assets/b4828cff-b18b-4592-b679-56bcf7ba62d8)

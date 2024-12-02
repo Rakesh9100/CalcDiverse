@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Titration Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Titration Calculator</h1>
+        <form id="titrationForm">
+            <label for="titrantConcentration">Titrant Concentration (C₁ in M):</label>
+            <input type="number" id="titrantConcentration" step="any" required>
+
+            <label for="titrantVolume">Volume of Titrant (V₁ in mL):</label>
+            <input type="number" id="titrantVolume" step="any" required>
+
+            <label for="analyteVolume">Volume of Analyte (V₂ in mL):</label>
+            <input type="number" id="analyteVolume" step="any" required>
+
+            <label for="stoichiometryRatio">Stoichiometry Ratio (Titrant:Analyte):</label>
+            <input type="text" id="stoichiometryRatio" placeholder="e.g., 1:1" required>
+
+            <button type="button" onclick="calculateAnalyteConcentration()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

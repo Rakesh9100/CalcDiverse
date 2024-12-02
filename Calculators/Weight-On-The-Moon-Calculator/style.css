@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url('https://wallpapercave.com/wp/wp4221586.jpg') no-repeat center center fixed;
+    background: url('assets/background.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
     color: #ffffff;

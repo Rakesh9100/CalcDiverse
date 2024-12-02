@@ -2,8 +2,8 @@ function calculate() {
     var sideA = parseFloat(document.getElementById('sideA').value);
     var sideB = parseFloat(document.getElementById('sideB').value);
 
-    if (isNaN(sideA) || isNaN(sideB)) {
-        alert("Please enter valid numerical values for side A and side B.");
+    if (isNaN(sideA) || isNaN(sideB) || sideA <= 0 || sideB <= 0) {
+        alert("It looks like one or both of your inputs are missing or not positive. Please enter positive values for both sides.");
         return;
     }
 

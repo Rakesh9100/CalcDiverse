@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PIN Generator Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>PIN Generator Calculator</h1>
+        <form id="pinForm">
+            <label for="numDigits">Generate a
+            <input type="number" id="numDigits" name="numDigits" min="1" max="100" title="positive integer number 1 or 2 or 3..." required />
+            digit PIN</label>
+            <label class="main">
+            <input type="checkbox" id="allowRepeat" />
+            <span class="checkbox-container"></span>
+            Allow Repeat Numbers
+            </label>
+            <button type="button" onclick="generatePIN()">Generate PIN</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

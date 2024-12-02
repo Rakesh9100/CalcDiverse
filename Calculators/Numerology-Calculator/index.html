@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Numerology Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Numerology Calculator</h1>
+        <form id="numerologyForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required>
+                <span id="nameError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="birthDate">Birth Date:</label>
+                <input type="date" id="birthDate" required>
+                <span id="dateError" class="error-message"></span>
+            </div>
+
+            <button type="button" onclick="validateForm()">Calculate</button>
+        </form>
+
+        <div id="results" class="hidden">
+            <h2>Results</h2>
+            <div class="result">
+                <h3>Life Path Number</h3>
+                <p id="lifePathNumber"></p>
+                <p id="lifePathDescription"></p>
+            </div>
+            <div class="result">
+                <h3>Expression Number</h3>
+                <p id="expressionNumber"></p>
+                <p id="expressionDescription"></p>
+            </div>
+            <div class="result">
+                <h3>Soul Urge Number</h3>
+                <p id="soulUrgeNumber"></p>
+                <p id="soulUrgeDescription"></p>
+            </div>
+            <div class="result">
+                <h3>Personality Number</h3>
+                <p id="personalityNumber"></p>
+                <p id="personalityDescription"></p>
+            </div>
+            <button onclick="downloadReport()">Download Report</button>
+        </div>
+
+        <div id="compatibility" class="hidden">
+            <h2>Compatibility Analysis</h2>
+            <form id="compatibilityForm">
+                <div class="form-group">
+                    <label for="partnerFullName">Partner's Full Name:</label>
+                    <input type="text" id="partnerFullName">
+                </div>
+
+                <div class="form-group">
+                    <label for="partnerBirthDate">Partner's Birth Date:</label>
+                    <input type="date" id="partnerBirthDate">
+                </div>
+
+                <button type="button" onclick="calculateCompatibility()">Check Compatibility</button>
+            </form>
+            <div id="compatibilityResults" class="hidden">
+                <p id="compatibilityDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

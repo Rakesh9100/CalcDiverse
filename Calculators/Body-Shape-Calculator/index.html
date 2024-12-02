@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Body Shape Calculator</title>
+</head>
+
+<body>
+    <h1>Find your body style</h1>
+    <div class="container">
+        <div class="input-group">
+            <label for="bust">Bust:</label>
+            <input type="number" id="bust" name="bust" placeholder="Bust">
+            <select class="unit-selector">
+                <option value="inches">in</option>
+                <option value="centimeters">cm</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="waist">Waist:</label>
+            <input type="number" id="waist" name="waist" placeholder="Waist">
+            <select class="unit-selector">
+                <option value="inches">in</option>
+                <option value="centimeters">cm</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="hips">Hips:</label>
+            <input type="number" id="hips" name="hips" placeholder="Hips">
+            <select class="unit-selector">
+                <option value="inches">in</option>
+                <option value="centimeters">cm</option>
+            </select>
+        </div>
+        <button onclick="calculateShape()">Calculate</button>
+    </div>
+    <div id="result"></div>
+    <div id="suggestion"></div>
+    <hr>
+    <footer>"Embrace your individuality and rock what makes you feel good!"</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

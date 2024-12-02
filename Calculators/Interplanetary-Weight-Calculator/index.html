@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Interplanetary Weight Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Interplanetary Weight Calculator</h1>
+        <div class="background-image"></div>
+        <label id="print" for="weight">Weight on Earth (kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight in kilograms">
+        <label id="print" for="planet">Select a planet:</label>
+        <select id="planet">
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="earth" selected>Earth</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+        </select>
+        <button onclick="calculateWeight()">Calculate Weight</button>
+        <button onclick="clearForm()">Clear</button>
+        <div id="results">
+            <p id="resultText"></p>
+        </div>
+    </div>
+    <div class="info">
+        <a href="https://www.visualcapitalist.com/visualizing-gravitational-pull-of-planets/#google_vignette">Click here to know more about gravitational pull of planets</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

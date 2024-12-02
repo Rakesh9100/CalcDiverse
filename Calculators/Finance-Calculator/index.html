@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Finance Calculator</title>
+</head>
+
+<body>
+    <div class="container card">
+        <h1>Finance Calculator</h1>
+
+        <!-- Future Value Calculation -->
+        <div class="calculator" id="investment-calculator">
+            <h2>Future Value of Investment</h2>
+            <label for="investment-principal">Principal ($):</label>
+            <input type="number" id="investment-principal" step="0.01">
+            <label for="investment-rate">Annual Interest Rate (%):</label>
+            <input type="number" id="investment-rate" step="0.01">
+            <label for="investment-years">Number of Years:</label>
+            <input type="number" id="investment-years">
+            <button onclick="calculateFutureValue()">Calculate</button>
+            <p id="investment-result"></p>
+        </div>
+
+        <!-- Monthly Payment Calculation -->
+        <div class="calculator" id="loan-calculator">
+            <h2>Monthly Loan Payment</h2>
+            <label for="loan-principal">Principal ($):</label>
+            <input type="number" id="loan-principal" step="0.01">
+            <label for="loan-rate">Annual Interest Rate (%):</label>
+            <input type="number" id="loan-rate" step="0.01">
+            <label for="loan-years">Loan Term (Years):</label>
+            <input type="number" id="loan-years">
+            <button onclick="calculateMonthlyPayment()">Calculate</button>
+            <p id="loan-result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

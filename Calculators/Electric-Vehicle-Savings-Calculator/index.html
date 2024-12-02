@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Electric Vehicle Savings Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>EV Savings Calculator</h1>
+        <form id="calculator-form">
+            <label for="petrol-avg">Petrol Vehicle Efficiency (kms/l):</label>
+            <input type="number" id="petrol-avg" step="0.1" placeholder="e.g. 12">
+
+            <label for="battery-cap">EV Battery Capacity (kWh):</label>
+            <input type="number" id="battery-cap" step="0.1" placeholder="e.g. 50">
+
+            <label for="ev-range">EV Range (kms):</label>
+            <input type="number" id="ev-range" step="1" placeholder="e.g. 300">
+
+            <label for="elec-cost">Cost of Electricity per kWh:</label>
+            <input type="number" id="elec-cost" step="0.01" placeholder="e.g. 0.20">
+
+            <button type="button" onclick="calculateCosts()">Calculate</button>
+        </form>
+
+        <div class="result">
+            <h3>Results</h3>
+            <p id="petrol-cost">Petrol Vehicle Cost per km: </p>
+            <p id="ev-cost">Electric Vehicle Cost per km: </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

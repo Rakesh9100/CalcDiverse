@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lattice Energy Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lattice Energy Calculator</h1>
+        <form id="latticeForm">
+            <label for="charge1">Charge of ion 1 (z<sub>1</sub>):</label>
+            <input type="number" id="charge1" name="charge1" required />
+            <label for="charge2">Charge of ion 2 (z<sub>2</sub>):</label>
+            <input type="number" id="charge2" name="charge2" required />
+            <label for="distance"
+                >Distance between ions (r<sub>0</sub>) in pm:</label
+                >
+            <input type="number" id="distance" name="distance" required />
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6200ea 0%, #481eaa 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 50px 40px; /* Increased padding */
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Increased max-width */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2em; /* Slightly increased font size */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.charge-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input, .custom-select select {
+    width: 100%;
+    padding: 14px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, .custom-select select:focus {
+    border-color: #6200ea;
+    box-shadow: 0 0 8px rgba(98, 0, 234, 0.2);
+}
+
+.custom-select {
+    position: relative;
+    width: 100%;
+}
+
+.custom-select select {
+    cursor: pointer;
+    appearance: none;
+}
+
+.custom-select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1em; /* Slightly increased font size */
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #3700b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #3700b3;
+    transform: translateY(0);
+}
+
+input[readonly], #flux {
+    background-color: #f7f7f7;
+}

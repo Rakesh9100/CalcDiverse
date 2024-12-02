@@ -9,21 +9,63 @@ body {
     background: linear-gradient(90deg, rgba(47, 117, 178, 1) 21%, rgba(166, 233, 234, 1) 100%);
 }
 
-#input-section,
-#output-section {
+header {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 2em;
+    color: white;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     background: #ffffffc3;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1), 0px 2px 32px rgba(15, 91, 206, 0.1);
     border-radius: 15px;
+    width: 80%;
+    max-width: 1200px;
     padding: 20px;
     margin: 20px;
-    width: 80%;
-    max-width: 600px;
-    font-size: 18px;
+    gap: 20px;
+}
+
+#input-section,
+#output-section {
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+#input-section {
+    flex: 1;
+    min-width: 40%;
+}
+
+#output-section {
+    flex: 1;
+    min-width: 60%;
+}
+
+#input-section h2,
+#output-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#arrival-time,
+#burst-time,
+#time-quantum {
+    width: 95%;
 }
 
 form fieldset {
     border: none;
-    margin: 0 20px 20px 0;
+    margin: 0 0 20px 0;
     padding: 0;
 }
 
@@ -86,41 +128,18 @@ form button span.ripple {
 #output-table td {
     padding: 8px;
     text-align: center;
+    border: 1px solid #ddd;
 }
 
-
-#output-table td {
-    border: 1px solid;
-}
-
-@media (max-width: 680px) {
+@media (max-width: 800px) {
+    #main-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
     #input-section,
     #output-section {
-        width: 90%;
-        padding: 10px;
-    }
-
-    form input,
-    form select,
-    form button {
-        font-size: 16px;
-        padding: 8px;
-    }
-
-    form fieldset {
-        border: none;
-        margin: 0 20px 20px 0;
-        padding: 0;
-    }
-
-    form label {
-        font-size: 16px;
-    }
-
-    #output-table th,
-    #output-table td {
-        font-size: 12px;
-        padding: 6px;
+        width: 100%;
+        min-width: unset;
     }
 }

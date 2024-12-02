@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    background-image: url('assets/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 8, 4);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: red;
+}
+
+form {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    flex: 1 1 40%;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+
+input, select {
+    flex: 1 1 55%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+h2 {
+    background: linear-gradient(135deg, #833ab4, #fd1d1d);
+}

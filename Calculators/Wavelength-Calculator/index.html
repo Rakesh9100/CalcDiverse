@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wavelength Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Wavelength Calculator</h1>
+        <form id="calculator">
+            <div class="input-group">
+                <label for="velocity">Velocity (v):</label>
+                <input type="number" id="velocity" placeholder="Enter velocity in m/s" required>
+            </div>
+            <div class="input-group">
+                <label for="frequency">Frequency (f):</label>
+                <input type="number" id="frequency" placeholder="Enter frequency in Hz" required>
+            </div>
+            <button type="button" onclick="calculateWavelength()">Calculate</button>
+        </form>
+        <div id="result">
+            <p id="wavelength-result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

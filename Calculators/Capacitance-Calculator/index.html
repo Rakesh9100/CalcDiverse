@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Capacitance Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Parallel Plate Capacitor Calculator</h1>
+        <label for="area">A (plate area):</label>
+        <input type="number" id="area" placeholder="Enter area in mm²">
+        <span>(mm²)</span>
+        <br>
+        <label for="distance">d (distance):</label>
+        <input type="number" id="distance" placeholder="Enter distance in mm">
+        <span>(mm)</span>
+        <br>
+        <label for="dielectric">K (dielectric constant):</label>
+        <input type="number" id="dielectric" value="1">
+        <br>
+        <button onclick="computeCapacitance()">Compute</button>
+        <br>
+        <label for="capacitanceUF">Capacitance:</label>
+        <input type="text" id="capacitanceUF" readonly>
+        <span>(uF)</span>
+        <br>
+        <label for="capacitancePF">Capacitance:</label>
+        <input type="text" id="capacitancePF" readonly>
+        <span>(pF)</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

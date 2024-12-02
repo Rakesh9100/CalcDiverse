@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pendulum Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pendulum Calculator</h1>
+        <form id="pendulumForm">
+            <div class="input-group">
+                <label for="length">Length of Pendulum (L) in meters:</label>
+                <input type="number" id="length" placeholder="Enter the length of the pendulum" required>
+            </div>
+            <div class="input-group">
+                <label for="gravity">Gravitational Acceleration (g) in m/s²:</label>
+                <input type="number" id="gravity" placeholder="Enter gravitational acceleration" value="9.81" required>
+            </div>
+            <div class="input-group">
+                <label for="amplitude">Amplitude (A) in meters (optional):</label>
+                <input type="number" id="amplitude" placeholder="Enter amplitude (optional)">
+            </div>
+            <div class="input-group">
+                <label for="mass">Mass of the Bob (m) in kg (optional):</label>
+                <input type="number" id="mass" placeholder="Enter mass (optional)">
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result">
+            <p><span>Period (T):</span> <span><span id="period">_</span> s</span></p>
+            <p><span>Frequency (f):</span> <span><span id="frequency">_</span> Hz</span></p>
+            <p><span>Angular Frequency (ω):</span> <span><span id="angularFrequency">_</span> rad/s</span></p>
+            <p><span>Maximum Speed (v_max):</span> <span><span id="maxSpeed">_</span> m/s</span></p>
+            <p><span>Maximum Acceleration (a_max):</span> <span><span id="maxAcceleration">_</span> m/s²</span></p>
+            <p><span>Kinetic Energy (KE):</span> <span><span id="kineticEnergy">_</span> J</span></p>
+            <p><span>Potential Energy (PE):</span> <span><span id="potentialEnergy">_</span> J</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

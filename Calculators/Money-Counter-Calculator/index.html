@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Money Counter Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Money Calculator</h1>
+        <div class="currency-switch">
+            <label for="currency">Select Currency: </label>
+            <select id="currency" class="currency-select">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+            </select>
+        </div>
+        <div class="calculator">
+            <!-- Notes Column -->
+            <div class="column">
+                <h2>Notes</h2>
+                <div class="denomination">
+                    <label>Rs 2000:</label>
+                    <div class="input-group">
+                        <button onclick="decrement('notes2000')">-</button>
+                        <input type="number" id="notes2000" value="0" min="0">
+                        <button onclick="increment('notes2000')">+</button>
+                    </div>
+                </div>
+                <div class="denomination">
+                    <label>Rs 500:</label>
+                    <div class="input-group">
+                        <button onclick="decrement('notes500')">-</button>
+                        <input type="number" id="notes500" value="0" min="0">
+                        <button onclick="increment('notes500')">+</button>
+                    </div>
+                </div>
+                <div class="denomination">
+                    <label>Rs 200:</label>
+                    <div class="input-group">
+                        <button onclick="decrement('notes200')">-</button>
+                        <input type="number" id="notes200" value="0" min="0">
+                        <button onclick="increment('notes200')">+</button>
+                    </div>
+                </div>
+                <div class="denomination">
+                    <label>Rs 100:</label>
+                    <div class="input-group">
+                        <button onclick="decrement('notes100')">-</button>
+                        <input type="number" id="notes100" value="0" min="0">
+                        <button onclick="increment('notes100')">+</button>
+                    </div>
+                </div>
+                <div class="denomination">
+                    <label>Rs 50:</label>
+                    <div class="input-group">
+                        <button onclick="decrement('notes50')">-</button>
+                        <input type="number" id="notes50" value="0" min="0">
+                        <button onclick="increment('notes50')">+</button>
+                    </div>
+                </div>
+                <div class="denomination">
+                    <label>Rs 20:</label>
+                    <div class="input-group">
+                        <button onclick="decrement('notes20')">-</button>
+                        <input type="number" id="notes20" value="0" min="0">
+                        <button onclick="increment('notes20')">+</button>
+                    </div>
+                </div>
+                <div class="denomination">
+                    <label>Rs 10:</label>
+                    <div class="input-group">
+                        <button onclick="decrement('notes10')">-</button>
+                        <input type="number" id="notes10" value="0" min="0">
+                        <button onclick="increment('notes10')">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coins Column -->
+            <div class="column">
+                <h2>Coins</h2>
+                <div class="denomination">
+                    <label>Rs 10:</label>
+                    <div class="input-group">
+                        <button onclick="decrement('coins10')">-</button>
+                        <input type="number" id="coins10" value="0" min="0">
+                        <button onclick="increment('coins10')">+</button>
+                    </div>
+                </div>
+                <div class="denomination">
+                    <label>Rs 5:</label>
+                    <div class="input-group">
+                        <button onclick="decrement('coins5')">-</button>
+                        <input type="number" id="coins5" value="0" min="0">
+                        <button onclick="increment('coins5')">+</button>
+                    </div>
+                </div>
+                <div class="denomination">
+                    <label>Rs 2:</label>
+                    <div class="input-group">
+                        <button onclick="decrement('coins2')">-</button>
+                        <input type="number" id="coins2" value="0" min="0">
+                        <button onclick="increment('coins2')">+</button>
+                    </div>
+                </div>
+                <div class="denomination">
+                    <label>Rs 1:</label>
+                    <div class="input-group">
+                        <button onclick="decrement('coins1')">-</button>
+                        <input type="number" id="coins1" value="0" min="0">
+                        <button onclick="increment('coins1')">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="calculate-btn" onclick="calculateTotal()">Calculate</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

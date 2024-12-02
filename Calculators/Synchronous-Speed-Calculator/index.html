@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Synchronous Speed Calculator</title>
+</head>
+<body>
+    <div class="card-container">
+        <div class="Calc-card">
+            <h1 id = "title">Synchronous Speed Calculator</h1>
+            <div class = "calc-form">
+                <div id="pole-div" class="input-container">
+                    <label for="poles">Number of Poles:</label>
+                    <input class = "input-box" type="number" min="0" id="poles" placeholder="Enter Number of Poles" autocomplete="off" required>
+                </div>
+                <div id="freq-div" class="input-container">
+                    <label for="frequency">Frequency (in Hz):</label>
+                    <input class = "input-box" type="number" min="0" id="frequency" placeholder="Enter Frequency" autocomplete="off" required>
+                </div>
+                <div id="sync-div" class="input-container" style="display: none;">
+                    <label for="speed">Synchronous Speed (in RPM):</label>
+                    <input class = "input-box"
+                    type="number" min="0" id="speed" placeholder="Enter Synchronous Speed" autocomplete="off">
+                </div>
+                <span id="button-container">
+                    <button id="calc-button" onclick="calculate()">Calculate</button>
+                    <button id="reset-button" onclick="reset()">Reset</button>
+                </span>
+            </div>
+            <div id="output">
+                <p id="output-text"></p>
+            </div>
+            <form class="switch-form"></form>
+                <div class="switch-input-container">
+                    <label for="switch-select">Switch Calculator:</label>
+                    <select id="switch-select" name="switch-select" autocomplete="off">
+                        <option value="frequency">Frequency Calculator</option>
+                        <option value="poles">Number of Poles Calculator</option>
+                        <option value="sync" selected>Synchronous Speed Calculator</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(200, 234, 245, 0.1);
+    padding: 120px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+h1 {
+    font-size: 35px;
+    margin-top: 90px;
+    color: white;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Animation */
+button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: linear-gradient(to top left, purple, yellow);
+    color: #080707;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to top left, red, rgb(246, 129, 4));
+    box-shadow: rgb(27, 25, 25, 0.4);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    input[type="number"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .result {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    input[type="number"] {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    .result {
+        font-size: 18px;
+    }
+}
