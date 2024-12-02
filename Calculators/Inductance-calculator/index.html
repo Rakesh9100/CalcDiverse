@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Inductance Calculator</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="calculator-container">
@@ -24,19 +24,6 @@
         <div class="result" id="result"></div>
     </div>
 
-    <script>
-        function calculateInductance() {
-            const turns = document.getElementById('turns').value;
-            const area = document.getElementById('area').value;
-            const length = document.getElementById('length').value;
-
-            if (turns && area && length) {
-                const inductance = (Math.pow(turns, 2) * area) / length;
-                document.getElementById('result').innerText = `Inductance: ${inductance.toFixed(4)} H (Henries)`;
-            } else {
-                document.getElementById('result').innerText = 'Please fill out all fields.';
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

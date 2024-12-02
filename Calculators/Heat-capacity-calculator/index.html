@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specific Heat Capacity Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <title>Heat Capacity Calculator</title>
 </head>
 <body>
     <div class="container">
@@ -26,21 +26,6 @@
         </form>
         <div id="result" class="result"></div>
     </div>
-
-    <script>
-        function calculateSpecificHeatCapacity() {
-            const heatEnergy = parseFloat(document.getElementById('heatEnergy').value);
-            const mass = parseFloat(document.getElementById('mass').value);
-            const temperatureChange = parseFloat(document.getElementById('temperatureChange').value);
-            const specificHeatCapacity = heatEnergy / (mass * temperatureChange);
-
-            const resultElement = document.getElementById('result');
-            if (isNaN(specificHeatCapacity)) {
-                resultElement.innerText = 'Please enter valid values.';
-            } else {
-                resultElement.innerText = `Specific Heat Capacity: ${specificHeatCapacity.toFixed(2)} J/kg°C`;
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

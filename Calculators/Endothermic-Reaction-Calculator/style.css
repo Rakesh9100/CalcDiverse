@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url("https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/cache.gettyimages.com/f4bf8521f3b147c4a741f36eca6a900c.jpg") no-repeat center center fixed;
+    background: url("assets/background.jpg") no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;

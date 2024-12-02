@@ -14,6 +14,8 @@
 
 ## Screenshots :-
 
-![image](../Sudoku-Calculator/screenshot1.png)
-![image](../Sudoku-Calculator/screenshot2.png)
-![image](../Sudoku-Calculator/screenshot3.png)
+![image](https://github.com/user-attachments/assets/2c214a93-a92e-4112-9611-729dc8c63be7)
+
+![image](https://github.com/user-attachments/assets/8c4bacc6-75dd-4c0f-8b91-814331d3f862)
+
+![image](https://github.com/user-attachments/assets/a576b79b-7978-478e-9631-f5a9ade528a1)

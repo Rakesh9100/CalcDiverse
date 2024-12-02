@@ -1,6 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34fP-6gR4if3LihtsQBFJsT0W76XSTsuRUQ&s");
+    background-image: url("assets/background.jpg");
     background-size: cover;
     background-position: center;
     display: flex;

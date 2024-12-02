@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('https://s7d2.scene7.com/is/image/TWCNews/heat_jpg_jpg');
+    background-image: url('assets/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
