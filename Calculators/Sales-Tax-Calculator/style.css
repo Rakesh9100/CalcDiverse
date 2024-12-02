@@ -27,14 +27,15 @@ body {
 #infoButton:hover {
     background-color: #fdfeff;
 }
+
 #infoButton img {
-    width: 25px; 
+    width: 25px;
     height: 25px;
     border-radius: 50%;
 }
 
 #infoButton:hover img {
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
 .popup {
@@ -146,21 +147,24 @@ button {
 #red:hover {
     background-color: #e33128;
 }
-#green:hover{
+
+#green:hover {
     background-color: rgb(76, 205, 76);
 }
 
 #tax {
     margin-bottom: 1px;
 }
+
 #grosslabel {
     margin-bottom: 0px;
-    /* margin-top: px; */
     padding-top: 20px;
 }
+
 #net {
     margin-bottom: 1px;
 }
-#trate{
+
+#trate {
     padding-top: 5px;
 }
