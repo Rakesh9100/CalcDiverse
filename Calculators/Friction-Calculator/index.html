@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Friction Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Friction Force Calculator</h1>
+            <form id="friction-form">
+                <div class="form-group">
+                    <label for="normal-force">Normal Force (N):</label>
+                    <input type="number" id="normal-force" placeholder="Enter normal force" required>
+                </div>
+                <div class="form-group">
+                    <label for="coefficient">Coefficient of Friction:</label>
+                    <input type="number" id="coefficient" placeholder="Enter coefficient of friction" step="0.01" required>
+                </div>
+                <button type="submit">Calculate</button>
+            </form>
+            <div class="result" id="result">
+                <p>Friction Force: <span id="friction-force">0</span> N</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

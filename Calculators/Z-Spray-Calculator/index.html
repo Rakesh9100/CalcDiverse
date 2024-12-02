@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Z-Spray Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Z-Spray Calculator</h1>
+        <form id="z-spray-form">
+            <div class="form-group">
+                <label for="area">Area (sq ft):</label>
+                <input type="number" id="area" name="area" required />
+            </div>
+            <div class="form-group">
+                <label for="spray-rate">Spray Rate (gallons/1000 sq ft):</label>
+                <input type="number" id="spray-rate" name="spray-rate" required />
+            </div>
+            <div class="form-group">
+                <label for="coverage">Coverage Efficiency (%):</label>
+                <input type="number" id="coverage" name="coverage" required />
+            </div>
+            <button type="button" onclick="calculateZSpray()">Calculate</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

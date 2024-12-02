@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Special Number-2 Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Special Number-2 Calculator</h1>
+        <form id="specialNumberForm" class="form-group">
+            <div class="form-control">
+                <label for="number">Enter a Number:</label>
+                <input type="number" id="number" min="0" required />
+            </div>
+            <button type="button" class="btn" onclick="checkSpecialNumber()">
+            Check
+            </button>
+        </form>
+        <div id="result" class="result" style="display: none">
+            <h2>Result:</h2>
+            <p id="resultMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

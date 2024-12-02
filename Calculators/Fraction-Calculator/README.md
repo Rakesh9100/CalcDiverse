@@ -1,8 +1,8 @@
-# <p align="center">Fraction Calculator</p>
+<p align="center">Fraction Calculator</p>
 
 ## Description :-
 
-The Operational Fraction Calculator is a web-based tool that enables users to perform basic arithmetic operations (addition, subtraction, multiplication, and division) on fractions.
+The Fraction Calculator is a web-based tool that enables users to perform basic arithmetic operations (addition, subtraction, multiplication, and division) on fractions. It also converts the resulting fraction to a decimal and checks if the result is a real number.
 
 ## Tech Stacks :-
 
@@ -10,10 +10,22 @@ The Operational Fraction Calculator is a web-based tool that enables users to pe
 - CSS
 - JavaScript
 
+## Features :-
+
+- Perform arithmetic operations on fractions: addition, subtraction, multiplication, and division.
+- Convert the resulting fraction to a decimal.
+- Display whether the result is a real number or not.
+
+## Usage :-
+
+1. Enter the numerators and denominators of the two fractions.
+2. Select the arithmetic operation to be performed.
+3. Click the "=" button to compute the result.
+4. The result will be displayed as a fraction and a decimal. An alert will notify if the result is a real number or not.
+
 ## Screenshots :-
 
-### Outlook
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/163159351/21474ab2-77ac-4bbd-bb6a-92a3d4af7daf)
+![image](https://github.com/user-attachments/assets/13fada3e-c906-428a-b7ff-9fa8087185f3)
 
 ### Sample Output 1
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/163159351/4dc44163-55a7-4816-b63d-471512e83f08)

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Water Hardness Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Water Hardness Calculator</h1>
+        <form id="hardness-form">
+            <div class="input-group">
+                <label for="calcium">Calcium (Ca<sup>2+</sup>) in mg/L:</label>
+                <input type="number" id="calcium" required>
+            </div>
+            <div class="input-group">
+                <label for="magnesium">Magnesium (Mg<sup>2+</sup>) in mg/L:</label>
+                <input type="number" id="magnesium" required>
+            </div>
+            <div class="input-group">
+                <label for="unit">Select Unit:</label>
+                <select id="unit">
+                    <option value="ppm">ppm</option>
+                    <option value="gpg">gpg</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculateHardness()">Calculate Hardness</button>
+        </form>
+        <div id="results">
+            <h2>Results</h2>
+            <p id="hardness"></p>
+            <p id="category"></p>
+            <p id="safety"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

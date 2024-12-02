@@ -29,6 +29,15 @@
                 <input type="number" id="numOfTerms" placeholder="Enter n">
             </div>
 
+            <div class="input-container"> 
+            <label for="calculationType">Choose Calculation:</label>
+            <select id="calculationType" >
+                <option value="nthTerm">Nth Term</option>
+                <option value="sumOfTerms">Sum of First N Terms</option>
+                <option value="harmonicMean">Harmonic Mean</option>
+            </select>
+            </div>
+
             <button onclick="calculateHP()">Calculate</button>
 
             <div id="result"></div>

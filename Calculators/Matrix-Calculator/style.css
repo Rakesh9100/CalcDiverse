@@ -1,11 +1,10 @@
 body {
     background: radial-gradient(circle, rgb(74, 141, 192), rgb(23, 62, 93));
     margin: 0;
-    padding: 10px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     color: black;
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -15,7 +14,7 @@ body {
 #matrixCalculator {
     background-color: white;
     padding: 20px;
-    border-radius: 5%;
+    border-radius: 40px;
     width: 30%;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
@@ -64,4 +63,14 @@ button {
 button:hover {
     background-color: rgb(5, 60, 150);
     box-shadow: 0 0 0 1px rgba(41, 8, 63, 0.712), 0 3px 5px 0 rgba(41, 8, 63, 0.712);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box>div {
+    display: flex;
+    justify-content: space-between;
 }

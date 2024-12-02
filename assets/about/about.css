@@ -1,11 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.circle {
+    z-index: 999999;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: colors 5s infinite;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+.circle::before {
+    content: "";
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(9, 5, 40);
+    margin: 0 auto;
+}
+
+.main-content {
+    padding: 70px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
 .about-section {
-    min-height: 100vh;
     width: 80%;
     display: flex;
     justify-content: space-evenly;
@@ -13,22 +62,180 @@
     flex-direction: column;
     gap: 2rem;
     margin: 0 auto;
+    text-align: center;
 }
 
 .heading-container {
     font-size: 2.7rem;
-    background: #00F260;
-    background: -webkit-linear-gradient(to right, #0575E6, #00F260);
     background: linear-gradient(to right, #0575E6, #00F260);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center;
 }
 
 .para-section {
     font-size: 1.9rem;
-    text-align: center;
     color: white;
     padding: 0 3rem;
     margin-bottom: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    width: 80vw;
+    height: 30vh;
+    background: #3a0190;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.card::before,
+.card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5334ab;
+    transition: all 0.5s;
+}
+
+.card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+.card:hover::before,
+.card:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.card-content {
+    z-index: 1;
+    color: white;
+    transition: opacity 0.5s;
+}
+
+.card-hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.5s;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1.5vw;
+}
+
+.card:hover .card-hover-text {
+    opacity: 1;
+}
+
+.card:hover .card-content {
+    opacity: 0;
+}
+
+@media (min-width: 800px) {
+    .card {
+        width: 70vw;
+        height: 33vh;
+    }
+
+    .card-hover-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 90vw;
+        height: 28vh;
+    }
+
+    .card-hover-text {
+        font-size: 12px;
+    }
+}
+
+.footer-basic {
+    padding: 40px 0;
+    background-color: rgb(9, 5, 40, 0.9);
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: var(--light);
+    padding: 8px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+    color: var(--primary);
+    border-top-color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
 }

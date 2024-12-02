@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant Planning Calculator</title>
+</head>
+<body>
+    <div class="canvas">
+        <div class="container">
+            <h1>Restaurant Planning Calculator</h1>
+            <form id="calculator-form">
+                <label for="space">Available Space (sq ft):</label>
+                <input type="number" id="space" min="1" required>
+
+                <label for="staff">Number of Staff:</label>
+                <input type="number" id="staff" min="1" required>
+
+                <label for="rent">Monthly Rent ($):</label>
+                <input type="number" id="rent" min="0" required>
+
+                <label for="utilities">Monthly Utilities ($):</label>
+                <input type="number" id="utilities" min="0" required>
+
+                <label for="equipment">One-time Equipment Cost ($):</label>
+                <input type="number" id="equipment" min="0" required>
+
+                <label for="salary">Average Monthly Salary per Staff ($):</label>
+                <input type="number" id="salary" min="0" required>
+
+                <button type="submit">Calculate Total Cost</button>
+            </form>
+            <div id="result">
+                <h2>Total Initial Cost: $<span id="initial-cost">0</span></h2>
+                <h2>Total Monthly Cost: $<span id="monthly-cost">0</span></h2>
+                <div id="insights"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

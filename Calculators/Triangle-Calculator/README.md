@@ -12,4 +12,4 @@ Calculates the different results of a triangle based on input sides.
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/e737d8d2-dc27-4383-b03b-7b3e4fa670ec)
+![image](https://github.com/user-attachments/assets/b619ace7-2244-409d-b00e-cd9baeb25269)

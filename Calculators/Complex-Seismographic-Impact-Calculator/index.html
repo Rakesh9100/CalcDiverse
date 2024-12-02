@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Complex Seismographic Impact Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Seismic Impact Calculator</h1>
+        <form id="earthquakeForm">
+            <label for="magnitude">Seismic Magnitude (Richter):</label>
+            <input type="number" id="magnitude" name="magnitude" step="0.1" required>
+
+            <label for="distance">Epicenter Distance (km):</label>
+            <input type="number" id="distance" name="distance" step="0.1" required>
+
+            <label for="populationDensity">Population Density (people/km²):</label>
+            <input type="number" id="populationDensity" name="populationDensity" required>
+
+            <label for="buildingTypes">Type of Buildings (optional):</label>
+            <select id="buildingTypes" name="buildingTypes">
+                <option value="">Select Building Type</option>
+                <option value="Wood">Wood</option>
+                <option value="Concrete">Concrete</option>
+                <option value="Steel">Steel</option>
+                <option value="Brick">Brick</option>
+                <option value="Mixed">Mixed</option>
+            </select>
+
+            <button type="submit">Calculate Impact</button>
+        </form>
+
+        <div id="results" class="results">
+            <h2>Impact Results</h2>
+            <p id="pga">Peak Ground Acceleration (PGA): <span></span></p>
+            <p id="mmi">Modified Mercalli Intensity (MMI): <span></span></p>
+            <p id="damageLevels">Estimated Damage Levels: <span></span></p>
+            <p id="affectedPopulation">Estimated Affected Population: <span></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

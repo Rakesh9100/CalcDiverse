@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lottery Odds Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lottery Odds Calculator</h1>
+    </header>
+
+    <section id="calculator">
+        <label for="tickets" style="font-size: 18px; font-weight:bold; ">Enter the number of tickets you bought:</label>
+        <input type="number" id="tickets" required>
+
+        <label for="sold" style="font-size: 18px; font-weight:bold;">Enter the total number of tickets sold:</label>
+        <input type="number" id="sold" required>
+
+        <button onclick="calculate()">Calculate</button>
+        <br>
+        <br>
+        <span style="font-weight:bold; font-size:16px;">Your chances of winning the lottery are:</span>
+        <p id="result"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

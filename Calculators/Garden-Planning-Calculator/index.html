@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Garden Planning Calculator</title>
+</head>
+<body>
+    <h1>Garden Planning Calculator</h1>
+    <div class="calculator-container">
+        <form id="calculator-form">
+            <div class="input-group">
+                <label for="width">Width (m):</label>
+                <input type="number" id="width" name="width" required>
+            </div>
+            <div class="input-group">
+                <label for="length">Length (m):</label>
+                <input type="number" id="length" name="length" required>
+            </div>
+            <div class="input-group">
+                <label for="budget">Total Budget ($):</label>
+                <input type="number" id="budget" name="budget" required>
+            </div>
+            <div class="input-group">
+                <label for="plantSize">Plant Size (m<sup>2</sup>):</label>
+                <input type="number" id="plantSize" name="plantSize" required>
+            </div>
+            <div class="input-group">
+                <label for="cost">Cost per Plant ($):</label>
+                <input type="number" id="cost" name="cost" required>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result-container">
+            <p id="total-plants"></p>
+            <p id="remaining-money"></p>
+            <p id="remaining-space"></p>
+            <p id="additional-money-needed"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

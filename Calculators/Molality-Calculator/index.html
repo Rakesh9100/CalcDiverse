@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Molality Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Molality Calculator</h1>
+        <form id="molalityForm">
+            <div class="form-group">
+                <label for="formulaWeight">Formula weight (g/mol):</label>
+                <input type="number" id="formulaWeight" required>
+            </div>
+            <div class="form-group">
+                <label for="solventWeight">Weight of solvent:</label>
+                <input type="number" id="solventWeight" required>
+                <select id="solventUnit">
+                    <option value="kg">Kilograms (kg)</option>
+                    <option value="g">Grams (g)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="molality">Desired molality:</label>
+                <input type="number" id="molality" required>
+                <select id="molalityUnit">
+                    <option value="mol/kg">Moles per kilogram (mol/kg)</option>
+                    <option value="mmol/kg">Millimoles per kilogram (mmol/kg)</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculateMass()">Calculate Mass</button>
+        </form>
+        <div id="result">
+            <label for="mass">Mass:</label>
+            <input type="text" id="mass" readonly> grams
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

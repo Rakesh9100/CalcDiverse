@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Paper Weight Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h3>Paper weight reference</h3>
+            <div class="options">
+                <h4>
+                    <input type="radio" name="unit" value="grammage" checked> Grammage
+                </h4>
+            </div>
+            <input type="number" placeholder="Paper grammage (gsm)" id="paperGrammage" class="input">
+        </div>
+        
+        <div class="section">
+            <h3>Select or input the size of your paper</h3>
+            <select class="input" id="paperSize">
+                <option value="0.0617">Letter (8.5 in x 11.0 in)</option>
+                <option value="0.06237">A4 (210 mm x 297 mm)</option>
+                <!-- You can add more paper sizes with corresponding area values -->
+            </select>
+        </div>
+        
+        <div class="section">
+            <h3>Output values</h3>
+            <input type="number" placeholder="Weight per sheet (g)" id="weightPerSheet" class="input" readonly>
+            <input type="number" value="500" id="quantity" class="input">
+            <input type="number" placeholder="Total weight (g)" id="totalWeight" class="input" readonly>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

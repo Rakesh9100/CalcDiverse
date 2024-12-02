@@ -1,0 +1,315 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    color: rgb(102, 102, 102);
+    padding: 0;
+    margin: 0;
+}
+
+.cell input.active {
+    border-color: rgb(141, 177, 255);
+    border-color: rgb(252, 93, 14);
+    color: #000 !important;
+}
+
+.cell input.succeeded {
+    border: 4px solid rgb(25, 237, 57);
+}
+
+.btn {
+    border: none;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(49, 155, 255);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(0, 81, 255);
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn:active {
+    background-color: rgb(0, 81, 205);
+}
+
+body {
+    background: linear-gradient(to right, rgb(41, 181, 231), rgb(238, 238, 83));
+    font-family: cursive, Arial, Helvetica, sans-serif;
+}
+
+/* END General style */
+
+/* START Menu style */
+#nav-bar {
+    background-color: #222;
+    text-align: center;
+    opacity: 0.9;
+    z-index: 2;
+    position: relative;
+}
+
+#nav-bar li {
+    position: relative;
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    min-width: 105px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+/* END Menu-style.General Style */
+
+/* START Menu-Style.heading "Sudoku Solver Visualizer"*/
+#nav-bar a {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+#nav-bar h2 {
+    color: white;
+    font-family: cursive;
+    padding: 10px;
+    font-size: 35px;
+    width: max-content;
+}
+
+#nav-bar h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* END Menu-Style.heading "Sudoku Solver Visualizer"*/
+
+/* START Menu-Style.Speed Dropdown */
+#nav-bar li:hover {
+    border-radius: 24px 24px 0 0;
+    background-color: white;
+    color: #222;
+    cursor: pointer;
+}
+
+#nav-bar li:hover .sub-menu {
+    display: block;
+}
+
+/* Initial state */
+#nav-bar li:nth-child(5) i {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+/* Hovered state */
+#nav-bar li:nth-child(5):hover i {
+    transform: rotate(180deg);
+}
+
+.sub-menu {
+    position: absolute;
+    left: 0;
+    top: 53px;
+    background-color: #333;
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0 0 16px 16px;
+}
+
+.sub-menu li.speed-options:hover {
+    border-radius: 55% !important;
+    opacity: 0.9;
+}
+
+
+/* END Menu-Style.Speed Dropdown */
+
+/* START Menu-Style.Algorithms dropdown */
+#nav-bar li:nth-child(6) {
+    min-width: 210px;
+}
+
+/* Initial state */
+#nav-bar li:nth-child(6) i {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+/* Hovered state */
+#nav-bar li:nth-child(6):hover i {
+    transform: rotate(180deg);
+}
+
+
+#nav-bar li:hover .algo-sub-menu {
+    display: block;
+}
+
+.algo-sub-menu {
+    position: absolute;
+    left: 0;
+    top: 53px;
+    background-color: #333;
+    display: none;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 210px;
+    border-radius: 0 0 16px 16px;
+}
+
+.algo-sub-menu li.algo-options:hover {
+    border-radius: 55% !important;
+    opacity: 0.9;
+}
+
+#nav-bar .algo-sub-menu li {
+    min-width: 210px;
+}
+
+#nav-bar .algo-selected {
+    min-width: 210px;
+}
+
+#nav-bar li#clear {
+    transition: all 0.3s ease-in-out;
+}
+
+/* END Menu-Style.Algorithms dropdown */
+
+/* START main div style */
+/* START main-div.General Style */
+
+#main {
+    margin-top: 40px;
+    /* position: relative; */
+    text-align: center;
+    z-index: 0;
+}
+
+/* END main-div.General Style */
+
+/* START main-div.Table style */
+#grid {
+    margin: auto;
+    border-collapse: collapse;
+    width: 486px;
+    height: 495px;
+    border: 1px solid rgb(255, 100, 100);
+    box-shadow: 0 0 10px 5px rgba(95, 223, 223, 0.827),
+        0 0 20px 10px rgba(28, 28, 28, 0.615);
+}
+
+table {
+    margin: 1em auto;
+}
+
+td {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 0;
+    margin: 0px;
+}
+
+td:first-child {
+    border-left: 0px solid rgb(24, 24, 24);
+}
+
+td:nth-child(3n) {
+    border-right: 3px solid rgb(0, 0, 0);
+}
+
+tr:first-child {
+    border-top: 0px solid rgb(24, 24, 24);
+}
+
+tr:nth-child(3n) td {
+    border-bottom: 0px solid rgb(24, 24, 24);
+}
+
+.cell {
+    border: 2px solid black;
+    transition: scale 0.25s ease;
+}
+
+.cell:hover {
+    scale: 1.1;
+}
+
+.cell input {
+    opacity: 0.9;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 0px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 35px;
+    outline: none;
+    border: 2px solid;
+}
+
+/* Class to apply the shake animation */
+.shake {
+    animation: shake 0.5s ease;
+}
+
+/* Keyframes for the shake animation */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* When invalid input entered by user */
+.invalid {
+    border: 3px solid red !important;
+}
+
+
+/* END main-div.Table style */
+
+@media screen and (max-width:1320px) {
+    #algo-info {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #algo-info {
+        display: none;
+    }
+}

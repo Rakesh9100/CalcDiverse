@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gauss Law Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Gauss Law Calculator</h1>
+        <div class="input-group">
+            <label for="charge">Electric Charge (Q):</label>
+            <div class="charge-input">
+                <input type="number" id="charge" placeholder="Enter charge" step="any">
+                <div class="custom-select">
+                    <select id="charge-unit">
+                        <option value="1e-12">pC</option>
+                        <option value="1e-9" selected>nC</option>
+                        <option value="1e-6">µC</option>
+                        <option value="1e-3">mC</option>
+                        <option value="1">C</option>
+                        <option value="1.602e-19">e</option>
+                        <option value="3600">Ah</option>
+                        <option value="3.6">mAh</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="permittivity">Vacuum Permittivity (ε₀):</label>
+            <input type="text" id="permittivity" value="8.854 × 10⁻¹²" readonly>
+        </div>
+        <div class="input-group">
+            <label for="flux">Electric Flux (Φ):</label>
+            <input type="text" id="flux" placeholder="Result in V·m" readonly>
+        </div>
+        <button onclick="calculateFlux()">Calculate</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

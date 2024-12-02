@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(to right, #a8c6d4, #b0c7d4);
+    color: #ecf0f1;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.calculator-container {
+    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #34495e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #ecf0f1;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 18px;
+    flex: 1;
+}
+
+input,
+select {
+    padding: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    flex: 2;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+#result-container {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+#result-container p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .calculator-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    label,
+    input,
+    button,
+    #result-container p {
+        font-size: 16px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    label,
+    input,
+    button,
+    #result-container p {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}

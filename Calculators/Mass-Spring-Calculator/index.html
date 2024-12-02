@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Mass Spring Calculator</title>
+</head>
+
+<body>
+    <header class="main">
+        <h1 class="header">Mass-Spring Calculator</h1>
+        <div class="calculator-container">
+            <label for="mass">Mass (m): </label>
+            <input type="number" id="mass" name="mass" step="0.01" required>
+
+            <label for="spring-constant">Spring Constant (k): </label>
+            <input type="number" id="spring-constant" name="spring-constant" step="0.01" required>
+
+            <label for="amplitude">Amplitude (A): </label>
+            <input type="number" id="amplitude" name="amplitude" step="0.01" required>
+
+            <button class="submit-button" onclick="calculateProperties()">Calculate</button>
+
+            <div id="results" class="results">
+                <h2>Results:</h2>
+                <p id="period"></p>
+                <p id="frequency"></p>
+                <p id="angular-frequency"></p>
+                <p id="max-speed"></p>
+                <p id="max-acceleration"></p>
+                <p id="kinetic-energy"></p>
+                <p id="potential-energy"></p>
+            </div>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

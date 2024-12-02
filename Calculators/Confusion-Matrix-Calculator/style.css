@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgba(0, 102, 255, 0.9), rgba(0, 178, 178, 0.9));
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    color: white;
+}
+
+.containerimage {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Formulae {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.cyan-container {
+    background-color: rgba(0, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.resultcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: blue;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.form-label {
+    font-size: 16px;
+}
+
+input.form-control {
+    font-size: 18px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .containerimage {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .containerimage img {
+        width: 100%;
+        height: auto;
+        min-width: 300px;
+        max-width: 600px;
+    }
+
+    .cyan-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    input.form-control {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .resultcontainer {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meal Calorie Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Meal Calorie Calculator</h1>
+        <form id="meal-form">
+            <div class="form-group">
+                <label for="food-select">Select Food:</label>
+                <select id="food-select">
+                    <!-- Food options will be added dynamically -->
+                </select>
+                <div id="custom-food" style="display: none;">
+                    <input type="text" id="custom-food-input" placeholder="Enter custom food">
+                    <input type="number" id="custom-food-calories" placeholder="Enter calories per 100g">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="portion-size">Portion Size (g):</label>
+                <input type="number" id="portion-size" min="1" required>
+            </div>
+            <button type="button" id="add-food">Add Food</button>
+            <button type="button" id="reset">Reset</button>
+        </form>
+        <h2>Meal Summary</h2>
+        <ul id="meal-summary">
+            <!-- Meal summary will be added dynamically -->
+        </ul>
+        <h3>Total Calories: <span id="total-calories">0</span></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

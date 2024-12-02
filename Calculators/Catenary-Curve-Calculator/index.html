@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catenary Curve Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Catenary Curve Calculator</h1>
+        <form id="catenaryForm">
+            <label for="span">Horizontal Distance (Span):</label>
+            <input type="number" id="span" name="span" required>
+            <label for="sag">Vertical Distance (Sag):</label>
+            <input type="number" id="sag" name="sag" required>
+            <label for="parameterA">Catenary Parameter (a) (Optional):</label>
+            <input type="number" id="parameterA" name="parameterA">
+            <label for="numPoints">Number of Points:</label>
+            <input type="number" id="numPoints" name="numPoints" required>
+            <input type="submit" value="Calculate">
+        </form>
+        <canvas id="catenaryCanvas" width="600" height="400"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

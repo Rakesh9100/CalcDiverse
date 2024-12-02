@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="stylesheet" href="style.css">
+    <title>Logical Micro Operations Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Logical Micro Operations Calculator</h1>
+        <input type="text" id="binary1" placeholder="Enter Binary 1 (A)" required>
+        <input type="text" id="binary2" placeholder="Enter Binary 2 (B)" required>
+
+        <div class="button-group">
+
+            <button onclick="selectiveSet()" title="If a bit in B is set to 1, that same position in A gets set to 1, otherwise that bit in A keeps its previous value">Selective-set</button>
+
+            <button onclick="selectiveComplement()" title="If a bit in B is set to 1, that same position in A gets complemented from its original value, otherwise it is unchanged">Selective-complement</button>
+
+            <button onclick="selectiveClear()" title="If a bit in B is set to 1, that same position in A gets set to 0, otherwise it is unchanged">Selective-clear</button>
+            
+            <button onclick="clearBits()" title="if the bits in the same position in A and B are the same, they are cleared in A,">Clear</button>
+
+            <button onclick="maskDelete()" title="If a bit in B is set to 0, that same position in A gets set to 0, otherwise it is unchanged">Mask (Delete)</button>
+
+            <button onclick="insert()" title="Insert a specific bit pattern into the first binary input, while preserving other bits">Insert</button>
+
+            <button onclick="compare()" title="Compare the two binary inputs and highlight the differences between them">Compare</button>
+
+            <button onclick="clearInputs()" title="Clear both binary input fields to start fresh">Clear Inputs</button>
+
+        </div>
+
+        <div class="result">
+            <h2>Result: <span id="result"></span></h2>
+            <p id="error" style="color: red;"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Normality Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Normality Calculator</h1>
+        <form id="normalityForm">
+            <div class="form-group">
+                <label for="formulaWeight">Formula weight (g/mol):</label>
+                <input type="number" id="formulaWeight" required>
+            </div>
+            <div class="form-group">
+                <label for="finalVolume">Desired final volume:</label>
+                <input type="number" id="finalVolume" required>
+                <select id="volumeUnit">
+                    <option value="L">Liters (L)</option>
+                    <option value="mL">Milliliters (mL)</option>
+                    <option value="uL">Microliters (µL)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="equivalentWeight">Equivalent weight (g/equiv):</label>
+                <input type="number" id="equivalentWeight" required>
+            </div>
+            <div class="form-group">
+                <label for="concentration">Desired concentration:</label>
+                <input type="number" id="concentration" required>
+                <select id="concentrationUnit">
+                    <option value="N">Normal (N)</option>
+                    <option value="mN">Millinormal (mN)</option>
+                    <option value="uN">Micronormal (µN)</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculateMass()">Calculate Mass</button>
+        </form>
+        <div id="result">
+            <label for="mass">Mass:</label>
+            <input type="text" id="mass" readonly> grams
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

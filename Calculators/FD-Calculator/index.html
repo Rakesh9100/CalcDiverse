@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FD Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Fixed Deposit Calculator</h1>
+        <div class="main-container">
+            <div class="container">
+                <form id="fd-calculator-form">
+                    <label for="principal">Principal Amount (₹):</label>
+                    <input type="number" id="principal" placeholder="Enter Principal Amount" required>
+                    
+                    <label for="rate">Annual Interest Rate (%):</label>
+                    <input type="number" id="rate" step="0.01" placeholder="Enter Annual Interest Rate" required>
+                    
+                    <label for="years">Time Period (in years):</label>
+                    <input type="number" id="years" placeholder="Enter Time Period" required>
+                    
+                    <div class="button">
+                        <button type="button" id="calculate-btn">Calculate</button>
+                        <button type="reset" id="reset-btn">Reset</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="output-container" id="output-container">
+                <div class="canvas">
+                    <canvas id="fdChart"></canvas>
+                </div>
+                <div class="result" id="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

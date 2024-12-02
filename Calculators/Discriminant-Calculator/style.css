@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    background-size: cover;
+    color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #2ecc71;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    color: #6b6b6b;
+    margin: 10px 0;
+}
+
+#equation {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #6b6b6b;
+}
+
+span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+input {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0 10px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    color: #2c3e50;
+}
+
+input:hover,
+input:focus {
+    border-color: #3498db;
+}
+
+form div {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+#output_text {
+    margin-top: 20px;
+    text-align: center;
+    color: #404040;
+}
+
+#outputValue {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2ecc71;
+}
