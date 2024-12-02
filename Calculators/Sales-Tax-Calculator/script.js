@@ -38,8 +38,6 @@ function calcrate() {   //calculate tax rate
     }
 }
 
-
-
 function clearVal() {
     document.getElementById('netprice').value = '';
     document.getElementById('rate').value = '';
