@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Elliptic Curve Calculator</title>
+</head>
+<body>
+    <div class="m-5 p-2 bg-light rounded-2 shadow-md">
+        <h1 class="text-center my-4 title">Elliptic Curve Calculator</h1>
+        <!-- Buttons to select the operation -->
+        <div>
+            <div class="row text-center my-4 px-3">
+                <div class="col-md-3">
+                    <button class="btn btn-secondary mod" onclick="setMode('addition')">
+                        Point Addition
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary mod" onclick="setMode('negation')">
+                        Point Negation
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary mod" onclick="setMode('multiplication')">
+                        Scalar Multiplication
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary mod" onclick="setMode('allPoints')">
+                        All Points on Curve
+                    </button>
+                </div>
+            </div>
+            <!-- Elliptic Curve Form -->
+            <form id=" curve-form">
+                <div class="w-75 mx-auto">
+                    <!-- Curve parameters (always shown) -->
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="a" class="form-label">Curve parameter a:</label>
+                            <input type="number" class="form-control" id="a" value="1">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="b" class="form-label">Curve parameter b:</label>
+                            <input type="number" class="form-control" id="b" value="1">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="p" class="form-label">Prime modulus p:</label>
+                            <input type="number" class="form-control" id="p" value="23">
+                        </div>
+                    </div>
+                    <!-- Point 1 (for Addition and Negation) -->
+                    <div id="point1" class="row justify-content-between mb-3">
+                        <div class="col-md-6">
+                            <label for="x1" class="form-label">Point X1 (x-coordinate):</label>
+                            <input type="number" class="form-control" id="x1" value="3">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="y1" class="form-label">Point Y1 (y-coordinate):</label>
+                            <input type="number" class="form-control" id="y1" value="10">
+                        </div>
+                    </div>
+                    <!-- Point 2 (only for Addition) -->
+                    <div id="point2" class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="x2" class="form-label">Point X2 (x-coordinate):</label>
+                            <input type="number" class="form-control" id="x2" value="9">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="y2" class="form-label">Point Y2 (y-coordinate):</label>
+                            <input type="number" class="form-control" id="y2" value="7">
+                        </div>
+                    </div>
+                    <!-- Scalar k (only for Scalar Multiplication) -->
+                    <div id="scalar" class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="k" class="form-label">Scalar k (for scalar multiplication):</label>
+                            <input type="number" class="form-control" id="k" value="2">
+                        </div>
+                    </div>
+                    <div class="text-center row justify-content-center">
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary" onclick="calculate()">
+                                Calculate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <small class="text-muted">
+                Note: Ensure that the values entered for points lie on the elliptic
+                curve defined by the parameters a, b, and p, and that the curve is
+                valid (i.e., 4a<sup>3</sup> + 27b<sup>2</sup> ≠ 0 mod p).
+                </small>
+            </div>
+            <!-- Results -->
+            <div class="mt-4 results w-75 mx-auto">
+                <div class="alert alert-info" id="additionResult">
+                    Point Addition:
+                </div>
+                <div class="alert alert-info" id="negationResult">
+                    Point Negation:
+                </div>
+                <div class="alert alert-info" id="multiplicationResult">
+                    Scalar Multiplication:
+                </div>
+                <div class="alert alert-info" id="allPointsResult">
+                    All Points on the Curve:
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
