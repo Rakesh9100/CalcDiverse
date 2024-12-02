@@ -19,10 +19,10 @@ After entering the required data, the calculator processes the information and d
 ## Screenshots :-
 
 ### 1. FCFS
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/1debc7ac-5691-4b13-8264-ca148f2c689c)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/146326636/15fc8124-9e24-41a9-a8a1-420da62ad46b)
 
 ### 2. SJF
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/987360a4-3dcb-4cc5-9bba-a8fe7ff104c1)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/146326636/18e8f91f-1020-4886-9427-970df80112f8)
 
 ### 3. RR
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/29a2dffc-fdd1-4c2c-8953-0d15561733e1)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/146326636/fadb0a7d-4a1b-44e8-99b2-701dfc08ea21)

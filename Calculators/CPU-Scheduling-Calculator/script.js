@@ -54,10 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const outputSection = document.getElementById('output-section');
         const outputBody = document.getElementById('output-body');
 
-        // Show the output section
         outputSection.style.display = 'block';
 
-        outputBody.innerHTML = ''; // Clear previous content
+        outputBody.innerHTML = '';
 
         solvedProcessesInfo.forEach(process => {
             const row = document.createElement('tr');
@@ -96,13 +95,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const solvedProcessesInfo = [];
         const ganttChartInfo = [];
 
-        for (let i = 0; i < n; i++) {
-            const process = {
-                processId: i + 1,
-                arrivalTime: arrivalTime[i],
-                burstTime: burstTime[i],
-                startTime: Math.max(currentTime, arrivalTime[i]),
-            };
+        const processes = arrivalTime.map((arrival, index) => ({
+            processId: index + 1,
+            arrivalTime: arrival,
+            burstTime: burstTime[index]
+        }));
+
+        processes.sort((a, b) => a.arrivalTime - b.arrivalTime);
+
+        for (const process of processes) {
+            process.startTime = Math.max(currentTime, process.arrivalTime);
             process.completionTime = process.startTime + process.burstTime;
             process.turnaroundTime = process.completionTime - process.arrivalTime;
             process.waitingTime = process.turnaroundTime - process.burstTime; // Update the waiting time calculation
@@ -169,52 +171,67 @@ document.addEventListener('DOMContentLoaded', () => {
             ganttChartInfo
         };
     };
+
     const rr = (arrivalTime, burstTime, timeQuantum) => {
         const n = arrivalTime.length;
         const processesInfo = arrivalTime.map((arrival, index) => ({
             processId: index + 1,
             arrivalTime: arrival,
             burstTime: burstTime[index],
-            remainingBurstTime: burstTime[index], // Track remaining burst time for each process
-            startTime: -1, // Initialize start time
-            completionTime: -1, // Initialize completion time
-            turnaroundTime: -1, // Initialize turnaround time
-            waitingTime: -1, // Initialize waiting time
+            remainingBurstTime: burstTime[index],
+            startTime: -1,
+            completionTime: -1,
+            turnaroundTime: -1,
+            waitingTime: -1,
         }));
+
+        processesInfo.sort((a, b) => a.arrivalTime - b.arrivalTime);
 
         const solvedProcessesInfo = [];
         const ganttChartInfo = [];
         let currentTime = 0;
+        const queue = [];
 
-        while (processesInfo.some(process => process.remainingBurstTime > 0)) {
-            for (const process of processesInfo) {
-                if (process.remainingBurstTime <= 0) continue; // Skip completed processes
+        queue.push(processesInfo[0]);
+        let i = 1;
 
-                const executionTime = Math.min(timeQuantum, process.remainingBurstTime);
+        while (queue.length > 0) {
+            const process = queue.shift();
 
-                // Execute the process for the calculated execution time
-                ganttChartInfo.push({
-                    processId: process.processId,
-                    startTime: currentTime,
-                    endTime: currentTime + executionTime,
-                });
+            currentTime = Math.max(currentTime, process.arrivalTime);
 
-                process.remainingBurstTime -= executionTime;
-                currentTime += executionTime;
+            const executionTime = Math.min(timeQuantum, process.remainingBurstTime);
 
-                // Update start time if not set
-                if (process.startTime === -1) {
-                    process.startTime = currentTime - executionTime;
-                }
+            ganttChartInfo.push({
+                processId: process.processId,
+                startTime: currentTime,
+                endTime: currentTime + executionTime,
+            });
 
-                // Check if the process has finished
-                if (process.remainingBurstTime <= 0) {
-                    process.completionTime = currentTime;
-                    process.turnaroundTime = currentTime - process.arrivalTime;
-                    process.waitingTime = process.turnaroundTime - burstTime[process.processId - 1];
+            process.remainingBurstTime -= executionTime;
+            currentTime += executionTime;
 
-                    solvedProcessesInfo.push(process);
-                }
+            if (process.startTime === -1) {
+                process.startTime = currentTime - executionTime;
+            }
+
+            if (process.remainingBurstTime <= 0) {
+                process.completionTime = currentTime;
+                process.turnaroundTime = currentTime - process.arrivalTime;
+                process.waitingTime = process.turnaroundTime - process.burstTime;
+                solvedProcessesInfo.push(process);
+            } else {
+                queue.push(process);
+            }
+
+            while (i < n && processesInfo[i].arrivalTime <= currentTime) {
+                queue.push(processesInfo[i]);
+                i++;
+            }
+
+            if (queue.length === 0 && i < n) {
+                queue.push(processesInfo[i]);
+                i++;
             }
         }
 
@@ -223,5 +240,4 @@ document.addEventListener('DOMContentLoaded', () => {
             ganttChartInfo
         };
     };
-
 });

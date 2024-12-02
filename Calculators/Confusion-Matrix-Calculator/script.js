@@ -6,13 +6,11 @@ document.getElementById('confusionMatrixForm').addEventListener('submit', functi
     const falsePositive = parseFloat(document.getElementById('falsePositive').value);
     const falseNegative = parseFloat(document.getElementById('falseNegative').value);
     const trueNegative = parseFloat(document.getElementById('trueNegative').value);
-
   
     const accuracy = (truePositive + trueNegative) / (truePositive + falsePositive + falseNegative + trueNegative);
     const precision = truePositive / (truePositive + falsePositive);
     const recall = truePositive / (truePositive + falseNegative);
     const f1Score = 2 * (precision * recall) / (precision + recall);
-
    
     document.getElementById('accuracy').textContent = `Accuracy: ${(accuracy * 100).toFixed(2)}%`;
     document.getElementById('precision').textContent = `Precision: ${(precision * 100).toFixed(2)}%`;

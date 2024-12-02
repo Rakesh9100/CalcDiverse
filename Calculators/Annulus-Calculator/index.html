@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Annulus Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Annulus Calculator</h1>
+        <form id="annulusForm">
+            <div class="form-group">
+                <label for="outerRadius">Outer Radius (R):</label>
+                <input type="number" id="outerRadius" required placeholder="e.g., 5">
+            </div>
+            <div class="form-group">
+                <label for="innerRadius">Inner Radius (r):</label>
+                <input type="number" id="innerRadius" required placeholder="e.g., 3">
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+
+        <!-- Diagram Section -->
+        <div class="diagram" id="diagram">
+            <div class="outer-circle" id="outer-circle"></div>
+            <div class="inner-circle" id="inner-circle"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('https://www.shutterstock.com/image-photo/math-cost-tax-investment-calculation-600nw-1096664663.jpg');
+    background-image: url('assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

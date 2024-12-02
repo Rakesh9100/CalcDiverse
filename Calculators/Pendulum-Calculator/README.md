@@ -16,4 +16,4 @@ This calculator collects the length of the pendulum(l), gravitational accelerati
 
 ## Screenshots :-
 
-![image](./image.png)
+![image](https://github.com/user-attachments/assets/458afacd-2992-4ac6-b17e-5ad8815aa62f)

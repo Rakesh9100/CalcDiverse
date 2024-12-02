@@ -33,8 +33,19 @@
                 </div>
                 <div class="containerHW">
                     <div class="inputH">
+                        <label for="heightUnit">Height Unit</label>
+                        <select id="heightUnit" onchange="toggleHeightInput()">
+                            <option value="cm">cm</option>
+                            <option value="feet">feet</option>
+                        </select>
+                    </div>
+                    <div class="inputH" id="heightCmInput">
                         <label for="height">Height(cm)</label>
                         <input type="number" id="height" required>
+                    </div>
+                    <div class="inputH" id="heightFeetInput" style="display: none;">
+                        <label for="heightFeet">Height(feet)</label>
+                        <input type="number" id="heightFeet" required>
                     </div>
                     <div class="inputW">
                         <label for="weight">Weight(kg)</label>

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("https://img.freepik.com/free-photo/fantasy-style-galaxy-background_23-2151114393.jpg");
+    background-image: url("assets/background1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,7 +10,7 @@ body {
 .base-div {
     height: 650px;
     width: 600px;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobhUeNjGSQRIVKF-U_dnfhEIPr4VFxZJ_9HeCkcpRag&s");
+    background-image: url("assets/background2.jpg");
     border: 2px solid white;
     border-radius: 20px;
     color: white;

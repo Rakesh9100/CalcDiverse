@@ -9,11 +9,12 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <title>CalcDiverse</title>
 </head>
 
-<body class="containers" id="home">
+<body class="containers light-mode" id="home">
     <div class="circle-container">
         <div class="circle"></div>
         <div class="circle"></div>
@@ -76,7 +77,12 @@
                 <li class="nav-item">
                     <a href="./assets/contact/contact.html" class="nav-link"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
                 </li>
-
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <div class="slider round"></div>
+                    </label>
+                </div>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -90,6 +96,7 @@
     <!-- Hero Section Starts here  -->
     <section class="comp-section">
         <div class="compcontainer">
+            <div id="google_translate_element"></div>
             <div class="logo">
                 <img src="./assets/images/logo.png" alt="CalcDiverse Logo">
             </div>
@@ -214,21 +221,6 @@
             </div>
         </div>
         <div class="box">
-    <div class="content">
-        <h2>Mass-Spring Calculator</h2>
-        <h3>Calculates various properties of a mass-spring system.</h3>
-        <div class="card-footer">
-            <a href="./Calculators/Mass-Spring-Calculator/index.html" target="_blank">
-                <button>Try Now</button>
-            </a>
-            <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Mass-Spring-Calculator" title="Source Code" target="_blank">
-                <img src="./assets/images/github.png" alt="Source Code"></img>
-            </a>
-        </div>
-    </div>
-</div>
-
-        <div class="box">
             <div class="content">
                 <h2>6 Band Resistance Calculator</h2>
                 <h3>Calculate the theoretical resistance of a 6-band resistor.</h3>
@@ -251,20 +243,6 @@
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/AC-DC-Power-Calculator" title="Source Code" target="_blank">
-                        <img src="./assets/images/github.png" alt="Source Code"></img>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="content">
-                <h2>Heat capacity calculator</h2>
-                <h3>calculate the heat capacity of substances.</h3>
-                <div class="card-footer">
-                    <a href="./Calculators/Heat-capacity-calculator/index.html" target="_blank">
-                        <button>Try Now</button>
-                    </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Heat-capacity-calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -370,6 +348,20 @@
         </div>
         <div class="box">
             <div class="content">
+                <h2>Annulus Calculator</h2>
+                <h3>Calculates the area of the circle with inner and outer radius.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Annulus-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Annulus-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
                 <h2>Antilog Calculator</h2>
                 <h3>Calculates the antilog of the any given number taken over any base.</h3>
                 <div class="card-footer">
@@ -461,20 +453,6 @@
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Astrological-Age-Calculator" title="Source Code" target="_blank">
-                        <img src="./assets/images/github.png" alt="Source Code"></img>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="content">
-                <h2>Inductance calculator</h2>
-                <h3>Calculates the inductance of a Coil.</h3>
-                <div class="card-footer">
-                    <a href="./Calculators/Inductance-calculator/index.html" target="_blank">
-                        <button>Try Now</button>
-                    </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Inductance-calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -858,22 +836,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="box">
-    <div class="content">
-        <h2>Buoyancy Calculator</h2>
-        <h3>Calculates the buoyant force on an object submerged in a fluid.</h3>
-        <div class="card-footer">
-            <a href="./Calculators/Buoyancy-Calculator/index.html" target="_blank">
-                <button>Try Now</button>
-            </a>
-            <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Buoyancy-Calculator" title="Source Code" target="_blank">
-                <img src="./assets/images/github.png" alt="Source Code"></img>
-            </a>
-        </div>
-    </div>
-</div>
-
         <div class="box">
             <div class="content">
                 <h2>Boyle Temperature Calculator</h2>
@@ -883,6 +845,20 @@
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Boyle-Temperature-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Buoyancy Calculator</h2>
+                <h3>Calculates the buoyant force on an object submerged in a fluid.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Buoyancy-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Buoyancy-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -1325,7 +1301,7 @@
         <div class="box">
             <div class="content">
                 <h2>Confusion Matrix Calculator</h2>
-                <h3>Calculates Accuracy, Precision, Recall, and F1 Score for classification models in Machine Learning.</h3>
+                <h3>Calculates Accuracy, Precision, Recall, and F1 Score for classification models in machine learning.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Confusion-Matrix-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
@@ -1387,6 +1363,20 @@
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Cricket-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Critical Point Calculator</h2>
+                <h3>Calculates the critical point of ideal gases based on a and b.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Critical-Point-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Critical-Point-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -1605,12 +1595,12 @@
         <div class="box">
             <div class="content">
                 <h2>Decimal Roman Calculator</h2>
-                <h3>Converts Decimal number to Roman number and vice-versa.</h3>
+                <h3>Converts the decimal number to roman number and vice-versa.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Decimal-Roman-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
                     </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Debt-Payoff-Calculator" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Decimal-Roman-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -1926,20 +1916,6 @@
         </div>
         <div class="box">
             <div class="content">
-                <h2>Electricity Bill Calculator</h2>
-                <h3>Calculates electricity costs based on user-supplied units, time, and cost parameters.</h3>
-                <div class="card-footer">
-                    <a href="./Calculators/Electricity-Bill-Calculator/index.html" target="_blank">
-                        <button>Try Now</button>
-                    </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Electricity-Bill-Calculator" title="Source Code" target="_blank">
-                        <img src="./assets/images/github.png" alt="Source Code"></img>
-                    </a>
-                </div>
-            </div>
-        </div>
-         <div class="box">
-            <div class="content">
                 <h2>Electric Vehicle Savings Calculator</h2>
                 <h3>Calculates savings from using an electric vehicle VS a gasoline vehicle.</h3>
                 <div class="card-footer">
@@ -1947,6 +1923,20 @@
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Electric-Vehicle-Savings-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Electricity Bill Calculator</h2>
+                <h3>Calculates electricity costs based on user-supplied units, time, and cost parameters.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Electricity-Bill-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Electricity-Bill-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -2192,13 +2182,13 @@
         </div>
         <div class="box">
             <div class="content">
-                <h2>Falling Object Under Gravity Calculator</h2>
-                <h3>Calculates the time and speed of a free-falling object under gravity. </h3>
+                <h2>Falling Object Calculator</h2>
+                <h3>Calculates the time and speed of a free-falling object under gravity.</h3>
                 <div class="card-footer">
-                    <a href="./Calculators/Falling-under-gravity-calculator/index.html" target="_blank">
+                    <a href="./Calculators/Falling-Object-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
                     </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Falling-under-gravity-calculator" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Falling-Object-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -2235,12 +2225,12 @@
         <div class="box">
             <div class="content">
                 <h2>Finance Calculator</h2>
-                <h3>Calculate the future value of investments and monthly loan payments.</h3>
+                <h3>Calculates the future value of investments and monthly loan payments.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Finance-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
                     </a>
-                    <a href="https://github.com/priyashuu/CalcDiverse/tree/main/Calculators/Finance-Calculator" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Finance-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -2472,13 +2462,13 @@
         </div>
         <div class="box">
             <div class="content">
-                <h2>Gauss-Jordan Calculator</h2>
+                <h2>Gauss-Jordan Elimination Calculator</h2>
                 <h3>Calculator that finds solution to system of linear equations using Gauss-Jordan Elimination method.</h3>
                 <div class="card-footer">
-                    <a href="./Calculators/Gauss-Jordan-Calculator/index.html" target="_blank">
+                    <a href="./Calculators/Gauss-Jordan-Elimination-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
                     </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Gauss-Jordan Calculator" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Gauss-Jordan-Elimination-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -2682,6 +2672,20 @@
         </div>
         <div class="box">
             <div class="content">
+                <h2>Heat Capacity Calculator</h2>
+                <h3>calculates the heat capacity of substances.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Heat-Capacity-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Heat-Capacity-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
                 <h2>Heat Index Calculator</h2>
                 <h3>Calculates the heat index based on the temperature and humidity values.</h3>
                 <div class="card-footer">
@@ -2850,6 +2854,20 @@
         </div>
         <div class="box">
             <div class="content">
+                <h2>Inductance Calculator</h2>
+                <h3>Calculates the inductance of a coil.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Inductance-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Inductance-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
                 <h2>Infix Prefix Postfix Calculator</h2>
                 <h3>Converts between infix, prefix and postfix expressions.</h3>
                 <div class="card-footer">
@@ -2976,6 +2994,20 @@
         </div>
         <div class="box">
             <div class="content">
+                <h2>Kinematics Calculator</h2>
+                <h3>Computes and visualizes 1D, 2D, and 3D motion with velocity-time graphs.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Kinematics-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Kinematics-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
                 <h2>Kinetic And Potential Energy Calculator</h2>
                 <h3>Calculates the kinetic and potential energy.</h3>
                 <div class="card-footer">
@@ -2990,20 +3022,6 @@
         </div>
         <div class="box">
             <div class="content">
-                <h2>Lattice Energy Calculator</h2>
-                <h3>The Lattice Energy Calculator computes the lattice energy of ionic compounds based on ion charges and their separation distance.</h3>
-                <div class="card-footer">
-                    <a href="./Calculators/Lattice-Energy-Calculator/index.html" target="_blank">
-                        <button>Try Now</button>
-                    </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Lattice-Energy-Calculator" title="Source Code" target="_blank">
-                        <img src="./assets/images/github.png" alt="Source Code"></img>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="content">
                 <h2>LCM Calculator</h2>
                 <h3>Calculates LCM of multiple numbers.</h3>
                 <div class="card-footer">
@@ -3011,6 +3029,20 @@
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/LCM-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Lattice Energy Calculator</h2>
+                <h3>Computes the lattice energy of ionic compounds based on ion charges and their separation distance.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Lattice-Energy-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Lattice-Energy-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -3033,12 +3065,12 @@
         <div class="box">
             <div class="content">
                 <h2>Lease Calculator</h2>
-                <h3>Calculates Lease payments that needs to be paid/h3>
+                <h3>Calculates the lease payments that needs to be paid.</h3>
                 <div class="card-footer">
-                    <a href="./Calculators/Lease-calculator/index.html" target="_blank">
+                    <a href="./Calculators/Lease-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
                     </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Lease-calculator title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Lease-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -3106,7 +3138,7 @@
                 <h3>Calculates display the slope, intercept, and a plot of the data points with the regression line.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Linear-Regression-Calculator/index.html" target="_blank">
-                        <button>Calculate</button>
+                        <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Linear-Regression-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
@@ -3172,13 +3204,13 @@
         </div>
         <div class="box">
             <div class="content">
-                <h2>Logical Micro-Operations Calculator</h2>
-                <h3>Solves logical micro-operations of Computer Architecture</h3>
+                <h2>Logical Micro Operations Calculator</h2>
+                <h3>Solves logical micro-operations of computer architecture.</h3>
                 <div class="card-footer">
-                    <a href="./Calculators/Logical-MicroOperations-Calculator/index.html" target="_blank">
+                    <a href="./Calculators/Logical-Micro-Operations-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
                     </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Logical-MicroOperations-Calculator" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Logical-Micro-Operations-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -3242,6 +3274,20 @@
         </div>
         <div class="box">
             <div class="content">
+                <h2>Macro Calculator</h2>
+                <h3>Helps users determine their daily macronutrient needs based on various parameters.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Macro-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Macro-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
                 <h2>Macro Nutrient Calculator</h2>
                 <h3>Calculates an individual's daily macronutrient needs based on personal fitness goals and activity levels.</h3>
                 <div class="card-footer">
@@ -3291,6 +3337,20 @@
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Mass-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Mass Spring Calculator</h2>
+                <h3>Calculates the various properties of a mass-spring system.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Mass-Spring-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Mass-Spring-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -3396,13 +3456,13 @@
         </div>
         <div class="box">
             <div class="content">
-                <h2>Money Counter Calculator</h2>
-                <h3>Calculates total money in Rs and provides currency conversion</h3>
+                <h2>Molality Calculator</h2>
+                <h3>Calculates the mass of a compound needed to achieve a desired molality in a solution.</h3>
                 <div class="card-footer">
-                    <a href="./Calculators/Money-Counter-Calculator/index.html" target="_blank">
+                    <a href="./Calculators/Molality-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
                     </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Mobility-Calculator" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Molality-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -3414,21 +3474,6 @@
                 <h3>Calculates the mass of a compound needed to achieve a desired molarity in a solution.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Molarity-Calculator/index.html" target="_blank">
-                        <button>Try Now</button>
-                    </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Molarity-Calculator" title="Source Code" target="_blank">
-                        <img src="./assets/images/github.png" alt="Source Code"></img>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="content">
-                <h2>Molality Calculator</h2>
-                <h3>Calculates the mass of a compound needed to achieve a desired molality in a solution.</h3>
-                <div class="card-footer">
-                    <a href="./Calculators/Molality-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Molarity-Calculator" title="Source Code" target="_blank">
@@ -3474,6 +3519,20 @@
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Momentum-With-Time-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Money Counter Calculator</h2>
+                <h3>Calculates total money in Rs and provides currency conversion.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Money-Counter-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Money-Counter-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -3622,7 +3681,7 @@
         <div class="box">
             <div class="content">
                 <h2>Normality Calculator</h2>
-                <h3>Calculates the mass of a compound needed to achieve a desired Normality in a solution.</h3>
+                <h3>Calculates the mass of a compound needed to achieve a desired normality in a solution.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Normality-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
@@ -3846,7 +3905,7 @@
         <div class="box">
             <div class="content">
                 <h2>Paper Weight Calculator</h2>
-                <h3>A Paper Weight Calculator determines the weight of paper based on its dimensions, type, and quantity.</h3>
+                <h3>Determines the weight of paper based on its dimensions, type, and quantity.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Paper-Weight-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
@@ -4182,12 +4241,12 @@
          <div class="box">
             <div class="content">
                 <h2>Prime Number Calculator</h2>
-                <h3>Calculates given number is prime or not.</h3>
+                <h3>Checks if a given number is prime or not.</h3>
                 <div class="card-footer">
-                    <a href="./Calculators/Prime-No-Calculator/index.html" target="_blank">
+                    <a href="./Calculators/Prime-Number-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
                     </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Prime-No-Calculator" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Prime-Number-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -4335,6 +4394,20 @@
         </div>
         <div class="box">
             <div class="content">
+                <h2>RD Calculator</h2>
+                <h3>Computes the maturity and interest for recurring deposits at a given annual rate.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/RD-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/RD-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
                 <h2>ROI Calculator</h2>
                 <h3>Calculates the return on investment for your invested amount.</h3>
                 <div class="card-footer">
@@ -4426,20 +4499,6 @@
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Ratio-Calculator" title="Source Code" target="_blank">
-                        <img src="./assets/images/github.png" alt="Source Code"></img>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="content">
-                <h2>RD Calculator</h2>
-                <h3>Computes the maturity amount and interest earned from regular monthly deposits at a given annual interest rate.</h3>
-                <div class="card-footer">
-                    <a href="./Calculators/RD-Calculator/index.html" target="_blank">
-                        <button>Try Now</button>
-                    </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/RD-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -4678,20 +4737,6 @@
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Set-Operations-Calculator" title="Source Code" target="_blank">
-                        <img src="./assets/images/github.png" alt="Source Code"></img>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="content">
-                <h2>Macros Calculator</h2>
-                <h3>Helps users determine their daily macronutrient needs based on their age, weight, height, gender, and activity level.</h3>
-                <div class="card-footer">
-                    <a href="./Calculators/Macros-Calculator/index.html" target="_blank">
-                        <button>Try Now</button>
-                    </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Macros-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -5008,7 +5053,7 @@
         <div class="box">
             <div class="content">
                 <h2>Sudoku Calculator</h2>
-                <h3>Generates and solves sudoku</h3>
+                <h3>Generates and solves sudoku.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Sudoku-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
@@ -5161,8 +5206,22 @@
         </div>
         <div class="box">
             <div class="content">
+                <h2>Tangent Formula Calculator</h2>
+                <h3>Calculates the tangent angle of a triangle.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Tangent-Formula-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Tangent-Formula-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
                 <h2>Taxi Fare Calculator</h2>
-                <h3>Calculates the cost of taxi ride based on distance, base fare and time.</h3>
+                <h3>Calculates the cost of taxi rides based on distance, base fare, and time.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Taxi-Fare-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
@@ -5301,12 +5360,12 @@
         <div class="box">
             <div class="content">
                 <h2>Titration Calculator</h2>
-                <h3>A Titration Calculator is a valuable tool in chemistry that helps determine the concentration of an unknown solution by using a solution of known concentration (the titrant)..</h3>
+                <h3>Determines the concentration of an unknown solution by using a solution of known concentration.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Titration-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
                     </a>
-                    <a href="https://github.com/mahek0620/CalcDiverse/tree/titration/Calculators/Titration-Calculator" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Titration-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -5720,20 +5779,6 @@
         </div>
         <div class="box">
             <div class="content">
-                <h2>Young's Double Slit Experiment Calculator</h2>
-                <h3>Computes the positions of bright and dark fringes as well as the fringe spacing.</h3>
-                <div class="card-footer">
-                    <a href="./Calculators/Young's-Double-Slit-Experiment-Calculator/index.html" target="_blank">
-                        <button>Try Now</button>
-                    </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Young's-Double-Slit-Experiment-Calculator" title="Source Code" target="_blank">
-                        <img src="./assets/images/github.png" alt="Source Code"></img>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="content">
                 <h2>Yarn Density Calculator</h2>
                 <h3>Calculates the linear density of the yarn from unit system to another.</h3>
                 <div class="card-footer">
@@ -5741,6 +5786,20 @@
                         <button>Try Now</button>
                     </a>
                     <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Yarn-Density-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Young's Double Slit Experiment Calculator</h2>
+                <h3>Computes the positions of bright and dark fringes as well as the fringe spacing.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Young's-Double-Slit-Experiment-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Young's-Double-Slit-Experiment-Calculator" title="Source Code" target="_blank">
                         <img src="./assets/images/github.png" alt="Source Code"></img>
                     </a>
                 </div>
@@ -5762,8 +5821,22 @@
         </div>
         <div class="box">
             <div class="content">
+                <h2>Z-Spray Calculator</h2>
+                <h3>Determines the amount of spray needed for lawn and garden care.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Z-Spray-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Z-Spray-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
                 <h2>Zener Diode Calculator</h2>
-                <h3>It helps you quickly determine the correct resistor value for stable voltage regulation in Zener diode circuits.</h3>
+                <h3>Determines the correct resistor value for stable voltage regulation in Zener diode circuits.</h3>
                 <div class="card-footer">
                     <a href="./Calculators/Zener-Diode-Calculator/index.html" target="_blank">
                         <button>Try Now</button>
@@ -5788,25 +5861,11 @@
                 </div>
             </div>
         </div>
-        <div class="box">
-            <div class="content">
-                <h2>Critical Point Calculator</h2>
-                <h3>Calculates the Critical point of ideal gases based on a and b</h3>
-                <div class="card-footer">
-                    <a href="./Calculators/Critical-Point-Calculator/index.html" target="_blank">
-                        <button>Try Now</button>
-                    </a>
-                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Critical-Point-Calculator" title="Source Code" target="_blank">
-                        <img src="./assets/images/github.png" alt="Source Code"></img>
-                    </a>
-                </div>
-            </div>
-        </div>
+
         <br><br><br><br><br>
         <div id="noResults" style="color: white; font-weight: bold; font-size: 18px;">
             <p>No results found 🙃</p>
         </div>
-
     </div>
 
     <!-- Calculator Section Ends Here  -->

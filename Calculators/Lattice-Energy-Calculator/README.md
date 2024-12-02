@@ -11,3 +11,5 @@ The Lattice Energy Calculator helps you determine the lattice energy of ionic co
 - JavaScript
 
 ## Screenshots :-
+
+![image](https://github.com/user-attachments/assets/157a4bf3-4582-46f3-9391-d87ea588697c)
