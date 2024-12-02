@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e695a2;
+}
+
+.calculator {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(206, 34, 100, 0.5);
+    width: 300px;
+}
+
+#infoButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#infoButton:hover {
+    background-color: #fdfeff;
+}
+
+#infoButton img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+#infoButton:hover img {
+    opacity: 0.8;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 40px 40px rgba(14, 11, 11, 0.1);
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content p {
+    margin: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 1px;
+    right: 7px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #dc4c4c;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.currency-symbol {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.input-group input {
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+}
+
+input[readonly] {
+    background-color: #e9e9e9;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #d76995;
+    color: white;
+}
+
+#red:hover {
+    background-color: #e33128;
+}
+
+#green:hover {
+    background-color: rgb(76, 205, 76);
+}
+
+#tax {
+    margin-bottom: 1px;
+}
+
+#grosslabel {
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+#net {
+    margin-bottom: 1px;
+}
+
+#trate {
+    padding-top: 5px;
+}

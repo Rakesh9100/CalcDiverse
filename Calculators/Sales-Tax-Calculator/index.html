@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sales Tax Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <a href="javascript:void(0)" onclick="showi()" id="infoButton">     <!--javascript:void(0) blocks you from navigating to any link, when clicked-->
+            <img src="assets/image.png" alt="Info" />
+        </a>
+        <h1>Sales Tax Calculator</h1>
+
+        <label id="net" for="netprice">Net Price:</label>
+        <div class="input-group">
+            <span class="currency-symbol">₹</span>
+            <input type="number" id="netprice" placeholder="Enter Net Price">
+        </div>
+
+        <label id="trate" for="rate">Tax Rate (%):</label>
+        <input type="number" id="rate" placeholder="Enter Tax Rate">
+
+        <label id="grosslabel" for="gross">Gross Amount:</label>
+        <div class="input-group">
+            <span class="currency-symbol">₹</span>
+            <input type="number" id="gross" placeholder="Enter Gross Amount">
+        </div>
+
+        <label id="tax" for="taxprice">Tax Amount:</label>
+        <div class="input-group">
+            <span class="currency-symbol">₹</span>
+            <input type="number" id="taxprice" readonly>
+        </div>
+
+        <div class="buttons">
+            <button id="green" onclick="init()">Calculate</button>
+            <button id="red" onclick="clearVal()">Clear</button>
+        </div>
+    </div>
+
+    <div id="infoPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeBox()">&times;</span>
+            <h2>Calculator Info</h2>
+            <p><strong>Net Price:</strong> The price before any taxes are applied.</p>
+            <p><strong>Tax Rate:</strong> The percentage of the net price that will be added as tax.</p>
+            <p><strong>Tax Amount:</strong> The amount of tax calculated based on the net price and tax rate.</p>
+            <p><strong>Gross Amount:</strong> The total price including the tax.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
