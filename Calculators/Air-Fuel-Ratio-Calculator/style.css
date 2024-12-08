@@ -22,7 +22,7 @@ body {
     width: 400px;
     background: white;
     border-radius: 25px;
-    box-shadow: 
+    box-shadow:
         0 15px 35px rgba(0, 0, 0, 0.05),
         0 10px 20px rgba(0, 0, 0, 0.05);
     padding: 30px;
@@ -34,7 +34,7 @@ body {
     background: linear-gradient(145deg, #f0f5f0 0%, #e6f1e6 100%);
     border-radius: 20px;
     padding: 25px;
-    box-shadow: 
+    box-shadow:
         inset 5px 5px 10px #d1e0d1,
         inset -5px -5px 10px #ffffff;
 }
@@ -51,7 +51,8 @@ label {
     font-size: 0.9em;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 12px 15px;
     border: 2px solid #e0e6ed;
@@ -64,7 +65,8 @@ input, select {
     transition: all 0.3s ease;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     border-color: #4CAF50;
     box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
 }
@@ -127,7 +129,8 @@ input::placeholder {
     box-shadow: 0 5px 10px rgba(76, 175, 80, 0.2);
 }
 
-#resultDisplay, #selectedAFR {
+#resultDisplay,
+#selectedAFR {
     text-align: center;
     font-weight: 600;
     color: #2c3e50;
