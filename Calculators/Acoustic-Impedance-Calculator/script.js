@@ -4,7 +4,7 @@ function calculateImpedance() {
     const result = document.getElementById("result");
 
     if (isNaN(density) || isNaN(speed) || density <= 0 || speed <= 0) {
-        result.innerHTML = "please enter valid & positive input";
+        result.innerHTML = "Please enter valid & positive inputs";
         return;
     }
 
