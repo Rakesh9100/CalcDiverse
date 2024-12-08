@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url("assets/background.webp");
+    background-size: cover;
+}
+
+.container {
+    width: 40%;
+    height: 80%;
+    border: 2px solid rgb(112, 128, 178);
+    margin-left: 30%;
+    margin-top: 10%;
+    background-color: rgb(133, 145, 183);
+    padding: 1.5%;
+}
+
+.input-grp {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.input-grp label {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+input {
+    width: 30%;
+    text-decoration: none;
+    border-radius: 5%;
+    height: 2rem;
+    width: 10rem;
+    border: 1px solid rgb(114, 78, 190);
+}
+
+button {
+    margin-bottom: 4%;
+    height: 2rem;
+    width: 10rem;
+    text-decoration: none;
+    border-radius: 2%;
+    cursor: pointer;
+    background-color: rgb(124, 124, 183);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid rgb(114, 78, 190);
+}
+
+button:hover {
+    background-color: rgb(114, 78, 190);
+}
+
+.result {
+    font-size: 1.2rem;
+    font-weight: bold;
+}

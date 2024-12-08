@@ -4,6 +4,7 @@
 <p>
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/04e17044-20bb-45e0-8c38-1ec4b63a846c/deploy-status)](https://app.netlify.com/sites/calcdiverse/deploys)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=Rakesh9100%2FCalcDiverse%20&countColor=%23263759&style=flat)
 ![GitHub forks](https://img.shields.io/github/forks/Rakesh9100/CalcDiverse)
@@ -428,7 +429,7 @@ git push origin <your_branch_name>
 
 <h2>Contributing Guidelines📑</h2>
 
-Read our [Contributing Guidelines](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CONTRIBUTING_GUIDELINES.md) to learn about our development process, how to propose bugfixes and improvements, and how to build to Click-The-Edible-Game.
+Read our [Contributing Guidelines](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CONTRIBUTING_GUIDELINES.md) to learn about our development process, how to propose bugfixes and improvements, and how to build to CalcDiverse.
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
