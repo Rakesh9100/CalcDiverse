@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Air Fuel Ratio Calculator</title>
+</head>
+<body>
+    <div class="afr-calculator">
+        <div class="display">
+            <div class="input-section">
+                <label for="massOfAir">Mass of Air:</label>
+                <input type="number" id="massOfAir" placeholder="Enter mass (e.g., grams)">
+                <select id="airUnit">
+                    <option value="1">grams</option>
+                    <option value="1000">kilograms</option>
+                    <option value="453.592">pounds</option>
+                </select>
+            </div>
+            <div class="input-section">
+                <label for="massOfFuel">Mass of Fuel:</label>
+                <input type="number" id="massOfFuel" placeholder="Enter mass (e.g., grams)">
+                <select id="fuelUnit">
+                    <option value="1">grams</option>
+                    <option value="1000">kilograms</option>
+                    <option value="453.592">pounds</option>
+                </select>
+            </div>
+            <button class="btn" onclick="calculateAFR()">Calculate AFR</button>
+            <div id="resultDisplay">AFR Ratio: 0</div>
+            <div class="input-section">
+                <label for="fuelDropdown">Select Fuel:</label>
+                <input type="text" id="fuelSearch" placeholder="Type or select fuel...">
+                <select id="fuelDropdown" size="5"></select>
+                <div id="selectedAFR">AFR: </div>
+            </div>
+            <button class="btn" onclick="showFuelAFR()">Show AFR</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

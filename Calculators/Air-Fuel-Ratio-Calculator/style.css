@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f6f8f9 0%, #e5ebee 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.afr-calculator {
+    width: 400px;
+    background: white;
+    border-radius: 25px;
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.05),
+        0 10px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    transform: perspective(1000px) rotateX(-10deg);
+    opacity: 0.95;
+}
+
+.display {
+    background: linear-gradient(145deg, #f0f5f0 0%, #e6f1e6 100%);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow:
+        inset 5px 5px 10px #d1e0d1,
+        inset -5px -5px 10px #ffffff;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 0.9em;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e6ed;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    background: #f9fbfc;
+    color: #2c3e50;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+input::placeholder {
+    color: #a0aec0;
+    font-weight: 300;
+}
+
+#fuelDropdown {
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: #4CAF50 #e0e6ed;
+}
+
+#fuelDropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+#fuelDropdown::-webkit-scrollbar-track {
+    background: #e0e6ed;
+    border-radius: 10px;
+}
+
+#fuelDropdown::-webkit-scrollbar-thumb {
+    background-color: #4CAF50;
+    border-radius: 10px;
+}
+
+#fuelDropdown option {
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+    transform: translateY(0);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(76, 175, 80, 0.4);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(76, 175, 80, 0.2);
+}
+
+#resultDisplay,
+#selectedAFR {
+    text-align: center;
+    font-weight: 600;
+    color: #2c3e50;
+    padding: 15px;
+    background: rgba(76, 175, 80, 0.1);
+    border-radius: 15px;
+}
+
+#resultDisplay {
+    font-size: 1.3em;
+}
+
+#selectedAFR {
+    font-size: 1em;
+    color: #4CAF50;
+}
+
+@media (max-width: 480px) {
+    .afr-calculator {
+        width: 95%;
+        padding: 20px;
+        transform: none;
+    }
+}
