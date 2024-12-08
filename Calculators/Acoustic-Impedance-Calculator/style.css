@@ -1,43 +1,42 @@
-*{
+* {
     margin: 0;
-   
 }
 
-body{
-    background-image: url(./assests/accoustic_bcg.webp);
+body {
+    background-image: url("assets/background.webp");
     background-size: cover;
 }
 
-.container{
+.container {
     width: 40%;
     height: 80%;
     border: 2px solid rgb(112, 128, 178);
     margin-left: 30%;
     margin-top: 10%;
-    background-color: rgb(133, 145, 183) ;
+    background-color: rgb(133, 145, 183);
     padding: 1.5%;
 }
 
-.input-grp{
+.input-grp {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.input-grp label{
+.input-grp label {
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-input{
+input {
     width: 30%;
     text-decoration: none;
-    border-radius:5%;
+    border-radius: 5%;
     height: 2rem;
     width: 10rem;
     border: 1px solid rgb(114, 78, 190);
 }
 
-button{
+button {
     margin-bottom: 4%;
     height: 2rem;
     width: 10rem;
@@ -51,11 +50,11 @@ button{
     border: 1px solid rgb(114, 78, 190);
 }
 
-button:hover{
+button:hover {
     background-color: rgb(114, 78, 190);
 }
 
-.result{
+.result {
     font-size: 1.2rem;
     font-weight: bold;
 }
