@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recoil Energy Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Recoil Energy Calculator</h2>
+        <div class="inp">
+            <label>Enter mass of bullet (in kg) : </label>
+            <input placeholder="Enter mass of bullet" id="massBullet"> 
+        </div>
+        <div class="inp">
+            <label>Enter velocity of bullet (in meter / sec) : </label>
+            <input placeholder="Enter velocity of bullet" id="velBullet"> 
+        </div>
+        <div class="inp">
+            <label>Enter mass of gun (in kg) : </label>
+            <input placeholder="Enter mass of gun" id="massGun">  
+        </div>
+        <button onclick="calculateRecoilEnergy()">Calculate</button>
+        <div class="result" id="result"></div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

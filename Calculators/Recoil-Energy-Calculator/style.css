@@ -1,34 +1,34 @@
-body{
-    background-image: url('./recoil.jpg');
-   background-size:cover;
-   background-repeat: no-repeat;
+body {
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.container{
+.container {
     border: 3px solid white;
     color: black;
     width: 40%;
-    margin-top:10%;
+    margin-top: 10%;
     margin-left: 30%;
     height: 90%;
     background-color: gray;
     padding: 2%;
 }
 
-.container h2{
+.container h2 {
     font-weight: bold;
 }
 
-.inp{
+.inp {
     margin-bottom: 3%;
 }
 
-input{
+input {
     height: 20%;
     width: 40%;
 }
 
-button{
+button {
     margin-bottom: 2%;
     height: 2rem;
     border-radius: 5%;
@@ -37,13 +37,12 @@ button{
     /* background-color: gray; */
 }
 
-button:hover{
+button:hover {
     background-color: rgba(244, 235, 235, 0.4);
 }
 
-.result{
+.result {
     color: red;
     font-size: 1.5rem;
-   font-weight: bold;
+    font-weight: bold;
 }
-
