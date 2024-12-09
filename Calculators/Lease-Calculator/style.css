@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,61 +10,92 @@ body {
 
 .container {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
     width: 100%;
     animation: fadeIn 1s ease-in-out;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #2d3436;
 }
 
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-    color: #555;
+    margin-bottom: 8px;
+    color: #636e72;
 }
 
 input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #0984e3;
+    outline: none;
+    box-shadow: 0 0 8px rgba(9, 132, 227, 0.3);
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background: #28a745;
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
     border: none;
-    color: white;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    color: white;
     transition: background 0.3s ease;
 }
 
-button:hover {
-    background: #218838;
+.calculate-btn {
+    background: #00b894;
 }
 
-.results {
+.calculate-btn:hover {
+    background: #00a37a;
+}
+
+.reset-btn {
+    background: #d63031;
+}
+
+.reset-btn:hover {
+    background: #b52a26;
+}
+
+.results,
+.error-message {
     margin-top: 20px;
-    display: none;
     animation: slideIn 0.5s ease-in-out;
+}
+
+.error-message {
+    color: #d63031;
+    font-weight: bold;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -75,14 +106,9 @@ button:hover {
         transform: translateY(20px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
-    }
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 15px;
     }
 }
