@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    background-image: url('assets/background.png');
+    color: white;
+    font-family: "Nunito", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 470px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid rgb(138, 0, 230);
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100px;
+    padding: 15px;
+    box-shadow: 0px 0px 15px 10px rgb(226, 206, 255),
+        inset 0px 0px 15px 10px rgb(26, 26, 26);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+}
+
+.heading {
+    text-align: center;
+    text-shadow: 0px 0px 20px rgb(162, 0, 255);
+}
+
+.dispformula {
+    text-align: center;
+    position: relative;
+    left: 125px;
+    top: -15px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 5px rgb(255, 255, 255);
+}
+
+.box {
+    border-radius: 5em;
+    padding: 5px;
+    background-color: rgb(30, 30, 30);
+    margin-left: 18px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(251, 222, 255);
+    box-shadow: inset 0px 0px 3px rgb(255, 255, 255);
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+#btn {
+    padding: 20px;
+    border-radius: 5em;
+    cursor: pointer;
+    background-color: rgb(120, 57, 179);
+    color: white;
+    box-shadow: inset 0px 0px 5px rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+#btn:active {
+    text-decoration: underline;
+}
+
+.calcout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 120px;
+}
+
+#ans {
+    border-radius: 5em;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    color: white;
+    cursor: not-allowed;
+}

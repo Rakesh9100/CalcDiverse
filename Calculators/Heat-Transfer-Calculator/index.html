@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Heat Transfer Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>HEAT TRANSFER CALCULATOR</h1>
+        </div>
+        <div class="dispformula">
+            <p id="formula">H = [K*A*(T<sub>1</sub>-T<sub>2</sub>)*t]/L</p>
+        </div>
+        <div class="inputs">
+            <input type="text" name="conductivity" id="cond" class="box" placeholder="Enter K (in W/m-K)">
+            <input type="text" name="crossarea" id="area" class="box" placeholder="Enter area A (in m&sup2;)">
+            <input type="text" name="temp1" id="t1" class="box" placeholder="Enter T1 (in K or &deg; C)">
+            <input type="text" name="temp2" id="t2" class="box" placeholder="Enter T2 (in K or &deg; C)">
+            <input type="text" name="thickness" id="length" class="box" placeholder="Enter Length L (in m)">
+            <input type="text" name="time" id="time" class="box" placeholder="Enter Time t (in s)">
+        </div>
+        <div class="calcout">
+            <div class="button">
+                <button id="btn">CALCULATE!</button>
+            </div>
+            <div class="output">
+                <input type="text" name="dispans" id="ans" placeholder="Heat transferred (in J)">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
