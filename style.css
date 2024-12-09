@@ -109,6 +109,14 @@ input:checked+.slider:before {
     background: linear-gradient(45deg, rgb(97, 189, 229), rgb(212, 22, 208));
 }
 
+.dark-mode .comp-section .compcontainer h3 {
+    color: #000080;
+}
+
+.dark-mode .paragraph {
+    color: #000080;
+}
+
 .dark-mode .circle-container {
     color: pink;
 }
