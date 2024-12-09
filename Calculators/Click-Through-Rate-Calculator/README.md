@@ -4,6 +4,12 @@
 
 A **Click-Through Rate (CTR) Calculator** is a tool designed to calculate the CTR of an online advertisement or website link. CTR is a critical metric in digital marketing that determines the effectiveness of an ad or link in driving users to click on it.
 
+## Tech Stacks :-
+
+- HTML
+- CSS
+- JavaScript
+
 ## Features :-
 
 - Input the **number of clicks** and **impressions**.
