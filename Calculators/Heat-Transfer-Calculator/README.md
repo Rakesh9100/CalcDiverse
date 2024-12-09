@@ -3,7 +3,7 @@
 ## Description :-
 
 The Heat Transfer Calculator is designed to calculate the amount of heat transferred between one region of temperature T1 and another region of temperature T2, which are L distance apart. The cross sectional area through which heat transfer occurs is A and the thermal conductivity of the material is K.
-Working formula:- H=(K* A *(T<sub>1</sub>-T<sub>2</sub>)*t)/L
+Working formula:- H = (K* A *(T<sub>1</sub>-T<sub>2</sub>)*t)/L
 
 ## Tech Stacks :-
 
