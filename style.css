@@ -100,6 +100,14 @@ input:checked+.slider:before {
     background-image: url(./assets/images/light.jpg);
 }
 
+.dark-mode .paragraph {
+    color:  #000080  ;
+}
+.dark-mode .comp-section .compcontainer h3 {
+   color:#000080  ;
+}
+
+
 .dark-mode .navbar {
     background-color: #f493cf;
     box-shadow: 0 20px 16px 0 rgba(240, 161, 227, 0.37);
@@ -437,6 +445,7 @@ section {
     gap: 30px;
     z-index: 200;
 }
+
 
 .comp-section .compcontainer h1 {
     font-family: Ubuntu;
