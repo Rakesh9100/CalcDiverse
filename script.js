@@ -343,3 +343,10 @@ function validateName(inputId) {
         input.value = value.replace(/[^A-Za-z ]/g, ''); // Remove any non-alphabetic characters
     }
 }
+
+function scrollToSearch() {
+    const searchBar = document.getElementById('searchBar');
+    searchBar.scrollIntoView({
+        behavior: "smooth"
+    });
+}
