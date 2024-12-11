@@ -344,7 +344,9 @@ function validateName(inputId) {
     }
 }
 
-function scrollToSearch(){
-   const searchBar = document.getElementById('searchBar');
-   searchBar.scrollIntoView({behavior:"smooth"});
+function scrollToSearch() {
+    const searchBar = document.getElementById('searchBar');
+    searchBar.scrollIntoView({
+        behavior: "smooth"
+    });
 }
