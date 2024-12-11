@@ -1771,16 +1771,49 @@ footer {
 .heading {
     text-align: center;
 }
-
+ 
 .footer-ul {
     justify-items: center;
     align-items: center;
     text-align: center;
 }
 
-.footer-ul li a:hover {
-    color: #00d0ff;
+.footer-ul li {   
+    margin: 10px 15px;
+    position: relative;
 }
+
+.footer-ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #d9e6e7;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+.footer-ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #d31313; /* Underline color */
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-ul li a:hover {
+    color: #ec685c; /* Text color on hover */
+}
+
+.footer-ul li a:hover::after {
+    width: 100%; /* Underline expands on hover */
+}
+
+ 
 
 .social {
     font-size: 3.5rem;
