@@ -120,7 +120,7 @@ var budgetController = (function () {
 
 
 /**********************
-		UI CONTROLLER
+        UI CONTROLLER
 **********************/
 
 var UIController = (function () {
@@ -262,9 +262,7 @@ var UIController = (function () {
 })();
 
 
-/**********************
-		APP CONTROLLER
-**********************/
+/********************** APP CONTROLLER **********************/
 
 var controller = (function (budgetCtrl, UICtrl) {
 
@@ -287,7 +285,7 @@ var controller = (function (budgetCtrl, UICtrl) {
     };
 
     var updatePercentages = function () {
-        budgetCtrl.calculatePercentages(); // 1. Calculate percentages	
+        budgetCtrl.calculatePercentages(); // 1. Calculate percentages
         var percentages = budgetCtrl.getPercentages(); // 2. Read percentages from budgetCtrl
         UICtrl.displayPercentages(percentages); // 3. Update UI with new percentages
     };
