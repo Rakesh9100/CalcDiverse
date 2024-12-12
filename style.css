@@ -1604,25 +1604,40 @@ section {
 
 #pagination-controls {
     display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 60px;
+    gap: 15px;
+    margin: 20px 0;
 }
 
 #pagination-controls button {
-    color: black;
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    border: none;
+    border-radius: 30px;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.6);
     cursor: pointer;
-    font-size: medium;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#pagination-controls #prev {
-    margin-right: 50px;
+#pagination-controls button:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.7);
+    background: linear-gradient(145deg, #1196c3, #36b3d5);
 }
 
-#pagination-controls #next {
-    margin-left: 50px;
+#pagination-controls button:active {
+    transform: translateY(2px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -3px -3px 5px rgba(255, 255, 255, 0.7);
+}
+
+#pagination-controls span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
 }
 
 #pagination-controls #page-info {
