@@ -87,6 +87,22 @@ header {
     gap: 20px;
     width: 100%;
 }
+.dark-mode  .card{
+background-color: #D416D0FF;
+}
+.dark-mode .card::before,
+.card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f493cf;
+    transition: all 0.5s;
+}
+
 
 .card {
     position: relative;
