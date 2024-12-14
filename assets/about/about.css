@@ -5,13 +5,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
 .dark-mode {
     background-color: #D416D0FF;
     color: #ffffff;
 }
 
 .dark-mode .card {
-    background-color:  #D416D0FF;
+    background-color: #D416D0FF;
     color: #e0e0e0;
 }
 
@@ -34,13 +41,7 @@
 }
 
 .dark-mode .card-hover-text {
-    color: #f0f0f0;
-}
-
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+    color: #000080;
 }
 
 .circle {
