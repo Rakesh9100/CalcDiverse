@@ -1693,6 +1693,14 @@ footer {
     margin-bottom: 10px;
 }
 
+.company-name img {
+    width: 36px;
+    width: 36px;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
 .company-info p {
     line-height: 1.8;
     text-align: center;
@@ -1794,8 +1802,38 @@ footer {
     text-align: center;
 }
 
+.footer-ul li {
+    margin: 10px 15px;
+    position: relative;
+}
+
+.footer-ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+.footer-ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff1b82; /* Underline color */
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .footer-ul li a:hover {
-    color: #00d0ff;
+    color: #ff1b82; /* Text color on hover */
+}
+
+.footer-ul li a:hover::after {
+    width: 100%; /* Underline expands on hover */
 }
 
 .social {
