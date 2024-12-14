@@ -1,0 +1,165 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #1e3c72, #2a5298, #6dd5ed);
+    background-size: 200% 200%;
+    animation: backgroundShift 12s ease-in-out infinite;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #1c1b29;
+    text-align: center;
+    position: relative;
+    display: flex; /* Added */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.container::before {
+    content: "";
+    background-image: conic-gradient(
+        #ff6b6b, #ffcc70, #1dd1a1, #54a0ff, #ff6b6b
+    );
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    left: -25%;
+    top: -25%;
+    animation: rotate 3s infinite linear;
+}
+
+.container::after {
+    content: '';
+    height: 94%;
+    width: 94%;
+    position: absolute;
+    background-color: #1c1b29;
+    border-radius: 10px;
+    top: 3%;
+    left: 3%;
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    background: radial-gradient(circle, rgb(0, 149, 255),white);
+    background-clip: text;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    font-size: 35px;
+    color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation:  gemini 15s linear infinite;
+    background-size: 200% 200%;
+}
+
+input {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #ff6f61, #f6416c);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s;
+    position: relative;
+    z-index: 1;
+    font-size: 17px;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #f6416c, #ff6f61);
+    transform: scale(1.1);
+}
+
+.result {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    background: rgba(16, 0, 0, 0.2);
+    border-radius: 10px;
+    display: none;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes backgroundShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gemini {
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+    
+}
