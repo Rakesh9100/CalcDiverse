@@ -39,9 +39,9 @@
 
 .theme-switch {
     display: inline-block;
-    height: 34px;
+    height: 32px;
     position: relative;
-    width: 60px;
+    width: 55px;
 }
 
 .theme-switch input {
@@ -63,11 +63,11 @@
     background-color: #fff;
     bottom: 4px;
     content: "";
-    height: 26px;
+    height: 24px;
     left: 4px;
     position: absolute;
     transition: 0.4s;
-    width: 26px;
+    width: 24px;
 }
 
 input:checked+.slider {
@@ -75,7 +75,7 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
-    transform: translateX(26px);
+    transform: translateX(24px);
 }
 
 .slider.round {
@@ -382,6 +382,7 @@ nav ul {
     display: flex;
     gap: 2rem;
     list-style: none;
+    align-items: center;
 }
 
 #active1 {
@@ -2002,8 +2003,8 @@ footer {
 
 @media (max-width: 1000px) {
     .navbar .nav-link {
-        padding-right: 2px;
-        padding-left: 2px;
+        font-size: 17px;
+        padding: 0 1px;
     }
 }
 
@@ -2021,15 +2022,54 @@ footer {
     }
 
     .navbar .nav-link {
-        font-size: 15px;
-        padding-left: 0px;
-        padding-right: 0px;
+        font-size: 16px;
+    }
+
+    .social {
+        font-size: 2.5rem;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .footer-container {
+        margin: 2px 3px;
+    }
+
+    .company-info,
+    .quick-links,
+    .send-message {
+        margin-top: 8px;
+        text-align: center;
+        flex-basis: 100%;
     }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 855px) and (max-width: 887px) {
+    .navbar .nav-link {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 825px) and (max-width: 855px) {
     .navbar .nav-link {
         font-size: 14px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 825px) {
+    .navbar .nav-link {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 801px) {
+    .navbar .nav-link {
+        font-size: 12px;
     }
 }
 
@@ -2043,7 +2083,6 @@ footer {
 
     .herocontainer {
         border: 1px transparent;
-
         padding-bottom: 10px;
     }
 
@@ -2177,30 +2216,5 @@ footer {
 
     .footer-basic .social {
         padding-bottom: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .social {
-        font-size: 2.5rem;
-        text-decoration: none;
-        transition: 0.3s ease-in-out;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-    }
-
-    .footer-container {
-        margin: 2px 3px;
-    }
-
-    .company-info,
-    .quick-links,
-    .send-message {
-        margin-top: 8px;
-        text-align: center;
-        flex-basis: 100%;
     }
 }
