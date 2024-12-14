@@ -26,7 +26,6 @@ window.addEventListener('scroll', () => {
         link.setAttribute('id', '');
         if (link.getAttribute('href') === `#${currentSection}`) {
             link.setAttribute('id', 'active1');
-            console.log(currentSection);
         }
     });
 });
@@ -332,7 +331,7 @@ if (SpeechRecognition) {
     info.textContent = "Your Browser does not support Speech Recognition";
 }
 
-// Validate input for name fields
+// Form input validation
 function validateName(inputId) {
     let input = document.getElementById(inputId);
     let value = input.value;
@@ -342,4 +341,11 @@ function validateName(inputId) {
         alert("Please enter only characters in the name field.");
         input.value = value.replace(/[^A-Za-z ]/g, ''); // Remove any non-alphabetic characters
     }
+}
+
+function scrollToSearch() {
+    const searchBar = document.getElementById('searchBar');
+    searchBar.scrollIntoView({
+        behavior: "smooth"
+    });
 }

@@ -128,8 +128,8 @@
                 <h1 class="heading">Keep In Touch</h1>
                 <form name="CalcDiverse Contact" autocomplete="off" netlify>
                     <div class="form-group group1">
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required oninput="validateName('name')">
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required oninput="validateName('name')">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
                     </div>
                     <div class="form-group group1">
                         <textarea id="message" name="message" placeholder="Leave your message" required></textarea>
@@ -158,8 +158,7 @@
 
     <!-- ----------------------------------------- Footer Code Ends--------------------------------- -->
 
-    <script src="faq.js"></script>
-    <script src="../../script.js"></script>
+    <script src="./faq.js"></script>
     <script src="../customcursor.js"></script>
 </body>
 

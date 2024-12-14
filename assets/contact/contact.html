@@ -76,6 +76,12 @@
                 <li>
                     <a href="#" class="nav-link" id="active1"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
                 </li>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <div class="slider round"></div>
+                    </label>
+                </div>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -91,10 +97,10 @@
             <p>If you have any questions or feedback, feel free to reach out to us!</p>
             <form id="contact-form" name="CalcDiverse Contact" autocomplete="off" netlify>
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter Your Name" required oninput="validateName('name')">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" autocomplete="name" required oninput="validateName('name')">
 
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter Your Email" required oninput="validateEmail('email')">
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" autocomplete="email" required oninput="validateEmail('email')">
 
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
@@ -134,8 +140,8 @@
                 <h1 class="heading">Keep In Touch</h1>
                 <form name="CalcDiverse Contact" autocomplete="off" netlify>
                     <div class="form-group group1">
-                        <input type="text" id="footer-name" name="name" placeholder="Enter your name" required oninput="validateName('footer-name')">
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <input type="text" id="footer-name" name="name" placeholder="Enter your name" autocomplete="name" required oninput="validateName('footer-name')">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
                     </div>
                     <div class="form-group group1">
                         <textarea id="message" name="message" placeholder="Leave your message" required></textarea>
@@ -163,7 +169,6 @@
     </footer>
 
     <script src="./contact.js"></script>
-    <script src="../../script.js"></script>
     <script src="../customcursor.js"></script>
 </body>
 

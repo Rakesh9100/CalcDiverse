@@ -63,11 +63,11 @@ calculateBtn.addEventListener('click', function () {
 
     //adding the value inside span 
     resultsDiv.innerHTML = `
-		<p class="strong">First Quartile (Q1): <span id="q1" class="ans">${results.q1}</span></p>
-		<p class="strong">Third Quartile (Q3): <span id="q2" class="ans">${results.q3}</p>
-		<p class="strong">Interquartile Range (IQR): <span id="irq" class="ans">${results.iqr}</span></p>
-		<p class="strong">Minimum Value: <span id="min" class="ans">${results.min}</span></p>
-		<p class="strong">Maximum Value: <span id="max" class="ans">${results.max}</span></p>
+        <p class="strong">First Quartile (Q1): <span id="q1" class="ans">${results.q1}</span></p>
+        <p class="strong">Third Quartile (Q3): <span id="q2" class="ans">${results.q3}</p>
+        <p class="strong">Interquartile Range (IQR): <span id="irq" class="ans">${results.iqr}</span></p>
+        <p class="strong">Minimum Value: <span id="min" class="ans">${results.min}</span></p>
+        <p class="strong">Maximum Value: <span id="max" class="ans">${results.max}</span></p>
 `;
 
 });

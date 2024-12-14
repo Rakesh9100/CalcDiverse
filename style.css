@@ -39,9 +39,9 @@
 
 .theme-switch {
     display: inline-block;
-    height: 34px;
+    height: 32px;
     position: relative;
-    width: 60px;
+    width: 55px;
 }
 
 .theme-switch input {
@@ -63,11 +63,11 @@
     background-color: #fff;
     bottom: 4px;
     content: "";
-    height: 26px;
+    height: 24px;
     left: 4px;
     position: absolute;
     transition: 0.4s;
-    width: 26px;
+    width: 24px;
 }
 
 input:checked+.slider {
@@ -75,7 +75,7 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
-    transform: translateX(26px);
+    transform: translateX(24px);
 }
 
 .slider.round {
@@ -382,6 +382,7 @@ nav ul {
     display: flex;
     gap: 2rem;
     list-style: none;
+    align-items: center;
 }
 
 #active1 {
@@ -1604,25 +1605,40 @@ section {
 
 #pagination-controls {
     display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 60px;
+    gap: 15px;
+    margin: 20px 0;
 }
 
 #pagination-controls button {
-    color: black;
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    border: none;
+    border-radius: 30px;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.6);
     cursor: pointer;
-    font-size: medium;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#pagination-controls #prev {
-    margin-right: 50px;
+#pagination-controls button:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.7);
+    background: linear-gradient(145deg, #1196c3, #36b3d5);
 }
 
-#pagination-controls #next {
-    margin-left: 50px;
+#pagination-controls button:active {
+    transform: translateY(2px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -3px -3px 5px rgba(255, 255, 255, 0.7);
+}
+
+#pagination-controls span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
 }
 
 #pagination-controls #page-info {
@@ -2025,8 +2041,8 @@ footer {
 
 @media (max-width: 1000px) {
     .navbar .nav-link {
-        padding-right: 2px;
-        padding-left: 2px;
+        font-size: 17px;
+        padding: 0 1px;
     }
 }
 
@@ -2044,15 +2060,54 @@ footer {
     }
 
     .navbar .nav-link {
-        font-size: 15px;
-        padding-left: 0px;
-        padding-right: 0px;
+        font-size: 16px;
+    }
+
+    .social {
+        font-size: 2.5rem;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .footer-container {
+        margin: 2px 3px;
+    }
+
+    .company-info,
+    .quick-links,
+    .send-message {
+        margin-top: 8px;
+        text-align: center;
+        flex-basis: 100%;
     }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 855px) and (max-width: 887px) {
+    .navbar .nav-link {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 825px) and (max-width: 855px) {
     .navbar .nav-link {
         font-size: 14px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 825px) {
+    .navbar .nav-link {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 801px) {
+    .navbar .nav-link {
+        font-size: 12px;
     }
 }
 
@@ -2066,7 +2121,6 @@ footer {
 
     .herocontainer {
         border: 1px transparent;
-
         padding-bottom: 10px;
     }
 

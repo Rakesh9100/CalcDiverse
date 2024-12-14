@@ -2228,6 +2228,20 @@
         </div>
         <div class="box">
             <div class="content">
+                <h2>Factor Calculator</h2>
+                <h3>Calculates all the factors/divisors of a given number.</h3>
+                <div class="card-footer">
+                    <a href="./Calculators/Factor-Calculator/index.html" target="_blank">
+                        <button>Try Now</button>
+                    </a>
+                    <a href="https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Factor-Calculator" title="Source Code" target="_blank">
+                        <img src="./assets/images/github.png" alt="Source Code"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
                 <h2>Factorial Calculator</h2>
                 <h3>Calculates the factorial of any large number instantly.</h3>
                 <div class="card-footer">
@@ -5995,9 +6009,9 @@
 
     <!-- Pagination Section Starts Here -->
     <div id="pagination-controls">
-        <button id="prev" onclick="changePage(-1)">Previous</button>
+        <button id="prev" onclick="changePage(-1); scrollToSearch()">Previous</button>
         <span id="page-info"></span>
-        <button id="next" onclick="changePage(1)">Next</button>
+        <button id="next" onclick="changePage(1); scrollToSearch()">Next</button>
     </div>
 
     <!-- Pagination Section Ends Here -->
@@ -6024,8 +6038,8 @@
                 <h1 class="heading">Keep In Touch</h1>
                 <form name="CalcDiverse Contact" autocomplete="off" netlify>
                     <div class="form-group group1">
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required oninput="validateName('name')">
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required oninput="validateName('name')">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
                     </div>
                     <div class="form-group group1">
                         <textarea id="message" name="message" placeholder="Leave your message" required></textarea>
