@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulation Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Modulation Calculator</h1>
+
+        <form id="modulationForm">
+            <div class="form-group">
+                <label for="modulationType">Select Modulation Type:</label>
+                <select id="modulationType">
+                    <option value="am">Amplitude Modulation (AM)</option>
+                    <option value="fm">Frequency Modulation (FM)</option>
+                </select>
+            </div>
+
+            <!-- Inputs for AM -->
+            <div id="amInputs" class="modulation-inputs">
+                <div class="form-group">
+                    <label for="carrierAmplitude">Carrier Amplitude (A<sub>c</sub>):</label>
+                    <input type="number" id="carrierAmplitude" placeholder="Enter carrier amplitude">
+                </div>
+                <div class="form-group">
+                    <label for="messageAmplitude">Message Amplitude (A<sub>m</sub>):</label>
+                    <input type="number" id="messageAmplitude" placeholder="Enter message amplitude">
+                </div>
+                <div class="form-group">
+                    <label for="carrierPower">Carrier Power (P<sub>c</sub>):</label>
+                    <input type="number" id="carrierPower" placeholder="Enter carrier power (optional)">
+                </div>
+            </div>
+
+            <!-- Inputs for FM -->
+            <div id="fmInputs" class="modulation-inputs" style="display: none;">
+                <div class="form-group">
+                    <label for="frequencyDeviation">Frequency Deviation (Δf):</label>
+                    <input type="number" id="frequencyDeviation" placeholder="Enter frequency deviation">
+                </div>
+                <div class="form-group">
+                    <label for="modulatingFrequency">Modulating Frequency (f<sub>m</sub>):</label>
+                    <input type="number" id="modulatingFrequency" placeholder="Enter modulating frequency">
+                </div>
+            </div>
+
+            <button type="button" id="calculateBtn">Calculate</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
