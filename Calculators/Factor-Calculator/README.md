@@ -18,4 +18,4 @@ The Factor Calculator is a simple and interactive web application designed to ca
 
 ## Screenshots :-
 
-
+![image](https://github.com/user-attachments/assets/1795f05f-c5b3-429c-b819-ec3938da711c)
