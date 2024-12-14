@@ -2256,28 +2256,3 @@ footer {
         padding-bottom: 15px;
     }
 }
-
-@media (max-width: 768px) {
-    .social {
-        font-size: 2.5rem;
-        text-decoration: none;
-        transition: 0.3s ease-in-out;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-    }
-
-    .footer-container {
-        margin: 2px 3px;
-    }
-
-    .company-info,
-    .quick-links,
-    .send-message {
-        margin-top: 8px;
-        text-align: center;
-        flex-basis: 100%;
-    }
-}
