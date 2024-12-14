@@ -12,6 +12,38 @@ body {
     background-color: #f0f0f0;
 }
 
+.dark-mode {
+    background-color: #D416D0FF;
+    color: #ffffff;
+}
+
+.dark-mode .card {
+    background-color: #D416D0FF;
+    color: #e0e0e0;
+}
+
+.dark-mode .card::before,
+.dark-mode .card::after {
+    background-color: #f493cf;
+}
+
+.dark-mode .card:hover::before,
+.dark-mode .card:hover::after {
+    background-color: #f493cf;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.dark-mode .card-content {
+    color: #ffffff;
+}
+
+.dark-mode .card-hover-text {
+    color: #000080;
+}
+
 .circle {
     z-index: 999999;
     width: 20px;
