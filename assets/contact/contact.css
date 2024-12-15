@@ -43,6 +43,9 @@ header {
     position: sticky;
     box-sizing: border-box;
 }
+.dark-mode .contact-container{
+    box-shadow: -5px -5px 25px #b400a5;
+}
 
 .contact-container {
     position: relative;
@@ -56,7 +59,7 @@ header {
     display: grid;
     justify-content: center;
     align-items: center;
-    box-shadow: -5px -5px 25px #b400a5;
+    box-shadow: -5px -5px 25px #001aff;
     overflow: auto;
 }
 
@@ -115,6 +118,10 @@ textarea:hover {
     margin-top: 10px;
 }
 
+.dark-mode .contact-container button{
+    background: #ff1b82;
+}
+
 .contact-container button {
     font-size: 20px;
     font-weight: 700;
@@ -124,7 +131,7 @@ textarea:hover {
     border: none;
     border-radius: 15px;
     color: #ffffff;
-    background: #ff1b82;
+    background: #001aff;
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
