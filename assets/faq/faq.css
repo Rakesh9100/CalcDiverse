@@ -35,14 +35,15 @@
 
 .faqs_container {
     height: 100%;
-    width: 100%;
+    width: 60%;
+    margin-left: 20%;
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
 }
 
 .faqs {
-    display: flex;
+    /* display: flex; */
     padding: 2rem 2rem;
     gap: 2rem;
 }
@@ -61,9 +62,10 @@
 }
 
 .faq_title {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 25px;
     font-family: Inter;
+    padding: 1%;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
