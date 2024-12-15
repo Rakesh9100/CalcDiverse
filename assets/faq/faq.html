@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../../style.css" />
-    <link rel="stylesheet" type="text/css" href="./faq.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./faq.css">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../customcursor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>CalcDiverse | FAQ</title>
 </head>
 
@@ -126,10 +127,10 @@
             </div>
             <div class="send-message">
                 <h1 class="heading">Keep In Touch</h1>
-                <form name="CalcDiverse Contact" autocomplete="off" netlify>
+                <form id="contact-form" name="CalcDiverse Contact" autocomplete="off" netlify>
                     <div class="form-group group1">
                         <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required oninput="validateName('name')">
-                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required oninput="validateEmail('email')">
                     </div>
                     <div class="form-group group1">
                         <textarea id="message" name="message" placeholder="Leave your message" required></textarea>
@@ -159,6 +160,7 @@
     <!-- ----------------------------------------- Footer Code Ends--------------------------------- -->
 
     <script src="./faq.js"></script>
+    <script src="../commonscript.js"></script>
     <script src="../customcursor.js"></script>
 </body>
 
