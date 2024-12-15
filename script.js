@@ -29,21 +29,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500);
 });
 
-// Hamburger menu
-hamburger.addEventListener("click", mobileMenu);
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
 
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
+    // Verify the elements exist
+    if (!hamburger || !navMenu) {
+        console.error("Hamburger or nav-menu element not found.");
+        return;
+    }
 
-const navLink = document.querySelectorAll(".nav-link");
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+    // Attach click event to toggle menu visibility
+    hamburger.addEventListener("click", () => {
+        console.log("Hamburger clicked.");
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("show");
+    });
 
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}
+    // Close menu when a link is clicked
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            console.log("Nav link clicked.");
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("show");
+        });
+    });
+});
+
 
 // Google Translate
 function googleTranslateElementInit() {
