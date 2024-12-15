@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Modulation Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Modulation Calculator</h1>
+            <p>Calculate key parameters for Amplitude and Frequency Modulation</p>
+        </header>
+        
+        <main class="card">
+            <div class="form-group">
+                <label for="modulationType">Select Modulation Type:</label>
+                <select id="modulationType" class="select-field">
+                    <option value="am">Amplitude Modulation (AM)</option>
+                    <option value="fm">Frequency Modulation (FM)</option>
+                </select>
+            </div>
+
+            <div id="inputFields" class="input-fields">
+                <!-- Dynamic fields will load here -->
+            </div>
+
+            <button id="calculateBtn" class="btn">Calculate</button>
+
+            <div id="result" class="result hidden">
+                <h2>Results</h2>
+                <div id="resultContent"></div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2024 Modulation Calculator. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
