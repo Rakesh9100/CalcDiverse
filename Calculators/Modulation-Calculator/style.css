@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     margin: 0;
     padding: 0;
@@ -52,7 +51,8 @@ label {
     margin-bottom: 8px;
 }
 
-.select-field, input {
+.select-field,
+input {
     width: 100%;
     padding: 12px 15px;
     font-size: 1rem;
@@ -62,7 +62,8 @@ label {
     transition: all 0.3s ease;
 }
 
-input:focus, .select-field:focus {
+input:focus,
+.select-field:focus {
     border-color: #2575fc;
     box-shadow: 0 0 8px rgba(37, 117, 252, 0.5);
     outline: none;
