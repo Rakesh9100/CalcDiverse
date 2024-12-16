@@ -19,6 +19,6 @@ function calculateRate() {
 
     // Display the calculated photosynthesis rate in the result section
     document.getElementById('result').textContent =
-      `The photosynthesis rate is ${rate} units.`;
+      `The photosynthesis rate is ${rate} units.` ;
   }
   
