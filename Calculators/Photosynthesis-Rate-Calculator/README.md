@@ -18,3 +18,5 @@ The Photosynthesis Rate Calculator is a simple yet elegant web application desig
 - Provides error messages when invalid inputs are detected.
 
 ## Screenshots :-
+
+![image](https://github.com/user-attachments/assets/54dd73c4-60a6-478d-b0af-b09962fd9a88)
