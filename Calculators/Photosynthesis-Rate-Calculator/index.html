@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Photosynthesis Rate Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Photosynthesis Rate Calculator</h1>
+
+        <!-- Input group for light intensity -->
+        <div class="input-group">
+            <label for="light">Light Intensity (µmol/m²/s):</label>
+            <input type="number" id="light" placeholder="Enter light intensity">
+        </div>
+
+        <!-- Input group for CO2 concentration -->
+        <div class="input-group">
+            <label for="co2">CO₂ Concentration (ppm):</label>
+            <input type="number" id="co2" placeholder="Enter CO₂ concentration">
+        </div>
+
+        <!-- Input group for temperature -->
+        <div class="input-group">
+            <label for="temperature ">Temperature (°C):</label>
+            <input type="number" id="temperature" placeholder="Enter temperature">
+        </div>
+
+        <!-- Button to calculate the photosynthesis rate -->
+        <button onclick="calculateRate()">Calculate Rate</button>
+
+        <!-- Section to display the result -->
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
