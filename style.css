@@ -2174,15 +2174,10 @@ footer {
         backdrop-filter: blur(7px);
         transition: 0.5s ease-in-out;
     }
-    .nav-menu.show {
-        display: flex; /* Or block, depending on your design */
-    }
-    
 
     .nav-item {
-        margin: 10px ;
-        font-size: 30px;
-       
+        margin: 1.8rem 0;
+        font-size: 25px;
     }
 
     nav li:hover {

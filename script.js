@@ -19,45 +19,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Toggle mobile menu visibility
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-        document.querySelector("body").classList.add("loaded");
-    }, 500);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
-
-    // Verify the elements exist
-    if (!hamburger || !navMenu) {
-        console.error("Hamburger or nav-menu element not found.");
-        return;
-    }
-
-    // Attach click event to toggle menu visibility
-    hamburger.addEventListener("click", () => {
-        console.log("Hamburger clicked.");
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("show");
-    });
-
-    // Close menu when a link is clicked
-    const navLinks = document.querySelectorAll(".nav-link");
-    navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            console.log("Nav link clicked.");
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("show");
-        });
-    });
-});
-
-
 // Google Translate
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
