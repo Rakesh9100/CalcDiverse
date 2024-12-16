@@ -399,9 +399,55 @@ nav ul {
 
 #google_translate_element {
     right: 0;
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
     position: absolute;
+    background: linear-gradient(135deg, #4caf50, #2196f3, #ff9800, #e91e63);
+    background-size: 200% 200%;
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: movingGradient 3s infinite linear;
+}
+
+.goog-te-combo {
+    background: white;
+    color: #6a11cb;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    border: 1px solid #6a11cb;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.goog-te-combo option {
+    font-weight: 600;
+}
+
+.goog-te-combo:hover {
+    background: #f2f2f2;
+    border-color: #2575fc;
+}
+
+.goog-te-gadget {
+    color: white !important;
+    font-weight: 600;
+}
+
+@keyframes movingGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Components Section Css */
