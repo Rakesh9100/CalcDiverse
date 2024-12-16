@@ -10,8 +10,8 @@ const updateProgress = () => {
 document.addEventListener('scroll', updateProgress);
 
 // Toggle mobile menu visibility
-const hamBurger = document.querySelector(".hamburger");
-const nMenu = document.querySelector(".nav-menu");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
@@ -20,11 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Hamburger menu
-hamBurger.addEventListener("click", mobileMenu);
+hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    hamBurger.classList.toggle("active");
-    nMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
 }
 
 // Hide or show scroll progress indicator
