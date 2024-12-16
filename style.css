@@ -420,29 +420,24 @@ nav ul {
 
 /* Google Translate Css */
 
-.compcontainer {
-    position: relative;
-}
 #google_translate_element {
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background: linear-gradient(135deg, #001aff, #03893e, rgba(255, 0, 89, 0.7), #ffe10c);
-    background-size: 300% 300%;
+    background: linear-gradient(135deg, #4caf50, #2196f3, #ff9800, #e91e63);
+    background-size: 200% 200%;
     border-radius: 8px;
     padding: 8px 12px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     animation: movingGradient 3s infinite linear;
 }
+
 .goog-te-combo {
     background: white;
     color: #6a11cb;
     font-family: 'Arial', sans-serif;
-    font-size: 14px;
+    font-weight: 600;
     border: 1px solid #6a11cb;
     border-radius: 5px;
     padding: 5px 10px;
@@ -451,11 +446,20 @@ nav ul {
     transition: all 0.3s ease-in-out;
     width: 100%;
 }
+
+.goog-te-combo option {
+    font-weight: 600;
+}
+
 .goog-te-combo:hover {
     background: #f2f2f2;
     border-color: #2575fc;
 }
 
+.goog-te-gadget {
+    color: white !important;
+    font-weight: 600;
+}
 
 @keyframes movingGradient {
     0% {
@@ -468,8 +472,6 @@ nav ul {
         background-position: 0% 50%;
     }
 }
-
-
 
 /* Components Section Css */
 
