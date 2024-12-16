@@ -56,7 +56,6 @@ const faq = [
     },
 ];
 
-
 // Create the accordion
 const faqContainer = document.querySelector(".faqs_container");
 
