@@ -92,20 +92,13 @@ faq.forEach((item) => {
         allFaqs.forEach((content) => {
             if (content !== faqContent) {
                 content.style.height = "0px"; // Collapse others
-                content.parentNode
-                    .querySelector(".plus")
-                    .style.transform = "none"; // Reset plus icon
+                content.parentNode.querySelector(".plus").style.transform = "none"; // Reset plus icon
             }
         });
 
         // Toggle current FAQ
         const isOpen = faqContent.style.height !== "0px";
-        faqContent.style.height = isOpen ? "0px" : faqContent.scrollHeight + "px";
-        faqItem.querySelector(".plus").style.transform = isOpen ?
-            "none" :
-            "rotate(45deg)";
+        faqContent.style.height = isOpen ? "0px" : `${faqContent.scrollHeight}px`;
+        faqItem.querySelector(".plus").style.transform = isOpen ? "none" : "rotate(45deg)";
     });
 });
-
-faqItem.addEventListener(`click`, toggleContent);
-document.querySelectorAll(`.faqs_container`)[index % 2].appendChild(faqItem);
