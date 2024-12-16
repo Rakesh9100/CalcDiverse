@@ -67,8 +67,99 @@ header {
     font-family: Ubuntu;
     font-size: 4rem;
     margin-top: 16px;
-    color: #ffffff;
+    color: #007ACC; /* Brighter blue color */
+    text-shadow:
+            0 0 10px #ffffff,
+            0 0 20px #ffffff,
+            0 0 30px #ffffff,
+            0 0 40px #00F2A3,
+            0 0 50px #00F2A3,
+            0 0 60px #0099CC,
+            0 0 70px #0099CC;
+    animation: glitterBlue 1.5s infinite;
 }
+
+@keyframes glitterBlue {
+    0% {
+        text-shadow:
+                0 0 10px #ffffff,
+                0 0 20px #ffffff,
+                0 0 30px #ffffff,
+                0 0 40px #00F2A3,
+                0 0 50px #00F2A3,
+                0 0 60px #0099CC,
+                0 0 70px #0099CC;
+    }
+    50% {
+        text-shadow:
+                0 0 20px #ffffff,
+                0 0 40px #ffffff,
+                0 0 60px #00F2A3,
+                0 0 80px #00F2A3,
+                0 0 100px #0099CC,
+                0 0 120px #0099CC;
+    }
+    100% {
+        text-shadow:
+                0 0 10px #ffffff,
+                0 0 20px #ffffff,
+                0 0 30px #ffffff,
+                0 0 40px #00F2A3,
+                0 0 50px #00F2A3,
+                0 0 60px #0099CC,
+                0 0 70px #0099CC;
+    }
+}
+
+@keyframes glitterPink {
+    0% {
+        text-shadow:
+                0 0 10px #FFB6C1,
+                0 0 20px #FF69B4,
+                0 0 30px #FF69B4,
+                0 0 40px #FF1493,
+                0 0 50px #FF1493,
+                0 0 60px #FF1493,
+                0 0 70px #FF69B4;
+    }
+    50% {
+        text-shadow:
+                0 0 20px #FFB6C1,
+                0 0 40px #FF69B4,
+                0 0 60px #FF69B4,
+                0 0 80px #FF1493,
+                0 0 100px #FF1493,
+                0 0 120px #FF69B4;
+    }
+    100% {
+        text-shadow:
+                0 0 10px #FFB6C1,
+                0 0 20px #FF69B4,
+                0 0 30px #FF69B4,
+                0 0 40px #FF1493,
+                0 0 50px #FF1493,
+                0 0 60px #FF1493,
+                0 0 70px #FF69B4;
+    }
+}
+
+
+.dark-mode .contact-container h2 {
+    font-family: Ubuntu;
+    font-size: 4rem;
+    margin-top: 16px;
+    color: #FF69B4; /* Pink color */
+    text-shadow:
+            0 0 10px #FFB6C1,
+            0 0 20px #FF69B4,
+            0 0 30px #FF69B4,
+            0 0 40px #FF1493,
+            0 0 50px #FF1493,
+            0 0 60px #FF1493,
+            0 0 70px #FF69B4;
+    animation: glitterPink 1.5s infinite;
+}
+
 
 .contact-container p {
     color: black;
@@ -90,22 +181,26 @@ header {
     font-weight: 600;
     text-shadow: 2px 2px 10px var(--light);
 }
+.dark-mode .contact-container label{
+    color: darkblue;
+    text-shadow: 2px 2px 10px var(--primary);
+}
 
 .contact-container input,
 .contact-container textarea {
     width: 100%;
-    padding: 10px;
-    border-radius: 6px;
-    margin-top: 8px;
-    margin-bottom: 25px;
-    border: 0;
-    transition: all linear .2s;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 8px 0 25px;
+    border: 1px solid #ddd;
+    transition: all 0.2s linear;
 }
 
 .contact-container textarea {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     resize: vertical;
 }
+
 
 input:hover,
 textarea:hover {
@@ -116,6 +211,10 @@ textarea:hover {
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 10px;
+    color:#87CEEB ;
+}
+.dark-mode .contact-container #charCount{
+    color: white;
 }
 
 .dark-mode .contact-container button{
@@ -134,6 +233,12 @@ textarea:hover {
     background: #001aff;
     cursor: pointer;
     transition: 0.5s ease-in-out;
+}
+.contact-container p{
+    color: #008080;
+}
+.dark-mode .contact-container p{
+    color: #1C1B29;
 }
 
 .footer-basic {
