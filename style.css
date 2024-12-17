@@ -35,6 +35,7 @@
     align-items: center; 
     justify-content: space-between;
     width: 100px; 
+    margin-left: 15px;
     
   }
 /* Dark and light mode Css*/
@@ -367,6 +368,11 @@ nav ul {
     gap: 2rem;
     list-style: none;
     align-items: center;
+}
+.nav-menu {
+    display: flex;
+    margin-left: auto; 
+    gap: 1rem; 
 }
 
 #active1 {
