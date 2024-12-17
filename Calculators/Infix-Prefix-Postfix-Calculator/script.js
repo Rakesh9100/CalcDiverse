@@ -13,7 +13,6 @@ function getPrecedence(operator) {
 
 let steps = document.getElementById('steps');
 
-
 function infixToPostfix(infixExpression) {
     let result = '';
     let stack = [];
@@ -27,7 +26,7 @@ function infixToPostfix(infixExpression) {
         return 0;
     }
 
-    //  table structure 
+    //  Table structure 
     steps.innerHTML = `
         <table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
             <thead>
@@ -56,7 +55,7 @@ function infixToPostfix(infixExpression) {
                 result += stack.pop();
                 appendRow(char, stack, result);
             }
-            stack.pop(); 
+            stack.pop();
         } else if (['+', '-', '*', '/'].includes(char)) {
             while (
                 stack.length > 0 &&
@@ -91,12 +90,11 @@ function infixToPostfix(infixExpression) {
             </tr>
         `;
     }
-
 }
 
 function postfixToInfix(postfixExpression) {
     let stack = [];
-    let result = ''; 
+    let result = '';
 
     steps.innerHTML += `
     <table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
@@ -121,7 +119,7 @@ function postfixToInfix(postfixExpression) {
             let operand1 = stack.pop();
             let expression = (`(${operand1}${char}${operand2})`);
             stack.push(expression);
-            result = expression; 
+            result = expression;
         }
         let tableBody = document.getElementById('table-body');
 
@@ -160,15 +158,15 @@ function prefixToPostfix(prefixExpression) {
 
         if (/[a-zA-Z0-9]/.test(char)) {
             stack.push(char);
-            result = char; 
+            result = char;
         } else if (['+', '-', '*', '/'].includes(char)) {
             let operand1 = stack.pop();
             let operand2 = stack.pop();
             let exp = (operand1 + operand2 + char);
-            result = exp; 
+            result = exp;
         }
         let tableBody = document.getElementById('table-body');
-    
+
         tableBody.innerHTML += `
         <tr>
             <td>${char}</td>
@@ -206,15 +204,15 @@ function postfixToPrefix(postfixExpression) {
 
         if (/[a-zA-Z0-9]/.test(char)) {
             stack.push(char);
-            result = char; 
+            result = char;
         } else if (['+', '-', '*', '/'].includes(char)) {
             let operand2 = stack.pop();
             let operand1 = stack.pop();
             let exp = (char + operand1 + operand2);
-            result = exp; 
+            result = exp;
         }
         let tableBody = document.getElementById('table-body');
-    
+
         tableBody.innerHTML += `
         <tr>
             <td>${char}</td>
@@ -237,7 +235,7 @@ function infixToPrefix(infixExpression) {
 
 function prefixToInfix(prefixExpression) {
     let stack = [];
-    let result = ''; 
+    let result = '';
 
     steps.innerHTML += `
     <table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
@@ -258,15 +256,15 @@ function prefixToInfix(prefixExpression) {
 
         if (/[a-zA-Z0-9]/.test(char)) {
             stack.push(char);
-            result = char; 
+            result = char;
         } else if (['+', '-', '*', '/'].includes(char)) {
             let operand1 = stack.pop();
             let operand2 = stack.pop();
             let exp = (`(${operand1}${char}${operand2})`);
-            result = exp; 
+            result = exp;
         }
         let tableBody = document.getElementById('table-body');
-    
+
         tableBody.innerHTML += `
         <tr>
             <td>${char}</td>
@@ -278,7 +276,6 @@ function prefixToInfix(prefixExpression) {
     document.getElementById('result').innerText = `Result: ${result}`;
     return stack.pop();
 }
-
 
 function convertExpression() {
     let expression = document.getElementById('expression').value;
@@ -314,7 +311,6 @@ function convertExpression() {
             alert('Invalid conversion type selected.');
             return;
     }
-
 }
 
 function clearInput() {
