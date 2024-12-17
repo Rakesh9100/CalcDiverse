@@ -2043,7 +2043,7 @@ footer {
 
 /* Media Queries */
 
-@media (max-width: 1060px) {
+@media (max-width: 1121px) {
     .navbar .nav-link {
         font-size: 17px;
     }
