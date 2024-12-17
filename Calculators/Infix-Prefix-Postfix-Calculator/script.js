@@ -11,11 +11,12 @@ function getPrecedence(operator) {
     return 0;
 }
 
+let steps = document.getElementById('steps');
+
 function infixToPostfix(infixExpression) {
     let result = '';
     let stack = [];
 
-    // Define a function to get precedence of operators
     function getPrecedence(operator) {
         if (operator === '+' || operator === '-') {
             return 1;
@@ -24,6 +25,23 @@ function infixToPostfix(infixExpression) {
         }
         return 0;
     }
+
+    //  Table structure 
+    steps.innerHTML = `
+        <table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Character</th>
+                    <th>Stack</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    `;
+
+    let tableBody = document.getElementById('table-body');
 
     for (let i = 0; i < infixExpression.length; i++) {
         let char = infixExpression[i];
@@ -35,40 +53,85 @@ function infixToPostfix(infixExpression) {
         } else if (char === ')') {
             while (stack.length > 0 && stack[stack.length - 1] !== '(') {
                 result += stack.pop();
+                appendRow(char, stack, result);
             }
-            stack.pop(); // Pop '('
+            stack.pop();
         } else if (['+', '-', '*', '/'].includes(char)) {
             while (
                 stack.length > 0 &&
                 getPrecedence(stack[stack.length - 1]) >= getPrecedence(char)
             ) {
                 result += stack.pop();
+                appendRow(char, stack, result);
             }
             stack.push(char);
         }
+
+        // Append a row to the table for each step
+        appendRow(char, stack, result);
     }
 
+    // Pop remaining operators in the stack and append rows
     while (stack.length > 0) {
         result += stack.pop();
+        appendRow('-', stack, result);
     }
+    document.getElementById('result').innerText = `Result: ${result}`;
 
     return result;
+
+    // Helper function to append rows
+    function appendRow(character, stack, result) {
+        tableBody.innerHTML += `
+            <tr>
+                <td>${character}</td>
+                <td>${stack.join(', ')}</td>
+                <td>${result}</td>
+            </tr>
+        `;
+    }
 }
 
 function postfixToInfix(postfixExpression) {
     let stack = [];
+    let result = '';
 
+    steps.innerHTML += `
+    <table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Stack</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+`;
     for (let i = 0; i < postfixExpression.length; i++) {
         let char = postfixExpression[i];
-
         if (/[a-zA-Z0-9]/.test(char)) {
             stack.push(char);
+            result = char;
         } else if (['+', '-', '*', '/'].includes(char)) {
             let operand2 = stack.pop();
             let operand1 = stack.pop();
-            stack.push(`(${operand1}${char}${operand2})`);
+            let expression = (`(${operand1}${char}${operand2})`);
+            stack.push(expression);
+            result = expression;
         }
+        let tableBody = document.getElementById('table-body');
+
+        tableBody.innerHTML += `
+            <tr>
+                <td>${char}</td>
+                <td>${stack.join(', ')}</td>
+                <td>${result}</td>
+            </tr>
+        `;
     }
+    document.getElementById('result').innerText = `Result: ${result}`;
 
     return stack.pop();
 }
@@ -77,35 +140,88 @@ function prefixToPostfix(prefixExpression) {
     let stack = [];
     let result = '';
 
+    steps.innerHTML += `
+    <table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Stack</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+`;
     for (let i = prefixExpression.length - 1; i >= 0; i--) {
         let char = prefixExpression[i];
 
         if (/[a-zA-Z0-9]/.test(char)) {
             stack.push(char);
+            result = char;
         } else if (['+', '-', '*', '/'].includes(char)) {
             let operand1 = stack.pop();
             let operand2 = stack.pop();
-            stack.push(operand1 + operand2 + char);
+            let exp = (operand1 + operand2 + char);
+            result = exp;
         }
+        let tableBody = document.getElementById('table-body');
+
+        tableBody.innerHTML += `
+        <tr>
+            <td>${char}</td>
+            <td>${stack.join(', ')}</td>
+            <td>${result}</td>
+        </tr>
+    `;
     }
+    document.getElementById('result').innerText = `Result: ${result}`;
 
     return stack.pop();
 }
 
+
 function postfixToPrefix(postfixExpression) {
     let stack = [];
+    let result = '';
+
+    steps.innerHTML += `
+    <table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Stack</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+`;
 
     for (let i = 0; i < postfixExpression.length; i++) {
         let char = postfixExpression[i];
 
         if (/[a-zA-Z0-9]/.test(char)) {
             stack.push(char);
+            result = char;
         } else if (['+', '-', '*', '/'].includes(char)) {
             let operand2 = stack.pop();
             let operand1 = stack.pop();
-            stack.push(char + operand1 + operand2);
+            let exp = (char + operand1 + operand2);
+            result = exp;
         }
+        let tableBody = document.getElementById('table-body');
+
+        tableBody.innerHTML += `
+        <tr>
+            <td>${char}</td>
+            <td>${stack.join(', ')}</td>
+            <td>${result}</td>
+        </tr>
+    `;
     }
+    document.getElementById('result').innerText = `Result: ${result}`;
 
     return stack.pop();
 }
@@ -119,22 +235,47 @@ function infixToPrefix(infixExpression) {
 
 function prefixToInfix(prefixExpression) {
     let stack = [];
+    let result = '';
+
+    steps.innerHTML += `
+    <table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Stack</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+`;
 
     for (let i = prefixExpression.length - 1; i >= 0; i--) {
         let char = prefixExpression[i];
 
         if (/[a-zA-Z0-9]/.test(char)) {
             stack.push(char);
+            result = char;
         } else if (['+', '-', '*', '/'].includes(char)) {
             let operand1 = stack.pop();
             let operand2 = stack.pop();
-            stack.push(`(${operand1}${char}${operand2})`);
+            let exp = (`(${operand1}${char}${operand2})`);
+            result = exp;
         }
-    }
+        let tableBody = document.getElementById('table-body');
 
+        tableBody.innerHTML += `
+        <tr>
+            <td>${char}</td>
+            <td>${stack.join(', ')}</td>
+            <td>${result}</td>
+        </tr>
+    `;
+    }
+    document.getElementById('result').innerText = `Result: ${result}`;
     return stack.pop();
 }
-
 
 function convertExpression() {
     let expression = document.getElementById('expression').value;
@@ -170,8 +311,6 @@ function convertExpression() {
             alert('Invalid conversion type selected.');
             return;
     }
-
-    document.getElementById('result').innerText = `Result: ${result}`;
 }
 
 function clearInput() {
