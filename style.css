@@ -32,6 +32,13 @@
 
 /* Dark and light mode Css*/
 
+.small-screen-adjustment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
@@ -42,6 +49,7 @@
     height: 32px;
     position: relative;
     width: 55px;
+    margin-left: auto;
 }
 
 .theme-switch input {
@@ -355,11 +363,21 @@ nav {
     padding: 0.5rem;
 }
 
+.nav-menu {
+    display: flex;
+    margin-left: auto;
+}
+
 nav ul {
     display: flex;
     gap: 2rem;
     list-style: none;
     align-items: center;
+}
+.nav-menu {
+    display: flex;
+    margin-left: auto; 
+    gap: 1rem; 
 }
 
 #active1 {
@@ -2229,6 +2247,10 @@ footer {
     nav li:hover {
         border-bottom: 0.4rem var(--secondary-color) solid;
         transition: 0.3s ease-in-out;
+    }
+
+    .theme-switch-wrapper {
+        margin-right: 15px;
     }
 
     .hamburger {
