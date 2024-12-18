@@ -29,16 +29,15 @@
     background: var(--light);
     border-radius: 25px;
 }
-/* TOGGLE SWITCH */
-.small-screen-adjustment {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
-    width: 100px; 
-    margin-left: 15px;
-    
-  }
+
 /* Dark and light mode Css*/
+
+.small-screen-adjustment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+}
 
 .theme-switch-wrapper {
     display: flex;
@@ -50,6 +49,7 @@
     height: 32px;
     position: relative;
     width: 55px;
+    margin-left: auto;
 }
 
 .theme-switch input {
@@ -361,6 +361,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    margin-left: auto;
 }
 
 nav ul {
@@ -2242,6 +2247,10 @@ footer {
     nav li:hover {
         border-bottom: 0.4rem var(--secondary-color) solid;
         transition: 0.3s ease-in-out;
+    }
+
+    .theme-switch-wrapper {
+        margin-right: 15px;
     }
 
     .hamburger {
