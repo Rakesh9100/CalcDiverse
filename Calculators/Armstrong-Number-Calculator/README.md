@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculates all the Armstrong Numbers within a range measured by the number of digits.
+This tool helps you explore Armstrong numbers. Use the Checker to verify if a specific number is an Armstrong number. Use the Finder to generate Armstrong numbers for a given number of digits.
 
 ## Tech Stacks :-
 
@@ -12,4 +12,6 @@ Calculates all the Armstrong Numbers within a range measured by the number of di
 
 ## Screenshots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/1c41cfd8-dce2-4529-9dcf-a4e33c24e5c8)
+![image1](<Screenshot 2024-12-19 223205.png>)
+![image2](<Screenshot 2024-12-19 223247.png>)
+![image3](<Screenshot 2024-12-19 223326.png>) ![alt text](<Screenshot 2024-12-19 223247-1.png>)
