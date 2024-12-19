@@ -19,16 +19,29 @@
     border-radius: 50%;
 }
 
-.dark-mode .circle{
+.dark-mode .circle {
     animation: darkColors 5s infinite;
     transform: translate(-50%, -50%);
 }
 
-
 @keyframes darkColors {
-    0% { background-color: #ff69b4; }
-    20% { background-color: #ff5c8d; }
-    40% { background-color: #f94d8b; }
-    60% { background-color: #e75480; }
-    100% { background-color: #ed3978; }
+    0% {
+        background-color: #ff69b4;
+    }
+
+    20% {
+        background-color: #f65787;
+    }
+
+    40% {
+        background-color: #f12771;
+    }
+
+    60% {
+        background-color: #f51659;
+    }
+
+    100% {
+        background-color: #f9055a;
+    }
 }
