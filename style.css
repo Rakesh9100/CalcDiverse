@@ -144,15 +144,17 @@ input:checked+.slider:before {
 }
 
 .dark-mode .nav-link:hover {
-    color: #76076d;
-    border-top-color: #76076d;
-    border-bottom-color: #76076d;
+    color: #c2185b;
+    border-top-color: white;
+    border-bottom-color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 .dark-mode #active1 {
-    color: #76076d;
-    border-top-color: #76076d;
-    border-bottom-color: #76076d;
+    color: #ad1457;
+    border-top-color: white;
+    border-bottom-color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Preloader Css */
@@ -351,9 +353,10 @@ header {
 }
 
 .nav-link:hover {
-    color: #ff1b82;
-    border-top-color: #ff1b82;
-    border-bottom-color: #ff1b82;
+    color: #1e90ff;
+    border-top: 2px solid #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+    transition: all 0.3s ease-in-out;
 }
 
 nav {
@@ -381,9 +384,10 @@ nav ul {
 }
 
 #active1 {
-    color: #ff1b82;
-    border-top-color: #ff1b82;
-    border-bottom-color: #ff1b82;
+    color: #87ceeb;
+    border-top-color: #87ceeb;
+    border-bottom-color: #87ceeb;
+    transition: all 0.3s ease-in-out;
 }
 
 .logo {
