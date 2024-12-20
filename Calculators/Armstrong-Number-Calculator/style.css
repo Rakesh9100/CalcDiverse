@@ -1,104 +1,159 @@
-/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #5f72bd, #9b23ea);
-  color: #fff;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #3f51b5, #e91e63);
+    color: #ffffff;
 }
 
-.hidden {
-  display: none;
+@keyframes moveGradient {
+    0% {
+        background: linear-gradient(135deg, #5f72bd, #9b23ea);
+    }
+
+    50% {
+        background: linear-gradient(135deg, #3f51b5, #e91e63);
+    }
+
+    100% {
+        background: linear-gradient(135deg, #673ab7, #ff9800);
+    }
 }
 
-/* Navbar */
 .navbar {
-  background: #4e45d5;
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  display: inline;
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
 .nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 5px 10px;
-  transition: background 0.3s, color 0.3s;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
 }
 
 .nav-links a:hover {
-  background: #3b34a6;
-  border-radius: 5px;
-  color: #fff;
+    background: rgba(255, 255, 255, 0.2);
 }
 
-/* Container */
 .container {
-  width: 100%;
-  max-width: 700px;
-  margin: 50px auto;
+    width: 90%;
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
 }
 
-/* Card Styling */
 .card {
-  background: #ffffff;
-  color: #333;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  padding: 30px;
-  text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease;
 }
 
-/* Button */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
 button {
-  padding: 10px 20px;
-  background-color: #4e45d5;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    padding: 12px 25px;
+    background: linear-gradient(to right, #ff5722, #ff9800);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #3b34a6;
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    transform: scale(1.05);
 }
 
-/* Input Fields */
 input {
-  padding: 10px;
-  width: 100%;
-  max-width: 300px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }

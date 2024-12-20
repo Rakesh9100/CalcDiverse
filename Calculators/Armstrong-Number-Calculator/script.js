@@ -16,7 +16,7 @@ function checkArmstrong() {
     const resultDiv = document.getElementById("result");
 
     if (!numberInput || isNaN(numberInput)) {
-        resultDiv.innerHTML = "<span style='color: red;'>Please enter a valid number.</span>";
+        resultDiv.innerHTML = "<span style='color: yellow; font-weight: 600; font-size: 19px'>Please enter a valid number.</span>";
         return;
     }
 
@@ -26,9 +26,9 @@ function checkArmstrong() {
     const sum = digits.reduce((acc, digit) => acc + Math.pow(digit, power), 0);
 
     if (sum === number) {
-        resultDiv.innerHTML = `<span style="color: green;">Yes! ${number} is an Armstrong number.</span>`;
+        resultDiv.innerHTML = `<span style="color: #63f54c; font-weight: 600; font-size: 19px">Yes! ${number} is an Armstrong number.</span>`;
     } else {
-        resultDiv.innerHTML = `<span style="color: red;">No, ${number} is not an Armstrong number.</span>`;
+        resultDiv.innerHTML = `<span style="color: yellow; font-weight: 600; font-size: 19px">No, ${number} is not an Armstrong number.</span>`;
     }
 }
 
@@ -38,7 +38,7 @@ function findArmstrongNumbers() {
     const resultDiv = document.getElementById("armstrongNumbers");
 
     if (!numOfDigits || isNaN(numOfDigits) || numOfDigits < 1 || numOfDigits > 7) {
-        resultDiv.innerHTML = "<span style='color: red;'>Please enter a valid number between 1 and 7.</span>";
+        resultDiv.innerHTML = "<span style='color: yellow; font-weight: 600; font-size: 19px'>Please enter a valid number between 1 and 7.</span>";
         return;
     }
 
@@ -55,5 +55,5 @@ function findArmstrongNumbers() {
         }
     }
 
-    resultDiv.innerHTML = `<span>Armstrong Numbers: ${armstrongNumbers.join(", ")}</span>`;
+    resultDiv.innerHTML = `<span style='color: yellow; font-weight: 600; font-size: 19px'>Armstrong Numbers: ${armstrongNumbers.join(", ")}</span>`;
 }
