@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Half-Life Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+         <!-- Title of the Application -->
+        <h1>Half-Life Calculator</h1>
+
+         <!-- Input Group for Initial Amount -->
+        <div class="input-group">
+            <label for="initial-amount">Initial Amount (N<sub>0</sub>):</label>
+            <input type="number" id="initial-amount" placeholder="Enter initial amount">
+        </div>
+
+         <!-- Input Group for Remaining Amount -->
+        <div class="input-group">
+            <label for="remaining-amount">Remaining Amount (N):</label>
+            <input type="number" id="remaining-amount" placeholder="Enter remaining amount">
+        </div>
+
+        <!-- Input Group for Elapsed Time -->
+        <div class="input-group">
+            <label for="time">Elapsed Time (t):</label>
+            <input type="number" id="time" placeholder="Enter elapsed time">
+        </div>
+
+        <!-- Button to Trigger the Half-Life Calculation -->
+        <button onclick="calculateHalfLife()">Calculate Half-Life</button>
+
+        <!-- Div to Display the Result -->
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

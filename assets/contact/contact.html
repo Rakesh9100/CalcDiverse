@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../../style.css" />
-    <link rel="stylesheet" type="text/css" href="./contact.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./contact.css">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="../customcursor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>CalcDiverse | Contact Us</title>
@@ -77,10 +78,18 @@
                     <a href="#" class="nav-link" id="active1"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
                 </li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="small-screen-adjustment">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </nav>
     </header>
@@ -91,13 +100,13 @@
             <p>If you have any questions or feedback, feel free to reach out to us!</p>
             <form id="contact-form" name="CalcDiverse Contact" autocomplete="off" netlify>
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter Your Name" required oninput="validateName('name')">
+                <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required oninput="validateName('name')">
 
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter Your Email" required oninput="validateEmail('email')">
+                <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required oninput="validateEmail('email')">
 
                 <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Enter Your Message" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
                 <div id="charCount">Message Count: 0/50</div>
 
                 <button type="submit">Send Message</button>
@@ -116,15 +125,15 @@
     <footer>
         <div class="footer-container">
             <div class="company-info">
-                <h1 class="company-name heading">CalcDiverse</h1>
-                <p>CalcDiverse is a customized collection of calculators for various aspects of mathematical calculations. Here in this project , we have several calculators which we require in our day to day life. The calculators range from complex to simple calculators. Any one with a basic knowledge of web development can contribute in this project !</p>
+                <h1 class="company-name heading"><img src="../images/logo.png">CalcDiverse</h1>
+                <p>CalcDiverse is a customized collection of calculators for various aspects of mathematical calculations. Here in this project, we have several calculators which we require in our day to day life. The calculators range from complex to simple calculators. Anyone with a basic knowledge of web development can contribute in this project.</p>
             </div>
             <div class="quick-links">
                 <h1 class="heading">Quick Links</h1>
                 <ul class="footer-ul">
                     <li><a href="../../index.html#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                     <li><a href="../about/about.html"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a></li>
-                    <li><a href="./../index.html#calculators"><i class="fa fa-calculator" aria-hidden="true"></i> Calculators</a></li>
+                    <li><a href="../../index.html#calculators"><i class="fa fa-calculator" aria-hidden="true"></i> Calculators</a></li>
                     <li><a href="../contributors/contributor.html"><i class="fa fa-users" aria-hidden="true"></i> Contributors</a></li>
                     <li><a href="../faq/faq.html"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ</a></li>
                     <li><a href="./contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
@@ -132,13 +141,13 @@
             </div>
             <div class="send-message">
                 <h1 class="heading">Keep In Touch</h1>
-                <form name="CalcDiverse Contact" autocomplete="off" netlify>
+                <form id="footer-contact-form" name="CalcDiverse Contact" autocomplete="off" netlify>
                     <div class="form-group group1">
-                        <input type="text" id="footer-name" name="name" placeholder="Enter your name" required oninput="validateName('footer-name')">
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <input type="text" id="footer-name" name="name" placeholder="Enter your name" autocomplete="name" required oninput="validateName('footer-name')">
+                        <input type="email" id="footer-email" name="email" placeholder="Enter your email" autocomplete="email" required oninput="validateEmail('footer-email')">
                     </div>
                     <div class="form-group group1">
-                        <textarea id="message" name="message" placeholder="Leave your message" required></textarea>
+                        <textarea id="footer-message" name="message" placeholder="Leave your message" required></textarea>
                         <button type="submit">SEND</button>
                     </div>
                 </form>
@@ -162,8 +171,7 @@
         </p>
     </footer>
 
-    <script src="./contact.js"></script>
-    <script src="../../script.js"></script>
+    <script src="../commonscript.js"></script>
     <script src="../customcursor.js"></script>
 </body>
 

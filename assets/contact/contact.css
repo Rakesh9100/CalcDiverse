@@ -4,27 +4,6 @@ body {
     margin: 0;
 }
 
-.circle {
-    z-index: 999999;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: colors 5s infinite;
-    position: fixed;
-    transform: translate(-50%, -50%);
-}
-
-.circle::before {
-    content: "";
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    opacity: 0.2;
-    transform: translate(-30%, -30%);
-    border-radius: 50%;
-}
-
 header {
     position: sticky;
     top: 0;
@@ -56,7 +35,7 @@ header {
     display: grid;
     justify-content: center;
     align-items: center;
-    box-shadow: -5px -5px 25px #b400a5;
+    box-shadow: -5px -5px 25px #001aff;
     overflow: auto;
 }
 
@@ -64,8 +43,102 @@ header {
     font-family: Ubuntu;
     font-size: 4rem;
     margin-top: 16px;
-    color: #ffffff;
+    color: #007ACC;
+    text-shadow:
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 30px #ffffff,
+        0 0 40px #00F2A3,
+        0 0 50px #00F2A3,
+        0 0 60px #0099CC,
+        0 0 70px #0099CC;
+    animation: glitterBlue 1.5s infinite;
 }
+
+@keyframes glitterBlue {
+    0% {
+        text-shadow:
+            0 0 10px #ffffff,
+            0 0 20px #ffffff,
+            0 0 30px #ffffff,
+            0 0 40px #00F2A3,
+            0 0 50px #00F2A3,
+            0 0 60px #0099CC,
+            0 0 70px #0099CC;
+    }
+
+    50% {
+        text-shadow:
+            0 0 20px #ffffff,
+            0 0 40px #ffffff,
+            0 0 60px #00F2A3,
+            0 0 80px #00F2A3,
+            0 0 100px #0099CC,
+            0 0 120px #0099CC;
+    }
+
+    100% {
+        text-shadow:
+            0 0 10px #ffffff,
+            0 0 20px #ffffff,
+            0 0 30px #ffffff,
+            0 0 40px #00F2A3,
+            0 0 50px #00F2A3,
+            0 0 60px #0099CC,
+            0 0 70px #0099CC;
+    }
+}
+
+@keyframes glitterPink {
+    0% {
+        text-shadow:
+            0 0 10px #FFB6C1,
+            0 0 20px #FF69B4,
+            0 0 30px #FF69B4,
+            0 0 40px #FF1493,
+            0 0 50px #FF1493,
+            0 0 60px #FF1493,
+            0 0 70px #FF69B4;
+    }
+
+    50% {
+        text-shadow:
+            0 0 20px #FFB6C1,
+            0 0 40px #FF69B4,
+            0 0 60px #FF69B4,
+            0 0 80px #FF1493,
+            0 0 100px #FF1493,
+            0 0 120px #FF69B4;
+    }
+
+    100% {
+        text-shadow:
+            0 0 10px #FFB6C1,
+            0 0 20px #FF69B4,
+            0 0 30px #FF69B4,
+            0 0 40px #FF1493,
+            0 0 50px #FF1493,
+            0 0 60px #FF1493,
+            0 0 70px #FF69B4;
+    }
+}
+
+.dark-mode .contact-container h2 {
+    font-family: Ubuntu;
+    font-size: 4rem;
+    margin-top: 16px;
+    color: #FF69B4;
+    text-shadow:
+        0 0 10px #FFB6C1,
+        0 0 20px #FF69B4,
+        0 0 30px #FF69B4,
+        0 0 40px #FF1493,
+        0 0 50px #FF1493,
+        0 0 60px #FF1493,
+        0 0 70px #FF69B4;
+    animation: glitterPink 1.5s infinite;
+}
+
 
 .contact-container p {
     color: black;
@@ -88,19 +161,27 @@ header {
     text-shadow: 2px 2px 10px var(--light);
 }
 
+.dark-mode .contact-container {
+    box-shadow: -5px -5px 25px #b400a5;
+}
+
+.dark-mode .contact-container label {
+    color: darkblue;
+    text-shadow: 2px 2px 10px var(--primary);
+}
+
 .contact-container input,
 .contact-container textarea {
     width: 100%;
-    padding: 10px;
-    border-radius: 6px;
-    margin-top: 8px;
-    margin-bottom: 25px;
-    border: 0;
-    transition: all linear .2s;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 8px 0 25px;
+    border: 1px solid #ddd;
+    transition: all 0.2s linear;
 }
 
 .contact-container textarea {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     resize: vertical;
 }
 
@@ -113,6 +194,15 @@ textarea:hover {
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 10px;
+    color: #87CEEB;
+}
+
+.dark-mode .contact-container #charCount {
+    color: white;
+}
+
+.dark-mode .contact-container button {
+    background: #ff1b82;
 }
 
 .contact-container button {
@@ -124,9 +214,17 @@ textarea:hover {
     border: none;
     border-radius: 15px;
     color: #ffffff;
-    background: #ff1b82;
+    background: #001aff;
     cursor: pointer;
     transition: 0.5s ease-in-out;
+}
+
+.contact-container p {
+    color: #008080;
+}
+
+.dark-mode .contact-container p {
+    color: #1C1B29;
 }
 
 .footer-basic {

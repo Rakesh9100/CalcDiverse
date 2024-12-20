@@ -32,6 +32,13 @@
 
 /* Dark and light mode Css*/
 
+.small-screen-adjustment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
@@ -39,9 +46,10 @@
 
 .theme-switch {
     display: inline-block;
-    height: 34px;
+    height: 32px;
     position: relative;
-    width: 60px;
+    width: 55px;
+    margin-left: auto;
 }
 
 .theme-switch input {
@@ -49,7 +57,7 @@
 }
 
 .slider {
-    background-color: #ccc;
+    background-color: #000080;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -63,11 +71,11 @@
     background-color: #fff;
     bottom: 4px;
     content: "";
-    height: 26px;
+    height: 24px;
     left: 4px;
     position: absolute;
     transition: 0.4s;
-    width: 26px;
+    width: 24px;
 }
 
 input:checked+.slider {
@@ -75,7 +83,7 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
-    transform: translateX(26px);
+    transform: translateX(24px);
 }
 
 .slider.round {
@@ -145,29 +153,6 @@ input:checked+.slider:before {
     color: #76076d;
     border-top-color: #76076d;
     border-bottom-color: #76076d;
-}
-
-/* Custom Cursor Css */
-
-.circle {
-    z-index: 999999;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: colors 5s infinite;
-    position: fixed;
-    transform: translate(-50%, -50%);
-}
-
-.circle::before {
-    content: "";
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    opacity: 0.2;
-    transform: translate(-30%, -30%);
-    border-radius: 50%;
 }
 
 /* Preloader Css */
@@ -378,10 +363,21 @@ nav {
     padding: 0.5rem;
 }
 
+.nav-menu {
+    display: flex;
+    margin-left: auto;
+}
+
 nav ul {
     display: flex;
     gap: 2rem;
     list-style: none;
+    align-items: center;
+}
+.nav-menu {
+    display: flex;
+    margin-left: auto; 
+    gap: 1rem; 
 }
 
 #active1 {
@@ -421,9 +417,55 @@ nav ul {
 
 #google_translate_element {
     right: 0;
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
     position: absolute;
+    background: linear-gradient(135deg, #4caf50, #2196f3, #ff9800, #e91e63);
+    background-size: 200% 200%;
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: movingGradient 3s infinite linear;
+}
+
+.goog-te-combo {
+    background: white;
+    color: #6a11cb;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    border: 1px solid #6a11cb;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.goog-te-combo option {
+    font-weight: 600;
+}
+
+.goog-te-combo:hover {
+    background: #f2f2f2;
+    border-color: #2575fc;
+}
+
+.goog-te-gadget {
+    color: white !important;
+    font-weight: 600;
+}
+
+@keyframes movingGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Components Section Css */
@@ -1692,6 +1734,14 @@ footer {
     margin-bottom: 10px;
 }
 
+.company-name img {
+    width: 36px;
+    width: 36px;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
 .company-info p {
     line-height: 1.8;
     text-align: center;
@@ -1793,8 +1843,38 @@ footer {
     text-align: center;
 }
 
+.footer-ul li {
+    margin: 10px 15px;
+    position: relative;
+}
+
+.footer-ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+.footer-ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff1b82; /* Underline color */
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .footer-ul li a:hover {
-    color: #00d0ff;
+    color: #ff1b82; /* Text color on hover */
+}
+
+.footer-ul li a:hover::after {
+    width: 100%; /* Underline expands on hover */
 }
 
 .social {
@@ -1981,7 +2061,7 @@ footer {
 
 /* Media Queries */
 
-@media (max-width: 1060px) {
+@media (max-width: 1121px) {
     .navbar .nav-link {
         font-size: 17px;
     }
@@ -2002,8 +2082,8 @@ footer {
 
 @media (max-width: 1000px) {
     .navbar .nav-link {
-        padding-right: 2px;
-        padding-left: 2px;
+        font-size: 17px;
+        padding: 0 1px;
     }
 }
 
@@ -2021,15 +2101,54 @@ footer {
     }
 
     .navbar .nav-link {
-        font-size: 15px;
-        padding-left: 0px;
-        padding-right: 0px;
+        font-size: 16px;
+    }
+
+    .social {
+        font-size: 2.5rem;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .footer-container {
+        margin: 2px 3px;
+    }
+
+    .company-info,
+    .quick-links,
+    .send-message {
+        margin-top: 8px;
+        text-align: center;
+        flex-basis: 100%;
     }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 855px) and (max-width: 887px) {
+    .navbar .nav-link {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 825px) and (max-width: 855px) {
     .navbar .nav-link {
         font-size: 14px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 825px) {
+    .navbar .nav-link {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 801px) {
+    .navbar .nav-link {
+        font-size: 12px;
     }
 }
 
@@ -2043,7 +2162,6 @@ footer {
 
     .herocontainer {
         border: 1px transparent;
-
         padding-bottom: 10px;
     }
 
@@ -2122,13 +2240,17 @@ footer {
     }
 
     .nav-item {
-        margin: 3.5rem 0;
-        font-size: 20px;
+        margin: 1.8rem 0;
+        font-size: 25px;
     }
 
     nav li:hover {
         border-bottom: 0.4rem var(--secondary-color) solid;
         transition: 0.3s ease-in-out;
+    }
+
+    .theme-switch-wrapper {
+        margin-right: 15px;
     }
 
     .hamburger {
@@ -2177,30 +2299,5 @@ footer {
 
     .footer-basic .social {
         padding-bottom: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .social {
-        font-size: 2.5rem;
-        text-decoration: none;
-        transition: 0.3s ease-in-out;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-    }
-
-    .footer-container {
-        margin: 2px 3px;
-    }
-
-    .company-info,
-    .quick-links,
-    .send-message {
-        margin-top: 8px;
-        text-align: center;
-        flex-basis: 100%;
     }
 }

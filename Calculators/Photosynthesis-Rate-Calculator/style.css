@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #43cea2, #185a9d);
+    color: #fff;
+    background-size: 800% 800%;
+    animation: color-transition 6s infinite;
+}
+
+@keyframes color-transition {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.calculator {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.calculator h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #185a9d;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #185a9d;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #43cea2;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #185a9d;
+    box-shadow: 0 0 8px rgba(67, 206, 162, 0.5);
+}
+
+button {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #185a9d, #43cea2);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #185a9d;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

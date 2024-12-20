@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener("DOMContentLoaded", () => {
     const modulationType = document.getElementById("modulationType");
     const inputFields = document.getElementById("inputFields");

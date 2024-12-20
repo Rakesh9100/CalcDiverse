@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <!-- User Manual on the Left -->
+        <div class="manual">
+            <h2>How to Use</h2>
+            <ul>
+                <li><b>Numbers:</b> Click number buttons (0-9) to enter numbers.</li>
+                <li><b>Operations:</b> Use the operators for basic arithmetic (+, -, *, /).</li>
+                <li><b>Trigonometric Functions:</b> Click a number for trigonometric calculations followed by "sin", "cos", or "tan".</li>
+                <li><b>Inverse Trigonometric Functions:</b> Click a number for trigonometric calculations followed by "asin", "acos", or "atan" for inverse trigonometric calculations.</li>
+                <li><b>Logarithmic Functions:</b> Use "log" for base-10 log and "ln" for the natural log.</li>
+                <li><b>Square Root (√):</b> Click the "√" button for square roots.</li>
+                <li><b>Cube Root (∛):</b> Click the "∛" button for cube roots.</li>
+                <li><b>Power (x²):</b> Click "x²" for squaring a number.</li>
+                <li><b>Clear:</b> Click "C" to clear the display, or "DEL" to delete the last entered character.</li>
+                <li><b>Equals:</b> Click "=" to evaluate the expression.</li>
+            </ul>
+        </div>
+
+        <!-- Calculator Section -->
+        <div class="calculator-box">
+            <div class="calculator">
+                <div class="display">
+                    <input type="text" id="output" disabled />
+                </div>
+                <div class="buttons">
+                    <!-- Row 1 -->
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('/')">/</button>
+
+                    <!-- Row 2 -->
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('*')">*</button>
+
+                    <!-- Row 3 -->
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('-')">-</button>
+
+                    <!-- Row 4 -->
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="clearDisplay()">CLEAR</button>
+                    <button onclick="appendToDisplay('+')">+</button>
+
+                    <!-- Row 5 - Trigonometric Functions -->
+                    <button onclick="calculateTrig('sin')">sin</button>
+                    <button onclick="calculateTrig('cos')">cos</button>
+                    <button onclick="calculateTrig('tan')">tan</button>
+
+                    <!-- Row 6 - Inverse Trigonometric Functions -->
+                    <button onclick="calculateInverse('asin')">asin</button>
+                    <button onclick="calculateInverse('acos')">acos</button>
+                    <button onclick="calculateInverse('atan')">atan</button>
+
+                    <!-- Row 7 - Logarithmic Functions -->
+                    <button onclick="calculateLog()">log</button>
+                    <button onclick="calculateLn()">ln</button>
+
+                    <!-- Row 8 - Miscellaneous -->
+                    <button onclick="calculateSqrt()">√</button>
+                    <button onclick="calculateCbrt()">∛</button>
+                    <button onclick="calculatePower()">x²</button>
+                    <button onclick="calculateExponential()">e^x</button>
+
+                    <!-- Row 9 - Equal and Delete -->
+                    <button onclick="deleteLast()">DEL</button>
+                    <button onclick="calculateResult()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
