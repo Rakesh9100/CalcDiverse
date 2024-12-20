@@ -29,15 +29,7 @@
     background: var(--light);
     border-radius: 25px;
 }
-/* TOGGLE SWITCH */
-.small-screen-adjustment {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
-    width: 100px; 
-    margin-left: 15px;
-    
-  }
+
 /* Dark and light mode Css*/
 
 .small-screen-adjustment {
