@@ -4,12 +4,18 @@ function calculate() {
     const binary2 = document.getElementById('binary2').value;
     const operation = document.getElementById('operation').value;
 
-    // Validate binary input
+if (operation !== "not" && operation !== "binaryToGray") {
     if (!/^[01]+$/.test(binary1) || !/^[01]+$/.test(binary2)) {
         alert("Please enter valid binary numbers.");
         return;
     }
-
+} else {
+    // Validate binary input for operations that require only one input (e.g., NOT)
+    if (!/^[01]+$/.test(binary1)) {
+        alert("Please enter a valid binary number.");
+        return;
+    }
+}
     // Convert binary to decimal
     const num1 = parseInt(binary1, 2);
     const num2 = parseInt(binary2, 2);
@@ -52,6 +58,28 @@ function calculate() {
         case "xor":
             result = (num1 ^ num2).toString(2);
             decimal = (num1 ^ num2);
+            break;
+        case "xnor":
+            let xorResult = num1 ^ num2;  
+            let xnorResult = (~xorResult & ((1 << Math.max(num1.toString(2).length, num2.toString(2).length)) - 1)); 
+            result = xnorResult.toString(2);  
+            decimal = xnorResult;  
+            break;
+        case "nand":
+            let andResult = num1 & num2;
+            let nandResult = (~andResult & ((1 << Math.max(num1.toString(2).length, num2.toString(2).length)) - 1)); 
+            result = nandResult.toString(2);  
+            decimal = nandResult;
+            break;
+        case "not":
+            let notResult = (~num1 & ((1 << num1.toString(2).length) - 1)); 
+            result = notResult.toString(2);  
+            decimal = notResult;
+            break;
+        case "binaryToGray":
+            let grayCode = (num1 ^ (num1 >> 1));  // Binary to Gray Code conversion formula
+            result = grayCode.toString(2);
+            decimal = grayCode;
             break;
         default:
             alert("Invalid operation.");

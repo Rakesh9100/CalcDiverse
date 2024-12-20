@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #ff9966, #ff5e62);
     display: flex;
@@ -6,7 +6,20 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+} */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-vector/binary-code-pattern-background_1142-902.jpg?ga=GA1.1.1974988790.1724696296&semt=ais_hybrid'); 
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+
 
 .container {
     background-color: white;
@@ -14,7 +27,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    width: 500px;
+    width: 400px;
     height: 450px;
 }
 
@@ -64,7 +77,8 @@ input[type="text"]:focus, select:focus {
 button {
     display: block;
     margin: 20px auto;
-    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    /* background: linear-gradient(135deg, #ff9966, #ff5e62); */
+    background-color: blue;
     color: white;
     border: none;
     padding: 10px 15px;
