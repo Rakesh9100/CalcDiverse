@@ -1,6 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,13 +12,14 @@ body {
 }
 
 .container {
-    background-color: white;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    width: 500px;
-    height: 450px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    min-height: 450px;
 }
 
 .container:hover {
@@ -25,16 +29,18 @@ body {
 h1 {
     margin-bottom: 30px;
     text-align: center;
-    color: #555;
+    color: #fff;
+    font-size: 24px;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.group1, .group2{
+.group1,
+.group2 {
     margin-bottom: 20px;
 }
 
@@ -44,11 +50,12 @@ h1 {
 
 label {
     margin-bottom: 5px;
-    color: #333;
+    color: #fff;
 }
 
-input[type="text"], select {
-    padding: 8px;
+input[type="text"],
+select {
+    padding: 10px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -56,7 +63,8 @@ input[type="text"], select {
     transition: border-color 0.3s;
 }
 
-input[type="text"]:focus, select:focus {
+input[type="text"]:focus,
+select:focus {
     border-color: #ff9966;
     outline: none;
 }
@@ -64,14 +72,15 @@ input[type="text"]:focus, select:focus {
 button {
     display: block;
     margin: 20px auto;
-    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    background: linear-gradient(135deg, #1c81ec, #fd29cb);
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 20px;
     cursor: pointer;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 18px;
     transition: transform 0.3s;
+    width: 100%;
 }
 
 button:hover {
@@ -81,4 +90,44 @@ button:hover {
 #results {
     margin-top: 20px;
     text-align: center;
+    color: #fff;
+}
+
+#result,
+#decimal {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
