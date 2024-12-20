@@ -4,25 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armstrong Number Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <title>Armstrong Number Calculator</title>
 </head>
 
 <body>
-    <header>
-        <h1>Armstrong Number Calculator for N-Digits</h1>
-    </header>
-    <main>
-        <div class="container">
-            <form name="myform">
-                <label for="no">Enter Number of Digits (should be <=7):</label>
-                        <input type="number" name="numOfDigits" id="no">
-                        <button type="button" onclick="findArmstrongNumbers()">Find Armstrong Numbers</button>
-            </form>
-            <div id="armstrongNumbers"></div>
-            <div id="additionalContent"></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Armstrong Utility</a>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showSection('description')">Home</a></li>
+                <li><a href="#" onclick="showSection('checker')">Checker</a></li>
+                <li><a href="#" onclick="showSection('finder')">Finder</a></li>
+            </ul>
         </div>
-    </main>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div id="description" class="card">
+            <h2>Welcome to Armstrong Utility</h2>
+            <p>
+                Explore Armstrong numbers!<br><br>
+                • Use <strong>Checker</strong> to verify if a specific number is an Armstrong number.<br>
+                • Use <strong>Finder</strong> to generate Armstrong numbers for a given number of digits.
+            </p>
+        </div>
+
+        <div id="checker" class="card hidden">
+            <h2>Armstrong Number Checker</h2>
+            <p>Check if a specific number is an Armstrong number:</p>
+            <input type="text" id="number" placeholder="Enter a number" />
+            <button onclick="checkArmstrong()">Check</button>
+            <div id="result" class="result"></div>
+        </div>
+
+        <div id="finder" class="card hidden">
+            <h2>Find Armstrong Numbers</h2>
+            <p>Find Armstrong numbers by specifying the number of digits:</p>
+            <input type="number" id="numOfDigits" min="1" max="7" placeholder="Enter number of digits" />
+            <button onclick="findArmstrongNumbers()">Find Numbers</button>
+            <div id="armstrongNumbers" class="result"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
