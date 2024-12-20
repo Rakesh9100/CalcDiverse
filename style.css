@@ -40,6 +40,13 @@
   }
 /* Dark and light mode Css*/
 
+.small-screen-adjustment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
@@ -50,6 +57,7 @@
     height: 32px;
     position: relative;
     width: 55px;
+    margin-left: auto;
 }
 
 .theme-switch input {
@@ -57,7 +65,7 @@
 }
 
 .slider {
-    background-color: #ccc;
+    background-color: #000080;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -361,6 +369,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    margin-left: auto;
 }
 
 nav ul {
@@ -2242,6 +2255,10 @@ footer {
     nav li:hover {
         border-bottom: 0.4rem var(--secondary-color) solid;
         transition: 0.3s ease-in-out;
+    }
+
+    .theme-switch-wrapper {
+        margin-right: 15px;
     }
 
     .hamburger {
