@@ -157,6 +157,10 @@ input:checked+.slider:before {
     transition: all 0.3s ease-in-out;
 }
 
+.dark-mode .logo:hover {
+    color: #c2185b;
+}
+
 /* Preloader Css */
 
 #loader-wrapper {
@@ -400,7 +404,7 @@ nav ul {
 }
 
 .logo:hover {
-    color: #ff1b82;
+    color: #87ceeb;
 }
 
 .hamburger {
