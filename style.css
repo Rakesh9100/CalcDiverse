@@ -157,6 +157,10 @@ input:checked+.slider:before {
     transition: all 0.3s ease-in-out;
 }
 
+.dark-mode .logo:hover {
+    color: #c2185b;
+}
+
 /* Preloader Css */
 
 #loader-wrapper {
@@ -400,7 +404,7 @@ nav ul {
 }
 
 .logo:hover {
-    color: #ff1b82;
+    color: #87ceeb;
 }
 
 .hamburger {
@@ -1657,10 +1661,10 @@ section {
 }
 
 #pagination-controls button {
-    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
     border: none;
-    border-radius: 30px;
-    color: #333;
+    border-radius: 10px;
+    color: white;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -1672,7 +1676,11 @@ section {
 #pagination-controls button:hover {
     transform: translateY(-5px);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.7);
-    background: linear-gradient(145deg, #1196c3, #36b3d5);
+    background: linear-gradient(to right, #373b44, #4286f4);
+}
+
+.dark-mode #pagination-controls button:hover {
+    background: linear-gradient(to right, #8e44ad, #ff758c);
 }
 
 #pagination-controls button:active {
@@ -1689,16 +1697,6 @@ section {
 #pagination-controls #page-info {
     color: white;
     font-size: medium;
-}
-
-#prev:hover {
-    box-shadow: 2px 2px 5px 0px #682572;
-    background: linear-gradient(to right, #0575E6, #00F260);
-}
-
-#next:hover {
-    box-shadow: 2px 2px 5px 0px #682572;
-    background: linear-gradient(to right, #0575E6, #00F260);
 }
 
 /* Footer Section Css */
