@@ -371,6 +371,7 @@ nav {
 }
 
 .nav-menu {
+    gap: 1rem;
     display: flex;
     margin-left: auto;
 }
@@ -380,11 +381,6 @@ nav ul {
     gap: 2rem;
     list-style: none;
     align-items: center;
-}
-.nav-menu {
-    display: flex;
-    margin-left: auto; 
-    gap: 1rem; 
 }
 
 #active1 {
