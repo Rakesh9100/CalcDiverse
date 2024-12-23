@@ -2,7 +2,7 @@
 
 ## Description :-
 
-Calculates the cyclomatic complexity using three different methods. Allows user to use different methods and verify the answer
+Calculates the cyclomatic complexity using three different methods.
 
 
 ## Tech Stacks :-
@@ -16,7 +16,7 @@ Calculates the cyclomatic complexity using three different methods. Allows user 
 
 - Calculates cyclomatic complexity based on number of nodes, components and edges in graph.
 - Calculates cyclomatic complexity using regions of graph.
-- Calculates cyclomatic complexity using conditional nodes in graph.
+- Calculates cyclomatic complexity using conditional nodes of graph.
 - Gives clear and detailed input instructions.
 
 
