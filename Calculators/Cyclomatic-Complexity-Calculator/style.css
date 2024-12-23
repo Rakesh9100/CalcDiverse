@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 26, 110, 0.1);
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(-60deg, #F765A3, #A155B9, #165BAA, #0B1354);
+    
+}
+section{
+    margin-top: 90px;
+    max-width: 1000px;
+    width: 50%;
+    display: inline;
+    min-height: 300px;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 80px;
+    display: inline-block;
+    position: fixed;
+    margin-top: -650px;
+}
+h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+
+div{
+    background-color: #fddfdf;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    padding: 10px 45px;
+    background-color: #F9D1D1;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .4s;
+    margin: 10px 0px 5px;
+}
+.tab-content{
+    display: none;
+    margin: 20px 0;
+    height: auto;
+    padding: auto;
+}
+
+.tab-content .label-text{
+    font-size: 19px;
+}
+input[type="radio"]:checked+label{
+    background-color: #FFA4B6;
+    color: #fff;
+}
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3{
+    display: block;
+}
+
+button{
+    margin: 15px 0px;
+    width: 55%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #fff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input{
+    display: block;
+    border: none;
+    line-height: 22px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 2px;
+    width: 80%;
+    margin: 5px 0;
+}
+
+.tab-content label{
+    padding: 0;
+    font-size: 16px;
+    background-color: transparent;
+    display: block;
+}
+
+.note{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+span{
+    display: block;
+}
