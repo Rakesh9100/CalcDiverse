@@ -2,7 +2,6 @@
 
 * {
     font-family: 'Bitter', serif;
-
 }
 
 body {
@@ -16,6 +15,7 @@ body {
     left: 25%;
     border-radius: 20px;
     background-color: white;
+    padding: 20px;
 }
 
 h1 {
@@ -27,6 +27,7 @@ h1 {
 h3 {
     display: flex;
     justify-content: center;
+    margin: 10px 0;
 }
 
 button {
@@ -38,6 +39,8 @@ button {
     border: none;
     border-radius: 10px;
     width: 50%;
+    padding: 10px;
+    margin: 20px 0;
 }
 
 button:hover {
@@ -50,6 +53,8 @@ input {
     left: 25%;
     font-size: 1.5rem;
     width: 50%;
+    padding: 5px;
+    margin: 10px 0;
 }
 
 ul {
@@ -57,7 +62,7 @@ ul {
     left: 30%;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     input {
         position: relative;
         left: 15%;
