@@ -672,6 +672,12 @@
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Degree-Radian-Calculator"
     },
     {
+        "title": "Density Calculator",
+        "description": "Calculates the density of a substance based on its mass and volume.",
+        "link": "./Calculators/Density-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Density-Calculator"
+    },
+    {
         "title": "Depth Of Field Calculator",
         "description": "Calculator that helps photographers determine the depth of field based on some factors.",
         "link": "./Calculators/Depth-Of-Field-Calculator/index.html",
