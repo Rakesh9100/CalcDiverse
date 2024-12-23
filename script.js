@@ -1,3 +1,44 @@
+// Load the calculators dynamically from the JSON file
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('calculators.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.querySelector('.container');
+            // Ensure we are adding to the correct container
+            const calculatorsSection = document.querySelector('#calculators');
+
+            // Loop through the data and create the content for each calculator
+            data.forEach(calculator => {
+                const box = document.createElement('div');
+                box.className = 'box'; // This ensures the box element gets the same class
+                box.innerHTML = `
+                    <div class="content">
+                        <h2>${calculator.title}</h2>
+                        <h3>${calculator.description}</h3>
+                        <div class="card-footer">
+                            <a href="${calculator.link}" target="_blank">
+                                <button>Try Now</button>
+                            </a>
+                            <a href="${calculator.source}" title="Source Code" target="_blank">
+                                <img src="./assets/images/github.png" alt="Source Code"></img>
+                            </a>
+                        </div>
+                    </div>
+                `;
+                // Append to the calculatorsSection
+                calculatorsSection.appendChild(box);
+            });
+
+            // Initialize pagination and search functionality
+            calculators = document.querySelectorAll('.container .box');
+            h2TextContents = Array.from(calculators).map(calculator => calculator.querySelector('h2').textContent);
+            showPage(currentPage);
+        });
+
+    document.getElementById('noResults').style.display = 'none';
+    showPage(currentPage);
+});
+
 // Highlight active section in navigation on scroll
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('.containers');
@@ -110,11 +151,6 @@ function filterCalculators() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('noResults').style.display = 'none';
-    showPage(currentPage);
-});
-
 var input1 = document.getElementById('calculatorSearch');
 input1.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
@@ -158,17 +194,17 @@ input.addEventListener('input', (e) => {
     if (searchResultsContainer) {
         search_input_container.removeChild(searchResultsContainer);
     }
-    
+
     searchResultsContainer = document.createElement('div');
     let div = document.createElement('div');
     searchResultsContainer.setAttribute('id', 'searchResults_Container');
-    
+
     let filtered = h2TextContents.filter(ele => {
         const searchTerm = e.target.value.toLowerCase();
         const elementText = ele.toLowerCase();
         return elementText.includes(searchTerm);
     });
-    
+
     if (filtered && e.target.value.length > 0) {
         filtered.forEach((item, index) => {
             let p = document.createElement('p');
@@ -183,7 +219,7 @@ input.addEventListener('input', (e) => {
         searchResultsContainer.appendChild(div);
         search_input_container.appendChild(searchResultsContainer);
     }
-    
+
     if (e.target.value.length === 0) {
         searchResultsContainer.removeChild(div);
     }
@@ -219,6 +255,7 @@ if (SpeechRecognition) {
     }
 
     recognition.addEventListener("start", startSpeechRecognition);
+
     function startSpeechRecognition() {
         micIcon.classList.remove("fa-microphone");
         micIcon.classList.add("fa-microphone-slash");
@@ -227,6 +264,7 @@ if (SpeechRecognition) {
     }
 
     recognition.addEventListener("end", endSpeechRecognition);
+
     function endSpeechRecognition() {
         micIcon.classList.remove("fa-microphone-slash");
         micIcon.classList.add("fa-microphone");
@@ -235,6 +273,7 @@ if (SpeechRecognition) {
     }
 
     recognition.addEventListener("result", resultOfSpeechRecognition);
+
     function resultOfSpeechRecognition(event) {
         const current = event.resultIndex;
         const transcript = event.results[current][0].transcript;
