@@ -1674,9 +1674,9 @@ section {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.7);
     background: linear-gradient(to right, #373b44, #4286f4);
 }
+
 .dark-mode #pagination-controls button:hover {
     background: linear-gradient(to right, #8e44ad, #ff758c);
-
 }
 
 #pagination-controls button:active {
@@ -1694,7 +1694,6 @@ section {
     color: white;
     font-size: medium;
 }
-
 
 
 
