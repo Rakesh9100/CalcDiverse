@@ -1,0 +1,2546 @@
+[
+    {
+        "title": "2D Distance Calculator",
+        "description": "Calculates the distance between two points on a 2D plane.",
+        "link": "./Calculators/2D-Distance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/2D-Distance-Calculator"
+    },
+    {
+        "title": "2D Shapes Calculator",
+        "description": "Calculates the area and perimeter of different useful 2D shapes.",
+        "link": "./Calculators/2D-Shapes-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/2D-Shapes-Calculator"
+    },
+    {
+        "title": "3D Distance Calculator",
+        "description": "Calculates the distance between 2 points in a 3D space.",
+        "link": "./Calculators/3D-Distance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/3D-Distance-Calculator"
+    },
+    {
+        "title": "3D Shapes Calculator",
+        "description": "Calculates the volume and surface area of different important and useful 3D shapes.",
+        "link": "./Calculators/3D-Shapes-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/3D-Shapes-Calculator"
+    },
+    {
+        "title": "3D Surface Plotter Calculator",
+        "description": "Plots the 3D surfaces for the given functions.",
+        "link": "./Calculators/3D-Surface-Plotter-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/3D-Surface-Plotter-Calculator"
+    },
+    {
+        "title": "4 Band Resistance Calculator",
+        "description": "Calculate the theoretical resistance of a 4-band resistor.",
+        "link": "./Calculators/4-Band-Resistance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/4-Band-Resistance-Calculator"
+    },
+    {
+        "title": "5 Band Resistance Calculator",
+        "description": "Calculate the theoretical resistance of a 5-band resistor.",
+        "link": "./Calculators/5-Band-Resistance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/5-Band-Resistance-Calculator"
+    },
+    {
+        "title": "6 Band Resistance Calculator",
+        "description": "Calculate the theoretical resistance of a 6-band resistor.",
+        "link": "./Calculators/6-Band-Resistance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/6-Band-Resistance-Calculator"
+    },
+    {
+        "title": "AC/DC Power Calculator",
+        "description": "Converts power values between AC and DC.",
+        "link": "./Calculators/AC-DC-Power-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/AC-DC-Power-Calculator"
+    },
+    {
+        "title": "ASCII Value Calculator",
+        "description": "Calculates the ASCII value of any character.",
+        "link": "./Calculators/ASCII-Value-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/ASCII-Value-Calculator"
+    },
+    {
+        "title": "Abundant Number Calculator",
+        "description": "Checks for a number to be abundant or not.",
+        "link": "./Calculators/Abundant-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Abundant-Number-Calculator"
+    },
+    {
+        "title": "Acoustic Impedance Calculator",
+        "description": "Calculates the acoustic impedance by taking the density & speed of sound as input.",
+        "link": "./Calculators/Acoustic-Impedance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Acoustic-Impedance-Calculator"
+    },
+    {
+        "title": "Age Calculator",
+        "description": "Calculates the person's age by taking in the date of birth as input.",
+        "link": "./Calculators/Age-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Age-Calculator"
+    },
+    {
+        "title": "Air Fuel Ratio Calculator",
+        "description": "Calculates the mass of air to fuel ratio (AFR) for any fuel.",
+        "link": "./Calculators/Air-Fuel-Ratio-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Air-Fuel-Ratio-Calculator"
+    },
+    {
+        "title": "Air Quality Index Calculator",
+        "description": "Calculates the level of the air quality using AQI index as input.",
+        "link": "./Calculators/Air-Quality-Index-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Air-Quality-Index-Calculator"
+    },
+    {
+        "title": "Amortization Calculator",
+        "description": "Calculates the monthly payments and generates an Amortization schedule for loans.",
+        "link": "./Calculators/Amortization-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Amortization-Calculator"
+    },
+    {
+        "title": "Anagram Calculator",
+        "description": "Calculator which checks whether the two words are Anagram or not.",
+        "link": "./Calculators/Anagram-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Anagram-Calculator"
+    },
+    {
+        "title": "Angle Between Two Lines Calculator",
+        "description": "Calculates an angle between the two lines.",
+        "link": "./Calculators/Angle-Between-Two-Lines-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Angle-Between-Two-Lines-Calculator"
+    },
+    {
+        "title": "Annulus Calculator",
+        "description": "Calculates the area of the circle with inner and outer radius.",
+        "link": "./Calculators/Annulus-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Annulus-Calculator"
+    },
+    {
+        "title": "Antilog Calculator",
+        "description": "Calculates the antilog of any given number taken over any base.",
+        "link": "./Calculators/Antilog-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Antilog-Calculator"
+    },
+    {
+        "title": "Arithmetic Geometric Progression Calculator",
+        "description": "Calculates nth Term and sum of n Terms of the Arithmetic Geometric Sequence.",
+        "link": "./Calculators/Arithmetic-Geometric-Progression-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Arithmetic-Geometric-Progression-Calculator"
+    },
+    {
+        "title": "Arithmetic Progression Calculator",
+        "description": "Calculates nth Term, arithmetic mean and sum of n Terms present in an Arithmetic Sequence.",
+        "link": "./Calculators/Arithmetic-Progression-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Arithmetic-Progression-Calculator"
+    },
+    {
+        "title": "Armstrong Number Calculator",
+        "description": "Checks if a number is armstrong and lists armstrong numbers for a given digit count.",
+        "link": "./Calculators/Armstrong-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Armstrong-Number-Calculator"
+    },
+    {
+        "title": "Arrhenius Equation Calculator",
+        "description": "Calculates important parameters of chemical kinetics.",
+        "link": "./Calculators/Arrhenius-Equation-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Arrhenius-Equation-Calculator"
+    },
+    {
+        "title": "Aspect Ratio Calculator",
+        "description": "Calculates the aspect ratio of the specified height and width.",
+        "link": "./Calculators/Aspect-Ratio-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Aspect-Ratio-Calculator"
+    },
+    {
+        "title": "Astrological Age Calculator",
+        "description": "Calculates the age on different planets as selected by the user.",
+        "link": "./Calculators/Astrological-Age-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Astrological-Age-Calculator"
+    },
+    {
+        "title": "Atomic Composition Calculator",
+        "description": "Calculates the number of protons, neutrons, and electrons in an atom.",
+        "link": "./Calculators/Atomic-Composition-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Atomic-Composition-Calculator"
+    },
+    {
+        "title": "Automorphic Number Calculator",
+        "description": "Checks if a number is an automorphic number or not.",
+        "link": "./Calculators/Automorphic-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Automorphic-Number-Calculator"
+    },
+    {
+        "title": "Averages Calculator",
+        "description": "Calculates the arithmetic, geometric, and harmonic means.",
+        "link": "./Calculators/Averages-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Averages-Calculator"
+    },
+    {
+        "title": "BMI Calculator",
+        "description": "Calculates the Body Mass Index of a person using Height & Weight.",
+        "link": "./Calculators/BMI-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/BMI-Calculator"
+    },
+    {
+        "title": "BMR Calculator",
+        "description": "Calculates the Basal Metabolic Rate of a person using height, weight & age.",
+        "link": "./Calculators/BMR-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/BMR-Calculator"
+    },
+    {
+        "title": "BSA Calculator",
+        "description": "Calculates the Body Surface Area with personalized health tips and data persistence.",
+        "link": "./Calculators/BSA-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/BSA-Calculator"
+    },
+    {
+        "title": "Banker's Algorithm Calculator",
+        "description": "Calculates the safety sequence for resource allocation.",
+        "link": "./Calculators/Banker's-Algorithm-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Banker's-Algorithm-Calculator"
+    },
+    {
+        "title": "Base Change Calculator",
+        "description": "Converts a number between different bases.",
+        "link": "./Calculators/Base-Change-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Base-Change-Calculator"
+    },
+    {
+        "title": "Basic Calculator",
+        "description": "Basic old school calculator for simple calculations.",
+        "link": "./Calculators/Basic-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Basic-Calculator"
+    },
+    {
+        "title": "Basic Physics Calculator",
+        "description": "Easily calculates the basic physics quantities.",
+        "link": "./Calculators/Basic-Physics-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Basic-Physics-Calculator"
+    },
+    {
+        "title": "Battery Life Calculator",
+        "description": "Estimates battery life based on capacity and average load current.",
+        "link": "./Calculators/Battery-Life-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Battery-Life-Calculator"
+    },
+    {
+        "title": "Bayes Theorem Calculator",
+        "description": "Calculates the probability of an event A given that event B has occurred.",
+        "link": "./Calculators/Bayes-Theorem-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Bayes-Theorem-Calculator"
+    },
+    {
+        "title": "Beta Function Calculator",
+        "description": "Calculate the ß value of two numbers in a single click!",
+        "link": "./Calculators/Beta-Function-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Beta-Function-Calculator"
+    },
+    {
+        "title": "Bill Split Calculator",
+        "description": "Effortlessly split bills with our calculator. Simplify expense sharing now!",
+        "link": "./Calculators/Bill-Split-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Bill-Split-Calculator"
+    },
+    {
+        "title": "Binary Calculator",
+        "description": "Calculates results of different binary operations based on inputs.",
+        "link": "./Calculators/Binary-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Binary-Calculator"
+    },
+    {
+        "title": "Binomial Distribution Calculator",
+        "description": "Calculates the value of the probability mass function and probability distribution function.",
+        "link": "./Calculators/Binomial-Distribution-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Binomial-Distribution-Calculator"
+    },
+    {
+        "title": "Binomial Expansion Calculator",
+        "description": "Calculates and display the binomial expansion of given coefficients a, b, and power n.",
+        "link": "./Calculators/Binomial-Expansion-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Binomial-Expansion-Calculator"
+    },
+    {
+        "title": "Bitwise Calculator",
+        "description": "Calculates results of different bitwise operations based on inputs.",
+        "link": "./Calculators/Bitwise-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Bitwise-Calculator"
+    },
+    {
+        "title": "Black Hole Number Calculator",
+        "description": "Given any number, it reaches to Four.",
+        "link": "./Calculators/Black-Hole-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Black-Hole-Number-Calculator"
+    },
+    {
+        "title": "Blood Alcohol Content Calculator",
+        "description": "Calculates the BAC based on the entered input values.",
+        "link": "./Calculators/Blood-Alcohol-Content-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Blood-Alcohol-Content-Calculator"
+    },
+    {
+        "title": "Blood Pressure Calculator",
+        "description": "Calculates the blood pressure based on the systolic and diastolic values.",
+        "link": "./Calculators/Blood-Pressure-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Blood-Pressure-Calculator"
+    },
+    {
+        "title": "Blood Sugar Calculator",
+        "description": "Calculates the range of blood sugar levels in the body based on age and medical test results.",
+        "link": "./Calculators/Blood-Sugar-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Blood-Sugar-Calculator"
+    },
+    {
+        "title": "Body Fat Percentage Calculator",
+        "description": "Calculates the body fat percentage of a person using neck, waist, weight & height.",
+        "link": "./Calculators/Body-Fat-Percentage-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Body-Fat-Percentage-Calculator"
+    },
+    {
+        "title": "Body Shape Calculator",
+        "description": "Calculates body shape using waist, bust, and hip measurements, and also suggests styles.",
+        "link": "./Calculators/Body-Shape-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Body-Shape-Calculator"
+    },
+    {
+        "title": "Book Reading Time Calculator",
+        "description": "Calculates the time required to finish reading a book.",
+        "link": "./Calculators/Book-Reading-Time-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Book-Reading-Time-Calculator"
+    },
+    {
+        "title": "Budget Tracker Calculator",
+        "description": "Calculates the budget based on the income and expenditure.",
+        "link": "./Calculators/Budget-Tracker-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Budget-Tracker-Calculator"
+    },
+    {
+        "title": "Bouncy Number Calculator",
+        "description": "Check the number is bouncy or not and finds bouncy numbers in a range.",
+        "link": "./Calculators/Bouncy-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Bouncy-Number-Calculator"
+    },
+    {
+        "title": "Boyle Temperature Calculator",
+        "description": "Calculates the Boyle temperature using constants a and b.",
+        "link": "./Calculators/Boyle-Temperature-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Boyle-Temperature-Calculator"
+    },
+    {
+        "title": "Buoyancy Calculator",
+        "description": "Calculates the buoyant force on an object submerged in a fluid.",
+        "link": "./Calculators/Buoyancy-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Buoyancy-Calculator"
+    },
+    {
+        "title": "Buzz Number Calculator",
+        "description": "Checks for a number to be a buzz number or not.",
+        "link": "./Calculators/Buzz-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Buzz-Number-Calculator"
+    },
+    {
+        "title": "CAGR Calculator",
+        "description": "Calculates the Compound Annual Growth Rate of an investment over a specified period.",
+        "link": "./Calculators/CAGR-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/CAGR-Calculator"
+    },
+    {
+        "title": "CGPA Percentage Calculator",
+        "description": "Converts CGPA to percentage and vice-versa.",
+        "link": "./Calculators/CGPA-Percentage-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/CGPA-Percentage-Calculator"
+    },
+    {
+        "title": "CGS FPS MKS Calculator",
+        "description": "Calculator that converts inputs between CGS, FPS, and MKS unit systems for various physical quantities.",
+        "link": "./Calculators/CGS-FPS-MKS-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/CGS-FPS-MKS-Calculator"
+    },
+    {
+        "title": "CO2 Emissions Calculator",
+        "description": "Calculates the carbon footprint from various modes of transport.",
+        "link": "./Calculators/CO2-Emissions-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/CO2-Emissions-Calculator"
+    },
+    {
+        "title": "CPU Scheduling Calculator",
+        "description": "Calculates the wait time and turnaround time for various CPU scheduling algorithms.",
+        "link": "./Calculators/CPU-Scheduling-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/CPU-Scheduling-Calculator"
+    },
+    {
+        "title": "CSS Unit Calculator",
+        "description": "Converts various css units.",
+        "link": "./Calculators/CSS-Unit-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/CSS-Unit-Calculator"
+    },
+    {
+        "title": "Caesar Cipher Encryption Calculator",
+        "description": "Encrypts the given plaintext into cipher text using a technique called Caesar Cipher.",
+        "link": "./Calculators/Caesar-Cipher-Encryption-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Caesar-Cipher-Encryption-Calculator"
+    },
+    {
+        "title": "Calorie Burnt Calculator",
+        "description": "Calculates the amount of calories burnt from particular exercise.",
+        "link": "./Calculators/Calorie-Burnt-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Calorie-Burnt-Calculator"
+    },
+    {
+        "title": "Calorie Consumed Calculator",
+        "description": "Calculates daily calorie consumed based on given inputs.",
+        "link": "./Calculators/Calorie-Consumed-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Calorie-Consumed-Calculator"
+    },
+    {
+        "title": "Calorie Intake Calculator",
+        "description": "Calculates daily calorie intake based on given inputs.",
+        "link": "./Calculators/Calorie-Intake-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Calorie-Intake-Calculator"
+    },
+    {
+        "title": "Capacitance Calculator",
+        "description": "Calculates the capacitance in a parallel plate capacitor.",
+        "link": "./Calculators/Capacitance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Capacitance-Calculator"
+    },
+    {
+        "title": "Capacitor Conversion Calculator",
+        "description": "Converts capacitor values between different units.",
+        "link": "./Calculators/Capacitor-Conversion-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Capacitor-Conversion-Calculator"
+    },
+    {
+        "title": "Carbon Footprint Calculator",
+        "description": "Calculates an individual's carbon footprint based on some input parameters.",
+        "link": "./Calculators/Carbon-Footprint-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Carbon-Footprint-Calculator"
+    },
+    {
+        "title": "Cat Quality Of Life Calculator",
+        "description": "Calculates your beloved cat's life quality according to standard parameters.",
+        "link": "./Calculators/Cat-Quality-Of-Life-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Cat-Quality-Of-Life-Calculator"
+    },
+    {
+        "title": "Catalan Number Calculator",
+        "description": "Calculates the nth Catalan Number with the value of n entered by the user.",
+        "link": "./Calculators/Catalan-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Catalan-Number-Calculator"
+    },
+    {
+        "title": "Catenary Curve Calculator",
+        "description": "Calculate and visualize the catenary curve based on user inputs.",
+        "link": "./Calculators/Catenary-Curve-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Catenary-Curve-Calculator"
+    },
+    {
+        "title": "Centripetal Force Calculator",
+        "description": "Calculates Centripetal force and acceleration.",
+        "link": "./Calculators/Centripetal-Force-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Centripetal-Force-Calculator"
+    },
+    {
+        "title": "Centroid Of A Triangle Calculator",
+        "description": "Calculates the centroid of a triangle by taking the coordinates.",
+        "link": "./Calculators/Centroid-Of-A-Triangle-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Centroid-Of-A-Triangle-Calculator"
+    },
+    {
+        "title": "Chi-Square Calculator",
+        "description": "Calculates the Chi-Square value of the data.",
+        "link": "./Calculators/Chi-Square-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Chi-Square-Calculator"
+    },
+    {
+        "title": "Chinese Zodiac Calculator",
+        "description": "Calculates the Chinese zodiac sign of the user by taking the year of birth as input.",
+        "link": "./Calculators/Chinese-Zodiac-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Chinese-Zodiac-Calculator"
+    },
+    {
+        "title": "Circular Motion Calculator",
+        "description": "Calculates Centripetal Acceleration, Angular Frequency, Period and Frequency.",
+        "link": "./Calculators/Circular-Motion-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Circular-Motion-Calculator"
+    },
+    {
+        "title": "Circular Prime Calculator",
+        "description": "Checks if a number is circular prime and finds circular prime numbers in a range.",
+        "link": "./Calculators/Circular-Prime-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Circular-Prime-Calculator"
+    },
+    {
+        "title": "Click Through Rate Calculator",
+        "description": "Calculates the CTR of an ad or link in driving users to click on it.",
+        "link": "./Calculators/Click-Through-Rate-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Click-Through-Rate-Calculator"
+    },
+    {
+        "title": "Clock Hands Angle Calculator",
+        "description": "Calculates the angle between the hour and minute hands for a specified time.",
+        "link": "./Calculators/Clock-Hands-Angle-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Clock-Hands-Angle-Calculator"
+    },
+    {
+        "title": "Clothing Size Calculator",
+        "description": "Inter-converts clothing sizes from one country to another, the international size, and the exact measurements for each size.",
+        "link": "./Calculators/Clothing-Size-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Clothing-Size-Calculator"
+    },
+    {
+        "title": "Color Code Calculator",
+        "description": "Interconverts color codes among RGB, RGBA, HEX (Hexadecimal), HSL, HSV and CMYK.",
+        "link": "./Calculators/Color-Code-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Color-Code-Calculator"
+    },
+    {
+        "title": "Complement Calculator",
+        "description": "Calculates the nth complement of a given number in a specified base.",
+        "link": "./Calculators/Complement-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Complement-Calculator"
+    },
+    {
+        "title": "Complex Number Calculator",
+        "description": "Performs mathematical operations on complex numbers.",
+        "link": "./Calculators/Complex-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Complex-Number-Calculator"
+    },
+    {
+        "title": "Complex Seismographic Impact Calculator",
+        "description": "Estimates the impact of an earthquake based on some parameters.",
+        "link": "./Calculators/Complex-Seismographic-Impact-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Complex-Seismographic-Impact-Calculator"
+    },
+    {
+        "title": "Compound Interest Calculator",
+        "description": "Takes Principal amount, time in years, interest rate and Gives compound interest.",
+        "link": "./Calculators/Compound-Interest-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Compound-Interest-Calculator"
+    },
+    {
+        "title": "Conductivity And Resistivity Calculator",
+        "description": "Calculates the Conductivity & Resistivity.",
+        "link": "./Calculators/Conductivity-And-Resistivity-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Conductivity-And-Resistivity-Calculator"
+    },
+    {
+        "title": "Confusion Matrix Calculator",
+        "description": "Calculates Accuracy, Precision, Recall, and F1 Score for classification models in machine learning.",
+        "link": "./Calculators/Confusion-Matrix-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Confusion-Matrix-Calculator"
+    },
+    {
+        "title": "Cosine Formula Calculator",
+        "description": "Calculates the angle of the triangle using cosine formula.",
+        "link": "./Calculators/Cosine-Formula-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Cosine-Formula-Calculator"
+    },
+    {
+        "title": "Cost Of Living Calculator",
+        "description": "Calculates what your current salary would look like in another city.",
+        "link": "./Calculators/Cost-Of-Living-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Cost-Of-Living-Calculator"
+    },
+    {
+        "title": "Credit Card Payoff Calculator",
+        "description": "Calculates the time in which you can payoff your Credits.",
+        "link": "./Calculators/Credit-Card-Payoff-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Credit-Card-Payoff-Calculator"
+    },
+    {
+        "title": "Cricket Calculator",
+        "description": "Calculates various cricket related terms.",
+        "link": "./Calculators/Cricket-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Cricket-Calculator"
+    },
+    {
+        "title": "Critical Point Calculator",
+        "description": "Calculates the critical point of ideal gases based on a and b.",
+        "link": "./Calculators/Critical-Point-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Critical-Point-Calculator"
+    },
+    {
+        "title": "Crop Yield Calculator",
+        "description": "Estimates the amount of crop that will be harvested per unit area.",
+        "link": "./Calculators/Crop-Yield-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Crop-Yield-Calculator"
+    },
+    {
+        "title": "Cross Product Calculator",
+        "description": "Calculates the cross-product of two 3D vectors and finds the angle between them.",
+        "link": "./Calculators/Cross-Product-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Cross-Product-Calculator"
+    },
+    {
+        "title": "Cryptocurrency Calculator",
+        "description": "Calculates the converted price of various cryptocurrencies to different fiat currencies.",
+        "link": "./Calculators/Cryptocurrency-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Cryptocurrency-Calculator"
+    },
+    {
+        "title": "Cuban Prime Calculator",
+        "description": "Checks if a number is cuban prime or not and finds cuban prime numbers in a range.",
+        "link": "./Calculators/Cuban-Prime-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Cuban-Prime-Calculator"
+    },
+    {
+        "title": "Cube Root Calculator",
+        "description": "Calculates cube root of any number.",
+        "link": "./Calculators/Cube-Root-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Cube-Root-Calculator"
+    },
+    {
+        "title": "Cubic Equation Calculator",
+        "description": "Solves cubic equations, providing real or complex solutions.",
+        "link": "./Calculators/Cubic-Equation-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Cubic-Equation-Calculator"
+    },
+    {
+        "title": "Currency Calculator",
+        "description": "Converts the value of one Currency unit into another Currency unit.",
+        "link": "./Calculators/Currency-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Currency-Calculator"
+    },
+    {
+        "title": "Curve Fitting Calculator",
+        "description": "Plots the curve fitting for linear, quadratic, cubic, and exponential curves.",
+        "link": "./Calculators/Curve-Fitting-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Curve-Fitting-Calculator"
+    },
+    {
+        "title": "Cut Off Calculator",
+        "description": "Calculates the Engineering / Medical cutoff for students.",
+        "link": "./Calculators/Cut-Off-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Cut-Off-Calculator"
+    },
+    {
+        "title": "DTI Ratio Calculator",
+        "description": "Calculates your debt-to-income ratio, to help in managing your financial health.",
+        "link": "./Calculators/DTI-Ratio-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/DTI-Ratio-Calculator"
+    },
+    {
+        "title": "Data Size Calculator",
+        "description": "Converts input data size to other data sizes instantly.",
+        "link": "./Calculators/Data-Size-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Data-Size-Calculator"
+    },
+    {
+        "title": "Date Time Calculator",
+        "description": "Calculates Date & Time of the specific period.",
+        "link": "./Calculators/Date-Time-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Date-Time-Calculator"
+    },
+    {
+        "title": "Day From The Date Calculator",
+        "description": "Calculates the day for the specified date.",
+        "link": "./Calculators/Day-From-The-Date-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Day-From-The-Date-Calculator"
+    },
+    {
+        "title": "Days Until Deadline Calculator",
+        "description": "Calculates the number of days remaining until a selected date.",
+        "link": "./Calculators/Days-Until-Deadline-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Days-Until-Deadline-Calculator"
+    },
+    {
+        "title": "Debt Payoff Calculator",
+        "description": "Effortlessly plan and manage your debt repayment with our easy-to-use Debt Payoff Calculator.",
+        "link": "./Calculators/Debt-Payoff-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Debt-Payoff-Calculator"
+    },
+    {
+        "title": "Decimal Roman Calculator",
+        "description": "Converts the decimal number to roman number and vice-versa.",
+        "link": "./Calculators/Decimal-Roman-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Decimal-Roman-Calculator"
+    },
+    {
+        "title": "Decimal String Calculator",
+        "description": "Converts strings to decimal numbers and vice-versa.",
+        "link": "./Calculators/Decimal-String-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Decimal-String-Calculator"
+    },
+    {
+        "title": "Definite Integral Calculator",
+        "description": "Evaluates integral of mathematical functions with definite limits.",
+        "link": "./Calculators/Definite-Integral-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Definite-Integral-Calculator"
+    },
+    {
+        "title": "Degree Radian Calculator",
+        "description": "Converts the Degree into Radian and vice-versa.",
+        "link": "./Calculators/Degree-Radian-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Degree-Radian-Calculator"
+    },
+    {
+        "title": "Density Calculator",
+        "description": "Calculates the density of a substance based on its mass and volume.",
+        "link": "./Calculators/Density-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Density-Calculator"
+    },
+    {
+        "title": "Depth Of Field Calculator",
+        "description": "Calculator that helps photographers determine the depth of field based on some factors.",
+        "link": "./Calculators/Depth-Of-Field-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Depth-Of-Field-Calculator"
+    },
+    {
+        "title": "Determinant Calculator",
+        "description": "Calculates the determinant of the matrix with the given size.",
+        "link": "./Calculators/Determinant-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Determinant-Calculator"
+    },
+    {
+        "title": "Differential Calculator",
+        "description": "Evaluates derivatives and mathematical functions.",
+        "link": "./Calculators/Differential-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Differential-Calculator"
+    },
+    {
+        "title": "Digital Detox Calculator",
+        "description": "Calculates the amount of time we spend on digital devices and suggests a plan for a balanced digital detox.",
+        "link": "./Calculators/Digital-Detox-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Digital-Detox-Calculator"
+    },
+    {
+        "title": "Disarium Number Calculator",
+        "description": "Checks the number is disarium or not and finds disarium numbers in a range.",
+        "link": "./Calculators/Disarium-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Disarium-Number-Calculator"
+    },
+    {
+        "title": "Discount Calculator",
+        "description": "Unlock Savings with Precision: Your Ultimate Discount Calculator.",
+        "link": "./Calculators/Discount-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Discount-Calculator"
+    },
+    {
+        "title": "Discriminant Calculator",
+        "description": "Calculates the discriminant of a quadratic equation.",
+        "link": "./Calculators/Discriminant-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Discriminant-Calculator"
+    },
+    {
+        "title": "Dividend Yield Calculator",
+        "description": "Calculates the dividend yield percentage based on the current market price.",
+        "link": "./Calculators/Dividend-Yield-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Dividend-Yield-Calculator"
+    },
+    {
+        "title": "Dora Calculator",
+        "description": "Calculates the distance whether Dora can view the object.",
+        "link": "./Calculators/Dora-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Dora-Calculator"
+    },
+    {
+        "title": "Download Time Calculator",
+        "description": "Calculates the required time for downloading as per different system configurations.",
+        "link": "./Calculators/Download-Time-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Download-Time-Calculator"
+    },
+    {
+        "title": "Dream Journal Calculator",
+        "description": "Analyzes dream entries to visualize key themes, emotions, and sentiments.",
+        "link": "./Calculators/Dream-Journal-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Dream-Journal-Calculator"
+    },
+    {
+        "title": "Dudeney Number Calculator",
+        "description": "Checks if an entered number is Dudeney or not.",
+        "link": "./Calculators/Dudeney-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Dudeney-Number-Calculator"
+    },
+    {
+        "title": "EBITDA Calculator",
+        "description": "Calculates EBITDA, and visualizes cost breakdown with a responsive doughnut chart.",
+        "link": "./Calculators/EBITDA-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/EBITDA-Calculator"
+    },
+    {
+        "title": "EMI Calculator",
+        "description": "Calculates The EMI based on loan amount, interest rate and tenure.",
+        "link": "./Calculators/EMI-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/EMI-Calculator/"
+    },
+    {
+        "title": "EPF Calculator",
+        "description": "Estimates Employee Provident Fund savings from salary, age, contribution rate, salary increase, and interest rate.",
+        "link": "./Calculators/EPF-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/EPF-Calculator"
+    },
+    {
+        "title": "Earthquake Impact Calculator",
+        "description": "Estimates the potential impact of an earthquake.",
+        "link": "./Calculators/Earthquake-Impact-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Earthquake-Impact-Calculator"
+    },
+    {
+        "title": "Echo Time Calculator",
+        "description": "Calculates the time taken for a sound wave to travel to a surface and return as an echo.",
+        "link": "./Calculators/Echo-Time-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Echo-Time-Calculator"
+    },
+    {
+        "title": "Eigenvalues And Eigenvectors Calculator",
+        "description": "Calculates the eigenvalues and eigenvectors of a square matrix for various applications.",
+        "link": "./Calculators/Eigenvalues-And-Eigenvectors-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Eigenvalues-And-Eigenvectors-Calculator"
+    },
+    {
+        "title": "Electric Power Calculator",
+        "description": "Calculates electric power based on user-supplied voltage in Volts and current in Ampere.",
+        "link": "./Calculators/Electric-Power-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Electric-Power-Calculator"
+    },
+    {
+        "title": "Electric Vehicle Savings Calculator",
+        "description": "Calculates savings from using an electric vehicle VS a gasoline vehicle.",
+        "link": "./Calculators/Electric-Vehicle-Savings-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Electric-Vehicle-Savings-Calculator"
+    },
+    {
+        "title": "Electricity Bill Calculator",
+        "description": "Calculates electricity costs based on user-supplied units, time, and cost parameters.",
+        "link": "./Calculators/Electricity-Bill-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Electricity-Bill-Calculator"
+    },
+    {
+        "title": "Electronegativity Calculator",
+        "description": "Calculates the Electronegativity difference between elements.",
+        "link": "./Calculators/Electronegativity-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Electronegativity-Calculator"
+    },
+    {
+        "title": "Electrostatic Force Calculator",
+        "description": "Calculates the Electrostatic Force between two point charges.",
+        "link": "./Calculators/Electrostatic-Force-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Electrostatic-Force-Calculator"
+    },
+    {
+        "title": "Ellipse And Hyperbola Calculator",
+        "description": "Calculates Area and Perimeter for Ellipse and Hyperbola.",
+        "link": "./Calculators/Ellipse-And-Hyperbola-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Ellipse-And-Hyperbola-Calculator"
+    },
+    {
+        "title": "Elliptic Curve Calculator",
+        "description": "Calculates points on the curve, addition, negation, and scalar multiplication of points.",
+        "link": "./Calculators/Elliptic-Curve-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Elliptic-Curve-Calculator"
+    },
+    {
+        "title": "Emirp Number Calculator",
+        "description": "Calculates if a number is an emirp number and finds all emirp numbers within a given range.",
+        "link": "./Calculators/Emirp-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Emirp-Number-Calculator"
+    },
+    {
+        "title": "Endothermic Reaction Calculator",
+        "description": "Computes the energy absorbed during a reaction based on various parameters.",
+        "link": "./Calculators/Endothermic-Reaction-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Endothermic-Reaction-Calculator"
+    },
+    {
+        "title": "Energy Consumption Calculator",
+        "description": "Calculates the amount of electricity used by a household or business over a specified time.",
+        "link": "./Calculators/Energy-Consumption-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Energy-Consumption-Calculator"
+    },
+    {
+        "title": "Entropy Calculator",
+        "description": "Calculates the entropy from probabilities.",
+        "link": "./Calculators/Entropy-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Entropy-Calculator"
+    },
+    {
+        "title": "Environmental Calculator",
+        "description": "Estimates the annual energy and water consumption.",
+        "link": "./Calculators/Environmental-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Environmental-Calculator"
+    },
+    {
+        "title": "Equivalent Resistance Calculator",
+        "description": "Calculates the Equivalent Resistance of the Series and Parallel Configuration.",
+        "link": "./Calculators/Equivalent-Resistance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Equivalent-Resistance-Calculator"
+    },
+    {
+        "title": "Euclidean Algorithm Calculator",
+        "description": "Calculates the Greatest Common Divisor (GCD) and the Least Common Multiple (LCM).",
+        "link": "./Calculators/Euclidean-Algorithm-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Euclidean-Algorithm-Calculator"
+    },
+    {
+        "title": "Event Budget Planner Calculator",
+        "description": "Calculates the plan, tracks, and visualizes the event expenses.",
+        "link": "./Calculators/Event-Budget-Planner-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Event-Budget-Planner-Calculator"
+    },
+    {
+        "title": "Expenditure And Savings Calculator",
+        "description": "Calculates the Savings from your income and expenditure.",
+        "link": "./Calculators/Expenditure-And-Savings-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Expenditure-And-Savings-Calculator"
+    },
+    {
+        "title": "Exponent Calculator",
+        "description": "Takes two numbers X and Y and then calculate X<sup>Y</sup>.",
+        "link": "./Calculators/Exponent-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Exponent-Calculator"
+    },
+    {
+        "title": "Exponential Decay Calculator",
+        "description": "Computes the remaining amount of a substance after a given period using the exponential decay formula.",
+        "link": "./Calculators/Exponential-Decay-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Exponential-Decay-Calculator"
+    },
+    {
+        "title": "Eye Power Calculator",
+        "description": "Calculates the Diopter value and Focal length.",
+        "link": "./Calculators/Eye-Power-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Eye-Power-Calculator"
+    },
+    {
+        "title": "FD Calculator",
+        "description": "Calculates the maturity amount and interest on fixed deposits.",
+        "link": "./Calculators/FD-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/FD-Calculator"
+    },
+    {
+        "title": "Factor Calculator",
+        "description": "Calculates all the factors/divisors of a given number.",
+        "link": "./Calculators/Factor-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Factor-Calculator"
+    },
+    {
+        "title": "Factorial Calculator",
+        "description": "Calculates the factorial of any large number instantly.",
+        "link": "./Calculators/Factorial-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Factorial-Calculator"
+    },
+    {
+        "title": "Falling Object Calculator",
+        "description": "Calculates the time and speed of a free-falling object under gravity.",
+        "link": "./Calculators/Falling-Object-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Falling-Object-Calculator"
+    },
+    {
+        "title": "Fascinating Number Calculator",
+        "description": "Checks if a given number is fascinating or not.",
+        "link": "./Calculators/Fascinating-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Fascinating-Number-Calculator"
+    },
+    {
+        "title": "Fibonacci Calculator",
+        "description": "Calculates the Nth number from Fibonacci Sequence.",
+        "link": "./Calculators/Fibonacci-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Fibonacci-Calculator"
+    },
+    {
+        "title": "Finance Calculator",
+        "description": "Calculates the future value of investments and monthly loan payments.",
+        "link": "./Calculators/Finance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Finance-Calculator"
+    },
+    {
+        "title": "Force Calculator",
+        "description": "Calculates the force by taking mass and acceleration.",
+        "link": "./Calculators/Force-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Force-Calculator"
+    },
+    {
+        "title": "Fractal Generator Calculator",
+        "description": "Displays images based on complex mathematical calculations of fractal objects.",
+        "link": "./Calculators/Fractal-Generator-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Fractal-Generator-Calculator"
+    },
+    {
+        "title": "Fraction Calculator",
+        "description": "Performs the basic arithmetic operations of mathematics on fractions.",
+        "link": "./Calculators/Fraction-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Fraction-Calculator"
+    },
+    {
+        "title": "Frames Timecode Calculator",
+        "description": "Converts frames to timecode and vice versa in a recorded video.",
+        "link": "./Calculators/Frames-Timecode-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Frames-Timecode-Calculator"
+    },
+    {
+        "title": "Free Fall Calculator",
+        "description": "Calculates the time and final velocity of object in free fall.",
+        "link": "./Calculators/Free-Fall-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Free-Fall-Calculator"
+    },
+    {
+        "title": "Freelance Rate Calculator",
+        "description": "Calculator to help freelancers determine optimal hourly or project rates based on various factors.",
+        "link": "./Calculators/Freelance-Rate-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Freelance-Rate-Calculator"
+    },
+    {
+        "title": "Frequency Calculator",
+        "description": "Calculator that helps to calculate the frequency.",
+        "link": "./Calculators/Frequency-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Frequency-Calculator"
+    },
+    {
+        "title": "Friction Calculator",
+        "description": "Calculates the friction force between an object and the ground.",
+        "link": "./Calculators/Friction-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Friction-Calculator"
+    },
+    {
+        "title": "Fuel Cost Calculator",
+        "description": "Calculates the cost of fuel based on fuel efficiency and distance travelled.",
+        "link": "./Calculators/Fuel-Cost-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Fuel-Cost-Calculator"
+    },
+    {
+        "title": "Fuel Efficiency Calculator",
+        "description": "Calculates the efficiency of a vehicle.",
+        "link": "./Calculators/Fuel-Efficiency-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Fuel-Efficiency-Calculator"
+    },
+    {
+        "title": "GCD Calculator",
+        "description": "Calculates Greatest Common Divisor of Two values or multiple values.",
+        "link": "./Calculators/GCD-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/GCD-Calculator"
+    },
+    {
+        "title": "GDP Calculator",
+        "description": "Calculates the gross domestic product using the expenditure approach.",
+        "link": "./Calculators/GDP-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/GDP-Calculator"
+    },
+    {
+        "title": "GPA Calculator",
+        "description": "Calculates SGPA and CGPA on the basis of credits and grades.",
+        "link": "./Calculators/GPA-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/GPA-Calculator"
+    },
+    {
+        "title": "GST Calculator",
+        "description": "Calculates the Goods and Service tax of any product in rupees and dollars.",
+        "link": "./Calculators/GST-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/GST-Calculator"
+    },
+    {
+        "title": "Gamified Calculator",
+        "description": "Calculator that turns math problems into a game.",
+        "link": "./Calculators/Gamified-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Gamified-Calculator"
+    },
+    {
+        "title": "Garden Planning Calculator",
+        "description": "Calculator that helps you plan your garden.",
+        "link": "./Calculators/Garden-Planning-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Garden-Planning-Calculator"
+    },
+    {
+        "title": "Gauss-Jordan Elimination Calculator",
+        "description": "Calculator that finds solution to system of linear equations using Gauss-Jordan Elimination method.",
+        "link": "./Calculators/Gauss-Jordan-Elimination-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Gauss-Jordan-Elimination-Calculator"
+    },
+    {
+        "title": "Gauss Law Calculator",
+        "description": "Calculates the electric flux through a closed surface due to an enclosed electric charge.",
+        "link": "./Calculators/Gauss-Law-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Gauss-Law-Calculator"
+    },
+    {
+        "title": "General Root Calculator",
+        "description": "Calculates the nth root of a given number upto n precision.",
+        "link": "./Calculators/General-Root-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/General-Root-Calculator"
+    },
+    {
+        "title": "Geodesic Distance Calculator",
+        "description": "Calculate the geodesic distance between two points on an ellipsoid.",
+        "link": "./Calculators/Geodesic-Distance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Geodesic-Distance-Calculator"
+    },
+    {
+        "title": "Geometric Progression Calculator",
+        "description": "Calculates nth Term, geometric mean and sum of n Terms present in an Geometric Sequence.",
+        "link": "./Calculators/Geometric-Progression-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Geometric-Progression-Calculator"
+    },
+    {
+        "title": "Grade Calculator",
+        "description": "Calculates the grade based on marks entered.",
+        "link": "./Calculators/Grade-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Grade-Calculator"
+    },
+    {
+        "title": "Graphing Calculator",
+        "description": "Calculator which includes a graphical display to visualize functions.",
+        "link": "./Calculators/Graphing-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Graphing-Calculator"
+    },
+    {
+        "title": "Gratitude Journal Calculator",
+        "description": "Calculates the daily gratitude points in a concise format.",
+        "link": "./Calculators/Gratitude-Journal-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Gratitude-Journal-Calculator"
+    },
+    {
+        "title": "Gravitational Force Calculator",
+        "description": "Calculates the Gravitational Force between two masses.",
+        "link": "./Calculators/Gravitational-Force-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Gravitational-Force-Calculator"
+    },
+    {
+        "title": "Hailstone Series Calculator",
+        "description": "Calculates a Hailstone series by repeatedly dividing by 2 if even or multiplying by 3 and adding 1 if odd.",
+        "link": "./Calculators/Hailstone-Series-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Hailstone-Series-Calculator"
+    },
+    {
+        "title": "Half-Life Calculator",
+        "description": "Calculates half-life of a substance based on user inputs.",
+        "link": "./Calculators/Half-Life-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Half-Life-Calculator"
+    },
+    {
+        "title": "Happy Number Calculator",
+        "description": "Check if a number is Happy or not and finds happy number in a range.",
+        "link": "./Calculators/Happy-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Happy-Number-Calculator"
+    },
+    {
+        "title": "Harmonic Progression Calculator",
+        "description": "Calculates the nth term, sum of first n terms and harmonic mean of Harmonic Progression series.",
+        "link": "./Calculators/Harmonic-Progression-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Harmonic-Progression-Calculator"
+    },
+    {
+        "title": "Hashing Message Calculator",
+        "description": "Calculates the hash for your message from one of the widely used hashing algorithms.",
+        "link": "./Calculators/Hashing-Message-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Hashing-Message-Calculator"
+    },
+    {
+        "title": "Health Risk Assessment Calculator",
+        "description": "Calculates the health risk level as per predefined criteria.",
+        "link": "./Calculators/Health-Risk-Assessment-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Health-Risk-Assessment-Calculator"
+    },
+    {
+        "title": "Heart Rate Calculator",
+        "description": "Calculates the heart rate monitors.",
+        "link": "./Calculators/Heart-Rate-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Heart-Rate-Calculator"
+    },
+    {
+        "title": "Heat Capacity Calculator",
+        "description": "calculates the heat capacity of substances.",
+        "link": "./Calculators/Heat-Capacity-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Heat-Capacity-Calculator"
+    },
+    {
+        "title": "Heat Index Calculator",
+        "description": "Calculates the heat index based on the temperature and humidity values.",
+        "link": "./Calculators/Heat-Index-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Heat-Index-Calculator"
+    },
+    {
+        "title": "Heat Transfer Calculator",
+        "description": "Calculates the heat transferred from one region to another based on several input parameters.",
+        "link": "./Calculators/Heat-Transfer-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Heat-Transfer-Calculator"
+    },
+    {
+        "title": "Height Calculator",
+        "description": "Converts the height between various units.",
+        "link": "./Calculators/Height-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Height-Calculator"
+    },
+    {
+        "title": "Hexadecimal Calculator",
+        "description": "Performs arithmetic operations on hexadecimal numbers.",
+        "link": "./Calculators/Hexadecimal-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Hexadecimal-Calculator"
+    },
+    {
+        "title": "Home Renovation Budget Calculator",
+        "description": "Calculates total budget for home renovation.",
+        "link": "./Calculators/Home-Renovation-Budget-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Home-Renovation-Budget-Calculator"
+    },
+    {
+        "title": "Home Security Cost Calculator",
+        "description": "Calculates the cost of your home security.",
+        "link": "./Calculators/Home-Security-Cost-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Home-Security-Cost-Calculator"
+    },
+    {
+        "title": "Hookes Law Calculator",
+        "description": "Calculates the Spring Force, displacement or Force constant by inputting any two fields.",
+        "link": "./Calculators/Hookes-Law-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Hookes-Law-Calculator"
+    },
+    {
+        "title": "Horsepower Calculator",
+        "description": "Calculates the horsepower using force and velocity.",
+        "link": "./Calculators/Horsepower-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Horsepower-Calculator"
+    },
+    {
+        "title": "IQR Calculator",
+        "description": "Calculates the spread of the middle 50% of a dataset using the interquartile range.",
+        "link": "./Calculators/IQR-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/IQR-Calculator"
+    },
+    {
+        "title": "IT Income Tax Calculator",
+        "description": "Computes the income tax based on your gross salary, deductions, and applicable tax rebate.",
+        "link": "./Calculators/IT-Income-Tax-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/IT-Income-Tax-Calculator"
+    },
+    {
+        "title": "Ideal Gas Law Calculator",
+        "description": "Calculates pressure, volume, temperature, and moles based on other inputs.",
+        "link": "./Calculators/Ideal-Gas-Law-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Ideal-Gas-Law-Calculator"
+    },
+    {
+        "title": "Image Resolution Calculator",
+        "description": "Calculates the resolution in megapixels based on user input dimensions.",
+        "link": "./Calculators/Image-Resolution-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Image-Resolution-Calculator"
+    },
+    {
+        "title": "Income Tax Calculator",
+        "description": "Calculates tax liability based on user input annual income.",
+        "link": "./Calculators/Income-Tax-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Income-Tax-Calculator"
+    },
+    {
+        "title": "Inductance Calculator",
+        "description": "Calculates the inductance of a coil.",
+        "link": "./Calculators/Inductance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Inductance-Calculator"
+    },
+    {
+        "title": "Infix Prefix Postfix Calculator",
+        "description": "Converts between infix, prefix and postfix expressions.",
+        "link": "./Calculators/Infix-Prefix-Postfix-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Infix-Prefix-Postfix-Calculator"
+    },
+    {
+        "title": "Inflation Calculator",
+        "description": "Provides the graphical representation and expected inflation of money.",
+        "link": "./Calculators/Inflation-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Inflation-Calculator"
+    },
+    {
+        "title": "Intelligence Calculator",
+        "description": "Shows the intelligence using his/her IQ.",
+        "link": "./Calculators/Intelligence-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Intelligence-Calculator"
+    },
+    {
+        "title": "Interplanetary Weight Calculator",
+        "description": "Calculates the weight of an object on different planets.",
+        "link": "./Calculators/Interplanetary-Weight-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Interplanetary-Weight-Calculator"
+    },
+    {
+        "title": "Inverse Function Calculator",
+        "description": "Calculates the inverse of a provided function.",
+        "link": "./Calculators/Inverse-Function-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Inverse-Function-Calculator"
+    },
+    {
+        "title": "Investment Risk Tolerance Calculator",
+        "description": "Calculates the risk in Investment on the basis of some input parameters.",
+        "link": "./Calculators/Investment-Risk-Tolerance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Investment-Risk-Tolerance-Calculator"
+    },
+    {
+        "title": "Isogram Calculator",
+        "description": "Checks whether a string is an isogram or not.",
+        "link": "./Calculators/Isogram-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Isogram-Calculator"
+    },
+    {
+        "title": "Isomorphic String Calculator",
+        "description": "Checks whether the two entered strings are isomorphic or not.",
+        "link": "./Calculators/Isomorphic-String-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Isomorphic-String-Calculator"
+    },
+    {
+        "title": "Kaprekar Number Calculator",
+        "description": "Checks whether the number is Kaprekar Number or not.",
+        "link": "./Calculators/Kaprekar-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Kaprekar-Number-Calculator"
+    },
+    {
+        "title": "Kinematics Calculator",
+        "description": "Computes and visualizes 1D, 2D, and 3D motion with velocity-time graphs.",
+        "link": "./Calculators/Kinematics-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Kinematics-Calculator"
+    },
+    {
+        "title": "Kinetic And Potential Energy Calculator",
+        "description": "Calculates the kinetic and potential energy.",
+        "link": "./Calculators/Kinetic-And-Potential-Energy-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Kinetic-And-Potential-Energy-Calculator"
+    },
+    {
+        "title": "LCM Calculator",
+        "description": "Calculates LCM of multiple numbers.",
+        "link": "./Calculators/LCM-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/LCM-Calculator"
+    },
+    {
+        "title": "Laser Linewidth And Bandwidth Calculator",
+        "description": "Calculates the linewidth and bandwidth of a laser.",
+        "link": "./Calculators/Laser-Linewidth-And-Bandwidth-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Laser-Linewidth-And-Bandwidth-Calculator"
+    },
+    {
+        "title": "Lattice Energy Calculator",
+        "description": "Computes the lattice energy of ionic compounds based on ion charges and their separation distance.",
+        "link": "./Calculators/Lattice-Energy-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Lattice-Energy-Calculator"
+    },
+    {
+        "title": "Leap Year Calculator",
+        "description": "Checks whether the entered year is a leap year or not.",
+        "link": "./Calculators/Leap-Year-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Leap-Year-Calculator"
+    },
+    {
+        "title": "Lease Calculator",
+        "description": "Calculates the lease payments that needs to be paid.",
+        "link": "./Calculators/Lease-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Lease-Calculator"
+    },
+    {
+        "title": "Least Squares Regression Calculator",
+        "description": "Fits a linear model to data points, providing regression statistics and visual analysis.",
+        "link": "./Calculators/Least-Squares-Regression-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Least-Squares-Regression-Calculator"
+    },
+    {
+        "title": "Length Calculator",
+        "description": "Calculates the length conversion between two specified units.",
+        "link": "./Calculators/Length-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Length-Calculator"
+    },
+    {
+        "title": "Life Insurance Needs Calculator",
+        "description": "Calculates the amount we need in Life Insurance.",
+        "link": "./Calculators/Life-Insurance-Needs-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Life-Insurance-Needs-Calculator"
+    },
+    {
+        "title": "Linear Equation Calculator",
+        "description": "Calculates values of variables from linear equation in two variables.",
+        "link": "./Calculators/Linear-Equation-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Linear-Equation-Calculator"
+    },
+    {
+        "title": "Linear Regression Calculator",
+        "description": "Calculates display the slope, intercept, and a plot of the data points with the regression line.",
+        "link": "./Calculators/Linear-Regression-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Linear-Regression-Calculator"
+    },
+    {
+        "title": "Loan Amount Calculator",
+        "description": "Calculator that calculates the amount of money to pay as compound interest.",
+        "link": "./Calculators/Loan-Amount-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Loan-Amount-Calculator"
+    },
+    {
+        "title": "Loan Comparison Calculator",
+        "description": "Calculates and compares loan options to help users find the best one.",
+        "link": "./Calculators/Loan-Comparison-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Loan-Comparison-Calculator"
+    },
+    {
+        "title": "Loan Repayment Date Calculator",
+        "description": "Calculates the due date of the ongoing loan.",
+        "link": "./Calculators/Loan-Repayment-Date-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Loan-Repayment-Date-Calculator"
+    },
+    {
+        "title": "Logarithm Calculator",
+        "description": "Calculates the log of the given number to any base.",
+        "link": "./Calculators/Logarithm-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Logarithm-Calculator"
+    },
+    {
+        "title": "Logical Micro Operations Calculator",
+        "description": "Solves logical micro-operations of computer architecture.",
+        "link": "./Calculators/Logical-Micro-Operations-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Logical-Micro-Operations-Calculator"
+    },
+    {
+        "title": "Lorentz Force Calculator",
+        "description": "Calculates the Force on a moving charge in a magnetic field.",
+        "link": "./Calculators/Lorentz-Force-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Lorentz-Force-Calculator"
+    },
+    {
+        "title": "Lottery Odds Calculator",
+        "description": "Calculates the chances of winning the lottery.",
+        "link": "./Calculators/Lottery-Odds-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Lottery-Odds-Calculator"
+    },
+    {
+        "title": "Love Calculator",
+        "description": "Calculates a percentage score of love compatibility based on names or birthdates (mostly for fun).",
+        "link": "./Calculators/Love-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Love-Calculator"
+    },
+    {
+        "title": "Luminous Flux Calculator",
+        "description": "Calculates the luminous flux in lumens based on the input luminous intensity and angle.",
+        "link": "./Calculators/Luminous-Flux-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Luminous-Flux-Calculator"
+    },
+    {
+        "title": "Macro Calculator",
+        "description": "Helps users determine their daily macronutrient needs based on various parameters.",
+        "link": "./Calculators/Macro-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Macro-Calculator"
+    },
+    {
+        "title": "Macro Nutrient Calculator",
+        "description": "Calculates an individual's daily macronutrient needs based on personal fitness goals and activity levels.",
+        "link": "./Calculators/Macro-Nutrient-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Macro-Nutrient-Calculator"
+    },
+    {
+        "title": "Magic Number Calculator",
+        "description": "Calculates if a number is a magic number and finds all magic numbers within a given range.",
+        "link": "./Calculators/Magic-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Magic-Number-Calculator"
+    },
+    {
+        "title": "Marks Percentage Calculator",
+        "description": "Calculate the percentage of total marks from all subjects.",
+        "link": "./Calculators/Marks-Percentage-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Marks-Percentage-Calculator"
+    },
+    {
+        "title": "Mass Calculator",
+        "description": "Calculates the Mass conversion between two specified units.",
+        "link": "./Calculators/Mass-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Mass-Calculator"
+    },
+    {
+        "title": "Mass Spring Calculator",
+        "description": "Calculates the various properties of a mass-spring system.",
+        "link": "./Calculators/Mass-Spring-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Mass-Spring-Calculator"
+    },
+    {
+        "title": "Matrix Calculator",
+        "description": "Your key to matrix operations!",
+        "link": "./Calculators/Matrix-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Matrix-Calculator"
+    },
+    {
+        "title": "Meal Calorie Calculator",
+        "description": "Calculates the total calorie count for the entire meal.",
+        "link": "./Calculators/Meal-Calorie-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Meal-Calorie-Calculator"
+    },
+    {
+        "title": "Mersenne Prime Calculator",
+        "description": "Checks if a number is a Mersenne prime and finds all Mersenne prime numbers within a given range.",
+        "link": "./Calculators/Mersenne-Prime-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Mersenne-Prime-Calculator"
+    },
+    {
+        "title": "Midpoint Calculator",
+        "description": "Calculates the midpoint of the x-axis and y-axis.",
+        "link": "./Calculators/Midpoint-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Midpoint-Calculator"
+    },
+    {
+        "title": "Military Time Calculator",
+        "description": "Converts between standard 12-hour time format and military 24-hour time format.",
+        "link": "./Calculators/Military-Time-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Military-Time-Calculator"
+    },
+    {
+        "title": "Mirror Equation Calculator",
+        "description": "Calculates the focal length of the convex and concave mirror.",
+        "link": "./Calculators/Mirror-Equation-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Mirror-Equation-Calculator"
+    },
+    {
+        "title": "Mobility Calculator",
+        "description": "Calculates the mobility of an electric field.",
+        "link": "./Calculators/Mobility-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Mobility-Calculator"
+    },
+    {
+        "title": "Modulation Calculator",
+        "description": "Calculates the modulation index for amplitude modulation and frequency modulation.",
+        "link": "./Calculators/Modulation-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Modulation-Calculator"
+    },
+    {
+        "title": "Molality Calculator",
+        "description": "Calculates the mass of a compound needed to achieve a desired molality in a solution.",
+        "link": "./Calculators/Molality-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Molality-Calculator"
+    },
+    {
+        "title": "Molarity Calculator",
+        "description": "Calculates the mass of a compound needed to achieve a desired molarity in a solution.",
+        "link": "./Calculators/Molarity-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Molarity-Calculator"
+    },
+    {
+        "title": "Molecular Weight Calculator",
+        "description": "Computes the total atomic weights of elements in a given chemical formula.",
+        "link": "./Calculators/Molecular-Weight-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Molecular-Weight-Calculator"
+    },
+    {
+        "title": "Momentum Calculator",
+        "description": "Calculates the momentum of the body using its mass and velocity.",
+        "link": "./Calculators/Momentum-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Momentum-Calculator"
+    },
+    {
+        "title": "Momentum With Time Calculator",
+        "description": "Calculates the momentum of the body using its force and time.",
+        "link": "./Calculators/Momentum-With-Time-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Momentum-With-Time-Calculator"
+    },
+    {
+        "title": "Money Counter Calculator",
+        "description": "Calculates total money in Rs and provides currency conversion.",
+        "link": "./Calculators/Money-Counter-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Money-Counter-Calculator"
+    },
+    {
+        "title": "Mortgage Refinance Calculator",
+        "description": "It allows users to compare old and new loan terms by inputting relevant information.",
+        "link": "./Calculators/Mortgage-Refinance-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Mortgage-Refinance-Calculator"
+    },
+    {
+        "title": "Multiplication Table Calculator",
+        "description": "Calculates the multiplication table of any number.",
+        "link": "./Calculators/Multiplication-Table-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Multiplication-Table-Calculator"
+    },
+    {
+        "title": "NPV Calculator",
+        "description": "Calculates the Net Present Value based on initial investment, the discount rate, and the yearly cash flows.",
+        "link": "./Calculators/NPV-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/NPV-Calculator"
+    },
+    {
+        "title": "Narcissistic Number Calculator",
+        "description": "Checks if a number is a narcissistic number or not.",
+        "link": "./Calculators/Narcissistic-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Narcissistic-Number-Calculator"
+    },
+    {
+        "title": "Neon Number Calculator",
+        "description": "Checks if a number is a neon number or not and finds neon numbers in a range.",
+        "link": "./Calculators/Neon-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Neon-Number-Calculator"
+    },
+    {
+        "title": "Net Promoter Score Calculator",
+        "description": "Calculates the NPS based on user-provided ratings.",
+        "link": "./Calculators/Net-Promoter-Score-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Net-Promoter-Score-Calculator"
+    },
+    {
+        "title": "Net Salary Calculator",
+        "description": "Calculates the actual take-home pay from your Cost to Company (CTC).",
+        "link": "./Calculators/Net-Salary-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Net-Salary-Calculator"
+    },
+    {
+        "title": "Net Worth Calculator",
+        "description": "Calculates the net worth by taking our assets and liabilities.",
+        "link": "./Calculators/Net-Worth-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Net-Worth-Calculator"
+    },
+    {
+        "title": "Next Birthday Calculator",
+        "description": "Calculates the days remaining until the next birthday.",
+        "link": "./Calculators/Next-Birthday-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Next-Birthday-Calculator"
+    },
+    {
+        "title": "Niven Number Calculator",
+        "description": "Checks whether the given number is niven or not.",
+        "link": "./Calculators/Niven-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Niven-Number-Calculator"
+    },
+    {
+        "title": "Normality Calculator",
+        "description": "Calculates the mass of a compound needed to achieve a desired normality in a solution.",
+        "link": "./Calculators/Normality-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Normality-Calculator"
+    },
+    {
+        "title": "Number Of Days Calculator",
+        "description": "Calculates the number of days between two specified dates.",
+        "link": "./Calculators/Number-Of-Days-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Number-Of-Days-Calculator"
+    },
+    {
+        "title": "Number System Calculator",
+        "description": "Converts binary to decimal, octal, hexadecimal and vice versa.",
+        "link": "./Calculators/Number-System-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Number-System-Calculator"
+    },
+    {
+        "title": "Numerology Calculator",
+        "description": "Helps users discover core numerology numbers based on the birth date and full name.",
+        "link": "./Calculators/Numerology-Calculator/index.html",
+        "source": "https://github.com/mahek0620/CalcDiverse/tree/Numerology/Calculators/Numerology-Calculator"
+    },
+    {
+        "title": "Nutrition Calculator",
+        "description": "Calculates the total nutrition values based on user inputs.",
+        "link": "./Calculators/Nutrition-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Nutrition-Calculator"
+    },
+    {
+        "title": "Nutritional Needs Calculator",
+        "description": "Calculates the nutrition needs information based on user inputs.",
+        "link": "./Calculators/Nutritional-Needs-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Nutritional-Needs-Calculator"
+    },
+    {
+        "title": "OWASP Risk Assessment Calculator",
+        "description": "Calculator to assess the risk of web vulnerabilities based on OWASP Risk Assessment.",
+        "link": "./Calculators/OWASP-Risk-Assessment-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/OWASP-Risk-Assessment-Calculator"
+    },
+    {
+        "title": "Octal Calculator",
+        "description": "Performs the arithmetic operations on octal numbers.",
+        "link": "./Calculators/Octal-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Octal-Calculator"
+    },
+    {
+        "title": "Ohms Law Calculator",
+        "description": "Calculates voltage, current, resistance, and power in watts for an electrical circuit.",
+        "link": "./Calculators/Ohms-Law-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Ohms-Law-Calculator"
+    },
+    {
+        "title": "Orthocentre Of A Triangle Calculator",
+        "description": "Calculates the orthocenter from the coordinates of a triangle's vertices.",
+        "link": "./Calculators/Orthocentre-Of-A-Triangle-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Orthocentre-Of-A-Triangle-Calculator"
+    },
+    {
+        "title": "PH Calculator",
+        "description": "Calculates the pH of either an acid or base solution when given a certain set of parameters.",
+        "link": "./Calculators/PH-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/PH-Calculator"
+    },
+    {
+        "title": "PIN Generator Calculator",
+        "description": "Generates the random numeric sequences for customizable PIN generation.",
+        "link": "./Calculators/PIN-Generator-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/PIN-Generator-Calculator"
+    },
+    {
+        "title": "PPM Calculator",
+        "description": "Determines the concentration of substances in various solutions measured in parts per million.",
+        "link": "./Calculators/PPM-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/PPM-Calculator"
+    },
+    {
+        "title": "Pace Calculator",
+        "description": "Calculates the strength of different activities for athletes.",
+        "link": "./Calculators/Pace-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Pace-Calculator"
+    },
+    {
+        "title": "Paint Calculator",
+        "description": "Calculates how much paint is required to paint given area.",
+        "link": "./Calculators/Paint-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Paint-Calculator"
+    },
+    {
+        "title": "Palindrome Calculator",
+        "description": "Checks if an entered number or string is Palindrome or not.",
+        "link": "./Calculators/Palindrome-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Palindrome-Calculator"
+    },
+    {
+        "title": "Paper Weight Calculator",
+        "description": "Determines the weight of paper based on its dimensions, type, and quantity.",
+        "link": "./Calculators/Paper-Weight-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Paper-Weight-Calculator"
+    },
+    {
+        "title": "Partial Derivative Calculator",
+        "description": "Calculator that solves partial differential equations.",
+        "link": "./Calculators/Partial-Derivative-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Partial-Derivative-Calculator"
+    },
+    {
+        "title": "Password Strength Calculator",
+        "description": "Calculates the strength of the Password.",
+        "link": "./Calculators/Password-Strength-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Password-Strength-Calculator"
+    },
+    {
+        "title": "Pendulum Calculator",
+        "description": "Calculates the properties of the pendulum.",
+        "link": "./Calculators/Pendulum-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Pendulum-Calculator"
+    },
+    {
+        "title": "Percentage Calculator",
+        "description": "Calculates the value percentage of any given number.",
+        "link": "./Calculators/Percentage-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Percentage-Calculator"
+    },
+    {
+        "title": "Percentage Fraction Calculator",
+        "description": "Converts given Percentage to Fraction and vice-versa with detailed solution.",
+        "link": "./Calculators/Percentage-Fraction-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Percentage-Fraction-Calculator"
+    },
+    {
+        "title": "Perfect Number Calculator",
+        "description": "Check for a number to be perfect or not.",
+        "link": "./Calculators/Perfect-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Perfect-Number-Calculator"
+    },
+    {
+        "title": "Periodic Table Calculator",
+        "description": "Provides detailed information about elements in the periodic table.",
+        "link": "./Calculators/Periodic-Table-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Periodic-Table-Calculator"
+    },
+    {
+        "title": "Permutation Combination Calculator",
+        "description": "Calculates nPr and nCr after taking inputs as n and r.",
+        "link": "./Calculators/Permutation-Combination-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Permutation-Combination-Calculator"
+    },
+    {
+        "title": "Pet Age Calculator",
+        "description": "Calculates a pet's age in human years.",
+        "link": "./Calculators/Pet-Age-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Pet-Age-Calculator"
+    },
+    {
+        "title": "Pet Care Cost Calculator",
+        "description": "Calculates the lifetime cost of owning a pet.",
+        "link": "./Calculators/Pet-Care-Cost-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Pet-Care-Cost-Calculator"
+    },
+    {
+        "title": "Photosynthesis Rate Calculator",
+        "description": "Calculates the rate of photosynthesis based on user inputs.",
+        "link": "./Calculators/Photosynthesis-Rate-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Photosynthesis-Rate-Calculator"
+    },
+    {
+        "title": "Pipe Flow Calculator",
+        "description": "Calculates the flow rate through the pipe.",
+        "link": "./Calculators/Pipe-Flow-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Pipe-Flow-Calculator"
+    },
+    {
+        "title": "Planetary Motion Calculator",
+        "description": "Calculates various parameters of planetary motion using Kepler's laws.",
+        "link": "./Calculators/Planetary-Motion-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Planetary-Motion-Calculator"
+    },
+    {
+        "title": "Plant Care Calculator",
+        "description": "Calculates watering, fertilizing, and repotting schedule of plants based on some parameters.",
+        "link": "./Calculators/Plant-Care-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Plant-Care-Calculator"
+    },
+    {
+        "title": "Plant Growth Calculator",
+        "description": "Calculates the average growth rate for your plants based on various parameters.",
+        "link": "./Calculators/Plant-Growth-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Plant-Growth-Calculator"
+    },
+    {
+        "title": "Plant Watering Calculator",
+        "description": "Calculates the amount of water needed for your plants based on the plant type, size, soil type, and sunlight exposure.",
+        "link": "./Calculators/Plant-Watering-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Plant-Watering-Calculator"
+    },
+    {
+        "title": "Polynomial Roots Calculator",
+        "description": "Calculates the real and imaginary roots of a given polynomial up to degree 2-4.",
+        "link": "./Calculators/Polynomial-Roots-Calculator/",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Polynomial-Roots-Calculator"
+    },
+    {
+        "title": "Population Density Calculator",
+        "description": "Calculates the density of the population in a specific area.",
+        "link": "./Calculators/Population-Density-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Population-Density-Calculator"
+    },
+    {
+        "title": "Population Prediction Calculator",
+        "description": "Predicts the future population by taking various inputs from the user.",
+        "link": "./Calculators/Population-Prediction-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Population-Prediction-Calculator"
+    },
+    {
+        "title": "Power Calculator",
+        "description": "Calculates power between different units.",
+        "link": "./Calculators/Power-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Power-Calculator"
+    },
+    {
+        "title": "Prayer Time Calculator",
+        "description": "Calculates the prayer time based on the location.",
+        "link": "./Calculators/Prayer-Time-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Prayer-Time-Calculator"
+    },
+    {
+        "title": "Pregnancy Due Date Calculator",
+        "description": "Designed to estimate the due date for a pregnant woman based on the first day of her last menstrual period.",
+        "link": "./Calculators/Pregnancy-Due-Date-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Pregnancy-Due-Date-Calculator"
+    },
+    {
+        "title": "Pressure Calculator",
+        "description": "Calculates the Pressure conversion between two specified units.",
+        "link": "./Calculators/Pressure-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Pressure-Calculator"
+    },
+    {
+        "title": "Prime Factorization Calculator",
+        "description": "Calculates the prime factors of the given number.",
+        "link": "./Calculators/Prime-Factorization-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Prime-Factorization-Calculator"
+    },
+    {
+        "title": "Prime Number Calculator",
+        "description": "Checks if a given number is prime or not.",
+        "link": "./Calculators/Prime-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Prime-Number-Calculator"
+    },
+    {
+        "title": "Probability Calculator",
+        "description": "Calculates the Probability of different events.",
+        "link": "./Calculators/Probability-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Probability-Calculator"
+    },
+    {
+        "title": "Profit Loss Calculator",
+        "description": "Calculates the profit or loss in a click.",
+        "link": "./Calculators/Profit-Loss-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Profit-Loss-Calculator"
+    },
+    {
+        "title": "Projectile Motion Calculator",
+        "description": "Calculates Max Height, Range, Time Of Flight of Projectile.",
+        "link": "./Calculators/Projectile-Motion-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Projectile-Motion-Calculator"
+    },
+    {
+        "title": "Pronic Number Calculator",
+        "description": "Checks if a number is pronic and finds pronic numbers in a range.",
+        "link": "./Calculators/Pronic-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Pronic-Number-Calculator"
+    },
+    {
+        "title": "Proportionality Calculator",
+        "description": "Input three values to compute the fourth, showcasing proportionality..",
+        "link": "./Calculators/Proportionality-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Proportionality-Calculator"
+    },
+    {
+        "title": "Pythagorean Theorem Calculator",
+        "description": "Calculates the third side of a right-angled triangle from the other two sides",
+        "link": "./Calculators/Pythagorean-Theorem-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Pythagorean-Theorem-Calculator"
+    },
+    {
+        "title": "Pythagorean Triples Calculator",
+        "description": "checks whether the user inputs side lengths form a Pythagorean triplet or not.",
+        "link": "./Calculators/Pythagorean-Triples-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Pythagorean-Triples-Calculator"
+    },
+    {
+        "title": "QR Code Generator Calculator",
+        "description": "Generates the QR Code according to the given input.",
+        "link": "./Calculators/QR-Code-Generator-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/QR-Code-Generator-Calculator"
+    },
+    {
+        "title": "Quadratic Equation Calculator",
+        "description": "Calculates the roots of a quadratic equation.",
+        "link": "./Calculators/Quadratic-Equation-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Quadratic-Equation-Calculator"
+    },
+    {
+        "title": "Quotient And Remainder Calculator",
+        "description": "Calculates the Quotient and Remainder.",
+        "link": "./Calculators/Quotient-And-Remainder-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Quotient-And-Remainder-Calculator"
+    },
+    {
+        "title": "RD Calculator",
+        "description": "Computes the maturity and interest for recurring deposits at a given annual rate.",
+        "link": "./Calculators/RD-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/RD-Calculator"
+    },
+    {
+        "title": "ROI Calculator",
+        "description": "Calculates the return on investment for your invested amount.",
+        "link": "./Calculators/ROI-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/ROI-Calculator"
+    },
+    {
+        "title": "RPN Calculator",
+        "description": "Reverse Polish Notation calculator which represents expressions by placeing the operator after the operands.",
+        "link": "./Calculators/RPN-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/RPN-Calculator"
+    },
+    {
+        "title": "Rainwater Harvesting Calculator",
+        "description": "Calculates the annual rainwater that can be harvested by the storage tank in liters.",
+        "link": "./Calculators/Rainwater-Harvesting-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Rainwater-Harvesting-Calculator"
+    },
+    {
+        "title": "Random Letter Calculator",
+        "description": "Generates randomized English alphabets used in brain teaser activities.",
+        "link": "./Calculators/Random-Letter-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Random-Letter-Calculator"
+    },
+    {
+        "title": "Random Number Calculator",
+        "description": "Generates a random number between 1 and 100.",
+        "link": "./Calculators/Random-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Random-Number-Calculator"
+    },
+    {
+        "title": "Random Word Calculator",
+        "description": "Generates random words based on a specified starting letter and the desired number of words.",
+        "link": "./Calculators/Random-Word-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Random-Word-Calculator"
+    },
+    {
+        "title": "Ratio Calculator",
+        "description": "Which takes two numbers X and Y and then calculate X / Y.",
+        "link": "./Calculators/Ratio-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Ratio-Calculator"
+    },
+    {
+        "title": "Real Estate Calculator",
+        "description": "This tool allows users to input property details and obtain essential information for financial planning.",
+        "link": "./Calculators/Real-Estate-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Real-Estate-Calculator"
+    },
+    {
+        "title": "Recipe Cost Calculator",
+        "description": "This tool enables users to input ingredients and quantities to calculate the total cost of a recipe.",
+        "link": "./Calculators/Recipe-Cost-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Recipe-Cost-Calculator"
+    },
+    {
+        "title": "Recoil Energy Calculator",
+        "description": "Calculates the recoil energy based on some inputs.",
+        "link": "./Calculators/Recoil-Energy-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Recoil-Energy-Calculator"
+    },
+    {
+        "title": "Rectangular Polar Calculator",
+        "description": "Converts Rectangular form into Polar form and vice versa.",
+        "link": "./Calculators/Rectangular-Polar-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Rectangular-Polar-Calculator"
+    },
+    {
+        "title": "Relative Humidity Calculator",
+        "description": "Calculates the humidity value using entered dewpoint and air temperature.",
+        "link": "./Calculators/Relative-Humidity-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Relative-Humidity-Calculator"
+    },
+    {
+        "title": "Rent Calculator",
+        "description": "Calculates the overall budget for a rental payment.",
+        "link": "./Calculators/Rent-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Rent-Calculator"
+    },
+    {
+        "title": "Restaurant Planning Calculator",
+        "description": "Calculates the overall budget for starting and running a restaurant.",
+        "link": "./Calculators/Restaurant-Planning-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Restaurant-Planning-Calculator"
+    },
+    {
+        "title": "Retirement Calculator",
+        "description": "Predicts the user retirement savings growth.",
+        "link": "./Calculators/Retirement-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Retirement-Calculator"
+    },
+    {
+        "title": "Roman Numeral Calculator",
+        "description": "Converts Roman Numeral form into Decimal form.",
+        "link": "./Calculators/Roman-Numeral-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Roman-Numeral-Calculator"
+    },
+    {
+        "title": "Root Mean Square Calculator",
+        "description": "Calculates the RMS value of a given set of numbers.",
+        "link": "./Calculators/Root-Mean-Square-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Root-Mean-Square-Calculator"
+    },
+    {
+        "title": "Roots Equation Calculator",
+        "description": "Calculates the polynomial equation for the given roots.",
+        "link": "./Calculators/Roots-Equation-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Roots-Equation-Calculator"
+    },
+    {
+        "title": "Running Pace Calculator",
+        "description": "Calculate the running Pace/Time/Distance in your desired units.",
+        "link": "./Calculators/Running-Pace-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Running-Pace-Calculator"
+    },
+    {
+        "title": "Salary Estimation Calculator",
+        "description": "Estimates the expected salary based on some parameters.",
+        "link": "./Calculators/Salary-Estimation-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Salary-Estimation-Calculator"
+    },
+    {
+        "title": "Salary To Hourly Calculator",
+        "description": "Calculates salary across across various timeframes simultaneously.",
+        "link": "./Calculators/Salary-To-Hourly-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Salary-To-Hourly-Calculator"
+    },
+    {
+        "title": "Sales Tax Calculator",
+        "description": "Calculates the gross price based on the net price and the tax rate.",
+        "link": "./Calculators/Sales-Tax-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Sales-Tax-Calculator"
+    },
+    {
+        "title": "Savings Calculator",
+        "description": "Calculates the total amount we can save over a specified period by making monthly deposits at a fixed interest rate.",
+        "link": "./Calculators/Savings-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Savings-Calculator"
+    },
+    {
+        "title": "Savings Goal Calculator",
+        "description": "Determines how much you need to save each month to reach your savings goal.",
+        "link": "./Calculators/Savings-Goal-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Savings-Goal-Calculator"
+    },
+    {
+        "title": "Scientific Calculator",
+        "description": "Performs basic and complex mathematical operations.",
+        "link": "./Calculators/Scientific-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Scientific-Calculator"
+    },
+    {
+        "title": "Sentence Counter Calculator",
+        "description": "Counts the number of sentences in a given text.",
+        "link": "./Calculators/Sentence-Counter-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Sentence-Counter-Calculator"
+    },
+    {
+        "title": "Set Operations Calculator",
+        "description": "Calculator that performs the basic set operations between two sets.",
+        "link": "./Calculators/Set-Operations-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Set-Operations-Calculator"
+    },
+    {
+        "title": "Shoe Size Calculator",
+        "description": "Calculator that helps to find the perfect shoe size.",
+        "link": "./Calculators/Shoe-Size-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Shoe-Size-Calculator"
+    },
+    {
+        "title": "Short URL Calculator",
+        "description": "Calculates the Short URL from Long URL.",
+        "link": "./Calculators/Short-URL-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Short-URL-Calculator"
+    },
+    {
+        "title": "Shortest Path Calculator",
+        "description": "Calculates the shortest path between the two nodes.",
+        "link": "./Calculators/Shortest-Path-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Shortest-Path-Calculator"
+    },
+    {
+        "title": "Simple Interest Calculator",
+        "description": "Calculates the simple interest.",
+        "link": "./Calculators/Simple-Interest-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Simple-Interest-Calculator"
+    },
+    {
+        "title": "Sine Formula Calculator",
+        "description": "Calculates the angle of the triangle using sine formula.",
+        "link": "./Calculators/Sine-Formula-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Sine-Formula-Calculator"
+    },
+    {
+        "title": "Sleep Calculator",
+        "description": "Calculates the amount of sleep required based on age and activity level.",
+        "link": "./Calculators/Sleep-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Sleep-Calculator"
+    },
+    {
+        "title": "Sleep Cycle Calculator",
+        "description": "Calculates optimal bedtimes based on desired wake-up time and the scientific 90-min sleep cycles.",
+        "link": "./Calculators/Sleep-Cycle-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Sleep-Cycle-Calculator"
+    },
+    {
+        "title": "Slope Calculator",
+        "description": "Calculates the slope of the line.",
+        "link": "./Calculators/Slope-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Slope-Calculator"
+    },
+    {
+        "title": "Smith Number Calculator",
+        "description": "Calculator that determines whether a given number is a Smith number or not.",
+        "link": "./Calculators/Smith-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Smith-Number-Calculator"
+    },
+    {
+        "title": "Solar Power Saving Calculator",
+        "description": "Calculates the amount one can save on electricity by installing solar panels.",
+        "link": "./Calculators/Solar-Power-Saving-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Solar-Power-Saving-Calculator"
+    },
+    {
+        "title": "Sound Level Calculator",
+        "description": "Calculator to combine two sound levels in decibels (dB).",
+        "link": "./Calculators/Sound-Level-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Sound-Level-Calculator"
+    },
+    {
+        "title": "Special Number Calculator",
+        "description": "Checks if a number is a special number or not.",
+        "link": "./Calculators/Special-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Special-Number-Calculator"
+    },
+    {
+        "title": "Special Number-2 Calculator",
+        "description": "Checks whether a number is a special number or not.",
+        "link": "./Calculators/Special-Number-2-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Special-Number-2-Calculator"
+    },
+    {
+        "title": "Speed Calculator",
+        "description": "This tool allows users to convert speeds between different units.",
+        "link": "./Calculators/Speed-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Speed-Calculator"
+    },
+    {
+        "title": "Spy Number Calculator",
+        "description": "Checks if a number is a spy number or not and finds spy numbers up to 5 digits.",
+        "link": "./Calculators/Spy-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Spy-Number-Calculator"
+    },
+    {
+        "title": "Square And Cube Calculator",
+        "description": "Calculates square and cube of a number.",
+        "link": "./Calculators/Square-And-Cube-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Square-And-Cube-Calculator"
+    },
+    {
+        "title": "Square Root Calculator",
+        "description": "Calculates the square root of a number instantly.",
+        "link": "./Calculators/Square-Root-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Square-Root-Calculator"
+    },
+    {
+        "title": "Statistics Calculator",
+        "description": "Calculates Maximum, minimum, mean, median, mode, etc.",
+        "link": "./Calculators/Statistics-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Statistics-Calculator"
+    },
+    {
+        "title": "Stock Profit Calculator",
+        "description": "Calculates the profits in stocks by entering some parameters.",
+        "link": "./Calculators/Stock-Profit-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Stock-Profit-Calculator"
+    },
+    {
+        "title": "Stress Strain Calculator",
+        "description": "Computes stress and strain using force, area, and length inputs.",
+        "link": "./Calculators/Stress-Strain-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Stress-Strain-Calculator"
+    },
+    {
+        "title": "String Pattern Validation Calculator",
+        "description": "Validates the string patterns with various brackets to ensure every opening has a matching closing.",
+        "link": "./Calculators/String-Pattern-Validation-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/String-Pattern-Validation-Calculator"
+    },
+    {
+        "title": "Strong Number Calculator",
+        "description": "Checks whether a number is a strong number or not.",
+        "link": "./Calculators/Strong-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Strong-Number-Calculator"
+    },
+    {
+        "title": "Sudoku Calculator",
+        "description": "Generates and solves sudoku.",
+        "link": "./Calculators/Sudoku-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Sudoku-Calculator"
+    },
+    {
+        "title": "Sugar Intake Calculator",
+        "description": "Calculates the sugar intake from the consumed sugar.",
+        "link": "./Calculators/Sugar-Intake-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Sugar-Intake-Calculator"
+    },
+    {
+        "title": "Sum Of Digits Calculator",
+        "description": "Calculates the sum of digits of a given number.",
+        "link": "./Calculators/Sum-Of-Digits-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Sum-Of-Digits-Calculator"
+    },
+    {
+        "title": "Sunlight Hours Calculator",
+        "description": "Estimates the number of sunlight hours in a day based on the location and the date.",
+        "link": "./Calculators/Sunlight-Hours-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Sunlight-Hours-Calculator"
+    },
+    {
+        "title": "Sunrise Sunset Calculator",
+        "description": "Calculates approximate about when the sun will rise and set at that particular point on the Earth's surface.",
+        "link": "./Calculators/Sunrise-Sunset-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Sunrise-Sunset-Calculator"
+    },
+    {
+        "title": "Surface Tension Calculator",
+        "description": "Calculates the surface tension for different shapes like a flat object, droplets, and hollow bubbles.",
+        "link": "./Calculators/Surface-Tension-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Surface-Tension-Calculator"
+    },
+    {
+        "title": "Synchronous Speed Calculator",
+        "description": "Calculates the synchronous speed, frequency, or number of poles for a synchronous monitor.",
+        "link": "./Calculators/Synchronous-Speed-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Synchronous-Speed-Calculator"
+    },
+    {
+        "title": "Systematic Investment Plan Calculator",
+        "description": "Calculator that gives an idea of the returns on their mutual fund investments made through SIP.",
+        "link": "./Calculators/Systematic-Investment-Plan-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Systematic-Investment-Plan-Calculator"
+    },
+    {
+        "title": "Systematic Withdrawal Plan Calculator",
+        "description": "Calculator for SWP managing regular withdrawals from investments to provide steady income.",
+        "link": "./Calculators/Systematic-Withdrawal-Plan-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Systematic-Withdrawal-Plan-Calculator"
+    },
+    {
+        "title": "T-Score Calculator",
+        "description": "Calculates the T-score to test for significant differences between the sample mean and the population mean.",
+        "link": "./Calculators/T-Score-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/T-Score-Calculator"
+    },
+    {
+        "title": "TNEA Cut Off Calculator",
+        "description": "Calculates the Tamil Nadu Engineering Admissions cut-off marks based on various subject marks.",
+        "link": "./Calculators/TNEA-Cut-Off-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/TNEA-Cut-Off-Calculator"
+    },
+    {
+        "title": "Tangent Formula Calculator",
+        "description": "Calculates the tangent angle of a triangle.",
+        "link": "./Calculators/Tangent-Formula-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Tangent-Formula-Calculator"
+    },
+    {
+        "title": "Taxi Fare Calculator",
+        "description": "Calculates the cost of taxi rides based on distance, base fare, and time.",
+        "link": "./Calculators/Taxi-Fare-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Taxi-Fare-Calculator"
+    },
+    {
+        "title": "Taylor Series Calculator",
+        "description": "Calculates the Taylor Series expansion of a mathematical function.",
+        "link": "./Calculators/Taylor-Series-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Taylor-Series-Calculator"
+    },
+    {
+        "title": "Temperature Calculator",
+        "description": "Calculates the Temperature conversion between two specified units.",
+        "link": "./Calculators/Temperature-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Temperature-Calculator"
+    },
+    {
+        "title": "Thala For A Reason Calculator",
+        "description": "Whatever number you give it will return 7.",
+        "link": "./Calculators/Thala-For-A-Reason-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Thala-For-A-Reason-Calculator"
+    },
+    {
+        "title": "Thermal Expansion Calculator",
+        "description": "Calculates the thermal expansion based on the expansion coefficient and change in temperature",
+        "link": "./Calculators/Thermal-Expansion-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Thermal-Expansion-Calculator"
+    },
+    {
+        "title": "Tile Calculator",
+        "description": "Calculates the number of tiles for the given area.",
+        "link": "./Calculators/Tile-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Tile-Calculator"
+    },
+    {
+        "title": "Time Calculator",
+        "description": "Calculates Hours, Minutes, Seconds for any entered time.",
+        "link": "./Calculators/Time-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Time-Calculator"
+    },
+    {
+        "title": "Time Complexity Calculator",
+        "description": "Calculates the time complexity of given programs by the user.",
+        "link": "./Calculators/Time-Complexity-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Time-Complexity-Calculator"
+    },
+    {
+        "title": "Time Zone Calculator",
+        "description": "Instantly find the time difference anywhere in the world.",
+        "link": "./Calculators/Time-Zone-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Time-Zone-Calculator"
+    },
+    {
+        "title": "Tip Calculator",
+        "description": "Calculates the tip amount and final amount based on tip percentage and amount.",
+        "link": "./Calculators/Tip-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Tip-Calculator"
+    },
+    {
+        "title": "Titration Calculator",
+        "description": "Determines the concentration of an unknown solution by using a solution of known concentration.",
+        "link": "./Calculators/Titration-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Titration-Calculator"
+    },
+    {
+        "title": "Torque Calculator",
+        "description": "Calculates the torque based on force, distance, and angle entered.",
+        "link": "./Calculators/Torque-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Torque-Calculator"
+    },
+    {
+        "title": "Travel Budget Calculator",
+        "description": "Calculates the budget of any trip based on various inputs.",
+        "link": "./Calculators/Travel-Budget-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Travel-Budget-Calculator"
+    },
+    {
+        "title": "Travel Packing Calculator",
+        "description": "Generates customized packing lists for your trips, provides weather updates, and suggests top tourist places.",
+        "link": "./Calculators/Travel-Packing-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Travel-Packing-Calculator"
+    },
+    {
+        "title": "Triangle Calculator",
+        "description": "Calculates the different results of a triangle based on input sides.",
+        "link": "./Calculators/Triangle-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Triangle-Calculator"
+    },
+    {
+        "title": "Trigonometric Calculator",
+        "description": "Calculates trigonometric functions and inverses.",
+        "link": "./Calculators/Trigonometric-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Trigonometric-Calculator"
+    },
+    {
+        "title": "Trigonometric Function Graphing Calculator",
+        "description": "Provides the graph as per the given function like sin, cos, tan, etc.",
+        "link": "./Calculators/Trigonometric-Function-Graphing-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Trigonometric-Function-Graphing-Calculator"
+    },
+    {
+        "title": "Trisection Point Calculator",
+        "description": "Calculates the trisection points of a given two points(Line).",
+        "link": "./Calculators/Trisection-Point-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Trisection-Point-Calculator"
+    },
+    {
+        "title": "Twin Prime Number Calculator",
+        "description": "Calculates the pair of prime numbers that have a difference of 2.",
+        "link": "./Calculators/Twin-Prime-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Twin-Prime-Number-Calculator"
+    },
+    {
+        "title": "Typing Speed Calculator",
+        "description": "Calculates the typing speed in two different units.",
+        "link": "./Calculators/Typing-Speed-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Typing-Speed-Calculator"
+    },
+    {
+        "title": "UV Index Calculator",
+        "description": "Calculator that provides real-time UV levels and personalized sun protection advice.",
+        "link": "./Calculators/UV-Index-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/UV-Index-Calculator"
+    },
+    {
+        "title": "Ugly Number Calculator",
+        "description": "Checks if a number is ugly number or not.",
+        "link": "./Calculators/Ugly-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Ugly-Number-Calculator"
+    },
+    {
+        "title": "Unique Prime Number Calculator",
+        "description": "Checks if a number is unique prime or not and finds unique prime numbers in a range.",
+        "link": "./Calculators/Unique-Prime-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Unique-Prime-Number-Calculator"
+    },
+    {
+        "title": "Unit Calculator",
+        "description": "Converts values between different units of measurement.",
+        "link": "./Calculators/Unit-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Unit-Calculator"
+    },
+    {
+        "title": "Value Added Tax Calculator",
+        "description": "Calculates the VAT on products or services.",
+        "link": "./Calculators/Value-Added-Tax-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Value-Added-Tax-Calculator"
+    },
+    {
+        "title": "Vector Calculator",
+        "description": "Calculates the resultant vector, dot product and angle between 2 vectors.",
+        "link": "./Calculators/Vector-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Vector-Calculator"
+    },
+    {
+        "title": "Velocity Acceleration Calculator",
+        "description": "Calculates the velocity and acceleration by taking distance and time.",
+        "link": "./Calculators/Velocity-Acceleration-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Velocity-Acceleration-Calculator"
+    },
+    {
+        "title": "Vowel Consonant Calculator",
+        "description": "Calculates number of vowels and consonants in a given paragraph.",
+        "link": "./Calculators/Vowel-Consonant-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Vowel-Consonant-Calculator"
+    },
+    {
+        "title": "Water Hardness Calculator",
+        "description": "Determines the hardness of your water supply.",
+        "link": "./Calculators/Water-Hardness-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Water-Hardness-Calculator"
+    },
+    {
+        "title": "Water Intake Calculator",
+        "description": "Calculate daily water intake based on weight, activity, and weather.",
+        "link": "./Calculators/Water-Intake-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Water-Intake-Calculator"
+    },
+    {
+        "title": "Water TDS Calculator",
+        "description": "Calculates the TDS of the given water sample.",
+        "link": "./Calculators/Water-TDS-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Water-TDS-Calculator"
+    },
+    {
+        "title": "Wave And Optics Calculator",
+        "description": "Calculates wave speed and determines image distance using the lens formula.",
+        "link": "./Calculators/Wave-And-Optics-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Wave-And-Optics-Calculator"
+    },
+    {
+        "title": "Wavelength Calculator",
+        "description": "Calculates the Wavelength of the given speed and frequency of wave.",
+        "link": "./Calculators/Wavelength-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Wavelength-Calculator"
+    },
+    {
+        "title": "Weather Calculator",
+        "description": "Calculates wind chill factor, dew point, heat index, reports human thermal comfort and converts temperature.",
+        "link": "./Calculators/Weather-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Weather-Calculator"
+    },
+    {
+        "title": "Website Bandwidth Calculator",
+        "description": "Calculates the bandwidth of a website based on some factors.",
+        "link": "./Calculators/Website-Bandwidth-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Website-Bandwidth-Calculator"
+    },
+    {
+        "title": "Wedding Budget Calculator",
+        "description": "Calculates the total budget of a wedding, including a breakdown of various expenses.",
+        "link": "./Calculators/Wedding-Budget-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Wedding-Budget-Calculator"
+    },
+    {
+        "title": "Weight Calculator",
+        "description": "Calculates the weight between different units.",
+        "link": "./Calculators/Weight-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Weight-Calculator"
+    },
+    {
+        "title": "Weight On The Moon Calculator",
+        "description": "Calculates the weight of the object/person on the moon.",
+        "link": "./Calculators/Weight-On-The-Moon-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Weight-On-The-Moon-Calculator"
+    },
+    {
+        "title": "Word Count Calculator",
+        "description": "Counts the Total Words, Unique words, Average word length and Exports the data in JSON.",
+        "link": "./Calculators/Word-Count-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Word-Count-Calculator"
+    },
+    {
+        "title": "Work Calculator",
+        "description": "Calculates the work done by the Force F in displacement D.",
+        "link": "./Calculators/Work-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Work-Calculator"
+    },
+    {
+        "title": "Yarn Density Calculator",
+        "description": "Calculates the linear density of the yarn from unit system to another.",
+        "link": "./Calculators/Yarn-Density-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Yarn-Density-Calculator"
+    },
+    {
+        "title": "Young's Double Slit Experiment Calculator",
+        "description": "Computes the positions of bright and dark fringes as well as the fringe spacing.",
+        "link": "./Calculators/Young's-Double-Slit-Experiment-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Young's-Double-Slit-Experiment-Calculator"
+    },
+    {
+        "title": "Z-Score Calculator",
+        "description": "Calculates how many standard deviations a data point is from the mean of a dataset.",
+        "link": "./Calculators/Z-Score-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Z-Score-Calculator"
+    },
+    {
+        "title": "Z-Spray Calculator",
+        "description": "Determines the amount of spray needed for lawn and garden care.",
+        "link": "./Calculators/Z-Spray-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Z-Spray-Calculator"
+    },
+    {
+        "title": "Zener Diode Calculator",
+        "description": "Determines the correct resistor value for stable voltage regulation in Zener diode circuits.",
+        "link": "./Calculators/Zener-Diode-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Zener-Diode-Calculator"
+    },
+    {
+        "title": "Zodiac Sign Calculator",
+        "description": "Provides the user's zodiac sign by taking the date of birth as input.",
+        "link": "./Calculators/Zodiac-Sign-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Zodiac-Sign-Calculator"
+    }
+]
