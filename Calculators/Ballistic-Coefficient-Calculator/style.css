@@ -51,7 +51,23 @@ body {
     outline: none;
 }
 
-.form-group input:focus {
+.info {
+    display: none;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus + .info {
     display: block;
 }
 
