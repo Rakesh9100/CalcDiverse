@@ -10,4 +10,33 @@ function calculateBallisticDetails() {
         alert('Please enter valid numeric values.');
         return;
     }
+
+    // Convert mass to kilograms and diameter to meters
+    const massKg = mass / 1000;
+    const diameterM = diameter / 1000;
+
+    // Calculate the cross-sectional area
+    const area = Math.PI * Math.pow(diameterM / 2, 2);
+
+    // Calculate the ballistic coefficient
+    const ballisticCoefficient = massKg / (dragCoefficient * area);
+
+    // Calculate trajectory details
+    const gravity = 9.81; // Acceleration due to gravity (m/s^2)
+    const angleRad = (Math.PI / 180) * angle; // Convert angle to radians
+    const timeOfFlight = (2 * velocity * Math.sin(angleRad)) / gravity;
+    const maxHeight = Math.pow(velocity * Math.sin(angleRad), 2) / (2 * gravity);
+    const range = (Math.pow(velocity, 2) * Math.sin(2 * angleRad)) / gravity;
+    const windDrift = windSpeed * timeOfFlight;
+
+    // Display the result
+    const resultElement = document.getElementById('result');
+    resultElement.style.display = 'block';
+    resultElement.innerHTML = `
+        <p>Ballistic Coefficient: ${ballisticCoefficient.toFixed(4)} kg/m²</p>
+        <p>Time of Flight: ${timeOfFlight.toFixed(2)} s</p>
+        <p>Maximum Height: ${maxHeight.toFixed(2)} m</p>
+        <p>Range: ${range.toFixed(2)} m</p>
+        <p>Wind Drift: ${windDrift.toFixed(2)} m</p>
+    `;
 }
