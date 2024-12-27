@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
+}
+
+/* Body Styling */
+body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
     min-height: 100vh;
@@ -14,42 +14,42 @@
     justify-content: center;
     align-items: center;
     color: #333;
-  }
-  
-  /* Container Styling */
-  .container {
+}
+
+/* Container Styling */
+.container {
     background-color: #fff;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 600px;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     font-size: 1.8em;
     margin-bottom: 20px;
     text-align: center;
     color: #ff6b6b;
-  }
-  
-  main {
+}
+
+main {
     width: 100%;
-  }
-  
-  /* Form Styling */
-  form {
+}
+
+/* Form Styling */
+form {
     margin-bottom: 20px;
-  }
-  
-  label {
+}
+
+label {
     font-weight: bold;
     display: block;
     margin-bottom: 8px;
     color: #555;
-  }
-  
-  textarea {
+}
+
+textarea {
     width: 100%;
     height: 80px;
     border: 2px solid #ddd;
@@ -58,13 +58,13 @@
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s ease;
-  }
-  
-  textarea:focus {
+}
+
+textarea:focus {
     border-color: #ff6b6b;
-  }
-  
-  button {
+}
+
+button {
     display: block;
     width: 100%;
     padding: 12px;
@@ -76,22 +76,22 @@
     cursor: pointer;
     transition: background 0.3s ease;
     font-weight: bold;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background: linear-gradient(135deg, #ff9472, #ff6b6b);
-  }
-  
-  /* Results Section */
-  #result-container {
+}
+
+/* Results Section */
+#result-container {
     margin-top: 20px;
     background: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  #results p {
+}
+
+#results p {
     background: #f0f8ff;
     padding: 12px;
     border-radius: 5px;
@@ -99,5 +99,4 @@
     font-family: monospace;
     overflow-x: auto;
     margin-bottom: 10px;
-  }
-  
+}
