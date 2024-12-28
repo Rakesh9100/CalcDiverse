@@ -12,3 +12,6 @@ Ballistic coefficient calculator is a tool used in ballistics to determine the b
 
 ## Screenshots :-
 
+![image](https://github.com/user-attachments/assets/bbb67e72-4630-4d26-8fe4-3c1e376434af)
+
+![image](https://github.com/user-attachments/assets/9ec517fb-886e-496d-8186-3b667f0b4923)

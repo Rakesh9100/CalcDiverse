@@ -40,12 +40,13 @@ function calculateBallisticDetails() {
         <p>Wind Drift: ${windDrift.toFixed(2)} m</p>
     `;
 }
+
 function moveToNextField(event, nextFieldId) {
     if (event.key === 'Enter') {
-      event.preventDefault(); // Prevent form submission on Enter
-      const nextField = document.getElementById(nextFieldId);
-      if (nextField) {
-        nextField.focus(); // Focus the next input field
-      }
+        event.preventDefault(); // Prevent form submission on Enter
+        const nextField = document.getElementById(nextFieldId);
+        if (nextField) {
+            nextField.focus(); // Focus the next input field
+        }
     }
-  }
+}

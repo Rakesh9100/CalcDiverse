@@ -5,10 +5,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #0d1117;
-    background-image:"./assets/background.png";
-    color:white;
+    height: 100%;
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 }
 
 .calculator {
@@ -68,7 +68,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.form-group input:focus + .info {
+.form-group input:focus+.info {
     display: block;
 }
 
