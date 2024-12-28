@@ -1637,13 +1637,18 @@ section {
     display: block;
     height: calc(100% - 15px);
     width: calc(100% - 15px);
-    background-color: rgb(104, 98, 232);
-    background: linear-gradient(90deg, rgb(159, 157, 235) 0%, rgb(212, 153, 222) 39%, rgb(253, 199, 134) 100%);
     border-radius: 50%;
     display: grid;
     place-items: center;
     font-size: 26px;
     color: black;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(45deg, #FFDEE9 39%, #B5FFFC 100%);
+}
+
+.dark-mode #progress-value {
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 }
 
 /* Pagination Section Css */
