@@ -41,16 +41,30 @@ let calcScrollValue = () => {
     let pos = document.documentElement.scrollTop;
     let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrollValue = Math.round((pos * 100) / calcHeight);
+    let isDarkMode = document.body.classList.contains('dark-mode');
+
     if (pos > 100) {
         scrollProg.style.display = "grid";
     } else {
         scrollProg.style.display = "none";
     }
+
     scrollProg.addEventListener("click", () => {
         document.documentElement.scrollTop = 0;
     });
-    scrollProg.style.background = `conic-gradient(#0063ba ${scrollValue}%, #d499de ${scrollValue}%)`;
+
+    if (!isDarkMode) {
+        scrollProg.style.background = `conic-gradient( rgb(45, 4, 250) ${scrollValue}%,rgb(128, 128, 128) ${scrollValue}%)`;
+    } else {
+        scrollProg.style.background = `conic-gradient( rgb(212, 0, 74) ${scrollValue}%, rgb(128, 128, 128) ${scrollValue}%)`;
+    }
 };
+
+// Call the function on scroll
+window.addEventListener('scroll', calcScrollValue);
+
+// Call the function on page load
+document.addEventListener('DOMContentLoaded', calcScrollValue);
 
 window.addEventListener("scroll", function () {
     var scrollToTopButton = document.getElementById("progress");
@@ -75,6 +89,7 @@ if (currentTheme) {
         toggleSwitch.checked = true;
         document.body.classList.add('dark-mode');
     }
+    calcScrollValue();
 }
 
 toggleSwitch.addEventListener('change', (e) => {
@@ -85,6 +100,7 @@ toggleSwitch.addEventListener('change', (e) => {
         document.body.classList.remove('dark-mode');
         localStorage.setItem('theme', 'light');
     }
+    calcScrollValue();
 });
 
 // Form input validation
