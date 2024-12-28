@@ -464,9 +464,11 @@ nav ul {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -1637,13 +1639,18 @@ section {
     display: block;
     height: calc(100% - 15px);
     width: calc(100% - 15px);
-    background-color: rgb(104, 98, 232);
-    background: linear-gradient(90deg, rgb(159, 157, 235) 0%, rgb(212, 153, 222) 39%, rgb(253, 199, 134) 100%);
     border-radius: 50%;
     display: grid;
     place-items: center;
     font-size: 26px;
     color: black;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(45deg, #FFDEE9 39%, #B5FFFC 100%);
+}
+
+.dark-mode #progress-value {
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 }
 
 /* Pagination Section Css */
@@ -1859,7 +1866,7 @@ footer {
     display: block;
     width: 0;
     height: 2px;
-    background: #ff1b82; /* Underline color */
+    background: #ff1b82;
     transition: width 0.3s ease-in-out;
     position: absolute;
     bottom: 0;
@@ -1868,11 +1875,11 @@ footer {
 }
 
 .footer-ul li a:hover {
-    color: #ff1b82; /* Text color on hover */
+    color: #ff1b82;
 }
 
 .footer-ul li a:hover::after {
-    width: 100%; /* Underline expands on hover */
+    width: 100%;
 }
 
 .social {
