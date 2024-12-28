@@ -464,9 +464,11 @@ nav ul {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -1864,7 +1866,7 @@ footer {
     display: block;
     width: 0;
     height: 2px;
-    background: #ff1b82; /* Underline color */
+    background: #ff1b82;
     transition: width 0.3s ease-in-out;
     position: absolute;
     bottom: 0;
@@ -1873,11 +1875,11 @@ footer {
 }
 
 .footer-ul li a:hover {
-    color: #ff1b82; /* Text color on hover */
+    color: #ff1b82;
 }
 
 .footer-ul li a:hover::after {
-    width: 100%; /* Underline expands on hover */
+    width: 100%;
 }
 
 .social {

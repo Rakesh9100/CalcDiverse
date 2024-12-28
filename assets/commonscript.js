@@ -127,7 +127,7 @@ function validateEmail(inputId) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Check if the current page is not contact.html
     if (!window.location.pathname.endsWith('/assets/contact/contact.html')) {
 
@@ -138,13 +138,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (contactForm && messageInput) {
             // Update text color based on input length
-            messageInput.addEventListener('input', function() {
+            messageInput.addEventListener('input', function () {
                 const currentLength = messageInput.value.length;
                 messageInput.style.color = currentLength < minLength ? 'red' : 'black';
             });
 
             // Validate form submission
-            contactForm.addEventListener('submit', function(event) {
+            contactForm.addEventListener('submit', function (event) {
                 if (messageInput.value.length < minLength) {
                     event.preventDefault();
                     alert('Your message must be at least 50 characters long.');
