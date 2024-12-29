@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(../../assets/images/background.jpg);
+    background-image: url(../images/background.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,15 +36,20 @@ body {
     scroll-behavior: smooth;
 }
 
-.heroes {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+.heroes-container {
     margin-top: 25px;
-    font-size: 45px;
-    color: var(--light);
     text-align: center;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.heroes {
+    padding: 0;
     cursor: pointer;
+    font-weight: bold;
+    color: var(--light);
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: clamp(3rem, 3vw, 5rem);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
 h1:hover {
@@ -52,11 +57,14 @@ h1:hover {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.dark-mode h1 {
+    color: rgb(255, 255, 0);
+}
+
 .dark-mode h1:hover {
     color: var(--dark);
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
 }
-
 
 #contributor {
     margin: 0;
