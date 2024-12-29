@@ -43,13 +43,20 @@ body {
     font-size: 45px;
     color: var(--light);
     text-align: center;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
     cursor: pointer;
 }
 
 h1:hover {
-    color: var(--primary);
+    color: #1e90ff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+.dark-mode h1:hover {
+    color: var(--dark);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+}
+
 
 #contributor {
     margin: 0;
