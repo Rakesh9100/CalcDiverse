@@ -1,0 +1,96 @@
+# Dilution Calculator
+
+## Overview
+
+This project is a modern, interactive web-based calculator that implements the formula for dilution:
+
+\[ C_1 \times V_1 = C_2 \times V_2 \]
+
+The calculator allows users to calculate:
+
+- Initial Concentration \( C_1 \)
+- Initial Volume \( V_1 \)
+- Final Concentration \( C_2 \)
+- Final Volume \( V_2 \)
+
+It features a modern user interface for seamless interaction.
+
+## Features
+
+- **Dynamic Formula Display**: The formula for dilution is prominently displayed on the website.
+- **Real-Time Results**: Automatically calculates the missing value based on user inputs.
+- **Responsive Design**: Adapts to various screen sizes for accessibility.
+- **Error Handling**: Provides feedback for invalid or incomplete inputs.
+- **Modern Aesthetic**: Includes a stylish background and intuitive layout.
+
+## Project Structure
+
+```
+dilution-calculator/
+├── index.html       # HTML structure of the calculator
+├── style.css        # Styling for the modern UI
+├── script.js        # JavaScript functionality for calculations
+├── README.md        # Project documentation
+└── assets/
+    └── background.jpg  # Background image for the modern UI
+```
+
+## Setup and Usage
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd dilution-calculator
+```
+
+### 3. Open the Application
+
+Open `index.html` in any modern web browser to use the calculator.
+
+## How to Use
+
+1. Enter the known values for any three fields:
+   - Initial Concentration (\( C_1 \))
+   - Initial Volume (\( V_1 \))
+   - Final Concentration (\( C_2 \))
+   - Final Volume (\( V_2 \))
+2. Click the "Calculate" button.
+3. The missing value will be calculated using the formula:
+   \[ C_1 \times V_1 = C_2 \times V_2 \]
+4. Clear inputs or refresh the page to reset the calculator.
+
+## Example Calculations
+
+### Case 1: Calculate Final Volume (\( V_2 \))
+
+- **Input**:
+  - Initial Concentration (\( C_1 \)): `2 mol/L`
+  - Initial Volume (\( V_1 \)): `100 mL`
+  - Final Concentration (\( C_2 \)): `1 mol/L`
+- **Output**:
+  - \( V_2 = (2 × 100) / 1 = 200 mL \)
+
+### Case 2: Calculate Final Concentration (\( C_2 \))
+
+- **Input**:
+  - Initial Concentration (\( C_1 \)): `2 mol/L`
+  - Initial Volume (\( V_1 \)): `100 mL`
+  - Final Volume (\( V_2 \)): `200 mL`
+- **Output**:
+  - \( C_2 = (2 × 100) / 200 = 1 mol/L \)
+
+## Technologies Used
+
+- **HTML**: For the structure of the calculator.
+- **CSS**: For styling and creating a modern, responsive UI.
+- **JavaScript**: For implementing the functionality and interactivity.
+
+## License
+
+This project is open-source and available under the MIT License.
