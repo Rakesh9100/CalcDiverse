@@ -21,6 +21,6 @@ Calculates the cyclomatic complexity using three different methods.
 
 
 ## Screenshots :-
-![image](https://github.com/user-attachments/assets/e306d2b2-9b94-4eb8-b0f3-4c97b537e956)
-![image](https://github.com/user-attachments/assets/d704db38-0c30-48b3-81db-a41046e18eeb)
-![image](https://github.com/user-attachments/assets/68927b4c-2bcb-4992-bf8c-4a2f916c47f0)
+![image](https://github.com/user-attachments/assets/16984764-e859-4fd4-b4c4-2a360350178c)
+![image](https://github.com/user-attachments/assets/9c5bed2d-5f31-4662-90f1-564031d456d4)
+![image](https://github.com/user-attachments/assets/fc684cda-e9af-47cf-8f64-0da4b377331b)
