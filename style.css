@@ -2036,40 +2036,37 @@ footer {
     margin-left: 5px;
     padding: .7rem;
     width: 8rem;
-    border-radius: 5rem;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.6);
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5rem;
     background-color: #4158D0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-image: linear-gradient(90deg, #4158D0 7%, #C850C0 47%, #FFCC70 96%);
-
-}
-
-.dark-mode #searchBar button:hover {
-    transform: translateY(-5px);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 
-                -5px -5px 15px rgba(255, 255, 255, 0.7);
-    background: linear-gradient(to right, #d4004a, #ff90b3); 
-    background-size: 200%; 
-    background-position: right;
-    animation: gradientSlide 0.8s forwards; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.6);
 }
 
 #searchBar button:hover {
+    background-size: 200%;
+    background-position: right;
     transform: translateY(-5px);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 
-                -5px -5px 15px rgba(255, 255, 255, 0.7);
+    animation: gradientSlide 0.8s forwards;
     background: linear-gradient(to right, #002a70, #89c6ff);
-    background-size: 200%; 
-    background-position: right; 
-    animation: gradientSlide 0.8s forwards; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.7);
 }
 
+.dark-mode #searchBar button:hover {
+    background-size: 200%;
+    background-position: right;
+    transform: translateY(-5px);
+    animation: gradientSlide 0.8s forwards;
+    background: linear-gradient(to right, #d4004a, #ff90b3);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.7);
+}
 
 @keyframes gradientSlide {
     from {
         background-position: right;
     }
+
     to {
         background-position: left;
     }
