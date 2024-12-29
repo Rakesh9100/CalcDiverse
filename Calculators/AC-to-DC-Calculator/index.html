@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AC to DC Converter Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>AC to DC Converter Calculator</h1>
+      <p class="formula">
+        Formula:
+        <span id="latex-formula">\( V_{DC} = \frac{V_{AC}}{\sqrt{2}} \)</span>
+      </p>
+
+      <label for="vac"
+        >Enter AC Voltage <span id="latex-formula"> \( V_{AC} \)</span>:</label
+      >
+      <input type="number" id="vac" placeholder="Enter AC Voltage (in volts)" />
+
+      <div class="buttons">
+        <button onclick="calculateDC()">Calculate</button>
+        <button onclick="clearInputs()">Clear</button>
+      </div>
+
+      <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
