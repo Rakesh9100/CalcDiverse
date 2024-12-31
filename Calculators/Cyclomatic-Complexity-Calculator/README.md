@@ -4,13 +4,11 @@
 
 Calculates the cyclomatic complexity using three different methods.
 
-
 ## Tech Stacks :-
 
 - HTML
 - CSS
 - JavaScript
-
 
 ## Features :-
 
@@ -19,8 +17,13 @@ Calculates the cyclomatic complexity using three different methods.
 - Calculates cyclomatic complexity using conditional nodes of graph.
 - Gives clear and detailed input instructions.
 
-
 ## Screenshots :-
-![image](https://github.com/user-attachments/assets/16984764-e859-4fd4-b4c4-2a360350178c)
-![image](https://github.com/user-attachments/assets/9c5bed2d-5f31-4662-90f1-564031d456d4)
-![image](https://github.com/user-attachments/assets/fc684cda-e9af-47cf-8f64-0da4b377331b)
+
+### Method 1
+![image](https://github.com/user-attachments/assets/9793ab3f-262b-4423-88df-feaed376a066)
+
+### Method 2
+![image](https://github.com/user-attachments/assets/687b8330-12e3-4b3a-af08-dc9dc179c24f)
+
+### Method 3
+![image](https://github.com/user-attachments/assets/57b72654-01f4-47ef-8f91-65d2c9a50cc2)

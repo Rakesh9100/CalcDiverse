@@ -8,57 +8,71 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 26, 110, 0.1);
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     flex-direction: column;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(-60deg, #F765A3, #A155B9, #165BAA, #0B1354);
-   }
+}
 
 section {
     margin-top: 5vh;
-    width: 90%; 
-    max-width: 90vh; 
+    width: 90%;
+    max-width: 90vh;
     display: inline;
-    min-height: auto; 
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     font-weight: bolder;
-    font-size: 5em;
-    margin-top: 0px;
-    margin-bottom: 1px; 
-    word-wrap: initial;
+    font-size: 3em;
+    margin: 35px 0;
+    text-align: center;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 input[type="radio"] {
     display: none;
 }
 
-div {
-    background-color: #fddfdf;
+div.tab-content {
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     overflow: hidden;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: center;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column; 
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 label {
     padding: 10px 20px;
+    display: inline;
+    flex-direction: column;
     background-color: #F9D1D1;
     border-radius: 5px;
+    flex-direction: column;
     color: #000;
     cursor: pointer;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     transition: .4s;
     margin: 10px 0;
+    text-align: center;
 }
 
 .tab-content {
@@ -69,6 +83,7 @@ label {
 
 .tab-content .label-text {
     font-size: 1.2rem;
+    color: #fff;
 }
 
 input[type="radio"]:checked+label {
@@ -79,13 +94,13 @@ input[type="radio"]:checked+label {
 #tab1:checked~#content1,
 #tab2:checked~#content2,
 #tab3:checked~#content3 {
-    display: block;
+    display: flex;
 }
 
 button {
     margin: 15px 0;
-    width: 100%; 
-    max-width: 300px; 
+    width: 100%;
+    max-width: 300px;
     padding: 10px;
     border-radius: 8px;
     border: none;
@@ -95,6 +110,13 @@ button {
     font-weight: bold;
     cursor: pointer;
     background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #FFA4B6;
+    color: #fff;
 }
 
 input::-webkit-outer-spin-button,
@@ -107,79 +129,85 @@ input {
     display: block;
     border: none;
     line-height: 22px;
-    padding: 5px;
+    padding: 10px;
     font-size: 1rem;
-    border-radius: 2px;
-    width: 100%; 
-    max-width: 300px; 
-    margin: 5px 0;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    text-align: center;
 }
 
 .tab-content label {
     padding: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     background-color: transparent;
     display: block;
+    color: #fff;
 }
 
 .note {
     margin-bottom: 5px;
     font-size: 0.9rem;
+    color: #fff;
 }
 
 span {
     display: block;
+    color: #fff;
 }
-
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
-    h2{
-        font-size: 1.5rem;
+
+    h2 {
+        font-size: 1.2rem;
     }
+
     label {
-        font-size: 1rem; 
+        font-size: 1rem;
         padding: 8px 15px;
     }
 
     button {
         margin: 10px 0;
         padding: 8px 20px;
-        font-size: 1rem; 
-        width: 90%; 
+        font-size: 1rem;
+        width: 90%;
     }
 
     input[type="number"],
     input[type="text"] {
-        font-size: 1rem;  
-        height: 2.5vmax;  
-        padding-left: 2vmax;  
-        padding-right: 2vmax; 
+        font-size: 1rem;
+        height: 2.5vmax;
+        padding-left: 2vmax;
+        padding-right: 2vmax;
         padding-top: 2vmax;
-        padding-bottom: 2vmax; 
+        padding-bottom: 2vmax;
     }
 
     .tab-content {
         padding: 5px;
     }
-    .tab-content .label-text{
+
+    .tab-content .label-text {
         font-size: 1rem;
     }
 }
 
-
 @media (max-width: 590px) {
     h1 {
-        font-size: 2.5rem; 
-        margin: 5px auto; 
+        font-size: 2rem;
     }
-    h2{
-        font-size: 1.8rem;
+
+    h2 {
+        font-size: 1.5rem;
     }
+
     label {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
         padding: 6px 10px;
         margin-bottom: 2px;
     }
@@ -187,18 +215,18 @@ span {
     button {
         margin: 8px 0;
         padding: 8px 18px;
-        font-size: 0.9rem; 
-        width: 90%; 
+        font-size: 0.9rem;
+        width: 90%;
     }
 
     input[type="number"],
     input[type="text"] {
-        font-size: 1rem;  
-        height: 2.5vmax;  
-        padding-left: 2vmax;  
-        padding-right: 2vmax; 
+        font-size: 1rem;
+        height: 2.5vmax;
+        padding-left: 2vmax;
+        padding-right: 2vmax;
         padding-top: 2vmax;
-        padding-bottom: 2vmax; /
+        padding-bottom: 2vmax;
     }
 
     .tab-content {
@@ -206,37 +234,35 @@ span {
     }
 }
 
-
 @media (max-width: 400px) {
     h1 {
-        font-size: 2rem; 
-        margin: 1px auto; 
-    }
-    h2{
         font-size: 1.5rem;
     }
 
+    h2 {
+        font-size: 1.2rem;
+    }
+
     label {
-        font-size: 0.8rem; 
+        font-size: 0.8rem;
         padding: 4px 10px;
     }
 
     button {
         margin: 5px 0;
         padding: 6px 15px;
-        font-size: 0.8rem; 
+        font-size: 0.8rem;
         width: 90%;
     }
 
     input[type="number"],
     input[type="text"] {
-        font-size: 1rem;  
-        height: 2.5vmax; 
-        padding-left: 2vmax;  
-        padding-right: 2vmax; 
+        font-size: 1rem;
+        height: 2.5vmax;
+        padding-left: 2vmax;
+        padding-right: 2vmax;
         padding-top: 2vmax;
-        padding-bottom: 2vmax; /
-    
+        padding-bottom: 2vmax;
     }
 
     .tab-content {
