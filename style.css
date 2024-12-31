@@ -481,9 +481,17 @@ section {
     z-index: 100;
 }
 
+.comp-section {
+    height: 100vh;
+    color: var(--secondary);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 4;
+}
+
 .comp-section .compcontainer .logo img {
-    width: 250px;
-    margin-bottom: -25px;
+    width: clamp(150px, 25vw, 230px);
 }
 
 .comp-section .compcontainer h1,
@@ -495,6 +503,7 @@ section {
 }
 
 .comp-section .compcontainer h1 {
+    font-size: clamp(4rem, 4vw, 6rem);
     font-family: Ubuntu;
     text-shadow: 2px 2px 10px var(--light);
     margin-top: 16px;
@@ -502,10 +511,10 @@ section {
 
 .comp-section .compcontainer h3 {
     font-family: 'Poppins', sans-serif;
-    color: rgb(244 239 240 / 91%);
-    margin-top: 2rem;
-    font-weight: 400;
-    font-size: 2.5rem;
+    color: rgb(244 239 240);
+    margin: 25px 10px 20px;
+    font-weight: 600;
+    font-size: clamp(2rem, 2vw, 3rem);
 }
 
 .comp-section .compcontainer a {
@@ -513,9 +522,9 @@ section {
 }
 
 .comp-section .compcontainer .started {
-    font-size: 20px;
+    font-size: clamp(0.5rem, 5vw, 2rem);
     font-weight: 700;
-    margin-top: 21px;
+    margin-top: clamp(10px, 5vw + 10px, 30px);
     padding: 15px 50px;
     border: none;
     outline: none;
@@ -576,31 +585,13 @@ section {
 }
 
 .paragraph {
-    font-size: 2rem;
-    width: 85%;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    width: 90%;
     text-align: center;
     font-weight: 500;
     margin: auto;
     margin-top: 18px;
-    padding: 10px;
     color: rgb(244 239 240 / 91%);
-}
-
-.comp-section {
-    display: grid;
-    color: var(--secondary);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 4;
-}
-
-.comp-section h1 {
-    font-size: 65px;
-}
-
-.comp-section h3 {
-    font-size: 32px;
 }
 
 .container {
@@ -2090,7 +2081,7 @@ footer {
     box-shadow: -5px -5px 10px #682572;
 }
 
-/* Media Queries */
+/* Media queries for responsiveness */
 
 @media (max-width: 1121px) {
     .navbar .nav-link {
@@ -2099,13 +2090,6 @@ footer {
 }
 
 @media (max-width: 1030px) {
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: 80vh;
-    }
-
     .navbar .nav-link {
         font-size: 16px;
     }
@@ -2119,18 +2103,6 @@ footer {
 }
 
 @media (max-width: 925px) {
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: 85vh;
-    }
-
-    .herocontainer {
-        border: 1px transparent;
-        padding-bottom: 10px;
-    }
-
     .navbar .nav-link {
         font-size: 16px;
     }
@@ -2184,25 +2156,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: 95vh;
-    }
-
-    .herocontainer {
-        border: 1px transparent;
-        padding-bottom: 10px;
-    }
-
     #mySearch {
         height: 6rem;
         width: 50rem;
-    }
-
-    .comp-section h1 {
-        font-size: 55px;
     }
 
     .footer-basic>footer>ul>li>a {
@@ -2211,15 +2167,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .hero-section {
-        height: 98vh;
-    }
-
-    .herocontainer {
-        border: 1px transparent;
-        padding-bottom: 10px;
-    }
-
     #mySearch {
         height: 5rem;
         width: 30rem;
@@ -2242,25 +2189,6 @@ footer {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         transition: 0.5s ease-in-out;
-    }
-
-    .herocontainer {
-        padding: 40px;
-    }
-
-    .herocontainer h1 {
-        font-size: 400%;
-        padding-bottom: 40px;
-    }
-
-    .herocontainer h3 {
-        font-size: 200%;
-        padding-bottom: 40px;
-    }
-
-    .herocontainer p {
-        font-size: 120%;
-        text-align: center;
     }
 
     .nav-menu.active {
