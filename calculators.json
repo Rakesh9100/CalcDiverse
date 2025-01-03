@@ -54,6 +54,12 @@
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/AC-DC-Power-Calculator"
     },
     {
+        "title": "AC to DC Converter Calculator",
+        "description": "A calculator that converts alternating current (AC) voltage to direct current (DC) voltage. It helps in calculating the output DC voltage using different types of AC to DC conversion methods like rectification.",
+        "link": "./Calculators/AC-to-DC-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/AC-to-DC-Calculator"
+    },      
+    {
         "title": "ASCII Value Calculator",
         "description": "Calculates the ASCII value of any character.",
         "link": "./Calculators/ASCII-Value-Calculator/index.html",
