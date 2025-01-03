@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Beer Lambert Law Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Beer-Lambert Law Calculator</h1>
+        <p class="formula">
+            Formula:
+            <span id="latex-formula">\( A = \varepsilon \cdot c \cdot l \)</span>
+        </p>
+
+        <p class="constant">Where:</p>
+
+        <ul>
+            <li>\( A \): Absorbance</li>
+            <li>\( \varepsilon \): Molar Absorptivity (L/mol·cm)</li>
+            <li>\( c \): Concentration (mol/L)</li>
+            <li>\( l \): Path Length (cm)</li>
+        </ul>
+
+        <label for="epsilon">Molar Absorptivity (\( \varepsilon \)):</label>
+        <input type="number" id="epsilon" placeholder="Enter Molar Absorptivity">
+
+        <label for="concentration">Concentration (\( c \)) (mol/L):</label>
+        <input type="number" id="concentration" placeholder="Enter Concentration">
+
+        <label for="length">Path Length (\( l \)) (cm):</label>
+        <input type="number" id="length" placeholder="Enter Path Length">
+
+        <div class="buttons">
+            <button onclick="calculateAbsorbance()">Calculate</button>
+            <button onclick="clearInputs()">Clear</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
