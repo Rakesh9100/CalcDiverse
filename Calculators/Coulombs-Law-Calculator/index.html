@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Coulombs Law Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Coulomb's Law Calculator</h1>
+        <p class="formula">
+            Formula:
+            <span id="latex-formula">\( F = k \frac{q_1 \cdot q_2}{r^2} \)</span>
+        </p>
+        <p class="constant">
+            Where \( k = 8.987 \times 10^9 \, \text{N·m}^2/\text{C}^2 \)
+        </p>
+
+        <label for="q1">Charge 1 (\( q_1 \)) (C):</label>
+        <input type="number" id="q1" placeholder="Enter Charge 1">
+
+        <label for="q2">Charge 2 (\( q_2 \)) (C):</label>
+        <input type="number" id="q2" placeholder="Enter Charge 2">
+
+        <label for="r">Distance (\( r \)) (m):</label>
+        <input type="number" id="r" placeholder="Enter Distance">
+
+        <div class="buttons">
+            <button onclick="calculateForce()">Calculate</button>
+            <button onclick="clearInputs()">Clear</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
