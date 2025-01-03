@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('/Calculators/Beer-Lambert-Law-Calculator/assest/phy_background.webp');
+    background-image: url('assets/background.webp');
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
 }
 
 .calculator {
-    background: #1565c0; /* Dark blue background */
+    background: #1565c0;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);

@@ -234,11 +234,11 @@
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Bayes-Theorem-Calculator"
     },
     {
-        "title": "Beer-Lambert-Law-Calculator",
-        "description": "A calculator that determines absorbance, concentration, or path length of a solution based on the Beer-Lambert Law formula (A = ε * c * l). It supports inputs for any two values to compute the third.",
+        "title": "Beer Lambert Law Calculator",
+        "description": "Calculates absorbance, concentration, or path length using the Beer-Lambert Law.",
         "link": "./Calculators/Beer-Lambert-Law-Calculator/index.html",
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Beer-Lambert-Law-Calculator"
-    },      
+    },
     {
         "title": "Beta Function Calculator",
         "description": "Calculate the ß value of two numbers in a single click!",
