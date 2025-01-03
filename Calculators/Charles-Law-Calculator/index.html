@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Charles Law Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Charles' Law Calculator</h1>
+        <p class="formula">Formula: <strong>(V₁ / T₁) = (V₂ / T₂)</strong></p>
+
+        <label for="v1">Initial Volume (V₁):</label>
+        <input type="number" id="v1" placeholder="Enter V₁ (in liters)">
+
+        <label for="t1">Initial Temperature (T₁):</label>
+        <input type="number" id="t1" placeholder="Enter T₁ (in Kelvin)">
+
+        <label for="v2">Final Volume (V₂):</label>
+        <input type="number" id="v2" placeholder="Enter V₂ (in liters)">
+
+        <label for="t2">Final Temperature (T₂):</label>
+        <input type="number" id="t2" placeholder="Enter T₂ (in Kelvin)">
+
+        <button onclick="calculateCharlesLaw()">Calculate</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
