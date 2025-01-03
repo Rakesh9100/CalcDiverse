@@ -2,25 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/customcursor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <title>CalcDiverse</title>
 </head>
 
 <body>
+    <!-- Custom cursor section -->
+    <div class="circle-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <!-- Preloader section -->
     <div id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
 
-    <!-- Navigation bar section start  -->
+    <!-- Navigation bar section -->
     <header>
         <nav class="navbar">
             <div class="image-logo">
@@ -34,13 +60,13 @@
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                    <a href="./index.html" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="./assets/about/about.html" class="nav-link"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#calculators" class="nav-link"><i class="fa fa-calculator" aria-hidden="true"></i> Calculators</a>
+                    <a href="./index.html#calculators" class="nav-link"><i class="fa fa-calculator" aria-hidden="true"></i> Calculators</a>
                 </li>
                 <li class="nav-item">
                     <a href="./assets/contributors/contributor.html" class="nav-link"><i class="fa fa-users" aria-hidden="true"></i> Contributors</a>
@@ -52,17 +78,25 @@
                     <a href="./assets/contact/contact.html" class="nav-link"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
                 </li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="small-screen-adjustment">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </nav>
     </header>
-    <!-- Navigation bar section ends  -->
 
     <br><br>
 
+    <!-- Error page section -->
     <section class="comp-section compcontainer" id="404">
         <div class="compcontainer">
             <div class="logo">
@@ -80,14 +114,7 @@
 
     <br><br>
 
-    <!-- Scroll to Top Button Starts Here -->
-    <div id="progress">
-        <span id="progress-value" class="bi bi-arrow-up-short"></span>
-    </div>
-
-    <!-- Scroll to Top Button Ends Here -->
-
-    <!-- -----------------------------------Footer Code Starts ------------------------------------------- -->
+    <!-- Footer section -->
     <footer>
         <div class="footer-container">
             <div class="company-info">
@@ -97,9 +124,9 @@
             <div class="quick-links">
                 <h1 class="heading">Quick Links</h1>
                 <ul class="footer-ul">
-                    <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                     <li><a href="./assets/about/about.html"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a></li>
-                    <li><a href="#calculators"><i class="fa fa-calculator" aria-hidden="true"></i> Calculators</a></li>
+                    <li><a href="./index.html#calculators"><i class="fa fa-calculator" aria-hidden="true"></i> Calculators</a></li>
                     <li><a href="./assets/contributors/contributor.html"><i class="fa fa-users" aria-hidden="true"></i> Contributors</a></li>
                     <li><a href="./assets/faq/faq.html"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ</a></li>
                     <li><a href="./assets/contact/contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
@@ -137,16 +164,14 @@
         </p>
     </footer>
 
-    <!-- ----------------------------------------- Footer Code Ends--------------------------------- -->
-
-    <script>
-        window.addEventListener("load", function () {
-            var loaderWrapper = document.getElementById("loader-wrapper");
-            loaderWrapper.style.display = "none";
-        });
-    </script>
+    <!-- Scroll to top button -->
+    <div id="progress">
+        <span id="progress-value" class="bi bi-arrow-up-short"></span>
+    </div>
 
     <script src="./script.js"></script>
+    <script src="./assets/commonscript.js"></script>
+    <script src="./assets/customcursor.js"></script>
 </body>
 
 </html>

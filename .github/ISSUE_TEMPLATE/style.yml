@@ -1,6 +1,6 @@
 name: Style Changing Request 👯‍♂️
 description: Suggest a style design
-title: "[Style] <write a small description here"
+title: "[Style] <write a small description here>"
 body:
   - type: markdown
     attributes:
@@ -24,9 +24,12 @@ body:
         - label: "I follow [Contributing Guidelines](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CONTRIBUTING_GUIDELINES.md) of this project."
           required: true
 
+        - label: "I am a SWOC'25 contributor."
+          required: false
+
         - label: "I am a KWOC'24 contributor."
-          required: true
-  
+          required: false
+
   - type: checkboxes
     id: terms
     attributes:
