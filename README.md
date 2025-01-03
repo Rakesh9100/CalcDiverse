@@ -348,8 +348,7 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 | 281 | Pet Care Cost Calculator | Calculates the cost required to keep the pet throughout lifespan from the entered data. | https://calcdiverse.netlify.app/calculators/pet-care-cost-calculator/ |
 | 282 | Finance Calculator | Calculates the future value of investments and monthly loan payments| https://calcdiverse.netlify.app/Calculators/finance-calculator/ |
 | 283 | Annulus Calculator | Calculates the area of circle with inner and outer radius. | https://calcdiverse.netlify.app/calculators/annulus-calculator/ |
-| 284 | Bicycle Speed vs Effort Calculator | Estimates cycling speed based on effort, gear settings, terrain type, and other factors. | https://calcdiverse.netlify.app/calculators/bicycle-speed-vs-effort-calculator/ |
-
+| 284 | Bicycle Efficiency Calculator | Estimates cycling speed based on effort, gear settings, terrain type, and other factors. | https://calcdiverse.netlify.app/calculators/bicycle-efficiency-calculator/ |
 
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
