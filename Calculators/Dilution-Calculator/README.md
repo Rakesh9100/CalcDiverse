@@ -58,3 +58,5 @@ The calculator allows users to calculate:
   - \( C_2 = (2 × 100) / 200 = 1 mol/L \)
 
 ## Screenshots :-
+
+![image](https://github.com/user-attachments/assets/a97ddc91-06d3-412d-8ae7-901b5e744478)
