@@ -708,6 +708,12 @@
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Digital-Detox-Calculator"
     },
     {
+        "title": "Dilution Calculator",
+        "description": "A calculator that determines the final concentration or volume of a solution after dilution, using the formula C1 * V1 = C2 * V2. Users can input known values (concentration and volume) to calculate the unknown variable.",
+        "link": "./Calculators/Dilution-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Dilution-Calculator"
+    },      
+    {
         "title": "Disarium Number Calculator",
         "description": "Checks the number is disarium or not and finds disarium numbers in a range.",
         "link": "./Calculators/Disarium-Number-Calculator/index.html",
