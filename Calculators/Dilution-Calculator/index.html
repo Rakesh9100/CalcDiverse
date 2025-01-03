@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dilution Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Dilution Calculator</h1>
+        <p class="formula">Formula: <strong>C₁ x V₁ = C₂ x V₂</strong></p>
+
+        <label for="c1">Initial Concentration (C₁):</label>
+        <input type="number" id="c1" placeholder="Enter C₁ (e.g., mol/L)">
+
+        <label for="v1">Initial Volume (V₁):</label>
+        <input type="number" id="v1" placeholder="Enter V₁ (e.g., mL)">
+
+        <label for="c2">Final Concentration (C₂):</label>
+        <input type="number" id="c2" placeholder="Enter C₂ (e.g., mol/L)">
+
+        <label for="v2">Final Volume (V₂):</label>
+        <input type="number" id="v2" placeholder="Enter V₂ (e.g., mL)">
+
+        <button onclick="calculateDilution()">Calculate</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
