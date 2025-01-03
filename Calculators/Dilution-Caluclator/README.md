@@ -1,6 +1,6 @@
-# Dilution Calculator
+# <p align="center">Dilution Calculator</p>
 
-## Overview
+## Description :-
 
 This project is a modern, interactive web-based calculator that implements the formula for dilution:
 
@@ -13,9 +13,13 @@ The calculator allows users to calculate:
 - Final Concentration \( C_2 \)
 - Final Volume \( V_2 \)
 
-It features a modern user interface for seamless interaction.
+## Tech Stacks :-
 
-## Features
+- HTML
+- CSS
+- JavaScript
+
+## Features :-
 
 - **Dynamic Formula Display**: The formula for dilution is prominently displayed on the website.
 - **Real-Time Results**: Automatically calculates the missing value based on user inputs.
@@ -23,37 +27,7 @@ It features a modern user interface for seamless interaction.
 - **Error Handling**: Provides feedback for invalid or incomplete inputs.
 - **Modern Aesthetic**: Includes a stylish background and intuitive layout.
 
-## Project Structure
-
-```
-dilution-calculator/
-├── index.html       # HTML structure of the calculator
-├── style.css        # Styling for the modern UI
-├── script.js        # JavaScript functionality for calculations
-├── README.md        # Project documentation
-└── assets/
-    └── background.jpg  # Background image for the modern UI
-```
-
-## Setup and Usage
-
-### 1. Clone the Repository
-
-```bash
-git clone <repository-url>
-```
-
-### 2. Navigate to the Project Directory
-
-```bash
-cd dilution-calculator
-```
-
-### 3. Open the Application
-
-Open `index.html` in any modern web browser to use the calculator.
-
-## How to Use
+## How to Use :-
 
 1. Enter the known values for any three fields:
    - Initial Concentration (\( C_1 \))
@@ -65,10 +39,9 @@ Open `index.html` in any modern web browser to use the calculator.
    \[ C_1 \times V_1 = C_2 \times V_2 \]
 4. Clear inputs or refresh the page to reset the calculator.
 
-## Example Calculations
+## Example Calculations :-
 
-### Case 1: Calculate Final Volume (\( V_2 \))
-
+#### Case 1: Calculate Final Volume (\( V_2 \))
 - **Input**:
   - Initial Concentration (\( C_1 \)): `2 mol/L`
   - Initial Volume (\( V_1 \)): `100 mL`
@@ -76,8 +49,7 @@ Open `index.html` in any modern web browser to use the calculator.
 - **Output**:
   - \( V_2 = (2 × 100) / 1 = 200 mL \)
 
-### Case 2: Calculate Final Concentration (\( C_2 \))
-
+#### Case 2: Calculate Final Concentration (\( C_2 \))
 - **Input**:
   - Initial Concentration (\( C_1 \)): `2 mol/L`
   - Initial Volume (\( V_1 \)): `100 mL`
@@ -85,12 +57,4 @@ Open `index.html` in any modern web browser to use the calculator.
 - **Output**:
   - \( C_2 = (2 × 100) / 200 = 1 mol/L \)
 
-## Technologies Used
-
-- **HTML**: For the structure of the calculator.
-- **CSS**: For styling and creating a modern, responsive UI.
-- **JavaScript**: For implementing the functionality and interactivity.
-
-## License
-
-This project is open-source and available under the MIT License.
+## Screenshots :-
