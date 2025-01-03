@@ -1,5 +1,5 @@
 # <p align="center">✨CalcDiverse✨</p>
-<!-------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------->
 <div align="center">
 <p>
 
@@ -21,7 +21,7 @@
 </p>
 </div>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <div id="top"></div>
 
@@ -37,13 +37,13 @@
 - [Contributing is fun🧡](#contributing-is-fun)
 <br>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Introduction📌</h2>
 
 CalcDiverse is a customized collection of calculators for various aspects of mathematics. Individuals with basic web development knowledge can create distinctive calculators and submit pull requests.
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Technology Used🚀</h2>
 
@@ -54,7 +54,7 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 </p>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Overview⭐</h2>
 
@@ -372,7 +372,7 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 <br><br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Getting Started💥</h2>
 
@@ -425,19 +425,19 @@ git push origin <your_branch_name>
 - Celebrate 🥳 your success after your pull request is merged successfully.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Contributing Guidelines📑</h2>
 
 Read our [Contributing Guidelines](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CONTRIBUTING_GUIDELINES.md) to learn about our development process, how to propose bugfixes and improvements, and how to build to CalcDiverse.
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Code Of Conduct📑</h2>
 
 This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>This repo has been part of the following Open Source Programs🥳</h2>
 
@@ -461,7 +461,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
 </table>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Project Admin⚡</h2>
 
@@ -473,7 +473,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
 </tr>
 </table>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Project Contributors🫂</h2>
 
@@ -481,7 +481,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
   <img src="https://contrib.rocks/image?repo=rakesh9100/calcdiverse" />
 </a>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Contributing is fun🧡</h2>
 

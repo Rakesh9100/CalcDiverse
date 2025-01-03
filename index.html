@@ -20,6 +20,7 @@
 </head>
 
 <body class="containers light-mode" id="home">
+    <!-- Custom cursor section -->
     <div class="circle-container">
         <div class="circle"></div>
         <div class="circle"></div>
@@ -43,6 +44,7 @@
         <div class="circle"></div>
     </div>
 
+    <!-- Preloader section -->
     <div id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
@@ -51,7 +53,7 @@
 
     <div id="progress-bar"></div>
 
-    <!-- Navigation bar section starts -->
+    <!-- Navigation bar section -->
     <header>
         <nav class="navbar">
             <div class="image-logo">
@@ -98,9 +100,8 @@
             </div>
         </nav>
     </header>
-    <!-- Navigation bar section ends -->
 
-    <!-- Hero section starts -->
+    <!-- Hero section -->
     <section class="comp-section">
         <div class="compcontainer">
             <div id="google_translate_element"></div>
@@ -117,9 +118,8 @@
             </a>
         </div>
     </section>
-    <!-- Hero section ends -->
 
-    <!-- Calculator section starts -->
+    <!-- Calculator section -->
     <div class="container containers" id="calculators">
         <!-- Search Bar -->
         <div id="searchBar">
@@ -134,23 +134,15 @@
             <p>No results found 🙃</p>
         </div>
     </div>
-    <!-- Calculator section ends -->
 
-    <!-- Scroll to top button starts -->
-    <div id="progress">
-        <span id="progress-value" class="bi bi-arrow-up-short"></span>
-    </div>
-    <!-- Scroll to top button ends -->
-
-    <!-- Pagination section starts -->
+    <!-- Pagination section -->
     <div id="pagination-controls">
         <button id="prev" onclick="changePage(-1); scrollToSearch()">Previous</button>
         <span id="page-info"></span>
         <button id="next" onclick="changePage(1); scrollToSearch()">Next</button>
     </div>
-    <!-- Pagination section ends -->
 
-    <!-- Footer section starts -->
+    <!-- Footer section -->
     <footer>
         <div class="footer-container">
             <div class="company-info">
@@ -200,7 +192,10 @@
         </p>
     </footer>
 
-    <!-- Footer section ends -->
+    <!-- Scroll to top button -->
+    <div id="progress">
+        <span id="progress-value" class="bi bi-arrow-up-short"></span>
+    </div>
 
     <!-- Script for handling favicon -->
     <script>
