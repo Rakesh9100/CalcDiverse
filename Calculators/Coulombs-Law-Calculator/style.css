@@ -1,14 +1,15 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('/Calculators/Coloumb-Law-Calculator/assest/col_background.webp');
+    background-image: url('assets/background.webp');
     background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     color: #fff;
+    height: 100%;
+    min-height: 100vh;
 }
 
 .calculator {
