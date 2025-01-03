@@ -9,11 +9,11 @@ function calculateCharlesLaw() {
     if (!isNaN(v1) && !isNaN(t1) && isNaN(v2) && !isNaN(t2)) {
         // Calculate Final Volume (V2)
         const v2Calculated = (v1 * t2) / t1;
-        resultText = `V₂ = (${v1} × ${t2}) / ${t1} = ${v2Calculated.toFixed(2)} liters`;
+        resultText = `V₂ = (${v1} x ${t2}) / ${t1} = ${v2Calculated.toFixed(2)} liters`;
     } else if (!isNaN(v1) && !isNaN(t1) && !isNaN(v2) && isNaN(t2)) {
         // Calculate Final Temperature (T2)
         const t2Calculated = (v2 * t1) / v1;
-        resultText = `T₂ = (${v2} × ${t1}) / ${v1} = ${t2Calculated.toFixed(2)} K`;
+        resultText = `T₂ = (${v2} x ${t1}) / ${v1} = ${t2Calculated.toFixed(2)} K`;
     } else if (isNaN(v1) || isNaN(t1)) {
         resultText = "Please enter valid values for initial volume (V₁) and initial temperature (T₁).";
     } else if (isNaN(v2) && isNaN(t2)) {

@@ -1,13 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/Calculators/Charles-Law-Calculator/assest/background.webp');
+    background-image: url('assets/background.webp');
     background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
 }
 
 .calculator {
