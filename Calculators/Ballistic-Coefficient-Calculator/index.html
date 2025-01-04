@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ballistic Coefficient Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Ballistic Coefficient Calculator</h1>
+        <div class="form-group">
+            <label for="mass">Mass (grams):</label>
+            <input type="number" id="mass" placeholder="Enter mass" onkeydown="moveToNextField(event, 'diameter')">
+            <div class="info">Mass affects the projectile's inertia. Higher mass typically increases the ballistic coefficient.</div>
+        </div>
+        <div class="form-group">
+            <label for="diameter">Diameter (mm):</label>
+            <input type="number" id="diameter" placeholder="Enter diameter" onkeydown="moveToNextField(event, 'drag-coefficient')">
+            <div class="info">Diameter is used to calculate the cross-sectional area, influencing air resistance.</div>
+        </div>
+        <div class="form-group">
+            <label for="drag-coefficient">Drag Coefficient (Cd):</label>
+            <input type="number" id="drag-coefficient" placeholder="Enter drag coefficient" onkeydown="moveToNextField(event, 'velocity')">
+            <div class="info">The drag coefficient quantifies how streamlined the projectile is. Lower Cd reduces air resistance.</div>
+        </div>
+        <div class="form-group">
+            <label for="velocity">Initial Velocity (m/s):</label>
+            <input type="number" id="velocity" placeholder="Enter initial velocity" onkeydown="moveToNextField(event, 'wind-speed')">
+            <div class="info">Initial velocity determines the speed of the projectile at launch, affecting its range and trajectory.</div>
+        </div>
+        <div class="form-group">
+            <label for="wind-speed">Wind Speed (m/s):</label>
+            <input type="number" id="wind-speed" placeholder="Enter wind speed" onkeydown="moveToNextField(event, 'angle')">
+            <div class="info">Wind speed influences the drift of the projectile during flight.</div>
+        </div>
+        <div class="form-group">
+            <label for="angle">Launch Angle (degrees):</label>
+            <input type="number" id="angle" placeholder="Enter launch angle">
+            <div class="info">The launch angle determines the trajectory and maximum range of the projectile.</div>
+        </div>
+        <button class="btn" onclick="calculateBallisticDetails()">Calculate</button>
+        <div id="result" class="result" style="display: none;"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

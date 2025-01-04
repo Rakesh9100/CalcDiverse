@@ -18,4 +18,4 @@ Projectile Motion Calculator calculates the Maximum height, Range, Time of fligh
 
 ## Screenshots :-
 
-![image](<Screenshot 2024-12-23 172745.png>)
+![image](https://github.com/user-attachments/assets/c4c25b48-f513-4a96-8306-c21edfb4a4e4)

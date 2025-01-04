@@ -157,6 +157,10 @@ input:checked+.slider:before {
     transition: all 0.3s ease-in-out;
 }
 
+.dark-mode .logo:hover {
+    color: #c2185b;
+}
+
 /* Preloader Css */
 
 #loader-wrapper {
@@ -367,6 +371,7 @@ nav {
 }
 
 .nav-menu {
+    gap: 1rem;
     display: flex;
     margin-left: auto;
 }
@@ -376,11 +381,6 @@ nav ul {
     gap: 2rem;
     list-style: none;
     align-items: center;
-}
-.nav-menu {
-    display: flex;
-    margin-left: auto; 
-    gap: 1rem; 
 }
 
 #active1 {
@@ -400,7 +400,7 @@ nav ul {
 }
 
 .logo:hover {
-    color: #ff1b82;
+    color: #87ceeb;
 }
 
 .hamburger {
@@ -464,9 +464,11 @@ nav ul {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -479,9 +481,17 @@ section {
     z-index: 100;
 }
 
+.comp-section {
+    height: 100vh;
+    color: var(--secondary);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 4;
+}
+
 .comp-section .compcontainer .logo img {
-    width: 250px;
-    margin-bottom: -25px;
+    width: clamp(150px, 25vw, 230px);
 }
 
 .comp-section .compcontainer h1,
@@ -493,6 +503,7 @@ section {
 }
 
 .comp-section .compcontainer h1 {
+    font-size: clamp(4rem, 4vw, 6rem);
     font-family: Ubuntu;
     text-shadow: 2px 2px 10px var(--light);
     margin-top: 16px;
@@ -500,10 +511,10 @@ section {
 
 .comp-section .compcontainer h3 {
     font-family: 'Poppins', sans-serif;
-    color: rgb(244 239 240 / 91%);
-    margin-top: 2rem;
-    font-weight: 400;
-    font-size: 2.5rem;
+    color: rgb(244 239 240);
+    margin: 25px 10px 20px;
+    font-weight: 600;
+    font-size: clamp(2rem, 2vw, 3rem);
 }
 
 .comp-section .compcontainer a {
@@ -511,9 +522,9 @@ section {
 }
 
 .comp-section .compcontainer .started {
-    font-size: 20px;
+    font-size: clamp(0.5rem, 5vw, 2rem);
     font-weight: 700;
-    margin-top: 21px;
+    margin-top: clamp(10px, 5vw + 10px, 30px);
     padding: 15px 50px;
     border: none;
     outline: none;
@@ -574,31 +585,13 @@ section {
 }
 
 .paragraph {
-    font-size: 2rem;
-    width: 85%;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    width: 90%;
     text-align: center;
     font-weight: 500;
     margin: auto;
     margin-top: 18px;
-    padding: 10px;
     color: rgb(244 239 240 / 91%);
-}
-
-.comp-section {
-    display: grid;
-    color: var(--secondary);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 4;
-}
-
-.comp-section h1 {
-    font-size: 65px;
-}
-
-.comp-section h3 {
-    font-size: 32px;
 }
 
 .container {
@@ -1563,59 +1556,6 @@ section {
     margin-top: 5px;
 }
 
-/* Contributors Styling */
-
-.contributors {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 50px;
-}
-
-.contributors h1 {
-    text-align: center;
-    color: #cb73d8;
-    font-size: 4rem;
-    margin-bottom: 50px;
-}
-
-.contributors h1:hover {
-    text-decoration: underline;
-}
-
-#contributor {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.contributor-card {
-    width: 65px;
-    height: 65px;
-    clip-path: polygon(50% 0%, 91% 25%, 91% 75%, 50% 100%, 9% 75%, 9% 25%);
-    margin: 5px;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.contributor-card:hover {
-    transform: scale(1.35);
-    opacity: 0.85;
-}
-
-.contributor-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.contributor-card:nth-child(4n+1),
-.contributor-card:nth-child(4n+3) {
-    margin-top: -4px;
-}
-
-/* Contributors Styling Ends */
-
 /* Progress Bar */
 
 #progress {
@@ -1637,13 +1577,18 @@ section {
     display: block;
     height: calc(100% - 15px);
     width: calc(100% - 15px);
-    background-color: rgb(104, 98, 232);
-    background: linear-gradient(90deg, rgb(159, 157, 235) 0%, rgb(212, 153, 222) 39%, rgb(253, 199, 134) 100%);
     border-radius: 50%;
     display: grid;
     place-items: center;
     font-size: 26px;
     color: black;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(45deg, #FFDEE9 39%, #B5FFFC 100%);
+}
+
+.dark-mode #progress-value {
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 }
 
 /* Pagination Section Css */
@@ -1657,10 +1602,10 @@ section {
 }
 
 #pagination-controls button {
-    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
     border: none;
-    border-radius: 30px;
-    color: #333;
+    border-radius: 10px;
+    color: white;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -1672,7 +1617,11 @@ section {
 #pagination-controls button:hover {
     transform: translateY(-5px);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.7);
-    background: linear-gradient(145deg, #1196c3, #36b3d5);
+    background: linear-gradient(to right, #373b44, #4286f4);
+}
+
+.dark-mode #pagination-controls button:hover {
+    background: linear-gradient(to right, #8e44ad, #ff758c);
 }
 
 #pagination-controls button:active {
@@ -1689,16 +1638,6 @@ section {
 #pagination-controls #page-info {
     color: white;
     font-size: medium;
-}
-
-#prev:hover {
-    box-shadow: 2px 2px 5px 0px #682572;
-    background: linear-gradient(to right, #0575E6, #00F260);
-}
-
-#next:hover {
-    box-shadow: 2px 2px 5px 0px #682572;
-    background: linear-gradient(to right, #0575E6, #00F260);
 }
 
 /* Footer Section Css */
@@ -1865,7 +1804,7 @@ footer {
     display: block;
     width: 0;
     height: 2px;
-    background: #ff1b82; /* Underline color */
+    background: #ff1b82;
     transition: width 0.3s ease-in-out;
     position: absolute;
     bottom: 0;
@@ -1874,11 +1813,11 @@ footer {
 }
 
 .footer-ul li a:hover {
-    color: #ff1b82; /* Text color on hover */
+    color: #ff1b82;
 }
 
 .footer-ul li a:hover::after {
-    width: 100%; /* Underline expands on hover */
+    width: 100%;
 }
 
 .social {
@@ -2030,19 +1969,45 @@ footer {
 
 #searchBar button {
     font-size: 2rem;
-    background: transparent;
     border: 0;
     color: white;
     margin-left: 5px;
-    background-color: #ff1b82;
     padding: .7rem;
     width: 8rem;
+    cursor: pointer;
     border-radius: 5rem;
+    background-color: #4158D0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: linear-gradient(90deg, #4158D0 7%, #C850C0 47%, #FFCC70 96%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.6);
 }
 
 #searchBar button:hover {
-    transform: scale(1.02);
-    background: #ff6984;
+    background-size: 200%;
+    background-position: right;
+    transform: translateY(-5px);
+    animation: gradientSlide 0.8s forwards;
+    background: linear-gradient(to right, #002a70, #89c6ff);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.7);
+}
+
+.dark-mode #searchBar button:hover {
+    background-size: 200%;
+    background-position: right;
+    transform: translateY(-5px);
+    animation: gradientSlide 0.8s forwards;
+    background: linear-gradient(to right, #d4004a, #ff90b3);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes gradientSlide {
+    from {
+        background-position: right;
+    }
+
+    to {
+        background-position: left;
+    }
 }
 
 #searchBar input {
@@ -2063,7 +2028,7 @@ footer {
     box-shadow: -5px -5px 10px #682572;
 }
 
-/* Media Queries */
+/* Media queries for responsiveness */
 
 @media (max-width: 1121px) {
     .navbar .nav-link {
@@ -2072,13 +2037,6 @@ footer {
 }
 
 @media (max-width: 1030px) {
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: 80vh;
-    }
-
     .navbar .nav-link {
         font-size: 16px;
     }
@@ -2092,18 +2050,6 @@ footer {
 }
 
 @media (max-width: 925px) {
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: 85vh;
-    }
-
-    .herocontainer {
-        border: 1px transparent;
-        padding-bottom: 10px;
-    }
-
     .navbar .nav-link {
         font-size: 16px;
     }
@@ -2157,25 +2103,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: 95vh;
-    }
-
-    .herocontainer {
-        border: 1px transparent;
-        padding-bottom: 10px;
-    }
-
     #mySearch {
         height: 6rem;
         width: 50rem;
-    }
-
-    .comp-section h1 {
-        font-size: 55px;
     }
 
     .footer-basic>footer>ul>li>a {
@@ -2184,15 +2114,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .hero-section {
-        height: 98vh;
-    }
-
-    .herocontainer {
-        border: 1px transparent;
-        padding-bottom: 10px;
-    }
-
     #mySearch {
         height: 5rem;
         width: 30rem;
@@ -2215,25 +2136,6 @@ footer {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         transition: 0.5s ease-in-out;
-    }
-
-    .herocontainer {
-        padding: 40px;
-    }
-
-    .herocontainer h1 {
-        font-size: 400%;
-        padding-bottom: 40px;
-    }
-
-    .herocontainer h3 {
-        font-size: 200%;
-        padding-bottom: 40px;
-    }
-
-    .herocontainer p {
-        font-size: 120%;
-        text-align: center;
     }
 
     .nav-menu.active {

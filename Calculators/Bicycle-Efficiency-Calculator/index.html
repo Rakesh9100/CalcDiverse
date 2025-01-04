@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <title>Bicycle Efficiency Calculator</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="waviy">
+            <span style="--i:1">B</span>
+            <span style="--i:2">I</span>
+            <span style="--i:3">C</span>
+            <span style="--i:4">Y</span>
+            <span style="--i:5">C</span>
+            <span style="--i:6">L</span>
+            <span style="--i:7">E</span>
+            <span style="--i:8">&nbsp;</span>
+            <span style="--i:9">S</span>
+            <span style="--i:10">P</span>
+            <span style="--i:11">E</span>
+            <span style="--i:12">E</span>
+            <span style="--i:13">D</span>
+            <span style="--i:14"> &nbsp;V</span>
+            <span style="--i:15">S</span>
+            <span style="--i:16"> &nbsp;E</span>
+            <span style="--i:17">F</span>
+            <span style="--i:18">F</span>
+            <span style="--i:19">O</span>
+            <span style="--i:20">R</span>
+            <span style="--i:21">T</span>
+        </div>
+        <br><br>
+
+        <!-- Pedal Effort -->
+        <div class="row">
+            <label for="pedal-effort">Enter Pedal Effort (in watts):</label>
+            <input type="number" id="pedal-effort" name="pedal-effort" required>
+        </div><br>
+
+        <!-- Gear Settings -->
+        <div class="row">
+            <label for="gear-ratio">Enter Gear Ratio:</label>
+            <input type="number" id="gear-ratio" name="gear-ratio" required>
+        </div><br>
+
+        <!-- Terrain Type -->
+        <div class="row">
+            <label for="terrain">Select Terrain Type:</label>
+            <select id="terrain" name="terrain" required>
+                <option value="flat">Flat</option>
+                <option value="uphill">Uphill</option>
+                <option value="downhill">Downhill</option>
+            </select>
+        </div><br>
+
+        <!-- Additional Inputs if necessary -->
+        <div class="row">
+            <label for="wind-speed">Enter Wind Speed (optional, in m/s):</label>
+            <input type="number" id="wind-speed" name="wind-speed">
+        </div><br>
+
+        <div class="rule"></div>
+        <div class="form-footer">
+            <button class="button" onclick="calculate(event)">Calculate Speed</button>
+        </div>
+        <div id="result-container">
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

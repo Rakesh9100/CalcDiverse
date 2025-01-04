@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Cyclomatic Complexity Calculator</title>
+</head>
+
+<body>
+    <h1>Cyclomatic Complexity Calculator</h1>
+
+    <section>
+        <input type="radio" name="tabs" id="tab1" checked>
+        <label for="tab1">Method 1</label>
+        <input type="radio" name="tabs" id="tab2">
+        <label for="tab2">Method 2</label>
+        <input type="radio" name="tabs" id="tab3">
+        <label for="tab3">Method 3</label>
+
+        <div class="tab-content" id="content1">
+            <h2>Calculation of Cyclomatic calculation using <span>Number of nodes, edges and connected components</span></h2>
+            <label class="label-text">No. of components:</label>
+            <input type="number" name="components" class="clearable1" id="components">
+            <label class="label-text">No. of Nodes:</label>
+            <input type="number" name="nodes" class="clearable1" id="nodes">
+            <label class="label-text">No. of Edges:</label>
+            <input type="number" name="edges" class="clearable1" id="edges">
+            <label id="cyc-com" class="label-text">Cyclomatic complexity is:</label>
+            <h3 id="output1"></h3>
+            <button onclick="method1()">Calculate</button>
+            <button onclick="clearInputs1()">Clear</button>
+        </div>
+
+        <div class="tab-content" id="content2">
+            <h2>Calculation of Cyclomatic calculation using <span>Number of closed regions in the graph</span></h2>
+            <label class="label-text">No. of closed regions present in control flow graph</label>
+            <input type="number" name="regions" id="regions" class="clearable2">
+            <label class="label-text">Cyclomatic complexity is:</label>
+            <h3 id="output2"></h3>
+            <button onclick="method2()">Calculate</button>
+            <button onclick="clearInputs2()">Clear</button>            
+        </div>
+
+        <div class="tab-content" id="content3">
+            <h2>Calculation of Cyclomatic calculation using <span>Number of condition nodes</span></h2>
+            <label class="label-text">Is there a switch case in the graph:</label>
+            <input type="text"  id="switch-case" class="clearable3" onchange="checkSwitchCase()">
+            <label class="label-text" id="case-count-text">No. of cases present in the switch case:</label>
+            <i class="note" id="note">Including default case</i>
+            <input type="number"  id="case-count" class="clearable3">
+            <label class="label-text">No. of condition nodes:</label>
+            <i class="note">Excluding switch case node</i>
+            <input type="number" id="node-count" class="clearable3">
+            <label class="label-text">Cyclomatic complexity is:</label>
+            <h3 class="output" id="output3"></h3>
+            <button onclick="method3()">Calculate</button>
+            <button onclick="clearInputs3()">Clear</button>    
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

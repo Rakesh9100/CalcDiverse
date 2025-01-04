@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SVD Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header section -->
+        <header>
+            <h1>✨ Singular Value Decomposition Calculator ✨</h1>
+        </header>
+        <main>
+            <!-- Form for entering matrix input -->
+            <form id="matrix-form">
+                <!-- Label and textarea for user to input matrix data -->
+                <label for="matrix-input">Enter a square matrix (comma-separated rows):</label>
+                <textarea id="matrix-input" placeholder="e.g. 1,2,3;4,5,6;7,8,9"></textarea>
+                <!-- Button to trigger SVD calculation -->
+                <button type="button" id="calculate-btn">🔍 Calculate SVD</button>
+            </form>
+            <!-- Container to display results -->
+            <div id="result-container">
+                <h2>Results:</h2>
+                <div id="results"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Import the numeric.js library for matrix calculations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
