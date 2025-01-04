@@ -1,0 +1,132 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+h1 {
+    color: #6c63ff;
+    margin-bottom: 10px;
+    font-size: clamp(1.5rem, 5vw, 1.8rem);
+}
+
+.description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+.error-message {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #ff1744;
+    min-height: 1rem;
+}
+
+/* Button */
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #5848e0;
+}
+
+/* Result Box */
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Spinner */
+.spinner {
+    margin: 20px auto;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #6c63ff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+.spinner.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #fff;
+}

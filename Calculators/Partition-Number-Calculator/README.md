@@ -12,4 +12,4 @@ Partition Number Calculator is a calculator that calculates the number of distin
 
 ## Screenshots:-
 
-![image](<Screenshot 2024-12-29 210526.png>)
+![image](https://github.com/user-attachments/assets/a5cbf57b-0fa7-4600-949c-dc627b1d2c8a)
