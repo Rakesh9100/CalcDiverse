@@ -1548,6 +1548,12 @@
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Molecular-Weight-Calculator"
     },
     {
+        "title": "Moles Grams Calculator",
+        "description": "Converts between moles and grams using the molar mass of a substance.",
+        "link": "./Calculators/Moles-Grams-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Moles-Grams-Calculator"
+    },
+    {
         "title": "Momentum Calculator",
         "description": "Calculates the momentum of the body using its mass and velocity.",
         "link": "./Calculators/Momentum-Calculator/index.html",
