@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Partition Number Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>✨ Partition Number Calculator ✨</h1>
+        <p class="description">Discover the number of ways to partition a given number!</p>
+        <form id="partitionForm">
+            <div class="input-group">
+                <input type="number" id="numberInput" placeholder="Enter a number" min="0" aria-label="Enter a non-negative number" required>
+                <span id="errorMessage" class="error-message"></span>
+            </div>
+            <button type="submit" id="calculateButton">🚀 Calculate</button>
+        </form>
+        <div id="result" class="result-box"></div>
+        <div id="spinner" class="spinner hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
