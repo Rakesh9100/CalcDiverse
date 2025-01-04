@@ -12,7 +12,7 @@ function calculate() {
     let result;
     if (mode === 'moles-to-grams') {
         result = input1 * input2; // Moles to grams
-        document.getElementById('result').innerText = `${input1} moles × ${input2} g/mol = ${result.toFixed(2)} grams`;
+        document.getElementById('result').innerText = `${input1} moles x ${input2} g/mol = ${result.toFixed(2)} grams`;
     } else {
         result = input1 / input2; // Grams to moles
         document.getElementById('result').innerText = `${input1} grams ÷ ${input2} g/mol = ${result.toFixed(2)} moles`;
