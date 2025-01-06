@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Equation Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Circle Equation Solver</h1>
+        <form id="circle-form">
+            <label for="equation" id="circle-form-heading">Enter the circle equation</label>
+            <input type="text" id="equation" placeholder="E.g., (x-3)^2 + (y+2)^2 = 16" required>
+            <div class="buttons">
+                <button type="button" id="extract">Extract Center & Radius</button>
+                <button type="button" id="convert">Convert to General Form</button>
+                <button type="button" id="reset">Reset</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
