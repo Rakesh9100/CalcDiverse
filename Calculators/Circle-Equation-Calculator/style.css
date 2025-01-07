@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('assets/bg-img.jpg');
+    background-image: url('assets/background.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -29,6 +29,14 @@ label {
     transition: box-shadow 0.3s ease-in-out;
     width: 400px;
     text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: wheat;
 }
 
 .container:hover {
