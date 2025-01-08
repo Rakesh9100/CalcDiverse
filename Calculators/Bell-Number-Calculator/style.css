@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #8E2DE2, #4A00E0); /* Gradient background */
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +131,6 @@ button:active {
     transform: translateY(2px);
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     .container {
         padding: 30px;
