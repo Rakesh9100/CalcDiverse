@@ -1,4 +1,4 @@
-# <p align="center">Cut Off Calculator</p>
+# <p align="center">Data Visualization Calculator</p>
 
 ## Description :-
 
@@ -16,6 +16,6 @@ This is a simple web-based calculator that allows users to input numerical data 
 2.Bar Chart Visualization: Displays a bar for each input number.
 3.Clear Functionality: Resets the chart.
 
-## ScreenShots :-
+## Screenshots :-
 
-![image](https://imgur.com/a/5YciN8T)
+![image](https://github.com/user-attachments/assets/e0865b50-ff02-4d49-b90d-2cddc10407cb)
