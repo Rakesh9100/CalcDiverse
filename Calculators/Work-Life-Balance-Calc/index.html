@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work-Life Balance Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Work-Life Balance Calculator</h1>
+    <form id="balance-form">
+      <label for="work">Work Hours:</label>
+      <input type="number" id="work" required min="0" max="24" placeholder="Enter hours for work" required>
+      <br/>
+      <label for="personal">Personal Care Hours:</label>
+      <input type="number" id="personal" required min="0" max="24" placeholder="Enter hours for personal care" required>
+      <br/>
+      <label for="leisure">Leisure Hours:</label>
+      <input type="number" id="leisure" required min="0" max="24" placeholder="Enter hours for leisure" required>
+      
+      <button type="button" id="calculate">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
