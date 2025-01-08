@@ -2,29 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Love Calculator</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <h2 id="title">Love Calculator</h2>
-        <label class="form-label">First Name</label>
-        <input type="text" class="form-control" id="name1" placeholder="Rahul" oninput="validateName('name1')" />
+    <div class="contentbox">
+        <h1><span>Love</span> Calculator</h1>
+        <p>Enter your name and your crush's name to see the chance that this relationship will work out: </p>
 
-        <label class="form-label">Second Name</label>
-        <input type="text" class="form-control" id="name2" placeholder="Anjali" oninput="validateName('name2')" />
-        <button type="button" id="btn">Calculate</button>
-        <p id="yourlovescoreis">Your love score is :</p>
-        <h1 id="score"></h1>
-        <button id="reload" onclick="reset()">&#128472;</button>
+        <div class="input-group">
+            <input type="text" required id="fname">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Your Name</label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" required id="cname">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Crush Name</label>
+        </div>
+        <button id="calculate">Calculate</button>
+
+        <div class="footer">
+            <h2 id="result-message"></h2>
+            <p id="result-percentage"></p>
+
+        </div>
+
+
     </div>
-    <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-
 </body>
 
 </html>
