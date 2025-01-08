@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Data Visualization Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Data Visualization Calculator</h1>
+
+        <form id="data-form">
+            <div class="form-group">
+                <label for="labels">Enter Labels (comma-separated):</label>
+                <input type="text" id="labels" placeholder="e.g., January, February, March" required>
+            </div>
+
+            <div class="form-group">
+                <label for="values">Enter Values (comma-separated):</label>
+                <input type="text" id="values" placeholder="e.g., 10, 20, 30" required>
+            </div>
+
+            <button type="button" id="generate-chart">Generate Chart</button>
+        </form>
+
+        <div class="chart-container">
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
