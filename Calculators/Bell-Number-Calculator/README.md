@@ -1,4 +1,4 @@
-# <p align="center">Basic Physics Calculator</p>
+# <p align="center">Bell Number Calculator</p>
 
 ## Description :-
 
@@ -11,4 +11,5 @@ This calculator allows users to calculate the value of nth Bell Number.
 - JavaScript
 
 ## Screenshots :-
-![image](https://github.com/user-attachments/assets/e43c3194-837d-4338-bd33-d65ab442619c)
+
+![image](https://github.com/user-attachments/assets/da99b84b-2ad8-4377-b105-116c84ffbc4e)

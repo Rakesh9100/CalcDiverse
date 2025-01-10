@@ -14,7 +14,9 @@ function bellNumber(n) {
     if (n === 0) return 1;
 
     // Create a 2D array to store values of Bell numbers
-    const bellTable = Array.from({ length: n + 1 }, () => Array(n + 1).fill(0));
+    const bellTable = Array.from({
+        length: n + 1
+    }, () => Array(n + 1).fill(0));
 
     // Initialize the first Bell number
     bellTable[0][0] = 1;
