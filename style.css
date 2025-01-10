@@ -342,7 +342,7 @@ header {
 
 .navbar a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.3vw;
     font-weight: 700;
     padding: 0.5rem 1rem;
     border: 1px solid transparent;
@@ -482,7 +482,7 @@ section {
 }
 
 .comp-section {
-    height: 100vh;
+    height: 85vh;
     color: var(--secondary);
     justify-content: center;
     align-items: center;
@@ -2030,30 +2030,7 @@ footer {
 
 /* Media queries for responsiveness */
 
-@media (max-width: 1121px) {
-    .navbar .nav-link {
-        font-size: 17px;
-    }
-}
-
-@media (max-width: 1030px) {
-    .navbar .nav-link {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .navbar .nav-link {
-        font-size: 17px;
-        padding: 0 1px;
-    }
-}
-
 @media (max-width: 925px) {
-    .navbar .nav-link {
-        font-size: 16px;
-    }
-
     .social {
         font-size: 2.5rem;
         text-decoration: none;
@@ -2075,30 +2052,6 @@ footer {
         margin-top: 8px;
         text-align: center;
         flex-basis: 100%;
-    }
-}
-
-@media (min-width: 855px) and (max-width: 887px) {
-    .navbar .nav-link {
-        font-size: 15px;
-    }
-}
-
-@media (min-width: 825px) and (max-width: 855px) {
-    .navbar .nav-link {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 801px) and (max-width: 825px) {
-    .navbar .nav-link {
-        font-size: 13px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 801px) {
-    .navbar .nav-link {
-        font-size: 12px;
     }
 }
 
@@ -2145,9 +2098,12 @@ footer {
         transition: 0.5s ease-in-out;
     }
 
+    .navbar .nav-link {
+        font-size: 2rem;
+    }
+
     .nav-item {
-        margin: 1.8rem 0;
-        font-size: 25px;
+        margin: 2.3rem 0;
     }
 
     nav li:hover {
