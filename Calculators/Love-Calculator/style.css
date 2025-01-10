@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -141,6 +142,7 @@ input:focus~.highlight {
     from {
         background: #ec4899;
     }
+
     to {
         width: 0;
         background: #ec4899;
@@ -151,6 +153,7 @@ input:focus~.highlight {
     from {
         background: #ec4899;
     }
+
     to {
         width: 0;
         background: transparent;
@@ -161,6 +164,7 @@ input:focus~.highlight {
     from {
         background: #ec4899;
     }
+
     to {
         width: 0;
         background: transparent;
