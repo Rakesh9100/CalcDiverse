@@ -28,4 +28,4 @@ The Love Calculator uses a basic algorithm to generate a love percentage. Here's
 
 ## ScreenShots :-
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/142514166/36571c14-8080-404e-a81c-1bf0b6a5229a)
+![image](https://github.com/user-attachments/assets/7573e79f-1416-446c-9d2d-e7018ea881e1)
