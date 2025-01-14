@@ -22,13 +22,13 @@ body {
 
 h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #333333;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: #555;
+    color: #555555;
 }
 
 input,
@@ -38,12 +38,12 @@ button {
     padding: 8px;
     margin-bottom: 15px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s;
-    color: #333;
-    background-color: #fff;
+    color: #333333;
+    background-color: #ffffff;
 }
 
 input:focus,
@@ -73,7 +73,7 @@ button:hover {
 #result {
     margin-top: 15px;
     font-weight: bold;
-    color: #333;
+    color: #333333;
     opacity: 0;
     animation: fadeInResult 0.5s forwards;
 }

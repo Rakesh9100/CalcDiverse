@@ -10,7 +10,7 @@ body {
 }
 
 .calculator-container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -32,7 +32,7 @@ body {
 
 button {
     background-color: #4caf50;
-    color: #fff;
+    color: #ffffff;
     padding: 15px 30px;
     border: none;
     border-radius: 6px;
@@ -54,7 +54,7 @@ select {
     width: 80%;
     box-sizing: border-box;
     font-size: 18px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 6px;
     transition: border-color 0.3s ease, transform 0.2s ease-out;
 }
@@ -69,7 +69,7 @@ select:focus {
 .result-container {
     font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: #333333;
     margin-top: 20px;
     animation: fadeIn 1s ease-out;
 }

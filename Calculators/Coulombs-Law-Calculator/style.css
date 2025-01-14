@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #ffffff;
     height: 100%;
     min-height: 100vh;
 }
@@ -52,7 +52,7 @@ input {
     padding: 10px;
     margin-bottom: 15px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
@@ -89,5 +89,5 @@ button:last-child:hover {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
-    color: #fff;
+    color: #ffffff;
 }

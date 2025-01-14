@@ -36,7 +36,7 @@ label {
 input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 6px;
     font-size: 16px;
     transition: all 0.3s ease;

@@ -24,7 +24,7 @@ body {
 h2 {
     text-align: center;
     margin: 10px;
-    color: #000;
+    color: #000000;
 }
 
 .card {
@@ -76,7 +76,7 @@ h2 {
 #rise-time,
 #set-time {
     font-size: 18px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .btn-container {
@@ -90,7 +90,7 @@ h2 {
     border-radius: 8px;
     border: none;
     background-color: rgb(28, 28, 28);
-    color: #fff;
+    color: #ffffff;
     scale: 1.05;
     transition: scale 0.3s ease-in-out;
 }

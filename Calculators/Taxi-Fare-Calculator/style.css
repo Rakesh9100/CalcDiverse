@@ -30,7 +30,7 @@ body {
     width: calc(100% - 20px);
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 6px;
     box-sizing: border-box;
     outline: none;

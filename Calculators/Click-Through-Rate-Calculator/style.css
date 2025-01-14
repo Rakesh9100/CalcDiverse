@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #007BFF, #00C6FF);
-    color: #333;
+    color: #333333;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,7 +11,7 @@ body {
 }
 
 .ctr-calculator {
-    background: #fff;
+    background: #ffffff;
     padding: 20px 30px;
     border-radius: 10px;
     text-align: center;
@@ -44,13 +44,13 @@ input {
     width: 100%;
     padding: 8px;
     font-size: 14px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
 button {
     background: #007BFF;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;

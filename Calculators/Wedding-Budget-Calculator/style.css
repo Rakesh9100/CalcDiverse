@@ -26,7 +26,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #333333;
 }
 
 .form-group {
@@ -36,13 +36,13 @@ h1 {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #555;
+    color: #555555;
 }
 
 .form-group input {
     width: 95%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     height: 100%;
     background-color: #f5f5f5;
@@ -70,12 +70,12 @@ button:hover {
 
 .result h2 {
     margin-bottom: 10px;
-    color: #333;
+    color: #333333;
 }
 
 .result p {
     margin: 5px 0;
-    color: #555;
+    color: #555555;
 }
 
 .result span {

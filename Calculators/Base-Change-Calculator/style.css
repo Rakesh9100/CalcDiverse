@@ -22,13 +22,13 @@ body {
 
 .heading {
     text-align: center;
-    color: #333;
+    color: #333333;
     font-weight: 700;
 }
 
 hr {
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
     margin: 20px 0;
 }
 
@@ -39,7 +39,7 @@ hr {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #333333;
 }
 
 input[type="text"],
@@ -47,7 +47,7 @@ input[type="number"] {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     margin-bottom: 10px;
 }
@@ -75,7 +75,7 @@ button:hover {
 
 .results h3 {
     margin-bottom: 15px;
-    color: #333;
+    color: #333333;
     text-align: center;
 }
 

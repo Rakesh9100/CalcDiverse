@@ -17,7 +17,7 @@ body {
 }
 
 .calculator-container {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -51,7 +51,7 @@ input {
 
 button {
     background-color: #4caf50;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;

@@ -22,7 +22,7 @@ body {
     margin: 10px;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    border: 1px solid #000;
+    border: 1px solid #000000;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -33,9 +33,9 @@ canvas {
     height: 250px;
     margin: 20px 0;
     background-color: #6b6969;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #ffffff;
 }
 
 h2 {
@@ -60,7 +60,7 @@ h2 {
 
 .button {
     background-color: #4CAF50;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

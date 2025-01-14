@@ -9,7 +9,7 @@ function createMatrix(rows, cols) {
     matrixContainer.style.display = 'grid';
     matrixContainer.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
     matrixContainer.style.gridGap = '10px';
-    matrixContainer.style.border = '1px solid #ccc';
+    matrixContainer.style.border = '1px solid #cccccc';
     matrixContainer.style.padding = '10px';
 
     for (let i = 0; i < rows; i++) {

@@ -16,7 +16,7 @@ input {
 .cell input.active {
     border-color: rgb(141, 177, 255);
     border-color: rgb(252, 93, 14);
-    color: #000 !important;
+    color: #000000 !important;
 }
 
 .cell input.succeeded {
@@ -37,7 +37,7 @@ input {
 
 .btn:hover {
     background-color: rgb(0, 81, 255);
-    color: #fff;
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -54,7 +54,7 @@ body {
 
 /* START Menu style */
 #nav-bar {
-    background-color: #222;
+    background-color: #222222;
     text-align: center;
     opacity: 0.9;
     z-index: 2;
@@ -63,7 +63,7 @@ body {
 
 #nav-bar li {
     position: relative;
-    color: #fff;
+    color: #ffffff;
     padding: 15px 20px;
     display: inline-block;
     min-width: 105px;
@@ -101,7 +101,7 @@ body {
 #nav-bar li:hover {
     border-radius: 24px 24px 0 0;
     background-color: white;
-    color: #222;
+    color: #222222;
     cursor: pointer;
 }
 
@@ -124,7 +124,7 @@ body {
     position: absolute;
     left: 0;
     top: 53px;
-    background-color: #333;
+    background-color: #333333;
     display: none;
     text-align: center;
     font-size: 20px;
@@ -165,7 +165,7 @@ body {
     position: absolute;
     left: 0;
     top: 53px;
-    background-color: #333;
+    background-color: #333333;
     display: none;
     text-align: left;
     font-size: 20px;

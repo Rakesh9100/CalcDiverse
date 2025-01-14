@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #3c25e8;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 1em;
 }
@@ -19,7 +19,7 @@ header {
     padding: 20px;
     border-radius: 8px;
     background: linear-gradient(to right, #deec76, #15df0e);
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
@@ -27,7 +27,7 @@ header {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
+    color: #333333;
 }
 
 input,
@@ -45,7 +45,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     background-color: #103cee;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 9px;
     transition: background-color 0.3s;

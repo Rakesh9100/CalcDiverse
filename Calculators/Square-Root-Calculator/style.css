@@ -10,13 +10,13 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #333333;
 }
 
 .container {
     width: 50%;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -46,5 +46,5 @@ button:hover {
 #result {
     margin-top: 20px;
     font-size: 18px;
-    color: #333;
+    color: #333333;
 }

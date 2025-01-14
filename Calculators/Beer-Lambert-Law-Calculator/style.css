@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #fff;
+    color: #ffffff;
 }
 
 .calculator {
@@ -59,7 +59,7 @@ input {
     padding: 10px;
     margin-bottom: 15px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
@@ -96,5 +96,5 @@ button:last-child:hover {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
-    color: #fff;
+    color: #ffffff;
 }

@@ -34,7 +34,7 @@ label {
 
 input[type="number"] {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
 }
 
@@ -43,7 +43,7 @@ input[type="submit"] {
     border: none;
     border-radius: 4px;
     background-color: #4d98e8;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -59,6 +59,6 @@ input[type="number"]:hover {
 
 canvas {
     margin-top: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     display: none;
 }

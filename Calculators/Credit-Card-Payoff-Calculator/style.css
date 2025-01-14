@@ -8,7 +8,7 @@ body {
 .container {
     max-width: 600px;
     margin: 100px auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),
@@ -30,7 +30,7 @@ input {
     width: 96%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
 }
 
@@ -38,7 +38,7 @@ button {
     width: 100%;
     padding: 10px;
     background-color: #265073;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;

@@ -22,12 +22,12 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #333333;
     margin-bottom: 20px;
 }
 
 #question-container {
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -35,7 +35,7 @@ h1 {
 
 button {
     background-color: #4caf50;
-    color: #fff;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -62,14 +62,14 @@ button:hover {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #333333;
 }
 
 input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     margin-bottom: 10px;
 }

@@ -40,7 +40,7 @@ body {
 
 .cal {
     text-align: center;
-    color: #ddd;
+    color: #dddddd;
 }
 
 h1 {
@@ -53,13 +53,13 @@ input {
     margin: 10px 0 20px 0;
     box-sizing: border-box;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 5px;
 }
 
 button {
     background: linear-gradient(transparent, transparent);
-    color: #fff;
+    color: #ffffff;
     padding: 12px 20px;
     border: 1px solid white;
     border-radius: 5px;
@@ -75,7 +75,7 @@ button:hover {
 p {
     margin-top: 20px;
     font-size: 18px;
-    color: #333;
+    color: #333333;
 }
 
 #result {

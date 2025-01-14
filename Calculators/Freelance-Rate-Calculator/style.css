@@ -23,7 +23,7 @@ body {
 h1 {
     font-size: 26px;
     margin-bottom: 20px;
-    color: #333;
+    color: #333333;
 }
 
 form {
@@ -35,14 +35,14 @@ form {
 label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #555;
+    color: #555555;
 }
 
 input {
     margin-bottom: 15px;
     padding: 10px;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 

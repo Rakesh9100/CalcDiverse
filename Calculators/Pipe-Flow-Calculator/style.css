@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -20,7 +20,7 @@ body {
 
 h1 {
     margin-bottom: 25px;
-    color: #333;
+    color: #333333;
 }
 
 .radio-group {
@@ -32,7 +32,7 @@ h1 {
 .radio-group label {
     display: flex;
     align-items: center;
-    color: #555;
+    color: #555555;
 }
 
 .radio-group input {
@@ -46,13 +46,13 @@ h1 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #555;
+    color: #555555;
 }
 
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
     transition: border-color 0.3s;
@@ -80,7 +80,7 @@ button:hover {
 
 #results {
     margin-top: 20px;
-    color: #333;
+    color: #333333;
 }
 
 @media (max-width: 600px) {

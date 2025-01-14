@@ -6,14 +6,14 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     max-width: 400px;
     font-family: 'Open Sans', sans-serif;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    color: #333;
+    color: #333333;
     margin: 7% auto;
     text-align: center;
 }
@@ -45,7 +45,7 @@ button:hover {
 input {
     margin: 5px 0;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     width: calc(100% - 22px);
 }

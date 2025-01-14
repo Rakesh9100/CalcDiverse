@@ -39,7 +39,7 @@ select {
     margin-bottom: 10px;
     box-sizing: border-box;
     transition: border-color 0.3s ease-out;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     /* Default border color */
     border-radius: 5px;
 }
@@ -61,7 +61,7 @@ button:hover {
 
 #result {
     margin-top: 30px;
-    color: #fff;
+    color: #ffffff;
     background-color: #1a0d55;
     padding: 15px;
     border-radius: 5px;

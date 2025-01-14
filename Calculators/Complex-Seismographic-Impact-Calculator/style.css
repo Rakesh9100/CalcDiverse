@@ -9,7 +9,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: #333333;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    background: #fff;
+    background: #ffffff;
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
@@ -51,7 +51,7 @@ label {
     margin: 0.5rem 0;
     font-size: 1rem;
     font-weight: bold;
-    color: #333;
+    color: #333333;
 }
 
 input[type="number"],
@@ -73,14 +73,14 @@ select:focus {
 }
 
 select option {
-    background-color: #fff; 
-    color: #333; 
+    background-color: #ffffff; 
+    color: #333333; 
 }
 
 button {
     padding: 0.75rem 1.5rem;
     background: #ff5f6d;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -97,7 +97,7 @@ button:hover {
     margin-top: 1.5rem;
     display: none;
     padding: 1.5rem;
-    background: #fff;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -111,7 +111,7 @@ button:hover {
 .results p {
     margin: 0.5rem 0;
     font-size: 1rem;
-    color: #333;
+    color: #333333;
 }
 
 .results p span {

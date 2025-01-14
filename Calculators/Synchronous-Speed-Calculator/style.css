@@ -65,7 +65,7 @@ body {
 .input-box {
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
 }
 
 .switch-input-container {
@@ -96,5 +96,5 @@ body {
     display: flex;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
 }

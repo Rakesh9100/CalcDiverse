@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    color: #fff;
+    color: #ffffff;
 }
 
 .container {
@@ -40,7 +40,7 @@ input, select {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     font-size: 1em;
 }
 

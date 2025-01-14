@@ -19,7 +19,7 @@ body {
 
 /* Container Styles */
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 2em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -33,7 +33,7 @@ body {
 /* Heading Styles */
 h1 {
     margin-bottom: 1em;
-    color: #333;
+    color: #333333;
 }
 
 .heading {
@@ -56,7 +56,7 @@ h1 {
     width: calc(100% - 22px);
     padding: 0.5em;
     margin: 0.5em 0;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 1em;
 }
@@ -68,7 +68,7 @@ h1 {
     border: none;
     border-radius: 4px;
     background-color: #007BFF;
-    color: #fff;
+    color: #ffffff;
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -82,5 +82,5 @@ h1 {
 #result {
     margin-top: 1em;
     font-size: 1.2em;
-    color: #333;
+    color: #333333;
 }

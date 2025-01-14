@@ -25,7 +25,7 @@ h1 {
     margin-left: 70px;
     margin-right: 70px;
     text-align: center;
-    color: #555;
+    color: #555555;
     text-decoration: underline;
 }
 
@@ -43,13 +43,13 @@ h1 {
 
 label {
     margin-right: 10px;
-    color: #333;
+    color: #333333;
 }
 
 input[type="number"] {
     padding: 8px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     width: 60px;
     transition: border-color 0.3s;

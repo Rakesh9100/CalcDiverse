@@ -22,13 +22,13 @@ body {
 
 .heading {
     text-align: center;
-    color: #333;
+    color: #333333;
     font-weight: 700;
 }
 
 hr {
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
     margin: 20px 0;
 }
 
@@ -42,13 +42,13 @@ textarea {
     padding: 10px;
     margin-top: 5px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     resize: none;
 }
 
 textarea::placeholder {
-    color: #aaa;
+    color: #aaaaaa;
 }
 
 button {
@@ -74,7 +74,7 @@ button:hover {
 
 .results h3 {
     margin-bottom: 15px;
-    color: #333;
+    color: #333333;
     text-align: center;
 }
 
@@ -85,7 +85,7 @@ button:hover {
     padding: 10px;
     background-color: #f9f9f9;
     border-radius: 4px;
-    border: 1px solid #eee;
+    border: 1px solid #eeeeee;
 }
 
 .result span {

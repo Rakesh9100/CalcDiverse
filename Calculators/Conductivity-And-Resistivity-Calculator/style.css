@@ -36,7 +36,7 @@ input {
     margin-bottom: 10px;
     padding: 8px;
     width: 80%;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     transition: border-color 0.3s ease-in-out;
 }

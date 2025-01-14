@@ -39,7 +39,7 @@ td {
 
 input[type="text"] {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     width: 150px;
     /* Adjust the width as needed */
@@ -48,7 +48,7 @@ input[type="text"] {
 .chart {
     width: 100%;
     max-width: 800px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-collapse: collapse;
     margin: auto;
 }
@@ -57,7 +57,7 @@ input[type="text"] {
 .chart td {
     padding: 10px;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
 }
 
 .chart th {

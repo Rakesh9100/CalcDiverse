@@ -22,7 +22,7 @@ h1 {
 
 label {
     margin-right: 5px;
-    color: #333;
+    color: #333333;
 }
 
 .input-group {
@@ -37,7 +37,7 @@ input {
     padding: 10px;
     border-radius: 5px;
     background-color: #ecf0f1;
-    color: #333;
+    color: #333333;
 }
 
 button {

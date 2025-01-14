@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: grey;
-    color: #333;
+    color: #333333;
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,7 +14,7 @@ body {
     max-width: 600px;
     width: 100%;
     margin: 20px;
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -48,7 +48,7 @@ form {
 .appliance-row input {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
 }

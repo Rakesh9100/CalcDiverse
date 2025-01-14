@@ -23,7 +23,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #cccccc;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -134,7 +134,7 @@ body.dark-theme #total-cost {
     /* Make inputs and selects full width */
     padding: 8px;
     /* Add padding inside inputs */
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     /* Add a border */
     border-radius: 4px;
     /* Add rounded corners to inputs */

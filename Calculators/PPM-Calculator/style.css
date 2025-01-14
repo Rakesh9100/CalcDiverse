@@ -39,7 +39,7 @@ input {
     padding: 12px;
     font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     transition: border-color 0.3s;
 }
 
@@ -72,5 +72,5 @@ button:active {
 #result {
     margin-top: 20px;
     font-size: 18px;
-    color: #333;
+    color: #333333;
 }

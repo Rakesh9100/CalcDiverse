@@ -38,7 +38,7 @@ button:hover {
     width: calc(100% - 10px); /* Adjust width as needed */
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     box-sizing: border-box;
 }
 

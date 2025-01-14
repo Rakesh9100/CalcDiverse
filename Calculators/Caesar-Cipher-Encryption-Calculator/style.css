@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -37,7 +37,7 @@ textarea,
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
 }

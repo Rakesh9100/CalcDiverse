@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #ddd;
+    background: #dddddd;
 }
 
 h1 {
@@ -35,7 +35,7 @@ label {
 .allpart {
     height: 500px;
     width: 100vw;
-    background: #999;
+    background: #999999;
     padding: 40px;
     border-radius: 10px;
 }
@@ -90,7 +90,7 @@ input {
 }
 
 input:focus {
-    background: #fff;
+    background: #ffffff;
     transition: all 1 s;
 }
 
@@ -127,7 +127,7 @@ input:focus {
 }
 
 .output-part p {
-    background: #ddd;
+    background: #dddddd;
     height: 30px;
     padding: 30px;
     display: flex;

@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #ffcc70, #3b6978);
-    color: #333;
+    color: #333333;
     margin: 0;
     padding: 0;
     display: flex;
@@ -39,7 +39,7 @@ h1 {
     width: calc(100% - 20px);
     padding: 8px 10px;
     margin: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 4px;
 }
 
@@ -58,6 +58,6 @@ h1 {
     margin-top: 20px;
     padding: 10px;
     background: #f9f9f9;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 4px;
 }

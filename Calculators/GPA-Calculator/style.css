@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -39,7 +39,7 @@ td {
     padding: 8px;
     text-align: left;
     background-color: #4e5a68;
-    color: #fff;
+    color: #ffffff;
 }
 
 th {
@@ -50,7 +50,7 @@ select {
     width: 100%;
     padding: 8px;
     background-color: #57697a;
-    color: #fff;
+    color: #ffffff;
     border: 1px solid #00bcd4;
     border-radius: 4px;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
@@ -59,7 +59,7 @@ select {
 button {
     padding: 10px;
     background-color: #00bcd4;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;

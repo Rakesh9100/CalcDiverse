@@ -8,7 +8,7 @@ body {
 .container {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -33,13 +33,13 @@ h1 {
 .input-group label {
     display: block;
     margin-bottom: 8px;
-    color: #555;
+    color: #555555;
 }
 
 .input-group input[type="number"] {
     width: calc(100% - 80px);
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 4px;
     font-size: 16px;
 }
@@ -48,7 +48,7 @@ h1 {
     padding: 8px 12px;
     margin-top: 20px;
     background-color: #007BFF;
-    color: #fff;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     border-radius: 4px;
@@ -66,7 +66,7 @@ h1 {
 
 .output-group h2 {
     font-size: 1.5rem;
-    color: #333;
+    color: #333333;
 }
 
 .output-group #frequencyOutput {

@@ -8,7 +8,7 @@ body {
     height: 100vh;
     background: linear-gradient(270deg, hsl(269, 98%, 49%), #2575fc);
     background-size: 800% 800%;
-    color: #fff;
+    color: #ffffff;
     animation: color-transition 6s infinite;
 }
 
@@ -64,7 +64,7 @@ button {
     margin-top: 10px;
     margin-bottom: 10px;
     border: none;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 15px;
     font-size: 18px;
     border-radius: 5px;

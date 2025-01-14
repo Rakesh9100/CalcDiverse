@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-    color: #fff;
+    color: #ffffff;
     font-family: 'Alfa Slab One', cursive;
     font-weight: 100;
     margin-bottom: 20px;
@@ -52,7 +52,7 @@ h1 {
 .input label {
     display: block;
     margin-bottom: 5px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .input input,
@@ -60,7 +60,7 @@ h1 {
     width: calc(100% - 16px);
     padding: 8px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
 }
 
 button {
@@ -71,7 +71,7 @@ button {
     border-radius: 6px;
     box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
     box-sizing: border-box;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono", monospace;
@@ -110,13 +110,13 @@ button:active {
 .result label {
     display: block;
     margin-bottom: 5px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .result input {
     width: calc(100% - 16px);
     padding: 8px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     background-color: #f9f9f9;
 }

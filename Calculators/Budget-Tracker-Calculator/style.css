@@ -3,7 +3,7 @@ body {
     background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
     background: -webkit-linear-gradient(left, #CFDEF3, #E0EAFC);
     background: linear-gradient(to right, #CFDEF3, #E0EAFC);
-    color: #555;
+    color: #555555;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -20,12 +20,12 @@ body {
 
 .budget__title h1,
 .budget__value {
-    color: #fff;
-    text-shadow: 0 1px 0 #ccc,
+    color: #ffffff;
+    text-shadow: 0 1px 0 #cccccc,
         0 2px 0 #c9c9c9,
-        0 3px 0 #bbb,
+        0 3px 0 #bbbbbb,
         0 4px 0 #b9b9b9,
-        0 5px 0 #aaa,
+        0 5px 0 #aaaaaa,
         0 6px 1px rgba(0, 0, 0, .1),
         0 0 5px rgba(0, 0, 0, .1),
         0 1px 3px rgba(0, 0, 0, .3),
@@ -48,8 +48,8 @@ body {
 .budget__income,
 .budget__expenses {
     border-radius: 2em;
-    box-shadow: 0 10px 6px -6px #777;
-    color: #fff;
+    box-shadow: 0 10px 6px -6px #777777;
+    color: #ffffff;
     font-size: .9em;
     margin: 0 auto;
     padding: .75em;
@@ -84,7 +84,7 @@ body {
     background-color: #f7f7f7;
     border-bottom: 1px solid #e7e7e7;
     border-radius: 2em;
-    box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777777;
     padding: 0.875em;
 }
 
@@ -129,16 +129,16 @@ h2 {
 }
 
 .item {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffff;
     padding: 0.813em;
 }
 
 .item:first-child {
-    border-top: 1px solid #fff;
+    border-top: 1px solid #ffffff;
 }
 
 .item:nth-child(even) {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .item__value {

@@ -60,7 +60,7 @@ button {
 
 .mod:hover {
     background-color: #5a6268; /* Darken background on hover */
-    color: #fff; /* Keep text white */
+    color: #ffffff; /* Keep text white */
     transform: scale(1.05); /* Slight zoom on hover */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }

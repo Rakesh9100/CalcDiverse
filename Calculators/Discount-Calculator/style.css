@@ -22,13 +22,13 @@ body {
 }
 
 h1 {
-    color: #fff;
+    color: #ffffff;
     font-size: 3em;
 }
 
 label {
     display: block;
-    color: #fff;
+    color: #ffffff;
     margin-top: 10px;
     font-size: 25px;
 }
@@ -49,7 +49,7 @@ input {
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-    box-shadow: 0 0 20px #eee;
+    box-shadow: 0 0 20px #eeeeee;
     border-radius: 10px;
     display: block;
     align-items: center;
@@ -58,7 +58,7 @@ input {
 .btn-grad:hover {
     background-position: right center;
     /* change the direction of the change here */
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -70,5 +70,5 @@ button:hover {
 #result {
     margin-top: 20px;
     font-size: 25px;
-    color: #333;
+    color: #333333;
 }

@@ -13,7 +13,7 @@ body {
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     padding: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -51,6 +51,6 @@ button {
     width: 200px;
     height: 40px;
     background-color: rgb(54, 117, 119);
-    color: #fff;
+    color: #ffffff;
     font-size: medium;
 }

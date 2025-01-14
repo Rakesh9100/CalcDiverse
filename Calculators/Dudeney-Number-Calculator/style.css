@@ -21,13 +21,13 @@ body {
 }
 
 ::selection {
-    color: #fff;
+    color: #ffffff;
     background: rgb(170, 87, 204, 0.8);
 }
 
 .wrapper {
     max-width: 500px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 7px;
     padding: 20px 25px 15px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
@@ -55,7 +55,7 @@ header p {
     padding: 0 17px;
     font-size: 19px;
     border-radius: 5px;
-    border: 1px solid #999;
+    border: 1px solid #999999;
     transition: 0.1s ease;
 }
 
@@ -77,7 +77,7 @@ header p {
     border: none;
     opacity: 0.7;
     outline: none;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     font-size: 17px;
     margin-top: 20px;

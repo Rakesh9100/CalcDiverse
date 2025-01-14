@@ -11,7 +11,7 @@ body {
     background-size: cover; 
     background-position: center; 
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: #333333;
 }
 
 .Heading {
@@ -60,7 +60,7 @@ body {
 
 .Input_Div input {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 1em;
     outline: none;
@@ -68,7 +68,7 @@ body {
 }
 
 .Input_Div input:focus {
-    border-color: #888;
+    border-color: #888888;
 }
 
 .Result {
@@ -84,7 +84,7 @@ body {
 .Result label {
     font-size: 1.2em;
     font-weight: 600;
-    color: #444;
+    color: #444444;
 }
 
 button {

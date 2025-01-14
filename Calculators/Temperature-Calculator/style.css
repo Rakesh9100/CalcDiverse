@@ -8,7 +8,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    color: #fff;
+    color: #ffffff;
 }
 
 .container {
@@ -43,7 +43,7 @@ input[type="text"] {
     box-sizing: border-box;
     font-size: 16px;
     background-color: #f8f8f8;
-    color: #333;
+    color: #333333;
 }
 
 button[type="submit"] {
@@ -65,8 +65,8 @@ button[type="submit"]:hover {
 }
 
 #resultId {
-    background-color: #fff;
-    color: #333;
+    background-color: #ffffff;
+    color: #333333;
     width: 100%;
     max-width: 600px;
     padding: 20px;
@@ -79,5 +79,5 @@ button[type="submit"]:hover {
 #result {
     font-weight: bold;
     margin-top: 10px;
-    color: #333;
+    color: #333333;
 }

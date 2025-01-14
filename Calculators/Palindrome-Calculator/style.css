@@ -38,7 +38,7 @@ input[type="text"] {
     margin-bottom: 10px;
     font-size: 16px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
 }
 
 button {
@@ -48,7 +48,7 @@ button {
     margin-top: 10px;
     font-size: 16px;
     background: linear-gradient(to left, #8189ef, #2f0b78);;
-    color: #fff;
+    color: #ffffff;
     border:#0a300d;
     border-radius: 40px;
     cursor: pointer;

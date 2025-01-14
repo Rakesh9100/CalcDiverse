@@ -52,7 +52,7 @@ select {
     margin-bottom: 10px;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 16px;
     background-color: #f9f9f9;
@@ -68,7 +68,7 @@ select {
 div button {
     padding: 10px 20px;
     background-color: #0068d7;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -99,7 +99,7 @@ button:hover {
 
 .result-container input{
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     width: 90%;
 }
@@ -108,7 +108,7 @@ button:hover {
     flex: 1;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     background-color: #e8e8e8ea;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.867);

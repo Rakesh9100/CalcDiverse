@@ -6,11 +6,11 @@ body {
     height: 100vh;
     margin: 0;
     background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
-    color: #333;
+    color: #333333;
 }
 
 .container {
-    background: #fff;
+    background: #ffffff;
     padding: 30px 40px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -48,7 +48,7 @@ textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    border: 2px solid #ddd;
+    border: 2px solid #dddddd;
     border-radius: 5px;
     font-size: 16px;
     transition: border-color 0.3s ease;
@@ -63,7 +63,7 @@ button {
     padding: 15px 30px;
     border: none;
     background-color: #4A90E2;
-    color: #fff;
+    color: #ffffff;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
@@ -76,6 +76,6 @@ button:hover {
 
 #result {
     font-size: 18px;
-    color: #333;
+    color: #333333;
     margin-top: 20px;
 }

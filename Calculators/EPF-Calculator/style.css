@@ -27,7 +27,7 @@ body {
 
 h1 {
     margin-bottom: 16px;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -50,7 +50,7 @@ label {
 input {
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
@@ -72,7 +72,7 @@ button {
     margin: 20px 0 20px 0;
     padding: 10px 20px;
     background-color: #23e6a2;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -90,7 +90,7 @@ button:hover {
     color: white;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 800px;
@@ -110,7 +110,7 @@ button:hover {
 .output-container pre::before {
     content: "Output will be displayed here";
     display: flex;
-    color: #ddd;
+    color: #dddddd;
     font-style: italic;
 }
 

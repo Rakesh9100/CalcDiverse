@@ -3,8 +3,8 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .calculator {
@@ -19,8 +19,8 @@ body {
     width: 45%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #000;
-    border: 1px solid #00f;
+    background-color: #000000;
+    border: 1px solid #0000ff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
     margin-bottom: 20px;
@@ -38,8 +38,8 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #00f;
-    color: #fff;
+    background-color: #0000ff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     margin-top: 10px;
@@ -54,7 +54,7 @@ button:hover {
 p {
     font-size: 18px;
     margin-top: 20px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .title {

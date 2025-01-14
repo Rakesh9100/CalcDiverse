@@ -11,8 +11,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -28,7 +28,7 @@ main {
     max-width: 600px;
     width: 100%;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     animation: fadeIn 1s ease-in-out;
@@ -72,8 +72,8 @@ input[type="text"]:focus {
 }
 
 button {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -85,7 +85,7 @@ button {
 }
 
 button:hover {
-    background-color: #666;
+    background-color: #666666;
     transform: translateY(-2px);
 }
 

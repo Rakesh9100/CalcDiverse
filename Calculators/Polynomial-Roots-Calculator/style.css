@@ -41,7 +41,7 @@ label {
 input[type="text"], input[type="number"], select {
     width: calc(100% - 22px);
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
 }
 
@@ -72,7 +72,7 @@ input[type="text"], input[type="number"], select {
 #result, #roots {
     width: calc(100% - 22px);
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     background-color: #e9ecef;
 }

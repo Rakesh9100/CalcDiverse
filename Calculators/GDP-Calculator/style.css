@@ -105,13 +105,13 @@ legend {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333;
+    color: #333333;
 }
 
 .field input {
     width: 90%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 1em;
 }
@@ -133,7 +133,7 @@ button {
 
 button.calculate {
     background-color: #2e3b4e;
-    color: #fff;
+    color: #ffffff;
 }
 
 button.clear {
@@ -154,7 +154,7 @@ button.clear:hover {
     align-items: center;
     padding: 15px;
     /* justify-content: center; */
-    border: 2px solid #ccc;
+    border: 2px solid #cccccc;
     width: 40%;
     height: 30px;
     margin-top: 20px;

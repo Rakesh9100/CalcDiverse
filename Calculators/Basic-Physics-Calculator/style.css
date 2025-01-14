@@ -3,7 +3,7 @@ body {
     text-align: center;
     margin: 0;
     background-color: #f0f0f0;
-    color: #333;
+    color: #333333;
 }
 
 h1,
@@ -15,12 +15,12 @@ button {
 
 h1 {
     font-size: 2.5em;
-    color: #477;
+    color: #447777;
 }
 
 h2 {
     font-size: 2em;
-    color: #824;
+    color: #882244;
 }
 
 p {
@@ -28,8 +28,8 @@ p {
 }
 
 button {
-    background-color: #477;
-    color: #fff;
+    background-color: #447777;
+    color: #ffffff;
     padding: 10px 20px;
     font-size: 20px;
     border-radius: 10px;
@@ -40,12 +40,12 @@ button {
 }
 
 button:hover {
-    background-color: #333;
+    background-color: #333333;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #333;
+    background-color: #333333;
     color: white;
     padding: 15px 1px;
     position: fixed;
@@ -99,7 +99,7 @@ button:hover {
 
 /* Cards */
 .card {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -118,9 +118,9 @@ select {
     font-family: 'Quicksand', sans-serif;
     font-weight: 800;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     background-color: #f9f9f9;
-    color: #555;
+    color: #555555;
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 10px;
@@ -131,7 +131,7 @@ select {
 input:focus,
 select:focus {
     outline: none;
-    box-shadow: 0 0 2pt 1pt #555;
+    box-shadow: 0 0 2pt 1pt #555555;
 }
 
 /* Result */
@@ -139,7 +139,7 @@ select:focus {
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
-    background-color: #477;
+    background-color: #447777;
     color: white;
     font-size: 20px;
     margin-top: 10px;

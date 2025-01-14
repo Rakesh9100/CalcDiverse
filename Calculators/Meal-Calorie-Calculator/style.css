@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background: #fff;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -21,7 +21,7 @@ h1,
 h2,
 h3 {
     text-align: center;
-    color: #333;
+    color: #333333;
 }
 
 form {
@@ -37,7 +37,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #555;
+    color: #555555;
     font-weight: bold;
 }
 
@@ -45,7 +45,7 @@ select,
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 16px;
     box-sizing: border-box;

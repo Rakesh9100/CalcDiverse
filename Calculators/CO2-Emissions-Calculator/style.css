@@ -28,14 +28,14 @@ body.dark-mode {
 }
 
 body.dark-mode .container {
-    background: #444;
+    background: #444444;
     color: #f4f4f4;
 }
 
 h1 {
     margin-bottom: 20px;
     font-size: 1.5em;
-    color: #333;
+    color: #333333;
 }
 
 body.dark-mode h1 {
@@ -45,11 +45,11 @@ body.dark-mode h1 {
 label {
     display: block;
     margin: 10px 0 5px;
-    color: #555;
+    color: #555555;
 }
 
 body.dark-mode label {
-    color: #ddd;
+    color: #dddddd;
 }
 
 input,
@@ -57,19 +57,19 @@ select {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
-    background: #fff;
-    color: #000;
+    background: #ffffff;
+    color: #000000;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 body.dark-mode input,
 body.dark-mode select {
-    background: #666;
+    background: #666666;
     color: #f4f4f4;
-    border-color: #888;
+    border-color: #888888;
 }
 
 button {
@@ -100,7 +100,7 @@ body.dark-mode button:hover {
 #result {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #333;
+    color: #333333;
 }
 
 body.dark-mode #result {
@@ -123,7 +123,7 @@ body.dark-mode #result {
 }
 
 .home {
-    color: #000;
+    color: #000000;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s ease;
@@ -154,7 +154,7 @@ body.dark-mode .home {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #cccccc;
     transition: .4s;
     border-radius: 34px;
 }
@@ -180,7 +180,7 @@ input:checked+.slider:before {
 }
 
 body.dark-mode .slider {
-    background-color: #555;
+    background-color: #555555;
 }
 
 body.dark-mode input:checked+.slider {

@@ -18,7 +18,7 @@ body {
 h1 {
     margin-bottom: 20px;
     font-size: 2em;
-    color: #333;
+    color: #333333;
     font-family: Georgia;
     text-shadow: #b5d7ec;
 }
@@ -27,8 +27,8 @@ form {
     width: 100%;
     max-width: 400px;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -37,17 +37,17 @@ label {
     display: block;
     margin: 15px 0 5px;
     font-weight: bold;
-    color: #555;
+    color: #555555;
 }
 
 input[type="number"], select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 1em;
-    color: #333;
+    color: #333333;
 }
 
 button {
@@ -70,9 +70,9 @@ button:hover {
 #result {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #333;
+    color: #333333;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 8px;
     padding: 10px;
     background-color: #f2f2f2;
@@ -84,7 +84,7 @@ button:hover {
 }
 
 #resultTable th, #resultTable td {
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     padding: 8px;
     font-weight: bold;
     font-style: italic;

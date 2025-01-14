@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    color: #333;
+    color: #333333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #333333;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -29,14 +29,14 @@ label {
     display: block;
     font-weight: bold;
     margin-top: 15px;
-    color: #555;
+    color: #555555;
 }
 
 input {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 16px;
@@ -44,7 +44,7 @@ input {
 
 button {
     background: #ff7e5f;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -63,7 +63,7 @@ button:hover {
     width: 100%;
     height: 500px;
     margin-top: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
