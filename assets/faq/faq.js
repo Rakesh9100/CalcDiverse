@@ -69,7 +69,7 @@ faq.forEach((item) => {
         <div class="faq_title">
             <span>${item.question}</span>
             <div class="plusBtn">
-                <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff1b82" viewBox="0 0 16 16" stroke-width="2" stroke="#ff1b82">
+                <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#68bff1" viewBox="0 0 16 16" stroke-width="2" stroke="#68bff1">
                     <path fill-rule="evenodd" d="M8 0a.75.75 0 01.75.75v6.5h6.5a.75.75 0 010 1.5h-6.5v6.5a.75.75 0 01-1.5 0v-6.5H.75a.75.75 0 010-1.5h6.5V.75A.75.75 0 018 0z"/>
                 </svg>
             </div>
