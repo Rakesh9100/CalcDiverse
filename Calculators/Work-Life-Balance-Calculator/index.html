@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Work-Life Balance Calculator</title>
+</head>
+<body>
+    <div class="background-container">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="card">
+                <h1>Work-Life Balance Calculator</h1>
+                <form id="balanceForm">
+                    <div class="input-group">
+                        <label for="work"><i class="fa fa-briefcase"></i> Work Hours:</label>
+                        <input type="number" id="work" required min="0" max="24" placeholder="Enter hours for work">
+                    </div>
+                    <div class="input-group">
+                        <label for="commute"><i class="fa fa-car"></i> Commute Hours:</label>
+                        <input type="number" id="commute" required min="0" max="24" placeholder="Enter hours for commute">
+                    </div>
+                    <div class="input-group">
+                        <label for="sleep"><i class="fa fa-bed"></i> Sleep Hours:</label>
+                        <input type="number" id="sleep" required min="0" max="9" placeholder="Enter hours of sleep">
+                    </div>
+                    <div class="input-group">
+                        <label for="stress"><i class="fa fa-exclamation-circle"></i> Stress Level (0-10):</label>
+                        <input type="number" id="stress" required min="0" max="10" placeholder="Enter stress level">
+                    </div>
+                    <div class="input-group">
+                        <label for="personal"><i class="fa fa-heart"></i> Personal Care Hours:</label>
+                        <input type="number" id="personal" required min="0" max="24" placeholder="Enter hours for personal care">
+                    </div>
+                    <div class="input-group">
+                        <label for="job"><i class="fa fa-briefcase"></i> Job Satisfaction (0-10):</label>
+                        <input type="number" id="job" required min="0" max="10" placeholder="Enter job satisfaction">
+                    </div>
+                    <div class="input-group">
+                        <label for="leisure"><i class="fa fa-smile"></i> Leisure Hours:</label>
+                        <input type="number" id="leisure" required min="0" max="24" placeholder="Enter hours for leisure">
+                    </div>
+
+                    <button type="submit" class="calculate-btn">Calculate Balance</button>
+                </form>
+
+                <div id="result" class="result">
+                    <h2>Your Work-Life Balance:</h2>
+                    <p id="balanceMessage"></p>
+                    <div class="progress-bar">
+                        <div id="progress" class="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
