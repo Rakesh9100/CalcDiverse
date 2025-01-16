@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chinese Remainder Theorem Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Chinese Remainder Theorem Calculator</h1>
+        <p>Add equations you want to solve:</p>
+        <div id="inputs">
+            <div class="equation">
+                <input type="number" placeholder="Remainder" class="remainder" />
+                <span>mod</span>
+                <input type="number" placeholder="Modulo" class="modulo" />
+                <button class="remove-btn" onclick="removeEquation(this)">-</button>
+            </div>
+        </div>
+        <button class="add-btn" onclick="addEquation()">+</button>
+        <button class="solve-btn" onclick="solve()">SOLVE ></button>
+        <div id="output" class="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
