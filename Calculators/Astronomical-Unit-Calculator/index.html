@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Astronomical Unit Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Astronomical Unit Calculator</h1>
+        <p>Convert distances between astronomical units, light-years, parsecs, and kilometers.</p>
+
+        <div class="input-section">
+            <label for="distance">Enter Distance:</label>
+            <input type="number" id="distance" placeholder="Enter value">
+            <select id="unit">
+                <option value="lightYears">Light-Years</option>
+                <option value="parsecs">Parsecs</option>
+                <option value="astronomicalUnits">Astronomical Units</option>
+                <option value="kilometers">Kilometers</option>
+            </select>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+
+        <div id="output">
+            <h2>Converted Values:</h2>
+            <p id="lightYears">Light-Years: --</p>
+            <p id="parsecs">Parsecs: --</p>
+            <p id="astronomicalUnits">Astronomical Units: --</p>
+            <p id="kilometers">Kilometers: --</p>
+            <div id="quote-container">
+              <p id="quote">“Your space fact will appear here!”</p>
+            </div>
+          </div>
+          
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
