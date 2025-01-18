@@ -23,4 +23,4 @@ A simple and intuitive lease calculator that helps users determine their monthly
 
 ## Screenshots :-
 
-![image](https://github.com/user-attachments/assets/67e76841-6d2d-4f23-b62d-eb97ee8313d6)
+![Image](https://github.com/user-attachments/assets/7fc940e4-633a-4bc2-a626-be676b87b9f6)

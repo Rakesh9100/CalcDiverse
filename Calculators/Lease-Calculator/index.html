@@ -33,9 +33,18 @@
         </form>
         <div id="results" class="results" style="display: none;">
             <h2>Calculation Results</h2>
-            <p id="monthlyPayment"></p>
-            <p id="totalPayment"></p>
-            <p id="totalInterest"></p>
+            <div class="result-item">
+                <span class="result-label">Monthly Payment:</span>
+                <span id="monthlyPayment" class="result-value"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Total Payment:</span>
+                <span id="totalPayment" class="result-value"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Total Interest:</span>
+                <span id="totalInterest" class="result-value"></span>
+            </div>
         </div>
         <p id="errorMessage" class="error-message" style="display: none;"></p>
     </div>
