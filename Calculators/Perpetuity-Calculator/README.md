@@ -41,4 +41,4 @@ This tool makes financial calculations easier and helps users understand perpetu
 
 ## **Screenshots**
 
-
+![Screenshot](https://github.com/user-attachments/assets/ccbfabec-9152-4eaf-b5c2-289a7f3e494a)
