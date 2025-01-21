@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Perpetuity Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Perpetuity Calculator</h1>
+        <p>Calculate the present value of an infinite series of cash flows.</p>
+
+        <div class="input-section">
+            <label for="cashFlow">Annual Cash Flow (C):</label>
+            <input type="number" id="cashFlow" placeholder="Enter cash flow" step="0.01">
+            <span class="tooltip">Example: 1000</span>
+
+            <label for="discountRate">Discount Rate (r %):</label>
+            <input type="number" id="discountRate" placeholder="Enter discount rate" step="0.01">
+            <span class="tooltip">Example: 5 (for 5%)</span>
+        </div>
+
+        <button id="calculateBtn">Calculate</button>
+        <button id="resetBtn">Reset</button>
+
+        <div id="output">
+            <h2>Result:</h2>
+            <p id="presentValue">Present Value (PV): --</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
