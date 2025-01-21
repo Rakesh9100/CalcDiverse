@@ -1816,7 +1816,7 @@
         "description": "Calculates the present value of a perpetuity.",
         "link": "./Calculators/Perpetuity-Calculator/index.html",
         "source": "https://github.com/username/CalcDiverse/tree/main/Calculators/Perpetuity-Calculator"
-    },    
+    },
     {
         "title": "Pet Age Calculator",
         "description": "Calculates a pet's age in human years.",

@@ -1,6 +1,6 @@
-# <p align="center"> Perpetuity Calculator </p>
+# <p align="center">Perpetuity Calculator</p>
 
-## **Description**
+## Description :-
 
 A simple and interactive tool to calculate the **present value (PV)** of a perpetuity, an infinite series of cash flows, using the formula:
 
@@ -13,17 +13,13 @@ Where:
 
 This tool makes financial calculations easier and helps users understand perpetuities better.
 
----
-
-## **Tech Stacks**
+## Tech Stacks :-
 
 - HTML
 - CSS
 - JavaScript
 
----
-
-## **Features**
+## Features :-
 
 - **Perpetuity Calculation**: Input fields to calculate present value based on cash flow and discount rate.
 - **Reset Functionality**: Clear all fields and results with a single click.
@@ -31,14 +27,10 @@ This tool makes financial calculations easier and helps users understand perpetu
 - **Tooltips**: User guidance on input requirements.
 - **Responsive Design**: Adapts to all devices for seamless usability.
 
----
-
-## **Formula**
+## Formula :-
 
 **Present Value = Cash Flow / Discount Rate**
 
----
+## Screenshots :-
 
-## **Screenshots**
-
-![Screenshot](https://github.com/user-attachments/assets/ccbfabec-9152-4eaf-b5c2-289a7f3e494a)
+![image](https://github.com/user-attachments/assets/a68ff8ad-781a-4943-a125-4e1b2a57cf5a)
