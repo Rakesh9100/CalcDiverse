@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Integration Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h2>Advanced Integration Calculator</h2>
+        
+        <div class="input-group">
+            <label for="integration-type">Integration Type:</label>
+            <select id="integration-type" onchange="updateLimitsDisplay()">
+                <option value="single">Single Integration</option>
+                <option value="double">Double Integration</option>
+                <option value="triple">Triple Integration</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="function">Function:</label>
+            <input type="text" id="function" placeholder="Enter your function (e.g., x*x, Math.sin(x))">
+            <div class="helper-text">Use JavaScript math syntax. For example: Math.sin(x), Math.exp(x), x*y, etc.</div>
+        </div>
+
+        <div id="limits-container" class="limits-container">
+            <!-- Limits will be dynamically added here -->
+        </div>
+
+        <button onclick="calculateIntegral()">Calculate Integral</button>
+
+        <div class="result">
+            Result: <span id="result">---</span>
+        </div>
+    </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
