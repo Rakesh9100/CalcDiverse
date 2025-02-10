@@ -11,9 +11,107 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
     <title>CalcDiverse</title>
 </head>
+<style>
+ #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .text-container {
+            display: flex;
+           
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .text {
+            font-weight: bold;
+        }
+        .error-code {
+            font-size: 8rem;
+            line-height: 1;
+        }
+        .error-message {
+            font-size: 3rem;
+        }
+        .quiz-container {
+            margin-top: 20px;
+            font-size: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            width: 400px;
+            height: 280px;
+            justify-content: center;
+        }
+        input {
+            font-size: 2rem;
+            padding: 8px;
+            text-align: center;
+            width: 100px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        button {
+            font-size: 1.5rem;
+            font-weight:600;
+            padding: 9px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #ff4081;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e91e63;
+        }
+        .home-button {
+            margin-top: 20px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #00bcd4;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+            display: none;
+        }
+        .home-button.show {
+            display: inline-block;
+            background: green;
+        }
+        .home-button:hover {
+            background: darkgreen;
+        }
+        #result {
+            margin-top: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        #question {
+    font-size: 3rem;  /* Adjust size (e.g., 3rem = big, 5rem = very big) */
+    font-weight: bold; /* Make it bold */
+    color: white;    /* Optional: Change color */
+    text-align: center;
+    display: inline-block;
+}
 
+</style>
 <body>
     <!-- Custom cursor section -->
     <div class="circle-container">
@@ -98,17 +196,16 @@
 
     <!-- Error page section -->
     <section class="comp-section compcontainer" id="404">
-        <div class="compcontainer">
-            <div class="logo">
-                <img src="./assets/images/logo.png" alt="Logo">
+        <div id="particles-js"></div>
+        <div class="text-container">
+            <div class="text error-code">404</div>
+            <div class="text error-message">Not Found</div>
+            <div class="quiz-container">
+                <span id="question"></span><p class="equal2" style="font-size: 40px; font-weight: 500;"> = </p><input type="text" id="answer" maxlength="3"> 
+                <button onclick="checkAnswer()">Check</button>
+                <div id="result"></div>
             </div>
-            <h1 class="heading">404</h1>
-            <p class="paragraph">
-                Sorry, but the page you were looking for could not be found.
-            </p>
-            <a href="index.html">
-                <button class="started">Go Back Home</button>
-            </a>
+            <button class="home-button" id="homeButton" onclick="window.location.href='./index.html'">Go to Home</button>
         </div>
     </section>
 
@@ -168,7 +265,74 @@
     <div id="progress">
         <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
+    <script>
+        const jokes = [
+            "Why was the web page late? It got stuck in a 404 traffic jam!",
+            "What did the server say to the website? 404 you!",
+            "I just saw a 404 error page... It was a real site for sore eyes!",
+            "Why did the browser break up with the server? Too many 404s!"
+        ];
+        document.addEventListener("DOMContentLoaded", function () {
+    generateQuestion(); // ✅ Ensure question appears only after DOM loads
+});
 
+function generateQuestion() {
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
+    const operators = ['+', '-', '*'];
+    const operator = operators[Math.floor(Math.random() * operators.length)];
+    const expression = `${num1} ${operator} ${num2}`;
+
+    console.log("Generated Expression:", expression);  // ✅ Debugging Log
+
+    const questionElement = document.getElementById("question");
+
+    if (questionElement) {
+        questionElement.textContent = expression;
+        questionElement.dataset.answer = eval(expression);
+    } else {
+        console.error("❌ Element #question not found in the DOM!");
+    }
+}
+
+
+
+function checkAnswer() {
+    const answer = document.getElementById("answer").value;
+    const correctAnswer = document.getElementById("question").dataset.answer;
+    const result = document.getElementById("result");
+    const homeButton = document.getElementById("homeButton");
+
+    if (parseInt(answer) === parseInt(correctAnswer)) {
+        result.textContent = "✅ Correct!";
+        result.style.color = "green";
+        homeButton.classList.add("show");
+    } else {
+        result.textContent = jokes[Math.floor(Math.random() * jokes.length)];
+        result.style.color = "red";
+        homeButton.classList.remove("show");
+    }
+}
+
+
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 100 },
+                size: { value: 9, random: true },
+                shape: { type: "circle" },
+                opacity: { value: 0.8, random: true },
+                move: { speed: 2, direction: "none", random: true, out_mode: "out" },
+                line_linked: { enable: false },
+            },
+            interactivity: {
+                events: { onhover: { enable: true, mode: "repulse" } },
+                modes: { repulse: { distance: 100 } }
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", generateQuestion);
+
+    </script>
     <script src="./script.js"></script>
     <script src="./assets/commonscript.js"></script>
     <script src="./assets/customcursor.js"></script>
