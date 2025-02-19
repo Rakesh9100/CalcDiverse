@@ -39,7 +39,7 @@ button {
 }
 
 button:hover {
-    background-color: #000; /* Darker hover color */
+    background-color: #000000; /* Darker hover color */
 }
 
 .result {

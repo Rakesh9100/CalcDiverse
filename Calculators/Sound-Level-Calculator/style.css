@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -32,7 +32,7 @@ h1 {
 .input-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
@@ -41,7 +41,7 @@ button {
     border: none;
     border-radius: 5px;
     background-color: #5cb85c;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     font-size: 16px;
 }

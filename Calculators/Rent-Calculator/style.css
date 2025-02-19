@@ -32,7 +32,7 @@ h1 {
 
 .container_SU {
     width: 80%;
-    background: #fff;
+    background: #ffffff;
     margin: 0 auto;
     box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
@@ -52,7 +52,7 @@ h1 {
 .form-title {
     margin-bottom: 33px;
     font-size: 36px;
-    color: #222;
+    color: #222222;
 }
 
 .form-group {
@@ -68,7 +68,7 @@ h1 {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #222;
+    color: #222222;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -77,14 +77,14 @@ input {
     width: 90%;
     display: block;
     border: none;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #999999;
     padding: 6px 30px;
     box-sizing: border-box;
     font-size: 20px;
 }
 
 input:focus {
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #222222;
 }
 
 .form-button {
@@ -93,7 +93,7 @@ input:focus {
 
 button {
     background: #6dabe4;
-    color: #fff;
+    color: #ffffff;
     border: none;
     padding: 15px 39px;
     border-radius: 5px;

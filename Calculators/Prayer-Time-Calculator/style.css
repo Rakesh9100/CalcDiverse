@@ -29,7 +29,7 @@ button {
     margin: 10px auto;
     padding: 10px 20px;
     background-color: #569b96;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -52,7 +52,7 @@ input {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
 }
 
 #prayerTimes {

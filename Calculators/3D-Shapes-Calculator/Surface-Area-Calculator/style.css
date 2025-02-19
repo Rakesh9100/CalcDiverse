@@ -51,13 +51,13 @@ label {
     display: block;
     margin-bottom: 0.5em;
     font-size: 16px;
-    color: #333;
+    color: #333333;
 }
 
 input, select {
     width: 100%;
     padding: 0.6em;
-    border: 2px solid #ddd;
+    border: 2px solid #dddddd;
     border-radius: 10px;
     font-size: 16px;
     transition: border-color 0.3s;
@@ -86,7 +86,7 @@ button:hover {
 }
 
 .rule {
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #eeeeee;
     margin: 1em 0;
 }
 
@@ -102,6 +102,6 @@ button:hover {
 
 #result {
     font-size: 20px;
-    color: #333;
+    color: #333333;
     font-weight: bold;
 }

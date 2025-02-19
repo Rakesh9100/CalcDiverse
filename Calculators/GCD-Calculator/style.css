@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     height: 100vh;
     background-color: #282c35;
-    color: #fff;
+    color: #ffffff;
     font-weight: 500;
 }
 
@@ -25,7 +25,7 @@ body {
 
 .container {
     display: flex;
-    border: 1px solid #bbb;
+    border: 1px solid #bbbbbb;
     padding: 40px;
     margin: 20px;
     margin-bottom: 40px;
@@ -46,10 +46,10 @@ span {
 input {
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #999;
+    border: 1px solid #999999;
     border-radius: 5px;
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
 }
 
 button {
@@ -72,9 +72,9 @@ button:hover {
     overflow: hidden;
     margin-top: 20px;
     padding: 20px;
-    border: 1px solid #bbb;
+    border: 1px solid #bbbbbb;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #000000;
     white-space: nowrap;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -84,7 +84,7 @@ button:hover {
 #answer-multi::before {
     content: "Answer: ";
     font-weight: bold;
-    color: #555;
+    color: #555555;
 }
 
 #headings {

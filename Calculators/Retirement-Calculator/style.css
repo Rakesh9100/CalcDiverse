@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #fff;
+    color: #ffffff;
 }
 
 @keyframes gradientAnimation {
@@ -36,7 +36,7 @@ body {
 h1 {
     margin-bottom: 20px;
     font-size: 32px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .form-group {
@@ -63,7 +63,7 @@ input {
     font-size: 16px;
     margin-bottom: 10px;
     background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    color: #ffffff;
     outline: none;
 }
 
@@ -86,7 +86,7 @@ input:focus {
     background: linear-gradient(-45deg, #ff5f6d, #ffc371, #6a11cb, #2575fc);
     background-size: 400% 400%;
     animation: buttonGradientAnimation 10s ease infinite;
-    color: #fff;
+    color: #ffffff;
 }
 
 @keyframes buttonGradientAnimation {
@@ -109,7 +109,7 @@ input:focus {
 .result h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .result p {

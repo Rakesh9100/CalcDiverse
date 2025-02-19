@@ -86,7 +86,7 @@ form button {
 
 form button {
     background-color: #2684ff;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -128,7 +128,7 @@ form button span.ripple {
 #output-table td {
     padding: 8px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
 }
 
 @media (max-width: 800px) {

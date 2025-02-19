@@ -24,7 +24,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #007bff;
-    color: #fff;
+    color: #ffffff;
     border-radius: 20px;
     border: none;
     cursor: pointer;
@@ -40,8 +40,8 @@ button {
 body.pop {
     margin: 0;
     overflow: hidden;
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 canvas {
@@ -64,7 +64,7 @@ canvas {
     font-size: 50px;
     font-family: "Arial", sans-serif;
     font-weight: bold;
-    color: #00F;
+    color: #0000FF;
 }
 
 .hidden {

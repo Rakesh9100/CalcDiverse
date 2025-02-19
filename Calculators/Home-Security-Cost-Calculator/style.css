@@ -23,7 +23,7 @@ body {
 h1 {
     font-size: 32px;
     margin-bottom: 20px; /* Reduced margin */
-    color: #333;
+    color: #333333;
 }
 
 form {
@@ -35,14 +35,14 @@ form {
 label {
     margin-bottom: 10px; /* Reduced margin */
     font-weight: 600;
-    color: #555;
+    color: #555555;
     text-align: left;
 }
 
 input, select, button {
     margin-bottom: 16px; /* Reduced margin */
     padding: 12px; /* Reduced padding */
-    border: 2px solid #ddd;
+    border: 2px solid #dddddd;
     border-radius: 8px;
     font-size: 16px;
     width: 100%;
@@ -75,7 +75,7 @@ button:hover {
 #result {
     margin-top: 20px; /* Reduced margin */
     font-size: 20px;
-    color: #333;
+    color: #333333;
 }
 
 #totalCost {

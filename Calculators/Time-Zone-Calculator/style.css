@@ -6,8 +6,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     text-align: center;
     padding: 1em 0;
 }
@@ -15,7 +15,7 @@ header {
 #calculator {
     max-width: 400px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -24,7 +24,7 @@ header {
 label {
     display: block;
     margin-bottom: 10px;
-    color: #333;
+    color: #333333;
 }
 
 select,
@@ -33,13 +33,13 @@ input {
     padding: 12px;
     margin-bottom: 20px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
 button {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     padding: 12px;
     border: none;
     border-radius: 5px;
@@ -49,12 +49,12 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #555555;
 }
 
 #result {
     margin-top: 20px;
     font-weight: bold;
     font-size: 18px;
-    color: #333;
+    color: #333333;
 }

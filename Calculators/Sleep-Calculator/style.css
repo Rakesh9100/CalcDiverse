@@ -25,7 +25,7 @@ body {
 .container-box h2 {
     margin: 0 0 30px;
     padding: 0;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -37,10 +37,10 @@ body {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 12px;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffff;
     outline: none;
     background: transparent;
 }
@@ -51,7 +51,7 @@ body {
     left: 0;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     pointer-events: none;
     transition: .5s;
 }
@@ -81,7 +81,7 @@ body {
 
 .container-box a:hover {
     background: #03e9f4;
-    color: #fff;
+    color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 0 5px #03e9f4,
         0 0 25px #03e9f4,
@@ -96,7 +96,7 @@ body {
 
 
 .content {
-    color: #fff;
+    color: #ffffff;
     padding: 4px;
     text-align: center;
 }
@@ -130,7 +130,7 @@ body {
 
 .select-box option {
     background: rgba(0, 0, 0, .5);
-    color: #fff;
+    color: #ffffff;
     overflow: auto;
 }
 
@@ -141,7 +141,7 @@ body {
     padding: 5px 0;
     margin-bottom: 5px;
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     pointer-events: none;
     transition: .5s;
 }
@@ -150,11 +150,11 @@ body {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     margin-top: 25px;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffff;
     outline: none;
     background: transparent;
 }

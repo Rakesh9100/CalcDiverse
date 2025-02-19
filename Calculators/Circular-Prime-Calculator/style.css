@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(135deg, #2c3e50, #4ca1af);
-    color: #fff;
+    color: #ffffff;
 }
 
 .title {
@@ -76,7 +76,7 @@ input {
     margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid #ddd; */
+    border: 1px solid #dddddd; */
     border-radius: 10px;
 }
 
@@ -89,7 +89,7 @@ button {
     padding: 10px 20px;
     font-size: 18px; 
     cursor: pointer;
-    color: #fff;
+    color: #ffffff;
     background-color: #008080; 
     border: none;
     border-radius: 10px;

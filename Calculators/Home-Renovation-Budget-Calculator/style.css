@@ -30,7 +30,7 @@ label {
 input {
     padding: 10px;
     margin-bottom: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 5px;
     transition: border-color 0.3s ease-in-out;
 }

@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #6bc1e9;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 1em;
 }
@@ -15,18 +15,18 @@ header {
 #calculator {
     max-width: 300px;
     margin: 20px auto;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     padding: 20px;
     border-radius: 8px;
     background: linear-gradient(to right, #64cee6, #9198e5);
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
+    color: #333333;
 }
 
 input,
@@ -44,7 +44,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     background-color: #28f2fc;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 9px;
     transition: background-color 0.3s;
@@ -57,5 +57,5 @@ button:hover {
 #result {
     margin-top: 16px;
     font-weight: bold;
-    color: #333;
+    color: #333333;
 }

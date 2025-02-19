@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 20px; margin-top: -40px; 
@@ -34,11 +34,11 @@ h1 {
 
 .dropdown-group p {
     font-weight: bold;
-    color: #fff;
+    color: #ffffff;
 }
 
 #typing-box {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -70,7 +70,7 @@ h1 {
 #user-input {
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 16px;
     text-align: center;
@@ -109,11 +109,11 @@ button:hover {
 /* Attractive Dropdown Styles */
 select {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 16px;
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
     cursor: pointer;
     transition: border 0.3s ease, box-shadow 0.3s ease;
 }
@@ -126,6 +126,6 @@ select:focus {
 
 option {
     padding: 30px;
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
 }

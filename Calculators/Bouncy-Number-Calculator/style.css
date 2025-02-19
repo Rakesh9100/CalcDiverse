@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #091020;
-    color: #fff;
+    color: #ffffff;
 }
 
 .title {
@@ -76,10 +76,10 @@ button:hover {
 p {
     font-size: 18px;
     margin-top: 20px;
-    color: #ccc;
+    color: #cccccc;
 }
 
 #explanation {
     font-style: italic;
-    color: #888;
+    color: #888888;
 }

@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #fff;
+    color: #ffffff;
 }
 
 .container {
@@ -50,7 +50,7 @@ input[type="number"] {
     outline: none;
     transition: border-color 0.3s ease;
     background: #34495e;
-    color: #fff;
+    color: #ffffff;
 }
 
 input[type="number"]:focus {

@@ -50,7 +50,7 @@ select {
     width: calc(100% - 16px);
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 1rem;
 }
@@ -60,7 +60,7 @@ button {
     width: 100%;
     padding: 10px;
     background-color: #0d3969;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -83,7 +83,7 @@ ul li {
     justify-content: space-between;
     align-items: center;
     padding: 8px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 ul li:last-child {
@@ -93,7 +93,7 @@ ul li:last-child {
 /* Delete button styling */
 .delete-btn {
     background-color: #dc3545;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;

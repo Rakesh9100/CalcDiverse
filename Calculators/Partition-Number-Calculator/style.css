@@ -6,7 +6,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #333;
+    color: #333333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@ h1 {
 
 .description {
     font-size: 1rem;
-    color: #555;
+    color: #555555;
     margin-bottom: 20px;
 }
 
@@ -47,7 +47,7 @@ input {
     padding: 12px;
     font-size: 16px;
     width: 100%;
-    border: 2px solid #ddd;
+    border: 2px solid #dddddd;
     border-radius: 8px;
     outline: none;
     transition: 0.3s ease;
@@ -70,7 +70,7 @@ input:focus {
 button {
     padding: 12px 30px;
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     background-color: #6c63ff;
     border: none;
     border-radius: 8px;
@@ -79,7 +79,7 @@ button {
 }
 
 button:disabled {
-    background-color: #ccc;
+    background-color: #cccccc;
     cursor: not-allowed;
 }
 
@@ -94,7 +94,7 @@ button:hover:not(:disabled) {
     background: #f3f3f3;
     border-radius: 10px;
     font-size: 1.2rem;
-    color: #444;
+    color: #444444;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -128,5 +128,5 @@ footer {
     margin-top: 20px;
     text-align: center;
     font-size: 0.9rem;
-    color: #fff;
+    color: #ffffff;
 }

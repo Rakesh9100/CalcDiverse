@@ -10,8 +10,8 @@ body {
     width: 50%;
     margin: 10px auto;
     padding: 70px;
-    background-color: #ccc;
-    border: 1px solid #ccc;
+    background-color: #cccccc;
+    border: 1px solid #cccccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -38,7 +38,7 @@ h2 {
 
 .button {
     background-color: #4CAF50;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

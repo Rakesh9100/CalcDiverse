@@ -64,7 +64,7 @@ input, select, button {
     padding: 15px;
     margin-top: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 

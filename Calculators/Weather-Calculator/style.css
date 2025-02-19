@@ -12,7 +12,7 @@ body {
     text-align: center;
     width: 30%;
     max-width: 100%;
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@ input[type="number"] {
     text-align: center;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 50px;
     font-size: 16px;
     box-sizing: border-box;
@@ -55,7 +55,7 @@ button {
     padding: 10px 20px;
     border: none;
     background: #8d6fde;
-    color: #fff;
+    color: #ffffff;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
@@ -89,8 +89,8 @@ button:hover {
     padding: 8px;
     margin: 10px 0;
     border-radius: 50px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
     box-sizing: border-box;
 }
 

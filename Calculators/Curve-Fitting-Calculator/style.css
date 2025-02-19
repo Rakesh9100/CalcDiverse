@@ -124,7 +124,7 @@ button:hover {
     font-size: large;
     min-width: 130px;
     height: 40px;
-    color: #fff;
+    color: #ffffff;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -139,6 +139,6 @@ button:hover {
 }
 
 .css-button-rounded--yellow:hover {
-    background: #fff;
+    background: #ffffff;
     color: #ffc107;
 }

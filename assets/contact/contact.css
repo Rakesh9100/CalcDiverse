@@ -176,12 +176,12 @@ header {
     padding: 12px;
     border-radius: 8px;
     margin: 8px 0 25px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     transition: all 0.2s linear;
 }
 
 .contact-container textarea {
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     resize: vertical;
 }
 

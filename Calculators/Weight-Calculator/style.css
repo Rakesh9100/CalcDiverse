@@ -39,7 +39,7 @@ input {
 
 button {
     background-color: rgb(235, 59, 88);
-    color: #fff;
+    color: #ffffff;
     border: none;
     padding: 12px 24px;
     font-size: 16px;
@@ -56,16 +56,16 @@ button:hover {
 #result {
     font-size: 18px;
     margin-top: 20px;
-    color: #333;
+    color: #333333;
 }
 
 #conversionType {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     margin-bottom: 20px;
     background-color: #f9f9f9;
-    color: #333;
+    color: #333333;
 }

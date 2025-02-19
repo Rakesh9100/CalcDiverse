@@ -94,7 +94,7 @@ function calculate() {
             paragraph tag with id = "cubeAnswer"*/
             document.getElementById("cubeAnswer").innerHTML = "V = " + answer;
             document.getElementById("cubeAnswer").style.color = "#0c0f46";
-            document.getElementById("cube-length").style.border = "2px solid #ccc";
+            document.getElementById("cube-length").style.border = "2px solid #cccccc";
 
         }
     }
@@ -115,9 +115,9 @@ function calculate() {
             var answer = (cuboidFormula + " " + system + cubed.sup());
             document.getElementById("cuboidAnswer").innerHTML = "V = " + answer;
             document.getElementById("cuboidAnswer").style.color = "#0c0f46";
-            document.getElementById("cuboid-length").style.border = "2px solid #ccc";
-            document.getElementById("cuboid-width").style.border = "2px solid #ccc";
-            document.getElementById("cuboid-height").style.border = "2px solid #ccc";
+            document.getElementById("cuboid-length").style.border = "2px solid #cccccc";
+            document.getElementById("cuboid-width").style.border = "2px solid #cccccc";
+            document.getElementById("cuboid-height").style.border = "2px solid #cccccc";
         }
     }
 
@@ -137,9 +137,9 @@ function calculate() {
             document.getElementById("cylinderAnswer").innerHTML = "V = " + answer;
             document.getElementById("cubeAnswer").style.color = "#0c0f46";
             document.getElementById("cylinder-radius").style.border =
-                "2px solid #ccc";
+                "2px solid #cccccc";
             document.getElementById("cylinder-height").style.border =
-                "2px solid #ccc";
+                "2px solid #cccccc";
 
         }
     }
@@ -159,8 +159,8 @@ function calculate() {
             var answer = (coneFormula + " " + system + cubed.sup());
             document.getElementById("coneAnswer").innerHTML = "V = " + answer;
             document.getElementById("coneAnswer").style.color = "#0c0f46";
-            document.getElementById("cone-radius").style.border = "2px solid #ccc";
-            document.getElementById("cone-height").style.border = "2px solid #ccc";
+            document.getElementById("cone-radius").style.border = "2px solid #cccccc";
+            document.getElementById("cone-height").style.border = "2px solid #cccccc";
         }
     }
 
@@ -178,7 +178,7 @@ function calculate() {
             var answer = (sphereFormula + " " + system + cubed.sup());
             document.getElementById("sphereAnswer").innerHTML = "V = " + answer;
             document.getElementById("sphereAnswer").style.color = "#0c0f46";
-            document.getElementById("sphere-radius").style.border = "2px solid #ccc";
+            document.getElementById("sphere-radius").style.border = "2px solid #cccccc";
         }
     }
 
@@ -196,7 +196,7 @@ function calculate() {
             var answer = (hemisphereFormula + " " + system + cubed.sup());
             document.getElementById("hemisphereAnswer").innerHTML = "V = " + answer;
             document.getElementById("hemisphereAnswer").style.color = "#0c0f46";
-            document.getElementById("hemisphere-radius").style.border = "2px solid #ccc";
+            document.getElementById("hemisphere-radius").style.border = "2px solid #cccccc";
         }
     }
 
@@ -216,9 +216,9 @@ function calculate() {
             var answer = (prismFormula + " " + system + cubed.sup());
             document.getElementById("prismAnswer").innerHTML = "V = " + answer;
             document.getElementById("prismAnswer").style.color = "#0c0f46";
-            document.getElementById("prism-length").style.border = "2px solid #ccc";
-            document.getElementById("prism-width").style.border = "2px solid #ccc";
-            document.getElementById("prism-height").style.border = "2px solid #ccc";
+            document.getElementById("prism-length").style.border = "2px solid #cccccc";
+            document.getElementById("prism-width").style.border = "2px solid #cccccc";
+            document.getElementById("prism-height").style.border = "2px solid #cccccc";
 
         }
     }
@@ -240,9 +240,9 @@ function calculate() {
             document.getElementById("pyramidAnswer").innerHTML =
                 "V = " + answer;
             document.getElementById("pyramidAnswer").style.color = "#0c0f46";
-            document.getElementById("pyramid-length").style.border = "2px solid #ccc";
-            document.getElementById("pyramid-width").style.border = "2px solid #ccc";
-            document.getElementById("pyramid-height").style.border = "2px solid #ccc";
+            document.getElementById("pyramid-length").style.border = "2px solid #cccccc";
+            document.getElementById("pyramid-width").style.border = "2px solid #cccccc";
+            document.getElementById("pyramid-height").style.border = "2px solid #cccccc";
         }
     }
 
@@ -262,9 +262,9 @@ function calculate() {
             var answer = (ellipsoidFormula + " " + system + cubed.sup());
             document.getElementById("ellipsoidAnswer").innerHTML = "V = " + answer;
             document.getElementById("ellipsoidAnswer").style.color = "#0c0f46";
-            document.getElementById("axis-a").style.border = "2px solid #ccc";
-            document.getElementById("axis-b").style.border = "2px solid #ccc";
-            document.getElementById("axis-c").style.border = "2px solid #ccc";
+            document.getElementById("axis-a").style.border = "2px solid #cccccc";
+            document.getElementById("axis-b").style.border = "2px solid #cccccc";
+            document.getElementById("axis-c").style.border = "2px solid #cccccc";
         }
     }
 
@@ -283,7 +283,7 @@ function calculate() {
             document.getElementById("tetrahedronAnswer").innerHTML = "V = " + answer;
             document.getElementById("tetrahedronAnswer").style.color = "#0c0f46";
             document.getElementById("tetrahedron-length").style.border =
-                "2px solid #ccc";
+                "2px solid #cccccc";
         }
     }
 }

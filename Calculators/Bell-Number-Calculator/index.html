@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bell Number Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bell Numbers Calculator</h1>
+        <p>Bell numbers count the number of ways to partition a set. This tool calculates the Bell number for a given value of n.</p>
+
+        <div class="input-section">
+            <label for="numberInput">Enter a number (n):</label>
+            <input type="number" id="numberInput" min="0" max="100" step="1">
+            <button onclick="calculateBellNumber()">Calculate Bell Number</button>
+        </div>
+
+        <div class="result-section">
+            <h2>Result:</h2>
+            <p id="bellNumberResult">Please enter n to calculate nth Bell number.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

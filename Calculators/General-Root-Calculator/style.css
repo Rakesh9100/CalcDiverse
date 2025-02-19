@@ -12,14 +12,14 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #ffffff;
     display: flex; /* Use flexbox for centering */
     flex-direction: column; /* Stack child elements vertically */
     align-items: center; /* Center children horizontally */
 }
 
 h1 {
-    color: #333;
+    color: #333333;
     margin-bottom: 20px;
 }
 
@@ -34,7 +34,7 @@ input[type="number"], button {
 }
 
 input[type="number"] {
-    background-color: #eee;
+    background-color: #eeeeee;
 }
 
 button {
@@ -51,7 +51,7 @@ button:hover {
 #result {
     margin-top: 20px;
     font-size: 18px;
-    color: #333;
+    color: #333333;
     font-weight: bold;
     text-align: center;
 }

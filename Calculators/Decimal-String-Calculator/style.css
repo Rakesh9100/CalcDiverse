@@ -9,7 +9,7 @@ body {
 }
 
 .converter {
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,7 +19,7 @@ body {
 
 .converter h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #333333;
 }
 
 .converter textarea {
@@ -28,7 +28,7 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
     transition: border-color 0.3s;
@@ -63,7 +63,7 @@ body {
 #result {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #333;
+    color: #333333;
     white-space: pre-wrap;
     text-align: left;
 }

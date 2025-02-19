@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     margin: 5rem 0;
     padding: 0;
-    color: #333;
+    color: #333333;
 }
 
 h1 {
@@ -38,7 +38,7 @@ select {
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     box-sizing: border-box;
 }
 
@@ -73,7 +73,7 @@ section {
 }
 
 h2 {
-    color: #333;
+    color: #333333;
     margin-bottom: 0.5rem;
 }
 

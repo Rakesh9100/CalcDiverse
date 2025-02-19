@@ -51,7 +51,7 @@ input {
     padding: 10px;
     font-size: 16px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     width: 80%;
     text-align: center;
     transition: background 0.3s, color 0.3s;

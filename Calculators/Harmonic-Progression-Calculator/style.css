@@ -16,7 +16,7 @@ body {
 }
 
 .calculator-card {
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 10px;
@@ -25,7 +25,7 @@ body {
 }
 
 h2 {
-    color: #333;
+    color: #333333;
 }
 
 .input-container {
@@ -36,7 +36,7 @@ h2 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #333333;
 }
 
 input, select {
@@ -63,5 +63,5 @@ button:hover {
 
 #result {
     margin-top: 20px;
-    color: #333;
+    color: #333333;
 }

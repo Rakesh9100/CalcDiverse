@@ -29,7 +29,7 @@ h1 {
     margin-bottom: 20px;
     font-size: 34px;
     text-align: center;
-    color: #333;
+    color: #333333;
     font-weight: 700;
     letter-spacing: 1px;
     background: linear-gradient(to right, #ff512f, #dd2476);
@@ -45,7 +45,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #333;
+    color: #333333;
 }
 
 input {
@@ -67,7 +67,7 @@ button {
     width: 100%;
     padding: 15px;
     background: linear-gradient(to right, #ff512f, #dd2476);
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -84,7 +84,7 @@ button:hover {
     margin-top: 20px;
     font-size: 18px;
     text-align: center;
-    color: #333;
+    color: #333333;
 }
 
 @media (max-width: 600px) {

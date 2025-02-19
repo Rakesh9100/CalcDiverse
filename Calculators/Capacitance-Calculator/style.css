@@ -22,13 +22,13 @@ body {
 h1 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: #333;
+    color: #333333;
 }
 
 label {
     display: block;
     margin: 10px 0 5px;
-    color: #555;
+    color: #555555;
     font-weight: bold;
 }
 
@@ -37,7 +37,7 @@ input[type="text"] {
     width: calc(100% - 30px);
     padding: 10px;
     margin-bottom: 10px;
-    border: 2px solid #ddd;
+    border: 2px solid #dddddd;
     border-radius: 10px;
     transition: border-color 0.3s;
 }
@@ -50,7 +50,7 @@ input[type="text"]:focus {
 
 button {
     background: linear-gradient(to right, #ff416c, #ff4b2b);
-    color: #fff;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
@@ -65,7 +65,7 @@ button:hover {
 }
 
 span {
-    color: #555;
+    color: #555555;
     font-weight: bold;
 }
 

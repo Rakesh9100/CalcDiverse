@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #091020;
-    color: #fff;
+    color: #ffffff;
 }
 
 .title {
@@ -27,7 +27,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     background-color: #1a1a1a;
-    border: 1px solid #333;
+    border: 1px solid #333333;
     border-radius: 15px;
 }
 
@@ -51,7 +51,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     background-color: #4caf50;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     margin-top: 10px;
@@ -64,10 +64,10 @@ button:hover {
 p {
     font-size: 18px;
     margin-top: 20px;
-    color: #ccc;
+    color: #cccccc;
 }
 
 #explanation {
     font-style: italic;
-    color: #888;
+    color: #888888;
 }

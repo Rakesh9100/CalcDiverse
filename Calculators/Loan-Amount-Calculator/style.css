@@ -11,7 +11,7 @@ body {
     background-color: #f4f7f6;
     line-height: 1.6;
     font-size: 1.1rem;
-    color: #333;
+    color: #333333;
 }
 
 .calc-wrapper {
@@ -61,7 +61,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,7 @@ body {
 .input-name label {
     padding-left: 0.8rem;
     font-weight: 500;
-    color: #555;
+    color: #555555;
 }
 
 .input-control input {
@@ -110,7 +110,7 @@ body {
     font-family: inherit;
     text-transform: uppercase;
     font-size: 1.1rem;
-    color: #fff;
+    color: #ffffff;
     padding: 0.7rem 1rem;
     border-radius: 5px;
     outline: 0;
@@ -133,7 +133,7 @@ body {
 .payment-info div {
     padding: 1rem 0;
     background: #089de2;
-    color: #fff;
+    color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

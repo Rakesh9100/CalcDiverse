@@ -62,14 +62,14 @@ body {
 
 label {
     font-size: 1.2em;
-    color: #333;
+    color: #333333;
     margin-bottom: 10px;
 }
 
 input {
     padding: 10px;
     font-size: 1em;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 4px;
     background-color: #f9f9f9;
     margin-bottom: 15px;
@@ -108,11 +108,11 @@ input:focus {
 .results h2 {
     margin-bottom: 10px;
     font-size: 1.5em;
-    color: #333;
+    color: #333333;
 }
 
 .results p {
     margin: 8px 0;
     font-size: 1em;
-    color: #555;
+    color: #555555;
 }

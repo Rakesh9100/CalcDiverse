@@ -1,9 +1,9 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f06, #f90, #0f0, rgb(229, 255, 0), #90f);
+    background: linear-gradient(135deg, #ff0066, #ff9900, #00ff00, rgb(229, 255, 0), #9900ff);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    color: #333;
+    color: #333333;
     margin: 0;
     padding: 0;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #333333;
     margin-bottom: 20px;
 }
 

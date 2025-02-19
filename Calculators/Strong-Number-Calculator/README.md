@@ -13,4 +13,4 @@ A Strong number is a number whose sum of the factorial of its digits equals the 
 
 ## Screenshots :-
 
-![image](https://github.com/user-attachments/assets/d02e8153-9157-402e-946f-40aa5310449a)
+![Image](https://github.com/user-attachments/assets/e06f104e-f62e-45fe-b68d-6ff0ecca4938)

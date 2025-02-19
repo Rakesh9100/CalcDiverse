@@ -62,7 +62,7 @@ form input {
     padding: 0.8rem;
     border-radius: 5px;
     border: 1px solid #424242;
-    background-color: #333;
+    background-color: #333333;
     color: #e0e0e0;
     font-size: 1rem;
     transition: border-color 0.3s ease, background-color 0.3s ease;
@@ -90,7 +90,7 @@ form input[disabled] {
     border: none;
     border-radius: 25px;
     background: linear-gradient(135deg, #6d83f2, #42a5f5);
-    color: #fff;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;

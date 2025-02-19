@@ -71,7 +71,7 @@ input:focus {
     font-size: large;
     min-width: 130px;
     height: 40px;
-    color: #fff;
+    color: #ffffff;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -81,7 +81,7 @@ input:focus {
     outline: none;
     border-radius: 5px;
     z-index: 0;
-    background: #fff;
+    background: #ffffff;
     overflow: hidden;
     border: 2px solid #57cc99;
     color: #57cc99;
@@ -92,7 +92,7 @@ input:focus {
     font-size: large;
     min-width: 130px;
     height: 40px;
-    color: #fff;
+    color: #ffffff;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -101,7 +101,7 @@ input:focus {
     display: inline-block;
     outline: none;
     z-index: 0;
-    background: #fff;
+    background: #ffffff;
     overflow: hidden;
     border: 3px solid #495057;
     border-radius: 3px;
@@ -109,7 +109,7 @@ input:focus {
 }
 
 .css-button-sliding-to-left--grey:hover {
-    color: #fff;
+    color: #ffffff;
 }
 
 .css-button-sliding-to-left--grey:hover:after {

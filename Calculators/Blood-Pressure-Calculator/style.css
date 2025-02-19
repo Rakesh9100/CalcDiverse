@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@ label {
     outline: none;
     border-radius: 15px;
     padding: 1em;
-    background-color: #ccc;
+    background-color: #cccccc;
     box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
     transition: 300ms ease-in-out;
     margin-bottom: 20px;
@@ -105,5 +105,5 @@ button:active {
 #result {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #333;
+    color: #333333;
 }

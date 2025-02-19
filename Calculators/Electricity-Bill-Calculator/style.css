@@ -16,7 +16,7 @@ body {
     border: 2px solid #3498db;
     padding: 20px;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #ffffff;
     max-width: 400px;
     width: 100%;
 }
@@ -53,7 +53,7 @@ button:hover {
 
 #result {
     margin-top: 20px;
-    color: #333;
+    color: #333333;
 }
 
 .tracking-in-expand {

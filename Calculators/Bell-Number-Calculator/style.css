@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.4em;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Paragraph Text */
+p {
+    font-size: 1.1em;
+    color: #dddddd;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Input Section */
+.input-section {
+    margin-bottom: 25px;
+}
+
+.input-label {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="number"] {
+    padding: 15px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+    background: #ffffff;
+    color: #333333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #ff5733;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Result Section */
+.result-section {
+    margin-top: 20px;
+}
+
+.result-heading {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#bellNumberResult {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effects and transitions */
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .input-section {
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1em;
+        padding: 12px 0;
+    }
+}

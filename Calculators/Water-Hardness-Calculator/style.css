@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    color: #333;
+    color: #333333;
     box-sizing: border-box;
 }
 
@@ -24,8 +24,8 @@ body {
 
 h1 {
     margin-bottom: 20px;
-    color: #333;
-    text-shadow: 1px 1px 2px #fff;
+    color: #333333;
+    text-shadow: 1px 1px 2px #ffffff;
 }
 
 .input-group {
@@ -36,14 +36,14 @@ h1 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #444;
+    color: #444444;
 }
 
 input,
 select {
     width: calc(100% - 22px);
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 8px;
     background-color: #fdfdfd;
 }

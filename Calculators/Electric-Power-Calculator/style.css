@@ -32,7 +32,7 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #333333;
 }
 
 .input-group {
@@ -43,7 +43,7 @@ input[type="number"] {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     box-sizing: border-box;
     transition: border 0.3s ease, box-shadow 0.3s ease;
@@ -84,7 +84,7 @@ button:hover {
 }
 
 #history h2 {
-    color: #333;
+    color: #333333;
 }
 
 #history-list {
@@ -97,7 +97,7 @@ button:hover {
     background: #f9f9f9;
     margin: 5px 0;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 5px;
     animation: fadeIn 0.5s ease;
 }

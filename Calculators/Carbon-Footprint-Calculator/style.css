@@ -15,7 +15,7 @@
     font-family: 'Alfa Slab One', cursive;
     position: relative;
     display: inline-block;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
     animation: waviy 1s infinite;
     animation-delay: calc(.1s * var(--i));
@@ -42,7 +42,7 @@ body {
 }
 
 h1 {
-    color: #fff;
+    color: #ffffff;
     font-weight: 100;
     margin-bottom: 50px;
     margin-top: 20px;
@@ -68,7 +68,7 @@ h1 {
 .input label {
     display: block;
     margin-bottom: 5px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .input input {
@@ -76,7 +76,7 @@ h1 {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
 }
 
 .button {
@@ -102,6 +102,6 @@ h1 {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     margin-top: 20px;
 }

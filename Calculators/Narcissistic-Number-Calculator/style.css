@@ -26,7 +26,7 @@ body {
 /* Heading Styles */
 h1 {
     margin-bottom: 20px;
-    color: #333;
+    color: #333333;
     font-size: 2.5em;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -39,7 +39,7 @@ h1 {
 input {
     padding: 15px;
     margin-top: 10px;
-    border: 2px solid #ddd;
+    border: 2px solid #dddddd;
     border-radius: 10px;
     width: 80%;
     font-size: 1.1em;
@@ -72,7 +72,7 @@ button:hover {
 p {
     margin-top: 20px;
     font-size: 1.5em;
-    color: #333;
+    color: #333333;
     background: #ff6f61;
     background: -webkit-linear-gradient(#ff6f61, #de5295);
     -webkit-background-clip: text;

@@ -17,7 +17,7 @@ body {
     text-align: center;
     width: 100%;
     max-width: 600px;
-    border: 2px solid #ccc;
+    border: 2px solid #cccccc;
 }
 
 h1 {
@@ -40,7 +40,7 @@ h1:hover {
 .option-section select {
     padding: 10px;
     margin: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     width: 100%;
     max-width: 300px;
@@ -48,14 +48,14 @@ h1:hover {
 
 .response-section {
     margin-top: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
     padding-top: 20px;
 }
 
 .input-section,
 .range-section {
     display: none;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     padding: 20px;
     border-radius: 4px;
     background-color: #f9f9f9;
@@ -65,7 +65,7 @@ h1:hover {
 input[type="number"] {
     padding: 10px;
     margin: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     width: 100%;
     max-width: 300px;

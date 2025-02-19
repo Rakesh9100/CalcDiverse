@@ -57,9 +57,9 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 6px;
     font-size: 18px;
     padding: 0 15px;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
     background: transparent;
-    color: #fff;
+    color: #ffffff;
     outline: none;
     transition: border .3s ease-in-out;
 }
@@ -68,7 +68,7 @@ input[type=number]::-webkit-outer-spin-button {
 .input-field label {
     position: absolute;
     transform: translateY(-50%);
-    color: #fff;
+    color: #ffffff;
     top: 0;
     left: 15px;
     font-size: 16px;

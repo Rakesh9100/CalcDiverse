@@ -16,7 +16,7 @@
     font-family: 'Alfa Slab One', cursive;
     position: relative;
     display: inline-block;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
     animation: waviy 1s infinite;
     animation-delay: calc(.1s * var(--i));
@@ -52,7 +52,7 @@ body {
 }
 
 h1 {
-    color: #fff;
+    color: #ffffff;
     font-weight: 100;
     margin-bottom: 50px !important;
     margin-top: -20px !important;
@@ -63,10 +63,10 @@ h1 {
 .card {
     /* width: 350px;
     padding: 20px 20px 20px 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     text-align: center;
     border-radius: 12px;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 10px 10px 11px 0px rgb(49, 42, 42);*/
     background: rgba(46, 123, 225, 0.1);
     backdrop-filter: blur(10px);
@@ -106,7 +106,7 @@ h1 {
     box-sizing: border-box;
     height: max-content;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     margin: 5px 5px;
 }
 
@@ -118,7 +118,7 @@ h1 {
     padding: 8px;
     box-sizing: border-box;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     margin: 5px 5px;
 }
 
@@ -173,7 +173,7 @@ h1 {
     border-radius: 6px;
     box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
     box-sizing: border-box;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono", monospace;

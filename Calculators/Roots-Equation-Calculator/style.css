@@ -7,7 +7,7 @@ body {
     margin: 0;
     background: linear-gradient(to right, #fc5c7d, #6a82fb);
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: #ffffff;
     overflow: auto; /* Ensure the body can scroll if content exceeds viewport */
 }
 
@@ -16,7 +16,7 @@ body {
     margin-bottom: 20px;
     margin-top: 10px;
     font-size: 2em;
-    color: #333;
+    color: #333333;
 }
 
 .container {
@@ -41,7 +41,7 @@ body {
     height: 40px;
     margin: 20px auto;
     width: calc(100% - 22px); /* Adjust width to be responsive */
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     padding: 10px;
     font-size: 1em;
@@ -53,7 +53,7 @@ body {
     height: 40px;
     margin: 10px auto;
     width: calc(100% - 22px);
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     padding: 10px;
     font-size: 1em;
@@ -62,7 +62,7 @@ body {
 
 button {
     background-color: #6a82fb;
-    color: #fff;
+    color: #ffffff;
     border: none;
     font-size: 1em;
     font-weight: bold;
@@ -85,7 +85,7 @@ button:hover {
     margin-top: 20px;
     font-size: 1.2em;
     font-weight: 700;
-    color: #333;
+    color: #333333;
     transition: color 0.3s;
 }
 

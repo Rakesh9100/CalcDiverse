@@ -6,11 +6,11 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    color: #333;
+    color: #333333;
 }
 
 .container {
-    background: #fff;
+    background: #ffffff;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -38,7 +38,7 @@ label {
 input {
     margin-top: 5px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 16px;
 }

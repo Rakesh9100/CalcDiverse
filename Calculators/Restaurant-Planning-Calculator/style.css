@@ -20,7 +20,7 @@ body {
 
 h1, h2 {
     text-align: center;
-    color: #333;
+    color: #333333;
 }
 
 form {
@@ -37,7 +37,7 @@ input, button {
     padding: 10px;
     margin-top: 5px;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 1rem;
 }
@@ -64,5 +64,5 @@ button:hover {
 #insights {
     margin-top: 20px;
     text-align: left;
-    color: #333;
+    color: #333333;
 }

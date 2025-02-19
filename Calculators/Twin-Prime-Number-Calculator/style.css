@@ -6,12 +6,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #f06, #4a90e2);
+    background: linear-gradient(135deg, #ff0066, #4a90e2);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #333;
+    color: #333333;
     overflow: hidden;
 }
 
@@ -31,7 +31,7 @@ h1 {
     margin-bottom: 20px;
     font-size: 28px;
     font-weight: 700;
-    color: #333;
+    color: #333333;
 }
 
 form {

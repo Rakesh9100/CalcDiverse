@@ -30,7 +30,7 @@ body {
 }
 
 .calculator-card h2 {
-    color: #333;
+    color: #333333;
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: bold;
@@ -39,7 +39,7 @@ body {
 }
 
 .calculator-card p {
-    color: #666;
+    color: #666666;
     margin-bottom: 20px;
     font-size: 14px;
 }
@@ -60,7 +60,7 @@ body {
 input[type="text"] {
     width: 100px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 6px;
     font-size: 16px;
     background: linear-gradient(135deg, #f3f3f3 0%, #eaeaea 100%);
@@ -81,7 +81,7 @@ input[readonly] {
 
 .operator {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 6px;
     font-size: 16px;
     background: linear-gradient(135deg, #f3f3f3 0%, #eaeaea 100%);
@@ -121,7 +121,7 @@ button:hover {
 }
 
 .reduce-checkbox label {
-    color: #333;
+    color: #333333;
     font-size: 14px;
 }
 

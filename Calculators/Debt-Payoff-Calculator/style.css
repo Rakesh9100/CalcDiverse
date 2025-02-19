@@ -9,7 +9,7 @@ body {
 }
 
 .calculator-container {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #333333;
 }
 
 .input-container {
@@ -28,20 +28,20 @@ h1 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #555;
+    color: #555555;
 }
 
 input {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 button {
     background-color: #4caf50;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -63,7 +63,7 @@ button:hover {
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    color: #333;
+    color: #333333;
 }
 
 .red {

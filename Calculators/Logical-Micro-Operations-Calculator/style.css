@@ -28,7 +28,7 @@ input {
     padding: 12px 15px;
     margin: 10px 0;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     font-size: 1em;
     box-sizing: border-box;
     transition: border-color 0.3s ease-in-out;
@@ -74,7 +74,7 @@ input:focus {
     margin-top: 25px;
     font-size: 1.3em;
     font-weight: bold;
-    color: #333;
+    color: #333333;
 }
 
 #error {

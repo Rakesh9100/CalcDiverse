@@ -156,6 +156,12 @@
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Astrological-Age-Calculator"
     },
     {
+        "title": "Astronomical Unit Calculator",
+        "description": "Calculates the astronomical distances with space facts.",
+        "link": "./Calculators/Astronomical-Unit-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Astronomical-Unit-Calculator"
+    },
+    {
         "title": "Atomic Composition Calculator",
         "description": "Calculates the number of protons, neutrons, and electrons in an atom.",
         "link": "./Calculators/Atomic-Composition-Calculator/index.html",
@@ -238,6 +244,12 @@
         "description": "Calculates absorbance, concentration, or path length using the Beer-Lambert Law.",
         "link": "./Calculators/Beer-Lambert-Law-Calculator/index.html",
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Beer-Lambert-Law-Calculator"
+    },
+    {
+        "title": "Bell Number Calculator",
+        "description": "Calculates the value of nth Bell Number.",
+        "link": "./Calculators/Bell-Number-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Bell-Number-Calculator"
     },
     {
         "title": "Beta Function Calculator",
@@ -466,7 +478,7 @@
         "description": "Calculates the gas volume or temperature using Charles' Law.",
         "link": "./Calculators/Charles-Law-Calculator/index.html",
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Charles-Law-Calculator"
-    }, 
+    },
     {
         "title": "Chi-Square Calculator",
         "description": "Calculates the Chi-Square value of the data.",
@@ -474,16 +486,21 @@
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Chi-Square-Calculator"
     },
     {
+        "title": "Chinese Remainder Theorem Calculator",
+        "description": "Solves systems of modular equations using the Chinese Remainder Theorem.",
+        "link": "./Calculators/Chinese-Remainder-Theorem-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Chinese-Remainder-Theorem-Calculator"
+    },
+    {
         "title": "Chinese Zodiac Calculator",
         "description": "Calculates the Chinese zodiac sign of the user by taking the year of birth as input.",
         "link": "./Calculators/Chinese-Zodiac-Calculator/index.html",
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Chinese-Zodiac-Calculator"
     },
-    {
-        "title": "Circle Equation Solving Calculator",
-        "description": "Calculates the radius and centre for circle by taking its equation as input.",
-        "link": "./Calculators/Circle-Equation-Solving-Calculator/index.html",
-        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Circle-Equation-Solving-Calculator"
+        "title": "Circle Equation Calculator",
+        "description": "Calculates the radius and centre of the circle by taking its equation as input.",
+        "link": "./Calculators/Circle-Equation-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Circle-Equation-Calculator"
     },
     {
         "title": "Circular Motion Calculator",
@@ -754,7 +771,7 @@
         "description": "Calculates the final concentration or volume of a solution after dilution.",
         "link": "./Calculators/Dilution-Calculator/index.html",
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Dilution-Calculator"
-    },      
+    },
     {
         "title": "Disarium Number Calculator",
         "description": "Checks the number is disarium or not and finds disarium numbers in a range.",
@@ -1452,12 +1469,6 @@
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Lottery-Odds-Calculator"
     },
     {
-        "title": "Love Calculator",
-        "description": "Calculates a percentage score of love compatibility based on names or birthdates (mostly for fun).",
-        "link": "./Calculators/Love-Calculator/index.html",
-        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Love-Calculator"
-    },
-    {
         "title": "Luminous Flux Calculator",
         "description": "Calculates the luminous flux in lumens based on the input luminous intensity and angle.",
         "link": "./Calculators/Luminous-Flux-Calculator/index.html",
@@ -1804,6 +1815,12 @@
         "description": "Calculates nPr and nCr after taking inputs as n and r.",
         "link": "./Calculators/Permutation-Combination-Calculator/index.html",
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Permutation-Combination-Calculator"
+    },
+    {
+        "title": "Perpetuity Calculator",
+        "description": "Calculates the present value of a perpetuity.",
+        "link": "./Calculators/Perpetuity-Calculator/index.html",
+        "source": "https://github.com/username/CalcDiverse/tree/main/Calculators/Perpetuity-Calculator"
     },
     {
         "title": "Pet Age Calculator",
@@ -2214,12 +2231,6 @@
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Special-Number-Calculator"
     },
     {
-        "title": "Special Number-2 Calculator",
-        "description": "Checks whether a number is a special number or not.",
-        "link": "./Calculators/Special-Number-2-Calculator/index.html",
-        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Special-Number-2-Calculator"
-    },
-    {
         "title": "Speed Calculator",
         "description": "This tool allows users to convert speeds between different units.",
         "link": "./Calculators/Speed-Calculator/index.html",
@@ -2584,6 +2595,12 @@
         "description": "Calculates the work done by the Force F in displacement D.",
         "link": "./Calculators/Work-Calculator/index.html",
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Work-Calculator"
+    },
+    {
+        "title": "Work-Life Balance Calculator",
+        "description": "Calculates the overall work-life balance by evaluating some parameters.",
+        "link": "./Calculators/Work-Life-Balance-Calculator/index.html",  
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Work-Life-Balance-Calculator"
     },
     {
         "title": "Yarn Density Calculator",

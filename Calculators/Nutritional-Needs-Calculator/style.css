@@ -3,7 +3,7 @@ body {
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #333333;
     background-image: url('assets/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@ body {
 .container {
     max-width: 600px;
     margin: 50px auto;
-    background: #fff;
+    background: #ffffff;
     padding: 2rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -26,7 +26,7 @@ h1 {
 
 .description {
     background-color: #007bff;
-    color: #fff;
+    color: #ffffff;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -46,7 +46,7 @@ input[type="number"],
 select {
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 5px;
     font-size: 16px;
     width: 100%;
@@ -56,7 +56,7 @@ select {
 button {
     padding: 12px 20px;
     background: #007bff;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -72,14 +72,14 @@ button:hover {
 .results {
     margin-top: 20px;
     padding: 15px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #dddddd;
     background: #f9f9f9;
     border-radius: 5px;
     text-align: left;
 }
 
 .results h2 {
-    color: #333;
+    color: #333333;
     margin-bottom: 10px;
 }
 

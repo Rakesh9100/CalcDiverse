@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #2980B9, #6DD5FA);
-    color: #fff;
+    color: #ffffff;
 }
 
 .calculator {
@@ -20,7 +20,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     background: linear-gradient(45deg, #1E2A39, #394A5E);
-    border: 1px solid #00f;
+    border: 1px solid #0000ff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     margin-bottom: 20px;
@@ -32,7 +32,7 @@ input {
     margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: #ffffff;
     border: none;
     border-radius: 5px;
 }
@@ -42,7 +42,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     background-color: #3498DB;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     margin-top: 10px;
@@ -57,7 +57,7 @@ button:hover {
 p {
     font-size: 18px;
     margin-top: 20px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .cuban-prime-result {
@@ -88,11 +88,11 @@ p {
 .information {
     text-align: justify;
     margin-top: 30px;
-    color: #fff;
+    color: #ffffff;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #00f;
+    border: 1px solid #0000ff;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);

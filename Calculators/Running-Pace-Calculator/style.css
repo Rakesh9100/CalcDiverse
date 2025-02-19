@@ -11,7 +11,7 @@ body {
 /* Heading styles */
 h1 {
     margin-top: 5rem; /* Top margin for heading */
-    color: #333; /* Heading text color */
+    color: #333333; /* Heading text color */
 }
 
 /* Calculator container styles */
@@ -19,7 +19,7 @@ h1 {
     text-align: center; /* Center align text */
     padding: 20px; /* Padding for calculator container */
     margin-top: 2rem; /* Top margin for calculator container */
-    border: 1px solid #ccc; /* Border */
+    border: 1px solid #cccccc; /* Border */
     border-radius: 2em; /* Border radius */
     background-color: rgb(243, 235, 253); /* Background color */
     color: rgb(44, 44, 44); /* Text color */

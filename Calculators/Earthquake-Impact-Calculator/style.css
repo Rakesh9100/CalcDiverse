@@ -26,7 +26,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     font-size: 28px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow for better visibility */
@@ -39,7 +39,7 @@ form {
 
 label {
     margin: 10px 0 5px;
-    color: #ddd;
+    color: #dddddd;
     font-size: 18px;
 }
 
@@ -47,11 +47,11 @@ input[type="number"],
 select {
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 5px;
     font-size: 16px;
     background: rgba(255, 255, 255, 0.1);
-    color: #fff;
+    color: #ffffff;
     transition: all 0.3s ease;
 }
 
@@ -63,18 +63,18 @@ select:focus {
 
 select option {
     background-color: rgba(255, 255, 255, 0.8); /* Set default background color */
-    color: #333; /* Set default text color */
+    color: #333333; /* Set default text color */
 }
 
 select option:hover {
     background-color: #007bff; /* Change background color on hover */
-    color: #fff; /* Change text color on hover */
+    color: #ffffff; /* Change text color on hover */
 }
 
 button {
     padding: 12px 20px;
     background: #007bff;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -91,20 +91,20 @@ button:hover {
     margin-top: 20px;
     display: none;
     padding: 15px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #dddddd;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
 }
 
 .results h2 {
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adding text shadow for better visibility */
 }
 
 .results p {
     margin: 5px 0;
-    color: #ddd;
+    color: #dddddd;
     font-size: 16px;
 }
 

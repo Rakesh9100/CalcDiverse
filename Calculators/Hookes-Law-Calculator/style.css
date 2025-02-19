@@ -32,7 +32,7 @@ input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
@@ -52,5 +52,5 @@ button:hover {
 #result {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #333;
+    color: #333333;
 }

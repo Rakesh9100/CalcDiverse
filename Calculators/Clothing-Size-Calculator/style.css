@@ -16,13 +16,13 @@ h1 {
     font-size: 40px;
     font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #fff;
+    color: #ffffff;
 }
 
 .card {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 15px;
-    box-shadow: #555 0 0 10px;
+    box-shadow: #555555 0 0 10px;
     padding: 20px;
     width: 600px;
 }
@@ -76,7 +76,7 @@ h1 {
 .arrow-icon {
     font-size: 18px;
     margin: 0 10px;
-    color: #555;
+    color: #555555;
     transition: transform 0.3s;
 }
 
@@ -98,12 +98,12 @@ h1 {
 }
 
 .result-box {
-    box-shadow: #555 0 0 5px;
+    box-shadow: #555555 0 0 5px;
     border-radius: 10px;
     padding: 20px;
     margin-top: 20px;
     font-family: 'Courier New', Courier, monospace;
-    color: #333;
+    color: #333333;
     font-weight: 600;
 }
 
@@ -117,7 +117,7 @@ h1 {
 }
 
 .grey {
-    color: #555;
+    color: #555555;
     font-weight: 500;
 }
 
@@ -129,14 +129,14 @@ label {
 input {
     padding: 5px;
     border-radius: 5px;
-    border: 1.5px solid #ccc;
+    border: 1.5px solid #cccccc;
     margin: 10px 5px;
 }
 
 select {
     padding: 5px;
     border-radius: 5px;
-    border: 1.5px solid #ccc;
+    border: 1.5px solid #cccccc;
 }
 
 footer {
@@ -144,7 +144,7 @@ footer {
     bottom: 10px;
     width: 100%;
     height: 50px;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;

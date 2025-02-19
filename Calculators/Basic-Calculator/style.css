@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #333;
+    background: #333333;
 }
 
 body.light {
@@ -21,7 +21,7 @@ body.light {
     position: relative;
     width: fit-content;
     height: fit-content;
-    background: #333;
+    background: #333333;
     padding: 40px 30px 30px;
     border-radius: 20px;
     box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
@@ -70,7 +70,7 @@ body.light .container {
     box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
         inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
         10px 20px 25px rgba(0, 0, 0, 0.4);
-    color: #fff;
+    color: #ffffff;
     user-select: none;
     cursor: pointer;
     font-weight: 400;
@@ -103,19 +103,19 @@ body.light .calculator span:active {
 }
 
 body.light .calculator span i {
-    color: #fff;
+    color: #ffffff;
 }
 
 body.light .calculator span.clear i,
 body.light .calculator span.result-give i {
-    color: #fff;
+    color: #ffffff;
 }
 
 body.light .calculator .clear,
 .calculator .clear {
     grid-column: span 2;
     width: 180px;
-    background: #f00;
+    background: #ff0000;
 }
 
 .clear:hover {
@@ -170,7 +170,7 @@ body.light .calculator .result-give::before,
     right: 20px;
     width: 60px;
     height: 60px;
-    background: #333;
+    background: #333333;
     font-size: 1.5em;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25), 5px 5px 30px rgba(0, 0, 0, 0.25),
         inset -2px -2px -5px rgba(0, 0, 0, 0.25),
@@ -182,7 +182,7 @@ body.light .calculator .result-give::before,
 }
 
 body.light .btn {
-    background: #000;
+    background: #000000;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), 5px 5px 30px rgba(0, 0, 0, 0.05),
         inset -2px -2px -5px rgba(0, 0, 0, 0.1),
         inset 2px 2px 5px rgba(0, 0, 0, 0.05);

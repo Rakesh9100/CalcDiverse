@@ -42,7 +42,7 @@ select {
     padding: 10px;
     margin-bottom: 15px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.8);
 }

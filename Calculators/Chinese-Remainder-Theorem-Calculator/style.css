@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(assets/background.jpg);
+    background-size: cover;
+    color: white;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#inputs .equation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#inputs .equation input {
+    margin: 0 5px;
+    padding: 5px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#inputs .equation span {
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+}
+
+.add-btn,
+.solve-btn {
+    display: block;
+    margin: 20px auto;
+    background: #6200ea;
+    color: white;
+}
+
+.remove-btn {
+    background: red;
+    color: white;
+}
+
+.output {
+    margin-top: 20px;
+    padding: 10px;
+    background: lightblue;
+    color: black;
+    border-radius: 5px;
+}

@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #333;
+    color: #333333;
     height: 100%;
     min-height: 100vh;
 }
@@ -30,7 +30,7 @@ h1 {
 .formula {
     font-size: 16px;
     margin-bottom: 30px;
-    color: #555;
+    color: #555555;
 }
 
 label {
@@ -45,7 +45,7 @@ input {
     padding: 10px;
     margin-bottom: 15px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
@@ -68,5 +68,5 @@ button:hover {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: #333333;
 }

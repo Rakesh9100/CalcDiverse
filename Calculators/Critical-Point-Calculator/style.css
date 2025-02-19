@@ -11,7 +11,7 @@ body {
 
 .container {
     max-width: 400px;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -30,14 +30,14 @@ h1 {
 .input-group label {
     display: block;
     margin-bottom: 10px;
-    color: #555;
+    color: #555555;
 }
 
 .input-group input {
     width: calc(100% - 20px);
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     outline: none;
 }
@@ -60,21 +60,21 @@ button:hover {
 #results {
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
 }
 
 #results h2 {
-    color: #555;
-    border-bottom: 1px solid #ccc;
+    color: #555555;
+    border-bottom: 1px solid #cccccc;
     padding-bottom: 10px;
 }
 
 #results p {
     margin-bottom: 10px;
-    color: #777;
+    color: #777777;
 }
 
 #results span {
     font-weight: bold;
-    color: #333;
+    color: #333333;
 }

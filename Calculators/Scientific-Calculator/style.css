@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #2e2e2e;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ body {
 }
 
 .manual {
-    background-color: #333;
+    background-color: #333333;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
@@ -45,7 +45,7 @@ body {
 }
 
 .calculator-box {
-    background-color: #444;
+    background-color: #444444;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -66,8 +66,8 @@ body {
     font-size: 2rem;
     padding: 10px;
     text-align: right;
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
 }
@@ -79,7 +79,7 @@ body {
 }
 
 button {
-    background-color: #555; /* All buttons black */
+    background-color: #555555; /* All buttons black */
     border: none;
     color: white;
     font-size: 1.5rem;
@@ -89,11 +89,11 @@ button {
 }
 
 button:hover {
-    background-color: #888;
+    background-color: #888888;
 }
 
 button:active {
-    background-color: #444;
+    background-color: #444444;
 }
 
 button:focus {
@@ -101,7 +101,7 @@ button:focus {
 }
 
 button:nth-child(4n), button:nth-child(5), button:nth-child(6), button:nth-child(7), button:nth-child(8), button:nth-child(9) {
-    background-color: #555; /* All numbers and operators are black */
+    background-color: #555555; /* All numbers and operators are black */
 }
 
 /* Only the DEL, C, and = buttons in orange */

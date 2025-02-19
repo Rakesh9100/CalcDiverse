@@ -17,21 +17,21 @@ body {
     max-width: 400px;
     min-width: 400px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 h1 {
-    color: #333;
+    color: #333333;
 }
 
 label {
     display: block;
     margin-top: 10px;
     text-align: left;
-    color: #555;
+    color: #555555;
 }
 
 select,
@@ -40,7 +40,7 @@ input {
     padding: 10px;
     margin: 5px 0;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
 }
 
@@ -67,7 +67,7 @@ button:hover {
 #result {
     margin-top: 20px;
     font-weight: bold;
-    color: #333;
+    color: #333333;
 }
 
 .tracking-in-expand {

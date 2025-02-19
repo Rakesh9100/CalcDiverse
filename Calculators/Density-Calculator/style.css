@@ -9,7 +9,7 @@ body {
 }
 
 .calculator {
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -18,7 +18,7 @@ body {
 }
 
 .calculator h1 {
-    color: #333;
+    color: #333333;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -27,14 +27,14 @@ body {
     display: block;
     margin: 10px 0 5px;
     font-size: 14px;
-    color: #555;
+    color: #555555;
 }
 
 .calculator input, .calculator select {
     width: 80%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -42,7 +42,7 @@ body {
 .calculator button {
     padding: 10px 20px;
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     background-color: #4caf50;
     border: none;
     border-radius: 5px;
@@ -57,5 +57,5 @@ body {
 .result {
     margin-top: 20px;
     font-size: 18px;
-    color: #555;
+    color: #555555;
 }

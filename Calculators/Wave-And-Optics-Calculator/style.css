@@ -27,7 +27,7 @@ h1 {
     width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
 }
 
@@ -69,6 +69,6 @@ button:hover {
 canvas {
     display: block;
     margin: 20px auto;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
 }

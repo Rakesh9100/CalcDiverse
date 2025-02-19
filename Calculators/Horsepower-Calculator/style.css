@@ -2,9 +2,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #000, #1E1E1E);
+    background: linear-gradient(to right, #000000, #1E1E1E);
     /* Black gradient */
-    color: #ddd;
+    color: #dddddd;
     /* Light gray text */
     overflow: hidden;
     /* Hide potential scrollbars */
@@ -35,7 +35,7 @@ h1 {
 .calculator label {
     margin-bottom: 5px;
     display: block;
-    color: #ddd;
+    color: #dddddd;
     /* Light gray text */
 }
 
@@ -53,7 +53,7 @@ h1 {
     /* Increased font size for better readability */
     background-color: rgba(222, 211, 211, 0.21);
     /* Slightly transparent black */
-    color: #ddd;
+    color: #dddddd;
     /* Light gray text */
     text-shadow: 0 0 2px #00ffff;
     /* Text glow effect */
@@ -64,7 +64,7 @@ h1 {
     cursor: pointer;
     background-color: rgba(0, 255, 255, 0.2);
     /* Semi-transparent neon blue */
-    color: #ddd;
+    color: #dddddd;
     /* Light gray text */
     text-shadow: 0 0 2px #00aaff;
     /* Text glow effect */

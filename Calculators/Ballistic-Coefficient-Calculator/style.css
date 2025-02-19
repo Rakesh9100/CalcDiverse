@@ -41,7 +41,7 @@ body {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 1rem;
 }
@@ -54,7 +54,7 @@ body {
 .info {
     display: none;
     font-size: 0.9rem;
-    color: #555;
+    color: #555555;
     margin-top: 5px;
     position: absolute;
     /* top: -50%; */
@@ -62,7 +62,7 @@ body {
     right: 0;
     background: #f9f9f9;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     z-index: 10;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -76,7 +76,7 @@ body {
     width: 100%;
     padding: 10px;
     background-color: #007BFF;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     font-size: 1rem;

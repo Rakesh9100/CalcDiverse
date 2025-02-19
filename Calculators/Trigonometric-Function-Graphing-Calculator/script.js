@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const { x, y } = this.orientation;
                 const { width, height } = this.canvas;
 
-                this.c.strokeStyle = "#000";
+                this.c.strokeStyle = "#000000";
                 this.c.lineWidth = 2;
 
                 if (x <= width) {

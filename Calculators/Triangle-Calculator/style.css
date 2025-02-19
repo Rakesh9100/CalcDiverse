@@ -45,8 +45,8 @@ input[type="number"]::-webkit-outer-spin-button {
 input {
     font-family: 'Montserrat', sans-serif;
     border: 2px solid black;
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     padding: 8px;
     margin-left: 2px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -56,12 +56,12 @@ input {
 
 input::placeholder {
     font-family: 'Montserrat', sans-serif;
-    color: #999;
+    color: #999999;
     margin-left: 2px;
 }
 
 input:hover {
-    background-color: #444;
+    background-color: #444444;
 }
 
 label {
@@ -100,8 +100,8 @@ label {
 
 button {
     font-family: 'Montserrat', sans-serif;
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     border: 2px solid black;
     padding: 10px 20px;
     cursor: pointer;
@@ -112,16 +112,16 @@ button {
 
 button:hover {
     filter: grayscale(0%);
-    background-color: #444;
-    color: #eee;
-    border-color: #eee;
+    background-color: #444444;
+    color: #eeeeee;
+    border-color: #eeeeee;
     transform: scale(1.05);
 }
 
 button:active {
-    background-color: #222;
-    border-color: #555;
-    color: #ccc;
+    background-color: #222222;
+    border-color: #555555;
+    color: #cccccc;
     transform: scale(0.95);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -143,11 +143,11 @@ button:active {
     align-items: center;
     height: 100vh;
     background: #e6e6e670;
-    border: 2px solid #333;
+    border: 2px solid #333333;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #333;
+    color: #333333;
     width: 70%;
     margin: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -156,8 +156,8 @@ button:active {
 #angleType {
     font-family: 'Montserrat', sans-serif;
     border: 2px solid black;
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
     padding: 8px;
     margin-left: 2px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -167,6 +167,6 @@ button:active {
 
 #angleType option {
     font-family: 'Montserrat', sans-serif;
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #ffffff;
 }

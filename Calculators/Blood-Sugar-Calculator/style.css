@@ -9,8 +9,8 @@ body {
 }
 
 #box {
-    border: 1px solid #fff;
-    background-color: #fff;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
 }
@@ -22,7 +22,7 @@ body {
 #result {
     background-color: #f7f7f7;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 10px;
 }
 

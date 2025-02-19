@@ -54,7 +54,7 @@ body {
 
 .main {
     text-align: center;
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -63,7 +63,7 @@ body {
 .header {
     margin-bottom: 20px;
     font-size: 30px;
-    color: #333;
+    color: #333333;
 }
 
 .selectCalculator {
@@ -72,15 +72,15 @@ body {
 
 label {
     font-size: 18px;
-    color: #555;
+    color: #555555;
 }
 
 select {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: #ffffff;
     transition: border-color 0.3s ease;
 }
 

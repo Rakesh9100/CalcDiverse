@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url(./assets/background.jpg);
-    color: #333;
+    color: #333333;
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@ body {
 
 h1,
 h2 {
-    color: #fff;
+    color: #ffffff;
     background-color: #3498db;
     padding: 10px;
     border: 2px solid #2980b9;
@@ -22,7 +22,7 @@ h2 {
 }
 
 .calculator-container {
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
@@ -47,7 +47,7 @@ input {
 
 button {
     background-color: #3498db;
-    color: #fff;
+    color: #ffffff;
     padding: 10px;
     border: none;
     border-radius: 5px;

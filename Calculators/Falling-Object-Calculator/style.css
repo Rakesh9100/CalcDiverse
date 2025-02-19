@@ -6,7 +6,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: linear-gradient(to right, #6b11cbb6, #fc2594);
-    color: #333;
+    color: #333333;
     overflow: auto;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #333333;
     margin-bottom: 30px;
     font-size: 3em;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
@@ -48,7 +48,7 @@ input[type="number"] {
     width: calc(100% - 22px);
     padding: 15px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 8px;
     box-sizing: border-box;
     font-size: 18px;
