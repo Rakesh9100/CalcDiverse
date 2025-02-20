@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gaming Efficiency Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Advanced Gaming Efficiency Calculator</h2>
+        <label>Kills:</label>
+        <input type="number" id="kills" placeholder="Enter kills">
+        <label>Deaths:</label>
+        <input type="number" id="deaths" placeholder="Enter deaths">
+        <label>Assists:</label>
+        <input type="number" id="assists" placeholder="Enter assists">
+        <label>Headshots:</label>
+        <input type="number" id="headshots" placeholder="Enter headshots">
+        <label>Time Played (minutes):</label>
+        <input type="number" id="time" placeholder="Enter time in minutes">
+        <button onclick="calculateEfficiency()">Calculate Efficiency</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
