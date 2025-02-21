@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Mathematical Calculator</title>
-   <link rel="stylesheet" href="style.css">
+    <title>Integration Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1>Advanced Mathematical Calculator</h1>
+            <h1>Integration Calculator</h1>
         </header>
 
         <div class="tabs">
-            <button class="tab active" data-tab="integration">Integration</button>
-            <button class="tab" data-tab="differentiation">Differentiation</button>
-            <button class="tab" data-tab="series">Series</button>
-            <button class="tab" data-tab="formulas">Common Formulas</button>
+            <button class="tab active" data-tab="calculator">Calculator</button>
+            <button class="tab" data-tab="examples">Examples</button>
+            <button class="tab" data-tab="methods">Integration Methods</button>
+            <button class="tab" data-tab="formulas">Common Integrals</button>
         </div>
 
-        <div class="tab-content active" id="integration">
+        <div class="tab-content active" id="calculator">
             <div class="card">
                 <div class="input-group">
                     <label for="integration-type">Integration Type:</label>
@@ -48,64 +48,57 @@
             </div>
         </div>
 
-        <div class="tab-content" id="differentiation">
+        <div class="tab-content" id="examples">
             <div class="card">
-                <div class="input-group">
-                    <label for="diff-function">Function to Differentiate:</label>
-                    <input type="text" id="diff-function" placeholder="Enter function (e.g., x^2)">
-                </div>
-                <div class="input-group">
-                    <label for="diff-point">Point of Differentiation:</label>
-                    <input type="number" id="diff-point" placeholder="Enter x value">
-                </div>
-                <button class="button" onclick="calculateDerivative()">Calculate Derivative</button>
-                <div class="result">
-                    Result: <span id="diff-result">---</span>
-                </div>
+                <h3>Integration Examples</h3>
+                <ul class="examples-list">
+                    <li>
+                        <strong>Single Integration:</strong>
+                        <p>Function: x*x (from 0 to 1)</p>
+                        <p>Result: 0.333333 (approximately ⅓)</p>
+                    </li>
+                    <li>
+                        <strong>Double Integration:</strong>
+                        <p>Function: x*y (x: 0 to 1, y: 0 to 1)</p>
+                        <p>Result: 0.250000 (approximately ¼)</p>
+                    </li>
+                    <li>
+                        <strong>Trigonometric:</strong>
+                        <p>Function: Math.sin(x) (from 0 to Math.PI)</p>
+                        <p>Result: 2.000000</p>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <div class="tab-content" id="series">
+        <div class="tab-content" id="methods">
             <div class="card">
-                <div class="input-group">
-                    <label for="series-type">Series Type:</label>
-                    <select id="series-type">
-                        <option value="arithmetic">Arithmetic</option>
-                        <option value="geometric">Geometric</option>
-                    </select>
+                <h3>Numerical Integration Methods</h3>
+                <div class="method-description">
+                    <h4>Trapezoidal Rule</h4>
+                    <p>This calculator uses the trapezoidal rule for numerical integration. It approximates the definite integral by calculating the area under a curve using trapezoids.</p>
                 </div>
-                <div class="input-group">
-                    <label for="series-terms">Number of Terms:</label>
-                    <input type="number" id="series-terms" min="1" value="10">
-                </div>
-                <div class="input-group">
-                    <label for="series-first">First Term:</label>
-                    <input type="number" id="series-first" value="1">
-                </div>
-                <div class="input-group">
-                    <label for="series-ratio">Common Difference/Ratio:</label>
-                    <input type="number" id="series-ratio" value="1">
-                </div>
-                <button class="button" onclick="calculateSeries()">Calculate Series</button>
-                <div class="result">
-                    Sum: <span id="series-result">---</span>
+                <div class="method-description">
+                    <h4>Multiple Integration</h4>
+                    <p>For double and triple integrals, we use multiple applications of the trapezoidal rule across each dimension.</p>
                 </div>
             </div>
         </div>
 
         <div class="tab-content" id="formulas">
             <div class="card">
-                <h3>Common Mathematical Formulas</h3>
+                <h3>Common Integration Formulas</h3>
                 <ul class="formula-list">
-                    <li>Area of Circle: πr²</li>
-                    <li>Volume of Sphere: (4/3)πr³</li>
-                    <li>Quadratic Formula: x = (-b ± √(b² - 4ac)) / 2a</li>
-                    <li>Pythagorean Theorem: a² + b² = c²</li>
+                    <li>∫ x<sup>n</sup> dx = (x<sup>n+1</sup>)/(n+1) + C</li>
+                    <li>∫ sin(x) dx = -cos(x) + C</li>
+                    <li>∫ cos(x) dx = sin(x) + C</li>
+                    <li>∫ e<sup>x</sup> dx = e<sup>x</sup> + C</li>
+                    <li>∫ 1/x dx = ln|x| + C</li>
                 </ul>
             </div>
         </div>
     </div>
 
-   <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

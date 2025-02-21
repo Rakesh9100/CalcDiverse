@@ -1,33 +1,42 @@
-# Advanced Mathematical Calculator
+# Integration Calculator
 
-A comprehensive web-based calculator for mathematical operations including integration, differentiation, and series calculations. Built with vanilla JavaScript, HTML, and CSS.
+A focused web-based calculator specifically designed for mathematical integration calculations. Built with vanilla JavaScript, HTML, and CSS.
 
 ## Features
 
-### 1. Multiple Calculation Types
-- **Integration Calculator**
-  - Single integration
-  - Double integration
-  - Triple integration
-  - Supports various mathematical functions
+### 1. Integration Types
+- **Single Integration**
+  - Definite integral calculation
+  - Support for various mathematical functions
+  - Numerical integration using trapezoidal rule
 
-- **Differentiation Calculator**
-  - Numerical differentiation
-  - Point-based calculation
-  - Support for common mathematical functions
+- **Double Integration**
+  - Two-dimensional integration
+  - Rectangle method implementation
+  - Support for multivariable functions
 
-- **Series Calculator**
-  - Arithmetic series
-  - Geometric series
-  - Sum calculation
-  - Term-by-term display
+- **Triple Integration**
+  - Three-dimensional integration
+  - Volume calculations
+  - Support for complex spatial functions
 
-- **Common Formulas**
-  - Quick reference for mathematical formulas
-  - Basic geometric formulas
-  - Common equations
+### 2. Additional Tools
+- **Examples Tab**
+  - Sample integration problems
+  - Step-by-step solutions
+  - Common function examples
 
-### 2. User Interface
+- **Methods Tab**
+  - Integration method explanations
+  - Numerical integration techniques
+  - Algorithm descriptions
+
+- **Common Integrals**
+  - Standard integral formulas
+  - Integration rules
+  - Quick reference guide
+
+### 3. User Interface
 - Clean, modern design
 - Tab-based navigation
 - Responsive layout
@@ -35,15 +44,14 @@ A comprehensive web-based calculator for mathematical operations including integ
 - Gradient styling
 - Mobile-friendly design
 
-### 3. Technical Features
+### 4. Technical Features
 - Input validation
 - Error handling
-- Keyboard shortcuts
+- Keyboard shortcuts (Ctrl+Enter)
 - Local storage for calculation history
 - Tooltips for user guidance
 - Example functions
 - Loading states
-
 
 ## Usage
 
@@ -54,29 +62,21 @@ A comprehensive web-based calculator for mathematical operations including integ
 4. Click "Calculate Integral" or press Ctrl+Enter
 
 Example functions:
-- `x * x` (x squared)
-- `Math.sin(x)`
-- `Math.exp(x)`
-
-### Differentiation Calculator
-1. Enter the function to differentiate
-2. Specify the point of differentiation
-3. Click "Calculate Derivative" or press Ctrl+Enter
-
-### Series Calculator
-1. Select series type (Arithmetic/Geometric)
-2. Enter number of terms
-3. Specify first term and common difference/ratio
-4. Click "Calculate Series" or press Ctrl+Enter
+```javascript
+x * x             // x squared
+Math.sin(x)       // sine function
+Math.exp(x)       // exponential function
+x * y             // double integral
+x * y * z         // triple integral
+Math.sin(x) * y   // multivariable function
+```
 
 ## Technical Details
 
 ### File Structure
 ```
-advanced-mathematical-calculator/
-├── index.html
-├── style.css
-├── script.js
+integration-calculator/
+├── index.html    // Contains HTML, CSS, and JavaScript
 └── README.md
 ```
 
@@ -100,7 +100,7 @@ The calculator supports various JavaScript Math object functions:
 - Error handling for invalid inputs
 
 ## Performance Considerations
-- Efficient calculation algorithms
+- Efficient numerical integration algorithms
 - Responsive design optimizations
 - Minimal dependencies
 - Local storage management
@@ -108,34 +108,35 @@ The calculator supports various JavaScript Math object functions:
 ## Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch (`git checkout -b feature/NewFeature`)
+3. Commit your changes (`git commit -m 'Add some NewFeature'`)
+4. Push to the branch (`git push origin feature/NewFeature`)
 5. Open a Pull Request
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
-- Inspired by various mathematical calculation tools
-- Uses pure JavaScript for calculations
+- Uses trapezoidal rule for numerical integration
+- Pure JavaScript implementation
 - Modern UI design principles
 
 ## Future Enhancements
-- Additional mathematical functions
-- More calculation types
-- Graph plotting capabilities
-- Export/import calculation history
-- Theme customization
-- Advanced formula editor
+- Additional integration methods
+- Graph visualization
 - Step-by-step solution display
+- More example problems
+- Advanced formula editor
+- Multiple language support
+- Dark theme option
+- PDF export of results
 
 ## Support
 For support, please open an issue in the repository or contact the maintainers.
 
 ## Authors
-- Your Name
+- Saksham Jain
 - Contributors welcome
 
 ---
-Made with ❤️ for mathematics enthusiasts
+Made with ❤️ for calculus enthusiasts
