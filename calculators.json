@@ -1314,6 +1314,12 @@
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Inflation-Calculator"
     },
     {
+        "title": "Integration Calculator",
+        "description": "Calculates the single, double, or triple integrals of a function within a given interval.",
+        "link": "./Calculators/Integration-Calculator/index.html",
+        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Integration-Calculator"
+    },
+    {
         "title": "Intelligence Calculator",
         "description": "Shows the intelligence using his/her IQ.",
         "link": "./Calculators/Intelligence-Calculator/index.html",
@@ -2638,11 +2644,5 @@
         "description": "Provides the user's zodiac sign by taking the date of birth as input.",
         "link": "./Calculators/Zodiac-Sign-Calculator/index.html",
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Zodiac-Sign-Calculator"
-    },
-    {
-        "title": "Integration Calculator",
-        "description": "Calculates the definite integral of a function within a given interval. Enter the function, lower limit, and upper limit to calculate the integral.",
-        "link": "./Calculators/Integration-Calculator/index.html",
-        "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Integration-Calculator"
     }
 ]

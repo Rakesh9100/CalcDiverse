@@ -1,8 +1,16 @@
-# Integration Calculator
+# <p align="center">Integration Calculator</p>
+
+## Description :-
 
 A focused web-based calculator specifically designed for mathematical integration calculations. Built with vanilla JavaScript, HTML, and CSS.
 
-## Features
+## Tech Stacks :-
+
+- HTML
+- CSS
+- JavaScript
+
+## Features :-
 
 ### 1. Integration Types
 - **Single Integration**
@@ -53,7 +61,7 @@ A focused web-based calculator specifically designed for mathematical integratio
 - Example functions
 - Loading states
 
-## Usage
+## Usage :-
 
 ### Integration Calculator
 1. Select integration type (Single/Double/Triple)
@@ -71,21 +79,6 @@ x * y * z         // triple integral
 Math.sin(x) * y   // multivariable function
 ```
 
-## Technical Details
-
-### File Structure
-```
-integration-calculator/
-├── index.html    // Contains HTML, CSS, and JavaScript
-└── README.md
-```
-
-### Browser Support
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
 ### Mathematical Functions
 The calculator supports various JavaScript Math object functions:
 - `Math.sin()`, `Math.cos()`, `Math.tan()`
@@ -93,35 +86,19 @@ The calculator supports various JavaScript Math object functions:
 - `Math.pow()`, `Math.sqrt()`
 - Basic arithmetic operations (+, -, *, /)
 
-## Security Features
+## Security Features :-
 - Input validation for all numerical entries
 - Function validation to prevent harmful code execution
 - Sanitized function evaluation
 - Error handling for invalid inputs
 
-## Performance Considerations
+## Performance Considerations :-
 - Efficient numerical integration algorithms
 - Responsive design optimizations
 - Minimal dependencies
 - Local storage management
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/NewFeature`)
-3. Commit your changes (`git commit -m 'Add some NewFeature'`)
-4. Push to the branch (`git push origin feature/NewFeature`)
-5. Open a Pull Request
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-- Uses trapezoidal rule for numerical integration
-- Pure JavaScript implementation
-- Modern UI design principles
-
-## Future Enhancements
+## Future Enhancements :-
 - Additional integration methods
 - Graph visualization
 - Step-by-step solution display
@@ -131,12 +108,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Dark theme option
 - PDF export of results
 
-## Support
-For support, please open an issue in the repository or contact the maintainers.
+## Screenshots :-
 
-## Authors
-- Saksham Jain
-- Contributors welcome
+![image](https://github.com/user-attachments/assets/1811b4f5-3116-48de-a543-c21110222e58)
 
----
-Made with ❤️ for calculus enthusiasts
+![image](https://github.com/user-attachments/assets/079b3efb-c9b9-430d-92b2-1eec66c5860c)
+
+![image](https://github.com/user-attachments/assets/9f0ac0a9-e671-4345-9879-f15fe24bb2c7)
+
+![image](https://github.com/user-attachments/assets/6b49e644-cc8b-4bb7-bdc1-5b9435ef2176)
