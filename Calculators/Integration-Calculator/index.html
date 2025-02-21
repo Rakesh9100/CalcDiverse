@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Integration Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Integration Calculator</h1>
+        </header>
+
+        <div class="tabs">
+            <button class="tab active" data-tab="calculator">Calculator</button>
+            <button class="tab" data-tab="examples">Examples</button>
+            <button class="tab" data-tab="methods">Integration Methods</button>
+            <button class="tab" data-tab="formulas">Common Integrals</button>
+        </div>
+
+        <div class="tab-content active" id="calculator">
+            <div class="card">
+                <div class="input-group">
+                    <label for="integration-type">Integration Type:</label>
+                    <select id="integration-type" onchange="updateLimitsDisplay()">
+                        <option value="single">Single Integration</option>
+                        <option value="double">Double Integration</option>
+                        <option value="triple">Triple Integration</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="function">Function:</label>
+                    <input type="text" id="function" placeholder="Enter your function (e.g., x*x, Math.sin(x))">
+                    <div class="helper-text">Use JavaScript math syntax. For example: Math.sin(x), Math.exp(x), x*y, etc.</div>
+                </div>
+
+                <div id="limits-container" class="limits-container">
+                    <!-- Limits will be dynamically added here -->
+                </div>
+
+                <button class="button" onclick="calculateIntegral()">Calculate Integral</button>
+
+                <div class="result">
+                    Result: <span id="result">---</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="examples">
+            <div class="card">
+                <h3>Integration Examples</h3>
+                <ul class="examples-list">
+                    <li>
+                        <strong>Single Integration:</strong>
+                        <p>Function: x*x (from 0 to 1)</p>
+                        <p>Result: 0.333333 (approximately ⅓)</p>
+                    </li>
+                    <li>
+                        <strong>Double Integration:</strong>
+                        <p>Function: x*y (x: 0 to 1, y: 0 to 1)</p>
+                        <p>Result: 0.250000 (approximately ¼)</p>
+                    </li>
+                    <li>
+                        <strong>Trigonometric:</strong>
+                        <p>Function: Math.sin(x) (from 0 to Math.PI)</p>
+                        <p>Result: 2.000000</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab-content" id="methods">
+            <div class="card">
+                <h3>Numerical Integration Methods</h3>
+                <div class="method-description">
+                    <h4>Trapezoidal Rule</h4>
+                    <p>This calculator uses the trapezoidal rule for numerical integration. It approximates the definite integral by calculating the area under a curve using trapezoids.</p>
+                </div>
+                <div class="method-description">
+                    <h4>Multiple Integration</h4>
+                    <p>For double and triple integrals, we use multiple applications of the trapezoidal rule across each dimension.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="formulas">
+            <div class="card">
+                <h3>Common Integration Formulas</h3>
+                <ul class="formula-list">
+                    <li>∫ x<sup>n</sup> dx = (x<sup>n+1</sup>)/(n+1) + C</li>
+                    <li>∫ sin(x) dx = -cos(x) + C</li>
+                    <li>∫ cos(x) dx = sin(x) + C</li>
+                    <li>∫ e<sup>x</sup> dx = e<sup>x</sup> + C</li>
+                    <li>∫ 1/x dx = ln|x| + C</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
