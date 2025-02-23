@@ -33,7 +33,9 @@
 - [Getting Started💥](#getting-started)
 - [Contributing Guidelines📑](#contributing-guidelines)
 - [Code Of Conduct📑](#code-of-conduct)
+- [Open Source Programs🥳](#this-repo-has-been-part-of-the-following-open-source-programs)
 - [Project Admin⚡](#project-admin)
+- [Project Contributors🫂](#project-contributors)
 - [Contributing is fun🧡](#contributing-is-fun)
 <br>
 
@@ -58,10 +60,7 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 
 <h2>Overview⭐</h2>
 
-<h3>Live Project -- (https://calcdiverse.netlify.app/)</h3><br>
-
-<br>
-<p align="right">(<a href="#top">back to top</a>)</p>
+<h3>Live Project --> (https://calcdiverse.netlify.app)</h3>
 
 <h3>Home/Main Page :-</h3>
 
@@ -77,7 +76,7 @@ CalcDiverse is a customized collection of calculators for various aspects of mat
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/f866c372-9b21-428e-a9b1-41b7b8907521)<br><br>
 <h3>FAQ Page :-</h3>
 
-![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/6b329d86-4ea1-4fc5-833f-08edf80b0459)
+![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/6b329d86-4ea1-4fc5-833f-08edf80b0459)<br><br>
 <h3>Contact Page :-</h3>
 
 ![image](https://github.com/Rakesh9100/CalcDiverse/assets/73993775/c97c96ff-4468-44bf-b01a-f8f944d07b1e)
@@ -103,7 +102,7 @@ git clone https://github.com/<your-github-username>/CalcDiverse.git
   - Put Your calculators code files in your newly created folder.
   - Add a `README.md` file in your new folder which includes Description, Tech Stacks, and Screenshots of that calculator.
   - Add your calculator's HTML file link in the main `index.html` by continuing a box section.
-  
+
 - Navigate to the project directory.
 ```
 cd CalcDiverse
