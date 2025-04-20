@@ -1,0 +1,60 @@
+h1{
+  text-align: center;
+  background-color: bisque;
+  font-weight: bold;
+}
+
+img {
+  display :block;
+  margin-left : 30%;
+  margin-right: 30%;
+  width : 40%;
+}
+
+body{
+  background-color: rgb(169, 209, 210);
+}
+
+input[type=text]{
+  border-radius: 5px;
+  border-width : 2px;
+  border-color: black;
+}
+
+.line{
+  background-color: rgb(190, 225, 228);
+  left : 0;
+  text-align: justify;
+  padding: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+.point {
+  background-color: rgb(190, 225, 228);
+  text-align: justify;
+  padding: 10px;
+  margin-left:33%;
+  margin-right: 33%;
+  padding: 10px;
+}
+
+#final{
+  margin-top : 50px;
+  margin-left : 45%;
+  margin-bottom: 50px;
+  margin-right: 45%;
+  display : inline-block;
+  font-size: 20px;
+}
+
+#output{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: antiquewhite;
+  margin-left: 30%;
+  margin-right: 30%;
+}
