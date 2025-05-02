@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shortest Distance Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📏 Shortest Distance From a Point to a Line</h1>
+        <img src="assets/image.png" alt="Distance Diagram">
+        
+        <div class="form-section">
+            <h2>Enter Line Parameters (ax + by + cz + d = 0)</h2>
+            <div class="inputs">
+                <input id="a" type="text" placeholder="Enter a">
+                <input id="b" type="text" placeholder="Enter b">
+                <input id="c" type="text" placeholder="Enter c">
+                <input id="d" type="text" placeholder="Enter d">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Enter Point Coordinates (p, q, r)</h2>
+            <div class="inputs">
+                <input id="p" type="text" placeholder="Enter p">
+                <input id="q" type="text" placeholder="Enter q">
+                <input id="r" type="text" placeholder="Enter r">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="final" onclick="calculate()">Calculate</button>
+            <button id="clear" onclick="clearFields()">Clear</button>
+            <button id="reset" onclick="resetAll()">Reset</button>
+        </div>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
