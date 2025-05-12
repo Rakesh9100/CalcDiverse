@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffffdd;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0e3c75;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    margin: 20px 0;
+}
+
+.form-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0b2f56;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.inputs input[type="text"] {
+    flex: 1 1 calc(50% - 15px);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #0e3c75;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.inputs input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #eef6ff;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#final {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 30px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#final:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #fffbe0;
+    border: 2px solid #f0d000;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .inputs input[type="text"] {
+        flex: 1 1 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #final {
+        font-size: 1rem;
+    }
+
+    .form-section h2 {
+        font-size: 1rem;
+    }
+
+    #output {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Of Squares Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Number of Squares in Grid</h1>
+        <img src="assets/image.png" alt="Grid Diagram">
+        <div class="form-section">
+            <h2>Enter number of rows</h2>
+            <div class="inputs">
+                <input id="r" type="text" placeholder="Number of rows">
+            </div>
+            <h2>Enter number of columns</h2>
+            <div class="inputs">
+                <input id="c" type="text" placeholder="Number of columns">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="final" onclick="calculate()">Calculate</button>
+            <button id="clear" onclick="clearFields()">Clear</button>
+            <button id="reset" onclick="resetAll()">Reset</button>
+        </div>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
