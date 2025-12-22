@@ -1884,6 +1884,12 @@
         "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Plant-Watering-Calculator"
     },
     {
+    "title": "Polynomial Regression Calculator",
+    "description": "Calculates and displays the polynomial equation of a selected degree along with a plot of the data points and the regression curve.",
+    "link": "./Calculators/Polynomial-Regression-Calculator/index.html",
+    "source": "https://github.com/Rakesh9100/CalcDiverse/tree/main/Calculators/Polynomial-Regression-Calculator"
+    },
+    {
         "title": "Polynomial Roots Calculator",
         "description": "Calculates the real and imaginary roots of a given polynomial up to degree 2-4.",
         "link": "./Calculators/Polynomial-Roots-Calculator/",
