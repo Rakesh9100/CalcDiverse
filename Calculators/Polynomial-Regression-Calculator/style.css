@@ -21,7 +21,7 @@ body {
     height: auto;
     padding: 2rem;
 
-    background: rgba(255, 255, 255, 0.1); /* slight transparency */
+    background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(112, 128, 178, 0.6);
     border-radius: 12px;
 
@@ -31,12 +31,23 @@ body {
 
 h1 {
     margin-bottom: 20px;
-    font-size: clamp(28px, 5vw, 38px); /* responsive font size */
+    font-size: clamp(28px, 5vw, 38px);
 }
 
 .form-group {
     margin-bottom: 15px;
     font-size: clamp(16px, 2.5vw, 22px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+label {
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
 }
 
 input {
@@ -63,6 +74,10 @@ button:hover {
     background-color: #88caad;
 }
 
+#equation{
+    font-size: 22px;
+}
+
 canvas {
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
@@ -73,13 +88,14 @@ canvas {
     max-height: 600px;
 }
 
-/* Media Queries for smaller screens */
+/* Media Queries */
 @media (max-width: 768px) {
     .container {
         width: 95%;
         padding: 1.5rem;
     }
 
+    label,
     input {
         width: 90%;
     }

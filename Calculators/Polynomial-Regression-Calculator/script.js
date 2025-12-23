@@ -28,11 +28,19 @@ function calculatePolynomialRegression() {
     let equation = "y = ";
     coefficients.forEach((coef, i) => {
         const power = degree - i;
-        equation += `${coef.toFixed(2)}x^${power}`;
+
+        if (power > 1) {
+            equation += `${coef.toFixed(2)}x<sup>${power}</sup>`;
+        } else if (power === 1) {
+            equation += `${coef.toFixed(2)}x`;
+        } else {
+            equation += `${coef.toFixed(2)}`;
+        }
+
         if (i !== coefficients.length - 1) equation += " + ";
     });
 
-    document.getElementById("equation").innerText = equation;
+    document.getElementById("equation").innerHTML = equation;
 
     drawGraph(xValues, yValues, coefficients);
 }
@@ -110,9 +118,6 @@ function drawGraph(xValues, yValues, coefficients) {
                     },
                     ticks: {
                         font: { size: 20 }
-                    },
-                    grid: {
-                        color: "rgba(0,0,0,0.1)"
                     }
                 },
                 y: {
@@ -123,9 +128,6 @@ function drawGraph(xValues, yValues, coefficients) {
                     },
                     ticks: {
                         font: { size: 22 }
-                    },
-                    grid: {
-                        color: "rgba(0,0,0,0.1)"
                     }
                 }
             },
