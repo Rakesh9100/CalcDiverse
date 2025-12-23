@@ -20,7 +20,7 @@ This calculator allows users to input a set of data points and compute the best-
 
 ## Screenshots
 
-![Polynomial Regression Screenshot](https://github.com/user-attachments/assets/d53a869d-6f01-40ae-a6f3-c49042a889bb)
+![Polynomial Regression Screenshot](https://github.com/user-attachments/assets/bb32eb58-cdd7-410f-889d-c3968f46cbd5)
 
 ## How It Works
 
