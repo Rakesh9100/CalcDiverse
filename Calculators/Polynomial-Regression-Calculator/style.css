@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("assets/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    min-width: 300px;
+    height: auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(112, 128, 178, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: clamp(28px, 5vw, 38px);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-size: clamp(16px, 2.5vw, 22px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+label {
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+}
+
+input {
+    width: 80%;
+    max-width: 400px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #26c17e;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: clamp(16px, 2vw, 18px);
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #88caad;
+}
+
+#equation {
+    font-size: 22px;
+}
+
+canvas {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    display: block;
+    margin: 1rem auto;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 600px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    label,
+    input {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .form-group {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+
+    canvas {
+        max-height: 400px;
+    }
+}

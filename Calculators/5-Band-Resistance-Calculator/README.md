@@ -1,6 +1,6 @@
 # <p align="center">5 Band Resistance Calculator</p>
 
-# Description :-
+## Description :-
 
 This is a calculator that will help you calculate the resistance value by inputting the 5 color bands present on the resistor and it will return the resistance value for it including the tolerance value.
 
