@@ -1,6 +1,6 @@
 # <p align="center">4 Band Resistance Calculator</p>
 
-# Description :-
+## Description :-
 
 As the name suggest this is a Calculator which will help you calculate the resistance value by input the 4 colour bands present on the resistor and it will return the resistance value for it with including the tolerance value. The calculator is responsive also and can be viewed on any device.
 

@@ -1,11 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-
     background: url("assets/background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,11 +18,9 @@ body {
     min-width: 300px;
     height: auto;
     padding: 2rem;
-
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(112, 128, 178, 0.6);
     border-radius: 12px;
-
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     text-align: center;
 }
@@ -37,7 +33,6 @@ h1 {
 .form-group {
     margin-bottom: 15px;
     font-size: clamp(16px, 2.5vw, 22px);
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +69,7 @@ button:hover {
     background-color: #88caad;
 }
 
-#equation{
+#equation {
     font-size: 22px;
 }
 

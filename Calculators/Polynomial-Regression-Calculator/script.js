@@ -85,10 +85,12 @@ function drawGraph(xValues, yValues, coefficients) {
     new Chart(ctx, {
         type: "scatter",
         data: {
-            datasets: [
-                {
+            datasets: [{
                     label: "Data Points",
-                    data: xValues.map((x, i) => ({ x, y: yValues[i] })),
+                    data: xValues.map((x, i) => ({
+                        x,
+                        y: yValues[i]
+                    })),
                     backgroundColor: "rgba(255, 99, 132, 0.8)",
                     borderColor: "rgba(255, 99, 132, 1)",
                     pointRadius: 6,
@@ -97,7 +99,10 @@ function drawGraph(xValues, yValues, coefficients) {
                 },
                 {
                     label: "Polynomial Curve",
-                    data: curveX.map((x, i) => ({ x, y: curveY[i] })),
+                    data: curveX.map((x, i) => ({
+                        x,
+                        y: curveY[i]
+                    })),
                     borderColor: "rgba(54, 162, 235, 1)",
                     borderWidth: 3,
                     type: "line",
@@ -114,27 +119,40 @@ function drawGraph(xValues, yValues, coefficients) {
                     title: {
                         display: true,
                         text: "X Values",
-                        font: { size: 22, weight: "bold" }
+                        font: {
+                            size: 22,
+                            weight: "bold"
+                        }
                     },
                     ticks: {
-                        font: { size: 20 }
+                        font: {
+                            size: 20
+                        }
                     }
                 },
                 y: {
                     title: {
                         display: true,
                         text: "Y Values",
-                        font: { size: 20, weight: "bold" }
+                        font: {
+                            size: 20,
+                            weight: "bold"
+                        }
                     },
                     ticks: {
-                        font: { size: 22 }
+                        font: {
+                            size: 22
+                        }
                     }
                 }
             },
             plugins: {
                 legend: {
                     labels: {
-                        font: { size: 20, weight: "bold" }
+                        font: {
+                            size: 20,
+                            weight: "bold"
+                        }
                     }
                 }
             }
