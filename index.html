@@ -137,9 +137,20 @@
 
     <!-- Pagination section -->
     <div id="pagination-controls">
-        <button id="prev" onclick="changePage(-1); scrollToSearch()">Previous</button>
-        <span id="page-info"></span>
-        <button id="next" onclick="changePage(1); scrollToSearch()">Next</button>
+        <div>
+            <button id="prev" onclick="changePage(-1); scrollToSearch()">Previous</button>
+            <span id="page-info"></span>
+            <button id="next" onclick="changePage(1); scrollToSearch()">Next</button>
+        </div>
+        <div id="goToPage">
+            <input
+            type="number"
+            id="goToPageInput"
+            placeholder="Page No."
+            min="1"
+            />
+            <button onclick="goToPage(); scrollToSearch()">Go</button>
+        </div>
     </div>
 
     <!-- Footer section -->
