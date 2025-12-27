@@ -1599,6 +1599,20 @@ section {
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
+    flex-direction: column;
+}
+
+#goToPage{
+    display: flex; justify-content: center; gap: 10px;
+}
+
+#goToPageInput{
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 #pagination-controls button {
