@@ -105,6 +105,23 @@ function changePage(direction) {
     showPage(currentPage + direction);
 }
 
+function goToPage() {
+    const input = document.getElementById("goToPageInput");
+    const pageNumber = Number(input.value);
+
+    const boxes = document.querySelectorAll('.container .box');
+    const totalPages = Math.ceil(boxes.length / itemsPerPage);
+
+    if (!pageNumber || pageNumber < 1 || pageNumber > totalPages) {
+        alert(`Please enter a valid page number between 1 and ${totalPages}`);
+        input.value = "";
+        return;
+    }
+
+    showPage(pageNumber);
+    input.value = "";
+}
+
 function scrollToSearch() {
     const searchBar = document.getElementById('searchBar');
     searchBar.scrollIntoView({
