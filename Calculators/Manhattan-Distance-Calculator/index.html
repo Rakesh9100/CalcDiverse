@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manhattan Distance Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Manhattan Distance Calculator</h1>
+        <p>Enter the coordinates of two points to calculate the Manhattan distance between them.</p>
+
+        <div class="point-group">
+            <h2>Point A</h2>
+            <div class="input-group">
+                <label for="x1">X-coordinate</label>
+                <input type="number" id="x1" placeholder="Enter X coordinate">
+            </div>
+            <div class="input-group">
+                <label for="y1">Y-coordinate</label>
+                <input type="number" id="y1" placeholder="Enter Y coordinate">
+            </div>
+        </div>
+
+        <div class="point-group">
+            <h2>Point B</h2>
+            <div class="input-group">
+                <label for="x2">X-coordinate</label>
+                <input type="number" id="x2" placeholder="Enter X coordinate">
+            </div>
+            <div class="input-group">
+                <label for="y2">Y-coordinate</label>
+                <input type="number" id="y2" placeholder="Enter Y coordinate">
+            </div>
+        </div>
+
+        <button onclick="calculateManhattanDistance()">Calculate Distance</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
