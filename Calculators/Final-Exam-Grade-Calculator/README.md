@@ -20,7 +20,7 @@ The Final Exam Grade Calculator answers the classic end-of-semester question: *"
 
 ## Screenshots :-
 
-![image](https://github.com/user-attachments/assets/9a3f1c7e-d96e-4b4f-9f3b-1d5f4c8a7e21)
+![image](./screenshot.png)
 
 ## How it works :-
 
