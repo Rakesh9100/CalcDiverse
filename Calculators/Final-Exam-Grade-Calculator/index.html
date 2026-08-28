@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Exam Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Final Exam Grade Calculator</h1>
+        <p class="subtitle">Find out the score you need on your final exam to hit your target grade</p>
+
+        <div class="inputs">
+            <div class="field">
+                <label for="current">Current grade (%)</label>
+                <input type="number" id="current" placeholder="e.g. 81" min="0" max="100" step="any" />
+            </div>
+            <div class="field">
+                <label for="target">Target grade (%)</label>
+                <input type="number" id="target" placeholder="e.g. 90" min="0" max="100" step="any" />
+            </div>
+            <div class="field">
+                <label for="weight">Final exam weight (%)</label>
+                <input type="number" id="weight" placeholder="e.g. 30" min="1" max="100" step="any" />
+            </div>
+        </div>
+
+        <button onclick="calculate()">Calculate required score</button>
+
+        <div class="result" id="result"></div>
+
+        <div class="explain" id="explain"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
